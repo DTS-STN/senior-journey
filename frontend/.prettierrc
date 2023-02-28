@@ -3,5 +3,13 @@
   "tabWidth": 2,
   "singleQuote": true,
   "quoteProps": "consistent",
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "importOrder": [
+    "^react$",
+    "^@remix-run/(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
