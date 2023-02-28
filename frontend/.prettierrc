@@ -1,9 +1,7 @@
 {
-    "semi": false,
-    "tabWidth": 2,
-    "singleQuote": true,
-    "quoteProps": "consistent",
-    "plugins": [
-        "prettier-plugin-tailwindcss"
-    ]
-  }
+  "semi": false,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "quoteProps": "consistent",
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
