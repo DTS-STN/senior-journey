@@ -14,8 +14,8 @@ export interface DateModifiedProps {
 const DateModified: FC<DateModifiedProps> = ({ id, text }) => {
   return (
     <dl id={id} className="container mx-auto py-8 px-4">
-      <dt className="inline">{text}</dt>
-      <dd className="inline">
+      <dt className="inline mr-1">{text}</dt>
+      <dd className="inline ml-1">
         <time>{process.env.NEXT_PUBLIC_BUILD_DATE}</time>
       </dd>
     </dl>
@@ -24,7 +24,7 @@ const DateModified: FC<DateModifiedProps> = ({ id, text }) => {
 
 DateModified.defaultProps = {
   id: 'date-modified',
-  text: 'Date Modified: ',
+  text: 'Date Modified:',
 }
 
 export default DateModified

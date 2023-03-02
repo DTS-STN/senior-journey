@@ -7,7 +7,7 @@
   },
   "english": "English",
   "footer": {
-    "date-modified-text": "Date Modified: ",
+    "date-modified-text": "Date Modified:",
     "canada-ca-alt-text": "Symbol of the Government of Canada",
     "header": "About this Site",
     "nav-header": "Government of Canada Corporate",
@@ -52,11 +52,10 @@
   },
   "modal-idle-timeout": {
     "header": "Session timeout warning",
-    "description": "You have been inactive for 10 minutes and your session is set to expire in {{timeRemaining}}. Select \"Continue Session\" to continue your session.",
+    "description": "You have been inactive for 10 minutes and your session is set to expire in {{timeRemaining}}. Select 'Continue Session' to continue your session.",
     "continue-session": "Continue session",
     "end-session": "End session"
   },
-  "phone-number": "1\u2011800\u2011567\u20116868",
   "opens-in-new-tab": "(opens in a new tab)",
   "banner": {
     "alert": "Test site",

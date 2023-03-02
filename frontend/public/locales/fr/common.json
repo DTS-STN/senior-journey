@@ -7,7 +7,7 @@
   },
   "english": "English",
   "footer": {
-    "date-modified-text": "Date de modification\u00A0: ",
+    "date-modified-text": "Date de modification\u00A0:",
     "canada-ca-alt-text": "Symbole du gouvernement du Canada",
     "header": "À propos de ce site",
     "nav-header": "Organisation du gouvernement du Canada",
@@ -24,8 +24,8 @@
       "terms-and-condition-url": "https://www.canada.ca/fr/transparence/avis.html"
     }
   },
-  "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00A0: ",
-  "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00A0: ",
+  "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00A0:",
+  "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00A0:",
   "francais": "Français",
   "goc": "Governement du Canada",
   "header": {
@@ -52,11 +52,10 @@
   },
   "modal-idle-timeout": {
     "header": "Avertissement d'expiration de la session",
-    "description": "Vous avez été inactif pendant 10 minutes et votre session doit expirer dans {{timeRemaining}}. Sélectionnez \"Continuer la session\" pour continuer votre session.",
+    "description": "Vous avez été inactif pendant 10 minutes et votre session doit expirer dans {{timeRemaining}}. Sélectionnez 'Continuer la session' pour continuer votre session.",
     "continue-session": "Continuer la session",
     "end-session": "Terminer la session"
   },
-  "phone-number": "1\u2011800\u2011567\u20116868",
   "opens-in-new-tab": "(s'ouvre dans un nouvel onglet)",
   "banner": {
     "alert": "Lieu de test",
