@@ -1,0 +1,66 @@
+{
+  "contact-us": "Nous contacter",
+  "date-select-field": {
+    "day": "Jour",
+    "month": "Mois",
+    "year": "Année"
+  },
+  "english": "English",
+  "footer": {
+    "date-modified-text": "Date de modification\u00A0: ",
+    "canada-ca-alt-text": "Symbole du gouvernement du Canada",
+    "header": "À propos de ce site",
+    "nav-header": "Organisation du gouvernement du Canada",
+    "links": {
+      "about-canada-ca": "À propos de Canada.ca",
+      "about-canada-ca-url": "https://www.canada.ca/fr/gouvernement/a-propos.html",
+      "mobile-applications": "Applications mobiles",
+      "mobile-applications-url": "https://www.canada.ca/fr/mobile.html",
+      "privacy": "Confidentialité",
+      "privacy-url": "https://www.canada.ca/fr/transparence/confidentialite.html",
+      "social-media": "Médias sociaux",
+      "social-media-url": "https://www.canada.ca/fr/sociaux.html",
+      "terms-and-condition": "Avis",
+      "terms-and-condition-url": "https://www.canada.ca/fr/transparence/avis.html"
+    }
+  },
+  "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00A0: ",
+  "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00A0: ",
+  "francais": "Français",
+  "goc": "Governement du Canada",
+  "header": {
+    "goc-link": "https://www.canada.ca/fr.html",
+    "skip-to-main": "Passer au contenu principal"
+  },
+  "language-selection": "Sélection de la langue",
+  "login": "Connexion",
+  "required": "(obligatoire)",
+  "service-and-benefits": "Service et avantages",
+  "skip-to": {
+    "about-government": "Passer à «\u00a0Au sujet du gouvernement\u00a0»"
+  },
+  "title": "accueil",
+  "tools": "Outils",
+  "top-of-page": "Haut de la page",
+  "welcome": "Bienvenue à",
+  "modal-go-back": {
+    "cancel-button": "Annuler",
+    "yes-button": "Oui",
+    "no-button": "Non",
+    "header": "Retournez à la page d'accueil",
+    "description": "Êtes-vous sûr de vouloir revenir en arrière?"
+  },
+  "modal-idle-timeout": {
+    "header": "Avertissement d'expiration de la session",
+    "description": "Vous avez été inactif pendant 10 minutes et votre session doit expirer dans {{timeRemaining}}. Sélectionnez \"Continuer la session\" pour continuer votre session.",
+    "continue-session": "Continuer la session",
+    "end-session": "Terminer la session"
+  },
+  "phone-number": "1\u2011800\u2011567\u20116868",
+  "opens-in-new-tab": "(s'ouvre dans un nouvel onglet)",
+  "banner": {
+    "alert": "Lieu de test",
+    "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
+  },
+  "application-name-bar": "Parcours seniors"
+}

@@ -1,0 +1,86 @@
+/* ensure that there is a semicolon at the end of the line otherwise the styles will not build correctly in production.  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap');
+
+/* tailwind default */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* consistent focus styles on all components */
+  * {
+    @apply focus:outline-none;
+    @apply focus-visible:ring-1;
+    @apply focus-visible:ring-black;
+  }
+
+  html {
+    @apply text-basic-gray;
+  }
+
+  body {
+    @apply font-body;
+  }
+
+  .h4 {
+    @apply font-bold;
+    @apply font-display;
+  }
+
+  .h3 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-2xl;
+  }
+
+  .h2 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-3xl;
+    @apply mt-8;
+    @apply mb-3;
+  }
+
+  .h1 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-4xl;
+    @apply mt-9;
+    @apply mb-8;
+  }
+  .h1::after {
+    content: '';
+    display: block;
+    width: 70px;
+    @apply pt-2;
+    border-bottom: 0.18em solid #af3c43;
+  }
+
+  p {
+    @apply mb-3;
+  }
+
+  main {
+    @apply text-xl;
+  }
+  main a {
+    @apply text-link-default;
+    @apply underline;
+  }
+  main a:visited {
+    @apply text-link-visited;
+  }
+  main a:hover,
+  main a:focus {
+    @apply text-link-selected;
+  }
+
+  main a[target='_blank']::after {
+    content: url(/new-tab-icon.svg);
+    display: inline-block;
+    height: 1em;
+    margin-left: 0.2em;
+    width: 1em;
+    text-align: center;
+  }
+}
