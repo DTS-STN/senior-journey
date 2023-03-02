@@ -1,6 +1,9 @@
 import type { LoaderArgs } from '@remix-run/node'
 import { json } from '@remix-run/node'
 import { Outlet, useMatches } from '@remix-run/react'
+import { useEffect } from 'react'
+
+import { useTranslation } from 'react-i18next'
 
 import { LocaleSwitcher } from '~/components'
 
@@ -12,12 +15,22 @@ export async function loader({ params }: LoaderArgs) {
   return json({ locale: params.locale })
 }
 
+export function useChangeLanguage(locale: string) {
+  const { i18n } = useTranslation()
+
+  useEffect(() => {
+    i18n.changeLanguage(locale)
+  }, [locale, i18n])
+}
+
 export function useLocale() {
-  return useMatches().find((match) => match.id === 'routes/$locale')?.params
-    .locale
+  return useMatches().find((match) => match.id === 'routes/$locale')?.params.locale
 }
 
 export default function Index() {
+  const locale = useLocale() || 'en';
+  useChangeLanguage(locale)
+
   return (
     <>
       <LocaleSwitcher />
