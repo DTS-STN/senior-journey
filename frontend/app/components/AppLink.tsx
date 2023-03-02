@@ -1,21 +1,17 @@
-import { Link } from '@remix-run/react'
-import type { RemixLinkProps } from '@remix-run/react/dist/components'
+import type { LinkProps } from '@remix-run/react'
+import { Link, useHref } from '@remix-run/react'
 
 import { useLocale } from '~/routes/$locale'
 
-export interface AppLinkProps extends Omit<RemixLinkProps, 'to'> {
+export interface AppLinkProps extends LinkProps {
   locale?: 'en' | 'fr'
-  to: string
 }
 
 export default function AppLink({ locale, ...args }: AppLinkProps) {
   const matchedLocale = useLocale()
   const resolvedLocale = locale ?? matchedLocale
-
-  if (resolvedLocale === undefined) throw new Error('Locale is undefined')
-
-  const to = resolvedLocale ? `/${resolvedLocale}${args.to}` : args.to
-
+  const href = useHref(args.to)
+  const to = resolvedLocale ? `/${resolvedLocale}${href}` : href
   return (
     <Link {...args} to={to}>
       {args.children}
