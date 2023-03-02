@@ -7,7 +7,7 @@ export interface AppLinkProps extends LinkProps {
   locale?: 'en' | 'fr'
 }
 
-export default function AppLink({ locale, ...args }: AppLinkProps) {
+export const AppLink = ({ locale, ...args }: AppLinkProps) => {
   const matchedLocale = useLocale()
   const resolvedLocale = locale ?? matchedLocale
   const href = useHref(args.to)
