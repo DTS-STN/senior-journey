@@ -1,14 +1,9 @@
 // @ts-check
 const { i18n } = require('./next-i18next.config')
+const fs = require('fs')
 
-//formatting TC Date
-const builddate = process.env.BUILD_DATE
-  ? process.env.BUILD_DATE.substring(0, 4) +
-    '-' +
-    process.env.BUILD_DATE.substring(4, 6) +
-    '-' +
-    process.env.BUILD_DATE.substring(6, 8)
-  : 'DATE-NA'
+const fallbackBuildDate = fs.statSync('package.json').birthtime
+const buildDate = new Date(process.env.BUILD_DATE ?? fallbackBuildDate).toISOString().slice(0, 10)
 
 const securityHeaders = [
   {
@@ -51,7 +46,7 @@ const securityHeaders = [
  **/
 const nextConfig = {
   env: {
-    NEXT_PUBLIC_BUILD_DATE: builddate,
+    NEXT_PUBLIC_BUILD_DATE: buildDate,
     LOGGING_LEVEL: process.env.LOGGING_LEVEL ?? 'info',
   },
   publicRuntimeConfig: {
