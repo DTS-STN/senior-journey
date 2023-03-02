@@ -7,14 +7,14 @@ describe('app page loads', () => {
     cy.location('pathname').should('equal', '/')
   })
 
-  it('redirects to / when accessing /en', () => {
+  it('redirects to /en/home when accessing /en', () => {
     cy.visit('/en')
-    cy.location('pathname').should('equal', '/')
+    cy.location('pathname').should('equal', '/en/home')
   })
 
-  it('redirects to / when accessing /fr', () => {
+  it('redirects to /fr/home when accessing /fr', () => {
     cy.visit('/fr')
-    cy.location('pathname').should('equal', '/')
+    cy.location('pathname').should('equal', '/fr/home')
   })
 
   it('should have correct title', () => {

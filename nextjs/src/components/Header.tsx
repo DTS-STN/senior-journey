@@ -95,7 +95,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
           </div>
         </div>
 
-        <ApplicationNameBar text={t('application-name-bar')} href="/landing" />
+        <ApplicationNameBar text={t('application-name-bar')} href="/" />
 
         {/* <Menu
           loginText={t('login')}

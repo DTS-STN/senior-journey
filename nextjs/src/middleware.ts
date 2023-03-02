@@ -24,9 +24,8 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL(`/en${pathname}`, url))
   }
 
-  //Redirect for index page as it's meant to be bilingual so we don't want users navigating to /en or /fr
   if ((locale === 'en' || locale === 'fr') && pathname === '/') {
-    return NextResponse.redirect(new URL(`/`, url))
+    return NextResponse.redirect(new URL(`/${locale}/home`, url))
   }
 
   return NextResponse.next()
