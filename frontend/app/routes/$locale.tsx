@@ -7,6 +7,10 @@ import { useTranslation } from 'react-i18next'
 
 import { LocaleSwitcher } from '~/components'
 
+export const handle = {
+  i18n: ['common']
+}
+
 export async function loader({ params }: LoaderArgs) {
   if (params.locale === undefined || !['en', 'fr'].includes(params.locale)) {
     throw new Response('Not found', { status: 404, statusText: 'Not found' })
