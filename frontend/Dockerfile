@@ -1,62 +1,89 @@
-FROM node:18.14.2-bullseye-slim AS base
+# The following labels should be set at build time.. sane defaults are provided as a fallback
+#
+# example command:
+# 	- $ docker build . \
+# 			--build-arg BUILD_DATE="$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+# 			--build-arg BUILD_ID="0001" \
+# 			--build-arg BUILD_REVISION="$(git rev-parse --short=8 HEAD)" \
+# 			--build-arg BUILD_VERSION="$(date -u +%Y%m%d)-0001-$(git rev-parse --short=8 HEAD)"
+ARG BUILD_DATE=0000-00-00T00:00:00Z
+ARG BUILD_ID=0000
+ARG BUILD_REVISION=00000000
+ARG BUILD_VERSION=00000000-0000-00000000
+
+FROM docker.io/node:18.14.2-bullseye-slim AS base
+
+
 
 # Install dependencies only when needed
 FROM base AS deps
-WORKDIR /app
 
+WORKDIR /home/node
+COPY --chown=node:node package*.json ./
 
-# Install dependencies based on the preferred package manager
-COPY package*.json ./
+USER node
 RUN npm ci
+
 
 
 # Rebuild the source code only when needed
 FROM base AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
 
 ARG BUILD_DATE
 ARG BUILD_ID
+ARG BUILD_REVISION
+ARG BUILD_VERSION
 
-ENV BUILD_DATE=$BUILD_DATE
-ENV BUILD_ID=$BUILD_ID
+ENV BUILD_DATE=${BUILD_DATE}
+ENV BUILD_ID=${BUILD_ID}
+ENV BUILD_REVISION=${BUILD_REVISION}
+ENV BUILD_VERSION=${BUILD_VERSION}
+ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
 
-# Next.js collects completely anonymous telemetry data about general usage.
-# Learn more here: https://nextjs.org/telemetry
-# Uncomment the following line in case you want to disable telemetry during the build.
-ENV NEXT_TELEMETRY_DISABLED 1
+WORKDIR /home/node
+COPY --chown=node:node --from=deps /home/node/node_modules ./node_modules
+COPY --chown=node:node ./ ./
 
+USER node
 RUN npm run build
+
+
 
 # Production image, copy all the files and run next
 FROM base AS runner
-WORKDIR /app
 
-ENV NODE_ENV production
-# Uncomment the following line in case you want to disable telemetry during runtime.
-ENV NEXT_TELEMETRY_DISABLED 1
+ARG BUILD_DATE
+ARG BUILD_ID
+ARG BUILD_REVISION
+ARG BUILD_VERSION
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+ENV BUILD_DATE=${BUILD_DATE}
+ENV BUILD_ID=${BUILD_ID}
+ENV BUILD_REVISION=${BUILD_REVISION}
+ENV BUILD_VERSION=${BUILD_VERSION}
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV NODE_ENV=production
 
-COPY --from=builder /app/public ./public
-COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+LABEL org.opencontainers.image.authors="Digital Technology Solutions"
+LABEL org.opencontainers.image.url="https://github.com/DTS-STN/"
+LABEL org.opencontainers.image.vendor="Employment and Social Development Canada"
+LABEL org.opencontainers.image.title="Journey Labs"
+LABEL org.opencontainers.image.description="Journey Labs -- Seniors Journey"
 
-# next-i18next
-# https://github.com/i18next/next-i18next#docker
-COPY --from=builder /app/next.config.js ./next.config.js
-COPY --from=builder /app/next-i18next.config.js ./next-i18next.config.js
+LABEL org.opencontainers.image.created=${BUILD_DATE}
+LABEL org.opencontainers.image.version=${BUILD_VERSION}
+LABEL org.opencontainers.image.revision=${BUILD_REVISION}
 
-# install next.js
-COPY --from=builder /app/package*.json ./
+WORKDIR /home/node
+COPY --chown=node:node --from=builder /home/node/public ./public
+COPY --chown=node:node --from=builder /home/node/.next ./.next
+COPY --chown=node:node --from=builder /home/node/next.config.js ./next.config.js
+COPY --chown=node:node --from=builder /home/node/next-i18next.config.js ./next-i18next.config.js
+COPY --chown=node:node --from=builder /home/node/package*.json ./
+
+USER node
 RUN npm install --no-save next
 
-USER nextjs
-
-EXPOSE 3000
-
-ENV PORT 3000
-
 CMD npm run start
+EXPOSE 3000
