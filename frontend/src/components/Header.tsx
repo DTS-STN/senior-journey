@@ -59,7 +59,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
                     ? 'Government of Canada'
                     : 'Gouvernement du Canada'
                 }
-                src={locale === 'en' ? '/sig-blk-en.svg' : '/sig-blk-fr.svg'}
+                src={locale === 'en' ? '/assets/sig-blk-en.svg' : '/assets/sig-blk-fr.svg'}
                 width={300}
                 height={28}
                 priority

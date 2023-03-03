@@ -2,31 +2,39 @@ import { NextRequest, NextResponse } from 'next/server'
 
 import { getLogger } from './logging/log-util'
 
-//regex to check if there's an extension in the path, ie .jpg
-const PUBLIC_FILE = /\.(.*)$/
-const logger = getLogger('middleware')
+function isPageRequest(pathname: string) {
+  if (pathname.includes('/_next/')) return false
+  if (pathname.includes('/api/')) return false
+  if (pathname.includes('/assets/')) return false
 
-export async function middleware(req: NextRequest) {
+  return true
+}
+
+export function middleware(req: NextRequest) {
   const { nextUrl, url } = req
   const { locale, pathname } = nextUrl
+  const logger = getLogger('middleware')
 
-  if (
-    pathname.startsWith('/_next') ||
-    pathname.includes('/api/') ||
-    PUBLIC_FILE.test(pathname)
-  ) {
+  if (!isPageRequest(pathname)) {
+    logger.trace(`Request for static resource ${pathname} is not a candidate for processing`)
     return NextResponse.next()
   }
 
-  logger.debug(req)
-
-  if (locale === 'default' && !pathname.endsWith('/')) {
-    return NextResponse.redirect(new URL(`/en${pathname}`, url))
+  if (pathname === '/' && (locale === 'default')) {
+    logger.debug(`Request for language chooser is not a candidate for processing`)
+    return NextResponse.next()
   }
 
-  if ((locale === 'en' || locale === 'fr') && pathname === '/') {
+  if (pathname === '/' && (locale === 'en' || locale === 'fr')) {
+    logger.debug(`Request for /${locale}/ will be redirected to /${locale}/home`)
     return NextResponse.redirect(new URL(`/${locale}/home`, url))
   }
 
+  if (locale === 'default') {
+    logger.debug(`Request for ${pathname} will be redirected to /en${pathname}`)
+    return NextResponse.redirect(new URL(`/en${pathname}`, url))
+  }
+
+  logger.trace(`Request ${pathname} is not a candidate for processing`)
   return NextResponse.next()
 }

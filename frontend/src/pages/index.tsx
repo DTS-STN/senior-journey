@@ -27,7 +27,7 @@ const Index = () => {
                 className="mb-1.5"
                 property="logo"
                 alt="Government of Canada"
-                src="/sig-blk-en.svg"
+                src="/assets/sig-blk-en.svg"
                 width={300}
                 height={28}
                 priority
@@ -83,7 +83,7 @@ const Index = () => {
             <div className="w-5/12 md:w-4/12">
               <Image
                 alt="Symbol of the Government of Canada"
-                src="/wmms-blk.svg"
+                src="/assets/wmms-blk.svg"
                 width={300}
                 height={71}
                 priority

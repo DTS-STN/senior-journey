@@ -30,7 +30,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         footerHeader={t('footer.header')}
         footerLogo={{
           alt: t('footer.canada-ca-alt-text'),
-          src: '/wmms-blk.svg',
+          src: '/assets/wmms-blk.svg',
           width: 300,
           height: 71,
         }}

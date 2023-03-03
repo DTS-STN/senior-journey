@@ -13,7 +13,7 @@ const ErrorLayout: FC<ErrorLayoutProps> = ({ children }) => {
         <Image
           className="h-6 w-auto sm:h-8 md:h-8 lg:h-7 xl:h-8"
           alt="Government of Canada - Gouvernement du Canada"
-          src="/sig-blk-en.svg"
+          src="/assets/sig-blk-en.svg"
           width={300}
           height={28}
           priority
@@ -36,7 +36,7 @@ const ErrorLayout: FC<ErrorLayoutProps> = ({ children }) => {
           <Image
             className="h-6 w-auto lg:h-auto lg:w-40"
             alt="Symbol of the Government of Canada - Symbole du gouvernement du Canada"
-            src="/wmms-blk.svg"
+            src="/assets/wmms-blk.svg"
             width={300}
             height={71}
             priority
