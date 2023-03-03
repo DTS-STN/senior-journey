@@ -4,13 +4,15 @@ import { middleware } from '../src/middleware'
 
 jest.mock('next/server', () => {
   return {
-    NextRequest: function (url: URL) {
-      this.nextUrl = { pathname: url.pathname, locale: 'default' }
-      this.url = url
-    },
-    NextResponse: function (init: BodyInit | null) {
-      this.init = init
-    },
+    NextRequest: jest.fn().mockImplementation((url: URL) => {
+      return {
+        nextUrl: { pathname: url.pathname, locale: 'default' },
+        url: url,
+      }
+    }),
+    NextResponse: jest.fn().mockImplementation((init: BodyInit | null) => {
+      return { init }
+    }),
   }
 })
 
