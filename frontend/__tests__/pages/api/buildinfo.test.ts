@@ -50,4 +50,26 @@ describe('api/buildinfo', () => {
     expect(data.buildInfo.revision).toBe('deadbeef')
     expect(data.buildInfo.version).toBe('20000101-9999-deadbeef')
   })
+
+  it('returns sane defaults', async () => {
+    const requestOptions: RequestOptions = {
+      headers: { 'Content-Type': 'application/json' },
+      method: 'GET',
+      url: '/api/buildinfo',
+    }
+
+    const res = createResponse<ApiResponse>()
+    const req = createRequest<ApiRequest>(requestOptions)
+
+    handler(req, res)
+
+    const data = res._getJSONData()
+    expect(res._getStatusCode()).toBe(200)
+    expect(res._isJSON()).toBe(true)
+    expect(res._isUTF8()).toBe(true)
+    expect(data.buildInfo.date).toBe('0000-00-00T00:00:00Z')
+    expect(data.buildInfo.id).toBe('0000')
+    expect(data.buildInfo.revision).toBe('00000000')
+    expect(data.buildInfo.version).toBe('00000000-0000-00000000')
+  })
 })
