@@ -2,7 +2,7 @@ import type { Config } from 'jest'
 
 const config: Config = {
   modulePathIgnorePatterns: ['./cypress'],
-  collectCoverageFrom: ['!**/node_modules/**', 'src/**/*.{js,jsx,ts,tsx}'],
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)
     // see https://jestjs.io/docs/webpack#mocking-css-modules
