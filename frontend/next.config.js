@@ -1,9 +1,8 @@
 // @ts-check
 const { i18n } = require('./next-i18next.config')
-const fs = require('fs')
 
-const fallbackBuildDate = fs.statSync('package.json').birthtime
-const buildDate = new Date(process.env.BUILD_DATE ?? fallbackBuildDate).toISOString().slice(0, 10)
+const exec = require('child_process').exec;
+const fs = require('fs')
 
 const securityHeaders = [
   {
@@ -41,9 +40,10 @@ const securityHeaders = [
   },
 ]
 
-/**
- * @type {import('next').NextConfig}
- **/
+const fallbackBuildDate = fs.statSync('package.json').mtime
+const buildDate = new Date(process.env.BUILD_DATE ?? fallbackBuildDate).toISOString().slice(0, 10)
+
+/** * @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
     NEXT_PUBLIC_BUILD_DATE: buildDate,
