@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom/extend-expect'
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 
 import { axe, toHaveNoViolations } from 'jest-axe'
 
@@ -12,6 +12,7 @@ describe('ApplicationNameBar', () => {
 
   it('renders', () => {
     render(sut)
+
     const screenText = screen.getByText('Test')
     expect(screenText).toBeInTheDocument()
     expect(document.querySelector('a')?.getAttribute('href')).toBe('/somelink')
@@ -19,7 +20,8 @@ describe('ApplicationNameBar', () => {
 
   it('meets a11y', async () => {
     const { container } = render(sut)
-    const results = await axe(container)
+
+    const results = await waitFor(() => axe(container))
     expect(results).toHaveNoViolations()
   })
 })
