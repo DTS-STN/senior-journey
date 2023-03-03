@@ -1,7 +1,8 @@
 // @ts-check
 const { i18n } = require('./next-i18next.config')
-const fs = require('fs');
+const fs = require('fs')
 
+// prettier-ignore
 const securityHeaders = [
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
   { key: 'X-Frame-Options', value: 'DENY' },
@@ -13,7 +14,8 @@ const securityHeaders = [
   { key: 'Content-Security-Policy', value: "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://code.jquery.com https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com https://www.youtube.com; connect-src 'self' https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com https://*.omtrdc.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com https://*.omtrdc.net; frame-src 'self' https://*.demdex.net;" },
 ]
 
-/** * @type {import('next').NextConfig} */
+// prettier-ignore
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
     NEXT_PUBLIC_BUILD_DATE: new Date(process.env.BUILD_DATE ?? fs.statSync('package.json').mtime).toISOString().slice(0, 10),
