@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  # commonLabels must have at least one unique label
+  # per environment to ensure selectors are applied correctly
+  app.kubernetes.io/environment: dev
+  app.kubernetes.io/managed-by: kustomize
+  app.kubernetes.io/part-of: seniors-journey
+bases:
+  - ../../applications/seniors-journey-frontend/
+namePrefix: dev-
+namespace: seniors-journey
+resources:
+  - ./configmaps.yaml
+  - ./deployments.yaml
+  - ./ingresses.yaml
+  - ./services.yaml
