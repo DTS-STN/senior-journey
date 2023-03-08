@@ -1,0 +1,35 @@
+name: Dynamic Application Security Tests
+
+on:
+  push:
+    branches: [main]
+
+defaults:
+  run:
+    working-directory: ./frontend
+
+jobs:
+  zap-proxy-scan:
+    name: ZAP Proxy Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Docker Build
+        run: docker build -t senior-journey .
+        env:
+          CI: true
+
+      - name: Docker run
+        run: docker run -d -p 3000:3000 senior-journey
+        env:
+          CI: true
+
+      - name: OWASP ZAP FULL Scan
+        uses: zaproxy/action-full-scan@v0.4.0
+        with:
+          target: "http://localhost:3000"
+          fail_action: "false"
+          token: ${{ secrets.GITHUB_TOKEN }}
