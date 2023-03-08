@@ -6,10 +6,10 @@
 # 			--build-arg BUILD_ID="0001" \
 # 			--build-arg BUILD_REVISION="$(git rev-parse --short=8 HEAD)" \
 # 			--build-arg BUILD_VERSION="$(date -u +%Y%m%d)-0001-$(git rev-parse --short=8 HEAD)"
-ARG BUILD_DATE=0000-00-00T00:00:00Z
+ARG BUILD_DATE=1970-01-01T00:00:00.000Z
 ARG BUILD_ID=0000
 ARG BUILD_REVISION=00000000
-ARG BUILD_VERSION=00000000-0000-00000000
+ARG BUILD_VERSION=19700101-0000-00000000
 
 FROM docker.io/node:18.14.2-bullseye-slim AS base
 
