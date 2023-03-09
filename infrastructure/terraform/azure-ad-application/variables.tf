@@ -16,7 +16,19 @@ variable "application_identifier_uris" {
 
 variable "application_passwords" {
   description = "The set of password credentials (ie: client secrets) associated with this AAD application."
-  type    = set(string)
+  type        = set(string)
+  default     = []
+}
+
+variable "application_required_resource_accesses" {
+  description = "The set of required resource access blocks."
+  type = set(object({
+    resource_app_id = string
+    resource_accesses = set(object({
+      id   = string
+      type = string
+    }))
+  }))
   default = []
 }
 

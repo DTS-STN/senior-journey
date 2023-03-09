@@ -43,6 +43,23 @@ resource "azuread_application" "main" {
   logo_image      = filebase64("assets/logo.png")
   owners          = data.azuread_users.owners.object_ids
 
+  dynamic "required_resource_access" {
+    for_each = var.application_required_resource_accesses
+
+    content {
+      resource_app_id = required_resource_access.value.resource_app_id
+
+      dynamic "resource_access" {
+        for_each = required_resource_access.value.resource_accesses
+
+        content {
+          id = resource_access.value.id
+          type = resource_access.value.type
+        }
+      }
+    }
+  }
+
   single_page_application {
     redirect_uris = var.application_spa_redirect_uris
   }
