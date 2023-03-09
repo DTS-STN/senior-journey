@@ -20,19 +20,7 @@ variable "application_passwords" {
   default     = []
 }
 
-variable "application_required_resource_accesses" {
-  description = "The set of required resource access blocks."
-  type = set(object({
-    resource_app_id = string
-    resource_accesses = set(object({
-      id   = string
-      type = string
-    }))
-  }))
-  default = []
-}
-
-variable "application_spa_redirect_uris" {
+variable "application_web_redirect_uris" {
   description = "The set of redirect URIs where OAuth 2.0 authorization codes and access tokens are sent when authenticating this AAD application."
   type        = set(string)
   default     = []
