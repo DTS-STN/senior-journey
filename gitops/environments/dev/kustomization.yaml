@@ -11,7 +11,4 @@ bases:
 namePrefix: dev-
 namespace: seniors-journey
 resources:
-  - ./configmaps.yaml
-  - ./deployments.yaml
   - ./ingresses.yaml
-  - ./services.yaml
