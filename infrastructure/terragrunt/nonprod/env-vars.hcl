@@ -10,7 +10,7 @@ locals {
 
   environment                  = "DTS Nonprod"
   backend_resource_group_name  = "EsDDTSDev_RHP_DATA"
-  backend_storage_account_name = "" # TODO :: GjB :: populate this when Azure storage account is available
+  backend_storage_account_name = "seniorsjourneydtsdevrhp"
   backend_subscription_id      = "07f55ef5-e27b-42ca-9771-f2705b08acd1" # MTS
 
   tags = merge(local.common_config.locals.tags, {
