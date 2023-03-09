@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seniors-journey-frontend
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: seniors-journey-frontend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: seniors-journey-frontend
+    spec:
+      containers:
+        - name: seniors-journey-frontend # make sure we keep the existing deployment
+        - name: oauth-proxy
+          image: quay.io/oauth2-proxy/oauth2-proxy:v7.4.0
+          args:
+            # TODO :: GjB :: the values below are placeholders and should be moved to a configmap
+            - --banner=<strong style="display:block">Authorized personnel only</strong><span>Please sign in to access site.</span>
+            - --cookie-domain=seniors-journey-dev.dev-dp.dts-stn.com
+            - --custom-sign-in-logo=https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon-mobile.png
+            - --email-domain=*
+            - --footer='-'
+            - --http-address=0.0.0.0:4180
+            - --oidc-issuer-url=https://login.microsoftonline.com/9ed55846-8a81-4246-acd8-b1a01abfc0d1/v2.0
+            - --provider=oidc
+            - --provider-display-name=ESDC Azure AD
+            - --proxy-prefix=/oauth
+            - --skip-provider-button=false
+            - --upstream=http://localhost:3000/
+            # TODO :: GjB :: the values below are placeholders and should be moved to a secret
+            - --cookie-secret=00000000000000000000000000000000
+            - --client-id=00000000-0000-0000-0000-000000000000
+            - --client-secret=00000000-0000-0000-0000-000000000000
+          ports:
+            - name: oauth-proxy
+              containerPort: 4180
+          livenessProbe:
+            httpGet:
+              path: /ping
+              port: oauth-proxy
+            initialDelaySeconds: 0
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /ping
+              port: oauth-proxy
+            initialDelaySeconds: 0
+            timeoutSeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+          resources:
+            requests:
+              cpu: 50m
+              memory: 32Mi
+            limits:
+              cpu: 100m
+              memory: 64Mi
