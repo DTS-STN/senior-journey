@@ -9,7 +9,7 @@ const Index = () => {
     <>
       <NextSeo
         noindex
-        title="Seniors journey | Parcours seniors"
+        title="Senior's Journey | Parcours des aînés"
         titleTemplate="%s - Canada.ca"
       />
       <main
@@ -19,8 +19,7 @@ const Index = () => {
         <div className="m-auto w-[300px] bg-gray-lighter md:w-[400px] lg:w-[500px]">
           <div className="p-8">
             <h1 className="sr-only">
-              Seniors journey | Vérificateur de l&#39;état d&#39;une demande de
-              passeport
+              Senior&#39;s Journey | Parcours des aînés
             </h1>
             <div className="w-11/12 lg:w-8/12">
               <Image

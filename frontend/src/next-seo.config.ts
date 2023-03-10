@@ -46,7 +46,7 @@ export type GetNextSEOConfig = (
 
 export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Canada.ca',
-  defaultTitle: 'Seniors journey | Parcours seniors',
+  defaultTitle: "Senior's Journey | Parcours des aînés",
   description:
     "Avoid waiting on the phone and request the status of your application online. | Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
   additionalMetaTags: [
@@ -95,7 +95,7 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'en_CA',
-    siteName: 'Seniors journey | Parcours seniors - Canada.ca',
+    siteName: "Senior's Journey | Parcours des aînés - Canada.ca",
     type: 'website',
   },
   twitter: {
@@ -105,8 +105,8 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 })
 
 export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
-  titleTemplate: '%s - Seniors journey - Canada.ca',
-  defaultTitle: 'Seniors journey - Canada.ca',
+  titleTemplate: "%s - Senior's Journey - Canada.ca",
+  defaultTitle: "Senior's Journey - Canada.ca",
   description:
     'Avoid waiting on the phone and request the status of your application online.',
   additionalMetaTags: [
@@ -131,7 +131,7 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'en_CA',
-    siteName: 'Seniors journey - Canada.ca',
+    siteName: "Senior's Journey - Canada.ca",
     type: 'website',
   },
   twitter: {
@@ -141,8 +141,8 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 })
 
 export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
-  titleTemplate: '%s - Parcours seniors - Canada.ca',
-  defaultTitle: 'Parcours seniors - Canada.ca',
+  titleTemplate: '%s - Parcours des aînés - Canada.ca',
+  defaultTitle: 'Parcours des aînés - Canada.ca',
   description:
     "Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
   additionalMetaTags: [
@@ -167,7 +167,7 @@ export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'fr_CA',
-    siteName: 'Parcours seniors - Canada.ca',
+    siteName: 'Parcours des aînés - Canada.ca',
     type: 'website',
   },
   twitter: {

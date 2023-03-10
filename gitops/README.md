@@ -1,7 +1,7 @@
-# Seniors Journey GitOps
+# Senior's Journey GitOps
 
 This repository contains the configuration and application manifests used to manage both the production and
-non-production Seniors Journey Kubernetes clusters.
+non-production Senior's Journey Kubernetes clusters.
 
 ## Requirements
 

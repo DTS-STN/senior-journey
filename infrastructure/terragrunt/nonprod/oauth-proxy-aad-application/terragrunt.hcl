@@ -11,7 +11,7 @@ include "root" {
 }
 
 inputs = {
-  application_display_name = "Seniors Journey: OAuth proxy (nonprod)"
+  application_display_name = "Senior's Journey: OAuth proxy (nonprod)"
   application_identifier_uris = [
     "api://seniors-journey-oauth-proxy-nonprod.esdc-edsc.gc.ca"
   ]

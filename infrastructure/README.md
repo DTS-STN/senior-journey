@@ -1,9 +1,9 @@
-# Seniors Journey infrastructure-as-code
+# Senior's Journey infrastructure-as-code
 
 This project provides a basic infrastructure-as-code setup for managing Azure resources using Terragrunt and Terraform.
 It currently creates the following resources:
 
-- Seniors Journey Azure Active Directory OAuth client (aka *app registration*)
+- Senior's Journey Azure Active Directory OAuth client (aka *app registration*)
 
 ## Requirements
 

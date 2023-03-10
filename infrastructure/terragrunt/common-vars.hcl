@@ -13,7 +13,7 @@ locals {
     "Directorate"    = "Business Solutions and Information Management"
     "Division"       = "Digital Technology Solutions"
     "IaCToolChain"   = "Terragrunt/Terraform"
-    "ProjectName"    = "Seniors Journey"
+    "ProjectName"    = "Senior's Journey"
     "ProductOwner"   = "Geoff Anderton <geoff.anderton@servicecanada.gc.ca>"
   }
 }

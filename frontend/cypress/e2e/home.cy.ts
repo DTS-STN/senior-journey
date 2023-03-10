@@ -12,7 +12,7 @@ describe('home page loads', () => {
       .filter(':visible')
       .invoke('text')
       .then((text) => {
-        cy.title().should('eq', `${text} - Seniors journey - Canada.ca`)
+        cy.title().should('eq', `${text} - Senior's Journey - Canada.ca`)
       })
   })
 
@@ -23,7 +23,7 @@ describe('home page loads', () => {
       .filter(':visible')
       .invoke('text')
       .then((text) => {
-        cy.title().should('eq', `${text} - Parcours seniors - Canada.ca`)
+        cy.title().should('eq', `${text} - Parcours des aînés - Canada.ca`)
       })
   })
 
