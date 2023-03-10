@@ -24,7 +24,7 @@ configMapGenerator:
   - name: seniors-journey-frontend-auth
     options:
       labels:
-        app.kubernetes.io/name: seniors-journey-frontend
+        app.kubernetes.io/name: seniors-journey-frontend-auth
     literals: [] # placeholder for future config; see: https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/configmapgenerator/
 secretGenerator:
   - name: seniors-journey-frontend
