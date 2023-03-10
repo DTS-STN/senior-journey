@@ -64,7 +64,7 @@ LABEL org.opencontainers.image.authors="Digital Technology Solutions"
 LABEL org.opencontainers.image.url="https://github.com/DTS-STN/"
 LABEL org.opencontainers.image.vendor="Employment and Social Development Canada"
 LABEL org.opencontainers.image.title="Journey Labs"
-LABEL org.opencontainers.image.description="Journey Labs -- Senior's Journey"
+LABEL org.opencontainers.image.description="Journey Labs -- Seniors Journey"
 
 LABEL org.opencontainers.image.created=${BUILD_DATE}
 LABEL org.opencontainers.image.version=${BUILD_VERSION}

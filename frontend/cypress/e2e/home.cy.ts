@@ -12,7 +12,7 @@ describe('home page loads', () => {
       .filter(':visible')
       .invoke('text')
       .then((text) => {
-        cy.title().should('eq', `${text} - Senior's Journey - Canada.ca`)
+        cy.title().should('eq', `${text} - Seniors Journey - Canada.ca`)
       })
   })
 

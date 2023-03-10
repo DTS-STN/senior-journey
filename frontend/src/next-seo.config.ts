@@ -46,7 +46,7 @@ export type GetNextSEOConfig = (
 
 export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Canada.ca',
-  defaultTitle: "Senior's Journey | Parcours des aînés",
+  defaultTitle: 'Seniors Journey | Parcours des aînés',
   description:
     "Avoid waiting on the phone and request the status of your application online. | Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
   additionalMetaTags: [
@@ -95,7 +95,7 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'en_CA',
-    siteName: "Senior's Journey | Parcours des aînés - Canada.ca",
+    siteName: 'Seniors Journey | Parcours des aînés - Canada.ca',
     type: 'website',
   },
   twitter: {
@@ -105,8 +105,8 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 })
 
 export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
-  titleTemplate: "%s - Senior's Journey - Canada.ca",
-  defaultTitle: "Senior's Journey - Canada.ca",
+  titleTemplate: '%s - Seniors Journey - Canada.ca',
+  defaultTitle: 'Seniors Journey - Canada.ca',
   description:
     'Avoid waiting on the phone and request the status of your application online.',
   additionalMetaTags: [
@@ -131,7 +131,7 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'en_CA',
-    siteName: "Senior's Journey - Canada.ca",
+    siteName: 'Seniors Journey - Canada.ca',
     type: 'website',
   },
   twitter: {
