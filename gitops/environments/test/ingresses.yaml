@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: seniors-journey-frontend
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+  labels:
+    app.kubernetes.io/name: seniors-journey-frontend
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: seniors-journey-test.dev-dp.dts-stn.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: seniors-journey-frontend
+                port:
+                  name: http
