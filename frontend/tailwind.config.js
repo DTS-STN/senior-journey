@@ -55,6 +55,9 @@ module.exports = {
         orange: {
           dark: '#e59700',
         },
+        aqua:{
+          default: '#274448',
+        }
       },
       backgroundImage: () => ({
         'footer-parliament-image': 'url(../../public/assets/landscape.png)',

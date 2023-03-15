@@ -1,4 +1,16 @@
 {
   "description": "Description ici...",
-  "header": "Acceuil"
+  "header": "Acceuil",
+  "contact-us": "(FR)Contact Us",
+  "contact-desc": "(FR)Our call centres and Service Canada Centres operate Monday to Friday, from 8:30 a.m. to 4:00 p.m., your local time. They are closed on statuary holidays.  ",
+  "call-us": "(FR)Call us",
+  "call-us-desc": "(FR)You can reach us at either of the numbers below.",
+  "toll-free": "(FR)Toll free:",
+  "direct": "(FR)Direct Number:",
+  "toll-number": "1-800-000-000",
+  "direct-number": "1-800-000-000",
+  "find-office": "(FR)Find an office",
+  "find-office-desc": "(FR)Find a Service Canada Centre near you using the link below.  ",
+  "find-office-link-text": "(FR)Find a Service Canada Centre",
+  "find-office-url": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=fra"
 }
