@@ -19,7 +19,7 @@ const Home: FC = () => {
 
       <section>
         <h2 className='h2'>{t('supporting-seniors.title')}</h2>
-        <div className='grid md:grid-cols-3 gap-5'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
           <SupportingSeniorsCard 
             src="/assets/supporting-seniors-family-and-friends.svg" 
             href={t('supporting-seniors.cards.family-and-friends.href')} 
