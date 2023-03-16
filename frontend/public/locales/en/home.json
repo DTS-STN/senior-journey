@@ -1,4 +1,24 @@
 {
   "description": "Description here...",
-  "header": "Home"
+  "header": "Home",
+  "supporting-seniors": {
+    "title": "Supporting Seniors",
+    "cards": {
+      "family-and-friends": {
+        "href":"",
+        "link-text": "Family and Friends",
+        "text": "Learn how you can help your loved ones enter the retirement stage in their life."
+      },
+      "representatives": {
+        "href":"",
+        "link-text": "Representatives",
+        "text": "Find resources to understand and navigate Canada’s pension system."
+      },
+      "organizations": {
+        "href":"",
+        "link-text": "Organizations",
+        "text": "Learn how best to help and navigate clients as they plan for retirement."
+      }
+    }
+  }
 }
