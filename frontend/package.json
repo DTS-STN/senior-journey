@@ -2,9 +2,9 @@
   "name": "seniors-journey",
   "private": true,
   "scripts": {
-    "dev": "next dev | pino-pretty",
-    "build": "next build",
-    "start": "next start",
+    "dev": "cross-env NEXT_TELEMETRY_DISABLED='true' next dev | pino-pretty",
+    "build": "cross-env NEXT_TELEMETRY_DISABLED='true' next build",
+    "start": "cross-env NEXT_TELEMETRY_DISABLED='true' next start",
     "test": "npm run lint && npm run test:e2e && npm run test:unit",
     "lint": "next lint",
     "cypress": "cypress open",
@@ -20,6 +20,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.26.1",
     "cookies-next": "^2.1.1",
+    "cross-env": "^7.0.0",
     "date-fns": "^2.29.3",
     "formik": "^2.2.9",
     "i18next": "^22.4.11",
