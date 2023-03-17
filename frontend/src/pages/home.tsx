@@ -28,7 +28,7 @@ return (
               alt=""
           />
       </div>
-      <a href={href} target='_blank'>{linkText}</a>
+      <a href={href} target='_blank' rel="noopener noreferrer">{linkText}</a>
       <p>{text}</p>
   </div>
 )
