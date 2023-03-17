@@ -1,6 +1,11 @@
 {
   "description": "Description ici...",
   "header": "Acceuil",
+  "banner": {
+    "title": "FR Are you ready to retire?",
+    "text": "FR Countless of factors need to be considered to find out when best to retire. Take our quiz to receive personalized information on benefits.",
+    "quiz": "FR Take the quiz now!"
+  },
   "supporting-seniors": {
     "title": "FR Supporting Seniors",
     "cards": {
