@@ -8,6 +8,32 @@ import Image from 'next/image'
 
 import Layout from '../components/Layout'
 
+
+export interface SupportingSeniorsCardProps {
+  src: string,
+  href: string,
+  linkText: string,
+  text: string
+}
+
+const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({src, href, linkText, text}) => {
+return (
+  <div className="flex flex-col border rounded-md shadow-lg p-4">
+
+      <div className="h-[300px] mx-auto">
+          <Image 
+              src={src}
+              width={200}
+              height={300}
+              alt=""
+          />
+      </div>
+      <a href={href} target='_blank'>{linkText}</a>
+      <p>{text}</p>
+  </div>
+)
+}
+
 const Home: FC = () => {
   const { t } = useTranslation('home')
 
@@ -20,45 +46,24 @@ const Home: FC = () => {
       <section>
         <h2 className='h2'>{t('supporting-seniors.title')}</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
-          <div className="flex flex-col border rounded-md shadow-lg p-4">
-            <div className="mx-auto">
-                <Image 
-                    src="/assets/supporting-seniors-family-and-friends.svg" 
-                    width={200}
-                    height={300}
-                    style={{ width: 200, height: 300 }}
-                    alt=""
-                />
-            </div>
-            <a href={t('supporting-seniors.cards.family-and-friends.href')} target='_blank' rel="noopener noreferrer">{t('supporting-seniors.cards.family-and-friends.link-text')}</a>
-            <p>{t('supporting-seniors.cards.family-and-friends.text')}</p>
-          </div>
-          <div className="flex flex-col border rounded-md shadow-lg p-4">
-            <div className="mx-auto">
-                <Image 
-                    src="/assets/supporting-seniors-representatives.svg"
-                    width={200}
-                    height={300}
-                    style={{ width: 200, height: 300 }}
-                    alt=""
-                />
-            </div>
-            <a href={t('supporting-seniors.cards.representatives.href')} target='_blank' rel="noopener noreferrer">{t('supporting-seniors.cards.representatives.link-text')}</a>
-            <p>{t('supporting-seniors.cards.representatives.text')}</p>
-          </div>
-          <div className="flex flex-col border rounded-md shadow-lg p-4">
-            <div className="mx-auto">
-                <Image 
-                    src="/assets/supporting-seniors-organizations.svg"
-                    width={200}
-                    height={300}
-                    style={{ width: 200, height: 300 }}
-                    alt=""
-                />
-            </div>
-            <a href={t('supporting-seniors.cards.organizations.href')} target='_blank' rel="noopener noreferrer">{t('supporting-seniors.cards.organizations.link-text')}</a>
-            <p>{t('supporting-seniors.cards.organizations.text')}</p>
-          </div>
+          <SupportingSeniorsCard 
+              src="/assets/supporting-seniors-family-and-friends.svg" 
+              href={t('supporting-seniors.cards.family-and-friends.href')} 
+              linkText={t('supporting-seniors.cards.family-and-friends.link-text')}
+              text={t('supporting-seniors.cards.family-and-friends.text')} 
+            />
+            <SupportingSeniorsCard 
+              src="/assets/supporting-seniors-representatives.svg"
+              href={t('supporting-seniors.cards.representatives.href')} 
+              linkText={t('supporting-seniors.cards.representatives.link-text')}
+              text={t('supporting-seniors.cards.representatives.text')} 
+            />
+            <SupportingSeniorsCard 
+              src="/assets/supporting-seniors-organizations.svg"
+              href={t('supporting-seniors.cards.organizations.href')} 
+              linkText={t('supporting-seniors.cards.organizations.link-text')}
+              text={t('supporting-seniors.cards.organizations.text')} 
+            />
         </div>
       </section>
     </Layout>
