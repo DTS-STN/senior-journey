@@ -46,10 +46,12 @@ const Home: FC = () => {
       <section className="flex flex-col p-5 md:p-0 md:relative bg-[#f5f5f5] rounded-2xl">
         <Image
           src="/assets/banner.svg"
-          className="ml-auto w-full pt-5 md:w-1/2"
-          width={0}
-          height={0}
+          className="ml-auto w-full h-full pt-5 md:w-1/2"
+          width={742}
+          height={548}
+          sizes="100%"
           alt=""
+          priority
         />
         <h2 className="text-center md:absolute top-2 left-10 h2 lg:text-4xl xl:text-5xl">
           {t('banner.title')}
