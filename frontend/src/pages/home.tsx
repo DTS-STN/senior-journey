@@ -104,7 +104,7 @@ const Home: FC = () => {
         <div className="text-basic-gray card border border-gray-300 text-gray-900 shadow-sm rounded-md p-4">
           <h3 className="text-xl font-bold border-b pb-2">{t('contact-us.cards.find-office.title')}</h3>
           <p className="pt-3 text-lg">{t('contact-us.cards.find-office.description')}</p>
-          <Link href={t('contact-us.cards.find-office.href')}><p className="text-lg">{t('contact-us.cards.find-office.link-text')}</p></Link>
+          <Link className="text-lg" href={t('contact-us.cards.find-office.href')}>{t('contact-us.cards.find-office.link-text')}</Link>
         </div>
       </section>
     </Layout>
