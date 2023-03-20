@@ -16,18 +16,18 @@ const Home: FC = () => {
       <NextSeo title={t('header')} />
       <h1 className="h1">{t('header')}</h1>
       <p>{t('description')}</p>
-      <h1 className="h1">{t('contact-us')}</h1>
-      <p className="text-black pb-4">{t('contact-desc')}</p>
+      <h2 className="h2">{t('contact-us.title')}</h2>
+      <p className="text-black pb-4">{t('contact-us.description')}</p>
       <div className="text-basic-gray card border border-gray-300 text-gray-900 shadow-sm rounded-md p-4 mb-6">
-        <h2 className="text-xl font-bold border-b pb-2">{t('call-us')}</h2>
-        <p className="pt-3 text-lg">{t('call-us-desc')}</p>
-        <p className="text-lg md:inline"><span className="font-bold">{t('toll-free')}</span> {t('toll-number')}</p>
-        <p className="text-lg md:inline md:ml-10"><span className="font-bold">{t('direct')}</span> {t('direct-number')}</p>
+        <h3 className="text-xl font-bold border-b pb-2">{t('contact-us.cards.call-us.title')}</h3>
+        <p className="pt-3 text-lg">{t('contact-us.cards.call-us.description')}</p>
+        <p className="text-lg md:inline"><span className="font-bold">{t('contact-us.cards.call-us.toll-free')}</span> {t('contact-us.cards.call-us.toll-number')}</p>
+        <p className="text-lg md:inline md:ml-10"><span className="font-bold">{t('direct')}</span> {t('contact-us.cards.call-us.direct-number')}</p>
       </div>
       <div className="text-basic-gray card border border-gray-300 text-gray-900 shadow-sm rounded-md p-4">
-        <h2 className="text-xl font-bold border-b pb-2">{t('find-office')}</h2>
-        <p className="pt-3 text-lg">{t('find-office-desc')}</p>
-        <Link href={t('find-office-url')}><p className="text-lg">{t('find-office-link-text')}</p></Link>
+        <h3 className="text-xl font-bold border-b pb-2">{t('contact-us.cards.find-office.title')}</h3>
+        <p className="pt-3 text-lg">{t('contact-us.cards.find-office.description')}</p>
+        <Link href={t('contact-us.cards.find-office.href')}><p className="text-lg">{t('contact-us.cards.find-office.link-text')}</p></Link>
       </div>
     </Layout>
   )
