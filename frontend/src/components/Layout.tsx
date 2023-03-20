@@ -5,17 +5,25 @@ import { useTranslation } from 'next-i18next'
 import Footer from './Footer'
 import Header from './Header'
 
+type BreadcrumbItemType = {
+  text: string;
+  link: string;
+};
+
 export interface LayoutProps {
   children: ReactNode
+  breadCrumbItems: BreadcrumbItemType[];
 }
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+
+const Layout: FC<LayoutProps> = ({ children, breadCrumbItems }) => {
   const { t } = useTranslation('common')
   return (
     <div className="flex min-h-screen flex-col">
       <Header
         skipToMainText={t('header.skip-to-main')}
         gocLink={t('header.goc-link')}
+        breadCrumbItems={breadCrumbItems}
       />
       <main
         role="main"

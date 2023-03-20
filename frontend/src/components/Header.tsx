@@ -8,13 +8,20 @@ import { useRouter } from 'next/router'
 
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
+import Breadcrumb from './Breadcrumb'
+
+type BreadcrumbItemType = {
+  text: string;
+  link: string;
+};
 
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
+  breadCrumbItems: BreadcrumbItemType[];
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadCrumbItems }) => {
   const config = getConfig()
   const { locale, asPath } = useRouter()
   const { t } = useTranslation('common')
@@ -115,12 +122,10 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
           ]}
         /> */}
 
-        {/* Place Holder for the breadcrumbs
-
         <div className="layout-container my-2">
-          <Breadcrumb items={breadcrumbItems} />
+          <Breadcrumb items={breadCrumbItems} />
         </div>
-        */}
+      
       </header>
     </>
   )
