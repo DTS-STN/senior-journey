@@ -47,13 +47,7 @@
     @apply text-4xl;
     @apply mt-9;
     @apply mb-8;
-  }
-  .h1::after {
-    content: '';
-    display: block;
-    width: 70px;
-    @apply pt-2;
-    border-bottom: 0.18em solid #af3c43;
+    @apply text-aqua-default;
   }
 
   p {

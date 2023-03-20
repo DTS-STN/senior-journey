@@ -1,6 +1,26 @@
 {
   "description": "Description here...",
   "header": "Home",
+  "contact-us":{
+    "title": "Contact Us",
+    "description": "Our call centres and Service Canada Centres operate Monday to Friday, from 8:30 a.m. to 4:00 p.m., your local time. They are closed on statuary holidays.",
+    "cards":{
+      "call-us":{
+        "title": "Call us",
+        "description": "You can reach us at either of the numbers below.",
+        "toll-free": "Toll free:",
+        "direct": "Direct Number:",
+        "toll-number": "1-800-000-000",
+        "direct-number": "1-800-000-000"
+      },
+      "find-office":{
+        "title": "Find an office",
+        "description": "Find a Service Canada Centre near you using the link below.",
+        "link-text": "Find a Service Canada Centre",
+        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp"
+      }
+    }
+  },
   "banner": {
     "title": "Are you ready to retire?",
     "text": "Countless of factors need to be considered to find out when best to retire. Take our quiz to receive personalized information on benefits.",
