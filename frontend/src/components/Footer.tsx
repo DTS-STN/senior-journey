@@ -30,26 +30,26 @@ export interface FooterProps {
   footerLogo: FooterLogo
 
   /**
-   * Screenreader section indicator
+   * Nav Header in the footer
    */
   footerNavHeader: string
 
   /**
-   * Screenreader section indicator
+   * Learning Matierials Header for appropriate menu
    */
   learningMaterialsText: string
 
   /**
-   * array of objects containing the link text and link
+   * array of objects containing the Learning materials link text and link
    */
   learningMaterialsLinks: FooterLink[]
 
   /**
-   * Screenreader section indicator
+   * Menu Header for appropriate menu
    */
   menuText: string
   /**
-   * array of objects containing the link text and link
+   * array of objects containing the Menu link text and link
    */
   menuLinks: FooterLink[]
 
