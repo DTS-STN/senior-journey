@@ -39,6 +39,21 @@ describe('Footer', () => {
             linkText: 'some-link-4',
           },
         ]}
+        learningMaterialsText='learning materials text'
+        learningMaterialsLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
+        menuText='footer.menu-text'
+        menuLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
+        footerTopOfPage='footer.top-of-page'
       />
     )
     const footerLink = screen.getByText('some-link-4')
@@ -63,6 +78,21 @@ describe('Footer', () => {
           },
         ]}
         footerNavHeader="testFooterNavHeader"
+        learningMaterialsText='learning materials text'
+        learningMaterialsLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
+        menuText='footer.menu-text'
+        menuLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
+        footerTopOfPage='footer.top-of-page'
       />
     )
     const results = await axe(container)
