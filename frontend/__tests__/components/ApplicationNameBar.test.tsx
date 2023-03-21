@@ -8,7 +8,7 @@ import ApplicationNameBar from '../../src/components/ApplicationNameBar'
 expect.extend(toHaveNoViolations)
 
 describe('ApplicationNameBar', () => {
-  const sut = <ApplicationNameBar text="Test" href="/somelink" />
+  const sut = <ApplicationNameBar text="Test" href="/somelink" checklist='checklist' checklistUrl='checklist-url' myNotes='my-notes' myNotesUrl='my-notes-url' />
 
   it('renders', () => {
     render(sut)

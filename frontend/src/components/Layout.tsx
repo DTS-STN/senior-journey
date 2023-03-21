@@ -37,18 +37,6 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         footerNavHeader={t('footer.nav-header')}
         links={[
           {
-            link: t('footer.links.social-media-url'),
-            linkText: t('footer.links.social-media'),
-          },
-          {
-            link: t('footer.links.mobile-applications-url'),
-            linkText: t('footer.links.mobile-applications'),
-          },
-          {
-            link: t('footer.links.about-canada-ca-url'),
-            linkText: t('footer.links.about-canada-ca'),
-          },
-          {
             link: t('footer.links.terms-and-condition-url'),
             linkText: t('footer.links.terms-and-condition'),
           },
@@ -57,6 +45,73 @@ const Layout: FC<LayoutProps> = ({ children }) => {
             linkText: t('footer.links.privacy'),
           },
         ]}
+        learningMaterialsText={t('footer.learning-materials-text')}
+        learningMaterialsLinks={[
+          {
+            link: t('footer.learning-materials.ri-url'),
+            linkText: t('footer.learning-materials.ri'),
+          },
+          {
+            link: t('footer.learning-materials.cpp-url'),
+            linkText: t('footer.learning-materials.cpp'),
+          },
+          {
+            link: t('footer.learning-materials.oas-url'),
+            linkText: t('footer.learning-materials.oas'),
+          },
+          {
+            link: t('footer.learning-materials.sfr-url'),
+            linkText: t('footer.learning-materials.sfr'),
+          },
+          {
+            link: t('footer.learning-materials.qual-url'),
+            linkText: t('footer.learning-materials.qual'),
+          },
+          {
+            link: t('footer.learning-materials.con-url'),
+            linkText: t('footer.learning-materials.con'),
+          },
+          {
+            link: t('footer.learning-materials.sit-url'),
+            linkText: t('footer.learning-materials.sit'),
+          },
+          {
+            link: t('footer.learning-materials.when-url'),
+            linkText: t('footer.learning-materials.when'),
+          },
+          {
+            link: t('footer.learning-materials.qualoas-url'),
+            linkText: t('footer.learning-materials.qualoas'),
+          },
+          {
+            link: t('footer.learning-materials.how-url'),
+            linkText: t('footer.learning-materials.how'),
+          },
+        ]}
+        menuText={t('footer.menu-text')}
+        menuLinks={[
+          {
+            link: t('footer.menu.learn-url'),
+            linkText: t('footer.menu.learn'),
+          },
+          {
+            link: t('footer.menu.plan-url'),
+            linkText: t('footer.menu.plan'),
+          },
+          {
+            link: t('footer.menu.app-url'),
+            linkText: t('footer.menu.app'),
+          },
+          {
+            link: t('footer.menu.man-url'),
+            linkText: t('footer.menu.man'),
+          },
+          {
+            link: t('footer.menu.comm-url'),
+            linkText: t('footer.menu.comm'),
+          },
+        ]}
+        footerTopOfPage={t('footer.top-of-page')}
       />
     </div>
   )
