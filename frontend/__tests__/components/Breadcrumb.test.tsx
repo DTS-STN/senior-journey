@@ -4,26 +4,23 @@ import { render, screen } from '@testing-library/react'
 import { axe, toHaveNoViolations } from 'jest-axe'
 import { useRouter } from 'next/router';
 
-// Mock useRouter hook
+// Move useRouter mock to global scope
 jest.mock('next/router', () => ({
-  useRouter: jest.fn().mockReturnValue({
-    pathname: '/home',
-    asPath: '/home',
-  }),
+  useRouter: jest.fn(),
 }));
 
+// Apply useRouter mock to all tests
+const useRouterMock = useRouter as jest.Mock<any>;
+useRouterMock.mockReturnValue({
+  pathname: '/home',
+  asPath: '/home',
+});
 
 import Breadcrumb from '../../src/components/Breadcrumb'
 
 expect.extend(toHaveNoViolations)
 
 describe('Breadcrumb', () => {
-
-  const useRouterMock = useRouter as jest.Mock<any>;
-
-  beforeEach(() => {
-    useRouterMock.mockClear();
-  });
 
   const sut = <Breadcrumb />
 
