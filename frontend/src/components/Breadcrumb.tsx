@@ -52,7 +52,7 @@ const Breadcrumb: FC = () => {
           href={t('header.goc-link')}
           className="font-body hover:text-blue-hover text-blue-link underline"
           >
-          {t('goc-site')}
+          Canada.ca
           </Link>
           {breadcrumbs.length > 0 && (
             <span className="mx-2 inline-block align-middle text-blue-link pr-2 pl-2">{'>'}</span>
