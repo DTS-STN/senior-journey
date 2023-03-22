@@ -10,18 +10,12 @@ import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
 import Breadcrumb from './Breadcrumb'
 
-type BreadcrumbItemType = {
-  text: string;
-  link: string;
-};
-
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
-  breadCrumbItems: BreadcrumbItemType[];
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadCrumbItems }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
   const config = getConfig()
   const { locale, asPath } = useRouter()
   const { t } = useTranslation('common')
@@ -123,7 +117,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadCrumbItems }) =
         /> */}
 
         <div className="layout-container my-2">
-          <Breadcrumb items={breadCrumbItems} />
+          <Breadcrumb />
         </div>
       
       </header>

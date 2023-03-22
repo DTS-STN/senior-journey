@@ -19,34 +19,9 @@ const Learn: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
 
-  const breadCrumbItems = (locale === 'en' ?
-  [
-      {
-        "text": "Home",
-        "link": "/home"
-      },
-      {
-        "text": "Learn",
-        "link": "/learn"
-      }
-  ]
-  :
-  [
-      {
-        "text": "(FR)Home",
-        "link": "/home"
-      },
-      {
-        "text": "(FR)Learn",
-        "link": "/learn"
-      }
-  ] 
-  )
-
   return{
     props: {
       ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'])),
-      breadCrumbItems: breadCrumbItems
     }
   }
 }

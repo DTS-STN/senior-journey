@@ -1,23 +1,65 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next'
 
 type BreadcrumbItemType = {
     text: string;
     link: string;
   };
 
-export interface BreadcrumbProps {
-    id?: string;
-    items?: BreadcrumbItemType[];
-}
+const Breadcrumb: FC = () => {
 
-const Breadcrumb: FC<BreadcrumbProps> = ({ id, items }) => {
+  const { t } = useTranslation('common')
+  const router = useRouter();
+  const [breadcrumbs, setBreadcrumbs] = useState<Array<BreadcrumbItemType> | null>(
+    null
+  );
+
+  useEffect(() => {
+    if (router) {
+      const linkPath = router.asPath.split('/');
+      linkPath.shift();
+
+      linkPath.pop();
+      const pathArray = linkPath.map((path, i) => {
+        const formattedPath = path.charAt(0).toUpperCase() + path.slice(1)
+        .split("-")
+        .join(" ");
+        return {
+          text: formattedPath,
+          link: '/' + linkPath.slice(0, i + 1).join('/'),
+        };
+      });
+
+      setBreadcrumbs(pathArray);
+    }
+  }, [router]);
+
+  if (!breadcrumbs) {
+    return null;
+  } 
+
   return (
     <section className="container mx-auto p-4">
-    <nav aria-label="breadcrumbs" id={id}>
+    <nav aria-label="breadcrumbs">
       <ul className="block text-blue-link font-body">
-        {items
-          ? items.map((item, index) => {
+      <li
+        key={`list-canada`}
+        className={`inline-block w-100 pb-4 sm:pb-0`}
+        >
+          <Link
+          href={t('header.goc-link')}
+          className="font-body hover:text-blue-hover text-blue-link underline"
+          >
+          {t('goc-site')}
+          </Link>
+          {breadcrumbs.length > 0 && (
+            <span className="mx-2 inline-block align-middle text-blue-link pr-2 pl-2">{'>'}</span>
+          )}
+      </li>
+        {breadcrumbs
+          && breadcrumbs.map((item, index) => {
               return (
                 <li
                   key={`list-${index}`}
@@ -25,17 +67,17 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ id, items }) => {
                 >
                   <Link
                     href={item.link}
-                    className="font-body hover:text-canada-footer-hover-font-blue text-blue-link underline"
+                    className="font-body hover:text-blue-hover text-blue-link underline"
                   >
                     {item.text}
                   </Link>
-                  {index < items.length - 1 && (
+                  {index < breadcrumbs.length - 1 && (
                     <span className="mx-2 inline-block align-middle text-blue-link pr-2 pl-2">{'>'}</span>
                   )}
                 </li>
               );
             })
-          : null}
+            }
       </ul>
     </nav>
 </section>

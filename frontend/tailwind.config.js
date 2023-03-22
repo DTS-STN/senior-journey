@@ -43,6 +43,7 @@ module.exports = {
           deep: '#2e5274',
           active: '#16446c',
           link: '#284162',
+          hover: '#0535D2',
         },
         gray: {
           light: '#e1e4e7',

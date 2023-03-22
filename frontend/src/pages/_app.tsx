@@ -71,11 +71,13 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 
       <DefaultSeo {...nextSEOConfig} />
       <QueryClientProvider client={queryClient}>
-        <Layout
-        breadCrumbItems={pageProps.breadCrumbItems}
-        >
-        <Component {...pageProps} />
-        </Layout>
+      {router.pathname === '/' ? (
+          <Component {...pageProps} />
+        ) : (
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        )}
       </QueryClientProvider>
     </>
   )

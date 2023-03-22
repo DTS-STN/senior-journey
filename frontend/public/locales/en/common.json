@@ -65,6 +65,7 @@
   "found-errors_other": "The following {{count}} errors were found in the form:",
   "francais": "Français",
   "goc": "Government of Canada",
+  "goc-site": "Canada.ca",
   "header": {
     "goc-link": "https://www.canada.ca/en.html",
     "skip-to-main": "Skip to main content"

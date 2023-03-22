@@ -65,6 +65,7 @@
   "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00A0:",
   "francais": "Français",
   "goc": "Governement du Canada",
+  "goc-site": "Canada.ca",
   "header": {
     "goc-link": "https://www.canada.ca/fr.html",
     "skip-to-main": "Passer au contenu principal"
