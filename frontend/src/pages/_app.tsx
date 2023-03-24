@@ -11,6 +11,7 @@ import Script from 'next/script'
 import { AppWindow } from '../lib/types'
 import { getNextSEOConfig } from '../next-seo.config'
 import '../styles/globals.css'
+import { createCounter } from '../utils/metrics'
 
 // Create a react-query client
 const queryClient = new QueryClient({
@@ -20,6 +21,8 @@ const queryClient = new QueryClient({
 // help to prevent double firing of adobe analytics pageLoad event
 let appPreviousLocationPathname = ''
 
+const requestCounter = createCounter('senior-journey.requests.count')
+
 const MyApp = ({ Component, pageProps, router }: AppProps) => {
   const config = getConfig()
   const adobeAnalyticsScriptSrc =
@@ -27,9 +30,11 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
   const appBaseUri = config?.publicRuntimeConfig?.appBaseUri
   const nextSEOConfig = getNextSEOConfig(appBaseUri, router)
 
-  /** Web Analytics - taken from Google Analytics example
-   *  @see https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics
-   * */
+  // XXX :: GjB :: this is just a sample metric!
+  requestCounter.add(1)
+
+  // Web Analytics - taken from Google Analytics example
+  // @see https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics
   useEffect(() => {
     const handleRouteChange = () => {
       // only push event if pathname is different
