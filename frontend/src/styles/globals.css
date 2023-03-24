@@ -45,7 +45,6 @@
     @apply font-bold;
     @apply font-display;
     @apply text-4xl;
-    @apply mt-9;
     @apply mb-8;
     @apply text-aqua-default;
   }

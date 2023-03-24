@@ -7,8 +7,6 @@ import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import Layout from '../components/Layout'
-
 
 export interface SupportingSeniorsCardProps {
   src: string,
@@ -22,7 +20,7 @@ return (
   <div className="flex flex-col border rounded-md shadow-lg p-4">
 
       <div className="h-[300px] mx-auto">
-          <Image 
+          <Image
               src={src}
               width={200}
               height={300}
@@ -39,7 +37,7 @@ const Home: FC = () => {
   const { t } = useTranslation('home')
 
   return (
-    <Layout>
+    <div>
       <NextSeo title={t('header')} />
       <h1 className="h1">{t('header')}</h1>
       <p>{t('description')}</p>
@@ -107,7 +105,7 @@ const Home: FC = () => {
           <Link className="text-lg" href={t('contact-us.cards.find-office.href')}>{t('contact-us.cards.find-office.link-text')}</Link>
         </div>
       </section>
-    </Layout>
+    </div>
   )
 }
 

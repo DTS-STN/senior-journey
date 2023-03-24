@@ -9,6 +9,7 @@ export interface LayoutProps {
   children: ReactNode
 }
 
+
 const Layout: FC<LayoutProps> = ({ children }) => {
   const { t } = useTranslation('common')
   return (
