@@ -50,7 +50,6 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
             </div>
           </div>
         </div>
-        <div>Breadcrumb</div>
       </section>
     </div>
   )
