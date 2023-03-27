@@ -75,6 +75,7 @@ COPY --chown=node:node --from=builder /home/node/public ./public
 COPY --chown=node:node --from=builder /home/node/.next ./.next
 COPY --chown=node:node --from=builder /home/node/next.config.js ./next.config.js
 COPY --chown=node:node --from=builder /home/node/next-i18next.config.js ./next-i18next.config.js
+COPY --chown=node:node --from=builder /home/node/open-telemetry.config.js ./open-telemetry.config.js
 COPY --chown=node:node --from=builder /home/node/package*.json ./
 
 USER node
