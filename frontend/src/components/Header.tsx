@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
-import Breadcrumb from './Breadcrumb'
 
 export interface HeaderProps {
   gocLink: string
@@ -115,10 +114,6 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
             },
           ]}
         /> */}
-
-        <div className="layout-container my-2">
-          <Breadcrumb />
-        </div>
       
       </header>
     </>

@@ -98,7 +98,7 @@ const Home: FC = () => {
           <p className="text-lg md:inline md:ml-10"><span className="font-bold">{t('contact-us.cards.call-us.direct')}</span> {t('contact-us.cards.call-us.direct-number')}</p>
         </div>
         <div className="card border border-gray-300 shadow-sm rounded-md p-4">
-          <h3 className="text-xl font-bold border-b pb-2">{t('contact-us.cards.find-office.title')} adfasdfad</h3>
+          <h3 className="text-xl font-bold border-b pb-2">{t('contact-us.cards.find-office.title')}</h3>
           <p className="pt-3 text-lg">{t('contact-us.cards.find-office.description')}</p>
           <Link className="text-lg" href={t('contact-us.cards.find-office.href')}>{t('contact-us.cards.find-office.link-text')}</Link>
         </div>
