@@ -2,7 +2,7 @@ import Link from "next/link"
 import { FC, useState } from "react"
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md'
 
-interface linkArray {
+interface TabcordianLink {
     title: string
     url: string
     description: string
@@ -12,7 +12,7 @@ interface TabcordianData {
     title: string
     description: Array<string>
     linksTitle: string
-    links: Array<linkArray>
+    links: Array<TabcordianLink>
 }
 
 export interface TabcordianProps {
