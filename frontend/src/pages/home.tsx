@@ -7,6 +7,8 @@ import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import Tabcordian from 'src/components/Tabcordian'
+
 export interface SupportingSeniorsCardProps {
   src: string,
   href: string,
@@ -33,12 +35,10 @@ const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({src, href, linkT
 
 const Home: FC = () => {
   const { t } = useTranslation('home')
-
+  
   return (
     <div>
       <NextSeo title={t('header')} />
-      <h1 className="h1">{t('header')}</h1>
-      <p>{t('description')}</p>
 
       <section className="flex flex-col p-5 md:p-0 md:relative bg-[#f5f5f5] rounded-2xl">
         <Image
@@ -62,6 +62,10 @@ const Home: FC = () => {
         >
           {t('banner.quiz')}
         </a>
+      </section>
+
+      <section >
+        <Tabcordian data={ t('tabs', {returnObjects: true}) }/>
       </section>
 
       <section>
