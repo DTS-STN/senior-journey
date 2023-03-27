@@ -1,5 +1,5 @@
 import { FC } from 'react'
-
+import Breadcrumb from './Breadcrumb'
 import Link from 'next/link'
 
 export interface ApplicationNameBarProps {
@@ -20,7 +20,7 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
             <h2 className='h4 md:text-[22px]'>
               <Link
                 href={href}
-                className="font-body md:text-[22px] text-lg font-bold text-black hover:underline"
+                className="font-body md:text-[22px] text-lg font-bold hover:underline"
                 >
                 {text}
               </Link>
@@ -50,6 +50,7 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
             </div>
           </div>
         </div>
+        <Breadcrumb />
       </section>
     </div>
   )

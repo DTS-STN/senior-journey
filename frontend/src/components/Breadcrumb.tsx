@@ -41,7 +41,7 @@ const Breadcrumb: FC = () => {
   } 
 
   return (
-    <section className="container mx-auto p-4">
+    <section className="container mx-auto pt-1">
     <nav aria-label="breadcrumbs">
       <ul className="block text-blue-link font-body">
       <li
