@@ -7,6 +7,8 @@ import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import Tabcordian from 'src/components/Tabcordian'
+
 export interface SupportingSeniorsCardProps {
   src: string,
   href: string,
@@ -33,12 +35,10 @@ const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({src, href, linkT
 
 const Home: FC = () => {
   const { t } = useTranslation('home')
-
+  
   return (
     <div>
       <NextSeo title={t('header')} />
-      <h1 className="h1">{t('header')}</h1>
-      <p>{t('description')}</p>
 
       <section className="flex flex-col p-5 md:p-0 md:relative bg-[#f5f5f5] rounded-2xl">
         <Image
@@ -62,6 +62,10 @@ const Home: FC = () => {
         >
           {t('banner.quiz')}
         </a>
+      </section>
+
+      <section >
+        <Tabcordian data={ t('tabs', {returnObjects: true}) }/>
       </section>
 
       <section>
@@ -98,7 +102,7 @@ const Home: FC = () => {
           <p className="text-lg md:inline md:ml-10"><span className="font-bold">{t('contact-us.cards.call-us.direct')}</span> {t('contact-us.cards.call-us.direct-number')}</p>
         </div>
         <div className="card border border-gray-300 shadow-sm rounded-md p-4">
-          <h3 className="text-xl font-bold border-b pb-2">{t('contact-us.cards.find-office.title')}</h3>
+          <h3 className="text-xl font-bold border-b pb-2">{t('contact-us.cards.find-office.title')} adfasdfad</h3>
           <p className="pt-3 text-lg">{t('contact-us.cards.find-office.description')}</p>
           <Link className="text-lg" href={t('contact-us.cards.find-office.href')}>{t('contact-us.cards.find-office.link-text')}</Link>
         </div>

@@ -18,6 +18,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
     "@opentelemetry/api": "^1.4.0",
     "@opentelemetry/exporter-metrics-otlp-proto": "^0.36.0",
     "@opentelemetry/exporter-trace-otlp-proto": "^0.36.0",
@@ -37,6 +38,7 @@
     "react-dom": "18.2.0",
     "react-focus-on": "^3.7.0",
     "react-i18next": "^12.2.0",
+    "react-icons": "^4.8.0",
     "react-idle-timer": "^5.5.3",
     "sharp": "^0.31.3",
     "yup": "^1.0.2"

@@ -26,6 +26,133 @@
     "text": "FR Countless of factors need to be considered to find out when best to retire. Take our quiz to receive personalized information on benefits.",
     "quiz": "FR Take the quiz now!"
   },
+  "tabs": [
+    {
+      "title": "Learn (FR)",
+      "description": [
+        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
+        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
+      ],
+      "linksTitle": "Top Learning Links (FR)",
+      "links": [
+        {
+          "title": "Government Benefits 101 (FR)",
+          "url": "test-fr",
+          "description": "(FR) Learn about CPP/QPP and OAS"
+        },
+        {
+          "title": "Sources of retirement income (FR)",
+          "url": "test2-fr",
+          "description": "(FR) Your income during retirement will typically come from three main sources"
+        },
+        {
+          "title": "Financial Support (FR)",
+          "url": "test3-fr",
+          "description": "(FR) Learn about your different financial support options."
+        }
+      ]
+    },
+    {
+      "title": "Plan (FR)",
+      "description": [
+        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
+        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
+      ],
+      "linksTitle": "Top Learning Links (FR)",
+      "links": [
+        {
+          "title": "Government Benefits 101 (FR)",
+          "url": "test-fr",
+          "description": "(FR) Learn about CPP/QPP and OAS"
+        },
+        {
+          "title": "Sources of retirement income (FR)",
+          "url": "test2-fr",
+          "description": "(FR) Your income during retirement will typically come from three main sources"
+        },
+        {
+          "title": "Financial Support (FR)",
+          "url": "test3-fr",
+          "description": "(FR) Learn about your different financial support options."
+        }
+      ]
+    },
+    {
+      "title": "Apply (FR)",
+      "description": [
+        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
+        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
+      ],
+      "linksTitle": "Top Learning Links (FR)",
+      "links": [
+        {
+          "title": "Government Benefits 101 (FR)",
+          "url": "test-fr",
+          "description": "(FR) Learn about CPP/QPP and OAS"
+        },
+        {
+          "title": "Sources of retirement income (FR)",
+          "url": "test2-fr",
+          "description": "(FR) Your income during retirement will typically come from three main sources"
+        },
+        {
+          "title": "Financial Support (FR)",
+          "url": "test3-fr",
+          "description": "(FR) Learn about your different financial support options."
+        }
+      ]
+    },
+    {
+      "title": "Manage (FR)",
+      "description": [
+        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
+        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
+      ],
+      "linksTitle": "Top Learning Links (FR)",
+      "links": [
+        {
+          "title": "Government Benefits 101 (FR)",
+          "url": "test-fr",
+          "description": "(FR) Learn about CPP/QPP and OAS"
+        },
+        {
+          "title": "Sources of retirement income (FR)",
+          "url": "test2-fr",
+          "description": "(FR) Your income during retirement will typically come from three main sources"
+        },
+        {
+          "title": "Financial Support (FR)",
+          "url": "test3-fr",
+          "description": "(FR) Learn about your different financial support options."
+        }
+      ]
+    },
+    {
+      "title": "Community Resources (FR)",
+      "description": [
+        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
+        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
+      ],
+      "linksTitle": "Top Learning Links (FR)",
+      "links": [
+        {
+          "title": "Government Benefits 101 (FR)",
+          "url": "test-fr",
+          "description": "(FR) Learn about CPP/QPP and OAS"
+        },
+        {
+          "title": "Sources of retirement income (FR)",
+          "url": "test2-fr",
+          "description": "(FR) Your income during retirement will typically come from three main sources"
+        },
+        {
+          "title": "Financial Support (FR)",
+          "url": "test3-fr",
+          "description": "(FR) Learn about your different financial support options."
+        }
+      ]
+    }
+  ],
   "supporting-seniors": {
     "title": "FR Supporting Seniors",
     "cards": {
