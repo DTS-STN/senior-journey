@@ -14,6 +14,11 @@ spec:
       containers:
         - name: seniors-journey-frontend
           env:
+            - name: OTEL_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_API_KEY
             - name: OTEL_METRICS_ENDPOINT
               valueFrom:
                 configMapKeyRef:
