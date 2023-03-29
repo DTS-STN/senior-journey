@@ -22,7 +22,7 @@ const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({
   text,
 }) => {
   return (
-    <div className="flex flex-col rounded-md border p-4 elevation-1">
+    <div className="flex flex-col rounded-md p-4 elevation-1">
       <div className="mx-auto h-[300px]">
         <Image src={src} width={200} height={300} alt="" />
       </div>
@@ -42,27 +42,25 @@ const Home: FC = () => {
       <NextSeo title={t('header')} />
 
       <section className="flex flex-col rounded-2xl bg-[#f5f5f5] p-5 md:relative md:p-0">
-        <Image
-          src="/assets/banner.svg"
-          className="ml-auto h-full w-full pt-5 md:w-1/2"
-          width={742}
-          height={548}
-          sizes="100%"
-          alt=""
-          priority
-        />
-        <h2 className="h2 left-10 top-2 text-center md:absolute lg:text-4xl xl:text-5xl">
-          {t('banner.title')}
-        </h2>
-        <p className="left-10 top-24 text-center text-sm font-bold md:absolute md:w-1/2 md:text-left lg:text-2xl xl:top-32">
-          {t('banner.text')}
-        </p>
-        <a
-          href="#"
-          className="mx-auto w-1/2 rounded-full bg-[#d77011] py-4 text-center text-sm text-white no-underline decoration-white elevation-2 visited:text-white visited:decoration-white hover:bg-orange-800 hover:text-white focus:bg-orange-800 focus:text-white active:elevation-8 md:absolute md:bottom-10 md:left-60 md:w-auto md:px-8 lg:left-[300px] lg:py-8 lg:text-xl xl:bottom-16"
-        >
-          {t('banner.quiz')}
-        </a>
+        <div className="md:w-1/3">
+          <Image
+            src="/assets/banner.svg"
+            className="mx-auto h-full w-full pt-5"
+            width={742}
+            height={548}
+            sizes="100%"
+            alt=""
+            priority
+          />
+        </div>
+        <div className="pl-12 md:w-2/3">
+          <h2 className="h2 mt-4 pb-6 text-left lg:text-4xl xl:text-6xl">
+            {t('banner.title')}
+          </h2>
+          <p className="pb-2 text-left text-sm font-normal md:w-4/5 lg:text-lg">
+            {t('banner.text')}
+          </p>
+        </div>
       </section>
 
       <section>
@@ -70,7 +68,7 @@ const Home: FC = () => {
       </section>
 
       <section>
-        <h2 className="h2">{t('supporting-seniors.title')}</h2>
+        <h2 className="h2 pb-8">{t('supporting-seniors.title')}</h2>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           <SupportingSeniorsCard
             src="/assets/supporting-seniors-family-and-friends.svg"
@@ -94,11 +92,10 @@ const Home: FC = () => {
           />
         </div>
       </section>
-
-      <section>
+      <section className="py-8">
         <h2 className="h2">{t('contact-us.title')}</h2>
         <p className="pb-4">{t('contact-us.description')}</p>
-        <div className="card mb-6 rounded-md border border-gray-300 p-4">
+        <div className="mb-6 rounded-lg border p-4">
           <h3 className="border-b pb-2 text-xl font-bold">
             {t('contact-us.cards.call-us.title')}
           </h3>
@@ -118,7 +115,7 @@ const Home: FC = () => {
             {t('contact-us.cards.call-us.direct-number')}
           </p>
         </div>
-        <div className="card rounded-md border border-gray-300 p-4">
+        <div className="rounded-lg border p-4">
           <h3 className="border-b pb-2 text-xl font-bold">
             {t('contact-us.cards.find-office.title')}
           </h3>

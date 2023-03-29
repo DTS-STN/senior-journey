@@ -37,8 +37,6 @@
     @apply font-bold;
     @apply font-display;
     @apply text-3xl;
-    @apply mt-8;
-    @apply mb-3;
   }
 
   .h1 {

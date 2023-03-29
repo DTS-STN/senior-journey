@@ -82,20 +82,19 @@ const Footer: FC<FooterProps> = ({
 
   return (
     <footer>
-      <div className='wl-full h-auto text-white bg-blue-dark'>
-        <div className='container mx-auto py-2 px-4'>
+      <div className='wl-full h-auto text-white bg-blue-dark mt-2'>
+        <div className='container mx-auto py-8 px-4'>
           <h2 className='md:text-[16px] font-bold text-center md:text-start md:flex-row'>
             {footerHeader}
           </h2>
           
           <div className='flex flex-col justify-between items-start md:items-start md:flex-row '>
             <div className='grow'>
-              <h2 className='h4 md:text-[22px] py-2'>{learningMaterialsText}</h2>
+              <h2 className='h4 md:text-[22px] py-7'>{learningMaterialsText}</h2>
               <ul className='md:columns-2 col-span-2'>
                 {learningMaterialsLinks.map(({ link, linkText }) => (
-                    <li key={link}>
+                    <li key={link} className='py-2'>
                       <Link
-                      className='underline'
                       href={link}
                       >
                         {linkText}
@@ -109,9 +108,8 @@ const Footer: FC<FooterProps> = ({
               <h2 className='h4 md:text-[22px] py-3.5 md:py-0'>{menuText}</h2>
               <ul className='py-3.5 pb-10 md:py-4 md:pb-0'>
                 {menuLinks.map(({ link, linkText }) => (
-                    <li key={link}>
+                    <li key={link} className='py-2'>
                       <Link
-                      className='underline'
                       href={link}
                       >
                         {linkText}
