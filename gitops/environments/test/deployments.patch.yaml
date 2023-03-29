@@ -12,7 +12,7 @@ spec:
         app.kubernetes.io/name: seniors-journey-frontend
     spec:
       containers:
-        - name: seniors-journey-frontend # make sure we keep the existing deployment
+        - name: seniors-journey-frontend
           image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230327-0039-6a871968
           env:
             - name: OTEL_API_KEY

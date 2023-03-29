@@ -20,7 +20,9 @@ configMapGenerator:
     options:
       labels:
         app.kubernetes.io/name: seniors-journey-frontend
-    literals: [] # placeholder for future config; see: https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/configmapgenerator/
+    literals:
+      - OTEL_METRICS_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/metrics
+      - OTEL_TRACES_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/traces
   - name: seniors-journey-frontend-auth
     options:
       labels:
