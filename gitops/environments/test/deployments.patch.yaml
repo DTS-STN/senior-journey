@@ -13,7 +13,23 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend # make sure we keep the existing deployment
-          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230313-0022-85a58df6
+          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230327-0039-6a871968
+          env:
+            - name: OTEL_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_API_KEY
+            - name: OTEL_METRICS_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_METRICS_ENDPOINT
+            - name: OTEL_TRACES_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_TRACES_ENDPOINT
         - name: oauth-proxy
           image: quay.io/oauth2-proxy/oauth2-proxy:v7.4.0
           args:
