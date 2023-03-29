@@ -12,7 +12,18 @@ spec:
         app.kubernetes.io/name: seniors-journey-frontend
     spec:
       containers:
-        - name: seniors-journey-frontend # make sure we keep the existing deployment
+        - name: seniors-journey-frontend
+          env:
+            - name: OTEL_METRICS_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_METRICS_ENDPOINT
+            - name: OTEL_TRACES_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_TRACES_ENDPOINT
         - name: oauth-proxy
           image: quay.io/oauth2-proxy/oauth2-proxy:v7.4.0
           args:
