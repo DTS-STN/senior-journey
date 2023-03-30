@@ -20,6 +20,11 @@ spec:
                 secretKeyRef:
                   name: seniors-journey-frontend
                   key: OTEL_API_KEY
+            - name: OTEL_ENVIRONMENT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_ENVIRONMENT
             - name: OTEL_METRICS_ENDPOINT
               valueFrom:
                 configMapKeyRef:
