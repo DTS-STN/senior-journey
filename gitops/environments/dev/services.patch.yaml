@@ -6,6 +6,6 @@ spec:
   ports:
     - name: http
       port: 80
-      targetPort: http # TODO :: GjB :: replace with `oauth-proxy` once ready
+      targetPort: oauth-proxy
   selector:
     app.kubernetes.io/name: seniors-journey-frontend
