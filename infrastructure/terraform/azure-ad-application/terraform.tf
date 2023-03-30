@@ -45,6 +45,19 @@ resource "azuread_application" "main" {
 
   api {
     requested_access_token_version = 2
+
+    dynamic "oauth2_permission_scope" {
+      for_each = var.application_oauth2_permission_scopes
+
+      content {
+        id                         = oauth2_permission_scope.value.id
+        admin_consent_description  = oauth2_permission_scope.value.admin_consent_description
+        admin_consent_display_name = oauth2_permission_scope.value.admin_consent_display_name
+        user_consent_description   = oauth2_permission_scope.value.user_consent_description
+        user_consent_display_name  = oauth2_permission_scope.value.user_consent_display_name
+        value                      = oauth2_permission_scope.value.value
+      }
+    }
   }
 
   web {

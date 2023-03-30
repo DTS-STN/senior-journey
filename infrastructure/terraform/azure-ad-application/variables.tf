@@ -14,6 +14,19 @@ variable "application_identifier_uris" {
   type        = set(string)
 }
 
+variable "application_oauth2_permission_scopes" {
+  description = "Zero or more oauth2_permission_scopes used to describe delegated permissions exposed by the web API represented by this application."
+  type        = set(object({
+    id                         = string # The unique identifier of the delegated permission. Must be a valid UUID.
+    admin_consent_display_name = string # Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users.
+    admin_consent_description  = string # Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users.
+    user_consent_display_name  = string # Display name for the delegated permission that appears in the end user consent experience.
+    user_consent_description   = string # Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf.
+    value                      = string # The value that is used for the scp claim in OAuth 2.0 access tokens.
+  }))
+  default = []
+}
+
 variable "application_passwords" {
   description = "The set of password credentials (ie: client secrets) associated with this AAD application."
   type        = set(string)
