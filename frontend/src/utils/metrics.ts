@@ -1,20 +1,24 @@
 import { MetricOptions, metrics } from '@opentelemetry/api'
+import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions'
 
-const METER_NAME = 'seniors-journey'
+const globalOptions = { [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: process.env.OTEL_ENVIRONMENT ?? 'local' }
+const meterName = process.env.OTEL_SERVICE_NAME ?? 'seniors-journey'
+const version = process.env.BUILD_VERSION ?? '00000000-0000-00000000'
+
 
 /**
  * Creates a new `Counter` metric. Generally, use this kind of metric when the value is a quantity, the sum is of
  * primary interest, and the event count and value distribution are not of primary interest.
  */
-export function createCounter(name: string, options?: MetricOptions) {
-  return metrics.getMeter(METER_NAME).createCounter(name, options)
+export function createCounter(name: string, attributes?: MetricOptions, options?: MetricOptions) {
+  return metrics.getMeter(meterName, version).createCounter(name, { ...globalOptions, ...options })
 }
 
 /**
  * Creates and returns a new `Histogram`.
  */
 export function createHistogram(name: string, options?: MetricOptions) {
-  return metrics.getMeter(METER_NAME).createHistogram(name, options)
+  return metrics.getMeter(meterName, version).createHistogram(name, { ...globalOptions, ...options })
 }
 
 /**
@@ -31,5 +35,5 @@ export function createHistogram(name: string, options?: MetricOptions) {
  * </ol>
  */
 export function createUpDownCounter(name: string, options?: MetricOptions) {
-  return metrics.getMeter(METER_NAME).createUpDownCounter(name, options)
+  return metrics.getMeter(meterName, version).createUpDownCounter(name, { ...globalOptions, ...options })
 }

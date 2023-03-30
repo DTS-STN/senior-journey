@@ -120,7 +120,13 @@ new NodeSDK({
     exportTimeoutMillis: getMetricTimeout()
   }),
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: 'seniors-journey',
+    // Note: any attributes added here must be configured in Dynatrace under
+    // Settings → Metrics → OpenTelemetry metrics → Allow list: resource and scope attributes
+    //
+    // see: node_modules/@opentelemetry/semantic-conventions/build/src/resource/SemanticResourceAttributes.js
+    // see: node_modules/@opentelemetry/semantic-conventions/build/src/trace/SemanticResourceAttributes.js
+    [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: process.env.OTEL_ENVIRONMENT ?? 'local',
+    [SemanticResourceAttributes.SERVICE_NAME]: process.env.OTEL_SERVICE_NAME ?? 'seniors-journey',
     [SemanticResourceAttributes.SERVICE_VERSION]: process.env.BUILD_VERSION ?? '00000000-0000-00000000'
   }),
   resourceDetectors: [envDetector, hostDetector, osDetector, processDetector],
