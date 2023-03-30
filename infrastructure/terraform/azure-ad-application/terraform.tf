@@ -43,6 +43,10 @@ resource "azuread_application" "main" {
   logo_image      = filebase64("assets/logo.png")
   owners          = data.azuread_users.owners.object_ids
 
+  api {
+    requested_access_token_version = 2
+  }
+
   web {
     redirect_uris = var.application_web_redirect_uris
   }
