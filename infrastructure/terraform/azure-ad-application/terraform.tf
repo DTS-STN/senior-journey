@@ -44,6 +44,7 @@ resource "azuread_application" "main" {
   owners          = data.azuread_users.owners.object_ids
 
   api {
+    mapped_claims_enabled = true
     requested_access_token_version = 2
 
     dynamic "oauth2_permission_scope" {
