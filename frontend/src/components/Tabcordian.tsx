@@ -51,7 +51,7 @@ const Tabcordian: FC<TabcordianProps> = ({
                 ))}
             </div>
             
-            <div className="px-7 py-6 md:px-12 lg:px-24 md:relative bg-[#f5f5f5] rounded-2xl md:-mt-6 md:py-16">
+            <div className="px-7 py-6 md:px-12 lg:px-24 md:relative md:bg-[#f5f5f5] rounded-2xl md:-mt-6 md:py-16">
                 {data.map((item, i) => (
                     <div key={item.title} >
                         <div
