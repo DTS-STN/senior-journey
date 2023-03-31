@@ -39,11 +39,11 @@ const Tabcordian: FC<TabcordianProps> = ({
 
     return (
         <div className="flex flex-col md:my-16">
-            <div className="hidden md:flex md:mx-4 lg:mx-16 md:justify-between md:px-6 lg:px-14 md:space-x-4 lg:space-x-6 rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.12)] md:z-20 bg-white">
+            <div className="hidden md:flex md:mx-4 lg:mx-16 justify-between md:px-6 lg:px-14 md:space-x-4 lg:space-x-6 rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.12)] z-20 bg-white">
                 {data.map((item, i) => (
                 <button
                 key={item.title}
-                className={"h4 rounded-xl md:p-6 lg:p-8 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"+ ((active === i || (active === null && i === 0)) ? ' text-white bg-blue-dark' : '')}
+                className={"h4 rounded-xl md:p-6 lg:p-8 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between" + ((active ?? 0) === i ? ' text-white bg-blue-dark' : '')}
                 onClick={() => toggleTabs(i)}
                 >
                 {item.title}
