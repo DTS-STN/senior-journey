@@ -23,8 +23,8 @@ const Learn: FC = () => {
 
           </div>
         </div>
-        <div className="w-full flex justify-center relative md:bottom-2 lg:bottom-6 xl:bottom-14 md:-mt-8">
-        <Link href="#" className="w-full mx-4 mb-4 shadow-xl text-sm text-center mx-auto md:w-auto lg:text-xl 
+        <div className="w-full flex justify-center relative lg:bottom-6 xl:bottom-14 md:-mt-8">
+        <Link href="#" className="w-full mx-6 mb-4 shadow-xl text-sm text-center mx-auto md:w-auto lg:text-xl
             bg-[#d77011] rounded-full text-white decoration-white no-underline px-8 py-4 
             hover:bg-orange-800 visited:text-white visited:decoration-white">
               {t('banner.quiz')}
