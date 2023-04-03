@@ -31,6 +31,7 @@ const nextConfig = {
   generateBuildId: async () => (process.env.BUILD_ID ?? '0000'),
   headers: async () => ([{ source: '/:path*', headers: securityHeaders }]),
   i18n: { ...i18n, localeDetection: false },
+  poweredByHeader: false,
   publicRuntimeConfig: {
     adobeAnalyticsScriptSrc: process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC ?? undefined,
     appBaseUri: process.env.NEXT_PUBLIC_APP_BASE_URI ?? '',
