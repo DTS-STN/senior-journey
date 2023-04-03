@@ -28,15 +28,17 @@
   }
 
   .h3 {
-    @apply font-bold;
+    @apply font-light;
     @apply font-display;
     @apply text-2xl;
+    @apply my-4;
   }
 
   .h2 {
-    @apply font-bold;
     @apply font-display;
-    @apply text-3xl;
+    @apply text-4xl;
+    @apply mt-10;
+    @apply mb-4;
   }
 
   .h1 {
@@ -48,12 +50,9 @@
   }
 
   p {
-    @apply mb-3;
+    @apply mb-4;
   }
 
-  main {
-    @apply text-xl;
-  }
   main a {
     @apply text-link-default;
     @apply underline;
