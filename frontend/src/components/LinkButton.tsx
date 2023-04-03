@@ -40,7 +40,7 @@ const LinkButton: FC<LinkButtonProps> = ({
   text,
 }) => {
   const baseClasses =
-    'align-middle border font-display inline-flex items-center justify-center no-underline shadow-sm text-center focus:ring-1 focus:ring-black focus:ring-offset-2'
+    'align-middle border font-display inline-flex items-center justify-center no-underline elevation-2 text-center active:elevation-8 focus:ring-1 focus:ring-black focus:ring-offset-2'
   const fullWidthClasses = fullWidth ? 'w-full' : undefined
   const sizeClasses = sizes[size ?? 'md']
   const styleClasses = styles[style ?? 'default']
