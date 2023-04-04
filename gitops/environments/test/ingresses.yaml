@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: seniors-journey-frontend
   annotations:
+    nginx.ingress.kubernetes.io/proxy-buffer-size: 32k # required for OAuth proxy
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
   labels:
     app.kubernetes.io/name: seniors-journey-frontend
