@@ -57,9 +57,9 @@ module.exports = {
         orange: {
           dark: '#e59700',
         },
-        aqua:{
+        aqua: {
           default: '#274448',
-        }
+        },
       },
       backgroundImage: () => ({
         'footer-parliament-image': 'url(../../public/assets/landscape.png)',
@@ -70,5 +70,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-elevation'),
+  ],
 }

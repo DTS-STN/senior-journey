@@ -19,7 +19,7 @@ describe('ActionButton', () => {
     render(<ActionButton text="my-button-text" style="primary" />)
     const sut = screen.getByText('my-button-text')
     expect(sut).toHaveClass(
-      'inline-flex justify-center items-center font-display align-middle border shadow-sm focus:ring-1 focus:ring-offset-2 focus:ring-black focus:text-basic-white disabled:opacity-70 disabled:cursor-not-allowed disabled:shadow-none disabled:pointer-events-none undefined px-3.5 py-2.5 rounded text-base border-blue-dark bg-blue-dark text-basic-white focus:bg-blue-normal hover:bg-blue-normal active:bg-blue-active'
+      'inline-flex justify-center items-center font-display align-middle border elevation-2 focus:ring-1 focus:ring-offset-2 focus:ring-black focus:text-basic-white disabled:opacity-70 active:elevation-8 disabled:cursor-not-allowed disabled:elevation-0 disabled:pointer-events-none undefined px-3.5 py-2.5 rounded text-base border-blue-dark bg-blue-dark text-basic-white focus:bg-blue-normal hover:bg-blue-normal active:bg-blue-active'
     )
   })
 
