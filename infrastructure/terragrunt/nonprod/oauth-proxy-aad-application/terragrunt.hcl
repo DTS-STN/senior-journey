@@ -35,6 +35,7 @@ inputs = {
     "Default secret"
   ]
   application_web_redirect_uris = [
-    "https://seniors-journey-dev.dev-dp.dts-stn.com/oauth/callback"
+    "https://seniors-journey-dev.dev-dp.dts-stn.com/oauth/callback",
+    "https://seniors-journey-test.dev-dp.dts-stn.com/oauth/callback"
   ]
 }
