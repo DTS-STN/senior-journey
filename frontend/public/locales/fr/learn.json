@@ -1,3 +1,8 @@
 {
-    "header": "(FR)Learn"
+    "header": "(FR)Learn",
+    "banner": {
+        "title": "(FR) Not sure where to begin? Take the quiz!",
+        "text": "(FR) Take our quiz and receive a personalized checklist to help guide you through retirement.",
+        "quiz": "(FR) Take the quiz now!"
+      }
 }
