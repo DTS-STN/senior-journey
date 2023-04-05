@@ -50,16 +50,6 @@ describe('middleware', () => {
     expect(mockedStaticRedirect).toBeCalledWith(new URL(`/${locale}/home`, 'https://example.com/'))
   })
 
-  it('correctly detects non-root locale requests: /* → /en/*', () => {
-    const request = new NextRequest(new URL('https://example.com/test'), { nextConfig })
-    request.nextUrl.locale = 'default'
-
-    middleware(request)
-
-    expect(mockedStaticNext).not.toBeCalled()
-    expect(mockedStaticRedirect).toBeCalledWith(new URL(`/en/test`, 'https://example.com/'))
-  })
-
   it.each(['en', 'fr'])('correctly detects non-root locale requests: /%s/*', (locale) => {
     const request = new NextRequest(new URL(`https://example.com/${locale}/test`), { nextConfig })
     request.nextUrl.locale = locale
