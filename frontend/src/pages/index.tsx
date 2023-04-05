@@ -3,8 +3,11 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 
 import LinkButton from '../components/LinkButton'
+import { useLayout } from '../layouts/LayoutProvider'
 
 const Index = () => {
+  useLayout('none')
+
   return (
     <>
       <NextSeo

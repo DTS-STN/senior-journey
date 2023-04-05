@@ -2,16 +2,17 @@ import { FC } from 'react'
 
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
-
-import ErrorLayout from '../ErrorLayout'
+import { useLayout } from '../../layouts/LayoutProvider'
 
 export interface ErrorPageProps {
   statusCode?: number
 }
 
 const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
+  useLayout('error')
+
   return (
-    <ErrorLayout>
+    <>
       <NextSeo
         description="Error message stating that the server is down, or the URL is incorrect or expired | Message d'erreur indiquant que le serveur est hors service, que l'URL est incorrecte ou qu'elle a expiré."
         title={
@@ -91,7 +92,7 @@ const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
           <p>Merci de votre patience.</p>
         </div>
       </div>
-    </ErrorLayout>
+    </>
   )
 }
 

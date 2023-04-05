@@ -9,8 +9,7 @@ export interface LayoutProps {
   children: ReactNode
 }
 
-
-const Layout: FC<LayoutProps> = ({ children }) => {
+const DefaultLayout: FC<LayoutProps> = ({ children }) => {
   const { t } = useTranslation('common')
   return (
     <div className="flex min-h-screen flex-col">
@@ -118,4 +117,4 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   )
 }
 
-export default Layout
+export default DefaultLayout

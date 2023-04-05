@@ -6,7 +6,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/Layout'
 import Tabcordian from '../components/Tabcordian'
 
 export interface SupportingSeniorsCardProps {
@@ -39,7 +38,7 @@ const Home: FC = () => {
   const { t } = useTranslation('home')
 
   return (
-    <Layout>
+    <>
       <NextSeo title={t('header')} />
 
       <section className="flex flex-col rounded-2xl bg-[#f5f5f5] p-5 md:relative md:p-0">
@@ -131,7 +130,7 @@ const Home: FC = () => {
           </Link>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 

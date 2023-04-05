@@ -1,9 +1,7 @@
 import '@testing-library/jest-dom/extend-expect'
-import { render, screen, waitFor } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import { axe, toHaveNoViolations } from 'jest-axe'
-
-import ApplicationNameBar from '../../src/components/ApplicationNameBar'
 import { useRouter } from 'next/router';
 
 // Move useRouter mock to global scope
@@ -18,23 +16,23 @@ useRouterMock.mockReturnValue({
   asPath: '/home',
 });
 
+import Breadcrumb from '../../../src/layouts/default/Breadcrumb'
+
 expect.extend(toHaveNoViolations)
 
-describe('ApplicationNameBar', () => {
-  const sut = <ApplicationNameBar text="Test" href="/somelink" checklist='checklist' checklistUrl='checklist-url' myNotes='my-notes' myNotesUrl='my-notes-url' />
+describe('Breadcrumb', () => {
+
+  const sut = <Breadcrumb />
 
   it('renders', () => {
     render(sut)
-
-    const screenText = screen.getByText('Test')
+    const screenText = screen.getByText('Canada.ca')
     expect(screenText).toBeInTheDocument()
-    expect(document.querySelector('a')?.getAttribute('href')).toBe('/somelink')
   })
 
   it('meets a11y', async () => {
     const { container } = render(sut)
-
-    const results = await waitFor(() => axe(container))
+    const results = await axe(container)
     expect(results).toHaveNoViolations()
   })
 })

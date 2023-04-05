@@ -5,7 +5,6 @@ import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
 
 export interface ImportantCardProps extends PropsWithChildren {}
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
@@ -16,7 +15,7 @@ const RetirementIncomeSources: FC = () => {
   const { t } = useTranslation('learn/retirement-income-sources')
 
   return (
-    <Layout>
+    <>
       <NextSeo title={t('header')} />
       <h1 className="mb-10 rounded-3xl bg-[#212121]/[.08] px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
         {t('header')}
@@ -437,7 +436,7 @@ const RetirementIncomeSources: FC = () => {
           </div>
         </Link>
       ))}
-    </Layout>
+    </>
   )
 }
 
