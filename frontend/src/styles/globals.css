@@ -67,7 +67,7 @@
   }
 
   main a[target='_blank']::after {
-    content: url(/new-tab-icon.svg);
+    content: url(/assets/new-tab-icon.svg);
     display: inline-block;
     height: 1em;
     margin-left: 0.2em;
