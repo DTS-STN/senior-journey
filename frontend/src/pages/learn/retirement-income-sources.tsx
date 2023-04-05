@@ -17,7 +17,7 @@ const RetirementIncomeSources: FC = () => {
   return (
     <>
       <NextSeo title={t('header')} />
-      <h1 className="mb-10 rounded-3xl bg-[#212121]/[.08] px-4 py-6 text-4xl text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
+      <h1 className="mb-10 rounded-3xl bg-[#212121]/[.08] px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
         {t('header')}
       </h1>
 
@@ -39,17 +39,17 @@ const RetirementIncomeSources: FC = () => {
       </p>
 
       <h2 className="h2">{t('canada-retirement-income-system.header')}</h2>
-      <h3 className="mb-6 bg-primary-600 p-4 text-2xl font-light text-white">
+      <h3 className="mb-6 bg-primary-600 p-4 font-display text-2xl font-light text-white">
         {t('canada-retirement-income-system.three-pillar-system')}
       </h3>
       <div className="grid gap-6 md:grid-cols-3">
         <div className="flex h-full flex-col gap-6 md:col-span-2">
-          <h4 className="bg-secondary-700 p-4 text-xl text-white">
+          <h4 className="bg-secondary-700 p-4 font-display text-xl font-bold text-white">
             {t('canada-retirement-income-system.public')}
           </h4>
           <div className="grid h-full gap-6 md:grid-cols-2">
             <div className="h-full bg-secondary-100 p-4">
-              <h5 className="mb-2.5 text-xs uppercase">
+              <h5 className="mb-2.5 font-display text-xs font-semibold uppercase">
                 {t('canada-retirement-income-system.pillar-1.header')}
               </h5>
               <p className="mb-2.5 font-bold">
@@ -60,7 +60,7 @@ const RetirementIncomeSources: FC = () => {
               </p>
             </div>
             <div className="h-full bg-secondary-100 p-4">
-              <h5 className="mb-2.5 text-xs uppercase">
+              <h5 className="mb-2.5 font-display text-xs font-semibold uppercase">
                 {t('canada-retirement-income-system.pillar-2.header')}
               </h5>
               <p className="mb-2.5 font-bold">
@@ -73,11 +73,11 @@ const RetirementIncomeSources: FC = () => {
           </div>
         </div>
         <div className="flex h-full flex-col gap-6">
-          <h4 className="bg-[#4A0056] p-4 text-xl text-white">
+          <h4 className="bg-[#4A0056] p-4 font-display text-xl font-bold text-white">
             {t('canada-retirement-income-system.private')}
           </h4>
           <div className="h-full bg-[#F0D0FF] p-4">
-            <h5 className="mb-2.5 text-xs uppercase">
+            <h5 className="mb-2.5 font-display text-xs font-semibold uppercase">
               {t('canada-retirement-income-system.pillar-3.header')}
             </h5>
             <p className="mb-2.5 font-bold">
@@ -322,7 +322,7 @@ const RetirementIncomeSources: FC = () => {
       <h2 className="h2">{t('ongoing-earnings-from-your-job.header')}</h2>
       <p>{t('ongoing-earnings-from-your-job.overview')}</p>
       <div className="my-10 rounded p-4 elevation-1">
-        <h3 className="mb-4">
+        <h3 className="mb-4 font-display font-medium">
           {t('ongoing-earnings-from-your-job.card.header')}
         </h3>
         <p className="mb-4.5 text-sm">
@@ -331,7 +331,7 @@ const RetirementIncomeSources: FC = () => {
         <div className="text-right text-primary-500">
           <a
             href="#"
-            className="uppercase text-inherit no-underline visited:text-inherit hover:text-inherit hover:underline focus:text-inherit focus:underline"
+            className="font-display font-bold uppercase text-inherit no-underline visited:text-inherit hover:text-inherit hover:underline focus:text-inherit focus:underline"
           >
             {t('ongoing-earnings-from-your-job.card.learn-more')}
           </a>
@@ -417,7 +417,7 @@ const RetirementIncomeSources: FC = () => {
           className="mt-10 flex items-center justify-between gap-6 border-b pb-3 text-basic-gray no-underline visited:text-basic-gray hover:text-basic-gray focus:text-basic-gray"
         >
           <div>
-            <div className="font-medium">{header}</div>
+            <h3 className="font-display font-medium">{header}</h3>
             <p className="m-0 text-sm text-opacity-60">{description}</p>
           </div>
           <div className="text-primary-700">
