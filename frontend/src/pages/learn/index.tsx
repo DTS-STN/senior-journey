@@ -6,11 +6,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import Layout from 'src/components/Layout'
 
 const Learn: FC = () => {
   const { t } = useTranslation('learn')
   return (
-    <div>
+    <Layout>
       <NextSeo title={t('header')} />
       <section className="rounded-2xl bg-[#f5f5f5]">
         <div className="flex flex-col items-center md:flex-row-reverse">
@@ -44,7 +45,7 @@ const Learn: FC = () => {
           </Link>
         </div>
       </section>
-    </div>
+    </Layout>
   )
 }
 

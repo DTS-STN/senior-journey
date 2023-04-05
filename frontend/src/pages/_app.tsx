@@ -7,7 +7,6 @@ import { AppProps } from 'next/app'
 import getConfig from 'next/config'
 import Head from 'next/head'
 import Script from 'next/script'
-import Layout from '../components/Layout'
 
 import { AppWindow } from '../lib/types'
 import { getNextSEOConfig } from '../next-seo.config'
@@ -71,13 +70,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 
       <DefaultSeo {...nextSEOConfig} />
       <QueryClientProvider client={queryClient}>
-      {router.pathname === '/' ? (
-          <Component {...pageProps} />
-        ) : (
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        )}
+        <Component {...pageProps} />
       </QueryClientProvider>
     </>
   )
