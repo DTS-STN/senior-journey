@@ -36,6 +36,7 @@
   }
 
   .h2 {
+    @apply font-medium;
     @apply font-display;
     @apply text-4xl;
     @apply mt-10;
