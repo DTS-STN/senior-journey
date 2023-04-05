@@ -75,4 +75,12 @@
     width: 1em;
     text-align: center;
   }
+
+  .no-after::after {
+    content: none !important;
+  }
+
+  .page-nav-active {
+    @apply bg-[#4ED8E8] bg-opacity-[12%] text-[#008490];
+  }
 }
