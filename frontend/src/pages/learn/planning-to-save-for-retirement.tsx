@@ -62,9 +62,7 @@ const PlanningToSaveForRetirement: FC = () => {
           <h2 id="overview" className='sr-only'>{t('overview-link-text')}</h2>
           <p>{t('overview')}</p>
           <h2 id="how-much-will-you-need" className='h2'>{t('how-much-will-you-need-heading')}</h2>
-          <Trans i18nKey='how-much-will-you-need-content' components={{anchor: <a href={t("GIS-link")} className='no-after'/>}}>
-            <p>{t('how-much-will-you-need-content')}</p>
-          </Trans>
+          <Trans ns="learn/planning-to-save-for-retirement" i18nKey='how-much-will-you-need-content' components={{anchor: <a href={t("GIS-link")} />}} />
           <h2 id="changes-with-age" className='h2'>{t('changes-with-age-heading')}</h2>
           <p>{t('changes-with-age-content-one')}</p> 
           <p>{t('changes-with-age-content-two')}</p> 
@@ -73,38 +71,24 @@ const PlanningToSaveForRetirement: FC = () => {
           <p>{t('turning-savings-into-income-content-two')}</p>
           <Image src={`/assets/rrif_${router.locale}.svg`} height={500} width={500} alt={t('rrif-alt')} className='mx-auto'/>
           <p>{t('turning-savings-into-income-content-three')}</p>
-          <Trans i18nKey='turning-savings-into-income-content-four' components={{anchor: <a href={t("RRIF-link")} className='no-after'/>}}>
-            <p>{t('turning-savings-into-income-content-four')}</p>
-          </Trans>
+          <Trans ns="learn/planning-to-save-for-retirement" i18nKey='turning-savings-into-income-content-four' components={{anchor: <a href={t("RRIF-link")}/>}} />
           <h2 className='h2'>{t('learn-more-heading')}</h2>
-          <a href='#' tabIndex={0} className='flex space-between m-5 items-center no-underline text-black visited:text-black border-b-2'>
-            <div className='md:mr-20'>
-              <h3 className='font-medium mb-2'>{t('transitioning-heading')}</h3>
-              <p className='text-[.9em] text-gray-700'>{t('transitioning-content')}</p>
-            </div>
-            <MdArrowForwardIos className='font-bold ml-5 text-[5rem] xl:text-2xl md:mr-5' />
-          </a>
-          <a href='https://www.canada.ca/en/services/benefits/publicpensions/cpp.html' tabIndex={0} className='flex space-between m-5 items-center no-underline text-black visited:text-black border-b-2'>
-            <div className='md:mr-20'>
-              <h3 className='font-medium mb-2'>{t('cpp-heading')}</h3>
-              <p className='text-[.9em] text-gray-700'>{t('cpp-content')}</p>
-            </div>
-            <MdArrowForwardIos className='font-bold ml-5 text-[5rem] xl:text-2xl md:mr-5' />
-          </a>
-          <a href='https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html' tabIndex={0} className='flex space-between m-5 items-center no-underline text-black visited:text-black border-b-2'>
-            <div className='md:mr-20'>
-              <h3 className='font-medium mb-2'>{t('oas-heading')}</h3>
-              <p className='text-[.9em] text-gray-700'>{t('oas-content')}</p>
-            </div>
-            <MdArrowForwardIos className='font-bold ml-5 text-[5rem] xl:text-2xl md:mr-5' />
-          </a>
-          <a href='#' tabIndex={0} className='flex space-between m-5 items-center no-underline text-black visited:text-black border-b-2'>
-            <div className='md:mr-20'>
-              <h3 className='font-medium mb-2'>{t('sources-of-income-heading')}</h3>
-              <p className='text-[.9em] text-gray-700'>{t('sources-of-income-content')}</p>
-            </div>
-            <MdArrowForwardIos className='font-bold ml-5 text-[5rem] xl:text-2xl md:mr-5' />
-          </a>
+          {
+            [
+              {href: "#", heading: t('transitioning-heading'), content: t('transitioning-content')},
+              {href: "https://www.canada.ca/en/services/benefits/publicpensions/cpp.html", heading: t('transitioning-heading'), content: t('transitioning-content')},
+              {href: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html", heading: t('oas-heading'), content: t('oas-content')},
+              {href: "#", heading: t('sources-of-income-heading'), content: t('sources-of-income-content')}
+            ].map(({href,heading,content})=>(
+              <a key={heading} href={href} tabIndex={0} className='w-[100%] flex space-between m-5 items-center no-underline text-black visited:text-black border-b-2'>
+                <div className='flex-1 md:mr-20'>
+                  <h3 className='font-medium mb-2'>{heading}</h3>
+                  <p className='text-[.9em] text-gray-700'>{content}</p>
+                </div>
+                <MdArrowForwardIos className='font-bold ml-5 text-[2rem] xl:text-2xl md:mr-5' />
+              </a>
+            ))
+          }
         </section>
       </div>
     </Layout>
