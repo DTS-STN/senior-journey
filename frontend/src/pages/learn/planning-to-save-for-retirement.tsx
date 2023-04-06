@@ -59,7 +59,7 @@ const PlanningToSaveForRetirement: FC = () => {
           </nav>
         </section>
         <section id="content" className='flex-[2]'>
-          <h2 id="overview" className='invisible h-0'>{t('overview-link-text')}</h2>
+          <h2 id="overview" className='sr-only'>{t('overview-link-text')}</h2>
           <p>{t('overview')}</p>
           <h2 id="how-much-will-you-need" className='h2'>{t('how-much-will-you-need-heading')}</h2>
           <Trans i18nKey='how-much-will-you-need-content' components={{anchor: <a href={t("GIS-link")} className='no-after'/>}}>
