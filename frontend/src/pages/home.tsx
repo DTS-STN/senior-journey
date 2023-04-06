@@ -6,8 +6,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from 'src/components/Layout'
-import Tabcordian from 'src/components/Tabcordian'
+import Layout from '../components/Layout'
+import Tabcordian from '../components/Tabcordian'
 
 export interface SupportingSeniorsCardProps {
   src: string
