@@ -1,8 +1,101 @@
 {
-    "header": "(FR)Learn",
-    "banner": {
-        "title": "(FR) Not sure where to begin? Take the quiz!",
-        "text": "(FR) Take our quiz and receive a personalized checklist to help guide you through retirement.",
-        "quiz": "(FR) Take the quiz now!"
-      }
+  "header": "(FR) Learn",
+  "explore": "(FR) Explore our content",
+  "banner": {
+    "title": "(FR) Not sure where to begin? Take the quiz!",
+    "text": "(FR) Take our quiz and receive a personalized checklist to help guide you through retirement.",
+    "quiz": "(FR) Take the quiz now!"
+  },
+  "sections": [
+    {
+      "title": "(FR) Managing your money in retirement",
+      "body": "(FR) Prepare for a comfortable retirement by exploring our money management section, which includes guidance on personal savings, identifying potential income sources, tax implications, and more - all with CPP and OAS benefits in mind.",
+      "cards": [
+        {
+          "title": "(FR) Overview of retirement income sources",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Learn about public & private pensions, personal savings and investments.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "(FR) Planning to save for retirement",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Learn how to maximize your savings and to better manage your money in retirement.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    },
+    {
+      "title": "(FR) Making retirement decisions",
+      "body": "(FR) Gain clarity and confidence when making retirement decisions with our comprehensive section on CPP and OAS pension timing and transitioning from work, designed to support and empower you on your retirement journey.",
+      "cards": [
+        {
+          "title": "(FR) When to take government pensions",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "(FR) Transitioning from work",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        },
+        {
+          "title": "(FR) Rules of thumb for CPP and OAS",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    },
+    {
+      "title": "(FR) Federal benefit scenarios: from retirees to new pensioners",
+      "body": "(FR) Lorem ipsum dolor sit amet consectetur. Pulvinar accumsan volutpat vel odio magna rhoncus. Nisl eleifend auctor purus semper magnis aliquet sed. Vitae penatibus duis quis pulvinar ac dui elit. Mi sem dictumst ac cursus cursus adipiscing purus felis tortor. Eu lacus ac nulla.",
+      "cards": [
+        {
+          "title": "(FR) Case 1",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "(FR) Case 2",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        },
+        {
+          "title": "(FR) Case 3",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    },
+    {
+      "title": "(FR) Information for caregivers and support workers",
+      "body": "(FR) Lorem ipsum dolor sit amet consectetur. Pulvinar accumsan volutpat vel odio magna rhoncus. Nisl eleifend auctor purus semper magnis aliquet sed. Vitae penatibus duis quis pulvinar ac dui elit. Mi sem dictumst ac cursus cursus adipiscing purus felis tortor. Eu lacus ac nulla.",
+      "cards": [
+        {
+          "title": "(FR) Case 1",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "(FR) Case 2",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        },
+        {
+          "title": "(FR) Case 3",
+          "read": "(FR) 5 MIN READ",
+          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    }
+  ]
 }

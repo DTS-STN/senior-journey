@@ -1,8 +1,101 @@
 {
-    "header": "Learn",
-    "banner": {
-        "title": "Not sure where to begin? Take the quiz!",
-        "text": "Take our quiz and receive a personalized checklist to help guide you through retirement.",
-        "quiz": "Take the quiz now!"
-      }
+  "header": "Learn",
+  "explore": "Explore our content",
+  "banner": {
+    "title": "Not sure where to begin? Take the quiz!",
+    "text": "Take our quiz and receive a personalized checklist to help guide you through retirement.",
+    "quiz": "Take the quiz now!"
+  },
+  "sections": [
+    {
+      "title": "Managing your money in retirement",
+      "body": "Prepare for a comfortable retirement by exploring our money management section, which includes guidance on personal savings, identifying potential income sources, tax implications, and more - all with CPP and OAS benefits in mind.",
+      "cards": [
+        {
+          "title": "Overview of retirement income sources",
+          "read": "5 MIN READ",
+          "body": "Learn about public & private pensions, personal savings and investments.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "Planning to save for retirement",
+          "read": "5 MIN READ",
+          "body": "Learn how to maximize your savings and to better manage your money in retirement.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    },
+    {
+      "title": "Making retirement decisions",
+      "body": "Gain clarity and confidence when making retirement decisions with our comprehensive section on CPP and OAS pension timing and transitioning from work, designed to support and empower you on your retirement journey.",
+      "cards": [
+        {
+          "title": "When to take government pensions",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "Transitioning from work",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        },
+        {
+          "title": "Rules of thumb for CPP and OAS",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    },
+    {
+      "title": "Federal benefit scenarios: from retirees to new pensioners",
+      "body": "Lorem ipsum dolor sit amet consectetur. Pulvinar accumsan volutpat vel odio magna rhoncus. Nisl eleifend auctor purus semper magnis aliquet sed. Vitae penatibus duis quis pulvinar ac dui elit. Mi sem dictumst ac cursus cursus adipiscing purus felis tortor. Eu lacus ac nulla.",
+      "cards": [
+        {
+          "title": "Case 1",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "Case 2",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        },
+        {
+          "title": "Case 3",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    },
+    {
+      "title": "Information for caregivers and support workers",
+      "body": "Lorem ipsum dolor sit amet consectetur. Pulvinar accumsan volutpat vel odio magna rhoncus. Nisl eleifend auctor purus semper magnis aliquet sed. Vitae penatibus duis quis pulvinar ac dui elit. Mi sem dictumst ac cursus cursus adipiscing purus felis tortor. Eu lacus ac nulla.",
+      "cards": [
+        {
+          "title": "Case 1",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-family-and-friends.svg"
+        },
+        {
+          "title": "Case 2",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        },
+        {
+          "title": "Case 3",
+          "read": "5 MIN READ",
+          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "image": "/assets/supporting-seniors-representatives.svg"
+        }
+      ]
+    }
+  ]
 }
