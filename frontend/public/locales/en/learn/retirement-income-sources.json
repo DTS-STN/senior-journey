@@ -127,6 +127,7 @@
     "overview": "Many seniors are deciding to continue working while receiving their retirement benefits. This can mean that they are reducing their work hours from full-time to part-time before retiring completely, starting a new career or a business. If this sounds like something you're interested in, we've created a page that explains how it could impact your retirement benefits and provides some helpful tips to get you started!"
   },
   "overview": {
+    "header": "Overview",
     "list": {
       "cpp": "the Canada Pension Plan (CPP) Retirement Pension",
       "earnings": "Earnings, if you continue to work in retirement",
@@ -144,10 +145,11 @@
   "personal-retirement-savings": {
     "header": "Personal retirement savings",
     "overview": "Saving money for retirement is crucial to maintain the lifestyle you want when you retire. If you don't have a pension plan from your employer, you might need to rely even more on your personal savings. There are different ways to save for retirement, but the two most common are Registered Retirement Savings Plans (RRSPs) and Tax-Free Savings Account (TFSA). The government provides assistance through these savings accounts by reducing the amount of tax you pay.",
-    "rrsps": {
+    "rrsp": {
       "header": "What is a Registered Retirement Savings Plans (RRSPs)",
       "illustration": {
-        "header": "RRSP"
+        "alt": "Contributions and investment growth in your RRSP are sheltered from taxes (shown under an umbrella), however you will pay taxes on withdrawals (shown outside the umbrella",
+        "img-url": "/assets/rrsp-en.svg"
       },
       "important-notice": "<strong>Important:</strong> Taking money from a RRSP will count as additional income and may change your eligibility for Guaranteed Income Supplement (GIS) in the next payment cycle that runs from July to June.",
       "overview": "A Registered Retirement Savings Plan is a savings account that helps people save money for when they're ready to retire. When you put money into an RRSP, you don't have to pay taxes on it right away. Instead, you pay taxes on the money when you take it out of the account later, usually when you're retired and your income is lower. This way, you can save more money and pay less taxes in the long run."
@@ -155,7 +157,8 @@
     "tfsa": {
       "header": "What is a Tax-Free Savings Account (TFSA)",
       "illustration": {
-        "header": "TFSA"
+        "alt": "Contributions to your TFSA are taxed (shown outside an umbrella), however investment growth and withdrawals are sheltered from tax (shown under an umbrella)",
+        "img-url": "/assets/tfsa-en.svg"
       },
       "important-notice": "<strong>Important:</strong> Taking money from TFSA does not count as additional income and will not change the amount of your GIS in the next payment cycle that runs from July to June.",
       "overview": "A Tax-Free Savings Account is another savings account that helps people save money. You have to pay tax when you put money into a TFSA but you don't have to pay taxes on the money when you take it out of the account."
