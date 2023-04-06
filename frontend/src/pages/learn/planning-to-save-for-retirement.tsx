@@ -76,7 +76,7 @@ const PlanningToSaveForRetirement: FC = () => {
           {
             [
               {href: "#", heading: t('transitioning-heading'), content: t('transitioning-content')},
-              {href: "https://www.canada.ca/en/services/benefits/publicpensions/cpp.html", heading: t('transitioning-heading'), content: t('transitioning-content')},
+              {href: "https://www.canada.ca/en/services/benefits/publicpensions/cpp.html", heading: t('cpp-heading'), content: t('cpp-content')},
               {href: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html", heading: t('oas-heading'), content: t('oas-content')},
               {href: "#", heading: t('sources-of-income-heading'), content: t('sources-of-income-content')}
             ].map(({href,heading,content})=>(
