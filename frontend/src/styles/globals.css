@@ -23,6 +23,18 @@
     @apply font-body;
   }
 
+  .h6{
+    @apply font-bold;
+    @apply font-display;
+    @apply text-xl;
+  }
+
+  .h5 {
+    @apply font-display;
+    @apply font-light;
+    @apply text-2xl;
+  }
+
   .h4 {
     @apply font-bold;
     @apply font-display;
