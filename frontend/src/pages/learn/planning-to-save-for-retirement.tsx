@@ -5,13 +5,15 @@ import { useTranslation, Trans } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
-import {GoTriangleUp} from 'react-icons/go'
-import {MdArrowForwardIos} from 'react-icons/md'
+import { GoTriangleUp } from 'react-icons/go'
+import { MdArrowForwardIos } from 'react-icons/md'
 
 import { useEffect, useState} from 'react'
+import { useRouter } from 'next/router'
 
 const PlanningToSaveForRetirement: FC = () => {
   const { t } = useTranslation('learn/planning-to-save-for-retirement')
+  const router = useRouter()
 
   // TODO -- side page navigation to change background colour of nav item on page scroll
   const [offset, setOffset] = useState(0);
@@ -39,10 +41,16 @@ const PlanningToSaveForRetirement: FC = () => {
         <section className='hidden md:block md:flex-[0.5]'>
           <nav id='page-nav' className="border-2 rounded-lg shadow-sm shadow-black text-[.9em] sticky top-0">
             <h2 className='text-[1.1em] p-5 font-bold border-b-2'>{t('header')}</h2>
-            <a href="#overview" className='block no-underline p-5 text-black visited:text-black hover:bg-[#4ED8E8] hover:bg-opacity-[12%] hover:text-[#008490]'>{t('overview-link-text')}</a>
-            <a href="#how-much-will-you-need" className='block no-underline p-5 text-black visited:text-black hover:bg-[#4ED8E8] hover:bg-opacity-[12%] hover:text-[#008490]'>{t('how-much-will-you-need-heading')}</a>
-            <a href="#changes-with-age" className='block no-underline p-5 text-black visited:text-black hover:bg-[#4ED8E8] hover:bg-opacity-[12%] hover:text-[#008490]'>{t('changes-with-age-heading')}</a>
-            <a href="#turning-savings-into-income" className='block no-underline p-5 text-black visited:text-black hover:bg-[#4ED8E8] hover:bg-opacity-[12%] hover:text-[#008490]'>{t('turning-savings-into-income-heading')}</a>
+            {
+              [
+                {id: "overview", text: t('overview-link-text')},
+                {id: "how-much-will-you-need", text: t('how-much-will-you-need-heading')},
+                {id: "changes-with-age", text: t('changes-with-age-heading')},
+                {id: "turning-savings-into-income", text: t('turning-savings-into-income-heading')}
+              ].map(({id,text})=>(
+                <a href={`#${id}`} key={id} className='block no-underline p-5 text-black visited:text-black hover:bg-[#4ED8E8] hover:bg-opacity-[12%] hover:text-[#008490]'>{text}</a>
+              ))
+            }
             <div className='p-5 border-t-2 flex gap-5 justify-center text-[#008490] visited:text-[#008490] pr-20'>
               <GoTriangleUp role='presentation'/>
               <a href="#" className='no-underline font-xl visited:text-[#008490] hover:text-[#0b3e43]'>{t('back-to-top')}</a>
@@ -69,7 +77,7 @@ const PlanningToSaveForRetirement: FC = () => {
             <h2 id="turning-savings-into-income" className='h2'>{t('turning-savings-into-income-heading')}</h2>
             <p>{t('turning-savings-into-income-content-one')}</p>
             <p>{t('turning-savings-into-income-content-two')}</p>
-            <Image src='/assets/rrif.svg' height={500} width={500} alt={t('rrif-alt')} className='mx-auto'/>
+            <Image src={`/assets/rrif_${router.locale}.svg`} height={500} width={500} alt={t('rrif-alt')} className='mx-auto'/>
             <p>{t('turning-savings-into-income-content-three')}</p>
             <Trans i18nKey='turning-savings-into-income-content-four' components={{anchor: <a href={t("RRIF-link")} target='_blank' rel="noopener noreferrer" className='no-after'/>}}>
               <p>{t('turning-savings-into-income-content-four')}</p>
