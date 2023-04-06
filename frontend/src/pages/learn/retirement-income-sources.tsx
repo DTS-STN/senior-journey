@@ -24,7 +24,9 @@ const RetirementIncomeSources: FC = () => {
         {t('header')}
       </h1>
 
-      <h2 className="sr-only">{t('overview.header')}</h2>
+      <h2 id="overview" className="sr-only">
+        {t('overview.header')}
+      </h2>
       <p>{t('overview.paragraph-1')}</p>
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li>{t('overview.list.oas-and-gis')}</li>
@@ -42,7 +44,9 @@ const RetirementIncomeSources: FC = () => {
         />
       </p>
 
-      <h2 className="h2">{t('canada-retirement-income-system.header')}</h2>
+      <h2 id="canada-retirement-income-system" className="h2">
+        {t('canada-retirement-income-system.header')}
+      </h2>
       <h3 className="mb-6 bg-primary-600 p-4 font-display text-2xl font-light text-white">
         {t('canada-retirement-income-system.three-pillar-system')}
       </h3>
@@ -97,7 +101,9 @@ const RetirementIncomeSources: FC = () => {
         </div>
       </div>
 
-      <h2 className="h2">{t('old-age-security-program.header')}</h2>
+      <h2 id="old-age-security-program" className="h2">
+        {t('old-age-security-program.header')}
+      </h2>
       <p>{t('old-age-security-program.overview')}</p>
 
       <h3 className="h3">{t('old-age-security-program.oas-pension.header')}</h3>
@@ -259,7 +265,9 @@ const RetirementIncomeSources: FC = () => {
         />
       </p>
 
-      <h2 className="h2">{t('canada-pension-plan-program.header')}</h2>
+      <h2 id="canada-pension-plan-program" className="h2">
+        {t('canada-pension-plan-program.header')}
+      </h2>
       <p>{t('canada-pension-plan-program.overview.paragraph-1')}</p>
       <p>{t('canada-pension-plan-program.overview.paragraph-2')}</p>
 
@@ -323,7 +331,9 @@ const RetirementIncomeSources: FC = () => {
         />
       </ImportantCard>
 
-      <h2 className="h2">{t('ongoing-earnings-from-your-job.header')}</h2>
+      <h2 id="ongoing-earnings-from-your-job" className="h2">
+        {t('ongoing-earnings-from-your-job.header')}
+      </h2>
       <p>{t('ongoing-earnings-from-your-job.overview')}</p>
       <div className="my-10 rounded p-4 elevation-1">
         <h3 className="mb-4 font-display font-medium">
@@ -342,7 +352,9 @@ const RetirementIncomeSources: FC = () => {
         </div>
       </div>
 
-      <h2 className="h2">{t('workplace-pension-plans.header')}</h2>
+      <h2 id="workplace-pension-plans" className="h2">
+        {t('workplace-pension-plans.header')}
+      </h2>
       <p>{t('workplace-pension-plans.overview')}</p>
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li>{t('workplace-pension-plans.list.rpp')}</li>
@@ -351,7 +363,9 @@ const RetirementIncomeSources: FC = () => {
         <li>{t('workplace-pension-plans.list.prpp')}</li>
       </ul>
 
-      <h2 className="h2">{t('personal-retirement-savings.header')}</h2>
+      <h2 id="personal-retirement-savings" className="h2">
+        {t('personal-retirement-savings.header')}
+      </h2>
       <p>{t('personal-retirement-savings.overview')}</p>
 
       <h3 className="h3">{t('personal-retirement-savings.rrsp.header')}</h3>
@@ -394,7 +408,9 @@ const RetirementIncomeSources: FC = () => {
         </div>
       </div>
 
-      <h2 className="h2">{t('learn-more.header')}</h2>
+      <h2 id="learn-more" className="h2">
+        {t('learn-more.header')}
+      </h2>
       {[
         {
           header: t('learn-more.transitioning-from-work-to-retirement.header'),
