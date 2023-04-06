@@ -6,7 +6,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from 'src/components/Layout'
+import Layout from '../../components/Layout'
 
 const Learn: FC = () => {
   const { t } = useTranslation('learn')

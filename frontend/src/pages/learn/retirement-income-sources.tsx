@@ -5,7 +5,7 @@ import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
-import Layout from 'src/components/Layout'
+import Layout from '../../components/Layout'
 
 export interface ImportantCardProps extends PropsWithChildren {}
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
