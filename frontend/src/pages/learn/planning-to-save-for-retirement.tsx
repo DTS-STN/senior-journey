@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 import { GetServerSideProps } from 'next'
 import { useTranslation, Trans } from 'next-i18next'
@@ -8,7 +8,6 @@ import Image from 'next/image'
 import { GoTriangleUp } from 'react-icons/go'
 import { MdArrowForwardIos } from 'react-icons/md'
 
-import { useEffect, useState} from 'react'
 import { useRouter } from 'next/router'
 import Layout from '../../components/Layout'
 
@@ -32,7 +31,7 @@ const PlanningToSaveForRetirement: FC = () => {
     let intersection = navItems[[...mainSections].findIndex(section=>section.getBoundingClientRect().top-10>=0)-1]
     navItems.forEach(item=>item===intersection ? item.classList.add('page-nav-active') : item.classList.remove('page-nav-active'))
   },[offset])
-  
+
 
   return (
     <Layout>
@@ -64,8 +63,8 @@ const PlanningToSaveForRetirement: FC = () => {
           <h2 id="how-much-will-you-need" className='h2'>{t('how-much-will-you-need-heading')}</h2>
           <Trans ns="learn/planning-to-save-for-retirement" i18nKey='how-much-will-you-need-content' components={{anchor: <a href={t("GIS-link")} />}} />
           <h2 id="changes-with-age" className='h2'>{t('changes-with-age-heading')}</h2>
-          <p>{t('changes-with-age-content-one')}</p> 
-          <p>{t('changes-with-age-content-two')}</p> 
+          <p>{t('changes-with-age-content-one')}</p>
+          <p>{t('changes-with-age-content-two')}</p>
           <h2 id="turning-savings-into-income" className='h2'>{t('turning-savings-into-income-heading')}</h2>
           <p>{t('turning-savings-into-income-content-one')}</p>
           <p>{t('turning-savings-into-income-content-two')}</p>
