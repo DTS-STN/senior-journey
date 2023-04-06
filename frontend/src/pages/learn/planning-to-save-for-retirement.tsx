@@ -80,7 +80,7 @@ const PlanningToSaveForRetirement: FC = () => {
               {href: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html", heading: t('oas-heading'), content: t('oas-content')},
               {href: "#", heading: t('sources-of-income-heading'), content: t('sources-of-income-content')}
             ].map(({href,heading,content})=>(
-              <a key={heading} href={href} tabIndex={0} className='w-[100%] flex space-between m-5 items-center no-underline text-black visited:text-black border-b-2'>
+              <a key={heading} href={href} className='w-[100%] flex space-between m-5 items-center no-underline text-black visited:text-black border-b-2'>
                 <div className='flex-1 md:mr-20'>
                   <h3 className='font-medium mb-2'>{heading}</h3>
                   <p className='text-[.9em] text-gray-700'>{content}</p>
