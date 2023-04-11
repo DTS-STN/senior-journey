@@ -1,11 +1,12 @@
 {
   "description": "Description here...",
   "header": "Home",
-  "contact-us":{
+  "contact-us": {
     "title": "Contact Us",
     "description": "Our call centres and Service Canada Centres operate Monday to Friday, from 8:30 a.m. to 4:00 p.m., your local time. They are closed on statuary holidays.",
-    "cards":{
-      "call-us":{
+    "link": "/contact-us",
+    "cards": {
+      "call-us": {
         "title": "Call us",
         "description": "You can reach us at either of the numbers below.",
         "toll-free": "Toll free:",
@@ -13,7 +14,7 @@
         "toll-number": "1-800-000-000",
         "direct-number": "1-800-000-000"
       },
-      "find-office":{
+      "find-office": {
         "title": "Find an office",
         "description": "Find a Service Canada Centre near you using the link below.",
         "link-text": "Find a Service Canada Centre",
@@ -32,6 +33,7 @@
         "Learn about the \"three pillars\" of Canada's retirement system.",
         "There are many factors to consider before retiring to help ensure that you can comfortably retire."
       ],
+      "link": "/learn",
       "linksTitle": "Top Learning Links",
       "links": [
         {
@@ -57,6 +59,7 @@
         "Learn about the \"three pillars\" of Canada's retirement system.",
         "There are many factors to consider before retiring to help ensure that you can comfortably retire."
       ],
+      "link": "/plan",
       "linksTitle": "Top Learning Links",
       "links": [
         {
@@ -82,6 +85,7 @@
         "Learn about the \"three pillars\" of Canada's retirement system.",
         "There are many factors to consider before retiring to help ensure that you can comfortably retire."
       ],
+      "link": "/apply",
       "linksTitle": "Top Learning Links",
       "links": [
         {
@@ -107,6 +111,7 @@
         "Learn about the \"three pillars\" of Canada's retirement system.",
         "There are many factors to consider before retiring to help ensure that you can comfortably retire."
       ],
+      "link": "/manage",
       "linksTitle": "Top Learning Links",
       "links": [
         {
@@ -132,6 +137,7 @@
         "Learn about the \"three pillars\" of Canada's retirement system.",
         "There are many factors to consider before retiring to help ensure that you can comfortably retire."
       ],
+      "link": "/community-resources",
       "linksTitle": "Top Learning Links",
       "links": [
         {
@@ -156,17 +162,17 @@
     "title": "Supporting Seniors",
     "cards": {
       "family-and-friends": {
-        "href":"",
+        "href": "",
         "link-text": "Family and Friends",
         "text": "Learn how you can help your loved ones enter the retirement stage in their life."
       },
       "representatives": {
-        "href":"",
+        "href": "",
         "link-text": "Representatives",
         "text": "Find resources to understand and navigate Canada's pension system."
       },
       "organizations": {
-        "href":"",
+        "href": "",
         "link-text": "Organizations",
         "text": "Learn how best to help and navigate clients as they plan for retirement."
       }

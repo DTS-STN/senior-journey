@@ -15,13 +15,15 @@
           "title": "(FR) Overview of retirement income sources",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Learn about public & private pensions, personal savings and investments.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn/retirement-income-sources"
         },
         {
           "title": "(FR) Planning to save for retirement",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Learn how to maximize your savings and to better manage your money in retirement.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn/planning-to-save-for-retirement"
         }
       ]
     },
@@ -33,19 +35,22 @@
           "title": "(FR) When to take government pensions",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn"
         },
         {
           "title": "(FR) Transitioning from work",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         },
         {
           "title": "(FR) Rules of thumb for CPP and OAS",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         }
       ]
     },
@@ -57,19 +62,22 @@
           "title": "(FR) Case 1",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn"
         },
         {
           "title": "(FR) Case 2",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         },
         {
           "title": "(FR) Case 3",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         }
       ]
     },
@@ -81,19 +89,22 @@
           "title": "(FR) Case 1",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn"
         },
         {
           "title": "(FR) Case 2",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         },
         {
           "title": "(FR) Case 3",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         }
       ]
     }
