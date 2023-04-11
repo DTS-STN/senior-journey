@@ -15,13 +15,15 @@
           "title": "Overview of retirement income sources",
           "read": "5 MIN READ",
           "body": "Learn about public & private pensions, personal savings and investments.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn/retirement-income-sources"
         },
         {
           "title": "Planning to save for retirement",
           "read": "5 MIN READ",
           "body": "Learn how to maximize your savings and to better manage your money in retirement.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn/planning-to-save-for-retirement"
         }
       ]
     },
@@ -33,19 +35,22 @@
           "title": "When to take government pensions",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn"
         },
         {
           "title": "Transitioning from work",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         },
         {
           "title": "Rules of thumb for CPP and OAS",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         }
       ]
     },
@@ -57,19 +62,22 @@
           "title": "Case 1",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn"
         },
         {
           "title": "Case 2",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         },
         {
           "title": "Case 3",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         }
       ]
     },
@@ -81,19 +89,22 @@
           "title": "Case 1",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg"
+          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "link": "/learn"
         },
         {
           "title": "Case 2",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         },
         {
           "title": "Case 3",
           "read": "5 MIN READ",
           "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg"
+          "image": "/assets/supporting-seniors-representatives.svg",
+          "link": "/learn"
         }
       ]
     }
