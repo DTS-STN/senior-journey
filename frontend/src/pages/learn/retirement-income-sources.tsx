@@ -366,7 +366,7 @@ const RetirementIncomeSources: FC = () => {
 
       <h3 className="h3">{t('personal-retirement-savings.rrsp.header')}</h3>
       <p>{t('personal-retirement-savings.rrsp.overview')}</p>
-      <div className="flex flex-col items-center gap-6 md:flex-row md:gap-10">
+      <div className="flex flex-col items-center gap-6 xl:flex-row xl:gap-10">
         <Image
           alt={t('personal-retirement-savings.rrsp.illustration.alt')}
           src={t('personal-retirement-savings.rrsp.illustration.img-url')}
@@ -374,19 +374,17 @@ const RetirementIncomeSources: FC = () => {
           height={150}
           className="w-full max-w-md"
         />
-        <div className="w-full lg:flex-1">
-          <ImportantCard>
-            <Trans
-              ns="learn/retirement-income-sources"
-              i18nKey="personal-retirement-savings.rrsp.important-notice"
-            />
-          </ImportantCard>
-        </div>
+        <ImportantCard>
+          <Trans
+            ns="learn/retirement-income-sources"
+            i18nKey="personal-retirement-savings.rrsp.important-notice"
+          />
+        </ImportantCard>
       </div>
 
       <h3 className="h3">{t('personal-retirement-savings.tfsa.header')}</h3>
       <p>{t('personal-retirement-savings.tfsa.overview')}</p>
-      <div className="flex flex-col items-center gap-6 md:flex-row md:gap-10">
+      <div className="flex flex-col items-center gap-6 xl:flex-row xl:gap-10">
         <Image
           alt={t('personal-retirement-savings.tfsa.illustration.alt')}
           src={t('personal-retirement-savings.tfsa.illustration.img-url')}
@@ -394,14 +392,12 @@ const RetirementIncomeSources: FC = () => {
           height={150}
           className="w-full max-w-md"
         />
-        <div className="w-full lg:flex-1">
-          <ImportantCard>
-            <Trans
-              ns="learn/retirement-income-sources"
-              i18nKey="personal-retirement-savings.tfsa.important-notice"
-            />
-          </ImportantCard>
-        </div>
+        <ImportantCard>
+          <Trans
+            ns="learn/retirement-income-sources"
+            i18nKey="personal-retirement-savings.tfsa.important-notice"
+          />
+        </ImportantCard>
       </div>
 
       <h2 id="learn-more" className="h2">
