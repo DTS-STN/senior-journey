@@ -1,11 +1,12 @@
 import { FC } from 'react'
 
 import {
+  CardMedia,
   Card,
-  CardBody,
-  CardHeader,
+  CardContent,
   Typography,
-} from '@material-tailwind/react'
+} from '@mui/material'
+
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -57,49 +58,42 @@ const Learn: FC = () => {
       </section>
 
       <section>
-        <Typography
-          variant="h2"
-          className="mb-7 mt-12 font-display text-3xl font-semibold text-primary-700"
-        >
-          {t('explore')}
-        </Typography>
         {sections.map((section, index) => (
           <div key={index}>
             <Typography
-              variant="h3"
-              className="mb-3.5 mt-8 font-display text-2xl font-light"
+              variant="h4"
+              className="mb-3.5 mt-14 font-display text-2xl font-light font-semibold text-primary-700 text-3xl"
             >
               {t(`sections.${index}.title`)}
             </Typography>
-            <Typography variant="paragraph" className="font-body font-normal">
+            <Typography variant="body1" className="font-body font-normal text-black">
               {t(`sections.${index}.body`)}
             </Typography>
             <div className="grid gap-6 md:grid-cols-2 xl:md:grid-cols-3">
               {section.cards.map((_, cardIndex) => (
                 <Card
                   key={cardIndex}
-                  className="h-full rounded elevation-1 focus-within:elevation-8 hover:elevation-8"
-                  shadow={false}
+                  className="h-full rounded elevation-1 focus-within:elevation-8 hover:elevation-8 mt-6"
                 >
                   <Link
                     href={t(`sections.${index}.cards.${cardIndex}.link`)}
                     className="h-full no-underline visited:text-inherit hover:text-inherit focus:text-inherit"
                     aria-describedby={`section-${index}-card-${cardIndex}`}
                   >
-                    <CardHeader
-                      shadow={false}
+                    <div
                       className="relative m-0 h-64 w-full rounded-b-none rounded-t bg-secondary-50 pt-6"
                     >
-                      <Image
-                        src={t(`sections.${index}.cards.${cardIndex}.image`)}
+                      <CardMedia
+                        component="img"
                         alt={t(`sections.${index}.cards.${cardIndex}.title`)}
-                        className="h-full w-full"
                         width={380}
                         height={250}
+                        image={t(`sections.${index}.cards.${cardIndex}.image`)}
+                        className="w-full h-full object-contain"
                       />
-                    </CardHeader>
-                    <CardBody className="text-left">
-                      <Typography className="mb-2 font-display text-xs font-semibold text-black">
+                    </div>
+                    <CardContent className="text-left">
+                      <Typography className="mb-2 font-display text-sm font-bold text-black">
                         {t(`sections.${index}.cards.${cardIndex}.read`)}
                       </Typography>
                       <Typography
@@ -112,7 +106,7 @@ const Learn: FC = () => {
                       <Typography className="text-gray-surface font-body">
                         {t(`sections.${index}.cards.${cardIndex}.body`)}
                       </Typography>
-                    </CardBody>
+                    </CardContent>
                   </Link>
                 </Card>
               ))}
