@@ -44,7 +44,6 @@
     @apply font-light;
     @apply font-display;
     @apply text-2xl;
-    @apply my-4;
   }
 
   .h2 {
