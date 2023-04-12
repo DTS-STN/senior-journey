@@ -44,7 +44,7 @@ const Home: FC = () => {
 
       <section className="rounded-3xl bg-[#f5f5f5] ">
         <div className="pt-10 flex flex-col items-center md:flex-row-reverse">
-          <div className="w-1/2 md:w-1/3 lg:w-3/5">
+          <div className="mb-4 md:mb-0 w-2/3 md:w-2/3 lg:w-3/5">
             <Image
               src="/assets/banner.svg"
               width={742}
@@ -54,7 +54,7 @@ const Home: FC = () => {
               priority
             />
           </div>
-          <div className="w-full px-6 pb-10 text-center md:w-2/3 md:pb-10 md:pl-14 md:text-left lg:w-4/5 lg:pb-4">
+          <div className="w-full px-6 text-center md:w-2/3 pb-4 md:pl-14 md:text-left lg:w-4/5">
             <h3 className="h3 mb-4 text-left text-5xl font-bold text-primary-700">
               {t('banner.title')}
             </h3>
