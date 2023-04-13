@@ -18,7 +18,7 @@ const RetirementIncomeSources: FC = () => {
   const { t } = useTranslation('learn/retirement-income-sources')
 
   return (
-    <LearnPageLayout header={t('header')} nav={'Navigation Menu Here...'}>
+    <LearnPageLayout header={t('header')}>
       <NextSeo title={t('header')} />
       <h2 id="overview" className="sr-only">
         {t('overview.header')}
@@ -400,9 +400,7 @@ const RetirementIncomeSources: FC = () => {
         </ImportantCard>
       </div>
 
-      <h2 id="learn-more" className="h2">
-        {t('learn-more.header')}
-      </h2>
+      <h2 className="h2">{t('learn-more.header')}</h2>
       {[
         {
           header: t('learn-more.transitioning-from-work-to-retirement.header'),
