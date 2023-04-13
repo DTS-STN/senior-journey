@@ -13,39 +13,39 @@
     "nav-header": "Organisation du gouvernement du Canada",
     "learning-materials-text": "Learning Materials (FR)",
     "learning-materials": {
-      "ri":"Sources of retirement income (FR)",
-      "ri-url":"sources-of-retirement-income-fr",
-      "cpp":"CPP Program Overview (FR)",
-      "cpp-url":"cpp-program-overview-fr",
-      "oas":"OAS Program Overview (FR)",
-      "oas-url":"oas-program-overview-fr",
-      "sfr":"Saving for retirement (FR)", 
-      "sfr-url":"saving-for-retirement-fr",
-      "qual":"Do you qualify for CPP retirement pension (FR)",
-      "qual-url":"do-you-qualify-for-cpp-retirement-pension-fr",
-      "con":"Contributions to the CPP (FR)",
-      "con-url":"contributions-to-the-cpp-fr",
-      "sit":"Situations that can affect your pension amount (FR)",
-      "sit-url":"situations-that-can-affect-your-pension-amount-fr",
-      "when":"When to start your retirement pension (FR)",
-      "when-url":"when-to-start-your-retirement-pension-fr",
-      "qualoas":"Do you qualify for the OAS pension (FR)",
-      "qualoas-url":"do-you-qualify-for-the-oas-pension-fr",
-      "how":"How much could you receive from OAS (FR)",
-      "how-url":"how-much-could-you-receive-from-oas-fr"
+      "ri": "Sources of retirement income (FR)",
+      "ri-url": "sources-of-retirement-income-fr",
+      "cpp": "CPP Program Overview (FR)",
+      "cpp-url": "cpp-program-overview-fr",
+      "oas": "OAS Program Overview (FR)",
+      "oas-url": "oas-program-overview-fr",
+      "sfr": "Saving for retirement (FR)",
+      "sfr-url": "saving-for-retirement-fr",
+      "qual": "Do you qualify for CPP retirement pension (FR)",
+      "qual-url": "do-you-qualify-for-cpp-retirement-pension-fr",
+      "con": "Contributions to the CPP (FR)",
+      "con-url": "contributions-to-the-cpp-fr",
+      "sit": "Situations that can affect your pension amount (FR)",
+      "sit-url": "situations-that-can-affect-your-pension-amount-fr",
+      "when": "When to start your retirement pension (FR)",
+      "when-url": "when-to-start-your-retirement-pension-fr",
+      "qualoas": "Do you qualify for the OAS pension (FR)",
+      "qualoas-url": "do-you-qualify-for-the-oas-pension-fr",
+      "how": "How much could you receive from OAS (FR)",
+      "how-url": "how-much-could-you-receive-from-oas-fr"
     },
-    "menu-text":"Menu (FR)",
-    "menu":{
-      "learn":"Learn (FR)",
-      "learn-url":"learn-fr",
-      "plan":"Plan (FR)",
-      "plan-url":"plan-fr",
-      "app":"Apply (FR)",
-      "app-url":"apply-fr",
-      "man":"Manage (FR)",
-      "man-url":"manage-fr",
-      "comm":"Community Resources (FR)",
-      "comm-url":"community-resources-fr"      
+    "menu-text": "Menu (FR)",
+    "menu": {
+      "learn": "Learn (FR)",
+      "learn-url": "learn-fr",
+      "plan": "Plan (FR)",
+      "plan-url": "plan-fr",
+      "app": "Apply (FR)",
+      "app-url": "apply-fr",
+      "man": "Manage (FR)",
+      "man-url": "manage-fr",
+      "comm": "Community Resources (FR)",
+      "comm-url": "community-resources-fr"
     },
     "links": {
       "about-canada-ca": "À propos de Canada.ca",
@@ -99,5 +99,9 @@
     "alert": "Lieu de test",
     "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
   },
-  "application-name-bar": "Seniors Digital Gateway (FR)"
+  "application-name-bar": "Seniors Digital Gateway (FR)",
+  "table-of-contents": {
+    "arial-lable": "(FR) Table of contents",
+    "label": "(FR) Contents"
+  }
 }

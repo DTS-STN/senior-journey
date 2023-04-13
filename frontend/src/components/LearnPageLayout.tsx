@@ -1,17 +1,16 @@
 import { FC } from 'react'
 
 import Layout from './Layout'
+import { TableOfContents } from './TableOfContents'
 
 export interface LearnPageLayoutProps {
   children: React.ReactNode
   header: string
-  nav: React.ReactNode
 }
 
 export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
   children,
-  header,
-  nav,
+  header
 }) => {
   return (
     <Layout>
@@ -20,7 +19,7 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
       </h1>
       <div className="grid gap-6 lg:grid-cols-12">
         <section className="hidden lg:col-span-4 lg:block xl:col-span-3">
-          {nav}
+          <TableOfContents />
         </section>
         <section id="content" className="lg:col-span-8 xl:col-span-9">
           {children}
