@@ -22,39 +22,21 @@ const useThrottledOnScroll = (callback: any, delay?: number) => {
   }, [throttledCallback])
 }
 
-interface TableOfContentItem {
+export interface TableOfContentItem {
   hash: string
   text: string
 }
 
-const useTableOfContentData = () => {
-  const { t } = useTranslation()
-  const [items, setItems] = useState<TableOfContentItem[]>([])
-  const [loading, setLoading] = useState(true)
-  const [title, setTitle] = useState<string | undefined>()
-
-  useEffect(() => {
-    // title
-    setTitle(document.querySelector('main h1')?.textContent ?? undefined)
-
-    // items
-    setItems(
-      Array.from(document.querySelectorAll('main h2[id]'))
-        .filter((el) => el.id && el.textContent)
-        .map((el) => ({ hash: el.id, text: el.textContent as string }))
-    )
-
-    // loading
-    setLoading(false)
-  }, [t])
-
-  return { items, loading, title }
+export interface TableOfContentsProps {
+  header?: string
+  items: ReadonlyArray<TableOfContentItem>
 }
 
-export const TableOfContents: FC = () => {
+export const TableOfContents: FC<TableOfContentsProps> = ({
+  header,
+  items,
+}) => {
   const { t } = useTranslation('common')
-  const { items, loading, title } = useTableOfContentData()
-
   const [activeState, setActiveState] = useState<string | null>(null)
 
   const clickedRef = useRef(false)
@@ -125,14 +107,13 @@ export const TableOfContents: FC = () => {
     []
   )
 
-  if (loading) return <></>
   return (
     <nav
       className="sticky top-2 rounded elevation-2"
       aria-label={t('table-of-contents.aria-label')}
     >
       <p className="m-0 p-4 font-display font-bold">
-        {title ? title : t('table-of-contents.label')}
+        {header ? header : t('table-of-contents.header')}
       </p>
       <hr className="mb-2" />
       {items.length > 0 && (

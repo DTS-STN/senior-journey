@@ -106,6 +106,6 @@
   "my-notes-url": "#",
   "table-of-contents": {
     "arial-lable": "Table of contents",
-    "label": "Contents"
+    "header": "Contents"
   }
 }
