@@ -38,10 +38,10 @@ const Learn: FC = () => {
               priority
             />
           </div>
-          <div className="w-full px-6 pb-10 text-center md:w-2/3 md:pb-10 md:pl-12 md:text-left lg:w-4/5 lg:pb-4">
-            <h2 className="h3 text-left text-5xl font-bold text-primary-700 xl:text-5xl">
+          <div className="my-2 px-6 pb-10 text-center md:w-2/3 md:pb-10 md:pt-10 md:pl-12 md:text-left lg:w-4/5 lg:pb-4">
+            <h3 className="h3 mb-4 text-left text-5xl font-bold text-primary-700">
               {t('banner.title')}
-            </h2>
+            </h3>
             <p className="pb-4 text-left text-lg font-normal md:w-4/5">
               {t('banner.text')}
             </p>

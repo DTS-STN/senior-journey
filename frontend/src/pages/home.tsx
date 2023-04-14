@@ -42,25 +42,26 @@ const Home: FC = () => {
     <Layout>
       <NextSeo title={t('header')} />
 
-      <section className="flex flex-col rounded-2xl bg-[#f5f5f5] p-5 md:relative md:p-0">
-        <div className="md:w-1/3">
-          <Image
-            src="/assets/banner.svg"
-            className="mx-auto h-full w-full pt-5"
-            width={742}
-            height={548}
-            sizes="100%"
-            alt=""
-            priority
-          />
-        </div>
-        <div className="pl-12 md:w-2/3">
-          <h2 className="h2 mt-4 pb-6 text-left lg:text-4xl xl:text-6xl">
-            {t('banner.title')}
-          </h2>
-          <p className="pb-2 text-left text-sm font-normal md:w-4/5 lg:text-lg">
-            {t('banner.text')}
-          </p>
+      <section className="rounded-3xl bg-[#f5f5f5] ">
+        <div className="pt-10 flex flex-col items-center md:flex-row-reverse">
+          <div className="mb-4 md:mb-0 w-2/3 md:w-2/3 lg:w-3/5">
+            <Image
+              src="/assets/banner.svg"
+              width={742}
+              height={548}
+              sizes="100%"
+              alt=""
+              priority
+            />
+          </div>
+          <div className="w-full px-6 text-center md:w-2/3 pb-4 md:pl-14 md:text-left lg:w-4/5">
+            <h3 className="h3 mb-4 text-left text-5xl font-bold text-primary-700">
+              {t('banner.title')}
+            </h3>
+            <p className="text-left text-lg font-normal">
+              {t('banner.text')}
+            </p>
+          </div>
         </div>
       </section>
 
