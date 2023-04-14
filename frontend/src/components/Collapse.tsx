@@ -10,7 +10,7 @@ const Collapse: FC<CollapseProps> = ({ title, children }) => {
   return (
     <details
       aria-describedby={`${id}-details-summary`}
-      className="mb-3 max-w-prose rounded border p-3"
+      className="rounded border p-3"
     >
       <summary
         id={`${id}-details-summary`}

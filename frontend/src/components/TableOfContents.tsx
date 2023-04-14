@@ -3,6 +3,8 @@ import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { DebouncedFunc, throttle } from 'lodash'
 import { useTranslation } from 'next-i18next'
 
+import { TableOfContentItem } from '../lib/types'
+
 const noop = () => {}
 
 const useThrottledOnScroll = (callback: any, delay?: number) => {
@@ -20,11 +22,6 @@ const useThrottledOnScroll = (callback: any, delay?: number) => {
       ;(throttledCallback as DebouncedFunc<any>).cancel()
     }
   }, [throttledCallback])
-}
-
-export interface TableOfContentItem {
-  hash: string
-  text: string
 }
 
 export interface TableOfContentsProps {
@@ -113,7 +110,7 @@ export const TableOfContents: FC<TableOfContentsProps> = ({
       aria-label={t('table-of-contents.aria-label')}
     >
       <p className="m-0 p-4 font-display font-bold">
-        {header ? header : t('table-of-contents.header')}
+        {header ?? t('table-of-contents.header')}
       </p>
       <hr className="mb-2" />
       {items.length > 0 && (

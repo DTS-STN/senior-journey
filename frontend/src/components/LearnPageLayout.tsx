@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import Layout from './Layout'
 import { TableOfContents } from './TableOfContents'
+import { TableOfContentsCollapse } from './TableOfContentsCollapse'
 
 export interface LearnPageLayoutProps {
   children: React.ReactNode
@@ -23,6 +24,11 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
         <section className="hidden lg:col-span-4 lg:block xl:col-span-3">
           {!tableOfContentsData.loading && (
             <TableOfContents {...tableOfContentsData} />
+          )}
+        </section>
+        <section className="lg:hidden">
+          {!tableOfContentsData.loading && (
+            <TableOfContentsCollapse {...tableOfContentsData} />
           )}
         </section>
         <section id="content" className="lg:col-span-8 xl:col-span-9">

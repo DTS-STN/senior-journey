@@ -1,4 +1,5 @@
 export type AdobeDataLayer = { push?: (object: Record<string, string>) => void }
+
 export type AppWindow = Window &
   typeof globalThis & { adobeDataLayer?: AdobeDataLayer }
 
@@ -8,4 +9,9 @@ export interface HealthApiResponse {
   environment: string
   status: string
   uptime: string
+}
+
+export interface TableOfContentItem {
+  hash: string
+  text: string
 }
