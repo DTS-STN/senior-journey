@@ -163,7 +163,7 @@ const RetirementIncomeSources: FC = () => {
             <div className="text-right text-primary-500">
               <a
                 href="#"
-                className="uppercase text-inherit no-underline visited:text-inherit hover:text-inherit hover:underline focus:text-inherit focus:underline"
+                className="font-display font-bold uppercase text-inherit no-underline visited:text-inherit hover:text-inherit hover:underline focus:text-inherit focus:underline"
               >
                 {t('old-age-security-program.oas-pension.card.learn-more')}
               </a>
