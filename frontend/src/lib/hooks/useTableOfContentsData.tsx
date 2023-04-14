@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { useTranslation } from 'next-i18next'
 
-import { TableOfContentItem } from '../../components/TableOfContents'
+import { TableOfContentItem } from '../types'
 
 interface TableOfContentsData {
   header?: string
