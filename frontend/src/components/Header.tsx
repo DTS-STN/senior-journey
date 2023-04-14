@@ -16,7 +16,7 @@ export interface HeaderProps {
 
 const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
   const config = getConfig()
-  const { locale, asPath } = useRouter()
+  const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
 
   const langSelectorLocale = locale === 'en' ? 'fr' : 'en'
@@ -59,7 +59,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
                     ? 'Government of Canada'
                     : 'Gouvernement du Canada'
                 }
-                src={locale === 'en' ? '/assets/sig-blk-en.svg' : '/assets/sig-blk-fr.svg'}
+                src={`/assets/sig-blk-${locale}.svg`}
                 width={300}
                 height={28}
                 priority
@@ -68,7 +68,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
 
             {/* Language selector for small screens */}
             <Link
-              href={asPath}
+              href={{ pathname, query }}
               locale={langSelectorLocale}
               replace
               className={`ml-6 block cursor-help pb-2 font-body text-base font-bold text-[#284162] underline decoration-dotted hover:text-[#0535d2] sm:ml-16 md:hidden md:text-sm`}
@@ -81,7 +81,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
           <div className="flex flex-col">
             {/* Language selector for mid to larger screens */}
             <Link
-              href={asPath}
+              href={{ pathname, query }}
               locale={langSelectorLocale}
               replace
               className="hidden self-end pb-0 font-body text-[#284162] underline hover:text-[#0535d2] md:block lg:pb-4"
@@ -95,7 +95,14 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
           </div>
         </div>
 
-        <ApplicationNameBar text={t('application-name-bar')} href="/" checklist={t('checklist')} checklistUrl={t('checklist-url')} myNotes={t('my-notes')} myNotesUrl={t('my-notes-url')} />
+        <ApplicationNameBar
+          text={t('application-name-bar')}
+          href="/"
+          checklist={t('checklist')}
+          checklistUrl={t('checklist-url')}
+          myNotes={t('my-notes')}
+          myNotesUrl={t('my-notes-url')}
+        />
 
         {/* <Menu
           loginText={t('login')}
@@ -114,7 +121,6 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
             },
           ]}
         /> */}
-      
       </header>
     </>
   )
