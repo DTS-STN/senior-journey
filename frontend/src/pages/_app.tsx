@@ -6,7 +6,6 @@ import { DefaultSeo } from 'next-seo'
 import { AppProps } from 'next/app'
 import getConfig from 'next/config'
 import Head from 'next/head'
-import Script from 'next/script'
 
 import { AppWindow } from '../lib/types'
 import { getNextSEOConfig } from '../next-seo.config'
@@ -25,8 +24,6 @@ const requestCounter = createCounter('senior-journey.requests.count')
 
 const MyApp = ({ Component, pageProps, router }: AppProps) => {
   const config = getConfig()
-  const adobeAnalyticsScriptSrc =
-    config?.publicRuntimeConfig?.adobeAnalyticsScriptSrc
   const appBaseUri = config?.publicRuntimeConfig?.appBaseUri
   const nextSEOConfig = getNextSEOConfig(appBaseUri, router)
 
@@ -56,18 +53,8 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/favicon.ico" />
       </Head>
-
-      {adobeAnalyticsScriptSrc && (
-        <>
-          <Script src="https://code.jquery.com/jquery-3.6.3.min.js" />
-          <Script src={adobeAnalyticsScriptSrc} />
-        </>
-      )}
-
       <DefaultSeo {...nextSEOConfig} />
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
