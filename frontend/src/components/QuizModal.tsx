@@ -7,9 +7,10 @@ export interface QuizModalProps {
   children: ReactNode
   onClose: () => void
   open: boolean
+  closeText: string;
 }
 
-const QuizModal: FC<QuizModalProps> = ({ children, onClose, open }) => {
+const QuizModal: FC<QuizModalProps> = ({ children, onClose, open, closeText }) => {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const id = useId()
 
@@ -44,7 +45,7 @@ const QuizModal: FC<QuizModalProps> = ({ children, onClose, open }) => {
           <div className="flex justify-end gap-2 p-2">
           
             <Button variant="text" className="hover:bg-white text-primary-700 normal-case font-bold text-base" onClick={onClose}>
-            <MdClose className="inline text-2xl font-bold text-primary-700 mr-2" /> Close
+            <MdClose className="inline text-2xl font-bold text-primary-700 mr-2" /> {closeText}
             </Button>
           </div>
           <div id={`${id}-QuizModal-desc`} className="p-3">
