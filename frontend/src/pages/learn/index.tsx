@@ -1,6 +1,12 @@
 import { FC } from 'react'
 
-import { Card, CardActionArea, CardContent, CardMedia } from '@mui/material'
+import {
+  Button,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+} from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -39,14 +45,9 @@ const Learn: FC = () => {
             <p className="pb-4 text-left text-lg font-normal md:w-4/5">
               {t('banner.text')}
             </p>
-            <Link
-              href="#"
-              className="rounded bg-primary-700 px-6 py-4 text-center
-            font-display text-sm font-bold uppercase text-white no-underline decoration-white
-            shadow-xl visited:text-white visited:decoration-white hover:bg-primary-800 hover:text-white lg:text-base"
-            >
+            <Button href="#" size="large">
               {t('banner.quiz')}
-            </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -64,7 +65,7 @@ const Learn: FC = () => {
                   <CardActionArea
                     LinkComponent={Link}
                     href={t(`sections.${index}.cards.${cardIndex}.link`)}
-                    className="h-full no-underline visited:text-inherit hover:text-inherit focus:text-inherit"
+                    className="h-full"
                     aria-describedby={`section-${index}-card-${cardIndex}`}
                   >
                     <CardMedia
@@ -83,7 +84,7 @@ const Learn: FC = () => {
                       >
                         {t(`sections.${index}.cards.${cardIndex}.title`)}
                       </h3>
-                      <p className="text-gray-surface">
+                      <p className="m-0 text-black/60">
                         {t(`sections.${index}.cards.${cardIndex}.body`)}
                       </p>
                     </CardContent>

@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { Link as MuiLink } from '@mui/material'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 
@@ -48,13 +49,15 @@ const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
             <li>Try refreshing the page or try again later;</li>
             <li>
               Return to the{' '}
-              <Link href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="default">
                 home page
-              </Link>
+              </MuiLink>
               ;
             </li>
             <li>
-              <a href="https://www.canada.ca/en/contact.html">Contact us</a>
+              <MuiLink href="https://www.canada.ca/en/contact.html">
+                Contact us
+              </MuiLink>
               &nbsp;and we&#39;ll help you out
             </li>
           </ul>
@@ -76,15 +79,15 @@ const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
             <li>Actualisez la page ou réessayez plus tard;</li>
             <li>
               Retournez à la{' '}
-              <Link href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="default">
                 page d&#39;accueil
-              </Link>
+              </MuiLink>
               ;
             </li>
             <li>
-              <a href="https://www.canada.ca/fr/contact.html">
+              <MuiLink href="https://www.canada.ca/fr/contact.html">
                 Communiquez avec nous
-              </a>{' '}
+              </MuiLink>{' '}
               pour obtenir de l&#39;aide.
             </li>
           </ul>

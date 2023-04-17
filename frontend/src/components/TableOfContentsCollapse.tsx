@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { Divider } from '@mui/material'
 import { useTranslation } from 'next-i18next'
 
 import { TableOfContentItem } from '../lib/types'
@@ -16,7 +17,7 @@ export const TableOfContentsCollapse: FC<TableOfContentsCollapseProps> = ({
 
   return (
     <Collapse title={t('table-of-contents.header')}>
-      <hr className="my-2" />
+      <Divider />
       <nav aria-label={t('table-of-contents.aria-label')}>
         {items.length > 0 && (
           <ul>

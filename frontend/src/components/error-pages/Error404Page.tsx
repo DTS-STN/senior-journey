@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { Link as MuiLink } from '@mui/material'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 
@@ -32,14 +33,16 @@ const Error404Page: FC = () => {
           <ul className="list-disc space-y-2 pl-10">
             <li>
               Return to the{' '}
-              <Link href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="default">
                 home page
-              </Link>
+              </MuiLink>
               ;
             </li>
             <li>
-              <a href="https://www.canada.ca/en/contact.html">Contact us</a> and
-              we&#39;ll help you out.
+              <MuiLink href="https://www.canada.ca/en/contact.html">
+                Contact us
+              </MuiLink>{' '}
+              and we&#39;ll help you out.
             </li>
           </ul>
         </div>
@@ -54,15 +57,15 @@ const Error404Page: FC = () => {
           <ul className="list-disc space-y-2 pl-10">
             <li>
               Retournez à la{' '}
-              <Link href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="default">
                 page d&#39;accueil
-              </Link>
+              </MuiLink>
               ;
             </li>
             <li>
-              <a href="https://www.canada.ca/fr/contact.html">
+              <MuiLink href="https://www.canada.ca/fr/contact.html">
                 Communiquez avec nous
-              </a>{' '}
+              </MuiLink>{' '}
               pour obtenir de l&#39;aide.
             </li>
           </ul>

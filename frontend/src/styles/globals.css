@@ -1,93 +1,159 @@
-/* ensure that there is a semicolon at the end of the line otherwise the styles will not build correctly in production.  */
+/* ensure that there is.link semicolon.linkt the end of the line otherwise the styles will not build correctly in production.  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap');
 @import "latofonts.css";
 
 /* tailwind default */
 @tailwind base;
+
+/*
+  From tailwindcss preflight
+  https://unpkg.com/tailwindcss@3.3.1/src/css/preflight.css
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: theme('borderColor.DEFAULT', currentColor); /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden.linkttribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  /* consistent focus styles on all components */
-  * {
-    @apply focus:outline-none;
-    @apply focus-visible:ring-1;
-    @apply focus-visible:ring-black;
-  }
+/*
+  Senior Journey - Custom css
+*/
+.h6 {
+  @apply font-bold;
+  @apply font-display;
+  @apply text-xl;
+}
 
-  html {
-    @apply text-basic-gray;
-  }
+.h5 {
+  @apply font-display;
+  @apply font-light;
+  @apply text-2xl;
+}
 
-  body {
-    @apply font-body;
-  }
+.h4 {
+  @apply font-bold;
+  @apply font-display;
+}
 
-  .h6{
-    @apply font-bold;
-    @apply font-display;
-    @apply text-xl;
-  }
+.h3 {
+  @apply font-light;
+  @apply font-display;
+  @apply text-2xl;
+  @apply my-4;
+}
 
-  .h5 {
-    @apply font-display;
-    @apply font-light;
-    @apply text-2xl;
-  }
+.h2 {
+  @apply font-medium;
+  @apply font-display;
+  @apply text-4xl;
+  @apply mt-10;
+  @apply mb-4;
+}
 
-  .h4 {
-    @apply font-bold;
-    @apply font-display;
-  }
+.h1 {
+  @apply font-bold;
+  @apply font-display;
+  @apply text-4xl;
+  @apply mb-8;
+  @apply text-aqua-default;
+}
 
-  .h3 {
-    @apply font-light;
-    @apply font-display;
-    @apply text-2xl;
-  }
+p {
+  @apply mb-4;
+}
 
-  .h2 {
-    @apply font-medium;
-    @apply font-display;
-    @apply text-4xl;
-    @apply mt-10;
-    @apply mb-4;
-  }
+main .external-link[target='_blank']::after {
+  content: url(/assets/new-tab-icon.svg);
+  display: inline-block;
+  height: 1em;
+  margin-left: 0.2em;
+  width: 1em;
+  text-align: center;
+}
 
-  .h1 {
-    @apply font-bold;
-    @apply font-display;
-    @apply text-4xl;
-    @apply mb-8;
-    @apply text-aqua-default;
-  }
-
-  p {
-    @apply mb-4;
-  }
-
-  main a {
-    @apply text-link-default;
-    @apply underline;
-  }
-  main a:visited {
-    @apply text-link-visited;
-  }
-  main a:hover,
-  main a:focus {
-    @apply text-link-selected;
-  }
-
-  main a[target='_blank']::after {
-    content: url(/assets/new-tab-icon.svg);
-    display: inline-block;
-    height: 1em;
-    margin-left: 0.2em;
-    width: 1em;
-    text-align: center;
-  }
-
-  .page-nav-active {
-    @apply bg-[#4ED8E8] bg-opacity-[12%] text-[#008490];
-  }
+.page-nav-active {
+  @apply bg-[#4ED8E8] bg-opacity-[12%] text-[#008490];
 }
