@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 
 import {
   Button,
@@ -6,7 +6,9 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
+  MobileStepper,
 } from '@mui/material'
+import { FormikWizard } from 'formik-wizard-form'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -15,12 +17,29 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Layout from '../../components/Layout'
+import Question1 from '../../components/Question1'
+import Question2 from '../../components/Question2'
+import QuizLandingPage from '../../components/QuizLandingPage'
+import QuizModal from '../../components/QuizModal'
 
 const Learn: FC = () => {
   const { t } = useTranslation('learn')
   const sections = t<string, { cards: any[] }[]>('sections', {
     returnObjects: true,
   })
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+  }
+
+  const [, setFinalValues] = useState({})
+  const [, setFinished] = useState(false)
 
   return (
     <Layout>
@@ -45,12 +64,89 @@ const Learn: FC = () => {
             <p className="pb-4 text-left text-lg font-normal md:w-4/5">
               {t('banner.text')}
             </p>
-            <Button href="#" size="large">
+            <Button size="large" onClick={handleOpenModal}>
               {t('banner.quiz')}
             </Button>
           </div>
         </div>
       </section>
+
+      <QuizModal onClose={handleCloseModal} open={isModalOpen}>
+        <FormikWizard
+          initialValues={{}}
+          onSubmit={(values) => {
+            setFinalValues(values)
+            setFinished(true)
+          }}
+          validateOnNext
+          activeStepIndex={0}
+          steps={[
+            {
+              component: QuizLandingPage,
+            },
+            {
+              component: Question1,
+            },
+            {
+              component: Question2,
+            },
+          ]}
+        >
+          {({
+            currentStepIndex,
+            renderComponent,
+            handlePrev,
+            handleNext,
+            isNextDisabled,
+            isPrevDisabled,
+          }) => {
+            return (
+              <>
+                {renderComponent()}
+                {currentStepIndex === 0 && (
+                  <Button
+                    className="w-full bg-primary-700 p-4 text-center font-display text-base normal-case text-white hover:bg-primary-800"
+                    onClick={handleNext}
+                    disabled={isNextDisabled}
+                  >
+                    Start The Quiz
+                  </Button>
+                )}
+                {currentStepIndex != 0 && (
+                  <div>
+                    <MobileStepper
+                      variant="progress"
+                      steps={9}
+                      position="static"
+                      activeStep={currentStepIndex}
+                      backButton={undefined}
+                      nextButton={undefined}
+                      classes={{
+                        progress: 'w-full',
+                      }}
+                    />
+                    <p className="text-center">{currentStepIndex} of 9</p>
+                    <Button
+                      onClick={handlePrev}
+                      disabled={isPrevDisabled}
+                      className="w-1/2 px-4 py-2 font-display font-bold normal-case text-primary-700 hover:bg-white"
+                    >
+                      Previous Question
+                    </Button>
+                    <Button
+                      onClick={handleNext}
+                      disabled={isNextDisabled}
+                      className="ml-auto w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
+                    >
+                      Next Question
+                    </Button>
+                  </div>
+                )}
+              </>
+            )
+          }}
+        </FormikWizard>
+      </QuizModal>
 
       <section>
         {sections.map((section, index) => (
