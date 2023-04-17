@@ -6,27 +6,24 @@
     "text": "(FR) Take our quiz and receive a personalized checklist to help guide you through retirement.",
     "quiz": "(FR) Take the quiz now!"
   },
-  "quiz":{
-    "navigation":{
+  "quiz": {
+    "navigation": {
       "start": "(FR) Start The Quiz",
       "previous": "(FR) Previous Question",
       "next": "(FR) Next Question",
       "submit": "(FR) Submit",
       "close": "(FR) Close",
-      "title":"(FR) Retirement Ready Quiz"
+      "title": "(FR) Retirement Ready Quiz"
     },
-    "landing":{
-      "p1":"(FR) Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
+    "landing": {
+      "p1": "(FR) Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
       "p2": "(FR) Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
-      "whatyouneed":"(FR) What you'll need",
-      "p3":"(FR) You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
-      "legal": "(FR) legal status",
-      "legalextra": "(FR) (such as Canadian citizen, Indian Status, or permanent resident)",
-      "residence": "(FR) residence history",
-      "residenceextra": "(FR) (number of years lived in Canada)",
-      "marital": "(FR) marital status",
-      "retirement": "(FR) retirement plan",
-      "retirementextra": "(FR) (when you plan on retiring, where you plan on living in retirement, etc.)",
+      "whatyouneed": "(FR) What you'll need",
+      "p3": "(FR) You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
+      "legal": "(FR) <strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
+      "residence": "(FR) <strong>residence history</strong> (number of years lived in Canada)",
+      "marital": "(FR) <strong>marital status</strong>",
+      "retirement": "(FR) <strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
       "timetocomplete": "(FR) Time to complete survey",
       "minutes": "(FR) 3 minutes"
     }

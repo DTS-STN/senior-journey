@@ -1,40 +1,41 @@
+import { FC } from 'react'
+
+import { Trans, useTranslation } from 'next-i18next'
 import { MdWatchLater } from 'react-icons/md'
 
-interface QuizLandingPageProps {
-    landing: {
-        p1:string;
-        p2: string;
-        whatyouneed:string;
-        p3:string;
-        legal: string;
-        legalextra: string;
-        residence: string;
-        residenceextra: string;
-        marital: string;
-        retirement: string;
-        retirementextra: string;
-        timetocomplete: string;
-        minutes: string;
-    };
-  }
-
-const QuizLandingPage = ({ landing }: QuizLandingPageProps) => {
+const QuizLandingPage: FC = () => {
+  const { t } = useTranslation('learn')
   return (
-   <div className="">
-        <p>{landing.p1}</p>
-        <p>{landing.p2}</p>
-        <h6 className="font-bold font-display text-xl mb-4">{landing.whatyouneed}</h6>
-        <p>{landing.p3}</p>
-        <ul className="list-disc ml-6">
-            <li><span className="font-bold">{landing.legal}</span> {landing.legalextra}</li>
-            <li><span className="font-bold">{landing.residence}</span> {landing.residenceextra}</li>
-            <li><span className="font-bold">{landing.marital}</span></li>
-            <li><span className="font-bold">{landing.retirement}</span> {landing.retirementextra}</li>
-        </ul>
-        <h6 className="font-bold font-display text-xl mb-2 mt-4">{landing.timetocomplete}</h6>
-        <p className="mb-32"><MdWatchLater className="inline text-2xl mr-4" />{landing.minutes}</p>
-   </div>
-  );
-};
+    <div className="">
+      <p>{t('quiz.landing.p1')}</p>
+      <p>{t('quiz.landing.p2')}</p>
+      <h6 className="mb-4 font-display text-xl font-bold">
+        {t('quiz.landing.whatyouneed')}
+      </h6>
+      <p>{t('quiz.landing.p3')}</p>
+      <ul className="ml-6 list-disc">
+        <li>
+          <Trans ns="learn" i18nKey="quiz.landing.legal" />
+        </li>
+        <li>
+          <Trans ns="learn" i18nKey="quiz.landing.residence" />
+        </li>
+        <li>
+          <Trans ns="learn" i18nKey="quiz.landing.marital" />
+        </li>
+        <li>
+          <Trans ns="learn" i18nKey="quiz.landing.retirement" />
+        </li>
+      </ul>
+      <h6 className="mb-2 mt-4 font-display text-xl font-bold">
+        {t('quiz.landing.timetocomplete')}
+      </h6>
+      <p className="mb-32">
+        <MdWatchLater className="mr-4 inline text-2xl" />
+        {t('quiz.landing.minutes')}
+      </p>
+    </div>
+  )
+}
 
-export default QuizLandingPage;
+export default QuizLandingPage
