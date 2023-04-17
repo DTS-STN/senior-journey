@@ -17,9 +17,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Layout from '../../components/Layout'
-import Question1 from '../../components/Question1'
-import Question2 from '../../components/Question2'
 import QuizLandingPage from '../../components/QuizLandingPage'
+import Question1 from '../../components/questions/Question1'
+import Question2 from '../../components/questions/Question2'
+import Question3 from '../../components/questions/Question3'
+import Question4 from '../../components/questions/Question4'
+import Question5 from '../../components/questions/Question5'
+import Question6 from '../../components/questions/Question6'
+import Question7 from '../../components/questions/Question7'
+import Question8 from '../../components/questions/Question8'
+import Question9 from '../../components/questions/Question9'
 import QuizModal from '../../components/QuizModal'
 
 const Learn: FC = () => {
@@ -29,7 +36,6 @@ const Learn: FC = () => {
   })
   
   const landing = {
-        title: t('quiz.landing.title'),
         p1:t('quiz.landing.p1'),
         p2: t('quiz.landing.p2'),
         whatyouneed:t('quiz.landing.whatyouneed'),
@@ -92,6 +98,7 @@ const Learn: FC = () => {
         onClose={handleCloseModal}
         open={isModalOpen}
         closeText={t('quiz.navigation.close')}
+        title={t('quiz.navigation.title')}
       >
         <FormikWizard
         initialValues={{
@@ -112,6 +119,27 @@ const Learn: FC = () => {
           },
           {
             component: Question2,
+          },
+          {
+            component: Question3,
+          },
+          {
+            component: Question4,
+          },
+          {
+            component: Question5,
+          },
+          {
+            component: Question6,
+          },
+          {
+            component: Question7,
+          },
+          {
+            component: Question8,
+          },
+          {
+            component: Question9,
           },
         ]}
       >
@@ -135,7 +163,7 @@ const Learn: FC = () => {
           <div>
             <MobileStepper
                 variant="progress"
-                steps={9}
+                steps={10}
                 position="static"
                 activeStep={currentStepIndex} 
                 backButton={undefined} 
@@ -152,6 +180,15 @@ const Learn: FC = () => {
             >
               {t('quiz.navigation.previous')}
             </Button>
+            {currentStepIndex === 9 ? (
+              <Button
+              onClick={handleNext}
+              disabled={isNextDisabled}
+              className="bg-primary-700 text-white font-bold py-2 px-4 rounded ml-auto hover:bg-primary-800 w-1/2 normal-case font-display"
+            >
+              {t('quiz.navigation.submit')}
+            </Button>
+            ) : (
             <Button
               onClick={handleNext}
               disabled={isNextDisabled}
@@ -159,6 +196,7 @@ const Learn: FC = () => {
             >
               {t('quiz.navigation.next')}
             </Button>
+            )}
           </div>
           )}
             </>

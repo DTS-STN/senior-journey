@@ -8,9 +8,10 @@ export interface QuizModalProps {
   onClose: () => void
   open: boolean
   closeText: string;
+  title: string;
 }
 
-const QuizModal: FC<QuizModalProps> = ({ children, onClose, open, closeText }) => {
+const QuizModal: FC<QuizModalProps> = ({ children, onClose, open, closeText, title }) => {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const id = useId()
 
@@ -48,6 +49,11 @@ const QuizModal: FC<QuizModalProps> = ({ children, onClose, open, closeText }) =
             <MdClose className="inline text-2xl font-bold text-primary-700 mr-2" /> {closeText}
             </Button>
           </div>
+          <section className="rounded-3xl font-display bg-[#f5f5f5]">
+        <h2 className="p-10 text-left text-5xl font-bold text-primary-700 mb-14">
+            {title}
+          </h2>
+        </section>
           <div id={`${id}-QuizModal-desc`} className="p-3">
             {children}
           </div>

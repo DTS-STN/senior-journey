@@ -11,10 +11,11 @@
       "start": "(FR) Start The Quiz",
       "previous": "(FR) Previous Question",
       "next": "(FR) Next Question",
-      "close": "(FR) Close"
+      "submit": "(FR) Submit",
+      "close": "(FR) Close",
+      "title":"(FR) Retirement Ready Quiz"
     },
     "landing":{
-      "title":"(FR) Retirement Ready Quiz",
       "p1":"(FR) Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
       "p2": "(FR) Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
       "whatyouneed":"(FR) What you'll need",

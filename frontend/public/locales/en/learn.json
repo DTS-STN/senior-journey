@@ -11,10 +11,11 @@
       "start": "Start The Quiz",
       "previous": "Previous Question",
       "next": "Next Question",
-      "close": "Close"
+      "submit": "Submit",
+      "close": "Close",
+      "title":"Retirement Ready Quiz"
     },
     "landing":{
-      "title":"Retirement Ready Quiz",
       "p1":"Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
       "p2": "Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
       "whatyouneed":"What you'll need",

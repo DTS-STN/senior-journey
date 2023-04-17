@@ -2,7 +2,6 @@ import { MdWatchLater } from 'react-icons/md'
 
 interface QuizLandingPageProps {
     landing: {
-        title: string;
         p1:string;
         p2: string;
         whatyouneed:string;
@@ -22,11 +21,6 @@ interface QuizLandingPageProps {
 const QuizLandingPage = ({ landing }: QuizLandingPageProps) => {
   return (
    <div className="">
-    <section className="rounded-3xl font-display bg-[#f5f5f5]">
-        <h2 className="p-10 text-left text-5xl font-bold text-primary-700 mb-14">
-            {landing.title}
-          </h2>
-        </section>
         <p>{landing.p1}</p>
         <p>{landing.p2}</p>
         <h6 className="font-bold font-display text-xl mb-4">{landing.whatyouneed}</h6>
