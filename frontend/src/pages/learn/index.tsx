@@ -1,20 +1,54 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 
-import { Card, CardActionArea, CardContent, CardMedia } from '@mui/material'
+import {
+  Button,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  MobileStepper,
+  Modal,
+} from '@mui/material'
+import { FormikWizard } from 'formik-wizard-form'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FocusOn } from 'react-focus-on'
+import { MdClose } from 'react-icons/md'
 
 import Layout from '../../components/Layout'
+import QuizLandingPage from '../../components/QuizLandingPage'
+import Question1 from '../../components/questions/Question1'
+import Question2 from '../../components/questions/Question2'
+import Question3 from '../../components/questions/Question3'
+import Question4 from '../../components/questions/Question4'
+import Question5 from '../../components/questions/Question5'
+import Question6 from '../../components/questions/Question6'
+import Question7 from '../../components/questions/Question7'
+import Question8 from '../../components/questions/Question8'
+import Question9 from '../../components/questions/Question9'
 
 const Learn: FC = () => {
   const { t } = useTranslation('learn')
   const sections = t<string, { cards: any[] }[]>('sections', {
     returnObjects: true,
   })
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+  }
+
+  const [, setFinalValues] = useState({})
+  const [, setFinished] = useState(false)
 
   return (
     <Layout>
@@ -39,17 +73,148 @@ const Learn: FC = () => {
             <p className="pb-4 text-left text-lg font-normal md:w-4/5">
               {t('banner.text')}
             </p>
-            <Link
-              href="#"
-              className="rounded bg-primary-700 px-6 py-4 text-center
-            font-display text-sm font-bold uppercase text-white no-underline decoration-white
-            shadow-xl visited:text-white visited:decoration-white hover:bg-primary-800 hover:text-white lg:text-base"
-            >
+            <Button size="large" onClick={handleOpenModal}>
               {t('banner.quiz')}
-            </Link>
+            </Button>
           </div>
         </div>
       </section>
+
+      <Modal
+        onClose={handleCloseModal}
+        open={isModalOpen}
+        className="mx-auto flex w-full items-center justify-center border-none bg-transparent p-1 backdrop:bg-black backdrop:bg-opacity-80 md:w-2/3 lg:w-2/5"
+      >
+        <FocusOn enabled={isModalOpen} className="w-full">
+          <section
+            data-autofocus
+            tabIndex={-1}
+            className="rounded-md bg-white p-6"
+            aria-describedby={`QuizModal-header`}
+          >
+            <div className="flex justify-end gap-2 p-2">
+              <Button
+                variant="text"
+                className="text-base font-bold normal-case text-primary-700 hover:bg-white"
+                onClick={handleCloseModal}
+              >
+                <MdClose className="mr-2 inline text-2xl font-bold text-primary-700" />{' '}
+                {t('quiz.navigation.close')}
+              </Button>
+            </div>
+            <div className="rounded-3xl bg-[#f5f5f5] font-display">
+              <h2 className="mb-14 p-10 text-left text-5xl font-bold text-primary-700">
+                {t('quiz.navigation.title')}
+              </h2>
+            </div>
+            <FormikWizard
+              initialValues={{}}
+              onSubmit={(values) => {
+                setFinalValues(values)
+                setFinished(true)
+              }}
+              validateOnNext
+              activeStepIndex={0}
+              steps={[
+                {
+                  component: QuizLandingPage,
+                },
+                {
+                  component: Question1,
+                },
+                {
+                  component: Question2,
+                },
+                {
+                  component: Question3,
+                },
+                {
+                  component: Question4,
+                },
+                {
+                  component: Question5,
+                },
+                {
+                  component: Question6,
+                },
+                {
+                  component: Question7,
+                },
+                {
+                  component: Question8,
+                },
+                {
+                  component: Question9,
+                },
+              ]}
+            >
+              {({
+                currentStepIndex,
+                renderComponent,
+                handlePrev,
+                handleNext,
+                isNextDisabled,
+                isPrevDisabled,
+              }) => {
+                return (
+                  <>
+                    {renderComponent()}
+                    {currentStepIndex === 0 && (
+                      <Button
+                        className="w-full bg-primary-700 p-4 text-center font-display text-base normal-case text-white hover:bg-primary-800"
+                        onClick={handleNext}
+                        disabled={isNextDisabled}
+                      >
+                        {t('quiz.navigation.start')}
+                      </Button>
+                    )}
+                    {currentStepIndex != 0 && (
+                      <div>
+                        <MobileStepper
+                          variant="progress"
+                          steps={10}
+                          position="static"
+                          activeStep={currentStepIndex}
+                          backButton={undefined}
+                          nextButton={undefined}
+                          classes={{
+                            progress: 'w-full',
+                          }}
+                        />
+                        <p className="text-center">{currentStepIndex} of 9</p>
+                        <Button
+                          onClick={handlePrev}
+                          disabled={isPrevDisabled}
+                          className="w-1/2 px-4 py-2 font-display font-bold normal-case text-primary-700 hover:bg-white"
+                        >
+                          {t('quiz.navigation.previous')}
+                        </Button>
+                        {currentStepIndex === 9 ? (
+                          <Button
+                            onClick={handleNext}
+                            disabled={isNextDisabled}
+                            className="ml-auto w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
+                          >
+                            {t('quiz.navigation.submit')}
+                          </Button>
+                        ) : (
+                          <Button
+                            onClick={handleNext}
+                            disabled={isNextDisabled}
+                            className="ml-auto w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
+                          >
+                            {t('quiz.navigation.next')}
+                          </Button>
+                        )}
+                      </div>
+                    )}
+                  </>
+                )
+              }}
+            </FormikWizard>
+          </section>
+        </FocusOn>
+      </Modal>
 
       <section>
         {sections.map((section, index) => (
@@ -64,7 +229,7 @@ const Learn: FC = () => {
                   <CardActionArea
                     LinkComponent={Link}
                     href={t(`sections.${index}.cards.${cardIndex}.link`)}
-                    className="h-full no-underline visited:text-inherit hover:text-inherit focus:text-inherit"
+                    className="h-full"
                     aria-describedby={`section-${index}-card-${cardIndex}`}
                   >
                     <CardMedia
@@ -83,7 +248,7 @@ const Learn: FC = () => {
                       >
                         {t(`sections.${index}.cards.${cardIndex}.title`)}
                       </h3>
-                      <p className="text-gray-surface">
+                      <p className="m-0 text-black/60">
                         {t(`sections.${index}.cards.${cardIndex}.body`)}
                       </p>
                     </CardContent>

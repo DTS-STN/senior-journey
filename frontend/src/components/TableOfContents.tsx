@@ -1,5 +1,13 @@
 import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
+import {
+  Divider,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Paper,
+} from '@mui/material'
 import { DebouncedFunc, throttle } from 'lodash'
 import { useTranslation } from 'next-i18next'
 
@@ -105,33 +113,32 @@ export const TableOfContents: FC<TableOfContentsProps> = ({
   )
 
   return (
-    <nav
-      className="sticky top-2 rounded elevation-2"
-      aria-label={t('table-of-contents.aria-label')}
-    >
-      <p className="m-0 p-4 font-display font-bold">
-        {header ?? t('table-of-contents.header')}
-      </p>
-      <hr className="mb-2" />
-      {items.length > 0 && (
-        <ul>
-          {items.map(({ hash, text }) => (
-            <li key={hash} className="text-black/60">
-              <a
-                className={`block px-4 py-3 font-display text-sm font-medium text-inherit no-underline visited:text-inherit hover:bg-[#4ED8E8]/[.12] hover:text-primary-700 hover:text-opacity-100 focus:bg-[#4ED8E8]/[.12] focus:text-primary-700 ${
-                  activeState === hash
-                    ? 'bg-[#4ED8E8]/[.12] text-primary-700 visited:text-primary-700'
-                    : ''
-                }`}
-                href={`#${hash}`}
-                onClick={() => handleClick(hash)}
-              >
-                {text}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </nav>
+    <Paper variant="outlined" className="sticky top-2">
+      <nav aria-label={t('table-of-contents.aria-label')}>
+        <p className="m-0 p-4 font-display font-bold">
+          {header ?? t('table-of-contents.header')}
+        </p>
+        <Divider />
+        {items.length > 0 && (
+          <List>
+            {items.map(({ hash, text }) => (
+              <ListItem key={hash} disablePadding>
+                <ListItemButton
+                  component="a"
+                  href={`#${hash}`}
+                  selected={activeState === hash}
+                  onClick={() => handleClick(hash)}
+                >
+                  <ListItemText
+                    primary={text}
+                    primaryTypographyProps={{ variant: "body2" }}
+                  />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        )}
+      </nav>
+    </Paper>
   )
 }

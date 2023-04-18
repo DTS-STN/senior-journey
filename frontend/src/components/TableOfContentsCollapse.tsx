@@ -1,5 +1,12 @@
 import { FC } from 'react'
 
+import {
+  Divider,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from '@mui/material'
 import { useTranslation } from 'next-i18next'
 
 import { TableOfContentItem } from '../lib/types'
@@ -16,21 +23,21 @@ export const TableOfContentsCollapse: FC<TableOfContentsCollapseProps> = ({
 
   return (
     <Collapse title={t('table-of-contents.header')}>
-      <hr className="my-2" />
+      <Divider />
       <nav aria-label={t('table-of-contents.aria-label')}>
         {items.length > 0 && (
-          <ul>
+          <List>
             {items.map(({ hash, text }) => (
-              <li key={hash} className="text-black/60">
-                <a
-                  className={`block px-4 py-3 font-display text-sm font-medium text-inherit no-underline visited:text-inherit hover:bg-[#4ED8E8]/[.12] hover:text-primary-700 hover:text-opacity-100 focus:bg-[#4ED8E8]/[.12] focus:text-primary-700`}
-                  href={`#${hash}`}
-                >
-                  {text}
-                </a>
-              </li>
+              <ListItem key={hash} disablePadding>
+                <ListItemButton component="a" href={`#${hash}`}>
+                  <ListItemText
+                    primary={text}
+                    primaryTypographyProps={{ variant: 'body2' }}
+                  />
+                </ListItemButton>
+              </ListItem>
             ))}
-          </ul>
+          </List>
         )}
       </nav>
     </Collapse>

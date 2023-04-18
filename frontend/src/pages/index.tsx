@@ -1,8 +1,7 @@
+import { Button } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
-
-import LinkButton from '../components/LinkButton'
 
 const Index = () => {
   return (
@@ -34,26 +33,28 @@ const Index = () => {
                 / <span lang="fr">Gouvernement du Canada</span>
               </span>
             </div>
-            <div className="mt-9 mb-2 flex justify-center gap-8">
+            <div className="mb-2 mt-9 flex justify-center gap-8">
               <section className="w-36" lang="en">
                 <h2 className="sr-only">Government of Canada</h2>
-                <LinkButton
-                  href="/en"
-                  text="English"
-                  id="english-button"
-                  style="primary"
+                <Button
+                  color="secondary"
                   fullWidth
-                />
+                  href="/en"
+                  id="english-button"
+                >
+                  English
+                </Button>
               </section>
               <section className="w-36" lang="fr">
                 <h2 className="sr-only">Gouvernement du Canada</h2>
-                <LinkButton
-                  href="/fr"
-                  text="Français"
-                  id="french-button"
-                  style="primary"
+                <Button
+                  color="secondary"
                   fullWidth
-                />
+                  href="/fr"
+                  id="french-button"
+                >
+                  Français
+                </Button>
               </section>
             </div>
           </div>

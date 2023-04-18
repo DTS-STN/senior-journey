@@ -1,5 +1,7 @@
 import { FC, useId } from 'react'
 
+import { Paper } from '@mui/material'
+
 export interface CollapseProps {
   title: string
   children?: React.ReactNode
@@ -8,18 +10,17 @@ export interface CollapseProps {
 const Collapse: FC<CollapseProps> = ({ title, children }) => {
   const id = useId()
   return (
-    <details
-      aria-describedby={`${id}-details-summary`}
-      className="rounded border p-3"
-    >
-      <summary
-        id={`${id}-details-summary`}
-        className="cursor-pointer text-blue-light hover:text-link-selected hover:underline focus:text-link-selected focus:underline"
-      >
-        {title}
-      </summary>
-      {children}
-    </details>
+    <Paper variant="outlined">
+      <details aria-describedby={`${id}-details-summary`}>
+        <summary
+          id={`${id}-details-summary`}
+          className="cursor-pointer p-3 text-blue-light hover:text-link-selected hover:underline focus:text-link-selected focus:underline"
+        >
+          {title}
+        </summary>
+        {children}
+      </details>
+    </Paper>
   )
 }
 
