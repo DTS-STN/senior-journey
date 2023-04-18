@@ -20,7 +20,7 @@ const TaskCard: React.FC<TaskCardProps> = ({
     task,
 }) => {
 
-const tagsArray = task.tags ? task.tags.split(" ").map(tag => tag.replace(/_/g, ' ')) : [];
+    const tagsArray = task.tags ? task.tags.split(" ").map(tag => tag.replace(/_/g, ' ')) : [];
     return (
         <div className="relative bg-white rounded-lg shadow-md p-6 mb-4">
             {showCheckbox && (
