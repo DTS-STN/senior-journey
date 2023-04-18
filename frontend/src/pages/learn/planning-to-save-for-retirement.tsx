@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useMemo } from 'react'
 
 import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
@@ -7,16 +7,48 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { MdArrowForwardIos } from 'react-icons/md'
 
-import { LearnPageLayout } from '../../components/LearnPageLayout'
+import {
+  LearnMoreLink,
+  LearnPageLayout,
+} from '../../components/LearnPageLayout'
 
 const PlanningToSaveForRetirement: FC = () => {
   const { t } = useTranslation('learn/planning-to-save-for-retirement')
   const router = useRouter()
 
+  const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
+    () => [
+      {
+        href: '#',
+        primary: t('transitioning-heading'),
+        secondary: t('transitioning-content'),
+      },
+      {
+        href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp.html',
+        primary: t('cpp-heading'),
+        secondary: t('cpp-content'),
+      },
+      {
+        href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html',
+        primary: t('oas-heading'),
+        secondary: t('oas-content'),
+      },
+      {
+        href: '#',
+        primary: t('sources-of-income-heading'),
+        secondary: t('sources-of-income-content'),
+      },
+    ],
+    [t]
+  )
+
   return (
-    <LearnPageLayout header={t('header')}>
+    <LearnPageLayout
+      header={t('header')}
+      learnMoreHeader={t('learn-more-heading')}
+      learnMoreLinks={learnMoreLinks}
+    >
       <NextSeo title={t('header')} />
       <h2 id="overview" className="sr-only">
         {t('overview-link-text')}
@@ -53,41 +85,6 @@ const PlanningToSaveForRetirement: FC = () => {
         i18nKey="turning-savings-into-income-content-four"
         components={{ anchor: <MuiLink href={t('RRIF-link')} /> }}
       />
-      <h2 className="h2">{t('learn-more-heading')}</h2>
-      {[
-        {
-          href: '#',
-          heading: t('transitioning-heading'),
-          content: t('transitioning-content'),
-        },
-        {
-          href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp.html',
-          heading: t('cpp-heading'),
-          content: t('cpp-content'),
-        },
-        {
-          href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html',
-          heading: t('oas-heading'),
-          content: t('oas-content'),
-        },
-        {
-          href: '#',
-          heading: t('sources-of-income-heading'),
-          content: t('sources-of-income-content'),
-        },
-      ].map(({ href, heading, content }) => (
-        <a
-          key={heading}
-          href={href}
-          className="space-between m-5 flex w-[100%] items-center border-b-2 text-black no-underline visited:text-black"
-        >
-          <div className="flex-1 md:mr-20">
-            <h3 className="mb-2 font-medium">{heading}</h3>
-            <p className="text-[.9em] text-gray-700">{content}</p>
-          </div>
-          <MdArrowForwardIos className="ml-5 text-[2rem] font-bold md:mr-5 xl:text-2xl" />
-        </a>
-      ))}
     </LearnPageLayout>
   )
 }

@@ -1,6 +1,6 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC, PropsWithChildren, useMemo } from 'react'
 
-import { Divider, Link as MuiLink, Paper } from '@mui/material'
+import { Link as MuiLink, Paper } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -8,7 +8,10 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { LearnPageLayout } from '../../components/LearnPageLayout'
+import {
+  LearnMoreLink,
+  LearnPageLayout,
+} from '../../components/LearnPageLayout'
 
 export interface ImportantCardProps extends PropsWithChildren {}
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
@@ -18,8 +21,40 @@ const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
 const RetirementIncomeSources: FC = () => {
   const { t } = useTranslation('learn/retirement-income-sources')
 
+  const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
+    () => [
+      {
+        href: '/learn/transitioning-from-work-to-retirement',
+        primary: t('learn-more.transitioning-from-work-to-retirement.header'),
+        secondary: t(
+          'learn-more.transitioning-from-work-to-retirement.description'
+        ),
+      },
+      {
+        href: '/learn/canada-pension-plan-program',
+        primary: t('learn-more.canada-pension-plan-program.header'),
+        secondary: t('learn-more.canada-pension-plan-program.description'),
+      },
+      {
+        href: '/learn/old-age-security-program',
+        primary: t('learn-more.old-age-security-program.header'),
+        secondary: t('learn-more.old-age-security-program.description'),
+      },
+      {
+        href: '/learn/retirement-income-sources',
+        primary: t('learn-more.sources-of-retirement-income.header'),
+        secondary: t('learn-more.sources-of-retirement-income.description'),
+      },
+    ],
+    [t]
+  )
+
   return (
-    <LearnPageLayout header={t('header')}>
+    <LearnPageLayout
+      header={t('header')}
+      learnMoreHeader={t('learn-more.header')}
+      learnMoreLinks={learnMoreLinks}
+    >
       <NextSeo title={t('header')} />
       <h2 id="overview" className="sr-only">
         {t('overview.header')}
@@ -403,60 +438,6 @@ const RetirementIncomeSources: FC = () => {
           />
         </ImportantCard>
       </div>
-
-      <h2 className="h2">{t('learn-more.header')}</h2>
-      {[
-        {
-          header: t('learn-more.transitioning-from-work-to-retirement.header'),
-          description: t(
-            'learn-more.transitioning-from-work-to-retirement.description'
-          ),
-          link: '/learn/transitioning-from-work-to-retirement',
-        },
-        {
-          header: t('learn-more.canada-pension-plan-program.header'),
-          description: t('learn-more.canada-pension-plan-program.description'),
-          link: '/learn/canada-pension-plan-program',
-        },
-        {
-          header: t('learn-more.old-age-security-program.header'),
-          description: t('learn-more.old-age-security-program.description'),
-          link: '/learn/old-age-security-program',
-        },
-        {
-          header: t('learn-more.sources-of-retirement-income.header'),
-          description: t('learn-more.sources-of-retirement-income.description'),
-          link: '/learn/retirement-income-sources',
-        },
-      ].map(({ header, description, link }) => (
-        <Link
-          key={header}
-          href={link}
-          className="mt-10 block text-basic-gray no-underline visited:text-basic-gray hover:text-basic-gray focus:text-basic-gray"
-        >
-          <div className="mb-3 flex items-center justify-between gap-6">
-            <div>
-              <h3 className="font-display font-medium">{header}</h3>
-              <p className="m-0 text-sm text-opacity-60">{description}</p>
-            </div>
-            <div className="text-primary-700">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-          <Divider />
-        </Link>
-      ))}
     </LearnPageLayout>
   )
 }

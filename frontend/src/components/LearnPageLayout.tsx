@@ -1,18 +1,38 @@
 import { FC } from 'react'
 
+import {
+  Divider,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from '@mui/material'
+import Link from 'next/link'
+import { MdArrowForwardIos } from 'react-icons/md'
+
 import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import Layout from './Layout'
 import { TableOfContents } from './TableOfContents'
 import { TableOfContentsCollapse } from './TableOfContentsCollapse'
 
+export interface LearnMoreLink {
+  href: string
+  primary: string
+  secondary?: string
+}
+
 export interface LearnPageLayoutProps {
   children: React.ReactNode
   header: string
+  learnMoreHeader: string
+  learnMoreLinks: ReadonlyArray<LearnMoreLink>
 }
 
 export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
   children,
   header,
+  learnMoreHeader,
+  learnMoreLinks,
 }) => {
   const tableOfContentsData = useTableOfContentsData()
   return (
@@ -33,6 +53,31 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
         </section>
         <section id="content" className="lg:col-span-8 xl:col-span-9">
           {children}
+          {learnMoreLinks.length > 0 && (
+            <>
+              <h2 className="h2">{learnMoreHeader}</h2>
+              <List disablePadding>
+                {learnMoreLinks.map(({ href, primary, secondary }) => (
+                  <>
+                    <ListItem key={primary} disablePadding>
+                      <ListItemButton href={href} LinkComponent={Link}>
+                        <ListItemText
+                          primary={primary}
+                          primaryTypographyProps={{
+                            variant: 'subtitle1',
+                            className: 'font-display font-medium',
+                          }}
+                          secondary={secondary}
+                        />
+                        <MdArrowForwardIos className="text-[2rem] font-bold  xl:text-2xl" />
+                      </ListItemButton>
+                    </ListItem>
+                    <Divider component="li" />
+                  </>
+                ))}
+              </List>
+            </>
+          )}
         </section>
       </div>
     </Layout>
