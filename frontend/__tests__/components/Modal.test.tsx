@@ -31,7 +31,7 @@ describe('Modal', () => {
     <Modal
       open
       onClose={jest.fn()}
-      actionButtons={[{ text: 'button text' }]}
+      actionButtons={[{ id: "action-button", children: 'button text' }]}
       header={'header'}
     >
       <p>description</p>
