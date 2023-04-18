@@ -1,11 +1,14 @@
 import { FC, ReactNode, useEffect, useId, useRef } from 'react'
 
+import { Button, ButtonProps } from '@mui/material'
 import { FocusOn } from 'react-focus-on'
 
-import ActionButton, { ActionButtonProps } from './ActionButton'
+export interface ModalActionButtonProps extends Omit<ButtonProps, 'id'> {
+  id: string
+}
 
 export interface ModalProps {
-  actionButtons: ActionButtonProps[]
+  actionButtons: ModalActionButtonProps[]
   children: ReactNode
   header: string
   onClose: EventListener
@@ -63,8 +66,8 @@ const Modal: FC<ModalProps> = ({
           </div>
           <div className="flex justify-end gap-2 border-t border-gray-modal p-2">
             {actionButtons.map((actionButtonProps) => (
-              <ActionButton
-                key={actionButtonProps.text}
+              <Button
+                key={`${id}-${actionButtonProps.id}`}
                 {...actionButtonProps}
               />
             ))}

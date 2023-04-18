@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect, useState } from 'react'
+import { FC, useCallback, useEffect, useId, useState } from 'react'
 
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
@@ -11,6 +11,7 @@ export interface IdleTimeoutProps
     Pick<IIdleTimerProps, 'timeout'> {}
 
 const IdleTimeout: FC<IdleTimeoutProps> = ({ promptBeforeIdle, timeout }) => {
+  const id = useId()
   const { t } = useTranslation('common')
   const router = useRouter()
   const [modalOpen, setModalOpen] = useState(false)
@@ -51,13 +52,15 @@ const IdleTimeout: FC<IdleTimeoutProps> = ({ promptBeforeIdle, timeout }) => {
       actionButtons={[
         {
           onClick: () => handleOnIdle(),
-          style: 'primary',
-          text: t('modal-idle-timeout.end-session'),
+          children: t('modal-idle-timeout.end-session'),
+          id: `${id}-end-session`,
+          variant: 'text',
         },
         {
           onClick: handleOnIdleContinueSession,
-          style: 'default',
-          text: t('modal-idle-timeout.continue-session'),
+          children: t('modal-idle-timeout.continue-session'),
+          id: `${id}-continue-session`,
+          variant: 'text',
         },
       ]}
       header={t('modal-idle-timeout.header')}
