@@ -1,6 +1,13 @@
 import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
-import { Divider, Paper } from '@mui/material'
+import {
+  Divider,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Paper,
+} from '@mui/material'
 import { DebouncedFunc, throttle } from 'lodash'
 import { useTranslation } from 'next-i18next'
 
@@ -113,23 +120,23 @@ export const TableOfContents: FC<TableOfContentsProps> = ({
         </p>
         <Divider />
         {items.length > 0 && (
-          <ul>
+          <List>
             {items.map(({ hash, text }) => (
-              <li key={hash} className="text-black/60">
-                <a
-                  className={`block px-4 py-3 font-display text-sm font-medium text-inherit no-underline visited:text-inherit hover:bg-[#4ED8E8]/[.12] hover:text-primary-700 hover:text-opacity-100 focus:bg-[#4ED8E8]/[.12] focus:text-primary-700 ${
-                    activeState === hash
-                      ? 'bg-[#4ED8E8]/[.12] text-primary-700 visited:text-primary-700'
-                      : ''
-                  }`}
+              <ListItem key={hash} disablePadding>
+                <ListItemButton
+                  component="a"
                   href={`#${hash}`}
+                  selected={activeState === hash}
                   onClick={() => handleClick(hash)}
                 >
-                  {text}
-                </a>
-              </li>
+                  <ListItemText
+                    primary={text}
+                    primaryTypographyProps={{ variant: "body2" }}
+                  />
+                </ListItemButton>
+              </ListItem>
             ))}
-          </ul>
+          </List>
         )}
       </nav>
     </Paper>
