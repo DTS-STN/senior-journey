@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 
 import {
   Divider,
@@ -58,14 +58,15 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
               <h2 className="h2">{learnMoreHeader}</h2>
               <List disablePadding>
                 {learnMoreLinks.map(({ href, primary, secondary }) => (
-                  <>
-                    <ListItem key={primary} disablePadding>
+                  <React.Fragment key={primary}>
+                    <ListItem disablePadding>
                       <ListItemButton href={href} LinkComponent={Link}>
                         <ListItemText
                           primary={primary}
                           primaryTypographyProps={{
                             variant: 'subtitle1',
                             className: 'font-display font-medium',
+                            component: 'h3',
                           }}
                           secondary={secondary}
                         />
@@ -73,7 +74,7 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
                       </ListItemButton>
                     </ListItem>
                     <Divider component="li" />
-                  </>
+                  </React.Fragment>
                 ))}
               </List>
             </>
