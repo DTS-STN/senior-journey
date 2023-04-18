@@ -1,11 +1,13 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 
+import { Link as MuiLink } from '@mui/material'
 import { useTranslation } from 'next-i18next'
 import getConfig from 'next/config'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import { resolveHref } from '../lib/utils/url-utils'
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
 
@@ -67,29 +69,31 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
             </a>
 
             {/* Language selector for small screens */}
-            <Link
-              href={{ pathname, query }}
+            <MuiLink
+              component={Link}
+              href={resolveHref({ pathname, query })}
               locale={langSelectorLocale}
               replace
-              className={`ml-6 block cursor-help pb-2 font-body text-base font-bold text-[#284162] underline decoration-dotted hover:text-[#0535d2] sm:ml-16 md:hidden md:text-sm`}
+              className={`ml-6 block cursor-help pb-2 font-bold decoration-dotted sm:ml-16 md:hidden`}
               lang={langSelectorLocale}
             >
               <abbr title={langSelectorText}>{langSelectorAbbreviation}</abbr>
-            </Link>
+            </MuiLink>
           </div>
 
           <div className="flex flex-col">
             {/* Language selector for mid to larger screens */}
-            <Link
-              href={{ pathname, query }}
+            <MuiLink
+              component={Link}
+              href={resolveHref({ pathname, query })}
               locale={langSelectorLocale}
               replace
-              className="hidden self-end pb-0 font-body text-[#284162] underline hover:text-[#0535d2] md:block lg:pb-4"
+              className="hidden self-end pb-0 md:block lg:pb-4"
               data-cy="toggle-language-link"
               lang={langSelectorLocale}
             >
               {langSelectorText}
-            </Link>
+            </MuiLink>
             {/* Placeholder for SearchBar in case is back in ver 4??? */}
             {/* <SearchBar /> */}
           </div>

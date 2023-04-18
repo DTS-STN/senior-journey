@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ['Lato', 'sans-serif'],
-        body: ['"Noto sans"', 'sans-serif'],
+        body: ['"Noto Sans"', 'sans-serif'],
         extra: ['Patua One', 'cursive'],
       },
       borderWidth: {
@@ -93,6 +93,10 @@ module.exports = {
         card: '0px 2px 8px rgba(0, 0, 0, 0.25)',
       },
     },
+  },
+  corePlugins: {
+    // Remove the Tailwind CSS preflight styles so it can use Material UI's preflight instead (CssBaseline).
+    preflight: false,
   },
   plugins: [
     require('@tailwindcss/typography'),

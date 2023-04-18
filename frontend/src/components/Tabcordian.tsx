@@ -1,5 +1,6 @@
 import { FC, useState } from 'react'
 
+import { Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md'
 
@@ -76,11 +77,17 @@ const Tabcordian: FC<TabcordianProps> = ({ data }: TabcordianProps) => {
               <div className="flex">
                 <div className="flex flex-col md:flex-row md:space-x-14">
                   <div className="rounded bg-white px-10 elevation-1">
-                    <Link href={item.link} className="no-underline">
-                      <h3 className="h1 flex items-center py-5">
-                        {item.title} <MdKeyboardArrowRight />
-                      </h3>
-                    </Link>
+                    <h3 className="h1 my-5">
+                      <MuiLink
+                        component={Link}
+                        href={item.link}
+                        underline="hover"
+                        className="inline-flex items-center"
+                      >
+                        <span>{item.title}</span>
+                        <MdKeyboardArrowRight />
+                      </MuiLink>
+                    </h3>
                     <div className="justify-center">
                       {item.description.map((desc, i) => (
                         <p key={i}>{desc}</p>
@@ -93,15 +100,17 @@ const Tabcordian: FC<TabcordianProps> = ({ data }: TabcordianProps) => {
                       {item.links.map((link, b) => (
                         <div
                           key={link.title}
-                          className="border-t-slate-300 border-t-2 bg-white p-3 py-4"
+                          className="border-t-2 border-t-slate-300 bg-white p-3 py-4"
                         >
                           <div className="py-3">
-                            <Link
-                              className="h4 text-xl no-underline"
+                            <MuiLink
+                              component={Link}
+                              className="text-xl font-bold"
                               href={link.url}
+                              underline="hover"
                             >
                               {link.title}
-                            </Link>
+                            </MuiLink>
                           </div>
                           <div>{link.description}</div>
                         </div>

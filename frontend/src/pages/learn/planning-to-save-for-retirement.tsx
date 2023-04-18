@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -27,7 +28,7 @@ const PlanningToSaveForRetirement: FC = () => {
       <Trans
         ns="learn/planning-to-save-for-retirement"
         i18nKey="how-much-will-you-need-content"
-        components={{ anchor: <a href={t('GIS-link')} /> }}
+        components={{ anchor: <MuiLink href={t('GIS-link')} /> }}
       />
       <h2 id="changes-with-age" className="h2">
         {t('changes-with-age-heading')}
@@ -50,7 +51,7 @@ const PlanningToSaveForRetirement: FC = () => {
       <Trans
         ns="learn/planning-to-save-for-retirement"
         i18nKey="turning-savings-into-income-content-four"
-        components={{ anchor: <a href={t('RRIF-link')} /> }}
+        components={{ anchor: <MuiLink href={t('RRIF-link')} /> }}
       />
       <h2 className="h2">{t('learn-more-heading')}</h2>
       {[
