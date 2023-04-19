@@ -7,7 +7,7 @@ beforeEach(() => {
 
 describe('not found page loads', () => {
   it('displays the not found page', () => {
-    cy.location('pathname').should('equal', '/en/404')
+    cy.location('pathname').should('equal', '/404')
   })
 
   it('should have correct title', () => {
