@@ -2,22 +2,36 @@
   "description": "Description ici...",
   "header": "Acceuil",
   "contact-us": {
-    "title": "(FR)Contact Us",
-    "description": "(FR)Our call centres and Service Canada Centres operate Monday to Friday, from 8:30 a.m. to 4:00 p.m., your local time. They are closed on statuary holidays.",
+    "title": "(FR) Contact Us",
+    "description": "(FR) Our call centres and Service Canada Centres operate Monday to Friday, from 8:30 a.m. to 4:00 p.m., your local time. They are closed on statuary holidays.",
+    "link": "/contact-us",
     "cards": {
+      "request-call": {
+        "title": "(FR) Request a Call",
+        "description": "(FR) Ask us to call you by using eServiceCanada",
+        "link-text": "(FR) Request A Call",
+        "href": "requesthref"
+      },
       "call-us": {
-        "title": "(FR)Call us",
-        "description": "(FR)You can reach us at either of the numbers below.",
-        "toll-free": "(FR)Toll free:",
-        "direct": "(FR)Direct Number:",
-        "toll-number": "1-800-000-000",
-        "direct-number": "1-800-000-000"
+        "title": "(FR) Call us",
+        "description": "(FR) You can reach us at either of the numbers below.",
+        "toll-free-description":"(FR) The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday",
+        "outside-description":"(FR) The hours of operation are 8:40 am to 4:30 pm Eastern time, Monday to Friday",
+        "toll-free": "(FR) Canada and the United States Toll-free:",
+        "tty":"(FR) Canada and the United States TTY:",
+        "outside": "(FR) Outside Canada and the United States:",
+        "toll-number": "1-800-800-277-9914",
+        "tty-number": "1-800-255-4786",
+        "outside-number": "1-613-957-1954 (Call collect) (FR)",
+        "toll-number-href": "tel:18002554786",
+        "tty-number-href": "tel:18002554786",
+        "outside-number-href":"tel:16139571954"
       },
       "find-office": {
-        "title": "(FR)Find an office",
-        "description": "(FR)Find a Service Canada Centre near you using the link below.",
-        "link-text": "(FR)Find a Service Canada Centre",
-        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=fra"
+        "title": "(FR) Find an office",
+        "description": "(FR) Find a Service Canada Centre near you using the link below.",
+        "link-text": "(FR) Find a Service Canada Centre Near You",
+        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp"
       }
     }
   },
@@ -28,133 +42,100 @@
   "tabs": [
     {
       "title": "Learn (FR)",
+      "heading": "Get the most out of your retirement benefits in Canada (FR)",
       "description": [
-        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
-        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
+        {
+          "text": "There are many factors to consider before you retire. (FR)"
+        },
+        {
+          "text": "Learn about the basics of Canada's old age benefits and ways to manage your money in retirement. (FR)"
+        }
       ],
-      "link": "/learn",
+      "button": {
+        "text": "Explore Retirement (FR)",
+        "url": "#"
+      },
       "linksTitle": "Top Learning Links (FR)",
       "links": [
         {
-          "title": "Government Benefits 101 (FR)",
-          "url": "test-fr",
-          "description": "(FR) Learn about CPP/QPP and OAS"
+          "title": "Main sources of retirement income (FR)",
+          "url": "test",
+          "description": "Learn about old age benefits, private retirement savings, and how they work together (FR)"
         },
         {
-          "title": "Sources of retirement income (FR)",
-          "url": "test2-fr",
-          "description": "(FR) Your income during retirement will typically come from three main sources"
+          "title": "Planning to save for retirement (FR)",
+          "url": "test2",
+          "description": "Explore how to maximize your savings and better manage your money in retirement. (FR)"
         },
         {
-          "title": "Financial Support (FR)",
-          "url": "test3-fr",
-          "description": "(FR) Learn about your different financial support options."
+          "title": "When to take your public pensions (FR)",
+          "url": "test3",
+          "description": "You can choose when to start your old age benefits. Understand what to consider in making that decision (FR)"
         }
       ]
     },
     {
       "title": "Plan (FR)",
+      "heading": "Not sure where to begin? Take the quiz! (FR)",
       "description": [
-        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
-        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
+        {
+          "text": "Receive a personalized checklist to guide you through retirement. (FR)"
+        }
       ],
-      "link": "/plan",
-      "linksTitle": "Top Learning Links (FR)",
+      "button": {
+        "text":"Take The Quiz (FR)",
+        "url": "#"
+      },
+      "linksTitle": "Other Tools (FR)",
       "links": [
         {
-          "title": "Government Benefits 101 (FR)",
-          "url": "test-fr",
-          "description": "(FR) Learn about CPP/QPP and OAS"
+          "title": "Canadian Retirement Income Calculator (FR)",
+          "url": "test",
+          "description": "Get an estimate of your retirement income. This includes your federal old age benefits and private retirement income. (FR)"
         },
         {
-          "title": "Sources of retirement income (FR)",
-          "url": "test2-fr",
-          "description": "(FR) Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support (FR)",
-          "url": "test3-fr",
-          "description": "(FR) Learn about your different financial support options."
+          "title": "Old Age Security eligibility estimator (FR)",
+          "url": "test2",
+          "description": "Find old how much money you may get from the Old Age Security program and its benefits. (FR)"
         }
       ]
     },
     {
       "title": "Apply (FR)",
+      "heading": "Ready to Apply of CPP and OAS? Get started now (FR)",
       "description": [
-        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
-        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
-      ],
-      "link": "/apply",
-      "linksTitle": "Top Learning Links (FR)",
-      "links": [
         {
-          "title": "Government Benefits 101 (FR)",
-          "url": "test-fr",
-          "description": "(FR) Learn about CPP/QPP and OAS"
-        },
-        {
-          "title": "Sources of retirement income (FR)",
-          "url": "test2-fr",
-          "description": "(FR) Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support (FR)",
-          "url": "test3-fr",
-          "description": "(FR) Learn about your different financial support options."
+          "text": "To apply online you can sign in or register for a My Service Canada Account (MSCA). To apply in-person or by mail, you can complete a paper application. (FR)",
+          "links": [
+            {
+              "title": "Canada Pension Plan: How to Apply (FR)",
+              "url": "test"
+            },
+            {
+              "title": "Old Age Security: How to Apply (FR)",
+              "url": "test2"
+            }
+          ]
         }
       ]
     },
     {
       "title": "Manage (FR)",
+      "heading": "Take control of your federal old age benefits with the \"My Service Canada\" Account (MSCA) (FR)",
       "description": [
-        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
-        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
-      ],
-      "link": "/manage",
-      "linksTitle": "Top Learning Links (FR)",
-      "links": [
         {
-          "title": "Government Benefits 101 (FR)",
-          "url": "test-fr",
-          "description": "(FR) Learn about CPP/QPP and OAS"
-        },
-        {
-          "title": "Sources of retirement income (FR)",
-          "url": "test2-fr",
-          "description": "(FR) Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support (FR)",
-          "url": "test3-fr",
-          "description": "(FR) Learn about your different financial support options."
+          "text": "You can do a lot with your MSCA, including: (FR)",
+          "list": [
+            "Create and submit your Canada Pension Plan and Old Age Security application(s). (FR)",
+            "Check the status, payment dates and amounts for your federal old age benefits. (FR)",
+            "Update your mailing address and banking information. (FR)"
+          ]
         }
-      ]
-    },
-    {
-      "title": "Community Resources (FR)",
-      "description": [
-        "(FR) Learn about the \"three pillars\" of Canada's retirement system.",
-        "(FR) There are many factors to consider before retiring to help ensure that you can comfortably retire."
       ],
-      "link": "/community-resources",
-      "linksTitle": "Top Learning Links (FR)",
-      "links": [
-        {
-          "title": "Government Benefits 101 (FR)",
-          "url": "test-fr",
-          "description": "(FR) Learn about CPP/QPP and OAS"
-        },
-        {
-          "title": "Sources of retirement income (FR)",
-          "url": "test2-fr",
-          "description": "(FR) Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support (FR)",
-          "url": "test3-fr",
-          "description": "(FR) Learn about your different financial support options."
-        }
-      ]
+      "button": {
+        "text":"Sign Into MSCA (FR)",
+        "url": "#"
+      }
     }
   ],
   "supporting-seniors": {
