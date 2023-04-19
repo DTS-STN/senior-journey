@@ -12,7 +12,8 @@ import {
   ListItemAvatar, 
   ListItemText,
   Paper,
-  Tab, 
+  Tab,
+  Button, 
 } from '@mui/material'
 import { 
   TabContext,
@@ -143,29 +144,29 @@ const Home: FC = () => {
             }}
             visibleScrollbar={true}
             >
-              {tabData.map((item, i) => (
+              {tabData.map(({title}) => (
                 <Tab
                 className='h4 text-base box-border flex cursor-pointer capitalize appearance-none pt-4 pb-1 px-12 rounded-xl focus:outline-none' 
-                key={item.title} value={item.title} label={item.title} />
+                key={title} value={title} label={title} />
                 ))}
           </TabList>
           <div className="relative md:w-full md:h-full -z-10 -mx-4 md:rounded-2xl px-4 py-6 md:relative -mt-4 md:-mt-6 bg-gray-surface md:px-24 md:py-16 lg:px-24">
-            {tabData.map((item, i) => (
-              <TabPanel className='py-4 px-1' key={item.title} value={item.title}>
+            {tabData.map(({title, heading, description, button, links, linksTitle}) => (
+              <TabPanel className='py-4 px-1' key={title} value={title}>
                 <div className='flex flex-col md:flex-row md:space-x-6 elevation-1 rounded'>
                 <div className="rounded bg-white px-10  elevation-1 md:w-2/5 md:grow" >
                     <h3 className="h5 md:font-medium md:font-display md:text-4xl text-aqua-dark flex items-center py-8">
-                      {item.heading}
+                      {heading}
                     </h3>
                     <div className="justify-center border-y-2 py-8">
-                      {item.description.map((desc, i) => (
-                        <p key={i}>
-                          {desc.text}
-                          {desc.list != null && desc.list != undefined && (
+                      {description.map(({ text, list, links }) => (
+                        <p key={text}>
+                          {text}
+                          {list != null && list != undefined && (
                             <ul className='list-disc md:px-6'>
-                              {desc.list.map((litem, d) =>(
+                              {list.map((litem, d) =>(
                                 <li 
-                                  key={d}
+                                  key={litem}
                                   className=''
                                 >
                                   {litem}
@@ -173,16 +174,16 @@ const Home: FC = () => {
                               ))}
                             </ul>
                           )}
-                          {desc.links != null && desc.links != undefined && (
+                          {links != null && links != undefined && (
                             <List >
-                              {desc.links.map((litem, d) =>(
-                                <ListItem key={d} className='border-b-2 border-b-gray-surface py-3 '>
+                              {links.map(({title, url}) =>(
+                                <ListItem key={title} className='border-b-2 border-b-gray-surface py-3 '>
                                   <MuiLink
                                   component={Link} 
                                   className='flex grow flex-row items-center no-underline text-black font-display font-medium'
-                                  href={litem.url} 
+                                  href={url}
                                   >
-                                  <ListItemText primary={litem.title}/>&nbsp;
+                                  <ListItemText primary={title}/>&nbsp;
                                   <ListItemAvatar>
                                       <ArrowForwardIosIcon className='text-base text-aqua-light' />
                                   </ListItemAvatar>
@@ -194,25 +195,25 @@ const Home: FC = () => {
                         </p>
                       ))}
                     </div>
-                    {item.button != null && item.button != undefined && (
+                    {button != null && button != undefined && (
                       <div className='flex flex-row-reverse'>
                         <MuiLink
                         component={Link} 
                         className='font-display font-bold rounded no-underline bg-aqua-dark text-white visited:text-white  py-2 px-3 my-8'
-                        href={item.button.url}>
-                        {item.button.text}
+                        href={button.url}>
+                        {button.text}
                         </MuiLink>
                       </div>
                     )}
                   </div>
-                  {item.linksTitle != null && item.linksTitle != undefined  && (
+                  {linksTitle != null && linksTitle != undefined  && (
                   <div className=" bg-white py-5 px-8 rounded md:w-3/5">
-                    <h3 className="text-2xl font-bold md:font-light font-display text-black ">{item.linksTitle}</h3>
-                    {item.links != null && item.links != undefined && (
+                    <h3 className="text-2xl font-bold md:font-light font-display text-black ">{linksTitle}</h3>
+                    {links != null && links != undefined && (
                     <div className="py-11 px-3 ">
-                      {item.links.map((link, b) => (
+                      {links.map(({title, url, description}) => (
                         <div
-                          key={link.title}
+                          key={title}
                           className="border-b-2 border-b-gray-surface"
                         >
                           <div className='my-3 flex flex-row'>
@@ -221,12 +222,12 @@ const Home: FC = () => {
                                 <MuiLink
                                   component={Link}
                                   className="font-display font-medium text-xl no-underline text-black"
-                                  href={link.url}
+                                  href={url}
                                   >
-                                  {link.title}
+                                  {title}
                                 </MuiLink>
                               </div>
-                              <div className='text-[#797979]'>{link.description}</div>
+                              <div className='text-[#797979]'>{description}</div>
                             </div>
                             <div className='flex grow flex-row-reverse items-center'>
                               <ArrowForwardIosIcon className='text-base md:text-[40px] text-aqua-light md:pl-6' />
@@ -298,6 +299,7 @@ const Home: FC = () => {
               <strong>{t('contact-us.cards.call-us.toll-free')}</strong>{' '}
               <MuiLink
                 component={Link}
+                className="whitespace-nowrap"
                 href={t('contact-us.cards.call-us.toll-number-href')}
               >
                 {t('contact-us.cards.call-us.toll-number')}
@@ -307,6 +309,7 @@ const Home: FC = () => {
               <strong>{t('contact-us.cards.call-us.tty')}</strong>{' '}
               <MuiLink
                 component={Link}
+                className="whitespace-nowrap"
                 href={t('contact-us.cards.call-us.tty-number-href')}
               >
                 {t('contact-us.cards.call-us.tty-number')}
@@ -319,6 +322,7 @@ const Home: FC = () => {
             <strong>{t('contact-us.cards.call-us.outside')}</strong>{' '}
             <MuiLink
               component={Link}
+              className="whitespace-nowrap"
               href={t('contact-us.cards.call-us.outside-number-href')}
             >
               {t('contact-us.cards.call-us.outside-number')}
