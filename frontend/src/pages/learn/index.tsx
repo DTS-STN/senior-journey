@@ -1,5 +1,6 @@
 import { FC, useState } from 'react'
 
+import CloseIcon from '@mui/icons-material/Close'
 import {
   Button,
   Card,
@@ -17,7 +18,6 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FocusOn } from 'react-focus-on'
-import { MdClose } from 'react-icons/md'
 
 import Layout from '../../components/Layout'
 import QuizLandingPage from '../../components/QuizLandingPage'
@@ -98,7 +98,7 @@ const Learn: FC = () => {
                 className="text-base font-bold normal-case text-primary-700 hover:bg-white"
                 onClick={handleCloseModal}
               >
-                <MdClose className="mr-2 inline text-2xl font-bold text-primary-700" />{' '}
+                <CloseIcon className="mr-2 inline text-2xl font-bold text-primary-700" />{' '}
                 {t('quiz.navigation.close')}
               </Button>
             </div>

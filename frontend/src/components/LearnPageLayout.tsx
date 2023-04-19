@@ -1,14 +1,15 @@
 import React, { FC } from 'react'
 
+import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import {
   Divider,
   List,
   ListItem,
   ListItemButton,
+  ListItemIcon,
   ListItemText,
 } from '@mui/material'
 import Link from 'next/link'
-import { MdArrowForwardIos } from 'react-icons/md'
 
 import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import Layout from './Layout'
@@ -70,7 +71,9 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
                           }}
                           secondary={secondary}
                         />
-                        <MdArrowForwardIos className="text-[2rem] font-bold  xl:text-2xl" />
+                        <ListItemIcon>
+                          <NavigateNextIcon color="primary" />
+                        </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <Divider component="li" />

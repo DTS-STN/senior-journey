@@ -1,8 +1,9 @@
 import { FC, useState } from 'react'
 
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
 import { Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
-import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md'
 
 interface TabcordianLink {
   title: string
@@ -58,15 +59,11 @@ const Tabcordian: FC<TabcordianProps> = ({ data }: TabcordianProps) => {
         {data.map((item, i) => (
           <div key={item.title}>
             <div
-              className="my-3 flex cursor-pointer items-center rounded bg-white py-3 elevation-2 active:elevation-8 md:hidden"
+              className="my-3 flex cursor-pointer items-center justify-between gap-1 rounded bg-white px-4 py-3 elevation-2 active:elevation-8 md:hidden"
               onClick={() => toggleAccordion(i)}
             >
-              <div className="h4 flex flex-grow justify-center">
-                {item.title}
-              </div>
-              <div className="">
-                <MdKeyboardArrowDown fontSize={28} />
-              </div>
+              <div>{item.title}</div>
+              <KeyboardArrowDownIcon />
             </div>
             <div
               className={
@@ -85,7 +82,7 @@ const Tabcordian: FC<TabcordianProps> = ({ data }: TabcordianProps) => {
                         className="inline-flex items-center"
                       >
                         <span>{item.title}</span>
-                        <MdKeyboardArrowRight />
+                        <KeyboardArrowRightIcon fontSize="large" />
                       </MuiLink>
                     </h3>
                     <div className="justify-center">

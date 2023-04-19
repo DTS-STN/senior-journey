@@ -1,12 +1,12 @@
 import { FC } from 'react'
 
+import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import { Trans, useTranslation } from 'next-i18next'
-import { MdWatchLater } from 'react-icons/md'
 
 const QuizLandingPage: FC = () => {
   const { t } = useTranslation('learn')
   return (
-    <div className="">
+    <div>
       <p>{t('quiz.landing.p1')}</p>
       <p>{t('quiz.landing.p2')}</p>
       <h6 className="mb-4 font-display text-xl font-bold">
@@ -31,7 +31,7 @@ const QuizLandingPage: FC = () => {
         {t('quiz.landing.timetocomplete')}
       </h6>
       <p className="mb-32">
-        <MdWatchLater className="mr-4 inline text-2xl" />
+        <WatchLaterIcon className="mr-4 inline text-2xl" />
         {t('quiz.landing.minutes')}
       </p>
     </div>
