@@ -93,6 +93,20 @@ module.exports = {
         card: '0px 2px 8px rgba(0, 0, 0, 0.25)',
       },
     },
+    // Material UI Breakpoints
+    screens: {
+      sm: '600px',
+      // => @media (min-width: 600px) { ... }
+
+      md: '900px',
+      // => @media (min-width: 900px) { ... }
+
+      lg: '1200px',
+      // => @media (min-width: 1200px) { ... }
+
+      xl: '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
   },
   corePlugins: {
     // Remove the Tailwind CSS preflight styles so it can use Material UI's preflight instead (CssBaseline).
