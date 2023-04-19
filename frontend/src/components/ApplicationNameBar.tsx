@@ -35,7 +35,7 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
               href={checklistUrl}
               className='text-white visited:text-white bg-aqua-dark rounded-xl py-2 px-3 font-bold align-middle'
               >
-              <BookmarkBorderIcon className=' ' />&nbsp;{checklist}
+              <BookmarkBorderIcon />&nbsp;{checklist}
               </Link>
             </div>
           </div>
