@@ -137,7 +137,7 @@ const Home: FC = () => {
             variant='scrollable'
             scrollButtons='auto'
             onChange={handleChange}
-            className='z-20 flex elevation-4 center -mx-4 md:w-fit md:rounded-2xl bg-white text-button-background md:mx-4 md:px-24'
+            className='relative z-20 flex elevation-4 center -mx-4 md:w-fit md:rounded-2xl bg-white text-button-background md:mx-4 md:px-24'
             classes={{
               scrollableX: "mx-4",
               flexContainer: "h4 box-border flex cursor-pointer capitalize appearance-none rounded-xl focus:outline-none "
@@ -150,7 +150,7 @@ const Home: FC = () => {
                 key={title} value={title} label={title} />
                 ))}
           </TabList>
-          <div className="relative md:w-full md:h-full -z-10 -mx-4 md:rounded-2xl px-4 py-6 md:relative -mt-4 md:-mt-6 bg-gray-surface md:px-24 md:py-16 lg:px-24">
+          <div className="relative md:w-full md:h-full -mx-4 md:rounded-2xl px-4 py-6 md:relative -mt-4 md:-mt-6 bg-gray-surface md:px-24 md:py-16 lg:px-24">
             {tabData.map(({title, heading, description, button, links, linksTitle}) => (
               <TabPanel className='py-4 px-1' key={title} value={title}>
                 <div className='flex flex-col md:flex-row md:space-x-6 elevation-1 rounded'>
@@ -207,7 +207,7 @@ const Home: FC = () => {
                     )}
                   </div>
                   {linksTitle != null && linksTitle != undefined  && (
-                  <div className=" bg-white py-5 px-8 rounded md:w-3/5">
+                  <div className=" bg-white py-5 px-8 mt-4 md:mt-0 rounded md:w-3/5">
                     <h3 className="text-2xl font-bold md:font-light font-display text-black ">{linksTitle}</h3>
                     {links != null && links != undefined && (
                     <div className="py-11 px-3 ">
