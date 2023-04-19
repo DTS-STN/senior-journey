@@ -36,7 +36,7 @@ const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({
   return (
     <Card>
       <CardActionArea
-        LinkComponent={Link}
+        component={Link}
         href={href}
         aria-describedby={`${id}-title`}
       >

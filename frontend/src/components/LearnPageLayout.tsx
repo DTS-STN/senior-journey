@@ -60,7 +60,7 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
                 {learnMoreLinks.map(({ href, primary, secondary }) => (
                   <React.Fragment key={primary}>
                     <ListItem disablePadding>
-                      <ListItemButton href={href} LinkComponent={Link}>
+                      <ListItemButton href={href} component={Link}>
                         <ListItemText
                           primary={primary}
                           primaryTypographyProps={{
