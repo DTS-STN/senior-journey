@@ -6,18 +6,31 @@
     "description": "Our call centres and Service Canada Centres operate Monday to Friday, from 8:30 a.m. to 4:00 p.m., your local time. They are closed on statuary holidays.",
     "link": "/contact-us",
     "cards": {
+      "request-call": {
+        "title": "Request a Call",
+        "description": "Ask us to call you by using eServiceCanada",
+        "link-text": "Request A Call",
+        "href": "requesthref"
+      },
       "call-us": {
         "title": "Call us",
         "description": "You can reach us at either of the numbers below.",
-        "toll-free": "Toll free:",
-        "direct": "Direct Number:",
-        "toll-number": "1-800-000-000",
-        "direct-number": "1-800-000-000"
+        "toll-free-description":"The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday",
+        "outside-description":"The hours of operation are 8:40 am to 4:30 pm Eastern time, Monday to Friday",
+        "toll-free": "Canada and the United States Toll-free:",
+        "tty":"Canada and the United States TTY:",
+        "outside": "Outside Canada and the United States:",
+        "toll-number": "1-800-800-277-9914",
+        "tty-number": "1-800-255-4786",
+        "outside-number": "1-613-957-1954 (Call collect)",
+        "toll-number-href": "tel:18002554786",
+        "tty-number-href": "tel:18002554786",
+        "outside-number-href":"tel:16139571954"
       },
       "find-office": {
         "title": "Find an office",
         "description": "Find a Service Canada Centre near you using the link below.",
-        "link-text": "Find a Service Canada Centre",
+        "link-text": "Find a Service Canada Centre Near You",
         "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp"
       }
     }
@@ -29,133 +42,100 @@
   "tabs": [
     {
       "title": "Learn",
+      "heading": "Get the most out of your retirement benefits in Canada",
       "description": [
-        "Learn about the \"three pillars\" of Canada's retirement system.",
-        "There are many factors to consider before retiring to help ensure that you can comfortably retire."
+        {
+          "text": "There are many factors to consider before you retire."
+        },
+        {
+          "text": "Learn about the basics of Canada's old age benefits and ways to manage your money in retirement."
+        }
       ],
-      "link": "/learn",
+      "button": {
+        "text": "Explore Retirement",
+        "url": "#"
+      },
       "linksTitle": "Top Learning Links",
       "links": [
         {
-          "title": "Government Benefits 101",
+          "title": "Main sources of retirement income",
           "url": "test",
-          "description": "Learn about CPP/QPP and OAS"
+          "description": "Learn about old age benefits, private retirement savings, and how they work together"
         },
         {
-          "title": "Sources of retirement income",
+          "title": "Planning to save for retirement",
           "url": "test2",
-          "description": "Your income during retirement will typically come from three main sources"
+          "description": "Explore how to maximize your savings and better manage your money in retirement."
         },
         {
-          "title": "Financial Support",
+          "title": "When to take your public pensions",
           "url": "test3",
-          "description": "Learn about your different financial support options."
+          "description": "You can choose when to start your old age benefits. Understand what to consider in making that decision"
         }
       ]
     },
     {
       "title": "Plan",
+      "heading": "Not sure where to begin? Take the quiz!",
       "description": [
-        "Learn about the \"three pillars\" of Canada's retirement system.",
-        "There are many factors to consider before retiring to help ensure that you can comfortably retire."
+        {
+          "text": "Receive a personalized checklist to guide you through retirement."
+        }
       ],
-      "link": "/plan",
-      "linksTitle": "Top Learning Links",
+      "button": {
+        "text":"Take The Quiz",
+        "url": "#"
+      },
+      "linksTitle": "Other Tools",
       "links": [
         {
-          "title": "Government Benefits 101",
+          "title": "Canadian Retirement Income Calculator",
           "url": "test",
-          "description": "Learn about CPP/QPP and OAS"
+          "description": "Get an estimate of your retirement income. This includes your federal old age benefits and private retirement income."
         },
         {
-          "title": "Sources of retirement income",
+          "title": "Old Age Security eligibility estimator",
           "url": "test2",
-          "description": "Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support",
-          "url": "test3",
-          "description": "Learn about your different financial support options."
+          "description": "Find old how much money you may get from the Old Age Security program and its benefits."
         }
       ]
     },
     {
       "title": "Apply",
+      "heading": "Ready to Apply of CPP and OAS? Get started now",
       "description": [
-        "Learn about the \"three pillars\" of Canada's retirement system.",
-        "There are many factors to consider before retiring to help ensure that you can comfortably retire."
-      ],
-      "link": "/apply",
-      "linksTitle": "Top Learning Links",
-      "links": [
         {
-          "title": "Government Benefits 101",
-          "url": "test",
-          "description": "Learn about CPP/QPP and OAS"
-        },
-        {
-          "title": "Sources of retirement income",
-          "url": "test2",
-          "description": "Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support",
-          "url": "test3",
-          "description": "Learn about your different financial support options."
+          "text": "To apply online you can sign in or register for a My Service Canada Account (MSCA). To apply in-person or by mail, you can complete a paper application.",
+          "links": [
+            {
+              "title": "Canada Pension Plan: How to Apply",
+              "url": "test"
+            },
+            {
+              "title": "Old Age Security: How to Apply",
+              "url": "test2"
+            }
+          ]
         }
       ]
     },
     {
       "title": "Manage",
+      "heading": "Take control of your federal old age benefits with the \"My Service Canada\" Account (MSCA)",
       "description": [
-        "Learn about the \"three pillars\" of Canada's retirement system.",
-        "There are many factors to consider before retiring to help ensure that you can comfortably retire."
-      ],
-      "link": "/manage",
-      "linksTitle": "Top Learning Links",
-      "links": [
         {
-          "title": "Government Benefits 101",
-          "url": "test",
-          "description": "Learn about CPP/QPP and OAS"
-        },
-        {
-          "title": "Sources of retirement income",
-          "url": "test2",
-          "description": "Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support",
-          "url": "test3",
-          "description": "Learn about your different financial support options."
+          "text": "You can do a lot with your MSCA, including:",
+          "list": [
+            "Create and submit your Canada Pension Plan and Old Age Security application(s).",
+            "Check the status, payment dates and amounts for your federal old age benefits.",
+            "Update your mailing address and banking information."
+          ]
         }
-      ]
-    },
-    {
-      "title": "Community Resources",
-      "description": [
-        "Learn about the \"three pillars\" of Canada's retirement system.",
-        "There are many factors to consider before retiring to help ensure that you can comfortably retire."
       ],
-      "link": "/community-resources",
-      "linksTitle": "Top Learning Links",
-      "links": [
-        {
-          "title": "Government Benefits 101",
-          "url": "test",
-          "description": "Learn about CPP/QPP and OAS"
-        },
-        {
-          "title": "Sources of retirement income",
-          "url": "test2",
-          "description": "Your income during retirement will typically come from three main sources"
-        },
-        {
-          "title": "Financial Support",
-          "url": "test3",
-          "description": "Learn about your different financial support options."
-        }
-      ]
+      "button": {
+        "text":"Sign Into MSCA",
+        "url": "#"
+      }
     }
   ],
   "supporting-seniors": {

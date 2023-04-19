@@ -39,7 +39,7 @@ module.exports = {
           light: '#335075',
           normal: '#1c578a',
           default: '#091c2d',
-          dark: '#26374a',
+          dark: '#001D35',
           deep: '#2e5274',
           active: '#16446c',
           link: '#284162',
@@ -53,12 +53,15 @@ module.exports = {
           dark: '#cfd1d5',
           deep: '#bbbfc5',
           modal: '#999999',
+          surface: '#ededed',
         },
         orange: {
           dark: '#e59700',
         },
         aqua: {
           default: '#274448',
+          light: '#008490',
+          dark: '#004F56',
         },
         primary: {
           50: '#cdf9ff',

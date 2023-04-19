@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import Breadcrumb from './Breadcrumb'
 import Link from 'next/link'
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 
 export interface ApplicationNameBarProps {
   text: string
@@ -32,21 +33,10 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
             <div className='space-x-3 md:space-x-6'>
               <Link
               href={checklistUrl}
-              className='text-white bg-blue-dark rounded-xl py-2 px-3 font-bold'
+              className='text-white visited:text-white bg-aqua-dark rounded-xl py-2 px-3 font-bold align-middle'
               >
-              {checklist}
+              <BookmarkBorderIcon className=' ' />&nbsp;{checklist}
               </Link>
-              <Link
-              className='text-white bg-blue-dark rounded-xl py-2 px-3 font-bold'
-              href={myNotesUrl}
-              >
-              {myNotes}
-              </Link>
-            </div>
-            <div className="items-end space-y-2 md:hidden">
-              <div className="w-6 h-0.5 bg-blue-dark"></div>
-              <div className="w-6 h-0.5 bg-blue-dark"></div>
-              <div className="w-6 h-0.5 bg-blue-dark"></div>
             </div>
           </div>
         </div>
