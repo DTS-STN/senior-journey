@@ -13,7 +13,7 @@ import { MdArrowForwardIos } from 'react-icons/md'
 import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import Layout from './Layout'
 import { TableOfContents } from './TableOfContents'
-import { TableOfContentsCollapse } from './TableOfContentsCollapse'
+import { TableOfContentsDialog } from './TableOfContentsDialog'
 
 export interface LearnMoreLink {
   href: string
@@ -46,9 +46,9 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
             <TableOfContents {...tableOfContentsData} />
           )}
         </section>
-        <section className="lg:hidden">
+        <section className="sticky top-4 z-10 text-right lg:hidden ">
           {!tableOfContentsData.loading && (
-            <TableOfContentsCollapse {...tableOfContentsData} />
+            <TableOfContentsDialog {...tableOfContentsData} />
           )}
         </section>
         <section id="content" className="lg:col-span-8 xl:col-span-9">
