@@ -31,7 +31,7 @@ const tagsArray = task.tags ? task.tags.split(" ").map(tag => tag.replace(/_/g, 
             {task.linkTitle && (<h5 className="text-s pb-4">{task.linkTitle}</h5>)}
             <MarkDown content={task.links} />
             {tagsArray.map((tag, index) => (
-                <ResourceTagButton key={index}>{tag}</ResourceTagButton>
+                <ResourceTagButton key={`${task.id}-${tag}`}>{tag}</ResourceTagButton>
             ))}
         </div>
     )
