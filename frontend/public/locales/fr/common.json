@@ -101,7 +101,10 @@
   },
   "application-name-bar": "Seniors Digital Gateway (FR)",
   "table-of-contents": {
-    "arial-lable": "(FR) Table of contents",
+    "aria-label": "(FR) Table of contents",
+    "dialog": {
+      "trigger-aria-label": "(FR) Open table of contents"
+    },
     "header": "(FR) Contents"
   }
 }

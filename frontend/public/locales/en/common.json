@@ -105,7 +105,10 @@
   "my-notes": "My Notes",
   "my-notes-url": "#",
   "table-of-contents": {
-    "arial-lable": "Table of contents",
+    "aria-label": "Table of contents",
+    "dialog": {
+      "trigger-aria-label": "Open table of contents"
+    },
     "header": "Contents"
   }
 }
