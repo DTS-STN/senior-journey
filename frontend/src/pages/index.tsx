@@ -2,6 +2,7 @@ import { Button } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Index = () => {
   return (
@@ -38,9 +39,11 @@ const Index = () => {
                 <h2 className="sr-only">Government of Canada</h2>
                 <Button
                   color="secondary"
+                  component={Link}
                   fullWidth
-                  href="/en"
+                  href="/"
                   id="english-button"
+                  locale="en"
                 >
                   English
                 </Button>
@@ -49,9 +52,11 @@ const Index = () => {
                 <h2 className="sr-only">Gouvernement du Canada</h2>
                 <Button
                   color="secondary"
+                  component={Link}
                   fullWidth
-                  href="/fr"
+                  href="/"
                   id="french-button"
+                  locale="fr"
                 >
                   Français
                 </Button>

@@ -227,7 +227,7 @@ const Learn: FC = () => {
               {section.cards.map((_, cardIndex) => (
                 <Card key={cardIndex} className="h-full">
                   <CardActionArea
-                    LinkComponent={Link}
+                    component={Link}
                     href={t(`sections.${index}.cards.${cardIndex}.link`)}
                     className="h-full"
                     aria-describedby={`section-${index}-card-${cardIndex}`}
