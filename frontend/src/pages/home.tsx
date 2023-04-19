@@ -269,6 +269,79 @@ const Home: FC = () => {
       </div>
 
       <h2 className="h2">{t('contact-us.title')}</h2>
+      <p>{t('contact-us.description')}</p>
+      <Paper variant="outlined" className="mb-6 p-6">
+        <h3 className="mb-4 font-display font-medium">
+          {t('contact-us.cards.request-call.title')}
+        </h3>
+        <Divider className="my-4" />
+        <p className="mt-3 text-sm">
+          {t('contact-us.cards.request-call.description')}
+        </p>
+        <Button
+          component={Link}
+          variant="outlined"
+          href={t('contact-us.cards.request-call.href')}
+        >
+          {t('contact-us.cards.request-call.title')}
+        </Button>
+      </Paper>
+      <Paper variant="outlined" className="mb-6 p-6">
+        <h3 className="mb-4 font-display font-medium">
+          {t('contact-us.cards.call-us.title')}
+        </h3>
+        <Divider className="my-4" />
+        <div className="text-sm">
+          <p>{t('contact-us.cards.call-us.description')}</p>
+          <div className="grid lg:grid-cols-2">
+            <p>
+              <strong>{t('contact-us.cards.call-us.toll-free')}</strong>{' '}
+              <MuiLink
+                component={Link}
+                href={t('contact-us.cards.call-us.toll-number-href')}
+              >
+                {t('contact-us.cards.call-us.toll-number')}
+              </MuiLink>
+            </p>
+            <p>
+              <strong>{t('contact-us.cards.call-us.tty')}</strong>{' '}
+              <MuiLink
+                component={Link}
+                href={t('contact-us.cards.call-us.tty-number-href')}
+              >
+                {t('contact-us.cards.call-us.tty-number')}
+              </MuiLink>
+            </p>
+          </div>
+          <p>{t('contact-us.cards.call-us.toll-free-description')}</p>
+          <Divider className="my-4" />
+          <p>
+            <strong>{t('contact-us.cards.call-us.outside')}</strong>{' '}
+            <MuiLink
+              component={Link}
+              href={t('contact-us.cards.call-us.outside-number-href')}
+            >
+              {t('contact-us.cards.call-us.outside-number')}
+            </MuiLink>
+          </p>
+          <p className="m-0">
+            {t('contact-us.cards.call-us.outside-description')}
+          </p>
+        </div>
+      </Paper>
+      <Paper variant="outlined" className="p-6">
+        <h3 className="mb-4 font-display font-medium">
+          {t('contact-us.cards.find-office.title')}
+        </h3>
+        <Divider className="my-4" />
+        <Button
+          component={Link}
+          variant="outlined"
+          href={t('contact-us.cards.find-office.href')}
+        >
+          {t('contact-us.cards.find-office.link-text')}
+        </Button>
+      </Paper>
       <p className="">{t('contact-us.description')}</p>
       
       <Paper variant="outlined" className="mb-6 p-4">
