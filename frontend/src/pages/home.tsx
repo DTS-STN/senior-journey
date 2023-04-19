@@ -1,26 +1,22 @@
-import { FC, useState, useId } from 'react'
+import { FC, useId, useState } from 'react'
 
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import { TabContext, TabList, TabPanel } from '@mui/lab'
 import {
+  Button,
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
   Divider,
-  Link as MuiLink,
-  List, 
-  ListItem, 
-  ListItemAvatar, 
+  List,
+  ListItem,
+  ListItemAvatar,
   ListItemText,
+  Link as MuiLink,
   Paper,
   Tab,
-  Button, 
 } from '@mui/material'
-import { 
-  TabContext,
-  TabList, 
-  TabPanel, 
-} from '@mui/lab';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -97,13 +93,12 @@ const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({
 
 const Home: FC = () => {
   const { t } = useTranslation('home')
-  const tabData:Array<TabData> = t('tabs', { returnObjects: true })
-  const [value, setValue] = useState(tabData[0].title);
+  const tabData: Array<TabData> = t('tabs', { returnObjects: true })
+  const [value, setValue] = useState(tabData[0].title)
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
-  };
-
+    setValue(newValue)
+  }
 
   return (
     <Layout>
@@ -130,121 +125,131 @@ const Home: FC = () => {
         </div>
       </section>
 
-      <section className='py-10 md:flex md:flex-col md:items-center'>
-
+      <section className="py-10 md:flex md:flex-col md:items-center">
         <TabContext value={value}>
           <TabList
-            variant='scrollable'
-            scrollButtons='auto'
+            variant="scrollable"
+            scrollButtons="auto"
             onChange={handleChange}
-            className='relative z-20 flex elevation-4 center -mx-4 md:w-fit md:rounded-2xl bg-white text-button-background md:mx-4 md:px-24'
+            className="center text-button-background relative z-20 -mx-4 flex bg-white elevation-4 md:mx-4 md:w-fit md:rounded-2xl md:px-24"
             classes={{
-              scrollableX: "mx-4",
-              flexContainer: "h4 box-border flex cursor-pointer capitalize appearance-none rounded-xl focus:outline-none "
+              scrollableX: 'mx-4',
+              flexContainer:
+                'h4 box-border flex cursor-pointer capitalize appearance-none rounded-xl focus:outline-none ',
             }}
             visibleScrollbar={true}
-            >
-              {tabData.map(({title}) => (
-                <Tab
-                className='h4 text-base box-border flex cursor-pointer capitalize appearance-none pt-4 pb-1 px-12 rounded-xl focus:outline-none' 
-                key={title} value={title} label={title} />
-                ))}
+          >
+            {tabData.map(({ title }) => (
+              <Tab
+                className="h4 box-border flex cursor-pointer appearance-none rounded-xl px-12 pb-1 pt-4 text-base capitalize focus:outline-none"
+                key={title}
+                value={title}
+                label={title}
+              />
+            ))}
           </TabList>
-          <div className="relative md:w-full md:h-full -mx-4 md:rounded-2xl px-4 py-6 md:relative -mt-4 md:-mt-6 bg-gray-surface md:px-24 md:py-16 lg:px-24">
-            {tabData.map(({title, heading, description, button, links, linksTitle}) => (
-              <TabPanel className='py-4 px-1' key={title} value={title}>
-                <div className='flex flex-col md:flex-row md:space-x-6 elevation-1 rounded'>
-                <div className="rounded bg-white px-10  elevation-1 md:w-2/5 md:grow" >
-                    <h3 className="h5 md:font-medium md:font-display md:text-4xl text-aqua-dark flex items-center py-8">
-                      {heading}
-                    </h3>
-                    <div className="justify-center border-y-2 py-8">
-                      {description.map(({ text, list, links }) => (
-                        <p key={text}>
-                          {text}
-                          {list != null && list != undefined && (
-                            <ul className='list-disc md:px-6'>
-                              {list.map((litem, d) =>(
-                                <li 
-                                  key={litem}
-                                  className=''
-                                >
-                                  {litem}
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                          {links != null && links != undefined && (
-                            <List >
-                              {links.map(({title, url}) =>(
-                                <ListItem key={title} className='border-b-2 border-b-gray-surface py-3 '>
-                                  <MuiLink
-                                  component={Link} 
-                                  className='flex grow flex-row items-center no-underline text-black font-display font-medium'
-                                  href={url}
+          <div className="relative -mx-4 -mt-4 bg-gray-surface px-4 py-6 md:relative md:-mt-6 md:h-full md:w-full md:rounded-2xl md:px-24 md:py-16 lg:px-24">
+            {tabData.map(
+              ({ title, heading, description, button, links, linksTitle }) => (
+                <TabPanel className="px-1 py-4" key={title} value={title}>
+                  <div className="flex flex-col rounded elevation-1 md:flex-row md:space-x-6">
+                    <div className="rounded bg-white px-10  elevation-1 md:w-2/5 md:grow">
+                      <h3 className="h5 flex items-center py-8 text-aqua-dark md:font-display md:text-4xl md:font-medium">
+                        {heading}
+                      </h3>
+                      <div className="justify-center border-y-2 py-8">
+                        {description.map(({ text, list, links }) => (
+                          <p key={text}>
+                            {text}
+                            {list != null && list != undefined && (
+                              <ul className="list-disc md:px-6">
+                                {list.map((litem, d) => (
+                                  <li key={litem} className="">
+                                    {litem}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                            {links != null && links != undefined && (
+                              <List>
+                                {links.map(({ title, url }) => (
+                                  <ListItem
+                                    key={title}
+                                    className="border-b-2 border-b-gray-surface py-3 "
                                   >
-                                  <ListItemText primary={title}/>&nbsp;
-                                  <ListItemAvatar>
-                                      <ArrowForwardIosIcon className='text-base text-aqua-light' />
-                                  </ListItemAvatar>
-                                  </MuiLink>
-                              </ListItem>
-                              ))}
-                            </List>
-                          )}
-                        </p>
-                      ))}
+                                    <MuiLink
+                                      component={Link}
+                                      className="flex grow flex-row items-center font-display font-medium text-black no-underline"
+                                      href={url}
+                                    >
+                                      <ListItemText primary={title} />
+                                      &nbsp;
+                                      <ListItemAvatar>
+                                        <ArrowForwardIosIcon className="text-base text-aqua-light" />
+                                      </ListItemAvatar>
+                                    </MuiLink>
+                                  </ListItem>
+                                ))}
+                              </List>
+                            )}
+                          </p>
+                        ))}
+                      </div>
+                      {button != null && button != undefined && (
+                        <div className="flex flex-row-reverse">
+                          <MuiLink
+                            component={Link}
+                            className="my-8 rounded bg-aqua-dark px-3 py-2 font-display font-bold  text-white no-underline visited:text-white"
+                            href={button.url}
+                          >
+                            {button.text}
+                          </MuiLink>
+                        </div>
+                      )}
                     </div>
-                    {button != null && button != undefined && (
-                      <div className='flex flex-row-reverse'>
-                        <MuiLink
-                        component={Link} 
-                        className='font-display font-bold rounded no-underline bg-aqua-dark text-white visited:text-white  py-2 px-3 my-8'
-                        href={button.url}>
-                        {button.text}
-                        </MuiLink>
+                    {linksTitle != null && linksTitle != undefined && (
+                      <div className=" mt-4 rounded bg-white px-8 py-5 md:mt-0 md:w-3/5">
+                        <h3 className="font-display text-2xl font-bold text-black md:font-light ">
+                          {linksTitle}
+                        </h3>
+                        {links != null && links != undefined && (
+                          <div className="px-3 py-11 ">
+                            {links.map(({ title, url, description }) => (
+                              <div
+                                key={title}
+                                className="border-b-2 border-b-gray-surface"
+                              >
+                                <div className="my-3 flex flex-row">
+                                  <div>
+                                    <div>
+                                      <MuiLink
+                                        component={Link}
+                                        className="font-display text-xl font-medium text-black no-underline"
+                                        href={url}
+                                      >
+                                        {title}
+                                      </MuiLink>
+                                    </div>
+                                    <div className="text-[#797979]">
+                                      {description}
+                                    </div>
+                                  </div>
+                                  <div className="flex grow flex-row-reverse items-center">
+                                    <ArrowForwardIosIcon className="text-base text-aqua-light md:pl-6 md:text-[40px]" />
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
-                  {linksTitle != null && linksTitle != undefined  && (
-                  <div className=" bg-white py-5 px-8 mt-4 md:mt-0 rounded md:w-3/5">
-                    <h3 className="text-2xl font-bold md:font-light font-display text-black ">{linksTitle}</h3>
-                    {links != null && links != undefined && (
-                    <div className="py-11 px-3 ">
-                      {links.map(({title, url, description}) => (
-                        <div
-                          key={title}
-                          className="border-b-2 border-b-gray-surface"
-                        >
-                          <div className='my-3 flex flex-row'>
-                            <div>
-                              <div>
-                                <MuiLink
-                                  component={Link}
-                                  className="font-display font-medium text-xl no-underline text-black"
-                                  href={url}
-                                  >
-                                  {title}
-                                </MuiLink>
-                              </div>
-                              <div className='text-[#797979]'>{description}</div>
-                            </div>
-                            <div className='flex grow flex-row-reverse items-center'>
-                              <ArrowForwardIosIcon className='text-base md:text-[40px] text-aqua-light md:pl-6' />
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    )}
-                  </div>
-                  )}
-                </div>
-              </TabPanel>
-            ))}
+                </TabPanel>
+              )
+            )}
           </div>
         </TabContext>
-      
       </section>
 
       <h2 className="h2">{t('supporting-seniors.title')}</h2>
@@ -345,92 +350,6 @@ const Home: FC = () => {
         >
           {t('contact-us.cards.find-office.link-text')}
         </Button>
-      </Paper>
-      <p className="">{t('contact-us.description')}</p>
-      
-      <Paper variant="outlined" className="mb-6 p-4">
-        <h3 className="mb-2 text-xl font-bold">
-          {t('contact-us.cards.request-call.title')}
-        </h3>
-        <Divider />
-        <p className="mt-3 text-lg">
-          {t('contact-us.cards.request-call.description')}
-        </p>
-        <Paper variant='outlined' className='w-fit p-3 border-2 border-gray-surface'>
-          <MuiLink
-            component={Link}
-            className="text-base font-display  font-bold text-aqua-dark text-center capitalize no-underline"
-            href={t('contact-us.cards.request-call.href')}
-          >
-            {t('contact-us.cards.request-call.title')}
-          </MuiLink>
-        </Paper>
-      </Paper>
-
-      <Paper variant="outlined" className="mb-6 p-4">
-        <h3 className="mb-2 text-xl font-bold">
-          {t('contact-us.cards.call-us.title')}
-        </h3>
-        <Divider />
-        <p className="mt-3 text-lg">
-          {t('contact-us.cards.call-us.description')}
-        </p>
-        <p className="text-lg md:inline">
-          <span className="font-bold">
-            {t('contact-us.cards.call-us.toll-free')}
-          </span>{' '}
-          <MuiLink
-          component={Link}
-          href={t('contact-us.cards.call-us.toll-number-href')}
-          >
-            {t('contact-us.cards.call-us.toll-number')}
-          </MuiLink>
-        </p>
-        <p className="text-lg md:ml-10 md:inline">
-          <span className="font-bold">
-            {t('contact-us.cards.call-us.tty')}
-          </span>{' '}
-          <MuiLink
-          component={Link}
-          href={t('contact-us.cards.call-us.tty-number-href')}
-          >
-          {t('contact-us.cards.call-us.tty-number')}
-          </MuiLink>
-        </p>
-        <p className="mt-3 text-lg">
-          {t('contact-us.cards.call-us.toll-free-description')}
-        </p>
-        <Divider className='my-4'/>
-        <p className="text-lg md:inline">
-          <span className="font-bold">
-            {t('contact-us.cards.call-us.outside')}
-          </span>{' '}
-          <MuiLink
-          component={Link}
-          href={t('contact-us.cards.call-us.outside-number-href')}
-          >
-          {t('contact-us.cards.call-us.outside-number')}
-          </MuiLink>
-        </p>
-        <p className="mt-3 text-lg">
-          {t('contact-us.cards.call-us.outside-description')}
-        </p>
-      </Paper>
-      <Paper variant="outlined" className="p-4">
-        <h3 className="mb-2 text-xl font-bold">
-          {t('contact-us.cards.find-office.title')}
-        </h3>
-        <Divider />
-        
-        <Paper variant='outlined' className='w-fit p-3 my-4 border-2 border-gray-surface text-center'>
-          <MuiLink
-            component={Link}
-            className="text-base font-display font-bold text-aqua-dark text-center capitalize no-underline"
-            href={t('contact-us.cards.find-office.href')}
-            >
-            {t('contact-us.cards.find-office.link-text')}
-          </MuiLink>
-        </Paper>
       </Paper>
     </Layout>
   )
