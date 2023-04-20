@@ -5,7 +5,6 @@ import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-import { useRouter } from 'next/router'
 
 import {
   LearnMoreLink,
@@ -25,7 +24,6 @@ const DisclaimerCard: FC<ImportantCardProps> = ({ children }) => (
 
 const FromWorkToRetirement: FC = () => {
   const { t } = useTranslation('learn/from-work-to-retirement')
-  const router = useRouter()
 
   const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
     () => [
