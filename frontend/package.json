@@ -88,7 +88,6 @@
     "react-test-renderer": "^18.2.0",
     "start-server-and-test": "^2.0.0",
     "tailwindcss": "^3.3.1",
-    "tailwindcss-elevation": "^2.0.0",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"

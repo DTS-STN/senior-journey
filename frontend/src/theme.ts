@@ -18,11 +18,6 @@ const theme = createTheme({
     fontFamily: '"Noto Sans", sans-serif',
   },
   components: {
-    MuiLink: {
-      defaultProps: {
-        color: 'secondary',
-      },
-    },
     MuiButton: {
       defaultProps: {
         variant: 'contained',
@@ -30,6 +25,21 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           fontFamily: 'Lato, sans-serif',
+          textTransform: 'none',
+        },
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        color: 'secondary',
+      },
+    },
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          fontFamily: 'Lato, sans-serif',
+          textTransform: 'none',
+          fontWeight: "bold"
         },
       },
     },

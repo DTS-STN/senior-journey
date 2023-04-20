@@ -1,6 +1,6 @@
-import { FC, useId, useState } from 'react'
+import React, { FC, useId, useState } from 'react'
 
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 import {
   Button,
@@ -11,7 +11,8 @@ import {
   Divider,
   List,
   ListItem,
-  ListItemAvatar,
+  ListItemButton,
+  ListItemIcon,
   ListItemText,
   Link as MuiLink,
   Paper,
@@ -125,124 +126,116 @@ const Home: FC = () => {
         </div>
       </section>
 
-      <section className="py-10 md:flex md:flex-col md:items-center">
+      <section className="-mx-4 py-10 md:flex md:flex-col md:items-center">
         <TabContext value={value}>
           <TabList
+            component={Paper}
+            elevation={4}
             variant="scrollable"
-            scrollButtons="auto"
             onChange={handleChange}
-            className="center text-button-background relative z-20 -mx-4 flex bg-white elevation-4 md:mx-4 md:w-fit md:rounded-2xl md:px-24"
-            classes={{
-              scrollableX: 'mx-4',
-              flexContainer:
-                'h4 box-border flex cursor-pointer capitalize appearance-none rounded-xl focus:outline-none ',
-            }}
-            visibleScrollbar={true}
+            className="relative z-20 rounded-none md:rounded-2xl md:px-24"
+            scrollButtons={true}
           >
             {tabData.map(({ title }) => (
               <Tab
-                className="h4 box-border flex cursor-pointer appearance-none rounded-xl px-12 pb-1 pt-4 text-base capitalize focus:outline-none"
+                className="px-10 pt-4 text-base"
                 key={title}
                 value={title}
                 label={title}
               />
             ))}
           </TabList>
-          <div className="relative -mx-4 -mt-4 bg-gray-surface px-4 py-6 md:relative md:-mt-6 md:h-full md:w-full md:rounded-2xl md:px-24 md:py-16 lg:px-24">
+          <div className="relative -mt-4 bg-gray-surface px-4 py-6 md:relative md:-mt-6 md:h-full md:w-full md:rounded-2xl md:px-24 md:py-16 lg:px-24">
             {tabData.map(
               ({ title, heading, description, button, links, linksTitle }) => (
                 <TabPanel className="px-1 py-4" key={title} value={title}>
-                  <div className="flex flex-col rounded elevation-1 md:flex-row md:space-x-6">
-                    <div className="rounded bg-white px-10  elevation-1 md:w-2/5 md:grow">
-                      <h3 className="h5 flex items-center py-8 text-aqua-dark md:font-display md:text-4xl md:font-medium">
+                  <div className="flex flex-col gap-6 rounded md:flex-row">
+                    <Paper className="p-8 md:w-2/5 md:grow">
+                      <h3 className="h5 mb-8 flex items-center text-primary-700 md:text-4xl md:font-medium">
                         {heading}
                       </h3>
-                      <div className="justify-center border-y-2 py-8">
-                        {description.map(({ text, list, links }) => (
-                          <p key={text}>
-                            {text}
-                            {list != null && list != undefined && (
-                              <ul className="list-disc md:px-6">
-                                {list.map((litem, d) => (
-                                  <li key={litem} className="">
-                                    {litem}
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                            {links != null && links != undefined && (
-                              <List>
-                                {links.map(({ title, url }) => (
-                                  <ListItem
-                                    key={title}
-                                    className="border-b-2 border-b-gray-surface py-3 "
-                                  >
-                                    <MuiLink
-                                      component={Link}
-                                      className="flex grow flex-row items-center font-display font-medium text-black no-underline"
-                                      href={url}
-                                    >
-                                      <ListItemText primary={title} />
-                                      &nbsp;
-                                      <ListItemAvatar>
-                                        <ArrowForwardIosIcon className="text-base text-aqua-light" />
-                                      </ListItemAvatar>
-                                    </MuiLink>
+                      <Divider className="mb-8" />
+                      {description.map(({ text, list, links }) => (
+                        <React.Fragment key={text}>
+                          <p>{text}</p>
+                          {list != null && list != undefined && (
+                            <ul className="list-disc space-y-2 pl-7">
+                              {list.map((litem) => (
+                                <li key={litem}>{litem}</li>
+                              ))}
+                            </ul>
+                          )}
+                          {links != null && links != undefined && (
+                            <List disablePadding>
+                              {links.map(({ title, url }) => (
+                                <React.Fragment key={title}>
+                                  <ListItem disablePadding>
+                                    <ListItemButton href={url} component={Link}>
+                                      <ListItemText
+                                        primary={title}
+                                        primaryTypographyProps={{
+                                          className: 'font-display font-medium',
+                                        }}
+                                      />
+                                      <ListItemIcon>
+                                        <NavigateNextIcon color="primary" />
+                                      </ListItemIcon>
+                                    </ListItemButton>
                                   </ListItem>
-                                ))}
-                              </List>
-                            )}
-                          </p>
-                        ))}
-                      </div>
+                                  <Divider component="li" />
+                                </React.Fragment>
+                              ))}
+                            </List>
+                          )}
+                        </React.Fragment>
+                      ))}
                       {button != null && button != undefined && (
-                        <div className="flex flex-row-reverse">
-                          <MuiLink
-                            component={Link}
-                            className="my-8 rounded bg-aqua-dark px-3 py-2 font-display font-bold  text-white no-underline visited:text-white"
-                            href={button.url}
-                          >
-                            {button.text}
-                          </MuiLink>
-                        </div>
+                        <>
+                          <Divider className="my-8" />
+                          <div className="text-right">
+                            <Button
+                              component={Link}
+                              href={button.url}
+                              size="large"
+                            >
+                              {button.text}
+                            </Button>
+                          </div>
+                        </>
                       )}
-                    </div>
+                    </Paper>
                     {linksTitle != null && linksTitle != undefined && (
-                      <div className=" mt-4 rounded bg-white px-8 py-5 md:mt-0 md:w-3/5">
-                        <h3 className="font-display text-2xl font-bold text-black md:font-light ">
+                      <Paper className="p-8 md:w-3/5">
+                        <h3 className="mb-8 font-display text-xl font-bold md:mb-11 md:text-2xl md:font-light">
                           {linksTitle}
                         </h3>
                         {links != null && links != undefined && (
-                          <div className="px-3 py-11 ">
+                          <List disablePadding>
                             {links.map(({ title, url, description }) => (
-                              <div
-                                key={title}
-                                className="border-b-2 border-b-gray-surface"
-                              >
-                                <div className="my-3 flex flex-row">
-                                  <div>
-                                    <div>
-                                      <MuiLink
-                                        component={Link}
-                                        className="font-display text-xl font-medium text-black no-underline"
-                                        href={url}
-                                      >
-                                        {title}
-                                      </MuiLink>
-                                    </div>
-                                    <div className="text-[#797979]">
-                                      {description}
-                                    </div>
-                                  </div>
-                                  <div className="flex grow flex-row-reverse items-center">
-                                    <ArrowForwardIosIcon className="text-base text-aqua-light md:pl-6 md:text-[40px]" />
-                                  </div>
-                                </div>
-                              </div>
+                              <React.Fragment key={title}>
+                                <ListItem disablePadding>
+                                  <ListItemButton href={url} component={Link}>
+                                    <ListItemText
+                                      primary={title}
+                                      primaryTypographyProps={{
+                                        className: 'font-display font-medium',
+                                      }}
+                                      secondary={description}
+                                      secondaryTypographyProps={{
+                                        className: 'text-sm',
+                                      }}
+                                    />
+                                    <ListItemIcon>
+                                      <NavigateNextIcon color="primary" />
+                                    </ListItemIcon>
+                                  </ListItemButton>
+                                </ListItem>
+                                <Divider component="li" />
+                              </React.Fragment>
                             ))}
-                          </div>
+                          </List>
                         )}
-                      </div>
+                      </Paper>
                     )}
                   </div>
                 </TabPanel>

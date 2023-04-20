@@ -115,8 +115,5 @@ module.exports = {
     // Remove the Tailwind CSS preflight styles so it can use Material UI's preflight instead (CssBaseline).
     preflight: false,
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('tailwindcss-elevation'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
