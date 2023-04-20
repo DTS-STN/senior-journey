@@ -12,7 +12,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
   Link as MuiLink,
   Paper,
@@ -178,9 +177,7 @@ const Home: FC = () => {
                                           className: 'font-display font-medium',
                                         }}
                                       />
-                                      <ListItemIcon>
-                                        <NavigateNextIcon color="primary" />
-                                      </ListItemIcon>
+                                      <NavigateNextIcon color="primary" />
                                     </ListItemButton>
                                   </ListItem>
                                   <Divider component="li" />
@@ -226,9 +223,7 @@ const Home: FC = () => {
                                         className: 'text-sm',
                                       }}
                                     />
-                                    <ListItemIcon>
-                                      <NavigateNextIcon color="primary" />
-                                    </ListItemIcon>
+                                    <NavigateNextIcon color="primary" />
                                   </ListItemButton>
                                 </ListItem>
                                 <Divider component="li" />
