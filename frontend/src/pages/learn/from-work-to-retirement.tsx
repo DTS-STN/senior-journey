@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, useMemo } from 'react'
+import { FC, PropsWithChildren } from 'react'
 
 import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
@@ -7,8 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 
 import {
-  LearnMoreLink,
-  LearnPageLayout,
+  LearnPageLayout
 } from '../../components/LearnPageLayout'
 
 export interface ImportantCardProps extends PropsWithChildren { }
@@ -21,21 +20,14 @@ const DisclaimerCard: FC<ImportantCardProps> = ({ children }) => (
   <p className="rounded-lg bg-[#e9f1ff]/[.7] p-5">{children}</p>
 )
 
-
 const FromWorkToRetirement: FC = () => {
   const { t } = useTranslation('learn/from-work-to-retirement')
-
-  const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
-    () => [
-    ],
-    [t]
-  )
 
   return (
     <LearnPageLayout
       header={t('header')}
       learnMoreHeader={t('learn-more-heading')}
-      learnMoreLinks={learnMoreLinks}
+      learnMoreLinks={[]}
     >
       <NextSeo title={t('header')} />
 
