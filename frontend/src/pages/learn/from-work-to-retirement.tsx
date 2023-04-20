@@ -27,26 +27,6 @@ const FromWorkToRetirement: FC = () => {
 
   const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
     () => [
-      {
-        href: '#',
-        primary: t('transitioning-heading'),
-        secondary: t('transitioning-content'),
-      },
-      {
-        href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp.html',
-        primary: t('cpp-heading'),
-        secondary: t('cpp-content'),
-      },
-      {
-        href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html',
-        primary: t('oas-heading'),
-        secondary: t('oas-content'),
-      },
-      {
-        href: '#',
-        primary: t('sources-of-income-heading'),
-        secondary: t('sources-of-income-content'),
-      },
     ],
     [t]
   )
