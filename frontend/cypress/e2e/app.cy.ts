@@ -18,7 +18,7 @@ describe('app page loads', () => {
   })
 
   it('should have correct title', () => {
-    cy.title().should('eq', 'Seniors Journey | Parcours des aînés - Canada.ca')
+    cy.title().should('eq', 'Retirement Hub | Retirement Hub (FR) - Canada.ca')
   })
 
   it('has no detectable a11y violations on load', () => {

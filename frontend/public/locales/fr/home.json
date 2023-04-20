@@ -15,17 +15,17 @@
       "call-us": {
         "title": "(FR) Call us",
         "description": "(FR) You can reach us at either of the numbers below.",
-        "toll-free-description":"(FR) The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday",
-        "outside-description":"(FR) The hours of operation are 8:40 am to 4:30 pm Eastern time, Monday to Friday",
+        "toll-free-description": "(FR) The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday",
+        "outside-description": "(FR) The hours of operation are 8:40 am to 4:30 pm Eastern time, Monday to Friday",
         "toll-free": "(FR) Canada and the United States Toll-free:",
-        "tty":"(FR) Canada and the United States TTY:",
+        "tty": "(FR) Canada and the United States TTY:",
         "outside": "(FR) Outside Canada and the United States:",
         "toll-number": "1-800-800-277-9914",
         "tty-number": "1-800-255-4786",
         "outside-number": "1-613-957-1954 (Call collect) (FR)",
         "toll-number-href": "tel:18002554786",
         "tty-number-href": "tel:18002554786",
-        "outside-number-href":"tel:16139571954"
+        "outside-number-href": "tel:16139571954"
       },
       "find-office": {
         "title": "(FR) Find an office",
@@ -53,7 +53,7 @@
       ],
       "button": {
         "text": "Explore Retirement (FR)",
-        "url": "#"
+        "url": "/learn"
       },
       "linksTitle": "Top Learning Links (FR)",
       "links": [
@@ -83,7 +83,7 @@
         }
       ],
       "button": {
-        "text":"Take The Quiz (FR)",
+        "text": "Take The Quiz (FR)",
         "url": "#"
       },
       "linksTitle": "Other Tools (FR)",
@@ -133,7 +133,7 @@
         }
       ],
       "button": {
-        "text":"Sign Into MSCA (FR)",
+        "text": "Sign Into MSCA (FR)",
         "url": "#"
       }
     }

@@ -9,7 +9,7 @@
   "footer": {
     "date-modified-text": "Date de modification\u00A0:",
     "canada-ca-alt-text": "Symbole du gouvernement du Canada",
-    "header": "Seniors Digital Gateway (FR)",
+    "header": "Retirement Hub (FR)",
     "nav-header": "Organisation du gouvernement du Canada",
     "learning-materials-text": "Learning Materials (FR)",
     "learning-materials": {
@@ -99,7 +99,7 @@
     "alert": "Lieu de test",
     "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
   },
-  "application-name-bar": "Seniors Digital Gateway (FR)",
+  "application-name-bar": "Retirement Hub (FR)",
   "table-of-contents": {
     "aria-label": "(FR) Table of contents",
     "dialog": {
