@@ -118,8 +118,8 @@ const Learn: FC = () => {
                   {t('quiz.navigation.close')}
                 </Button>
               </div>
-              <div className="rounded-3xl bg-[#f5f5f5] font-display mb-10">
-                <h2 className="p-10 text-left text-5xl font-bold text-primary-700">
+              <div className="rounded-3xl md:bg-[#f5f5f5] font-display mb-10">
+                <h2 className="md:p-10 text-left sm:text-base md:text-5xl font-bold sm:text-black md:text-primary-700">
                   {t('quiz.navigation.title')}
                 </h2>
               </div>
@@ -200,7 +200,7 @@ const Learn: FC = () => {
                   ):(
                     <>
                       {renderComponent()}
-                      <div className='mt-auto'>
+                      <div className='mt-auto border-t md:border-t-0 border-gray-300 pt-6'>
                       {currentStepIndex === 0 && (
                         <Button
                           className="w-full bg-primary-700 p-4 text-center font-display text-base normal-case text-white hover:bg-primary-800"
