@@ -104,8 +104,6 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
           href="/"
           checklist={t('checklist')}
           checklistUrl={t('checklist-url')}
-          myNotes={t('my-notes')}
-          myNotesUrl={t('my-notes-url')}
         />
 
         {/* <Menu

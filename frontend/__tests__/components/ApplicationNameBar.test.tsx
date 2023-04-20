@@ -2,26 +2,33 @@ import '@testing-library/jest-dom/extend-expect'
 import { render, screen, waitFor } from '@testing-library/react'
 
 import { axe, toHaveNoViolations } from 'jest-axe'
+import { useRouter } from 'next/router'
 
 import ApplicationNameBar from '../../src/components/ApplicationNameBar'
-import { useRouter } from 'next/router';
 
 // Move useRouter mock to global scope
 jest.mock('next/router', () => ({
   useRouter: jest.fn(),
-}));
+}))
 
 // Apply useRouter mock to all tests
-const useRouterMock = useRouter as jest.Mock<any>;
+const useRouterMock = useRouter as jest.Mock<any>
 useRouterMock.mockReturnValue({
   pathname: '/home',
   asPath: '/home',
-});
+})
 
 expect.extend(toHaveNoViolations)
 
 describe('ApplicationNameBar', () => {
-  const sut = <ApplicationNameBar text="Test" href="/somelink" checklist='checklist' checklistUrl='checklist-url' myNotes='my-notes' myNotesUrl='my-notes-url' />
+  const sut = (
+    <ApplicationNameBar
+      text="Test"
+      href="/somelink"
+      checklist="checklist"
+      checklistUrl="checklist-url"
+    />
+  )
 
   it('renders', () => {
     render(sut)
