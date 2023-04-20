@@ -39,7 +39,7 @@ const FromWorkToRetirement: FC = () => {
     >
       <NextSeo title={t('header')} />
 
-      <h2 id="key-takeaways" className="h2">
+      <h2 id="key-takeaways" className="h2 !mt-0">
         {t('key-takeaways.heading')}
       </h2>
       <ul className="mb-5 list-disc space-y-2 pl-7">
