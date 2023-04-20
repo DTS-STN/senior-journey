@@ -12,7 +12,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
   Link as MuiLink,
   Paper,
@@ -104,6 +103,7 @@ const Home: FC = () => {
   return (
     <Layout>
       <NextSeo title={t('header')} />
+      <h1 className="sr-only">{t('header')}</h1>
 
       <section className="rounded-3xl bg-gray-surface ">
         <div className="flex flex-col items-center pt-10 md:flex-row-reverse">
@@ -118,9 +118,9 @@ const Home: FC = () => {
             />
           </div>
           <div className="w-full px-6 pb-4 text-center md:w-2/3 md:pl-14 md:text-left lg:w-4/5">
-            <h3 className="mb-4 text-5xl font-bold text-primary-700">
+            <h2 className="mb-4 text-5xl font-bold text-primary-700">
               {t('banner.title')}
-            </h3>
+            </h2>
             <p className="m-0">{t('banner.text')}</p>
           </div>
         </div>
@@ -151,9 +151,9 @@ const Home: FC = () => {
                 <TabPanel className="px-1 py-4" key={title} value={title}>
                   <div className="flex flex-col gap-6 rounded md:flex-row">
                     <Paper className="p-8 md:w-2/5 md:grow">
-                      <h3 className="h5 mb-8 flex items-center text-primary-700 md:text-4xl md:font-medium">
+                      <h2 className="h5 mb-8 flex items-center text-primary-700 md:text-4xl md:font-medium">
                         {heading}
-                      </h3>
+                      </h2>
                       <Divider className="mb-8" />
                       {description.map(({ text, list, links }) => (
                         <React.Fragment key={text}>
@@ -177,9 +177,7 @@ const Home: FC = () => {
                                           className: 'font-display font-medium',
                                         }}
                                       />
-                                      <ListItemIcon>
-                                        <NavigateNextIcon color="primary" />
-                                      </ListItemIcon>
+                                      <NavigateNextIcon color="primary" />
                                     </ListItemButton>
                                   </ListItem>
                                   <Divider component="li" />
@@ -225,9 +223,7 @@ const Home: FC = () => {
                                         className: 'text-sm',
                                       }}
                                     />
-                                    <ListItemIcon>
-                                      <NavigateNextIcon color="primary" />
-                                    </ListItemIcon>
+                                    <NavigateNextIcon color="primary" />
                                   </ListItemButton>
                                 </ListItem>
                                 <Divider component="li" />

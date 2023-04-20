@@ -9,7 +9,7 @@
   "footer": {
     "date-modified-text": "Date Modified:",
     "canada-ca-alt-text": "Symbol of the Government of Canada",
-    "header": "Seniors Digital Gateway",
+    "header": "Retirement Hub",
     "nav-header": "Government of Canada Corporate",
     "learning-materials-text": "Learning Materials",
     "learning-materials": {
@@ -99,7 +99,7 @@
     "alert": "Test site",
     "description": "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change."
   },
-  "application-name-bar": "Seniors Digital Gateway",
+  "application-name-bar": "Retirement Hub",
   "checklist": "Checklist",
   "checklist-url": "#",
   "my-notes": "My Notes",

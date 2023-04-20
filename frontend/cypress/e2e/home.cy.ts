@@ -1,5 +1,5 @@
 beforeEach(() => {
-  cy.visit('/home')
+  cy.visit('/en/home')
 })
 
 describe('home page loads', () => {
@@ -12,7 +12,7 @@ describe('home page loads', () => {
       .filter(':visible')
       .invoke('text')
       .then((text) => {
-        cy.title().should('eq', `${text} - Seniors Journey - Canada.ca`)
+        cy.title().should('eq', `${text} - Retirement Hub - Canada.ca`)
       })
   })
 
@@ -23,7 +23,7 @@ describe('home page loads', () => {
       .filter(':visible')
       .invoke('text')
       .then((text) => {
-        cy.title().should('eq', `${text} - Parcours des aînés - Canada.ca`)
+        cy.title().should('eq', `${text} - Retirement Hub (FR) - Canada.ca`)
       })
   })
 
@@ -32,7 +32,8 @@ describe('home page loads', () => {
   })
 
   it('should redirect you to the home page when clicking the text in the application name bar', () => {
-    cy.get('#app-bar a').click()
+    cy.get('#app-bar a:first').click()
+    cy.wait(200)
     cy.location('pathname').should('equal', '/en/home')
   })
 

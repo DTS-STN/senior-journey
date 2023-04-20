@@ -6,7 +6,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
 } from '@mui/material'
 import Link from 'next/link'
@@ -71,9 +70,7 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
                           }}
                           secondary={secondary}
                         />
-                        <ListItemIcon>
-                          <NavigateNextIcon color="primary" />
-                        </ListItemIcon>
+                        <NavigateNextIcon color="primary" />
                       </ListItemButton>
                     </ListItem>
                     <Divider component="li" />

@@ -46,7 +46,7 @@ export type GetNextSEOConfig = (
 
 export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Canada.ca',
-  defaultTitle: 'Seniors Journey | Parcours des aînés',
+  defaultTitle: 'Retirement Hub | Retirement Hub (FR)',
   description:
     "Avoid waiting on the phone and request the status of your application online. | Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
   additionalMetaTags: [
@@ -95,7 +95,7 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'en_CA',
-    siteName: 'Seniors Journey | Parcours des aînés - Canada.ca',
+    siteName: 'Retirement Hub | Retirement Hub (FR) - Canada.ca',
     type: 'website',
   },
   twitter: {
@@ -105,8 +105,8 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 })
 
 export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
-  titleTemplate: '%s - Seniors Journey - Canada.ca',
-  defaultTitle: 'Seniors Journey - Canada.ca',
+  titleTemplate: '%s - Retirement Hub - Canada.ca',
+  defaultTitle: 'Retirement Hub - Canada.ca',
   description:
     'Avoid waiting on the phone and request the status of your application online.',
   additionalMetaTags: [
@@ -131,7 +131,7 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'en_CA',
-    siteName: 'Seniors Journey - Canada.ca',
+    siteName: 'Retirement Hub - Canada.ca',
     type: 'website',
   },
   twitter: {
@@ -141,8 +141,8 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 })
 
 export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
-  titleTemplate: '%s - Parcours des aînés - Canada.ca',
-  defaultTitle: 'Parcours des aînés - Canada.ca',
+  titleTemplate: '%s - Retirement Hub (FR) - Canada.ca',
+  defaultTitle: 'Retirement Hub (FR) - Canada.ca',
   description:
     "Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
   additionalMetaTags: [
@@ -167,7 +167,7 @@ export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'fr_CA',
-    siteName: 'Parcours des aînés - Canada.ca',
+    siteName: 'Retirement Hub (FR) - Canada.ca',
     type: 'website',
   },
   twitter: {
