@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import {
   Button,
   Card,
@@ -38,13 +39,23 @@ const Learn: FC = () => {
   })
 
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true)
   }
 
   const handleCloseModal = () => {
-    setIsModalOpen(false)
+    if(showConfirmation){
+      setShowConfirmation(false)
+      setIsModalOpen(false)
+    }else{
+      setShowConfirmation(true)
+    }
+  }
+
+  const handleConfirmationCancel = () => {
+    setShowConfirmation(false);
   }
 
   const [, setFinalValues] = useState({})
@@ -83,30 +94,38 @@ const Learn: FC = () => {
       <Modal
         onClose={handleCloseModal}
         open={isModalOpen}
-        className="mx-auto flex w-full items-center justify-center border-none bg-transparent p-1 backdrop:bg-black backdrop:bg-opacity-80 md:w-2/3 lg:w-2/5"
+        className="mx-auto flex w-full border-none bg-transparent p-1 
+        backdrop:bg-black backdrop:bg-opacity-80 backdrop-blur-sm"
       >
-        <FocusOn enabled={isModalOpen} className="w-full">
+        <FocusOn enabled={isModalOpen} className="w-full md:py-16">
           <section
             data-autofocus
             tabIndex={-1}
-            className="rounded-md bg-white p-6"
+            className="rounded-md bg-white mx-auto items-center justify-center 
+            p-6 h-full sm:w-full md:w-2/3 lg:w-3/5 xl:w-2/5 overflow-y-auto "
             aria-describedby={`QuizModal-header`}
           >
-            <div className="flex justify-end gap-2 p-2">
-              <Button
-                variant="text"
-                className="text-base font-bold normal-case text-primary-700 hover:bg-white"
-                onClick={handleCloseModal}
-              >
-                <CloseIcon className="mr-2 inline text-2xl font-bold text-primary-700" />{' '}
-                {t('quiz.navigation.close')}
-              </Button>
-            </div>
-            <div className="rounded-3xl bg-[#f5f5f5] font-display">
-              <h2 className="mb-14 p-10 text-left text-5xl font-bold text-primary-700">
-                {t('quiz.navigation.title')}
-              </h2>
-            </div>
+            <div className='flex flex-col h-full'>
+            {!showConfirmation ? (
+              <>
+                <div className="flex justify-end gap-2 p-2">
+                <Button
+                  variant="text"
+                  className="text-base font-bold normal-case text-primary-700 hover:bg-white"
+                  onClick={handleCloseModal}
+                >
+                  <CloseIcon className="mr-2 inline text-2xl font-bold text-primary-700" />{' '}
+                  {t('quiz.navigation.close')}
+                </Button>
+              </div>
+              <div className="rounded-3xl bg-[#f5f5f5] font-display mb-10">
+                <h2 className="p-10 text-left text-5xl font-bold text-primary-700">
+                  {t('quiz.navigation.title')}
+                </h2>
+              </div>
+              </>
+            ):(<></>)}
+            
             <FormikWizard
               initialValues={{}}
               onSubmit={(values) => {
@@ -158,60 +177,88 @@ const Learn: FC = () => {
               }) => {
                 return (
                   <>
-                    {renderComponent()}
-                    {currentStepIndex === 0 && (
-                      <Button
-                        className="w-full bg-primary-700 p-4 text-center font-display text-base normal-case text-white hover:bg-primary-800"
-                        onClick={handleNext}
-                        disabled={isNextDisabled}
-                      >
-                        {t('quiz.navigation.start')}
-                      </Button>
-                    )}
-                    {currentStepIndex != 0 && (
-                      <div>
-                        <MobileStepper
-                          variant="progress"
-                          steps={10}
-                          position="static"
-                          activeStep={currentStepIndex}
-                          backButton={undefined}
-                          nextButton={undefined}
-                          classes={{
-                            progress: 'w-full',
-                          }}
-                        />
-                        <p className="text-center">{currentStepIndex} of 9</p>
+                  {showConfirmation ? (
+                    <div className='w-full text-center flex flex-col h-full'>
+                      <ErrorOutlineIcon className="text-9xl m-10 font-bold text-red-dark mx-auto" />
+                      <p className='mb-10'>{t('quiz.confirmation.sure')}</p>
+                      <div className='mt-auto'>
                         <Button
-                          onClick={handlePrev}
-                          disabled={isPrevDisabled}
-                          className="w-1/2 px-4 py-2 font-display font-bold normal-case text-primary-700 hover:bg-white"
+                          onClick={handleConfirmationCancel}
+                          className="border border-gray-300 mx-4 hover:border-gray-300 w-1/3 px-4 py-2 font-display font-bold normal-case text-primary-700 hover:bg-white bg-white shadow-none hover:shadow-none"
+                          variant="outlined"
                         >
-                          {t('quiz.navigation.previous')}
+                          {t('quiz.confirmation.no')}
                         </Button>
-                        {currentStepIndex === 9 ? (
-                          <Button
-                            onClick={handleNext}
-                            disabled={isNextDisabled}
-                            className="ml-auto w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
-                          >
-                            {t('quiz.navigation.submit')}
-                          </Button>
-                        ) : (
-                          <Button
-                            onClick={handleNext}
-                            disabled={isNextDisabled}
-                            className="ml-auto w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
-                          >
-                            {t('quiz.navigation.next')}
-                          </Button>
-                        )}
+                        <Button
+                          onClick={handleCloseModal}
+                          className="w-1/3 rounded mx-4 bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
+                        >
+                          {t('quiz.confirmation.yes')}
+                        </Button>
                       </div>
-                    )}
+                    </div>
+                  ):(
+                    <>
+                      {renderComponent()}
+                      <div className='mt-auto'>
+                      {currentStepIndex === 0 && (
+                        <Button
+                          className="w-full bg-primary-700 p-4 text-center font-display text-base normal-case text-white hover:bg-primary-800"
+                          onClick={handleNext}
+                          disabled={isNextDisabled}
+                        >
+                          {t('quiz.navigation.start')}
+                        </Button>
+                      )}
+
+                      {currentStepIndex != 0 && (
+                        <div>
+                          <MobileStepper
+                            variant="progress"
+                            steps={10}
+                            position="static"
+                            activeStep={currentStepIndex}
+                            backButton={undefined}
+                            nextButton={undefined}
+                            classes={{
+                              progress: 'w-full',
+                            }}
+                          />
+                          <p className="text-center">{currentStepIndex} {t('quiz.navigation.of')} 9</p>
+                          <Button
+                            onClick={handlePrev}
+                            disabled={isPrevDisabled}
+                            className="w-1/2 px-4 py-2 font-display font-bold normal-case text-primary-700 hover:bg-white bg-white shadow-none hover:shadow-none"
+                          >
+                            {t('quiz.navigation.previous')}
+                          </Button>
+                          {currentStepIndex === 9 ? (
+                            <Button
+                              onClick={handleNext}
+                              disabled={isNextDisabled}
+                              className="w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
+                            >
+                              {t('quiz.navigation.submit')}
+                            </Button>
+                          ) : (
+                            <Button
+                              onClick={handleNext}
+                              disabled={isNextDisabled}
+                              className="w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
+                            >
+                              {t('quiz.navigation.next')}
+                            </Button>
+                          )}
+                        </div>
+                      )}
+                      </div>
+                    </>
+                  )}
                   </>
                 )
               }}
             </FormikWizard>
+            </div>
           </section>
         </FocusOn>
       </Modal>
