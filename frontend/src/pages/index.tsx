@@ -1,4 +1,4 @@
-import { Button } from '@mui/material'
+import { Button, Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
@@ -44,6 +44,8 @@ const Index = () => {
                   href="/"
                   id="english-button"
                   locale="en"
+                  disableElevation={false}
+                  size="large"
                 >
                   English
                 </Button>
@@ -57,6 +59,8 @@ const Index = () => {
                   href="/"
                   id="french-button"
                   locale="fr"
+                  disableElevation={false}
+                  size="large"
                 >
                   Français
                 </Button>
@@ -64,24 +68,24 @@ const Index = () => {
             </div>
           </div>
           <div className="flex items-center justify-between gap-6 bg-gray-light p-8">
-            <div className="w-7/12 text-blue-light md:w-8/12">
-              <a
-                className="text-inherit no-underline visited:text-inherit hover:text-inherit hover:underline focus:text-inherit focus:underline"
+            <div className="w-7/12 md:w-8/12">
+              <MuiLink
                 data-cy="terms"
                 href="https://www.canada.ca/en/transparency/terms.html"
                 lang="en"
+                underline="hover"
               >
                 Terms &amp; conditions
-              </a>
+              </MuiLink>
               <span className="text-gray-400"> • </span>
-              <a
-                className="text-inherit no-underline visited:text-inherit hover:text-inherit hover:underline focus:text-inherit focus:underline"
+              <MuiLink
                 data-cy="avis"
                 href="https://www.canada.ca/fr/transparence/avis.html"
                 lang="fr"
+                underline="hover"
               >
                 Avis
-              </a>
+              </MuiLink>
             </div>
             <div className="w-5/12 md:w-4/12">
               <Image
