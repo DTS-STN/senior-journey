@@ -37,15 +37,13 @@
     "menu-text": "Menu",
     "menu": {
       "learn": "Learn",
-      "learn-url": "learn",
+      "learn-url": "/learn",
       "plan": "Plan",
-      "plan-url": "plan",
+      "plan-url": "/plan",
       "app": "Apply",
-      "app-url": "apply",
+      "app-url": "/apply",
       "man": "Manage",
-      "man-url": "manage",
-      "comm": "Community Resources",
-      "comm-url": "community-resources"
+      "man-url": "/manage"
     },
     "links": {
       "terms-and-condition": "Terms and conditions",

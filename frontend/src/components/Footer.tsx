@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { Link as MuiLink } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -80,39 +81,44 @@ const Footer: FC<FooterProps> = ({
 }: FooterProps) => {
   return (
     <footer>
-      <div className="wl-full mt-2 h-auto bg-blue-dark text-white">
-        <div className="container mx-auto px-4 py-8">
-          <h2 className="text-center font-bold md:text-left">{footerHeader}</h2>
-          <div className="flex flex-col items-start justify-between md:flex-row md:items-start ">
-            <div className="grow">
-              <h2 className="h4 py-7 md:text-[22px]">
+      <div className="bg-blue-dark text-white">
+        <div className="container mx-auto px-4 py-8 md:pb-20">
+          <h2 className="mb-8 font-display text-xl font-bold">
+            {footerHeader}
+          </h2>
+          <div className="grid gap-6 md:grid-cols-4">
+            <div className="md:col-span-3">
+              <h2 className="mb-4 font-display font-medium">
                 {learningMaterialsText}
               </h2>
-              <ul className="col-span-2 md:columns-2">
+              <ul className="col-span-2 space-y-2 md:columns-2">
                 {learningMaterialsLinks.map(({ link, linkText }) => (
-                  <li key={link} className="py-2">
-                    <Link
+                  <li key={link} className="text-sm">
+                    <MuiLink
+                      component={Link}
+                      color="inherit"
+                      underline="hover"
                       href={link}
-                      className="hover:underline focus:underline"
                     >
                       {linkText}
-                    </Link>
+                    </MuiLink>
                   </li>
                 ))}
               </ul>
             </div>
-
             <div>
-              <h2 className="h4 py-3.5 md:py-0 md:text-[22px]">{menuText}</h2>
-              <ul className="py-3.5 pb-10 md:py-4 md:pb-0">
+              <h2 className="mb-4 font-display font-medium">{menuText}</h2>
+              <ul className="space-y-2">
                 {menuLinks.map(({ link, linkText }) => (
-                  <li key={link} className="py-2">
-                    <Link
+                  <li key={link} className="text-sm">
+                    <MuiLink
+                      component={Link}
+                      color="inherit"
+                      underline="hover"
                       href={link}
-                      className="hover:underline focus:underline"
                     >
                       {linkText}
-                    </Link>
+                    </MuiLink>
                   </li>
                 ))}
               </ul>
@@ -131,13 +137,15 @@ const Footer: FC<FooterProps> = ({
               <ul className="hidden flex-col flex-wrap space-y-3 marker:text-xs md:list-inside md:list-disc md:flex-row md:items-center md:space-y-0 lg:flex">
                 {links.map(({ link, linkText }) => (
                   <li key={link} className="first:list-none md:mr-4">
-                    <a
-                      className="font-body text-sm text-[#21303F] hover:text-[#5E8EBD]"
+                    <MuiLink
+                      color="primary"
+                      underline="hover"
+                      className="text-sm"
                       data-cy="social-media-link"
                       href={link}
                     >
                       {linkText}
-                    </a>
+                    </MuiLink>
                   </li>
                 ))}
               </ul>
