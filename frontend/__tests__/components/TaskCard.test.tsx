@@ -7,20 +7,23 @@ import TaskCard, { Task } from '../../src/components/TaskCard'
 
 describe('TaskCard', () => {
   const task: Task = {
-    id: '1',
-    description: 'Test Task',
-    linkTitle: 'Test Link',
-    links: 'https://example.com',
-    tags: 'tag1 tag2',
+    "id": 1,
+    "display-order": 1,
+    "answer-key": "pre65",
+    "is-time-sensitive": true,
+    "title": "task title",
+    "description": "task description",
+    "link-title": "link title",
+    "links": 'https://example.com',
+    "tag": "a tag"
   }
 
   it('renders the TaskCard component', () => {
     const { container } = render(<TaskCard task={task} />)
 
-    expect(container.textContent).toContain('Test Task')
-    expect(container.textContent).toContain('Test Link')
+    expect(container.textContent).toContain('task description')
+    expect(container.textContent).toContain('link title')
     expect(container.textContent).toContain('https://example.com')
-    expect(container.textContent).toContain('tag1')
-    expect(container.textContent).toContain('tag2')
+    expect(container.textContent).toContain('a tag')
   })
 })
