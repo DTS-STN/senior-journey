@@ -3,12 +3,16 @@ import ResourceTagButton from './ResourceTagButton'
 import MarkDown from './MarkDown'
 
 export interface Task {
-    id: string;
-    description: string;
-    linkTitle: string;
-    links: string;
-    tags: string;
-  }
+    "id": number,
+    "display-order": number,
+    "answer-key": string,
+    "is-time-sensitive": boolean,
+    "title": string,
+    "description": string,
+    "link-title": string,
+    "links": string,
+    "tag": string
+}
 
 interface TaskCardProps {
     showCheckbox?: boolean
@@ -19,8 +23,6 @@ const TaskCard: React.FC<TaskCardProps> = ({
     showCheckbox = false,
     task,
 }) => {
-
-const tagsArray = task.tags ? task.tags.split(" ").map(tag => tag.replace(/_/g, ' ')) : [];
     return (
         <div className="relative bg-white rounded-lg shadow-md p-6 mb-4">
             {showCheckbox && (
@@ -28,11 +30,9 @@ const tagsArray = task.tags ? task.tags.split(" ").map(tag => tag.replace(/_/g, 
             )}
             {showCheckbox && (<hr />)}
             <MarkDown content={task.description} />
-            {task.linkTitle && (<h5 className="text-s pb-4">{task.linkTitle}</h5>)}
+            {task['link-title'] && (<h5 className="text-s pb-4">{task['link-title']}</h5>)}
             <MarkDown content={task.links} />
-            {tagsArray.map((tag, index) => (
-                <ResourceTagButton key={`${task.id}-${tag}`}>{tag}</ResourceTagButton>
-            ))}
+            <ResourceTagButton>{task.tag}</ResourceTagButton>
         </div>
     )
 }
