@@ -1,5 +1,5 @@
 // components/TaskCard.tsx
-import ResourceTagButton from './ResourceTagButton'
+import Chip from '@mui/material/Chip';
 import MarkDown from './MarkDown'
 
 export interface Task {
@@ -32,7 +32,7 @@ const TaskCard: React.FC<TaskCardProps> = ({
             <MarkDown content={task.description} />
             {task['link-title'] && (<h5 className="text-s pb-4">{task['link-title']}</h5>)}
             <MarkDown content={task.links} />
-            <ResourceTagButton>{task.tag}</ResourceTagButton>
+            <Chip label={task.tag} />
         </div>
     )
 }
