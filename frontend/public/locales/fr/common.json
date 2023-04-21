@@ -37,15 +37,13 @@
     "menu-text": "Menu (FR)",
     "menu": {
       "learn": "Learn (FR)",
-      "learn-url": "learn-fr",
+      "learn-url": "/learn",
       "plan": "Plan (FR)",
-      "plan-url": "plan-fr",
+      "plan-url": "/plan",
       "app": "Apply (FR)",
-      "app-url": "apply-fr",
+      "app-url": "/apply",
       "man": "Manage (FR)",
-      "man-url": "manage-fr",
-      "comm": "Community Resources (FR)",
-      "comm-url": "community-resources-fr"
+      "man-url": "/manage"
     },
     "links": {
       "about-canada-ca": "À propos de Canada.ca",
