@@ -74,8 +74,9 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
               href={resolveHref({ pathname, query })}
               locale={langSelectorLocale}
               replace
-              className={`ml-6 block cursor-help pb-2 font-bold decoration-dotted sm:ml-16 md:hidden`}
+              className="ml-6 block cursor-help pb-2 decoration-dotted sm:ml-16 md:hidden"
               lang={langSelectorLocale}
+              color="primary"
             >
               <abbr title={langSelectorText}>{langSelectorAbbreviation}</abbr>
             </MuiLink>
@@ -91,6 +92,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
               className="hidden self-end pb-0 md:block lg:pb-4"
               data-cy="toggle-language-link"
               lang={langSelectorLocale}
+              color="primary"
             >
               {langSelectorText}
             </MuiLink>
