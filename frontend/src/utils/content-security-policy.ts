@@ -94,7 +94,6 @@ export function generateStrictContentSecurityPolicy(): ContentSecurityPolicy {
     "form-action": ["'self'"],
     "frame-src": ["'self'"],
     "img-src": ["'self'"],
-    "prefetch-src": ["'self'"],
     "script-src": ["'self'"],
     "style-src": ["'self'"],
   }

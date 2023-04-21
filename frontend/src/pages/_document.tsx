@@ -101,7 +101,6 @@ function generateCsp(nonce: string): string {
     contentSecurityPolicy['connect-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['frame-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['img-src']?.push(adobeAnalyticsDomains)
-    contentSecurityPolicy['prefetch-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['script-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['style-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['script-src']?.push(adobeAnalyticsSriptHashes)
