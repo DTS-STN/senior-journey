@@ -9,7 +9,6 @@ export interface LayoutProps {
   children: ReactNode
 }
 
-
 const Layout: FC<LayoutProps> = ({ children }) => {
   const { t } = useTranslation('common')
   return (
@@ -106,10 +105,6 @@ const Layout: FC<LayoutProps> = ({ children }) => {
           {
             link: t('footer.menu.man-url'),
             linkText: t('footer.menu.man'),
-          },
-          {
-            link: t('footer.menu.comm-url'),
-            linkText: t('footer.menu.comm'),
           },
         ]}
         footerTopOfPage={t('footer.top-of-page')}
