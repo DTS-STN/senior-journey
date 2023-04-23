@@ -1,0 +1,81 @@
+{
+    "header": "Rules of thumb for public pensions",
+    "key-takeaways": {
+        "heading": "Key Takeaways",
+        "list-one": {
+            "item-1": "Financial circumstances are only one aspect of your decision when to take your pensions.",
+            "item-2": "Think about your retirement goals and plans, a lifestyle you want and place you would like to live. Timing of retirement is more than about your money and age.",
+            "item-3": "If you have low income, or you are seriously ill, you might want to take your CPP and OAS earlier. If you have private savings and can delay taking your public pensions, you can increase your pension income significantly.",
+            "item-4": "If you experience low income, you may qualify for the GIS. Understand the rules and file your taxes annually to maintain your eligibility"
+        },
+        "content-one": "When is the best time for you to start your OAS and CPP pensions? It is not an simple question, and the answer depends on your priorities and plans for retirement. There is no right or wrong response. Some might want to retire early, even if it means having a lower standard of living all retirement. Others want to leave some savings for their children, yet others want to maximize their pension income in retirement.",
+        "smart-tip": "<strong>Smart tip:</strong> Planning for your retirement, your personal longevity is very important. This might be an uncomfortable topic for most people, but your decisions could be different, depending on how long you will need to receive your pensions. For many people the prospect of outliving their savings carries more risk than passing away prematurely. Individuals usually under-estimate their own longevity greatly. The average life expectancy has been increasing steadily and will continue to grow. Keep in mind you will most likely live longer than your parents or grandparents. Plan your finances accordingly.",
+        "content-two": "In the next chapter we will provide a few common rules of thumb aiming to get the most from the OAS and CPP. This might involve other personal choices you might have to make. However, financial analysis is only one part of your big picture for retirement. You have to weigh in on all aspects of your retirement, including the retirement of your spouse. The final decision is always yours.",
+        "content-three": "The OAS and CPP are two different programs, and you can start them at different time. The timing of your pensions may differ from the timing for your spouse.",
+        "content-four": "If you would like to increase your monthly and lifetime OAS and CPP pensions, consider the following options.",
+        "sub-heading-one": "Consider taking CPP retirement pension earlier if you have at least one condition:",
+        "list-two": {
+            "item-1": "You have serious health risks, suffer from a serious illness or disability, you may want to take your CPP pension early and try to qualify for the Post-Retirement Disability Benefit",
+            "item-2": "You may have serious reasons to believe that you would (live less than average life expectancy)",
+            "item-3": "Your income is low, and you may not have other sources of income, or little or no retirement savings to support any pension delay",
+            "item-4": "You lost your job and unable to find another similar or acceptable employment, and money is needed immediately to cover your basic needs",
+            "item-5": "You provide full-time unpaid care to a family member or a loved one, and money is needed immediately to cover your basic needs",
+            "item-6": "You are paying debt with high interest and struggle to make debt payments without additional income",
+            "item-7": "You have very high income in retirement, and CPP pension amount would not play a major role in your financial picture"
+        },
+        "sub-heading-two": "Consider taking CPP retirement pension at age 65, if you have at least one condition:",
+        "list-three": {
+            "item-1": "You have ill health",
+            "item-2": "You are receiving provincial disability benefits. If you start your CPP earlier than age 65, your provincial pension will be reduced dollar for dollar for any additional CPP pension income.",
+            "item-3": "You may have serious reasons to believe that you would not outlive your parents",
+            "item-4": "Your income at age 65 is modest, and you have small retirement savings",
+            "item-5": "You are unwilling or unable to work past age 65, and you don't have enough savings to cover your basic needs",
+            "item-6": "You are paying high interest debt",
+            "item-7": "You had continuous employment history with minimal gaps"
+        },
+        "sub-heading-three": "Consider delaying CPP retirement pension up to age 70, if you have at least one condition:",
+        "list-four": {
+            "item-1": "You have average or good health",
+            "item-2": "You expect to live a long life",
+            "item-3": "Your income is medium or high, and you have other sources of income or retirement savings to help you maintain your standard of living early in retirement.",
+            "item-4": "You want to continue to work",
+            "item-5": "Your employment history has considerable gaps (e.g. because you immigrated to Canada in the middle of your career, or your study period was long, or you had an unstable career).",
+            "item-6": "You were divorced and lost some pension credits upon credit split.",
+            "item-7": "You would like to increase your monthly and lifetime pension."
+        },
+        "content-five": "You can begin receiving your OAS pension at any age between 65 and 70; however, to maximize your income from the OAS program consider our following rules of thumb.",
+        "sub-heading-four": "Consider taking OAS pension early if...:",
+        "list-five": {
+            "item-1": {
+                "content": "Your income is low, you have no other sources of income, and little or no retirement savings. You may qualify for the <a>Guaranteed Income Supplement (GIS)</a>.",
+                "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/benefit-amount.html"
+            },
+            "item-2": "You believe that you may live as long as your parents did.",
+            "item-3": "You are unwilling or unable to work past age 65",
+            "item-4": "You are paying high interest debt cc"
+        },
+        "sub-heading-five": "Consider taking OAS pension at age 67-68 if you have at least one condition:",
+        "list-six": {
+            "item-1": "Your income in retirement is average or above average. You do not qualify for the GIS.",
+            "item-2": {
+                "content": "Your income is below the <a>OAS recovery tax threshold</a>.",
+                "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html"
+            },
+            "item-3": "You believe that you may live as long as your parents did, or even longer",
+            "item-4": "You may be still working"
+        },
+        "sub-heading-six": "Consider delaying OAS pension to age 70 if you have at least one condition:",
+        "list-seven": {
+            "item-1": {
+                "content": "Your income is above the <a>OAS recovery tax threshold</a> , or your OAS pension could be fully recovered",
+                "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html"
+            },
+            "item-2": "You believe that you may live longer than your parents did",
+            "item-3": "You may be still working with high earnings"
+        },
+        "disclaimer": "<strong>Disclaimer:</strong> This website does not provide personal financial advice. Options and discussions presented provide general information only. The ultimate decision about your pensions should be made based on your personal life circumstances. If you are not certain which decision is best for you, seek professional financial advice for your specific case."
+
+    }
+    
+    
+}
