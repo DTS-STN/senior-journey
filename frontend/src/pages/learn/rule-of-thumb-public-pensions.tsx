@@ -39,7 +39,7 @@ const RuleOfThumbPublicPensions: FC = () => {
         <li>{t('key-takeaways.list-one.item-3')}</li>
         <li>{t('key-takeaways.list-one.item-4')}</li>
       </ul>
-      <p>{t('key-takeaways.content-one')}</p>      
+      <p>{t('key-takeaways.content-one')}</p>
       <ImportantCard>
         <Trans
           ns="learn/rule-of-thumb-public-pensions"
@@ -94,12 +94,12 @@ const RuleOfThumbPublicPensions: FC = () => {
       </h3>
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li><Trans
-            ns="learn/rule-of-thumb-public-pensions"
-            i18nKey="key-takeaways.list-five.item-1.content"
-            components={{
-              a: (<MuiLink href={t('key-takeaways.list-five.item-1.link')} />),
-            }}
-          /></li>
+          ns="learn/rule-of-thumb-public-pensions"
+          i18nKey="key-takeaways.list-five.item-1.content"
+          components={{
+            a: (<MuiLink href={t('key-takeaways.list-five.item-1.link')} />),
+          }}
+        /></li>
         <li>{t('key-takeaways.list-five.item-2')}</li>
         <li>{t('key-takeaways.list-five.item-3')}</li>
         <li>{t('key-takeaways.list-five.item-4')}</li>
@@ -110,27 +110,27 @@ const RuleOfThumbPublicPensions: FC = () => {
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li>{t('key-takeaways.list-six.item-1')}</li>
         <li><Trans
-            ns="learn/rule-of-thumb-public-pensions"
-            i18nKey="key-takeaways.list-six.item-2.content"
-            components={{
-              a: (<MuiLink href={t('key-takeaways.list-six.item-1.link')} />),
-            }}
-          /></li>
+          ns="learn/rule-of-thumb-public-pensions"
+          i18nKey="key-takeaways.list-six.item-2.content"
+          components={{
+            a: (<MuiLink href={t('key-takeaways.list-six.item-1.link')} />),
+          }}
+        /></li>
         <li>{t('key-takeaways.list-six.item-3')}</li>
         <li>{t('key-takeaways.list-six.item-4')}</li>
       </ul>
       <h3 id="key-takeaways" className="h3 !mt-0">
         {t('key-takeaways.sub-heading-six')}
       </h3>
-      <ul className="mb-5 list-disc space-y-2 pl-7">        
+      <ul className="mb-5 list-disc space-y-2 pl-7">
         <li><Trans
-            ns="learn/rule-of-thumb-public-pensions"
-            i18nKey="key-takeaways.list-seven.item-1.content"
-            components={{
-              a: (<MuiLink href={t('key-takeaways.list-seven.item-1.link')} />),
-            }}
-          /></li>
-          <li>{t('key-takeaways.list-seven.item-2')}</li>
+          ns="learn/rule-of-thumb-public-pensions"
+          i18nKey="key-takeaways.list-seven.item-1.content"
+          components={{
+            a: (<MuiLink href={t('key-takeaways.list-seven.item-1.link')} />),
+          }}
+        /></li>
+        <li>{t('key-takeaways.list-seven.item-2')}</li>
         <li>{t('key-takeaways.list-seven.item-3')}</li>
       </ul>
 
