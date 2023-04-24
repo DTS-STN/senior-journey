@@ -45,7 +45,6 @@
     "pino": "^8.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-focus-on": "^3.8.0",
     "react-i18next": "^12.2.0",
     "react-markdown": "^8.0.7",
     "sharp": "^0.32.0",
