@@ -30,7 +30,7 @@ const QuizLandingPage: FC = () => {
       <h6 className="mb-2 mt-4 font-display text-xl font-bold">
         {t('quiz.landing.timetocomplete')}
       </h6>
-      <p className="">
+      <p>
         <WatchLaterIcon className="mr-4 inline text-2xl" />
         {t('quiz.landing.minutes')}
       </p>
