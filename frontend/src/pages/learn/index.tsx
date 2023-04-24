@@ -37,8 +37,8 @@ export interface FormValues {
   marriedOrCommonLaw: string,
   divorcedOrSeparated: string,
   widowed: string,
-  yesChildren: '',
-  noChildren: ''
+  yesChildren: string,
+  noChildren: string,
 }
 
 
