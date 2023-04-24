@@ -31,6 +31,17 @@ import Question7 from '../../components/questions/Question7'
 import Question8 from '../../components/questions/Question8'
 import Question9 from '../../components/questions/Question9'
 
+
+export interface FormValues {
+  single: string,
+  marriedOrCommonLaw: string,
+  divorcedOrSeparated: string,
+  widowed: string,
+  yesChildren: '',
+  noChildren: ''
+}
+
+
 const Learn: FC = () => {
   const { t } = useTranslation('learn')
   const sections = t<string, { cards: any[] }[]>('sections', {
@@ -49,6 +60,15 @@ const Learn: FC = () => {
 
   const [, setFinalValues] = useState({})
   const [, setFinished] = useState(false)
+
+  const initialValues: FormValues = {
+    single: '',
+    marriedOrCommonLaw: '',
+    divorcedOrSeparated: '',
+    widowed: '',
+    yesChildren: '',
+    noChildren: ''
+  }
 
   return (
     <Layout>
@@ -108,7 +128,7 @@ const Learn: FC = () => {
               </h2>
             </div>
             <FormikWizard
-              initialValues={{}}
+              initialValues={initialValues}
               onSubmit={(values) => {
                 setFinalValues(values)
                 setFinished(true)

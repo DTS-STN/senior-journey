@@ -26,6 +26,22 @@
       "retirement": "(FR) <strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
       "timetocomplete": "(FR) Time to complete survey",
       "minutes": "(FR) 3 minutes"
+    },
+    "questions":{
+      "question-2": {
+        "question-1": {
+          "title": "(FR) Select all that apply to you. You are...",
+          "option-1": "(FR) Single",
+          "option-2": "(FR) Married or common-law",
+          "option-3": "(FR) Divorced or separated",
+          "option-4": "(FR) Widowed"
+        },
+        "question-2": {
+          "title": "(FR) Do you have children?",
+          "option-1": "(FR) Yes",
+          "option-2": "(FR) No"
+        }
+      }
     }
   },
   "sections": [
