@@ -189,14 +189,53 @@ const WhenToTakeYourPensions: FC = () => {
         />
       </p>
       <p>{t('cpp-pension.content-four')}</p>
-      <div className="w-full lg:flex-1">
-        <Image
-          alt={t('cpp-pension.illustration-two.alt')}
-          src={t('cpp-pension.illustration-two.img-url')}
-          width={829}
-          height={240}
-          className="w-full"
-        />
+
+      <div className="overflow-x-auto">
+        <table className="min-w-full border-collapse">
+          <thead className="bg-[#e9f1ff]">
+            <tr>
+              <th className="w-1/2 px-6 py-3 text-left text-xs font-strong text-black tracking-wider border-r border-[#e9f1ff]">
+                {t('cpp-pension.cpp-income-table.header-column-one-value')}
+              </th>
+              <th className="w-1/2 px-6 py-3 text-center text-xs font-strong text-black tracking-wider">
+                {t('cpp-pension.cpp-income-table.header-column-two-value')}
+              </th>
+            </tr>
+          </thead>
+          <tbody className="bg-white">
+            {[{
+              id: t('cpp-pension.cpp-income-table.row-one.id'),
+              col1: t('cpp-pension.cpp-income-table.row-one.column-one-value'),
+              col2: t('cpp-pension.cpp-income-table.row-one.column-two-value')
+            },
+            {
+              id: t('cpp-pension.cpp-income-table.row-two.id'),
+              col1: t('cpp-pension.cpp-income-table.row-two.column-one-value'),
+              col2: t('cpp-pension.cpp-income-table.row-two.column-two-value')
+            },
+            {
+              id: t('cpp-pension.cpp-income-table.row-three.id'),
+              col1: t('cpp-pension.cpp-income-table.row-three.column-one-value'),
+              col2: t('cpp-pension.cpp-income-table.row-three.column-two-value')
+            },
+            {
+              id: t('cpp-pension.cpp-income-table.row-four.id'),
+              col1: t('cpp-pension.cpp-income-table.row-four.column-one-value'),
+              col2: t('cpp-pension.cpp-income-table.row-four.column-two-value')
+            },
+            {
+              id: t('cpp-pension.cpp-income-table.row-five.id'),
+              col1: t('cpp-pension.cpp-income-table.row-five.column-one-value'),
+              col2: t('cpp-pension.cpp-income-table.row-five.column-two-value')
+            }
+            ].map((row, index) => (
+              <tr key={row.id} className={index === 4 ? "border-b border-black" : ""}>
+                <td className="px-6 py-1 text-xs font-medium text-black whitespace-nowrap bg-white">{row.col1}</td>
+                <td className="px-6 py-1 text-xs text-center font-medium text-black whitespace-nowrap bg-white">{row.col2}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       <p>{t('cpp-pension.content-five')}</p>
       <DisclaimerCard>

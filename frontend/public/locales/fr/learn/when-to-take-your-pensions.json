@@ -66,9 +66,34 @@
             "link-one": "https://www.canada.ca/fr/services/benefits/publicpensions/cpp/payment-amounts.html"
         },
         "content-four": "Many pensioners take their CPP before age 65, but this is the time when every year of delay gives the largest pension increases. In addition to the percentage figures of increase shown in the table below, every year your future pension will also grow with the speed of the average wage growth increase, that might be even higher than annual inflation. And these pension increases will happen without any investment risk to you, or any service charges that all investors have to pay in the free market.",
-        "illustration-two": {
-            "alt": "Delaying pension will increase your pension if delayed by one year",
-            "img-url": "/assets/cpp-income-table-en.svg"
+        "cpp-income-table": {
+            "header-column-one-value":"Delaying pension",
+            "header-column-two-value": "Will increase your pension if delayed by one year (above the rate of average wage growth)",
+            "row-one": {
+                "id": 1,
+                "column-one-value": "From age 60 to 61",
+                "column-two-value": "11.25%"
+            }, 
+            "row-two": {
+                "id": 2,
+                "column-one-value": "From age 61 to 62",
+                "column-two-value": "10.11%"
+            },
+            "row-three": {
+                "id": 3,
+                "column-one-value": "From age 62 to 63",
+                "column-two-value": "9.18%"
+            },
+            "row-four": {
+                "id": 4,
+                "column-one-value": "From age 63 to 64",
+                "column-two-value": "8.41%"
+            },
+            "row-five": {
+                "id": 5,
+                "column-one-value": "From age 64 to 65",
+                "column-two-value": "7.76%"
+            }
         },
         "content-five": "While you don't have to stop working while applying for your public pensions, combining work with retirement income has many considerations. We have developed a special section to discuss the interaction of work and pensions. Please, visit our page: Transition from Work to Retirement.",
         "disclaimer": "<strong>Disclaimer:</strong> This website does not provide personal financial advice. Options and discussions presented provide general information only. The ultimate decision about your pensions should be made based on your personal life circumstances. If you are not certain which decision is best for you, seek professional financial advice for your specific case."
