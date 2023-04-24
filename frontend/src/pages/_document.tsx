@@ -132,6 +132,17 @@ export default function MyDocument({
       <Head nonce={nonce}>
         <meta charSet="utf-8" />
         <link rel="icon" href="/assets/favicon.ico" />
+        {/** Google font **/}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap"
+          rel="stylesheet"
+        />
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
