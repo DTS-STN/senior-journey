@@ -40,6 +40,7 @@ export interface FormValues {
   widowed: string,
   yesChildren: string,
   noChildren: string,
+  retirementAge: string,
 }
 
 export interface QuizConfirmationProps {
@@ -203,7 +204,8 @@ const Learn: FC = () => {
     divorcedOrSeparated: '',
     widowed: '',
     yesChildren: '',
-    noChildren: ''
+    noChildren: '',
+    retirementAge: ''
   }
 
   return (
@@ -270,7 +272,7 @@ const Learn: FC = () => {
               )}
 
               <FormikWizard
-                initialValues={{}}
+                initialValues={{initialValues}}
                 onSubmit={(values) => {
                   setFinalValues(values)
                   setFinished(true)
