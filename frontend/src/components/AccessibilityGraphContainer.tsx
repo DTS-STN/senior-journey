@@ -1,42 +1,35 @@
 import React, { useState } from 'react';
 import AccessibilityTable, { TableData } from './AccessibilityTable';
-import { Collapse, IconButton } from '@material-ui/core';
-import { ExpandLess, ExpandMore } from '@material-ui/icons';
+import { Collapse, IconButton } from '@mui/material'
+import { ExpandLess, ExpandMore } from '@mui/icons-material';
 
-const App: React.FC = () => {
-  const [open, setOpen] = useState(false);
+export interface AccessibilityGraphContainerProps {
+    tableData: TableData,
+    description: string
+}
 
-  const tableData: TableData = {
-    caption: 'Enquiries',
-    header: ['2008-09', '2009-10', '2010-11'],
-    rows: [
-      {
-        id: 1,
-        label: 'Enquiries',
-        data: ['80,189.56', '65,297,98', '70,387.33']
-      },
-      {
-        id: 2,
-        label: 'Threshold',
-        data: ['70,000.24', '70,000.24', '75,000.09']
-      },
-    ],
-  };
+const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = ({ description, tableData }) => {
+    const [open, setOpen] = useState(false);
 
-  const handleClick = () => {
-    setOpen(!open);
-  };
+    const handleClick = () => {
+        setOpen(!open);
+    };
 
-  return (
-    <div>
-      <IconButton onClick={handleClick}>
-        {open ? <ExpandLess /> : <ExpandMore />}
-      </IconButton>
-      <Collapse in={open}>
-        <AccessibilityTable tableData={tableData} />
-      </Collapse>
-    </div>
-  );
+    return (
+        <div className="pb-2">
+            
+            <div>
+                <IconButton onClick={handleClick}>
+                    {open ? <ExpandMore /> : <ExpandLess />}
+                </IconButton>
+                <span>{tableData.caption}</span>
+            </div>
+            <Collapse in={open}>
+                <AccessibilityTable tableData={tableData} />
+                <p>{description}</p>
+            </Collapse>
+        </div>
+    );
 };
 
-export default App;
+export default AccessibilityGraphContainer;

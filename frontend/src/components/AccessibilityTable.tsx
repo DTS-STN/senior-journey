@@ -19,7 +19,6 @@ interface TableProps {
 const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
     return (
         <table>
-            <caption>{tableData.caption}</caption>
             <thead>
                 <tr>
                     <th></th>

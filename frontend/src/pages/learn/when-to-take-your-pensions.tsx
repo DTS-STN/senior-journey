@@ -5,10 +5,13 @@ import Image from 'next/image'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-
 import {
   LearnPageLayout
 } from '../../components/LearnPageLayout'
+
+import AccessibilityGraphContainer from '../../components/AccessibilityGraphContainer'
+import { TableData } from '../../components/AccessibilityTable'
+
 
 export interface ImportantCardProps extends PropsWithChildren { }
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
@@ -23,6 +26,14 @@ const DisclaimerCard: FC<ImportantCardProps> = ({ children }) => (
 const WhenToTakeYourPensions: FC = () => {
   const { t } = useTranslation('learn/when-to-take-your-pensions')
 
+  const illustrationOASGraphData: TableData = t('old-age-security.illustration.accessibility', { returnObjects: true })
+  const illustrationCPPGraphData: TableData = t('cpp-pension.illustration.accessibility', { returnObjects: true })
+  const illustrationCaseStudyData1: TableData = t('case-study.illustration-one.accessibility', { returnObjects: true })
+  const illustrationCaseStudyData2: TableData = t('case-study.illustration-two.accessibility', { returnObjects: true })
+  const illustrationCaseStudyData3: TableData = t('case-study.illustration-three.accessibility', { returnObjects: true })
+  const illustrationCaseStudyData4: TableData = t('case-study.illustration-four.accessibility', { returnObjects: true })
+  const illustrationCaseStudyData5: TableData = t('case-study.illustration-five.accessibility', { returnObjects: true })
+
   return (
     <LearnPageLayout
       header={t('header')}
@@ -30,6 +41,8 @@ const WhenToTakeYourPensions: FC = () => {
       learnMoreLinks={[]}
     >
       <NextSeo title={t('header')} />
+
+
 
       <h2 id="key-takeaways" className="h2 !mt-0">
         {t('key-takeaways.heading')}
@@ -119,6 +132,7 @@ const WhenToTakeYourPensions: FC = () => {
           height={519}
           className="w-full"
         />
+        <AccessibilityGraphContainer tableData={illustrationOASGraphData} description={t('old-age-security.illustration.description')} />
       </div>
       <p>{t('old-age-security.content-three')}</p>
       <p>{t('old-age-security.content-four')}</p>
@@ -165,12 +179,13 @@ const WhenToTakeYourPensions: FC = () => {
       </ImportantCard>
       <div>
         <Image
-          alt={t('cpp-pension.illustration-one.alt')}
-          src={t('cpp-pension.illustration-one.img-url')}
+          alt={t('cpp-pension.illustration.alt')}
+          src={t('cpp-pension.illustration.img-url')}
           width={551}
           height={361}
           className="w-full"
         />
+        <AccessibilityGraphContainer tableData={illustrationCPPGraphData} description={t('cpp-pension.illustration.description')} />
       </div>
       <p>{t('cpp-pension.content-two')}</p>
       <p>
@@ -265,6 +280,8 @@ const WhenToTakeYourPensions: FC = () => {
           height={558}
           className="w-full"
         />
+        <AccessibilityGraphContainer tableData={illustrationCaseStudyData1} description={t('case-study.illustration-one.description')} />
+
       </div>
       <p>{t('case-study.content-four')}</p>
       <ImportantCard>
@@ -280,6 +297,7 @@ const WhenToTakeYourPensions: FC = () => {
           height={450}
           className="w-full"
         />
+        <AccessibilityGraphContainer tableData={illustrationCaseStudyData2} description={t('case-study.illustration-two.description')} />
       </div>
       <p>{t('case-study.content-five')}</p>
       <p>{t('case-study.content-six')}</p>
@@ -294,6 +312,7 @@ const WhenToTakeYourPensions: FC = () => {
           height={450}
           className="w-full"
         />
+        <AccessibilityGraphContainer tableData={illustrationCaseStudyData3} description={t('case-study.illustration-three.description')} />
       </div>
       <p>{t('case-study.content-seven')}</p>
       <div>
@@ -304,6 +323,7 @@ const WhenToTakeYourPensions: FC = () => {
           height={450}
           className="w-full"
         />
+        <AccessibilityGraphContainer tableData={illustrationCaseStudyData4} description={t('case-study.illustration-four.description')} />
       </div>
       <p>{t('case-study.content-eight')}</p>
       <div>
@@ -314,6 +334,7 @@ const WhenToTakeYourPensions: FC = () => {
           height={450}
           className="w-full"
         />
+        <AccessibilityGraphContainer tableData={illustrationCaseStudyData5} description={t('case-study.illustration-five.description')} />
       </div>
       <p>{t('case-study.content-nine')}</p>
       <p>{t('case-study.content-ten')}</p>
