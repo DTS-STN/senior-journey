@@ -28,6 +28,15 @@
       "minutes": "3 minutes"
     },
     "questions":{
+      "question-1":{
+        "title": "When do you plan on retiring?",
+        "option-1": "Before Age 60",
+        "option-2": "Between ages 60 and 65",
+        "option-3": "At Age 65",
+        "option-4": "Between ages 65 and 70",
+        "option-5": "After Age 70",
+        "option-6": "Not sure"
+      },
       "question-2": {
         "question-1": {
           "title": "Select all that apply to you. You are...",
