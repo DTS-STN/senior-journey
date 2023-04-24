@@ -163,7 +163,7 @@ const WhenToTakeYourPensions: FC = () => {
           ns="learn/when-to-take-your-pensions"
           i18nKey="cpp-pension.smart-tip" />
       </ImportantCard>
-      <div className="w-full lg:flex-1">
+      <div>
         <Image
           alt={t('cpp-pension.illustration-one.alt')}
           src={t('cpp-pension.illustration-one.img-url')}
@@ -257,7 +257,7 @@ const WhenToTakeYourPensions: FC = () => {
       <h4 id="case-study-illustration-one-title" className="h4">
         {t('case-study.illustration-one.title')}
       </h4>
-      <div className="w-full lg:flex-1">
+      <div>
         <Image
           alt={t('case-study.illustration-one.alt')}
           src={t('case-study.illustration-one.img-url')}
@@ -272,7 +272,7 @@ const WhenToTakeYourPensions: FC = () => {
           ns="learn/when-to-take-your-pensions"
           i18nKey="case-study.smart-tip" />
       </ImportantCard>
-      <div className="w-full lg:flex-1">
+      <div>
         <Image
           alt={t('case-study.illustration-two.alt')}
           src={t('case-study.illustration-two.img-url')}
@@ -286,7 +286,7 @@ const WhenToTakeYourPensions: FC = () => {
       <h4 id="case-study-illustration-three-title" className="h4">
         {t('case-study.illustration-three.title')}
       </h4>
-      <div className="w-full lg:flex-1">
+      <div>
         <Image
           alt={t('case-study.illustration-three.alt')}
           src={t('case-study.illustration-three.img-url')}
@@ -296,7 +296,7 @@ const WhenToTakeYourPensions: FC = () => {
         />
       </div>
       <p>{t('case-study.content-seven')}</p>
-      <div className="w-full lg:flex-1">
+      <div>
         <Image
           alt={t('case-study.illustration-four.alt')}
           src={t('case-study.illustration-four.img-url')}
@@ -306,7 +306,7 @@ const WhenToTakeYourPensions: FC = () => {
         />
       </div>
       <p>{t('case-study.content-eight')}</p>
-      <div className="w-full lg:flex-1">
+      <div>
         <Image
           alt={t('case-study.illustration-five.alt')}
           src={t('case-study.illustration-five.img-url')}
