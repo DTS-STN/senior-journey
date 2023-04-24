@@ -111,7 +111,7 @@ const WhenToTakeYourPensions: FC = () => {
         />
       </ImportantCard>
       <p>{t('old-age-security.content-two')}</p>
-      <div className="w-full lg:flex-1">
+      <div>
         <Image
           alt={t('old-age-security.illustration.alt')}
           src={t('old-age-security.illustration.img-url')}
