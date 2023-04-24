@@ -14,6 +14,7 @@ import createEmotionCache from '../createEmotionCache'
 import { AppWindow } from '../lib/types'
 import { getNextSEOConfig } from '../next-seo.config'
 import '../styles/globals.css'
+import '../styles/latofonts.css'
 import theme from '../theme'
 import { createCounter } from '../utils/metrics'
 

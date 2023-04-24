@@ -46,7 +46,7 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
             <TableOfContents {...tableOfContentsData} />
           )}
         </section>
-        <section className="sticky top-4 z-10 text-right lg:hidden ">
+        <section className="sticky top-4 z-10 ml-auto lg:hidden">
           {!tableOfContentsData.loading && (
             <TableOfContentsDialog {...tableOfContentsData} />
           )}

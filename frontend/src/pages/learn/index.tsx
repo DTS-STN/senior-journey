@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
 import {
   Button,
   Card,
@@ -31,6 +32,132 @@ import Question7 from '../../components/questions/Question7'
 import Question8 from '../../components/questions/Question8'
 import Question9 from '../../components/questions/Question9'
 
+export interface QuizConfirmationProps {
+  sureText: string
+  noText: string
+  yesText: string
+  handleConfirmationCancel: () => void
+  handleCloseModal: () => void
+}
+
+export interface QuizFooterProps {
+  currentStepIndex: number | undefined
+  handleNext: () => void
+  isNextDisabled: boolean
+  handlePrev: () => void
+  isPrevDisabled: boolean
+  startText: string
+  previousText: string
+  submitText: string
+  nextText: string
+  ofText: string
+}
+
+const QuizConfirmation: FC<QuizConfirmationProps> = ({
+  handleConfirmationCancel,
+  handleCloseModal,
+  sureText,
+  noText,
+  yesText,
+}) => {
+  return (
+    <div className="flex h-full w-full flex-col text-center">
+      <ErrorOutlineIcon className="m-10 mx-auto text-9xl font-bold text-red-dark" />
+      <p className="mb-10">{sureText}</p>
+      <div className="mt-auto grid gap-4 md:grid-cols-2">
+        <Button
+          onClick={handleConfirmationCancel}
+          variant="outlined"
+          size="large"
+          fullWidth
+        >
+          {noText}
+        </Button>
+        <Button onClick={handleCloseModal} size="large" fullWidth>
+          {yesText}
+        </Button>
+      </div>
+    </div>
+  )
+}
+
+const QuizFooter: FC<QuizFooterProps> = ({
+  currentStepIndex,
+  handleNext,
+  isNextDisabled,
+  handlePrev,
+  isPrevDisabled,
+  startText,
+  previousText,
+  submitText,
+  nextText,
+  ofText,
+}) => {
+  return (
+    <div className="mt-auto border-t border-gray-300 pt-6 md:border-t-0">
+      {currentStepIndex === 0 && (
+        <Button
+          onClick={handleNext}
+          disabled={isNextDisabled}
+          size="large"
+          fullWidth
+        >
+          {startText}
+        </Button>
+      )}
+
+      {currentStepIndex != 0 && (
+        <div>
+          <MobileStepper
+            variant="progress"
+            steps={10}
+            position="static"
+            activeStep={currentStepIndex}
+            backButton={undefined}
+            nextButton={undefined}
+            classes={{
+              progress: 'w-full',
+            }}
+          />
+          <p className="text-center">
+            {currentStepIndex} {ofText} 9
+          </p>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Button
+              onClick={handlePrev}
+              disabled={isPrevDisabled}
+              size="large"
+              fullWidth
+              variant="text"
+            >
+              {previousText}
+            </Button>
+            {currentStepIndex === 9 ? (
+              <Button
+                onClick={handleNext}
+                disabled={isNextDisabled}
+                size="large"
+                fullWidth
+              >
+                {submitText}
+              </Button>
+            ) : (
+              <Button
+                onClick={handleNext}
+                disabled={isNextDisabled}
+                size="large"
+                fullWidth
+              >
+                {nextText}
+              </Button>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 const Learn: FC = () => {
   const { t } = useTranslation('learn')
   const sections = t<string, { cards: any[] }[]>('sections', {
@@ -38,13 +165,23 @@ const Learn: FC = () => {
   })
 
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [showConfirmation, setShowConfirmation] = useState(false)
 
   const handleOpenModal = () => {
     setIsModalOpen(true)
   }
 
   const handleCloseModal = () => {
-    setIsModalOpen(false)
+    if (showConfirmation) {
+      setShowConfirmation(false)
+      setIsModalOpen(false)
+    } else {
+      setShowConfirmation(true)
+    }
+  }
+
+  const handleConfirmationCancel = () => {
+    setShowConfirmation(false)
   }
 
   const [, setFinalValues] = useState({})
@@ -83,135 +220,117 @@ const Learn: FC = () => {
       <Modal
         onClose={handleCloseModal}
         open={isModalOpen}
-        className="mx-auto flex w-full items-center justify-center border-none bg-transparent p-1 backdrop:bg-black backdrop:bg-opacity-80 md:w-2/3 lg:w-2/5"
+        className="mx-auto flex w-full border-none bg-transparent p-1
+        backdrop-blur-sm backdrop:bg-black backdrop:bg-opacity-80"
       >
-        <FocusOn enabled={isModalOpen} className="w-full">
+        <FocusOn enabled={isModalOpen} className="w-full md:py-16">
           <section
             data-autofocus
             tabIndex={-1}
-            className="rounded-md bg-white p-6"
+            className="mx-auto h-full items-center justify-center overflow-y-auto
+            rounded-md bg-white p-6 sm:w-full md:w-2/3 lg:w-3/5 xl:w-2/5 "
             aria-describedby={`QuizModal-header`}
           >
-            <div className="flex justify-end gap-2 p-2">
-              <Button
-                variant="text"
-                className="text-base font-bold normal-case text-primary-700 hover:bg-white"
-                onClick={handleCloseModal}
+            <div className="flex h-full flex-col">
+              {!showConfirmation && (
+                <>
+                  <div className="mb-5 text-right">
+                    <Button
+                      variant="text"
+                      onClick={handleCloseModal}
+                      startIcon={<CloseIcon />}
+                      size="large"
+                    >
+                      {t('quiz.navigation.close')}
+                    </Button>
+                  </div>
+                  <h2 className="mb-8 font-display font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
+                    {t('quiz.navigation.title')}
+                  </h2>
+                </>
+              )}
+
+              <FormikWizard
+                initialValues={{}}
+                onSubmit={(values) => {
+                  setFinalValues(values)
+                  setFinished(true)
+                }}
+                validateOnNext
+                activeStepIndex={0}
+                steps={[
+                  {
+                    component: QuizLandingPage,
+                  },
+                  {
+                    component: Question1,
+                  },
+                  {
+                    component: Question2,
+                  },
+                  {
+                    component: Question3,
+                  },
+                  {
+                    component: Question4,
+                  },
+                  {
+                    component: Question5,
+                  },
+                  {
+                    component: Question6,
+                  },
+                  {
+                    component: Question7,
+                  },
+                  {
+                    component: Question8,
+                  },
+                  {
+                    component: Question9,
+                  },
+                ]}
               >
-                <CloseIcon className="mr-2 inline text-2xl font-bold text-primary-700" />{' '}
-                {t('quiz.navigation.close')}
-              </Button>
-            </div>
-            <div className="rounded-3xl bg-[#f5f5f5] font-display">
-              <h2 className="mb-14 p-10 text-left text-5xl font-bold text-primary-700">
-                {t('quiz.navigation.title')}
-              </h2>
-            </div>
-            <FormikWizard
-              initialValues={{}}
-              onSubmit={(values) => {
-                setFinalValues(values)
-                setFinished(true)
-              }}
-              validateOnNext
-              activeStepIndex={0}
-              steps={[
-                {
-                  component: QuizLandingPage,
-                },
-                {
-                  component: Question1,
-                },
-                {
-                  component: Question2,
-                },
-                {
-                  component: Question3,
-                },
-                {
-                  component: Question4,
-                },
-                {
-                  component: Question5,
-                },
-                {
-                  component: Question6,
-                },
-                {
-                  component: Question7,
-                },
-                {
-                  component: Question8,
-                },
-                {
-                  component: Question9,
-                },
-              ]}
-            >
-              {({
-                currentStepIndex,
-                renderComponent,
-                handlePrev,
-                handleNext,
-                isNextDisabled,
-                isPrevDisabled,
-              }) => {
-                return (
-                  <>
-                    {renderComponent()}
-                    {currentStepIndex === 0 && (
-                      <Button
-                        className="w-full bg-primary-700 p-4 text-center font-display text-base normal-case text-white hover:bg-primary-800"
-                        onClick={handleNext}
-                        disabled={isNextDisabled}
-                      >
-                        {t('quiz.navigation.start')}
-                      </Button>
-                    )}
-                    {currentStepIndex != 0 && (
-                      <div>
-                        <MobileStepper
-                          variant="progress"
-                          steps={10}
-                          position="static"
-                          activeStep={currentStepIndex}
-                          backButton={undefined}
-                          nextButton={undefined}
-                          classes={{
-                            progress: 'w-full',
-                          }}
+                {({
+                  currentStepIndex,
+                  renderComponent,
+                  handlePrev,
+                  handleNext,
+                  isNextDisabled,
+                  isPrevDisabled,
+                }) => {
+                  return (
+                    <>
+                      {showConfirmation ? (
+                        <QuizConfirmation
+                          handleCloseModal={handleCloseModal}
+                          handleConfirmationCancel={handleConfirmationCancel}
+                          sureText={t('quiz.confirmation.sure')}
+                          yesText={t('quiz.confirmation.yes')}
+                          noText={t('quiz.confirmation.no')}
                         />
-                        <p className="text-center">{currentStepIndex} of 9</p>
-                        <Button
-                          onClick={handlePrev}
-                          disabled={isPrevDisabled}
-                          className="w-1/2 px-4 py-2 font-display font-bold normal-case text-primary-700 hover:bg-white"
-                        >
-                          {t('quiz.navigation.previous')}
-                        </Button>
-                        {currentStepIndex === 9 ? (
-                          <Button
-                            onClick={handleNext}
-                            disabled={isNextDisabled}
-                            className="ml-auto w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
-                          >
-                            {t('quiz.navigation.submit')}
-                          </Button>
-                        ) : (
-                          <Button
-                            onClick={handleNext}
-                            disabled={isNextDisabled}
-                            className="ml-auto w-1/2 rounded bg-primary-700 px-4 py-2 font-display font-bold normal-case text-white hover:bg-primary-800"
-                          >
-                            {t('quiz.navigation.next')}
-                          </Button>
-                        )}
-                      </div>
-                    )}
-                  </>
-                )
-              }}
-            </FormikWizard>
+                      ) : (
+                        <>
+                          {renderComponent()}
+                          <QuizFooter
+                            currentStepIndex={currentStepIndex}
+                            handleNext={handleNext}
+                            isNextDisabled={isNextDisabled}
+                            handlePrev={handlePrev}
+                            isPrevDisabled={isPrevDisabled}
+                            startText={t('quiz.navigation.start')}
+                            previousText={t('quiz.navigation.previous')}
+                            submitText={t('quiz.navigation.submit')}
+                            nextText={t('quiz.navigation.next')}
+                            ofText={t('quiz.navigation.of')}
+                          />
+                        </>
+                      )}
+                    </>
+                  )
+                }}
+              </FormikWizard>
+            </div>
           </section>
         </FocusOn>
       </Modal>
