@@ -30,7 +30,10 @@ const Question1 = () => {
             ".mui-style-1x9mvjk-MuiButtonBase-root-MuiToggleButton-root.Mui-selected":{
                backgroundColor:"#004f56",
                color:"#f1f1f1"
-            }
+            },
+            ".mui-style-1x9mvjk-MuiButtonBase-root-MuiToggleButton-root.Mui-selected&:hover": {
+               backgroundColor: "#004f56", 
+             }
           }}
          >
             <ToggleButton value="before-60" aria-label="before-60" className="my-4 font-display font-bold text-base normal-case">
