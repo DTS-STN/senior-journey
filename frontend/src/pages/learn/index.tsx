@@ -32,15 +32,15 @@ import Question7 from '../../components/questions/Question7'
 import Question8 from '../../components/questions/Question8'
 import Question9 from '../../components/questions/Question9'
 
-
+// TODO: map form values to "answer-id" from locales/(en/fr)/quiz/tasks/task-list.json once it has been finalized
 export interface FormValues {
+  retirementAge: string,
   single: string,
   marriedOrCommonLaw: string,
   divorcedOrSeparated: string,
   widowed: string,
   yesChildren: string,
-  noChildren: string,
-  retirementAge: string,
+  noChildren: string
 }
 
 export interface QuizConfirmationProps {
@@ -199,13 +199,13 @@ const Learn: FC = () => {
   const [, setFinished] = useState(false)
 
   const initialValues: FormValues = {
+    retirementAge: '',
     single: '',
     marriedOrCommonLaw: '',
     divorcedOrSeparated: '',
     widowed: '',
     yesChildren: '',
     noChildren: '',
-    retirementAge: ''
   }
 
   return (
