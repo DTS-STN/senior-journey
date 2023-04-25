@@ -32,6 +32,31 @@
       "retirement": "<strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
       "timetocomplete": "Time to complete survey",
       "minutes": "3 minutes"
+    },
+    "questions":{
+      "question-1":{
+        "title": "When do you plan on retiring?",
+        "option-1": "Before Age 60",
+        "option-2": "Between ages 60 and 65",
+        "option-3": "At Age 65",
+        "option-4": "Between ages 65 and 70",
+        "option-5": "After Age 70",
+        "option-6": "Not sure"
+      },
+      "question-2": {
+        "question-1": {
+          "title": "Select all that apply to you. You are...",
+          "option-1": "Single",
+          "option-2": "Married or common-law",
+          "option-3": "Divorced or separated",
+          "option-4": "Widowed"
+        },
+        "question-2": {
+          "title": "Do you have children?",
+          "option-1": "Yes",
+          "option-2": "No"
+        }
+      }
     }
   },
   "sections": [
