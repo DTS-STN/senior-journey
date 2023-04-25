@@ -13,7 +13,7 @@ import {
   LearnPageLayout,
 } from '../../components/LearnPageLayout'
 
-export interface ImportantCardProps extends PropsWithChildren {}
+interface ImportantCardProps extends PropsWithChildren {}
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
   <p className="rounded-lg bg-[#fba575]/[.3] p-5">{children}</p>
 )
