@@ -10,13 +10,13 @@ import {
   LearnPageLayout
 } from '../../components/LearnPageLayout'
 
-export interface ImportantCardProps extends PropsWithChildren { }
+interface ImportantCardProps extends PropsWithChildren { }
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
   <p className="rounded-lg bg-[#ffe8a3]/[.3] p-5">{children}</p>
 )
 
-export interface DisclaimerCardProps extends PropsWithChildren { }
-const DisclaimerCard: FC<ImportantCardProps> = ({ children }) => (
+interface DisclaimerCardProps extends PropsWithChildren { }
+const DisclaimerCard: FC<DisclaimerCardProps> = ({ children }) => (
   <p className="rounded-lg bg-[#e9f1ff]/[.7] p-5">{children}</p>
 )
 
