@@ -7,13 +7,19 @@
     "quiz": "Take the quiz now!"
   },
   "quiz": {
+    "confirmation":{
+      "sure":"Are you sure you want to close this quiz? You will lose your progress.",
+      "no": "No, Return to Quiz",
+      "yes": "Yes, Close"
+    },
     "navigation": {
       "start": "Start The Quiz",
       "previous": "Previous Question",
       "next": "Next Question",
       "submit": "Submit",
       "close": "Close",
-      "title": "Retirement Ready Quiz"
+      "title": "Retirement Ready Quiz",
+      "of": "of"
     },
     "landing": {
       "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
@@ -58,7 +64,7 @@
           "read": "8 min read",
           "body": "You can choose when to start your old age benefits. Understand what to consider in making that decision.",
           "image": "/assets/supporting-seniors-family-and-friends.svg",
-          "link": "/learn"
+          "link": "/learn/when-to-take-your-pensions"
         },
         {
           "title": "From work to retirement",

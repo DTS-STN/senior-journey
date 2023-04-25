@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import TaskCard, { Task } from './TaskCard';
 
 interface AccordionProps {
@@ -17,7 +20,7 @@ const Accordion: React.FC<AccordionProps> = ({ sectionTitle = "", children }) =>
             >
                 <span>{sectionTitle}</span>
                 <strong>
-                {isOpen ? '-' : '+'}
+                    {isOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                 </strong>
             </div>
             {isOpen && (
@@ -37,9 +40,9 @@ const AccordionInside: React.FC<Task> = (task) => {
                 className="bg-gray-400 text-black px-4 py-2 cursor-pointer flex justify-between items-center"
                 onClick={() => setIsOpenInner(!isOpenInner)}
             >
-                <span>title</span>
+                <span>{task.title}</span>
                 <strong>
-                    {isOpenInner ? '-' : '+'}
+                    {isOpenInner ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                 </strong>
             </div>
             {isOpenInner && (
@@ -63,7 +66,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({ sectionTitle, tasks =
         <Accordion sectionTitle={sectionTitle}>
             {tasks.map((task, index) => (
                 <div className="mt-4" key={task.id}>
-                    <AccordionInside key={task.id} {...task} />
+                    <AccordionInside {...task} />
                 </div>
             ))}
 

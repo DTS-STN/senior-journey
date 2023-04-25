@@ -117,8 +117,8 @@ const Home: FC = () => {
               priority
             />
           </div>
-          <div className="w-full px-6 pb-4 text-center md:w-2/3 md:pl-14 md:text-left lg:w-4/5">
-            <h2 className="mb-4 text-5xl font-bold text-primary-700">
+          <div className="px-6 pb-4 md:w-2/3 md:pl-14 lg:w-4/5">
+            <h2 className="mb-4 font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
               {t('banner.title')}
             </h2>
             <p className="m-0">{t('banner.text')}</p>
