@@ -24,7 +24,7 @@ const TaskCard: React.FC<TaskCardProps> = ({
     task,
 }) => {
     return (
-        <div className="relative bg-white rounded-lg shadow-md p-6 mb-4">
+        <div className="relative bg-white rounded-lg shadow-md p-6 mb-4 px-14">
             {showCheckbox && (
                 <input type="checkbox" className="relative top-2 w-6 h-6 mb-4" />
             )}
