@@ -23,9 +23,9 @@ const TaskListPrint: FC = () => {
 
   return (
     <Layout>
-      <NestedAccordion sectionTitle={t('before-retiring.title')} tasks={section1FilteredTasks} />
-      <NestedAccordion sectionTitle={t('applying-benefits.title')} tasks={section2FilteredTasks} />
-      <NestedAccordion sectionTitle={t('receiving-benefits.title')} tasks={section3FilteredTasks} />
+      <NestedAccordion sectionTitle={t('before-retiring.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={section1FilteredTasks} />
+      <NestedAccordion sectionTitle={t('applying-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={section2FilteredTasks} />
+      <NestedAccordion sectionTitle={t('receiving-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={section3FilteredTasks} />
     </Layout>
   )
 }

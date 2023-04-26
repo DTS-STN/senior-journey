@@ -5,26 +5,32 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import TaskCard, { Task } from './TaskCard';
 
 interface AccordionProps {
-    sectionTitle: string;
+    sectionTitle: string,
+    subSectionTitle: string,
     children: React.ReactNode
 }
 
-const Accordion: React.FC<AccordionProps> = ({ sectionTitle = "", children }) => {
+const Accordion: React.FC<AccordionProps> = ({ sectionTitle = "", subSectionTitle = "", children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className="mb-4 container mx-auto">
             <div
-                className="bg-[#1c578a] text-white px-4 py-2 cursor-pointer flex justify-between items-center"
+                className="bg-[#00363C] text-white  px-4 pt-6 py-2 cursor-pointer flex flex-col justify-between"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span>{sectionTitle}</span>
-                <strong>
-                    {isOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-                </strong>
+                <div className="flex items-center">
+                    <span>{sectionTitle}</span>
+                    <div className="ml-auto">
+                        {isOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    </div>
+                </div>
+                <div>
+                    <span className="text-xs text-gray-400">{subSectionTitle}</span>
+                </div>
             </div>
             {isOpen && (
-                <div className="border px-4 py-2">
+                <div className="border">
                     {children}
                 </div>
             )}
@@ -35,9 +41,9 @@ const Accordion: React.FC<AccordionProps> = ({ sectionTitle = "", children }) =>
 const AccordionInside: React.FC<Task> = (task) => {
     const [isOpenInner, setIsOpenInner] = useState(false);
     return (
-        <div className="mb-4">
+        <div>
             <div
-                className="bg-gray-400 text-black px-4 py-2 cursor-pointer flex justify-between items-center"
+                className="bg-white text-black px-4 pt-6 py-2 border cursor-pointer flex justify-between items-center"
                 onClick={() => setIsOpenInner(!isOpenInner)}
             >
                 <span>{task.title}</span>
@@ -57,15 +63,16 @@ const AccordionInside: React.FC<Task> = (task) => {
 
 
 interface NestedAccordionProps {
-    sectionTitle: string;
-    tasks: Task[];
+    sectionTitle: string,
+    subSectionTitle: string,
+    tasks: Task[]
 }
 
-const NestedAccordion: React.FC<NestedAccordionProps> = ({ sectionTitle, tasks = [] }) => {
+const NestedAccordion: React.FC<NestedAccordionProps> = ({ sectionTitle, subSectionTitle, tasks = [] }) => {
     return (
-        <Accordion sectionTitle={sectionTitle}>
-            {tasks.map((task, index) => (
-                <div className="mt-4" key={task.id}>
+        <Accordion sectionTitle={sectionTitle} subSectionTitle={subSectionTitle}>
+            {tasks.map((task) => (
+                <div key={task.id}>
                     <AccordionInside {...task} />
                 </div>
             ))}

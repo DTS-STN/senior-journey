@@ -3,6 +3,7 @@
     "id": 1,
     "display-order": 1,
     "title": "(FR) Before retirement",
+    "sub-title": "(FR) Subtitle here",
     "tasks": [
       {
         "id": 1,
@@ -646,6 +647,7 @@
     "id": 2,
     "display-order": 10,
     "title": "(FR) When applying for benefits",
+    "sub-title": "(FR) Subtitle here",
     "tasks": [
       {
         "id": 59,
@@ -675,6 +677,7 @@
     "id": 3,
     "display-order": 20,
     "title": "(FR) While receiving benefits",
+    "sub-title": "(FR) Subtitle here",
     "tasks": [
       {
         "id": 61,
