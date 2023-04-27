@@ -31,27 +31,27 @@ const TaskListPrint: FC = () => {
 
   const { t } = useTranslation('quiz/tasks/task-list')
 
-  const section1Tasks: Task[] = t('before-retiring.tasks', { returnObjects: true })
-  const section2Tasks: Task[] = t('applying-benefits.tasks', { returnObjects: true })
-  const section3Tasks: Task[] = t('receiving-benefits.tasks', { returnObjects: true })
+  const beforeRetiringTasks: Task[] = t('before-retiring.tasks', { returnObjects: true })
+  const applyBenefitsTasks: Task[] = t('applying-benefits.tasks', { returnObjects: true })
+  const receivingBenefitsTasks: Task[] = t('receiving-benefits.tasks', { returnObjects: true })
   const filterAnswerKeySet = new Set(answers)
 
-  const section1FilteredTasks = sortByDisplayOrder(section1Tasks.filter(task => filterAnswerKeySet.has(task['answer-key'])))
-  const section2FilteredTasks = sortByDisplayOrder(section2Tasks.filter(task => filterAnswerKeySet.has(task['answer-key'])))
-  const section3FilteredTasks = sortByDisplayOrder(section3Tasks.filter(task => filterAnswerKeySet.has(task['answer-key'])))
+  const beforeRetiringFilteredTasks = sortByDisplayOrder(beforeRetiringTasks.filter(task => filterAnswerKeySet.has(task['answer-key'])))
+  const applyBenefitsFilteredTasks = sortByDisplayOrder(applyBenefitsTasks.filter(task => filterAnswerKeySet.has(task['answer-key'])))
+  const receivingBenefitsFilteredTasks = sortByDisplayOrder(receivingBenefitsTasks.filter(task => filterAnswerKeySet.has(task['answer-key'])))
 
   // filter by tags
   const tags: string[] = []
   const filterTagSet = new Set(tags);
-  const section1FilteredTasksByTag = section1FilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
-  const section2FilteredTasksByTag = section2FilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
-  const section3FilteredTasksByTag = section3FilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
+  const beforeRetiringFilteredTasksByTag = beforeRetiringFilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
+  const applyBenefitsFilteredTasksByTag = applyBenefitsFilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
+  const receivingBenefitsFilteredTasksByTag = receivingBenefitsFilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
 
   return (
     <Layout>
-      <NestedAccordion sectionTitle={t('before-retiring.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={section1FilteredTasksByTag} />
-      <NestedAccordion sectionTitle={t('applying-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={section2FilteredTasksByTag} />
-      <NestedAccordion sectionTitle={t('receiving-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={section3FilteredTasksByTag} />
+      <NestedAccordion sectionTitle={t('before-retiring.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={beforeRetiringFilteredTasksByTag} />
+      <NestedAccordion sectionTitle={t('applying-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={applyBenefitsFilteredTasksByTag} />
+      <NestedAccordion sectionTitle={t('receiving-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={receivingBenefitsFilteredTasksByTag} />
     </Layout>
   )
 }
