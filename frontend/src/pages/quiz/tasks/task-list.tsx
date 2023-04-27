@@ -1,8 +1,11 @@
 import { FC } from 'react'
 import { useRouter, NextRouter } from 'next/router';
 import { GetServerSideProps } from 'next'
-import { useTranslation } from 'next-i18next'
+import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { Link as MuiLink } from '@mui/material'
+import RefreshIcon from '@mui/icons-material/Refresh';
+
 import Layout from '../../../components/Layout'
 import NestedAccordion from '../../../components/NestedAccordion'
 import { Task } from '../../../components/TaskCard'
@@ -25,7 +28,7 @@ function sortByDisplayOrder(array: Task[],): Task[] {
 }
 
 
-const TaskListPrint: FC = () => {
+const TaskList: FC = () => {
   const router = useRouter()
   const answers = processQueryAnswers(router);
 
@@ -49,9 +52,25 @@ const TaskListPrint: FC = () => {
 
   return (
     <Layout>
-      <NestedAccordion sectionTitle={t('before-retiring.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={beforeRetiringFilteredTasksByTag} />
-      <NestedAccordion sectionTitle={t('applying-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={applyBenefitsFilteredTasksByTag} />
-      <NestedAccordion sectionTitle={t('receiving-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={receivingBenefitsFilteredTasksByTag} />
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:max-w-[20%]">
+          <div className="flex items-center justify-left md:justify-start py-4">
+          <RefreshIcon />
+          <Trans
+            ns="quiz/tasks/task-list"
+            i18nKey="restart-quiz.content"
+            components={{
+              a: (<MuiLink href={t('restart-quiz.link')} />),
+            }}
+          />
+          </div>
+        </div>
+        <div className="w-full md:flex-grow">
+          <NestedAccordion sectionTitle={t('before-retiring.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={beforeRetiringFilteredTasksByTag} />
+          <NestedAccordion sectionTitle={t('applying-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={applyBenefitsFilteredTasksByTag} />
+          <NestedAccordion sectionTitle={t('receiving-benefits.title')} subSectionTitle={t('before-retiring.sub-title')} tasks={receivingBenefitsFilteredTasksByTag} />
+        </div>
+      </div>
     </Layout>
   )
 }
@@ -65,4 +84,4 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   },
 })
 
-export default TaskListPrint
+export default TaskList
