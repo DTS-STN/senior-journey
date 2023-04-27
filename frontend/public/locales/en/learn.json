@@ -56,6 +56,51 @@
           "option-1": "Yes",
           "option-2": "No"
         }
+      },
+      "question-3": {
+        "title": "How financially prepared do you feel for retirement?",
+        "subtitle": "Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
+        "option-1": "Very unprepared",
+        "option-2": "Unprepared",
+        "option-3": "Not sure",
+        "option-4": "Prepared",
+        "option-5": "Very Prepared"
+      },
+      "question-4": {
+        "title": "Where do you plan on living when you retire?",
+        "option-1": "In Canada",
+        "option-2": "In Canada <upper>MORE</upper> Than 6 Months a Year",
+        "option-3": "In Canada <upper>LESS</upper> than 6 months a year",
+        "option-4": "Outside Canada",
+        "option-5": "Not Sure",
+        "option-2-label": "In Canada more than 6 months a year",
+        "option-3-label": "In Canada more than 6 months a year"
+      },
+      "question-5": {
+        "title": "Do you plan to earn money while receiving retirement benefits",
+        "subtitle": "Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
+        "option-1": "No",
+        "option-2": "Yes",
+        "option-3": "Not sure"
+      },
+      "question-6": {
+        "title": "When you retire, what will your legal status be in Canada?",
+        "option-1": "Canadian Citizen or Permanent Resident",
+        "option-2": "Métis, Inuit, or Member of First Nation",
+        "option-3": "Sponsored Resident (less than 10 years in Canada)",
+        "option-4": "Visitor, Student, or Temporary Worker"
+      },
+      "question-7": {
+        "title": "From age 18, how many years will you have lived in Canada when you apply for retirement benefits?",
+        "option-1": "40 years or more",
+        "option-2": "10 to 39 years",
+        "option-3": "Less than 10 years",
+        "option-4": "Not sure"
+      },
+      "question-8": {
+        "title": "Are you receiving CPP-Disability benefits?",
+        "option-1": "Yes",
+        "option-2": "No"
       }
     }
   },
