@@ -72,9 +72,16 @@ const QuizConfirmation: FC<QuizConfirmationProps> = ({
         <div className="mb-10 text-center">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
         </div>
-        <p>{sureText}</p>
+        <p className='text-center'>{sureText}</p>
       </DialogContent>
-      <DialogActions className="block">
+      <DialogActions className="block"
+      sx={{
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        p: 4,
+      }}>
         <div className="grid gap-2 md:grid-cols-2 md:gap-6">
           <Button
             onClick={handleConfirmationCancel}
@@ -181,6 +188,17 @@ const Learn: FC = () => {
         fullScreen={fullScreen}
         maxWidth="md"
         fullWidth
+        sx={{
+          '& .MuiDialog-paper': {
+            height: '90%',
+            minHeight: '800px',
+            padding: '10px',
+            '@media (max-width: 960px)': {
+              height: '100%',
+            },
+          }
+        }}
+
       >
         {showConfirmation ? (
           <QuizConfirmation
@@ -253,9 +271,18 @@ const Learn: FC = () => {
                     <h2 className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                       {t('quiz.navigation.title')}
                     </h2>
-                    <div className="mb-5">{renderComponent()}</div>
+                    <div>{renderComponent()}</div>
+                  </DialogContent>
+                  <DialogActions className="block"
+                  sx={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    p: 4,
+                  }}>
                     {(currentStepIndex ?? 0) > 0 && (
-                      <div className='mt-auto'>
+                      <div className="mt-auto">
                         <MobileStepper
                           variant="progress"
                           steps={9}
@@ -272,8 +299,6 @@ const Learn: FC = () => {
                         </p>
                       </div>
                     )}
-                  </DialogContent>
-                  <DialogActions className="block">
                     {currentStepIndex === 0 ? (
                       <Button
                         onClick={handleNext}

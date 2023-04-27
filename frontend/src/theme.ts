@@ -18,6 +18,13 @@ const theme = createTheme({
     fontFamily: '"Noto Sans", sans-serif',
   },
   components: {
+    MuiDialog:{
+      styleOverrides: {
+        root: {
+          backdropFilter: 'blur(4px)'
+        },
+      },
+    },
     MuiButton: {
       defaultProps: {
         disableElevation: true,
