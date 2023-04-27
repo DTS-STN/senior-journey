@@ -241,7 +241,7 @@ const Home: FC = () => {
         </TabContext>
       </section>
 
-      <h2 className="h2 mt-10 mb-8 text-primary-700">{t('supporting-seniors.title')}</h2>
+      <h2 className="h2 text-primary-700">{t('supporting-seniors.title')}</h2>
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         <SupportingSeniorsCard
           src="/assets/supporting-seniors-family-and-friends.svg"
@@ -263,7 +263,7 @@ const Home: FC = () => {
         />
       </div>
 
-      <h2 className="h2 mt-10 mb-8 text-primary-700">{t('contact-us.title')}</h2>
+      <h2 className="h2 text-primary-700">{t('contact-us.title')}</h2>
       <p>{t('contact-us.description')}</p>
       <Paper variant="outlined" className="mb-6 p-6">
         <h3 className="mb-4 font-display font-medium">
