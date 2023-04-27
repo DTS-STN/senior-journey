@@ -30,7 +30,7 @@ const TaskListPrint: FC = () => {
   const answers = processQueryAnswers(router);
 
   const { t } = useTranslation('quiz/tasks/task-list')
-  
+
   const section1Tasks: Task[] = t('before-retiring.tasks', { returnObjects: true })
   const section2Tasks: Task[] = t('applying-benefits.tasks', { returnObjects: true })
   const section3Tasks: Task[] = t('receiving-benefits.tasks', { returnObjects: true })
@@ -46,8 +46,6 @@ const TaskListPrint: FC = () => {
   const section1FilteredTasksByTag = section1FilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
   const section2FilteredTasksByTag = section2FilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
   const section3FilteredTasksByTag = section3FilteredTasks.filter(task => filterTagSet.size > 0 ? filterTagSet.has(task['tag']) : true)
-  
-  console.log(section1FilteredTasks, section1FilteredTasksByTag);
 
   return (
     <Layout>
