@@ -34,17 +34,21 @@ import Question5 from '../../components/questions/Question5'
 import Question6 from '../../components/questions/Question6'
 import Question7 from '../../components/questions/Question7'
 import Question8 from '../../components/questions/Question8'
-import Question9 from '../../components/questions/Question9'
 
 // TODO: map form values to "answer-id" from locales/(en/fr)/quiz/tasks/task-list.json once it has been finalized
 export interface FormValues {
-  retirementAge: string,
-  single: string,
-  marriedOrCommonLaw: string,
-  divorcedOrSeparated: string,
-  widowed: string,
-  yesChildren: string,
-  noChildren: string
+  retirementAge: string
+  single: string
+  marriedOrCommonLaw: string
+  divorcedOrSeparated: string
+  widowed: string
+  hasChildren: string
+  financialPreparedness: string
+  retirementTimeframe: string
+  hasExtraIncome: string
+  legalStatus: string
+  yearsInCanada: string
+  hasCppDisabilityBenefits: string
 }
 
 export interface QuizConfirmationProps {
@@ -130,8 +134,13 @@ const Learn: FC = () => {
     marriedOrCommonLaw: '',
     divorcedOrSeparated: '',
     widowed: '',
-    yesChildren: '',
-    noChildren: '',
+    hasChildren: '',
+    financialPreparedness: '',
+    retirementTimeframe: '',
+    hasExtraIncome: '',
+    legalStatus: '',
+    yearsInCanada: '',
+    hasCppDisabilityBenefits: ''
   }
 
   return (
@@ -217,10 +226,7 @@ const Learn: FC = () => {
               },
               {
                 component: Question8,
-              },
-              {
-                component: Question9,
-              },
+              }
             ]}
           >
             {({
@@ -232,7 +238,7 @@ const Learn: FC = () => {
               isPrevDisabled,
             }) => {
               return (
-                <>
+                <div className='min-h-[850px] flex flex-col'>
                   <DialogTitle className="text-right">
                     <Button
                       variant="text"
@@ -243,16 +249,16 @@ const Learn: FC = () => {
                       {t('quiz.navigation.close')}
                     </Button>
                   </DialogTitle>
-                  <DialogContent>
+                  <DialogContent className='flex flex-col'>
                     <h2 className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                       {t('quiz.navigation.title')}
                     </h2>
                     <div className="mb-5">{renderComponent()}</div>
                     {(currentStepIndex ?? 0) > 0 && (
-                      <>
+                      <div className='mt-auto'>
                         <MobileStepper
                           variant="progress"
-                          steps={10}
+                          steps={9}
                           position="static"
                           activeStep={currentStepIndex}
                           backButton={undefined}
@@ -262,9 +268,9 @@ const Learn: FC = () => {
                           }}
                         />
                         <p className="m-0 text-center">
-                          {currentStepIndex} {t('quiz.navigation.of')} 9
+                          {currentStepIndex} {t('quiz.navigation.of')} 8
                         </p>
-                      </>
+                      </div>
                     )}
                   </DialogContent>
                   <DialogActions className="block">
@@ -296,7 +302,7 @@ const Learn: FC = () => {
                             size="large"
                             fullWidth
                           >
-                            {currentStepIndex === 9
+                            {currentStepIndex === 8
                               ? t('quiz.navigation.submit')
                               : t('quiz.navigation.next')}
                           </Button>
@@ -304,7 +310,7 @@ const Learn: FC = () => {
                       </>
                     )}
                   </DialogActions>
-                </>
+                </div>
               )
             }}
           </FormikWizard>

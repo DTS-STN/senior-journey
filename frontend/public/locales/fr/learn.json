@@ -56,6 +56,51 @@
           "option-1": "(FR) Yes",
           "option-2": "(FR) No"
         }
+      },      
+      "question-3": {
+        "title": "(FR) How financially prepared do you feel for retirement?",
+        "subtitle": "(FR) Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
+        "option-1": "(FR) Very unprepared",
+        "option-2": "(FR) Unprepared",
+        "option-3": "(FR) Not sure",
+        "option-4": "(FR) Prepared",
+        "option-5": "(FR) Very Prepared"
+      },
+      "question-4": {
+        "title": "(FR) Where do you plan on living when you retire?",
+        "option-1": "(FR) In Canada",
+        "option-2": "(FR) In Canada MORE Than 6 Months a Year",
+        "option-3": "(FR) In Canada LESS than 6 months a year",
+        "option-4": "(FR) Outside Canada",
+        "option-5": "(FR) Not Sure",
+        "option-2-label": "(FR) In Canada more than 6 months a year",
+        "option-3-label": "(FR) In Canada less than 6 months a year"
+      },
+      "question-5": {
+        "title": "(FR) Do you plan to earn money while receiving retirement benefits",
+        "subtitle": "(FR) Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
+        "option-1": "(FR) No",
+        "option-2": "(FR) Yes",
+        "option-3": "(FR) Not sure"
+      },
+      "question-6": {
+        "title": "(FR) When you retire, what will your legal status be in Canada?",
+        "option-1": "(FR) Canadian Citizen or Permanent Resident",
+        "option-2": "(FR) Métis, Inuit, or Member of First Nation",
+        "option-3": "(FR) Sponsored Resident (less than 10 years in Canada)",
+        "option-4": "(FR) Visitor, Student, or Temporary Worker"
+      },
+      "question-7": {
+        "title": "(FR) From age 18, how many years will you have lived in Canada when you apply for retirement benefits?",
+        "option-1": "(FR) 40 years or more",
+        "option-2": "(FR) 10 to 39 years",
+        "option-3": "(FR) Less than 10 years",
+        "option-4": "(FR) Not sure"
+      },
+      "question-8": {
+        "title": "(FR) Are you receiving CPP-Disability benefits?",
+        "option-1": "(FR) Yes",
+        "option-2": "(FR) No"
       }
     }
   },
