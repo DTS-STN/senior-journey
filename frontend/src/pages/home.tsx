@@ -151,7 +151,7 @@ const Home: FC = () => {
                 <TabPanel className="px-1 py-4" key={title} value={title}>
                   <div className="flex flex-col gap-6 rounded md:flex-row">
                     <Paper className="p-8 md:w-2/5 md:grow">
-                      <h2 className="h5 mb-8 flex items-center text-primary-700 md:text-4xl md:font-medium">
+                      <h2 className="font-medium font-display text-4xl mb-8 flex items-center text-primary-700">
                         {heading}
                       </h2>
                       <Divider className="mb-8" />
@@ -241,7 +241,7 @@ const Home: FC = () => {
         </TabContext>
       </section>
 
-      <h2 className="h2">{t('supporting-seniors.title')}</h2>
+      <h2 className="h2 text-primary-700">{t('supporting-seniors.title')}</h2>
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         <SupportingSeniorsCard
           src="/assets/supporting-seniors-family-and-friends.svg"
@@ -263,7 +263,7 @@ const Home: FC = () => {
         />
       </div>
 
-      <h2 className="h2">{t('contact-us.title')}</h2>
+      <h2 className="h2 text-primary-700">{t('contact-us.title')}</h2>
       <p>{t('contact-us.description')}</p>
       <Paper variant="outlined" className="mb-6 p-6">
         <h3 className="mb-4 font-display font-medium">

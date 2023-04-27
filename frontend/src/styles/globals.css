@@ -125,8 +125,8 @@ video {
   @apply font-medium;
   @apply font-display;
   @apply text-4xl;
-  @apply mt-10;
-  @apply mb-4;
+  @apply mt-12;
+  @apply mb-8;
 }
 
 .h1 {

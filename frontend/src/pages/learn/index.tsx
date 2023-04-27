@@ -317,7 +317,7 @@ const Learn: FC = () => {
             <h2 className="h2 text-primary-700">
               {t(`sections.${index}.title`)}
             </h2>
-            <p>{t(`sections.${index}.body`)}</p>
+            <p className="mb-8">{t(`sections.${index}.body`)}</p>
             <div className="grid gap-6 md:grid-cols-2 xl:md:grid-cols-3">
               {section.cards.map((_, cardIndex) => (
                 <Card key={cardIndex} className="h-full">
