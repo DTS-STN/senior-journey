@@ -3,7 +3,7 @@
   "header": "Acceuil",
   "contact-us": {
     "title": "(FR) Contact Us",
-    "description": "(FR) Our call centres and Service Canada Centres operate Monday to Friday, from 8:30 a.m. to 4:00 p.m., your local time. They are closed on statuary holidays.",
+    "description": "(FR) There are many ways to reach us about your public pensions.",
     "link": "/contact-us",
     "cards": {
       "request-call": {
@@ -20,7 +20,7 @@
         "toll-free": "(FR) Canada and the United States Toll-free:",
         "tty": "(FR) Canada and the United States TTY:",
         "outside": "(FR) Outside Canada and the United States:",
-        "toll-number": "1-800-800-277-9914",
+        "toll-number": "1-800-277-9914",
         "tty-number": "1-800-255-4786",
         "outside-number": "1-613-957-1954 (Call collect) (FR)",
         "toll-number-href": "tel:18002554786",
