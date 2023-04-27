@@ -1,7 +1,7 @@
 {
   "restart-quiz": {
-    "content": "<a>Restart quiz</a>",
-    "link": "/en/learn"
+    "content": "<a>(FR) Restart quiz</a>",
+    "link": "/fr/learn"
   },
   "before-retiring": {
     "id": 1,
