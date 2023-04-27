@@ -25,13 +25,13 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
     setValue(answerId)
     setFieldValue(
       'hasChildren',
-      values['hasChildren'] === answerId ? '' : answerId ?? ''
+      values['hasChildren'] === answerId ? '' : (answerId ?? '')
     )
   }
 
   function handleCheckbox(e: React.ChangeEvent<any>, field: string) {
     let answerId = e.target.value
-    setFieldValue(field, values[field] ? '' : answerId ?? '')
+    setFieldValue(field, values[field] ? '' : (answerId ?? ''))
   }
 
   return (

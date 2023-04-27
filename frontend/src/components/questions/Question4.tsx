@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 type QuestionProps = {
   values: { [field: string]: any }
@@ -19,7 +19,7 @@ const Question4 = ({ values, setFieldValue }: QuestionProps) => {
     setValue(answerId)
     setFieldValue(
       'retirementTimeframe',
-      values['retirementTimeframe'] === answerId ? '' : answerId ?? ''
+      values['retirementTimeframe'] === answerId ? '' : (answerId ?? '')
     )
   }
 
@@ -59,35 +59,19 @@ const Question4 = ({ values, setFieldValue }: QuestionProps) => {
         </ToggleButton>
         <ToggleButton
           value="CanadaPT6OrMore"
-          aria-label={t('quiz.questions.question-4.option-2-label')}
+          aria-label={t('quiz.questions.question-4.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={
-            values['retirementTimeframe'] === 'CanadaPT6OrMore'
-          }
+          selected={values['retirementTimeframe'] === 'CanadaPT6OrMore'}
         >
-          <Trans
-            ns="learn"
-            i18nKey="quiz.questions.question-4.option-2"
-            components={{
-              upper: <span className="px-1 underline"></span>,
-            }}
-          ></Trans>
+          {t('quiz.questions.question-4.option-2')}
         </ToggleButton>
         <ToggleButton
           value="CanadaPTLessThan6"
-          aria-label={t('quiz.questions.question-4.option-3-label')}
+          aria-label={t('quiz.questions.question-4.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={
-            values['retirementTimeframe'] === 'CanadaPTLessThan6'
-          }
+          selected={values['retirementTimeframe'] === 'CanadaPTLessThan6'}
         >
-          <Trans
-            ns="learn"
-            i18nKey="quiz.questions.question-4.option-3"
-            components={{
-              upper: <span className="px-1 underline"></span>,
-            }}
-          ></Trans>
+          {t('quiz.questions.question-4.option-3')}
         </ToggleButton>
         <ToggleButton
           value="OutsideCanada"

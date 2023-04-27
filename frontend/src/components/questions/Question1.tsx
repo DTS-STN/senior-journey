@@ -19,7 +19,7 @@ const Question1 = ({ values, setFieldValue }: QuestionProps) => {
     setValue(answerId)
     setFieldValue(
       'retirementAge',
-      values['retirementAge'] === answerId ? '' : answerId
+      values['retirementAge'] === answerId ? '' : (answerId ?? '')
     )
   }
 

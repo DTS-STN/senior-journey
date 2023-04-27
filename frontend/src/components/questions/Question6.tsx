@@ -19,7 +19,7 @@ const Question6 = ({ values, setFieldValue }: QuestionProps) => {
     setValue(answerId)
     setFieldValue(
       'legalStatus',
-      values['legalStatus'] === answerId ? '' : answerId ?? ''
+      values['legalStatus'] === answerId ? '' : (answerId ?? '')
     )
   }
 

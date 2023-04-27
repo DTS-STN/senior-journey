@@ -19,7 +19,7 @@ const Question3 = ({ values, setFieldValue }: QuestionProps) => {
     setValue(answerId)
     setFieldValue(
       'financialPreparedness',
-      values['financialPreparedness'] === answerId ? '' : answerId ?? ''
+      values['financialPreparedness'] === answerId ? '' : (answerId ?? '')
     )
   }
 
