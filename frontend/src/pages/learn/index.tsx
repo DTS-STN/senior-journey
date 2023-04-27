@@ -314,10 +314,10 @@ const Learn: FC = () => {
       <section>
         {sections.map((section, index) => (
           <div key={index}>
-            <h2 className="h2 text-primary-700">
+            <h2 className="h2 text-primary-700 mt-12">
               {t(`sections.${index}.title`)}
             </h2>
-            <p>{t(`sections.${index}.body`)}</p>
+            <p className='my-6'>{t(`sections.${index}.body`)}</p>
             <div className="grid gap-6 md:grid-cols-2 xl:md:grid-cols-3">
               {section.cards.map((_, cardIndex) => (
                 <Card key={cardIndex} className="h-full">
