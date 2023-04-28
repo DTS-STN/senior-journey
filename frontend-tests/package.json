@@ -1,0 +1,21 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "npx cypress open",
+    "firefox": "npx cypress run --browser firefox",
+    "edge": "npx cypress run --browser edge",
+    "chrome": "npx cypress run --browser chrome",
+    "Mobile" : "npx cypress run --spec cypress/e2e/Mobile/*.js",
+    "Desktop" : "npx cypress run --spec cypress/e2e/Desktop/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "dotenv": "^16.0.3"
+  }
+}
