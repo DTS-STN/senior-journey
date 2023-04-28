@@ -12,22 +12,14 @@ const Question8 = ({ values, setFieldValue }: QuestionProps) => {
   let { t } = useTranslation('learn')
   const [value, setValue] = React.useState('')
 
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    answerId: string
-  ) => {
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue(
-      'hasCppDisabilityBenefits',
-      values['hasCppDisabilityBenefits'] === answerId ? '' : (answerId ?? '')
-    )
+    setFieldValue('hasCppDisabilityBenefits', values['hasCppDisabilityBenefits'] === answerId ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">
-        {t('quiz.questions.question-8.title')}
-      </h5>
+      <h5 className="font-display text-2xl font-light">{t('quiz.questions.question-8.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -50,18 +42,18 @@ const Question8 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="CPPDYes"
+          value="cppd-yes"
           aria-label={t('quiz.questions.question-8.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasCppDisabilityBenefits'] === 'CPPDYes'}
+          selected={values['hasCppDisabilityBenefits'] === 'cppd-yes'}
         >
           {t('quiz.questions.question-8.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="CPPDNo"
+          value="cppd-no"
           aria-label={t('quiz.questions.question-8.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasCppDisabilityBenefits'] === 'CPPDNo'}
+          selected={values['hasCppDisabilityBenefits'] === 'cppd-no'}
         >
           {t('quiz.questions.question-8.option-2')}
         </ToggleButton>

@@ -174,7 +174,7 @@
         "titleFr": "(FR) Decide if you would like to withhold tax on your pension(s)"
       },
       {
-        "answerKey": "canada-pt-6-or-more",
+        "answerKey": "canada-pt-60-or-more",
         "descriptionEn": "Both the CPP and OAS pensions are taxable income. You are not required to have income tax deducted from your monthly payments, but you may choose to have an amount withheld to reduce your tax payable when you file your annual income tax return. Think about your expected income in retirement and decide if you want to withhold that tax upfront.",
         "descriptionFr": "(FR) Both the CPP and OAS pensions are taxable income. You are not required to have income tax deducted from your monthly payments, but you may choose to have an amount withheld to reduce your tax payable when you file your annual income tax return. Think about your expected income in retirement and decide if you want to withhold that tax upfront.",
         "displayOrder": 1061,
@@ -1264,7 +1264,7 @@
         "titleFr": "(FR) Consider impact of your income on your public pensions"
       },
       {
-        "answerKey": "canada-pt-less-than-6",
+        "answerKey": "canada-pt-less-than-60",
         "descriptionEn": "Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "descriptionFr": "(FR) Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "displayOrder": 141,
@@ -2151,7 +2151,7 @@
         "titleFr": "(FR) Plan for costs of living where you will retire"
       },
       {
-        "answerKey": "canada-pt-6-or-more",
+        "answerKey": "canada-pt-60-or-more",
         "descriptionEn": "If you are planning on living abroad part-time or full-time, the basic rule is to make careful preparations. [Tax laws](https://travel.gc.ca/travelling/living-abroad/taxation), [medical care](https://travel.gc.ca/travelling/health-safety/medical-care-outside-canada) and security quickly become a preoccupation once you live in another country or wish to return home to Canada after an extended stay.",
         "descriptionFr": "(FR) If you are planning on living abroad part-time or full-time, the basic rule is to make careful preparations. [Tax laws](https://travel.gc.ca/travelling/living-abroad/taxation), [medical care](https://travel.gc.ca/travelling/health-safety/medical-care-outside-canada) and security quickly become a preoccupation once you live in another country or wish to return home to Canada after an extended stay.",
         "displayOrder": 471,
@@ -2176,7 +2176,7 @@
         "titleFr": "(FR) Plan for the costs of living or travelling outside of Canada when you retire"
       },
       {
-        "answerKey": "canada-pt-less-than-6",
+        "answerKey": "canada-pt-less-than-60",
         "descriptionEn": "If you are planning on living abroad part-time or full-time, the basic rule is to make careful preparations. [Tax laws](https://travel.gc.ca/travelling/living-abroad/taxation), [medical care](https://travel.gc.ca/travelling/health-safety/medical-care-outside-canada) and security quickly become a preoccupation once you live in another country or wish to return home to Canada after an extended stay.",
         "descriptionFr": "(FR) If you are planning on living abroad part-time or full-time, the basic rule is to make careful preparations. [Tax laws](https://travel.gc.ca/travelling/living-abroad/taxation), [medical care](https://travel.gc.ca/travelling/health-safety/medical-care-outside-canada) and security quickly become a preoccupation once you live in another country or wish to return home to Canada after an extended stay.",
         "displayOrder": 481,
@@ -2690,7 +2690,7 @@
         "titleFr": "(FR) Let us know if you move back to Canada"
       },
       {
-        "answerKey": "canada-pt-less-than-6",
+        "answerKey": "canada-pt-less-than-60",
         "descriptionEn": "If you move back to Canada or plan on spending more than 6 months a year in Canada, you may become eligible for additional benefits, including the GIS benefit. You should contact us to start or restart your payments.",
         "descriptionFr": "(FR) If you move back to Canada or plan on spending more than 6 months a year in Canada, you may become eligible for additional benefits, including the GIS benefit. You should contact us to start or restart your payments.",
         "displayOrder": null,
@@ -2715,7 +2715,7 @@
         "titleFr": "(FR) Let us know if you move back to Canada"
       },
       {
-        "answerKey": "canada-pt-6-or-more",
+        "answerKey": "canada-pt-60-or-more",
         "descriptionEn": "You cannot collect the Guaranteed Income Supplement if you move outside of Canada for more than 6 months or if you start living outside Canada for more than 6 months a year.\n\nIf you plan to leave Canada for more than 6 months, you must contact us to avoid an overpayment.",
         "descriptionFr": "(FR) You cannot collect the Guaranteed Income Supplement if you move outside of Canada for more than 6 months or if you start living outside Canada for more than 6 months a year.\n\nIf you plan to leave Canada for more than 6 months, you must contact us to avoid an overpayment.",
         "displayOrder": null,

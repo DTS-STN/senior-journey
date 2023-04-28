@@ -50,34 +50,34 @@ const Question7 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="InCanada40Plus"
+          value="in-canada-40-plus"
           aria-label={t('quiz.questions.question-7.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === 'InCanada40Plus'}
+          selected={values['yearsInCanada'] === 'in-canada-40-plus'}
         >
           {t('quiz.questions.question-7.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="InCanada10To39"
+          value="in-canada-10-to-39"
           aria-label={t('quiz.questions.question-7.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === 'InCanada10To39'}
+          selected={values['yearsInCanada'] === 'in-canada-10-to-39'}
         >
           {t('quiz.questions.question-7.option-2')}
         </ToggleButton>
         <ToggleButton
-          value="InCanadaLessThan10"
+          value="in-canada-less-than-10"
           aria-label={t('quiz.questions.question-7.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === 'InCanadaLessThan10'}
+          selected={values['yearsInCanada'] === 'in-canada-less-than-10'}
         >
           {t('quiz.questions.question-7.option-3')}
         </ToggleButton>
         <ToggleButton
-          value="UnsureInCanada"
+          value="unsure-in-canada"
           aria-label={t('quiz.questions.question-7.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === 'UnsureInCanada'}
+          selected={values['yearsInCanada'] === 'unsure-in-canada'}
         >
           {t('quiz.questions.question-7.option-3')}
         </ToggleButton>
