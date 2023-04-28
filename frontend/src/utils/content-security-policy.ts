@@ -79,22 +79,3 @@ export interface ContentSecurityPolicy {
 export function generateRandomNonce(): string {
   return crypto.randomBytes(32).toString('hex')
 }
-
-/**
- * A function that returns a strict Content Security Policy (CSP) configuration object that only allows resources to be loaded from the same origin as the document.
- *
- * @returns {ContentSecurityPolicy} A strict CSP configuration object.
- */
-export function generateStrictContentSecurityPolicy(): ContentSecurityPolicy {
-  return {
-    "default-src": ["'none'"],
-    "base-uri": ["'self'"],
-    "connect-src": ["'self'"],
-    "font-src": ["'self'"],
-    "form-action": ["'self'"],
-    "frame-src": ["'self'"],
-    "img-src": ["'self'"],
-    "script-src": ["'self'"],
-    "style-src": ["'self'"],
-  }
-}

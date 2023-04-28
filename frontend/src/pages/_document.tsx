@@ -13,24 +13,24 @@ import Document, {
 } from 'next/document'
 import Script from 'next/script'
 
+
 import createEmotionCache from '../createEmotionCache'
 import { getLogger } from '../logging/log-util'
-import {
-  generateRandomNonce,
-  generateStrictContentSecurityPolicy,
-} from '../utils/content-security-policy'
+import { generateRandomNonce } from '../utils/content-security-policy'
 import { MyAppProps } from './_app'
 
 const log = getLogger('_document.tsx')
 
-const adobeAnalyticsConfigured =
-  process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC !== undefined
+const adobeAnalyticsConfigured = process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC !== undefined
+const devmodeEnabled = process.env.NODE_ENV !== 'production'
+
 const defaultAdobeAnalyticsDomains = [
   '*.demdex.net',
   'assets.adobedtm.com',
   'cm.everesttech.net',
   'code.jquery.com',
 ]
+
 const defaultAdobeAnalyticsScriptHashes = [
   `'sha256-eUTan7s7Let/AtTx7e/BFrXBJ1hNp+oNNppAFt05OMc='`,
   `'sha256-ijXSZE47lIAA0cp6SwVwWQroK1Mbcv6gKq8PugakSdI='`,
@@ -63,8 +63,7 @@ function getAdobeAnalyticsDomains() {
  * @returns {string} A string of Adobe Analytics script hashes.
  */
 function getAdobeAnalyticsScriptHashes() {
-  const adobeAnalyticsScriptHashes = process.env
-    .ADOBE_ANALYTICS_CSP_SCRIPT_HASHES
+  const adobeAnalyticsScriptHashes = process.env.ADOBE_ANALYTICS_CSP_SCRIPT_HASHES
     ? JSON.parse(process.env.ADOBE_ANALYTICS_CSP_SCRIPT_HASHES)
     : defaultAdobeAnalyticsScriptHashes
   return adobeAnalyticsScriptHashes.join(' ')
@@ -80,20 +79,34 @@ function getAdobeAnalyticsScriptHashes() {
  * @see https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/content-security-policy.html - For Adobe Analytics.
  */
 function generateCsp(nonce: string): string {
-  const contentSecurityPolicy = generateStrictContentSecurityPolicy()
+  const contentSecurityPolicy = {
+    'default-src': ["'none'"],
+    'base-uri': ["'self'"],
+    'connect-src': ["'self'"],
+    'img-src': ["'self'"],
+    'font-src': ["'self'"],
+    'form-action': ["'self'"],
+    'frame-ancestors': ["'self'"],
+    'frame-src': ["'self'"],
+    'script-src': ["'self'"],
+    'style-src': ["'self'"]
+  }
 
-  // note these directives will be ignored by modern browsers that support nonce directives
-  contentSecurityPolicy['script-src']?.push("'unsafe-eval'", "'unsafe-inline'")
+  // required by MUI; TODO: figure out how to tighten this up
+  // see: https://mui.com/material-ui/guides/content-security-policy/
   contentSecurityPolicy['style-src']?.push("'unsafe-eval'", "'unsafe-inline'")
 
   // required by google fonts
   contentSecurityPolicy['font-src']?.push('fonts.gstatic.com')
   contentSecurityPolicy['style-src']?.push('fonts.googleapis.com')
 
+  if (devmodeEnabled) {
+    log.debug('Devmode detected, adding unsafe-eval Content-Security-Policy directives to enable live reloading')
+    contentSecurityPolicy['script-src']?.push("'unsafe-eval'")
+  }
+
   if (adobeAnalyticsConfigured) {
-    log.debug(
-      'Adobe Analytics configuration detected, adding necessary Content-Security-Policy directives'
-    )
+    log.debug('Adobe Analytics configuration detected, adding necessary Content-Security-Policy directives')
 
     const adobeAnalyticsDomains = getAdobeAnalyticsDomains()
     const adobeAnalyticsSriptHashes = getAdobeAnalyticsScriptHashes()
@@ -120,13 +133,8 @@ interface MyDocumentProps extends DocumentProps {
   nonce: string
 }
 
-export default function MyDocument({
-  emotionStyleTags,
-  locale,
-  nonce,
-}: MyDocumentProps) {
-  const lang =
-    (locale?.toLowerCase() ?? 'default') === 'default' ? 'en' : locale
+export default function MyDocument({ emotionStyleTags, locale, nonce }: MyDocumentProps) {
+  const lang = (locale?.toLowerCase() ?? 'default') === 'default' ? 'en' : locale
   return (
     <Html lang={lang}>
       <Head nonce={nonce}>
@@ -134,33 +142,16 @@ export default function MyDocument({
         <link rel="icon" href="/assets/favicon.ico" />
         {/** Google font **/}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap" rel="stylesheet" />
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
       <body>
         <Main />
         <NextScript nonce={nonce} />
-        {adobeAnalyticsConfigured && (
-          <Script
-            strategy="beforeInteractive"
-            src="https://code.jquery.com/jquery-3.6.3.min.js"
-          />
-        )}
-        {adobeAnalyticsConfigured && (
-          <Script
-            strategy="beforeInteractive"
-            src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC}
-          />
-        )}
+        {adobeAnalyticsConfigured && (<Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />)}
+        {adobeAnalyticsConfigured && (<Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />)}
       </body>
     </Html>
   )
@@ -193,6 +184,9 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
 
   const originalRenderPage = ctx.renderPage
 
+  const nonce = generateRandomNonce()
+  ctx.res?.setHeader('Content-Security-Policy', generateCsp(nonce))
+
   // You can consider sharing the same Emotion cache between all the SSR requests to speed up performance.
   // However, be aware that it can have global side effects.
   const cache = createEmotionCache()
@@ -200,29 +194,21 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: (
-        App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>
-      ) =>
+      enhanceApp: (App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>) =>
         function EnhanceApp(props) {
           return <App emotionCache={cache} {...props} />
         },
     })
 
   const initialProps = await Document.getInitialProps(ctx)
+
   // This is important. It prevents Emotion to render invalid HTML.
   // See https://github.com/mui/material-ui/issues/26561#issuecomment-855286153
   const emotionStyles = extractCriticalToChunks(initialProps.html)
   const emotionStyleTags = emotionStyles.styles.map((style) => (
-    <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
-      key={style.key}
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: style.css }}
-    />
+    // eslint-disable-next-line react/no-danger
+    <style data-emotion={`${style.key} ${style.ids.join(' ')}`} key={style.key} dangerouslySetInnerHTML={{ __html: style.css }} nonce={nonce} />
   ))
-
-  const nonce = generateRandomNonce()
-  ctx.res?.setHeader('Content-Security-Policy', generateCsp(nonce))
 
   return {
     ...initialProps,
