@@ -1,58 +1,49 @@
-import React from 'react';
-import TaskCard, { Task } from './TaskCard';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import React from 'react'
+
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
+
+import TaskCard, { Task } from './TaskCard'
 
 interface NestedAccordionProps {
-    sectionTitle: string;
-    subSectionTitle: string;
-    tasks: Task[];
+  linksHeader: string
+  sectionTitle: string
+  subSectionTitle: string
+  tasks: ReadonlyArray<Task>
 }
 
 const NestedAccordion: React.FC<NestedAccordionProps> = ({
-    sectionTitle,
-    subSectionTitle,
-    tasks = [],
+  linksHeader,
+  sectionTitle,
+  subSectionTitle,
+  tasks = [],
 }) => {
-    return (
-        <div className="mb-4 container mx-auto">
-            <Accordion>
-                <AccordionSummary
-                    className="bg-[#00363C] text-white"
-                    expandIcon={tasks.length > 0 ? <ExpandMoreIcon className="text-white" /> : null}
-                >
-                    <div className="flex flex-col justify-between w-full">
-                        <div className="flex items-center">
-                            <span>{sectionTitle}</span>
-                        </div>
-                        <div>
-                            <span className="text-xs text-gray-400">
-                                {subSectionTitle}
-                            </span>
-                        </div>
-                    </div>
-                </AccordionSummary>
-                {tasks.map((task) => (
-                    <Accordion key={task.id}>
-                        <AccordionSummary className="bg-white"
-                            expandIcon={tasks.length > 0 ? <ExpandMoreIcon /> : null}
-                        >
-                            <div className="flex flex-col justify-between w-full">
-                                <div className="flex items-center">
-                                    <span>{task.title}</span>
-                                </div>
-                            </div>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <TaskCard showCheckbox={false} task={task} />
-                        </AccordionDetails>
-                    </Accordion>
-                ))}
-            </Accordion>
-        </div>
-    );
-};
+  return (
+    <div className="container mx-auto mb-4">
+      <Accordion>
+        <AccordionSummary
+          className="bg-[#00363C] text-white"
+          disabled={tasks.length === 0}
+          expandIcon={<ExpandMoreIcon className="text-white" />}
+        >
+          <div>
+            <div className="mb-2 font-display font-bold">{sectionTitle}</div>
+            <div className="text-xs">{subSectionTitle}</div>
+          </div>
+        </AccordionSummary>
+        {tasks.map((task) => (
+          <Accordion key={task.id}>
+            <AccordionSummary className="font-display font-bold" expandIcon={<ExpandMoreIcon />}>
+              {task.title}
+            </AccordionSummary>
+            <AccordionDetails>
+              <TaskCard linksHeader={linksHeader} showCheckbox={false} task={task} />
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </Accordion>
+    </div>
+  )
+}
 
-export default NestedAccordion;
+export default NestedAccordion
