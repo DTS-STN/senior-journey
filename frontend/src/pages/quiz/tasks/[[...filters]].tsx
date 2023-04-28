@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import RefreshIcon from '@mui/icons-material/Refresh'
-import { Link as MuiLink } from '@mui/material'
+import { Button } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -52,16 +52,22 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
 
   return (
     <Layout>
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full md:max-w-[20%]">
-          <div className="justify-left flex items-center py-4 md:justify-start">
-            <RefreshIcon />
-            <MuiLink component={Link} href="/quiz/tasks">
+      <div className="grid gap-6 lg:grid-cols-12">
+        <section className="lg:col-span-4 lg:block xl:col-span-3">
+          <div className="text-right">
+            <Button
+              component={Link}
+              href="/quiz/tasks"
+              variant="outlined"
+              startIcon={<RefreshIcon />}
+              size="large"
+              className="w-full md:w-auto lg:w-full"
+            >
               {t('restart-quiz')}
-            </MuiLink>
+            </Button>
           </div>
-        </div>
-        <div className="w-full md:flex-grow">
+        </section>
+        <section id="content" className="lg:col-span-8 xl:col-span-9">
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={beforeRetiring.title}
@@ -80,7 +86,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
             subSectionTitle={receivingBenefits.subTitle}
             tasks={receivingBenefits.tasks}
           />
-        </div>
+        </section>
       </div>
     </Layout>
   )
