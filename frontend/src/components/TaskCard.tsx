@@ -1,40 +1,55 @@
-// components/TaskCard.tsx
-import Chip from '@mui/material/Chip';
-import MarkDown from './MarkDown'
+import { Chip, Link } from '@mui/material'
+
+import Markdown from './Markdown'
 
 export interface Task {
-    "id": number,
-    "display-order": number,
-    "answer-key": string,
-    "is-time-sensitive": boolean,
-    "title": string,
-    "description": string,
-    "link-title": string,
-    "links": string,
-    "tag": string
+  id: number
+  isTimeSensitive: boolean
+  title: string
+  description: string
+  links: ReadonlyArray<{
+    link: string
+    text: string
+  }>
+  tags: ReadonlyArray<{
+    code: string
+    title: string
+  }>
 }
 
 interface TaskCardProps {
-    showCheckbox?: boolean
-    task: Task
+  linksHeader: string
+  showCheckbox?: boolean
+  task: Task
 }
 
-const TaskCard: React.FC<TaskCardProps> = ({
-    showCheckbox = false,
-    task,
-}) => {
-    return (
-        <div className="relative bg-white rounded-lg shadow-md p-6 mb-4 px-14">
-            {showCheckbox && (
-                <input type="checkbox" className="relative top-2 w-6 h-6 mb-4" />
-            )}
-            {showCheckbox && (<hr />)}
-            <MarkDown content={task.description} />
-            {task['link-title'] && (<h5 className="text-s pb-4">{task['link-title']}</h5>)}
-            <MarkDown content={task.links} />
-            <Chip label={task.tag} />
+const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, task }) => {
+  return (
+    <>
+      {showCheckbox && <input type="checkbox" className="relative top-2 mb-4 h-6 w-6" />}
+      {showCheckbox && <hr />}
+      <Markdown>{task.description}</Markdown>
+      {task.links.length > 0 && (
+        <>
+          <h5 className="mb-4 text-sm font-bold">{linksHeader}</h5>
+          <ul className="mb-4 list-disc space-y-2 pl-7">
+            {task.links.map((link) => (
+              <li key={link.link}>
+                <Link href={link.link}>{link.text}</Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      {task.tags.length > 0 && (
+        <div className="flex gap-1">
+          {task.tags.map((tag) => (
+            <Chip key={tag.code} label={tag.title} />
+          ))}
         </div>
-    )
+      )}
+    </>
+  )
 }
 
 export default TaskCard

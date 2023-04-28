@@ -3,6 +3,7 @@
   "tabWidth": 2,
   "singleQuote": true,
   "quoteProps": "consistent",
+  "printWidth": 120,
   "importOrder": [
     "^react$",
     "^@testing-library/(.*)$",
