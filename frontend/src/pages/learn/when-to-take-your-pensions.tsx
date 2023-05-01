@@ -11,8 +11,6 @@ import {
 
 import AccessibilityGraphContainer from '../../components/AccessibilityGraphContainer'
 import { TableData } from '../../components/AccessibilityTable'
-import { BreadcrumbItemType } from '../../components/Breadcrumb'
-
 
 export interface ImportantCardProps extends PropsWithChildren { }
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
@@ -27,10 +25,6 @@ const DisclaimerCard: FC<ImportantCardProps> = ({ children }) => (
 const WhenToTakeYourPensions: FC = () => {
   const { t } = useTranslation('learn/when-to-take-your-pensions')
 
-  const breadcrumbs: BreadcrumbItemType[] = t('breadcrumbs', {
-    returnObjects: true,
-  })
-
   const illustrationOASGraphData: TableData = t('old-age-security.illustration.accessibility', { returnObjects: true })
   const illustrationCPPGraphData: TableData = t('cpp-pension.illustration.accessibility', { returnObjects: true })
   const illustrationCaseStudyData1: TableData = t('case-study.illustration-one.accessibility', { returnObjects: true })
@@ -44,7 +38,7 @@ const WhenToTakeYourPensions: FC = () => {
       header={t('header')}
       learnMoreHeader={t('learn-more-heading')}
       learnMoreLinks={[]}
-      breadCrumbItems={[
+      breadcrumbItems={[
         {
           link: t("breadcrumbs.home.link"), 
           text: t("breadcrumbs.home.text")

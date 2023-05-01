@@ -27,7 +27,7 @@ export interface LearnPageLayoutProps {
   header: string
   learnMoreHeader: string
   learnMoreLinks: ReadonlyArray<LearnMoreLink>
-  breadCrumbItems: BreadcrumbItemType[];
+  breadcrumbItems: BreadcrumbItemType[];
 }
 
 export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
@@ -35,11 +35,11 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
   header,
   learnMoreHeader,
   learnMoreLinks,
-  breadCrumbItems,
+  breadcrumbItems,
 }) => {
   const tableOfContentsData = useTableOfContentsData()
   return (
-    <Layout breadCrumbItems={breadCrumbItems}>
+    <Layout breadcrumbItems={breadcrumbItems}>
       <h1 className="mb-10 rounded-3xl bg-[#212121]/[.08] px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
         {header}
       </h1>

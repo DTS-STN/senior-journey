@@ -12,7 +12,6 @@ import {
   LearnMoreLink,
   LearnPageLayout,
 } from '../../components/LearnPageLayout'
-import { BreadcrumbItemType } from '../../components/Breadcrumb'
 
 interface ImportantCardProps extends PropsWithChildren {}
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
@@ -21,10 +20,6 @@ const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
 
 const RetirementIncomeSources: FC = () => {
   const { t } = useTranslation('learn/retirement-income-sources')
-
-  const breadcrumbs: BreadcrumbItemType[] = t('breadcrumbs', {
-    returnObjects: true,
-  })
 
   const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
     () => [
@@ -59,7 +54,7 @@ const RetirementIncomeSources: FC = () => {
       header={t('header')}
       learnMoreHeader={t('learn-more.header')}
       learnMoreLinks={learnMoreLinks}
-      breadCrumbItems={[
+      breadcrumbItems={[
         {
           link: t("breadcrumbs.home.link"), 
           text: t("breadcrumbs.home.text")

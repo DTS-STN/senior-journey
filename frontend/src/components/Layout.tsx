@@ -8,17 +8,17 @@ import { BreadcrumbItemType } from './Breadcrumb'
 
 export interface LayoutProps {
   children: ReactNode
-  breadCrumbItems: BreadcrumbItemType[];
+  breadcrumbItems: BreadcrumbItemType[];
 }
 
-const Layout: FC<LayoutProps> = ({ children, breadCrumbItems  }) => {
+const Layout: FC<LayoutProps> = ({ children, breadcrumbItems }) => {
   const { t } = useTranslation('common')
   return (
     <div className="flex min-h-screen flex-col">
       <Header
         skipToMainText={t('header.skip-to-main')}
         gocLink={t('header.goc-link')}
-        breadCrumbItems={breadCrumbItems}
+        breadcrumbItems={breadcrumbItems}
       />
       <main
         role="main"

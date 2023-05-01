@@ -11,7 +11,7 @@ export interface ApplicationNameBarProps {
   href: string
   checklist: string
   checklistUrl: string
-  breadCrumbItems: BreadcrumbItemType[];
+  breadcrumbItems: BreadcrumbItemType[];
 }
 
 const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
@@ -19,7 +19,7 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
   href,
   checklist,
   checklistUrl,
-  breadCrumbItems,
+  breadcrumbItems,
 }) => {
   return (
     <div id="app-bar">
@@ -43,7 +43,7 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
             {checklist}
           </Button>
         </div>
-        <Breadcrumb items={breadCrumbItems} />
+        <Breadcrumb items={breadcrumbItems} />
       </section>
     </div>
   )

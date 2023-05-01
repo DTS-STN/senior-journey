@@ -19,7 +19,7 @@ export interface HeaderProps {
   breadcrumbItems: BreadcrumbItemType[];
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadCrumbItems }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) => {
   const config = getConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
@@ -109,7 +109,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadCrumbItems }) =
           href="/"
           checklist={t('checklist')}
           checklistUrl={t('checklist-url')}
-          breadCrumbItems={breadCrumbItems}
+          breadcrumbItems={breadcrumbItems}
         />
 
         {/* <Menu

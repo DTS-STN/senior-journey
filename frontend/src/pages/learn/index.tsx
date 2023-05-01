@@ -37,7 +37,6 @@ import Question6 from '../../components/questions/Question6'
 import Question7 from '../../components/questions/Question7'
 import Question8 from '../../components/questions/Question8'
 import { Filters } from '../quiz/tasks/[[...filters]]'
-import { BreadcrumbItemType } from '../../components/Breadcrumb'
 
 // TODO: map form values to "answer-id" from locales/(en/fr)/quiz/tasks/task-list.json once it has been finalized
 export interface FormValues {
@@ -102,11 +101,6 @@ const Learn: FC = () => {
     returnObjects: true,
   })
 
-  const breadcrumbs: BreadcrumbItemType[] = t('breadcrumbs', {
-    returnObjects: true,
-  })
-
-
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [showConfirmation, setShowConfirmation] = useState(false)
 
@@ -146,7 +140,7 @@ const Learn: FC = () => {
   }
 
   return (
-      <Layout breadCrumbItems={[
+      <Layout breadcrumbItems={[
         {
           link: t("breadcrumbs.home.link"), 
           text: t("breadcrumbs.home.text")
