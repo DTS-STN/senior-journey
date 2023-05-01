@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, useMemo } from 'react'
+import { FC, useMemo } from 'react'
 
 import { Link as MuiLink, Paper } from '@mui/material'
 import { GetServerSideProps } from 'next'
@@ -12,11 +12,7 @@ import {
   LearnMoreLink,
   LearnPageLayout,
 } from '../../components/LearnPageLayout'
-
-interface ImportantCardProps extends PropsWithChildren {}
-const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
-  <p className="rounded-lg bg-[#fba575]/[.3] p-5">{children}</p>
-)
+import AlertCard from '../../components/AlertCard'
 
 const RetirementIncomeSources: FC = () => {
   const { t } = useTranslation('learn/retirement-income-sources')
@@ -362,12 +358,13 @@ const RetirementIncomeSources: FC = () => {
           }}
         />
       </p>
-      <ImportantCard>
+
+      <AlertCard type='important'>
         <Trans
           ns="learn/retirement-income-sources"
           i18nKey="canada-pension-plan-program.cpp-post-retirement-benefit.important-notice"
         />
-      </ImportantCard>
+      </AlertCard>
 
       <h2 id="ongoing-earnings-from-your-job" className="h2">
         {t('ongoing-earnings-from-your-job.header')}
@@ -413,12 +410,12 @@ const RetirementIncomeSources: FC = () => {
           height={150}
           className="w-full max-w-md"
         />
-        <ImportantCard>
+        <AlertCard type='important'>
           <Trans
             ns="learn/retirement-income-sources"
             i18nKey="personal-retirement-savings.rrsp.important-notice"
           />
-        </ImportantCard>
+        </AlertCard>
       </div>
 
       <h3 className="h3">{t('personal-retirement-savings.tfsa.header')}</h3>
@@ -431,12 +428,12 @@ const RetirementIncomeSources: FC = () => {
           height={150}
           className="w-full max-w-md"
         />
-        <ImportantCard>
+        <AlertCard type='important'>
           <Trans
             ns="learn/retirement-income-sources"
             i18nKey="personal-retirement-savings.tfsa.important-notice"
           />
-        </ImportantCard>
+        </AlertCard>
       </div>
     </LearnPageLayout>
   )

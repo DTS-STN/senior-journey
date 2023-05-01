@@ -26,8 +26,8 @@ const iconClasses = {
 }
 
 const AlertCard: FC<AlertCardProps> = ({
-    type,
-    children
+  type,
+  children
 }) => {
   const iconBgColor = iconBgColors[type ?? 'tip']
   const textBgColor = textBgColors[type ?? 'tip']
@@ -35,14 +35,14 @@ const AlertCard: FC<AlertCardProps> = ({
 
   return (
     <div className="rounded-lg overflow-hidden relative">
-        <div className="grid lg:grid-cols-12 sm:grid-cols-1">
-          <div className={`${iconBgColor} lg:col-span-1 p-4 z-10 relative lg:flex sm:ps-4 lg:items-center lg:justify-left`}>
-              <div className="mx-auto">
-                  <IconClass className="text-white transform scale-125" />
-              </div>
+      <div className="grid lg:grid-cols-12 sm:grid-cols-1">
+        <div className={`${iconBgColor} lg:col-span-1 p-4 z-10 relative lg:flex sm:ps-4 lg:items-center lg:justify-left`}>
+          <div className="mx-auto">
+            <IconClass className="text-white transform scale-125" />
           </div>
-          <div className={`${textBgColor} lg:col-span-11 p-5`}>{children}</div>
         </div>
+        <div className={`${textBgColor} lg:col-span-11 p-5`}>{children}</div>
+      </div>
     </div>
   )
 }

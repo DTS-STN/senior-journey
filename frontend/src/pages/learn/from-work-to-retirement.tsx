@@ -1,15 +1,14 @@
-import { FC, PropsWithChildren } from 'react'
-
+import { FC } from 'react'
 import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-import AlertCard from '../../components/AlertCard'
 
 import {
   LearnPageLayout
 } from '../../components/LearnPageLayout'
+import AlertCard from '../../components/AlertCard'
 
 const FromWorkToRetirement: FC = () => {
   const { t } = useTranslation('learn/from-work-to-retirement')
@@ -97,7 +96,7 @@ const FromWorkToRetirement: FC = () => {
         />
       </p>
 
-      <AlertCard type='tip'>
+      <AlertCard>
         <Trans
           ns="learn/from-work-to-retirement"
           i18nKey="combine-job-pensions-income.smart-tip"
