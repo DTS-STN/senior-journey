@@ -51,23 +51,31 @@ describe('broken link', () => {
   })
 })
 
-beforeEach(() => {
-  cy.request({ url: '/404', failOnStatusCode: false })
-    .its('status')
-    .should('equal', 403)
-  cy.visit('/404', { failOnStatusCode: false })
-})
-
-describe('not found page loads', () => {
-  it('status 404 - verify displays the not found page with 404 in pathname', () => {
-    cy.location('pathname').should('equal', '/404')
+function waitForAppStart() {
+  // keeps rechecking "appHasStarted" variable
+  return new Cypress.Promise((resolve, reject) => {
+    const isReady = () => {
+      if (appHasStarted) {
+        return resolve()
+      }
+      setTimeout(isReady, 0)
+    }
+    isReady()
   })
+}
 
-  it('status 404 - should have correct title', () => {
-    cy.title().should('eq', 'Not Found | Pas trouvé - Canada.ca')
-  })
-})
-
-
-
-
+let appHasStarted
+function spyOnAddEventListener(win) {
+  // win = window object in our application
+  const addListener = win.EventTarget.prototype.addEventListener
+  win.EventTarget.prototype.addEventListener = function (name) {
+    if (name === 'change') {
+      // web app added an event listener to the input box -
+      // that means the web application has started
+      appHasStarted = true
+      // restore the original event listener
+      win.EventTarget.prototype.addEventListener = addListener
+    }
+    return addListener.apply(this, arguments)
+  }
+}

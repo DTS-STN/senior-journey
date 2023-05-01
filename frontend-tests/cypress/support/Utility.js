@@ -4,7 +4,7 @@ let language = Cypress.config().language
 export class utility {
     getLanguageMobileScreen() {
         if (language == "French") {
-            cy.get('abbr').click({ force: true })
+            cy.get('abbr').click()
             return false
         }
         else {
@@ -15,6 +15,16 @@ export class utility {
     getLanguageTabletOrMonitorScreen() {
         if (language == "French") {
             cy.get('[data-cy="toggle-language-link"]').click()
+            return false
+        }
+        else {
+            return true
+        }
+    }
+
+    getLanguage() {
+        if (language == "French") {
+            cy.get('[data-cy="toggle-language-link"]').click({force: true})
             return false
         }
         else {

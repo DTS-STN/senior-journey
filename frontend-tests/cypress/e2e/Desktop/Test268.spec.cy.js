@@ -1,53 +1,98 @@
 describe('test id 268 - verify Learn Overview - Breadcrumb', () => {
   it('canada link - click url redirects to /en when accessing /en', () => {
-    cy.visit('/en/home')
+    cy.visit('/en/home', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
     cy.get('.block > :nth-child(1) > .MuiTypography-root').click()
-    cy.wait(3000)
     cy.origin('https://www.canada.ca', () => {
+      cy.wait(3000)
       cy.location('pathname').should('equal', '/en.html')
       cy.get('.well > .mrgn-tp-md').should('have.text', 'The official website of the Government of Canada')
     })
   })
 
   it('canada link - click url redirects to /fr when accessing /fr', () => {
-    cy.visit('/fr/home')
+    cy.visit('/fr/home', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
     cy.get('.block > :nth-child(1) > .MuiTypography-root').click()
-    cy.wait(3000)
     cy.origin('https://www.canada.ca', () => {
+      cy.wait(3000)
       cy.location('pathname').should('equal', '/fr.html')
       cy.get('.well > .mrgn-tp-md').should('have.text', 'Le site officiel du gouvernement du Canada')
     })
   })
 
   it('learn link - retirement-income-sources redirects to /en when accessing /en', () => {
-    cy.visit('/en/learn/retirement-income-sources')
-    cy.location('pathname').should('equal','/en/learn/retirement-income-sources')
+    cy.visit('/en/learn/retirement-income-sources', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
+    cy.location('pathname').should('equal', '/en/learn/retirement-income-sources')
   })
 
   it('learn link - retirement-income-sources redirects to /fr when accessing /fr', () => {
-    cy.visit('/fr/learn/retirement-income-sources')
-    cy.location('pathname').should('equal','/fr/learn/retirement-income-sources')
+    cy.visit('/fr/learn/retirement-income-sources', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
+    cy.location('pathname').should('equal', '/fr/learn/retirement-income-sources')
   })
 
   it('learn link - redirects to /en when accessing /en', () => {
-    cy.visit('/en/learn/retirement-income-sources')
+    cy.visit('/en/learn/retirement-income-sources', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
     cy.get('.block > :nth-child(2) > .MuiTypography-root').click()
-    cy.location('pathname').should('equal','/en/learn')
+    cy.location('pathname').should('equal', '/en/learn')
   })
 
   it('learn link - planning-to-save-for-retirement redirects to /en when accessing /en', () => {
-    cy.visit('/en/learn/planning-to-save-for-retirement')
-    cy.location('pathname').should('equal','/en/learn/planning-to-save-for-retirement')
+    cy.visit('/en/learn/planning-to-save-for-retirement', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
+    cy.location('pathname').should('equal', '/en/learn/planning-to-save-for-retirement')
   })
 
   it('learn link - planning-to-save-for-retirement redirects to /fr when accessing /fr', () => {
-    cy.visit('/fr/learn/planning-to-save-for-retirement')
-    cy.location('pathname').should('equal','/fr/learn/planning-to-save-for-retirement')
+    cy.visit('/fr/learn/planning-to-save-for-retirement', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
+    cy.location('pathname').should('equal', '/fr/learn/planning-to-save-for-retirement')
   })
 
   it('learn link - redirects to /fr when accessing /fr', () => {
-    cy.visit('/fr/learn/retirement-income-sources')
+    cy.visit('/fr/learn/retirement-income-sources', {
+      onBeforeLoad: spyOnAddEventListener
+    }).then({ timeout: 10000 }, waitForAppStart)
     cy.get('.block > :nth-child(2) > .MuiTypography-root').click()
-    cy.location('pathname').should('equal','/fr/learn')
+    cy.location('pathname').should('equal', '/fr/learn')
   })
 })
+
+function waitForAppStart() {
+  // keeps rechecking "appHasStarted" variable
+  return new Cypress.Promise((resolve, reject) => {
+    const isReady = () => {
+      if (appHasStarted) {
+        return resolve()
+      }
+      setTimeout(isReady, 0)
+    }
+    isReady()
+  })
+}
+
+let appHasStarted
+function spyOnAddEventListener(win) {
+  // win = window object in our application
+  const addListener = win.EventTarget.prototype.addEventListener
+  win.EventTarget.prototype.addEventListener = function (name) {
+    if (name === 'change') {
+      // web app added an event listener to the input box -
+      // that means the web application has started
+      appHasStarted = true
+      // restore the original event listener
+      win.EventTarget.prototype.addEventListener = addListener
+    }
+    return addListener.apply(this, arguments)
+  }
+}

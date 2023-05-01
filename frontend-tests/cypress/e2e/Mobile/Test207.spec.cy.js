@@ -2,9 +2,11 @@ var sizes = ["iphone-3", "iphone-6", "ipad-mini", "macbook-13", "macbook-11", "m
 import { utility } from "../../support/Utility"
 
 describe('test id 207 - Navigation with resolutions', () => {
-    context.only(`${sizes[0]} screen`, () => {
+    context(`${sizes[0]} screen`, () => {
         beforeEach(() => {
-            cy.visit('/en/home')
+            cy.visit('/en/home', {
+                onBeforeLoad: spyOnAddEventListener
+            }).then({ timeout: 10000 }, waitForAppStart)
             cy.viewport(sizes[0])
         })
 
@@ -25,7 +27,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageMobileScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(1) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -33,7 +35,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageMobileScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(3) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -41,7 +43,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('When to take your public pensions link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageMobileScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(5) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -51,16 +53,17 @@ describe('test id 207 - Navigation with resolutions', () => {
 
     context(`${sizes[1]} screen`, () => {
         beforeEach(() => {
-            cy.visit('/en/home')
+            cy.visit('/en/home', {
+                onBeforeLoad: spyOnAddEventListener
+            }).then({ timeout: 10000 }, waitForAppStart)
             cy.viewport(sizes[1])
         })
-
         it('Top learning title is visible', () => {
             cy.get('h3').eq(2).should('be.visible')
         })
 
         it('Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageTabletOrMonitorScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(1) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -68,7 +71,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageTabletOrMonitorScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(3) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -76,7 +79,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('When to take your public pensions link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageTabletOrMonitorScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(5) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -86,7 +89,9 @@ describe('test id 207 - Navigation with resolutions', () => {
 
     context(`${sizes[2]} screen`, () => {
         beforeEach(() => {
-            cy.visit('/fr/home')
+            cy.visit('/en/home', {
+                onBeforeLoad: spyOnAddEventListener
+            }).then({ timeout: 10000 }, waitForAppStart)
             cy.viewport(sizes[2])
         })
 
@@ -95,7 +100,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageTabletOrMonitorScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(1) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -103,7 +108,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageTabletOrMonitorScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(3) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -111,7 +116,7 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
 
         it('When to take your public pensions link click url redirects to /en/fr/ when accessing /en/fr', () => {
-            let language = new utility().getLanguageTabletOrMonitorScreen()
+            let language = new utility().getLanguage()
             cy.wait(2000)
             cy.get('button').eq(0).click()
             cy.get(':nth-child(5) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
@@ -119,3 +124,32 @@ describe('test id 207 - Navigation with resolutions', () => {
         })
     })
 })
+
+function waitForAppStart() {
+    // keeps rechecking "appHasStarted" variable
+    return new Cypress.Promise((resolve, reject) => {
+        const isReady = () => {
+            if (appHasStarted) {
+                return resolve()
+            }
+            setTimeout(isReady, 0)
+        }
+        isReady()
+    })
+}
+
+let appHasStarted
+function spyOnAddEventListener(win) {
+    // win = window object in our application
+    const addListener = win.EventTarget.prototype.addEventListener
+    win.EventTarget.prototype.addEventListener = function (name) {
+        if (name === 'change') {
+            // web app added an event listener to the input box -
+            // that means the web application has started
+            appHasStarted = true
+            // restore the original event listener
+            win.EventTarget.prototype.addEventListener = addListener
+        }
+        return addListener.apply(this, arguments)
+    }
+}
