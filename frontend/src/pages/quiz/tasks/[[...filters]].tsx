@@ -15,6 +15,7 @@ import { Task } from '../../../components/TaskCard'
 import tasksData from '../../../data/tasks.json'
 import * as tasksGroupDtoMapper from '../../../lib/mappers/tasks-group-dto-mapper'
 import { getLogger } from '../../../logging/log-util'
+import { BreadcrumbItemType } from '../../../components/Breadcrumb'
 
 const log = getLogger('quiz/tasks/[filters].tsx')
 
@@ -47,8 +48,17 @@ interface TasksProps {
 const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
   const { t } = useTranslation('quiz/tasks')
 
+  const breadcrumbs: BreadcrumbItemType[] = t('breadcrumbs', {
+    returnObjects: true,
+  })
+
   return (
-    <Layout>
+    <Layout breadCrumbItems={
+      breadcrumbs.map((breadcrumb, index) => ({
+        text: t(`breadcrumbs.${index}.text`),
+        link: t(`breadcrumbs.${index}.link`),
+      }))
+    }>
       <div className="grid gap-6 lg:grid-cols-12">
         <section className="lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">

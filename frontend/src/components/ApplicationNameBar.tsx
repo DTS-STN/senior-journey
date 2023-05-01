@@ -4,13 +4,14 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
 
-import Breadcrumb from './Breadcrumb'
+import {Breadcrumb, BreadcrumbItemType} from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
   text: string
   href: string
   checklist: string
   checklistUrl: string
+  breadCrumbItems: BreadcrumbItemType[];
 }
 
 const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
@@ -18,16 +19,17 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
   href,
   checklist,
   checklistUrl,
+  breadCrumbItems,
 }) => {
   return (
     <div id="app-bar">
       <section className="container mx-auto p-4">
-        <div className="mb-6 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+        <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <MuiLink
             component={Link}
             href={href}
             color="primary"
-            className="font-display text-4xl font-medium"
+            className="font-display text-2xl font-bold"
             underline="hover"
           >
             <h2>{text}</h2>
@@ -41,7 +43,7 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
             {checklist}
           </Button>
         </div>
-        <Breadcrumb />
+        <Breadcrumb items={breadCrumbItems} />
       </section>
     </div>
   )

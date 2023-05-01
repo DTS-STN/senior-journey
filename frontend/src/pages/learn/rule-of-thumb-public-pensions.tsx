@@ -9,6 +9,7 @@ import { NextSeo } from 'next-seo'
 import {
   LearnPageLayout
 } from '../../components/LearnPageLayout'
+import { BreadcrumbItemType } from '../../components/Breadcrumb'
 
 interface ImportantCardProps extends PropsWithChildren { }
 const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
@@ -22,12 +23,22 @@ const DisclaimerCard: FC<DisclaimerCardProps> = ({ children }) => (
 
 const RuleOfThumbPublicPensions: FC = () => {
   const { t } = useTranslation('learn/rule-of-thumb-public-pensions')
+  
+  const breadcrumbs: BreadcrumbItemType[] = t('breadcrumbs', {
+    returnObjects: true,
+  })
 
   return (
     <LearnPageLayout
       header={t('header')}
       learnMoreHeader={t('learn-more-heading')}
       learnMoreLinks={[]}
+      breadCrumbItems={
+        breadcrumbs.map((breadcrumb, index) => ({
+          text: t(`breadcrumbs.${index}.text`),
+          link: t(`breadcrumbs.${index}.link`),
+        }))
+      }
     >
       <NextSeo title={t('header')} />
       <h2 id="key-takeaways" className="h2 !mt-0">

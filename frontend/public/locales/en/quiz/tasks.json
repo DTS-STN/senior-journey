@@ -1,4 +1,10 @@
 {
   "links-header": "More resources",
-  "restart-quiz": "Restart quiz"
+  "restart-quiz": "Restart quiz",
+  "breadcrumbs": [
+    {
+      "text":"Retirement Hub",
+      "link":"/home"
+    }
+  ]
 }

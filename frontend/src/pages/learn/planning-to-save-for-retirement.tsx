@@ -12,10 +12,16 @@ import {
   LearnMoreLink,
   LearnPageLayout,
 } from '../../components/LearnPageLayout'
+import { BreadcrumbItemType } from '../../components/Breadcrumb'
 
 const PlanningToSaveForRetirement: FC = () => {
   const { t } = useTranslation('learn/planning-to-save-for-retirement')
   const router = useRouter()
+  
+  const breadcrumbs: BreadcrumbItemType[] = t('breadcrumbs', {
+    returnObjects: true,
+  })
+
 
   const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
     () => [
@@ -48,6 +54,12 @@ const PlanningToSaveForRetirement: FC = () => {
       header={t('header')}
       learnMoreHeader={t('learn-more-heading')}
       learnMoreLinks={learnMoreLinks}
+      breadCrumbItems={
+        breadcrumbs.map((breadcrumb, index) => ({
+          text: t(`breadcrumbs.${index}.text`),
+          link: t(`breadcrumbs.${index}.link`),
+        }))
+      }
     >
       <NextSeo title={t('header')} />
       <h2 id="overview" className="sr-only">

@@ -2,19 +2,6 @@ import '@testing-library/jest-dom/extend-expect'
 import { render, screen } from '@testing-library/react'
 
 import { axe, toHaveNoViolations } from 'jest-axe'
-import { useRouter } from 'next/router';
-
-// Move useRouter mock to global scope
-jest.mock('next/router', () => ({
-  useRouter: jest.fn(),
-}));
-
-// Apply useRouter mock to all tests
-const useRouterMock = useRouter as jest.Mock<any>;
-useRouterMock.mockReturnValue({
-  pathname: '/home',
-  asPath: '/home',
-});
 
 import Breadcrumb from '../../src/components/Breadcrumb'
 
@@ -22,11 +9,21 @@ expect.extend(toHaveNoViolations)
 
 describe('Breadcrumb', () => {
 
-  const sut = <Breadcrumb />
+const sampleItems = [
+    {
+      text: 'Home',
+      link: '/home'
+    },
+    {
+      text: 'Learn',
+      link: '/learn'
+    }
+  ]
+  const sut = <Breadcrumb items={sampleItems} />
 
   it('renders', () => {
     render(sut)
-    const screenText = screen.getByText('Canada.ca')
+    const screenText = screen.getByText('Home')
     expect(screenText).toBeInTheDocument()
   })
 
