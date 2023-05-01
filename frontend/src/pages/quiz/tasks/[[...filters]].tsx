@@ -19,6 +19,7 @@ import { Task } from '../../../components/TaskCard'
 import tasksData from '../../../data/tasks.json'
 import * as tasksGroupDtoMapper from '../../../lib/mappers/tasks-group-dto-mapper'
 import { getLogger } from '../../../logging/log-util'
+import { useRouter } from 'next/router'
 
 const log = getLogger('quiz/tasks/[filters].tsx')
 
@@ -49,14 +50,21 @@ interface TasksProps {
 }
 
 const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
+
+  console.log(filters)
+
   const { t } = useTranslation('quiz/tasks')
 
+  let router = useRouter()
+
   let [expanded, setExpanded] = React.useState<boolean>(false)
-  let [tagsToFilter, setTagToFilter] = React.useState<string[]>([])
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
-    if (e.target.checked) setTagToFilter([...tagsToFilter, e.target.value])
-    else setTagToFilter(tagsToFilter.filter((tag) => tag !== e.target.value))
+    if (!filters) filters = {}
+    if (e.target.checked) filters.tags = [...(filters?.tags ?? []), e.target.value]
+    else filters.tags = (filters?.tags ?? []).filter(tag=>tag!==e.target.value)
+    const encodedFilters = encodeURIComponent(btoa(JSON.stringify(filters)))
+    router.push(`/quiz/tasks/${encodedFilters}`)
   }
 
   return (
@@ -101,6 +109,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
                           value={tag}
                           icon={<RadioButtonUncheckedIcon />}
                           checkedIcon={<RadioButtonCheckedIcon />}
+                          checked={filters?.tags?.includes(tag)}
                         />
                       }
                       label={t(tag)}
@@ -116,19 +125,19 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
             linksHeader={t('links-header')}
             sectionTitle={beforeRetiring.title}
             subSectionTitle={beforeRetiring.subTitle}
-            tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
+            tasks={beforeRetiring.tasks}
           />
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={applyingBenefits.title}
             subSectionTitle={applyingBenefits.subTitle}
-            tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
+            tasks={applyingBenefits.tasks}
           />
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={receivingBenefits.title}
             subSectionTitle={receivingBenefits.subTitle}
-            tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
+            tasks={receivingBenefits.tasks}
           />
         </section>
       </div>
