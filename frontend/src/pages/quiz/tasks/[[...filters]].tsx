@@ -11,6 +11,7 @@ import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import * as yup from 'yup'
 
 import Layout from '../../../components/Layout'
@@ -19,7 +20,6 @@ import { Task } from '../../../components/TaskCard'
 import tasksData from '../../../data/tasks.json'
 import * as tasksGroupDtoMapper from '../../../lib/mappers/tasks-group-dto-mapper'
 import { getLogger } from '../../../logging/log-util'
-import { useRouter } from 'next/router'
 
 const log = getLogger('quiz/tasks/[filters].tsx')
 
@@ -50,7 +50,6 @@ interface TasksProps {
 }
 
 const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
-
   console.log(filters)
 
   const { t } = useTranslation('quiz/tasks')
@@ -62,7 +61,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
   function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
     if (!filters) filters = {}
     if (e.target.checked) filters.tags = [...(filters?.tags ?? []), e.target.value]
-    else filters.tags = (filters?.tags ?? []).filter(tag=>tag!==e.target.value)
+    else filters.tags = (filters?.tags ?? []).filter((tag) => tag !== e.target.value)
     const encodedFilters = encodeURIComponent(btoa(JSON.stringify(filters)))
     router.push(`/quiz/tasks/${encodedFilters}`)
   }
