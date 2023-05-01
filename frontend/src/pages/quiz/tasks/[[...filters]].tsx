@@ -1,7 +1,11 @@
 import { FC } from 'react'
+import React from 'react'
 
+import { ExpandMore, FilterList } from '@mui/icons-material'
+import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked'
+import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
 import RefreshIcon from '@mui/icons-material/Refresh'
-import { Button } from '@mui/material'
+import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton } from '@mui/material'
 import { isEmpty } from 'lodash'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
@@ -47,6 +51,18 @@ interface TasksProps {
 const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
   const { t } = useTranslation('quiz/tasks')
 
+  let [expanded, setExpanded] = React.useState<boolean>(false)
+  let [tagsToFilter, setTagToFilter] = React.useState<string[]>([])
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
+    if (e.target.checked) setTagToFilter([...tagsToFilter, e.target.value])
+    else setTagToFilter(tagsToFilter.filter((tag) => tag !== e.target.value))
+  }
+
+  function filterTasks(tasks: Task[]) {
+    return tasks.filter((task) => !tagsToFilter.length || task.tags.some((tag) => tagsToFilter.includes(tag.code)))
+  }
+
   return (
     <Layout>
       <div className="grid gap-6 lg:grid-cols-12">
@@ -63,37 +79,60 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
               {t('restart-quiz')}
             </Button>
           </div>
-          <p>Answers:</p>
-          <ul className="mb-4 list-disc space-y-2 pl-7">
-            {filters?.answers?.map((answer) => (
-              <li key={answer}>{answer}</li>
-            ))}
-          </ul>
-          <p>Tags:</p>
-          <ul className="list-disc space-y-2 pl-7">
-            {filters?.tags?.map((tag) => (
-              <li key={tag}>{tag}</li>
-            ))}
-          </ul>
+          <div className="mt-2">
+            <div className="mb-2 flex items-center justify-between border-b">
+              <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
+              <div className="text-2xl md:hidden">{t('your-retirement-checklist')}</div>
+              <IconButton
+                color="primary"
+                onClick={() => setExpanded(!expanded)}
+                aria-expanded={expanded}
+                aria-label={t('show-filters')}
+              >
+                <ExpandMore className="hidden md:block" />
+                <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f] md:hidden" />
+              </IconButton>
+            </div>
+            <Collapse in={expanded}>
+              <FormGroup className="space-y-2" onChange={handleChange}>
+                {['life-in-retirement', 'managing-finances', 'public-pensions', 'other-benefits', 'time-sensitive'].map(
+                  (tag) => (
+                    <FormControlLabel
+                      key={tag}
+                      className="m-0 rounded-full bg-gray-200"
+                      control={
+                        <Checkbox
+                          value={tag}
+                          icon={<RadioButtonUncheckedIcon />}
+                          checkedIcon={<RadioButtonCheckedIcon />}
+                        />
+                      }
+                      label={t(tag)}
+                    />
+                  )
+                )}
+              </FormGroup>
+            </Collapse>
+          </div>
         </section>
         <section id="content" className="lg:col-span-8 xl:col-span-9">
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={beforeRetiring.title}
             subSectionTitle={beforeRetiring.subTitle}
-            tasks={beforeRetiring.tasks}
+            tasks={filterTasks(beforeRetiring.tasks)}
           />
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={applyingBenefits.title}
             subSectionTitle={applyingBenefits.subTitle}
-            tasks={applyingBenefits.tasks}
+            tasks={filterTasks(applyingBenefits.tasks)}
           />
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={receivingBenefits.title}
             subSectionTitle={receivingBenefits.subTitle}
-            tasks={receivingBenefits.tasks}
+            tasks={filterTasks(receivingBenefits.tasks)}
           />
         </section>
       </div>
