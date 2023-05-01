@@ -2,7 +2,9 @@ import { utility } from "../../support/Utility"
 
 describe('test id 133 - verify Button/Links - Landing page top section', () => {
   beforeEach(() => {
-    cy.visit('/en/home')
+    cy.visit('/en/home', {
+			onBeforeLoad: spyOnAddEventListener
+		}).then({ timeout: 10000 }, waitForAppStart)
   })
   
   it('language link - verify is visible, clickable, html attributes and url pathname.', () => {
