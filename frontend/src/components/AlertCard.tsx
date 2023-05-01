@@ -19,29 +19,24 @@ const textBgColors = {
   important: 'bg-[#D6F2FE]'
 }
 
-const iconClasses = {
+const icons = {
   tip: StarIcon,
   disclaimer: ErrorIcon,
-  important: VisibilityIcon
+  important: VisibilityIcon,
 }
 
-const AlertCard: FC<AlertCardProps> = ({
-  type,
-  children
-}) => {
+const AlertCard: FC<AlertCardProps> = ({ type, children }) => {
   const iconBgColor = iconBgColors[type ?? 'tip']
   const textBgColor = textBgColors[type ?? 'tip']
-  const IconClass = iconClasses[type ?? 'tip']
+  const Icon = icons[type ?? 'tip']
 
   return (
-    <div className="rounded-lg overflow-hidden relative">
-      <div className="grid lg:grid-cols-12 sm:grid-cols-1">
-        <div className={`${iconBgColor} lg:col-span-1 p-4 z-10 relative lg:flex sm:ps-4 lg:items-center lg:justify-left`}>
-          <div className="mx-auto">
-            <IconClass className="text-white transform scale-125" />
-          </div>
+    <div className="overflow-hidden rounded-lg">
+      <div className="flex flex-col md:flex-row">
+        <div className={`${iconBgColor} p-4 text-white md:flex md:flex-col md:justify-center`}>
+          <Icon fontSize="large" />
         </div>
-        <div className={`${textBgColor} lg:col-span-11 p-5`}>{children}</div>
+        <div className={`${textBgColor} p-6 md:p-8`}>{children}</div>
       </div>
     </div>
   )
