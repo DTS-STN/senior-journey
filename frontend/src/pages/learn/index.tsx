@@ -146,7 +146,7 @@ const Learn: FC = () => {
   }
 
   return (
-      <Layout breadCrumbItems={
+      <Layout breadCrumbItems={breadcrumbs &&
         breadcrumbs.map((breadcrumb, index) => ({
           text: t(`breadcrumbs.${index}.text`),
           link: t(`breadcrumbs.${index}.link`),

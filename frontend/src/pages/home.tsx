@@ -101,7 +101,9 @@ const Home: FC = () => {
   }
 
   return (
-    <Layout>
+    <Layout
+    breadCrumbItems={[]}
+    >
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
 

@@ -34,7 +34,7 @@ const FromWorkToRetirement: FC = () => {
       header={t('header')}
       learnMoreHeader={t('learn-more-heading')}
       learnMoreLinks={[]}
-      breadCrumbItems={
+      breadCrumbItems={breadcrumbs &&
         breadcrumbs.map((breadcrumb, index) => ({
           text: t(`breadcrumbs.${index}.text`),
           link: t(`breadcrumbs.${index}.link`),
