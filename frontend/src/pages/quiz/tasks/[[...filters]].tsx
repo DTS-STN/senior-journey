@@ -53,12 +53,12 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
   })
 
   return (
-    <Layout breadCrumbItems={
-      breadcrumbs.map((breadcrumb, index) => ({
-        text: t(`breadcrumbs.${index}.text`),
-        link: t(`breadcrumbs.${index}.link`),
-      }))
-    }>
+    <Layout breadCrumbItems={[
+      {
+        link: t("breadcrumbs.home.link"), 
+        text: t("breadcrumbs.home.text")
+      }
+    ]}>
       <div className="grid gap-6 lg:grid-cols-12">
         <section className="lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">

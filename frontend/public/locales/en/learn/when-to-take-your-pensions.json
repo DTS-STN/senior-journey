@@ -1,14 +1,14 @@
 {
-    "breadcrumbs": [
-        {
+    "breadcrumbs": {
+        "home":{
           "text":"Retirement Hub",
           "link":"/home"
         },
-        {
+        "learn":{
             "text":"Learn",
             "link":"/learn"
         }
-      ],
+    },
     "header": "When to take your pensions",
     "key-takeaways": {
         "heading": "Key Takeaways",

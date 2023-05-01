@@ -16,7 +16,7 @@ import { BreadcrumbItemType } from './Breadcrumb'
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
-  breadCrumbItems: BreadcrumbItemType[];
+  breadcrumbItems: BreadcrumbItemType[];
 }
 
 const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadCrumbItems }) => {

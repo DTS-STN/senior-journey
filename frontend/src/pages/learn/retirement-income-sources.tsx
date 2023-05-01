@@ -59,12 +59,16 @@ const RetirementIncomeSources: FC = () => {
       header={t('header')}
       learnMoreHeader={t('learn-more.header')}
       learnMoreLinks={learnMoreLinks}
-      breadCrumbItems={breadcrumbs &&
-        breadcrumbs.map((breadcrumb, index) => ({
-          text: t(`breadcrumbs.${index}.text`),
-          link: t(`breadcrumbs.${index}.link`),
-        }))
-      }
+      breadCrumbItems={[
+        {
+          link: t("breadcrumbs.home.link"), 
+          text: t("breadcrumbs.home.text")
+        },
+        {
+          link: t("breadcrumbs.learn.link"), 
+          text: t("breadcrumbs.learn.text")
+        },
+      ]}
     >
       <NextSeo title={t('header')} />
       <h2 id="overview" className="sr-only">

@@ -1,15 +1,15 @@
 {
     "header": "From work to retirement",
-    "breadcrumbs": [
-        {
+    "breadcrumbs": {
+        "home":{
           "text":"Retirement Hub",
           "link":"/home"
         },
-        {
+        "learn":{
             "text":"Learn",
             "link":"/learn"
         }
-      ],
+    },
     "key-takeaways": {
         "heading": "Key Takeaways",
         "list": {

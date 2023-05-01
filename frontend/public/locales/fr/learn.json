@@ -1,12 +1,12 @@
 {
   "header": "(FR) Learn",
   "explore": "(FR) Explore our content",
-  "breadcrumbs": [
-    {
+  "breadcrumbs": {
+    "home":{
       "text":"(FR) Retirement Hub",
       "link":"/home"
     }
-  ],
+  },
   "banner": {
     "title": "(FR) Not sure where to begin? Take the quiz!",
     "text": "(FR) Take our quiz and receive a personalized checklist to help guide you through retirement.",

@@ -2,6 +2,7 @@ import { FC } from 'react'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
+import { Link as MuiLink } from '@mui/material'
 
 export type BreadcrumbItemType = {
     text: string;
@@ -16,46 +17,24 @@ export interface BreadcrumbProps {
 export const Breadcrumb: FC<BreadcrumbProps> = ({ id, items }) => {
   const { t } = useTranslation('common')
   return (
-    <section className="container mx-auto">
     <nav aria-label="breadcrumbs" id={id}>
-      <ul className="block text-blue-link font-body">
-      <li
-        key={`list-canada`}
-        className={`inline-block w-100 pb-4 sm:pb-0`}
-        >
-          <Link
-          href={t('header.goc-link')}
-          className="font-body hover:text-blue-hover text-blue-link underline"
-          >
+    <ul className="text-sm">
+      <li className="inline-block">
+        <MuiLink href={t('header.goc-link')} color="primary">
           {t('goc-site')}
-          </Link>
-          {items && items.length > 0 && (
-            <NavigateNextIcon className='mx-2' />
-          )}
+        </MuiLink>
+        {(items?.length ?? 0) > 0 && <NavigateNextIcon className="mx-1 text-black/60" />}
       </li>
-        {items
-          ? items.map((item, index) => {
-              return (
-                <li
-                  key={`list-${index}`}
-                  className={`inline-block w-100 pb-4 sm:pb-0`}
-                >
-                  <Link
-                    href={item.link}
-                    className="font-body hover:text-blue-hover text-blue-link underline"
-                  >
-                    {item.text}
-                  </Link>
-                  {index < items.length - 1 && (
-                    <span className="mx-2 inline-block align-middle text-blue-link pr-2 pl-2">{'>'}</span>
-                  )}
-                </li>
-              );
-            })
-          : null}
-      </ul>
-    </nav>
-</section>
+      {items?.map(({ link, text }, index) => (
+        <li key={link} className="inline-block">
+          <MuiLink component={Link} href={link} color="primary">
+            {text}
+          </MuiLink>
+          {index < items.length - 1 && <NavigateNextIcon className="mx-1 text-black/60" />}
+        </li>
+      ))}
+    </ul>
+  </nav>
   )
 }
 
