@@ -59,10 +59,6 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
     else setTagToFilter(tagsToFilter.filter((tag) => tag !== e.target.value))
   }
 
-  function filterTasks(tasks: Task[]) {
-    return tasks.filter((task) => !tagsToFilter.length || task.tags.some((tag) => tagsToFilter.includes(tag.code)))
-  }
-
   return (
     <Layout>
       <div className="grid gap-6 lg:grid-cols-12">
@@ -120,19 +116,19 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
             linksHeader={t('links-header')}
             sectionTitle={beforeRetiring.title}
             subSectionTitle={beforeRetiring.subTitle}
-            tasks={filterTasks(beforeRetiring.tasks)}
+            tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
           />
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={applyingBenefits.title}
             subSectionTitle={applyingBenefits.subTitle}
-            tasks={filterTasks(applyingBenefits.tasks)}
+            tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
           />
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={receivingBenefits.title}
             subSectionTitle={receivingBenefits.subTitle}
-            tasks={filterTasks(receivingBenefits.tasks)}
+            tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
           />
         </section>
       </div>
