@@ -122,13 +122,13 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
             linksHeader={t('links-header')}
             sectionTitle={applyingBenefits.title}
             subSectionTitle={applyingBenefits.subTitle}
-            tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
+            tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
           />
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={receivingBenefits.title}
             subSectionTitle={receivingBenefits.subTitle}
-            tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
+            tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, { tags: tagsToFilter }))}
           />
         </section>
       </div>
