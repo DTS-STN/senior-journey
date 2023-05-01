@@ -12,22 +12,14 @@ const Question4 = ({ values, setFieldValue }: QuestionProps) => {
   let { t } = useTranslation('learn')
   const [value, setValue] = React.useState('')
 
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    answerId: string
-  ) => {
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue(
-      'retirementTimeframe',
-      values['retirementTimeframe'] === answerId ? '' : (answerId ?? '')
-    )
+    setFieldValue('retirementTimeframe', values['retirementTimeframe'] === answerId ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">
-        {t('quiz.questions.question-4.title')}
-      </h5>
+      <h5 className="font-display text-2xl font-light">{t('quiz.questions.question-4.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -50,42 +42,42 @@ const Question4 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="CanadaFT"
+          value="canada-ft"
           aria-label={t('quiz.questions.question-4.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === 'CanadaFT'}
+          selected={values['retirementTimeframe'] === 'canada-ft'}
         >
           {t('quiz.questions.question-4.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="CanadaPT6OrMore"
+          value="canada-pt-60-or-more"
           aria-label={t('quiz.questions.question-4.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === 'CanadaPT6OrMore'}
+          selected={values['retirementTimeframe'] === 'canada-pt-60-or-more'}
         >
           {t('quiz.questions.question-4.option-2')}
         </ToggleButton>
         <ToggleButton
-          value="CanadaPTLessThan6"
+          value="canada-pt-less-than-60"
           aria-label={t('quiz.questions.question-4.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === 'CanadaPTLessThan6'}
+          selected={values['retirementTimeframe'] === 'canada-pt-less-than-60'}
         >
           {t('quiz.questions.question-4.option-3')}
         </ToggleButton>
         <ToggleButton
-          value="OutsideCanada"
+          value="outside-canada"
           aria-label={t('quiz.questions.question-4.option-4')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === 'OutsideCanada'}
+          selected={values['retirementTimeframe'] === 'outside-canada'}
         >
           {t('quiz.questions.question-4.option-4')}
         </ToggleButton>
         <ToggleButton
-          value="UnsureRetirementLiving"
+          value="unsure-retirement-living"
           aria-label={t('quiz.questions.question-4.option-5')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === 'UnsureRetirementLiving'}
+          selected={values['retirementTimeframe'] === 'unsure-retirement-living'}
         >
           {t('quiz.questions.question-4.option-5')}
         </ToggleButton>

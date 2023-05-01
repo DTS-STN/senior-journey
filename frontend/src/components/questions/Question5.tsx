@@ -12,25 +12,15 @@ const Question5 = ({ values, setFieldValue }: QuestionProps) => {
   let { t } = useTranslation('learn')
   const [value, setValue] = React.useState('')
 
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    answerId: string
-  ) => {
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue(
-      'hasExtraIncome',
-      values['hasExtraIncome'] === answerId ? '' : (answerId ?? '')
-    )
+    setFieldValue('hasExtraIncome', values['hasExtraIncome'] === answerId ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">
-        {t('quiz.questions.question-5.title')}
-      </h5>
-      <p className="mt-5 font-display text-sm font-light">
-        {t('quiz.questions.question-5.subtitle')}
-      </p>
+      <h5 className="font-display text-2xl font-light">{t('quiz.questions.question-5.title')}</h5>
+      <p className="mt-5 font-display text-sm font-light">{t('quiz.questions.question-5.subtitle')}</p>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -53,26 +43,26 @@ const Question5 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="NoIncome"
+          value="no-income"
           aria-label={t('quiz.questions.question-5.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === 'NoIncome'}
+          selected={values['hasExtraIncome'] === 'no-income'}
         >
           {t('quiz.questions.question-5.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="YesIncome"
+          value="yes-income"
           aria-label={t('quiz.questions.question-5.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === 'YesIncome'}
+          selected={values['hasExtraIncome'] === 'yes-income'}
         >
           {t('quiz.questions.question-5.option-2')}
         </ToggleButton>
         <ToggleButton
-          value="UnsureIncome"
+          value="unsure-income"
           aria-label={t('quiz.questions.question-5.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === 'UnsureIncome'}
+          selected={values['hasExtraIncome'] === 'unsure-income'}
         >
           {t('quiz.questions.question-5.option-3')}
         </ToggleButton>

@@ -17,12 +17,14 @@ import {
   useTheme,
 } from '@mui/material'
 import { FormikWizard } from 'formik-wizard-form'
+import { compact } from 'lodash'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import Layout from '../../components/Layout'
 import QuizLandingPage from '../../components/QuizLandingPage'
@@ -34,6 +36,7 @@ import Question5 from '../../components/questions/Question5'
 import Question6 from '../../components/questions/Question6'
 import Question7 from '../../components/questions/Question7'
 import Question8 from '../../components/questions/Question8'
+import { Filters } from '../quiz/tasks/[[...filters]]'
 
 // TODO: map form values to "answer-id" from locales/(en/fr)/quiz/tasks/task-list.json once it has been finalized
 export interface FormValues {
@@ -76,12 +79,7 @@ const QuizConfirmation: FC<QuizConfirmationProps> = ({
       </DialogContent>
       <DialogActions className="block">
         <div className="grid gap-2 md:grid-cols-2 md:gap-6">
-          <Button
-            onClick={handleConfirmationCancel}
-            variant="outlined"
-            size="large"
-            fullWidth
-          >
+          <Button onClick={handleConfirmationCancel} variant="outlined" size="large" fullWidth>
             {noText}
           </Button>
           <Button onClick={handleCloseModal} size="large" fullWidth>
@@ -94,6 +92,7 @@ const QuizConfirmation: FC<QuizConfirmationProps> = ({
 }
 
 const Learn: FC = () => {
+  const router = useRouter()
   const { t } = useTranslation('learn')
   const theme = useTheme()
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
@@ -125,9 +124,6 @@ const Learn: FC = () => {
     setShowConfirmation(false)
   }
 
-  const [, setFinalValues] = useState({})
-  const [, setFinished] = useState(false)
-
   const initialValues: FormValues = {
     retirementAge: '',
     single: '',
@@ -140,7 +136,7 @@ const Learn: FC = () => {
     hasExtraIncome: '',
     legalStatus: '',
     yearsInCanada: '',
-    hasCppDisabilityBenefits: ''
+    hasCppDisabilityBenefits: '',
   }
 
   return (
@@ -150,22 +146,11 @@ const Learn: FC = () => {
       <section className="rounded-3xl bg-[#f5f5f5] ">
         <div className="flex flex-col items-center md:flex-row-reverse">
           <div className="m-12 w-1/2 md:w-1/3 lg:w-1/5">
-            <Image
-              src="/assets/learn-banner.svg"
-              width={742}
-              height={548}
-              sizes="100%"
-              alt=""
-              priority
-            />
+            <Image src="/assets/learn-banner.svg" width={742} height={548} sizes="100%" alt="" priority />
           </div>
           <div className="my-2 px-6 pb-10 text-center md:w-2/3 md:pb-10 md:pl-12 md:pt-10 md:text-left lg:w-4/5 lg:pb-4">
-            <h2 className="mb-4 text-left font-display text-5xl font-bold text-primary-700">
-              {t('banner.title')}
-            </h2>
-            <p className="pb-4 text-left text-lg font-normal md:w-4/5">
-              {t('banner.text')}
-            </p>
+            <h2 className="mb-4 text-left font-display text-5xl font-bold text-primary-700">{t('banner.title')}</h2>
+            <p className="pb-4 text-left text-lg font-normal md:w-4/5">{t('banner.text')}</p>
             <Button size="large" onClick={handleOpenModal}>
               {t('banner.quiz')}
             </Button>
@@ -194,8 +179,10 @@ const Learn: FC = () => {
           <FormikWizard
             initialValues={initialValues}
             onSubmit={(values) => {
-              setFinalValues(values)
-              setFinished(true)
+              const filters: Filters = { answers: compact(Object.values<string>(values)) }
+              // Encodes a js object as a url-safe base64 string.
+              const encodedFilters = encodeURIComponent(btoa(JSON.stringify(filters)))
+              router.push(`/quiz/tasks/${encodedFilters}`)
             }}
             validateOnNext
             activeStepIndex={0}
@@ -226,36 +213,24 @@ const Learn: FC = () => {
               },
               {
                 component: Question8,
-              }
+              },
             ]}
           >
-            {({
-              currentStepIndex,
-              renderComponent,
-              handlePrev,
-              handleNext,
-              isNextDisabled,
-              isPrevDisabled,
-            }) => {
+            {({ currentStepIndex, renderComponent, handlePrev, handleNext, isNextDisabled, isPrevDisabled }) => {
               return (
-                <div className='min-h-[850px] flex flex-col'>
+                <div className="flex min-h-[850px] flex-col">
                   <DialogTitle className="text-right">
-                    <Button
-                      variant="text"
-                      onClick={handleCloseModal}
-                      startIcon={<CloseIcon />}
-                      size="large"
-                    >
+                    <Button variant="text" onClick={handleCloseModal} startIcon={<CloseIcon />} size="large">
                       {t('quiz.navigation.close')}
                     </Button>
                   </DialogTitle>
-                  <DialogContent className='flex flex-col'>
+                  <DialogContent className="flex flex-col">
                     <h2 className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                       {t('quiz.navigation.title')}
                     </h2>
                     <div className="mb-5">{renderComponent()}</div>
                     {(currentStepIndex ?? 0) > 0 && (
-                      <div className='mt-auto'>
+                      <div className="mt-auto">
                         <MobileStepper
                           variant="progress"
                           steps={9}
@@ -275,13 +250,7 @@ const Learn: FC = () => {
                   </DialogContent>
                   <DialogActions className="block">
                     {currentStepIndex === 0 ? (
-                      <Button
-                        onClick={handleNext}
-                        disabled={isNextDisabled}
-                        size="large"
-                        fullWidth
-                        autoFocus
-                      >
+                      <Button onClick={handleNext} disabled={isNextDisabled} size="large" fullWidth autoFocus>
                         {t('quiz.navigation.start')}
                       </Button>
                     ) : (
@@ -296,15 +265,8 @@ const Learn: FC = () => {
                           >
                             {t('quiz.navigation.previous')}
                           </Button>
-                          <Button
-                            onClick={handleNext}
-                            disabled={isNextDisabled}
-                            size="large"
-                            fullWidth
-                          >
-                            {currentStepIndex === 8
-                              ? t('quiz.navigation.submit')
-                              : t('quiz.navigation.next')}
+                          <Button onClick={handleNext} disabled={isNextDisabled} size="large" fullWidth>
+                            {currentStepIndex === 8 ? t('quiz.navigation.submit') : t('quiz.navigation.next')}
                           </Button>
                         </div>
                       </>
@@ -320,9 +282,7 @@ const Learn: FC = () => {
       <section>
         {sections.map((section, index) => (
           <div key={index}>
-            <h2 className="h2 text-primary-700">
-              {t(`sections.${index}.title`)}
-            </h2>
+            <h2 className="h2 text-primary-700">{t(`sections.${index}.title`)}</h2>
             <p className="mb-8">{t(`sections.${index}.body`)}</p>
             <div className="grid gap-6 md:grid-cols-2 xl:md:grid-cols-3">
               {section.cards.map((_, cardIndex) => (
@@ -343,15 +303,10 @@ const Learn: FC = () => {
                       <p className="mb-2 font-display text-sm font-bold">
                         {t(`sections.${index}.cards.${cardIndex}.read`)}
                       </p>
-                      <h3
-                        className="mb-2 font-display text-xl font-bold"
-                        id={`section-${index}-card-${cardIndex}`}
-                      >
+                      <h3 className="mb-2 font-display text-xl font-bold" id={`section-${index}-card-${cardIndex}`}>
                         {t(`sections.${index}.cards.${cardIndex}.title`)}
                       </h3>
-                      <p className="m-0 text-black/60">
-                        {t(`sections.${index}.cards.${cardIndex}.body`)}
-                      </p>
+                      <p className="m-0 text-black/60">{t(`sections.${index}.cards.${cardIndex}.body`)}</p>
                     </CardContent>
                   </CardActionArea>
                 </Card>
@@ -367,10 +322,7 @@ const Learn: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', [
-        'common',
-        'learn',
-      ])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'])),
     },
   }
 }

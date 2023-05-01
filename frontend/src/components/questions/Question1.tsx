@@ -12,22 +12,14 @@ const Question1 = ({ values, setFieldValue }: QuestionProps) => {
   let { t } = useTranslation('learn')
   const [value, setValue] = React.useState('')
 
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    answerId: string
-  ) => {
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue(
-      'retirementAge',
-      values['retirementAge'] === answerId ? '' : (answerId ?? '')
-    )
+    setFieldValue('retirementAge', values['retirementAge'] === answerId ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">
-        {t('quiz.questions.question-1.title')}
-      </h5>
+      <h5 className="font-display text-2xl font-light">{t('quiz.questions.question-1.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -50,50 +42,50 @@ const Question1 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="Pre60"
+          value="pre-60"
           aria-label={t('quiz.questions.question-1.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === 'Pre60'}
+          selected={values['retirementAge'] === 'pre-60'}
         >
           {t('quiz.questions.question-1.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="Between60and65"
+          value="between-60-and-65"
           aria-label={t('quiz.questions.question-1.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === 'Between60and65'}
+          selected={values['retirementAge'] === 'between-60-and-65'}
         >
           {t('quiz.questions.question-1.option-2')}
         </ToggleButton>
         <ToggleButton
-          value="At65"
+          value="at-65"
           aria-label={t('quiz.questions.question-1.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === 'At65'}
+          selected={values['retirementAge'] === 'at-65'}
         >
           {t('quiz.questions.question-1.option-3')}
         </ToggleButton>
         <ToggleButton
-          value="Between65and70"
+          value="between-65-and-70"
           aria-label={t('quiz.questions.question-1.option-4')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === 'Between65and70'}
+          selected={values['retirementAge'] === 'between-65-and-70'}
         >
           {t('quiz.questions.question-1.option-4')}
         </ToggleButton>
         <ToggleButton
-          value="After70"
+          value="after-70"
           aria-label={t('quiz.questions.question-1.option-5')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === 'After70'}
+          selected={values['retirementAge'] === 'after-70'}
         >
           {t('quiz.questions.question-1.option-5')}
         </ToggleButton>
         <ToggleButton
-          value="UnsureRetirementAge"
+          value="unsure-retirement-age"
           aria-label={t('quiz.questions.question-1.option-6')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === 'UnsureRetirementAge'}
+          selected={values['retirementAge'] === 'unsure-retirement-age'}
         >
           {t('quiz.questions.question-1.option-6')}
         </ToggleButton>
