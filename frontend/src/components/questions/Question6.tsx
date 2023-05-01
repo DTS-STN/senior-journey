@@ -12,22 +12,14 @@ const Question6 = ({ values, setFieldValue }: QuestionProps) => {
   let { t } = useTranslation('learn')
   const [value, setValue] = React.useState('')
 
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    answerId: string
-  ) => {
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue(
-      'legalStatus',
-      values['legalStatus'] === answerId ? '' : (answerId ?? '')
-    )
+    setFieldValue('legalStatus', values['legalStatus'] === answerId ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">
-        {t('quiz.questions.question-6.title')}
-      </h5>
+      <h5 className="font-display text-2xl font-light">{t('quiz.questions.question-6.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -50,34 +42,34 @@ const Question6 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="StatusCitizen"
+          value="status-citizen"
           aria-label={t('quiz.questions.question-6.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'StatusCitizen'}
+          selected={values['legalStatus'] === 'status-citizen'}
         >
           {t('quiz.questions.question-6.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="StatusFirstNation"
+          value="status-first-nation"
           aria-label={t('quiz.questions.question-6.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'StatusFirstNation'}
+          selected={values['legalStatus'] === 'status-first-nation'}
         >
           {t('quiz.questions.question-6.option-2')}
         </ToggleButton>
         <ToggleButton
-          value="StatusSponsored"
+          value="status-sponsored"
           aria-label={t('quiz.questions.question-6.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'StatusSponsored'}
+          selected={values['legalStatus'] === 'status-sponsored'}
         >
           {t('quiz.questions.question-6.option-3')}
         </ToggleButton>
         <ToggleButton
-          value="StatusOther"
+          value="status-other"
           aria-label={t('quiz.questions.question-6.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'StatusOther'}
+          selected={values['legalStatus'] === 'status-other'}
         >
           {t('quiz.questions.question-6.option-3')}
         </ToggleButton>

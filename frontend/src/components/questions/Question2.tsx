@@ -1,12 +1,6 @@
 import React from 'react'
 
-import {
-  Checkbox,
-  FormControlLabel,
-  FormGroup,
-  ToggleButton,
-  ToggleButtonGroup,
-} from '@mui/material'
+import { Checkbox, FormControlLabel, FormGroup, ToggleButton, ToggleButtonGroup } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
 type QuestionProps = {
@@ -18,20 +12,14 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
   let { t } = useTranslation('learn')
   const [value, setValue] = React.useState('')
 
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    answerId: string
-  ) => {
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue(
-      'hasChildren',
-      values['hasChildren'] === answerId ? '' : (answerId ?? '')
-    )
+    setFieldValue('hasChildren', values['hasChildren'] === answerId ? '' : answerId ?? '')
   }
 
   function handleCheckbox(e: React.ChangeEvent<any>, field: string) {
     let answerId = e.target.value
-    setFieldValue(field, values[field] ? '' : (answerId ?? ''))
+    setFieldValue(field, values[field] ? '' : answerId ?? '')
   }
 
   return (
@@ -41,8 +29,8 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
         <FormControlLabel
           control={
             <Checkbox
-              value="Single"
-              checked={values['single'] === 'Single'}
+              value="single"
+              checked={values['single'] === 'single'}
               onChange={(e) => handleCheckbox(e, 'single')}
             />
           }
@@ -51,10 +39,8 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
         <FormControlLabel
           control={
             <Checkbox
-              value="MarriedOrCL"
-              checked={
-                values['marriedOrCommonLaw'] === 'MarriedOrCL'
-              }
+              value="married-or-cl"
+              checked={values['marriedOrCommonLaw'] === 'married-or-cl'}
               onChange={(e) => handleCheckbox(e, 'marriedOrCommonLaw')}
             />
           }
@@ -63,10 +49,8 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
         <FormControlLabel
           control={
             <Checkbox
-              value="DivorcedOrSeparated"
-              checked={
-                values['divorcedOrSeparated'] === 'DivorcedOrSeparated'
-              }
+              value="divorced-or-separated"
+              checked={values['divorcedOrSeparated'] === 'divorced-or-separated'}
               onChange={(e) => handleCheckbox(e, 'divorcedOrSeparated')}
             />
           }
@@ -75,17 +59,15 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
         <FormControlLabel
           control={
             <Checkbox
-              value="Widowed"
-              checked={values['widowed'] === 'Widowed'}
+              value="widowed"
+              checked={values['widowed'] === 'widowed'}
               onChange={(e) => handleCheckbox(e, 'widowed')}
             />
           }
           label={t('quiz.questions.question-2.question-1.option-4')}
         />
       </FormGroup>
-      <h5 className="h5 mb-2">
-        {t('quiz.questions.question-2.question-2.title')}
-      </h5>
+      <h5 className="h5 mb-2">{t('quiz.questions.question-2.question-2.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -108,18 +90,18 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="YesKids"
+          value="yes-kids"
           aria-label={t('quiz.questions.question-2.question-2.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasChildren'] === 'YesKids'}
+          selected={values['hasChildren'] === 'yes-kids'}
         >
           {t('quiz.questions.question-2.question-2.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="NoKids"
+          value="no-kids"
           aria-label={t('quiz.questions.question-2.question-2.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasChildren'] === 'NoKids'}
+          selected={values['hasChildren'] === 'no-kids'}
         >
           {t('quiz.questions.question-2.question-2.option-2')}
         </ToggleButton>
