@@ -14,7 +14,7 @@
       "paragraph-4": "(FR) The CPP pension amount you'll receive depends on how much and for how long you have contributed to the Plan, and at what age you decide to take your pension. The amount for CPP is increased for inflation once a year every January.",
       "paragraph-5": {
         "content": "(FR) For the most recent amounts paid to pensioners, <a>visit this CPP payment amounts page</a>.",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/amount.html"
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/montant-prestation.html"
       },
       "paragraph-6": "(FR) To learn more, visit the <Link>CPP Retirement Pension page.</Link>"
     },
@@ -72,7 +72,7 @@
       "list": {
         "income-below-maximum": {
           "content": "(FR) your income is <a>below the maximum annual income threshold for the GIS based on your marital status</a>.",
-          "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/benefit-amount.html"
+          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
         },
         "live-canada": "(FR) live in Canada",
         "receive-pension": "(FR) receive the OAS pension"
@@ -81,11 +81,11 @@
       "paragraph-2": "(FR) The amount of GIS you can get depends on your income in the previous year and marital status. If you delay the OAS pension, you cannot receive the GIS until you start receiving the OAS pension.",
       "paragraph-3": {
         "content": "(FR) To learn more, visit the <a>GIS eligibility page</a>.",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html#gc-document-nav"
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html"
       },
       "paragraph-4": {
         "content": "(FR) To estimate the amount of GIS you may get, visit the <a>Old Age Security benefits estimator</a>",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
       }
     },
     "header": "(FR) Old Age Security (OAS) program",
@@ -98,21 +98,21 @@
       "header": "(FR) OAS pension",
       "paragraph-1": {
         "content": "(FR) The OAS pension is a monthly payment paid to eligible seniors.<br />To see if you qualify for the OAS pension, visit <a>this OAS Pension page</a>.",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/eligibility.html"
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/admissibilite.html"
       },
       "paragraph-2": {
         "content": "(FR) The amount you will get from the OAS pension depends on how long you have lived in Canada after the age of 18. You will be eligible for the maximum amount if you lived in Canada for 40 years or more after the age of 18. You can qualify for the OAS pension, if you have <a>lived or worked in another country that has a social security agreement with Canada</a>.",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international.html"
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html"
       },
       "paragraph-3": {
         "content": "(FR) The amount for OAS is updated every 3 months. For the most recent amount, visit this <a>OAS payment amounts page</a>.",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/benefit-amount.html"
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html"
       },
       "paragraph-4": "(FR) You can begin receiving your OAS pension at age 65, or you may choose to delay it up to 60 months, until age 70, for a higher monthly pension each month you delay. For more information on deciding when to take your government pensions, visit our learning page!",
       "paragraph-5": {
         "content": "(FR) To learn more about OAS pension, visit <a1>the OAS Pension page</a1>.<br />To estimate the amount of OAS pension you may get, visit the <a2>Old Age Security benefits estimator</a2>",
-        "link-1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html",
-        "link-2": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
+        "link-1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse.html",
+        "link-2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
       }
     },
     "overview": "(FR) The Old Age Security (OAS) program provides benefits including the OAS pension and the Guaranteed Income Supplement (GIS) to seniors. You don't have to contribute to receive benefits from the OAS program. You can receive OAS benefits even if you're working or have never worked in Canada."

@@ -50,9 +50,27 @@
       "content": "(FR) To compare the impact of the PRBs on your retirement pension, <a>visit our example.</a>",
       "link": "https://google.com"
     },
-    "content-five": {
-      "content": "(FR) <a>To learn more about the Post-Retirement Benefits visit the site.</a>",
-      "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement/eligibility.html"
+    "combine-job-pensions-income": {
+        "heading": "(FR) How to combine income from jobs and pensions",
+        "content-one": "(FR) Retiring from work and claiming your pensions are two different things. If you have low income going into retirement and you struggle to make ends meet, you might want to claim your pensions earlier, especially your OAS pension, as it will give you access to the Guaranteed Income Supplement. If you have enough income from work and savings, when you retire, you may consider two options:",
+        "sub-heading-one": "(FR) Option 1: Start collecting your pensions early",
+        "content-two": "(FR) You may start collecting your pensions during your work or immediately after retiring from work. This will give you smaller pensions to rely upon in the future, but more income from all sources in the beginning of retirement.",
+        "content-three": {
+            "content": "(FR) If you become a CPP pensioner and continue to work, you will still be making contributions to the CPP, at least until age 65. Your CPP contributions will go toward <a>Post-Retirement Benefits</a> (PRBs), which will increase your retirement income. Each additional PRB will be paid to you automatically from January of the next year, after additional contributions are made. The PRBs will be reduced, if you are younger than age 65, or increased, if you are older than age 65.",
+            "link": "https://google.com"
+        },
+        "smart-tip": "(FR) <strong>Smart tip:</strong> Taking your CPP pension earlier will be lower, even with PRBs, than if you delay taking your CPP retirement pension until 65 or later.",
+        "content-four": {
+            "content": "(FR) To compare the impact of the PRBs on your retirement pension, <a>visit our example.</a>",
+            "link": "https://google.com"
+        },
+        "content-five": {
+            "content": "(FR) <a>To learn more about the Post-Retirement Benefits visit the site.</a>",
+            "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite/admissibilite.html"
+        },
+        "sub-heading-two": "(FR) Option 2: Delay your pensions",
+        "content-six": "(FR) You may delay your pensions up to age 70, and while you wait, you may use income from work or a portion of your savings. This option will draw down your savings more quickly but will increase the inflation-proof OAS and CPP pensions you will get each month for the rest of your life. By taking your CPP and OAS later, you could get up to $100,000 more in your life-time pension income from the public pensions, than if you start earlier. Your higher stable income from the CPP may prevent you becoming poor late in retirement.",
+        "disclaimer": "(FR) <strong>Disclaimer:</strong> This website does not provide personal financial advice. Options and discussions presented provide general information only. The ultimate decision about your pensions should be made based on your personal life circumstances. If you are not certain which decision is best for you, seek professional financial advice for your specific case."
     },
     "sub-heading-two": "(FR) Option 2: Delay your pensions",
     "content-six": "(FR) You may delay your pensions up to age 70, and while you wait, you may use income from work or a portion of your savings. This option will draw down your savings more quickly but will increase the inflation-proof OAS and CPP pensions you will get each month for the rest of your life. By taking your CPP and OAS later, you could get up to $100,000 more in your life-time pension income from the public pensions, than if you start earlier. Your higher stable income from the CPP may prevent you becoming poor late in retirement.",

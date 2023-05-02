@@ -48,7 +48,7 @@
         "list-five": {
             "item-1": {
                 "content": "Your income is low, you have no other sources of income, and little or no retirement savings. You may qualify for the <a>Guaranteed Income Supplement (GIS)</a>.",
-                "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/benefit-amount.html"
+                "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
             },
             "item-2": "You believe that you may live as long as your parents did.",
             "item-3": "You are unwilling or unable to work past age 65",
@@ -59,7 +59,7 @@
             "item-1": "Your income in retirement is average or above average. You do not qualify for the GIS.",
             "item-2": {
                 "content": "Your income is below the <a>OAS recovery tax threshold</a>.",
-                "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html"
+                "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html"
             },
             "item-3": "You believe that you may live as long as your parents did, or even longer",
             "item-4": "You may be still working"
@@ -68,7 +68,7 @@
         "list-seven": {
             "item-1": {
                 "content": "Your income is above the <a>OAS recovery tax threshold</a> , or your OAS pension could be fully recovered",
-                "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html"
+                "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html"
             },
             "item-2": "You believe that you may live longer than your parents did",
             "item-3": "You may be still working with high earnings"
