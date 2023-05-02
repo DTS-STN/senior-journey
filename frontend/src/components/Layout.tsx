@@ -107,7 +107,6 @@ const Layout: FC<LayoutProps> = ({ children }) => {
             linkText: t('footer.menu.man'),
           },
         ]}
-        footerTopOfPage={t('footer.top-of-page')}
       />
     </div>
   )
