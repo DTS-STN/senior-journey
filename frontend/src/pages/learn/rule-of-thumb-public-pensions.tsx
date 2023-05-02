@@ -1,24 +1,15 @@
-import { FC, PropsWithChildren } from 'react'
-
+import { FC } from 'react'
 import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 
+
 import {
   LearnPageLayout
 } from '../../components/LearnPageLayout'
-
-interface ImportantCardProps extends PropsWithChildren { }
-const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
-  <p className="rounded-lg bg-[#ffe8a3]/[.3] p-5">{children}</p>
-)
-
-interface DisclaimerCardProps extends PropsWithChildren { }
-const DisclaimerCard: FC<DisclaimerCardProps> = ({ children }) => (
-  <p className="rounded-lg bg-[#e9f1ff]/[.7] p-5">{children}</p>
-)
+import AlertCard from '../../components/AlertCard'
 
 const RuleOfThumbPublicPensions: FC = () => {
   const { t } = useTranslation('learn/rule-of-thumb-public-pensions')
@@ -40,12 +31,12 @@ const RuleOfThumbPublicPensions: FC = () => {
         <li>{t('key-takeaways.list-one.item-4')}</li>
       </ul>
       <p>{t('key-takeaways.content-one')}</p>
-      <ImportantCard>
+      <AlertCard type='important'>
         <Trans
           ns="learn/rule-of-thumb-public-pensions"
           i18nKey="key-takeaways.smart-tip"
         />
-      </ImportantCard>
+      </AlertCard>
       <p>{t('key-takeaways.content-two')}</p>
       <p>{t('key-takeaways.content-three')}</p>
       <p>{t('key-takeaways.content-four')}</p>
@@ -134,12 +125,12 @@ const RuleOfThumbPublicPensions: FC = () => {
         <li>{t('key-takeaways.list-seven.item-3')}</li>
       </ul>
 
-      <DisclaimerCard>
+      <AlertCard type='disclaimer'>
         <Trans
           ns="learn/rule-of-thumb-public-pensions"
           i18nKey="key-takeaways.disclaimer"
         />
-      </DisclaimerCard>
+      </AlertCard>
     </LearnPageLayout>
   )
 }
