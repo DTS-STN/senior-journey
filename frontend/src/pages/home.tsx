@@ -1,13 +1,9 @@
-import React, { FC, useId, useState } from 'react'
+import React, { FC, useState } from 'react'
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 import {
   Button,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
   Divider,
   List,
   ListItem,
@@ -59,23 +55,6 @@ interface TabData {
   }
   linksTitle?: string
   links?: Array<TabLinkData>
-}
-
-const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({ src, href, linkText, text }) => {
-  const id = useId()
-  return (
-    <Card>
-      <CardActionArea component={Link} href={href} aria-describedby={`${id}-title`}>
-        <CardMedia component="img" alt="" image={src} className="h-72 bg-secondary-50 object-contain" />
-        <CardContent>
-          <h3 className="mb-2 font-display text-xl font-bold" id={`${id}-title`}>
-            {linkText}
-          </h3>
-          <p className="m-0 text-black/60">{text}</p>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-  )
 }
 
 const Home: FC = () => {
@@ -222,28 +201,6 @@ const Home: FC = () => {
       </section>
 
       <Container>
-        <h2 className="h2 text-primary-700">{t('supporting-seniors.title')}</h2>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          <SupportingSeniorsCard
-            src="/assets/supporting-seniors-family-and-friends.svg"
-            href={t('supporting-seniors.cards.family-and-friends.href')}
-            linkText={t('supporting-seniors.cards.family-and-friends.link-text')}
-            text={t('supporting-seniors.cards.family-and-friends.text')}
-          />
-          <SupportingSeniorsCard
-            src="/assets/supporting-seniors-representatives.svg"
-            href={t('supporting-seniors.cards.representatives.href')}
-            linkText={t('supporting-seniors.cards.representatives.link-text')}
-            text={t('supporting-seniors.cards.representatives.text')}
-          />
-          <SupportingSeniorsCard
-            src="/assets/supporting-seniors-organizations.svg"
-            href={t('supporting-seniors.cards.organizations.href')}
-            linkText={t('supporting-seniors.cards.organizations.link-text')}
-            text={t('supporting-seniors.cards.organizations.text')}
-          />
-        </div>
-
         <h2 className="h2 text-primary-700">{t('contact-us.title')}</h2>
         <p className="mb-8">{t('contact-us.description')}</p>
         <Paper variant="outlined" className="mb-6 p-6">
