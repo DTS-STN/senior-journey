@@ -2,27 +2,22 @@ import { FC, ReactNode } from 'react'
 
 import { useTranslation } from 'next-i18next'
 
+import Container from './Container'
 import Footer from './Footer'
 import Header from './Header'
 
 export interface LayoutProps {
   children: ReactNode
+  contained?: boolean
 }
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout: FC<LayoutProps> = ({ children, contained }) => {
   const { t } = useTranslation('common')
   return (
     <div className="flex min-h-screen flex-col">
-      <Header
-        skipToMainText={t('header.skip-to-main')}
-        gocLink={t('header.goc-link')}
-      />
-      <main
-        role="main"
-        id="mainContent"
-        className="container mx-auto mt-5 flex-1 px-4 pb-8"
-      >
-        {children}
+      <Header skipToMainText={t('header.skip-to-main')} gocLink={t('header.goc-link')} />
+      <main role="main" id="mainContent" className="mt-5 flex-1 pb-8">
+        {contained ? <Container>{children}</Container> : <>{children}</>}
       </main>
 
       <Footer
@@ -107,10 +102,13 @@ const Layout: FC<LayoutProps> = ({ children }) => {
             linkText: t('footer.menu.man'),
           },
         ]}
-        footerTopOfPage={t('footer.top-of-page')}
       />
     </div>
   )
+}
+
+Layout.defaultProps = {
+  contained: true,
 }
 
 export default Layout

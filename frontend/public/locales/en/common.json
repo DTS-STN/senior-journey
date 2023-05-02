@@ -56,8 +56,7 @@
       "mobile-applications-url": "https://www.canada.ca/en/mobile.html",
       "social-media": "Social media",
       "social-media-url": "https://www.canada.ca/en/social.html"
-    },
-    "top-of-page": "Top of Page"
+    }
   },
   "found-errors_one": "The following error was found in the form:",
   "found-errors_other": "The following {{count}} errors were found in the form:",
