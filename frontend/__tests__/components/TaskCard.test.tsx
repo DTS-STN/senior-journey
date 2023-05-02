@@ -3,12 +3,12 @@ import React from 'react'
 import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
 
-import TaskCard, { Task } from '../../src/components/TaskCard'
+import TaskCard from '../../src/components/TaskCard'
+import { TaskDto } from '../../src/lib/types'
 
 describe('TaskCard', () => {
-  const task: Task = {
+  const task: TaskDto = {
     id: 1,
-    isTimeSensitive: true,
     title: 'task title en',
     description: 'task description en',
     links: [

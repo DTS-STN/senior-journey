@@ -3,13 +3,14 @@ import React from 'react'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 
-import TaskCard, { Task } from './TaskCard'
+import { TaskDto } from '../lib/types'
+import TaskCard from './TaskCard'
 
 interface NestedAccordionProps {
   linksHeader: string
   sectionTitle: string
   subSectionTitle: string
-  tasks: ReadonlyArray<Task>
+  tasks: ReadonlyArray<TaskDto>
 }
 
 const NestedAccordion: React.FC<NestedAccordionProps> = ({
