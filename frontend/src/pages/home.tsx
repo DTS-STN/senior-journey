@@ -16,6 +16,8 @@ import {
   Link as MuiLink,
   Paper,
   Tab,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
@@ -24,6 +26,7 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Container from '../components/Container'
 import Layout from '../components/Layout'
 
 export interface SupportingSeniorsCardProps {
@@ -46,6 +49,7 @@ interface TabBlockText {
 }
 
 interface TabData {
+  id: string
   title: string
   heading: string
   description: Array<TabBlockText>
@@ -57,31 +61,14 @@ interface TabData {
   links?: Array<TabLinkData>
 }
 
-const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({
-  src,
-  href,
-  linkText,
-  text,
-}) => {
+const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({ src, href, linkText, text }) => {
   const id = useId()
   return (
     <Card>
-      <CardActionArea
-        component={Link}
-        href={href}
-        aria-describedby={`${id}-title`}
-      >
-        <CardMedia
-          component="img"
-          alt=""
-          image={src}
-          className="h-72 bg-secondary-50 object-contain"
-        />
+      <CardActionArea component={Link} href={href} aria-describedby={`${id}-title`}>
+        <CardMedia component="img" alt="" image={src} className="h-72 bg-secondary-50 object-contain" />
         <CardContent>
-          <h3
-            className="mb-2 font-display text-xl font-bold"
-            id={`${id}-title`}
-          >
+          <h3 className="mb-2 font-display text-xl font-bold" id={`${id}-title`}>
             {linkText}
           </h3>
           <p className="m-0 text-black/60">{text}</p>
@@ -93,67 +80,66 @@ const SupportingSeniorsCard: FC<SupportingSeniorsCardProps> = ({
 
 const Home: FC = () => {
   const { t } = useTranslation('home')
-  const tabData: Array<TabData> = t('tabs', { returnObjects: true })
-  const [value, setValue] = useState(tabData[0].title)
+  const theme = useTheme()
+  const mobile = useMediaQuery(theme.breakpoints.down('md'))
+
+  const tabsData = t<string, ReadonlyArray<TabData>>('tabs', { returnObjects: true })
+  const [value, setValue] = useState(tabsData?.length ? tabsData[0].id : '')
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue)
   }
 
   return (
-    <Layout>
+    <Layout contained={false}>
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
 
-      <section className="rounded-3xl bg-gray-surface ">
-        <div className="flex flex-col items-center pt-10 md:flex-row-reverse">
-          <div className="mb-4 w-2/3 md:mb-0 md:w-2/3 lg:w-3/5">
-            <Image
-              src="/assets/banner.svg"
-              width={742}
-              height={548}
-              sizes="100%"
-              alt=""
-              priority
-            />
+      <Container className="mb-10">
+        <section className="rounded-3xl bg-gray-surface ">
+          <div className="flex flex-col items-center pt-10 md:flex-row-reverse">
+            <div className="mb-4 w-2/3 md:mb-0 md:w-2/3 lg:w-3/5">
+              <Image src="/assets/banner.svg" width={742} height={548} sizes="100%" alt="" priority />
+            </div>
+            <div className="px-6 pb-4 md:w-2/3 md:pl-14 lg:w-4/5">
+              <h2 className="mb-4 font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
+                {t('banner.title')}
+              </h2>
+              <p className="m-0">{t('banner.text')}</p>
+            </div>
           </div>
-          <div className="px-6 pb-4 md:w-2/3 md:pl-14 lg:w-4/5">
-            <h2 className="mb-4 font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
-              {t('banner.title')}
-            </h2>
-            <p className="m-0">{t('banner.text')}</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </Container>
 
-      <section className="-mx-4 py-10 md:flex md:flex-col md:items-center">
+      <section>
         <TabContext value={value}>
-          <TabList
-            component={Paper}
-            elevation={4}
-            variant="scrollable"
-            onChange={handleChange}
-            className="relative z-20 rounded-none md:rounded-2xl md:px-24"
-            scrollButtons={true}
-          >
-            {tabData.map(({ title }) => (
-              <Tab
-                className="px-10 pt-4 text-base"
-                key={title}
-                value={title}
-                label={title}
-              />
-            ))}
-          </TabList>
-          <div className="relative -mt-4 bg-gray-surface px-4 py-6 md:relative md:-mt-6 md:h-full md:w-full md:rounded-2xl md:px-24 md:py-16 lg:px-24">
-            {tabData.map(
-              ({ title, heading, description, button, links, linksTitle }) => (
-                <TabPanel className="px-1 py-4" key={title} value={title}>
-                  <div className="flex flex-col gap-6 rounded md:flex-row">
+          <Paper elevation={4} square className="relative">
+            <TabList
+              variant={mobile ? 'scrollable' : 'standard'}
+              onChange={handleChange}
+              scrollButtons="auto"
+              centered={!mobile}
+            >
+              {tabsData.map(({ id, title }) => (
+                <Tab
+                  key={id}
+                  value={id}
+                  label={title}
+                  id={`tab-${id}`}
+                  aria-controls={`tabpanel-${id}`}
+                  className="px-10 pt-4 text-lg md:text-2xl"
+                />
+              ))}
+            </TabList>
+          </Paper>
+
+          <div className="bg-gray-surface">
+            <Container>
+              {tabsData.map(({ id, title, heading, description, button, links, linksTitle }) => (
+                <TabPanel key={id} value={id} id={`tabpanel-${id}`} aria-labelledby={`tab-${id}`} className="px-0 py-8">
+                  <div className="flex flex-col gap-6 md:flex-row">
                     <Paper className="p-8 md:w-2/5 md:grow">
-                      <h2 className="font-medium font-display text-4xl mb-8 flex items-center text-primary-700">
-                        {heading}
-                      </h2>
+                      <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{heading}</h2>
                       <Divider className="mb-8" />
                       {description.map(({ text, list, links }) => (
                         <React.Fragment key={text}>
@@ -191,11 +177,7 @@ const Home: FC = () => {
                         <>
                           <Divider className="my-8" />
                           <div className="text-right">
-                            <Button
-                              component={Link}
-                              href={button.url}
-                              size="large"
-                            >
+                            <Button component={Link} href={button.url} size="large">
                               {button.text}
                             </Button>
                           </div>
@@ -204,9 +186,7 @@ const Home: FC = () => {
                     </Paper>
                     {linksTitle != null && linksTitle != undefined && (
                       <Paper className="p-8 md:w-3/5">
-                        <h3 className="mb-8 font-display text-xl font-bold md:mb-11 md:text-2xl md:font-light">
-                          {linksTitle}
-                        </h3>
+                        <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">{linksTitle}</h3>
                         {links != null && links != undefined && (
                           <List disablePadding>
                             {links.map(({ title, url, description }) => (
@@ -235,58 +215,48 @@ const Home: FC = () => {
                     )}
                   </div>
                 </TabPanel>
-              )
-            )}
+              ))}
+            </Container>
           </div>
         </TabContext>
       </section>
 
-      <h2 className="h2 text-primary-700">{t('supporting-seniors.title')}</h2>
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <SupportingSeniorsCard
-          src="/assets/supporting-seniors-family-and-friends.svg"
-          href={t('supporting-seniors.cards.family-and-friends.href')}
-          linkText={t('supporting-seniors.cards.family-and-friends.link-text')}
-          text={t('supporting-seniors.cards.family-and-friends.text')}
-        />
-        <SupportingSeniorsCard
-          src="/assets/supporting-seniors-representatives.svg"
-          href={t('supporting-seniors.cards.representatives.href')}
-          linkText={t('supporting-seniors.cards.representatives.link-text')}
-          text={t('supporting-seniors.cards.representatives.text')}
-        />
-        <SupportingSeniorsCard
-          src="/assets/supporting-seniors-organizations.svg"
-          href={t('supporting-seniors.cards.organizations.href')}
-          linkText={t('supporting-seniors.cards.organizations.link-text')}
-          text={t('supporting-seniors.cards.organizations.text')}
-        />
-      </div>
+      <Container>
+        <h2 className="h2 text-primary-700">{t('supporting-seniors.title')}</h2>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <SupportingSeniorsCard
+            src="/assets/supporting-seniors-family-and-friends.svg"
+            href={t('supporting-seniors.cards.family-and-friends.href')}
+            linkText={t('supporting-seniors.cards.family-and-friends.link-text')}
+            text={t('supporting-seniors.cards.family-and-friends.text')}
+          />
+          <SupportingSeniorsCard
+            src="/assets/supporting-seniors-representatives.svg"
+            href={t('supporting-seniors.cards.representatives.href')}
+            linkText={t('supporting-seniors.cards.representatives.link-text')}
+            text={t('supporting-seniors.cards.representatives.text')}
+          />
+          <SupportingSeniorsCard
+            src="/assets/supporting-seniors-organizations.svg"
+            href={t('supporting-seniors.cards.organizations.href')}
+            linkText={t('supporting-seniors.cards.organizations.link-text')}
+            text={t('supporting-seniors.cards.organizations.text')}
+          />
+        </div>
 
-      <h2 className="h2 text-primary-700">{t('contact-us.title')}</h2>
-      <p>{t('contact-us.description')}</p>
-      <Paper variant="outlined" className="mb-6 p-6">
-        <h3 className="mb-4 font-display font-medium">
-          {t('contact-us.cards.request-call.title')}
-        </h3>
-        <Divider className="my-4" />
-        <p className="mt-3 text-sm">
-          {t('contact-us.cards.request-call.description')}
-        </p>
-        <Button
-          component={Link}
-          variant="outlined"
-          href={t('contact-us.cards.request-call.href')}
-        >
-          {t('contact-us.cards.request-call.title')}
-        </Button>
-      </Paper>
-      <Paper variant="outlined" className="mb-6 p-6">
-        <h3 className="mb-4 font-display font-medium">
-          {t('contact-us.cards.call-us.title')}
-        </h3>
-        <Divider className="my-4" />
-        <div className="text-sm">
+        <h2 className="h2 text-primary-700">{t('contact-us.title')}</h2>
+        <p className="mb-8">{t('contact-us.description')}</p>
+        <Paper variant="outlined" className="mb-6 p-6">
+          <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.request-call.title')}</h3>
+          <Divider className="my-4" />
+          <p className="mt-3">{t('contact-us.cards.request-call.description')}</p>
+          <Button component={Link} variant="outlined" href={t('contact-us.cards.request-call.href')}>
+            {t('contact-us.cards.request-call.title')}
+          </Button>
+        </Paper>
+        <Paper variant="outlined" className="mb-6 p-6">
+          <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.call-us.title')}</h3>
+          <Divider className="my-4" />
           <p>{t('contact-us.cards.call-us.description')}</p>
           <div className="grid lg:grid-cols-2">
             <p>
@@ -322,24 +292,16 @@ const Home: FC = () => {
               {t('contact-us.cards.call-us.outside-number')}
             </MuiLink>
           </p>
-          <p className="m-0">
-            {t('contact-us.cards.call-us.outside-description')}
-          </p>
-        </div>
-      </Paper>
-      <Paper variant="outlined" className="p-6">
-        <h3 className="mb-4 font-display font-medium">
-          {t('contact-us.cards.find-office.title')}
-        </h3>
-        <Divider className="my-4" />
-        <Button
-          component={Link}
-          variant="outlined"
-          href={t('contact-us.cards.find-office.href')}
-        >
-          {t('contact-us.cards.find-office.link-text')}
-        </Button>
-      </Paper>
+          <p className="m-0">{t('contact-us.cards.call-us.outside-description')}</p>
+        </Paper>
+        <Paper variant="outlined" className="p-6">
+          <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.find-office.title')}</h3>
+          <Divider className="my-4" />
+          <Button component={Link} variant="outlined" href={t('contact-us.cards.find-office.href')}>
+            {t('contact-us.cards.find-office.link-text')}
+          </Button>
+        </Paper>
+      </Container>
     </Layout>
   )
 }
