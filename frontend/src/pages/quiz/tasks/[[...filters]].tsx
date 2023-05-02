@@ -70,7 +70,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
     if (!filters) filters = {}
     if (e.target.checked) filters.tags = [...(filters?.tags ?? []), e.target.value]
     else filters.tags = (filters?.tags ?? []).filter((tag) => tag !== e.target.value)
-    const encodedFilters = encodeURIComponent(btoa(JSON.stringify(filters)))
+    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
     router.push(`/quiz/tasks/${encodedFilters}`)
   }
 
