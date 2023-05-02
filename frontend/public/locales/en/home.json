@@ -2,22 +2,22 @@
   "description": "Description here...",
   "header": "Home",
   "contact-us": {
-    "title": "Contact Us",
+    "title": "Contact us",
     "description": "There are many ways to reach us about your public pensions.",
     "link": "/contact-us",
     "cards": {
       "request-call": {
-        "title": "Request a Call",
+        "title": "Request a call",
         "description": "Ask us to call you by using eServiceCanada",
-        "link-text": "Request A Call",
+        "link-text": "Request a call",
         "href": "requesthref"
       },
       "call-us": {
         "title": "Call us",
-        "description": "You can reach us at either of the numbers below.",
-        "toll-free-description": "The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday",
-        "outside-description": "The hours of operation are 8:40 am to 4:30 pm Eastern time, Monday to Friday",
-        "toll-free": "Canada and the United States Toll-free:",
+        "description": "You can reach us at the following numbers:",
+        "toll-free-description": "The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday.",
+        "outside-description": "The hours of operation are 8:30 am to 4:30 pm Eastern time, Monday to Friday.",
+        "toll-free": "Canada and the United States toll-free:",
         "tty": "Canada and the United States TTY:",
         "outside": "Outside Canada and the United States:",
         "toll-number": "1-800-277-9914",
@@ -29,18 +29,18 @@
       },
       "find-office": {
         "title": "Find an office",
-        "description": "Find a Service Canada Centre near you using the link below.",
-        "link-text": "Find a Service Canada Centre Near You",
+        "link-text": "Find a Service Canada office near you",
         "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp"
       }
     }
   },
   "banner": {
     "title": "Learn and plan for your retirement",
-    "text": "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, ways to save your money and tips to consider for your retirement income."
+    "text": "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income."
   },
   "tabs": [
     {
+      "id": "learn",
       "title": "Learn",
       "heading": "Get the most out of your retirement benefits in Canada",
       "description": [
@@ -75,6 +75,7 @@
       ]
     },
     {
+      "id": "plan",
       "title": "Plan",
       "heading": "Not sure where to begin? Take the quiz!",
       "description": [
@@ -101,6 +102,7 @@
       ]
     },
     {
+      "id": "apply",
       "title": "Apply",
       "heading": "Ready to Apply of CPP and OAS? Get started now",
       "description": [
@@ -120,6 +122,7 @@
       ]
     },
     {
+      "id": "manage",
       "title": "Manage",
       "heading": "Take control of your federal old age benefits with the \"My Service Canada\" Account (MSCA)",
       "description": [
