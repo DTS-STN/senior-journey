@@ -1,4 +1,4 @@
-import { TasksGroupData, TasksGroupDto } from '../../pages/quiz/tasks/[[...filters]]'
+import { TasksGroupData, TasksGroupDto } from '../types'
 
 export const toDto = (data: TasksGroupData, locale?: string): TasksGroupDto => {
   function getText(en: string, fr: string) {
@@ -12,7 +12,6 @@ export const toDto = (data: TasksGroupData, locale?: string): TasksGroupDto => {
     tasks: data.tasks.map((task) => ({
       description: getText(task.descriptionEn, task.descriptionFr),
       id: task.id,
-      isTimeSensitive: task.isTimeSensitive,
       links: task.links.map((link) => ({
         link: getText(link.linkEn, link.linkFr),
         text: getText(link.textEn, link.textFr),

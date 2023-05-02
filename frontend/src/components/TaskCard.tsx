@@ -1,26 +1,12 @@
 import { Chip, Link } from '@mui/material'
 
+import { TaskDto } from '../lib/types'
 import Markdown from './Markdown'
-
-export interface Task {
-  id: number
-  isTimeSensitive: boolean
-  title: string
-  description: string
-  links: ReadonlyArray<{
-    link: string
-    text: string
-  }>
-  tags: ReadonlyArray<{
-    code: string
-    title: string
-  }>
-}
 
 interface TaskCardProps {
   linksHeader: string
   showCheckbox?: boolean
-  task: Task
+  task: TaskDto
 }
 
 const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, task }) => {
