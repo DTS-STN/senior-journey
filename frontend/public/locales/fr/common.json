@@ -56,8 +56,7 @@
       "social-media-url": "https://www.canada.ca/fr/sociaux.html",
       "terms-and-condition": "Avis",
       "terms-and-condition-url": "https://www.canada.ca/fr/transparence/avis.html"
-    },
-    "top-of-page": "Haut de la page"
+    }
   },
   "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00A0:",
   "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00A0:",
