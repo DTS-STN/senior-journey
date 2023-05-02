@@ -57,11 +57,6 @@ export interface FooterProps {
    * array of objects containing the link text and link
    */
   links: FooterLink[]
-
-  /**
-   * footer top of page
-   */
-  footerTopOfPage: string
 }
 
 /**
@@ -77,29 +72,19 @@ const Footer: FC<FooterProps> = ({
   menuText,
   menuLinks,
   links,
-  footerTopOfPage,
 }: FooterProps) => {
   return (
     <footer>
       <div className="bg-blue-dark text-white">
         <div className="container mx-auto px-4 py-8 md:pb-20">
-          <h2 className="mb-8 font-display text-xl font-bold">
-            {footerHeader}
-          </h2>
+          <h2 className="mb-8 font-display text-xl font-bold">{footerHeader}</h2>
           <div className="grid gap-6 md:grid-cols-4">
             <div className="md:col-span-3">
-              <h2 className="mb-4 font-display font-medium">
-                {learningMaterialsText}
-              </h2>
+              <h2 className="mb-4 font-display font-medium">{learningMaterialsText}</h2>
               <ul className="col-span-2 space-y-2 md:columns-2">
                 {learningMaterialsLinks.map(({ link, linkText }) => (
                   <li key={link} className="text-sm">
-                    <MuiLink
-                      component={Link}
-                      color="inherit"
-                      underline="hover"
-                      href={link}
-                    >
+                    <MuiLink component={Link} color="inherit" underline="hover" href={link}>
                       {linkText}
                     </MuiLink>
                   </li>
@@ -111,12 +96,7 @@ const Footer: FC<FooterProps> = ({
               <ul className="space-y-2">
                 {menuLinks.map(({ link, linkText }) => (
                   <li key={link} className="text-sm">
-                    <MuiLink
-                      component={Link}
-                      color="inherit"
-                      underline="hover"
-                      href={link}
-                    >
+                    <MuiLink component={Link} color="inherit" underline="hover" href={link}>
                       {linkText}
                     </MuiLink>
                   </li>
@@ -134,9 +114,9 @@ const Footer: FC<FooterProps> = ({
               {footerNavHeader}
             </h3>
             <div className="flex items-end justify-between sm:items-center">
-              <ul className="flex flex-col gap-2 sm:flex-row marker:text-xs sm:list-inside sm:list-disc">
+              <ul className="flex flex-col gap-3 marker:text-xs sm:list-inside sm:list-disc sm:flex-row">
                 {links.map(({ link, linkText }) => (
-                  <li key={link} className="sm:first:list-none mr-4">
+                  <li key={link} className="sm:first:list-none">
                     <MuiLink
                       color="primary"
                       underline="hover"
@@ -149,15 +129,8 @@ const Footer: FC<FooterProps> = ({
                   </li>
                 ))}
               </ul>
-              <Link
-                className="w-32 font-body text-sm sm:w-36 md:hidden"
-                href="#"
-              >
-                {footerTopOfPage}
-                <span className="font-extrabold">&#8963;</span>
-              </Link>
               <Image
-                className="h-10 w-auto"
+                className="h-6 w-auto sm:h-10"
                 alt={footerLogo.alt}
                 src={footerLogo.src}
                 width={footerLogo.width}
