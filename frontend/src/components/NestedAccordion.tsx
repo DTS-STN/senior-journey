@@ -20,7 +20,15 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
   tasks = [],
 }) => {
   return (
-    <Accordion className="mb-4">
+    <Accordion className="mb-4"
+    sx={{
+      "@media print": {
+        ".mui-style-bz4dnt-MuiCollapse-root": {
+          height: "auto !important",
+          visibility: "visible !important"
+        }
+      }
+    }}>
       <AccordionSummary
         className="bg-[#00363C] text-white"
         disabled={tasks.length === 0}

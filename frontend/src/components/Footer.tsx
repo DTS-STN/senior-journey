@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { Link as MuiLink } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export interface FooterLogo {
   src: string
@@ -73,8 +74,10 @@ const Footer: FC<FooterProps> = ({
   menuLinks,
   links,
 }: FooterProps) => {
+  const { pathname } = useRouter()
+  const isTasksPage = pathname.includes('/tasks');
   return (
-    <footer>
+    <footer className={`${isTasksPage && "print:hidden"}`}>
       <div className="bg-blue-dark text-white">
         <div className="container mx-auto px-4 py-8 md:pb-20">
           <h2 className="mb-8 font-display text-xl font-bold">{footerHeader}</h2>

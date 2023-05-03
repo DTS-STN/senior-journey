@@ -29,6 +29,8 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) =
   const langSelectorText = langSelectorLocale === 'fr' ? 'Français' : 'English'
   const showBanner = config?.publicRuntimeConfig?.environment !== 'prod'
 
+  const isTasksPage = pathname.includes('/tasks');
+
   return (
     <>
       <nav
@@ -46,7 +48,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) =
         </a>
       </nav>
 
-      <header>
+      <header className={`${isTasksPage && "print:hidden"}`}>
         {showBanner && (
           <Banner
             alert={t('banner.alert')}

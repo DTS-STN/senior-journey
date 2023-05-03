@@ -25,6 +25,12 @@
   --tw-content: '';
 }
 
+/*@media print {
+  a:after {
+    content: " (" attr(href) ")";
+  }
+}*/
+
 blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
   margin: 0;
 }
@@ -97,6 +103,7 @@ video {
 /*
   Senior Journey - Custom css
 */
+
 .h6 {
   @apply font-bold;
   @apply font-display;
@@ -139,6 +146,12 @@ video {
 
 p {
   @apply mb-4;
+}
+
+@media print {
+  .print-href a:after {
+    content: " (" attr(href) ")";
+  }
 }
 
 main .external-link[target='_blank']::after {
