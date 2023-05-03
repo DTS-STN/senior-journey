@@ -4,7 +4,7 @@ import { utility } from "../../support/Utility"
 describe('test id 214 - Supporting Seniors - Mobile', () => {
     context(`${sizes[0]} screen`, () => {
         beforeEach(() => {
-            cy.visit('/en/home')
+            cy.visitAndWait('/en/home')
             cy.viewport(sizes[0])
         })
 

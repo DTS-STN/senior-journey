@@ -2,7 +2,7 @@ import { utility } from "../../support/Utility"
 
 describe('test id 163 - verify Learn overview - Explore our Content - Manage Money in retirement', () => {
     beforeEach(() => {
-        cy.visit('/en/learn')
+        cy.visitAndWait('/en/learn')
     })
     it('Learn overview - Manage Money in retirement is visible', () => {
         cy.get('h2').eq(2)

@@ -2,7 +2,7 @@ import { utility } from "../../support/Utility"
 
 describe('test id 156 - verify Top Learning links - Landing page', () => {
   beforeEach(() => {
-    cy.visit('/en/home')
+    cy.visitAndWait('/en/home')
   })
 
   it('Top learning title is visible', () => {
