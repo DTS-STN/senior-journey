@@ -1,26 +1,16 @@
-import { FC, PropsWithChildren } from 'react'
-
+import { FC } from 'react'
 import { GetServerSideProps } from 'next'
 import Image from 'next/image'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
+
 import {
   LearnPageLayout
 } from '../../components/LearnPageLayout'
-
+import AlertCard from '../../components/AlertCard'
 import AccessibilityGraphContainer from '../../components/AccessibilityGraphContainer'
 import { TableData } from '../../components/AccessibilityTable'
-
-export interface ImportantCardProps extends PropsWithChildren { }
-const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
-  <p className="mt-4 rounded-lg bg-[#ffe8a3]/[.3] p-5">{children}</p>
-)
-
-export interface DisclaimerCardProps extends PropsWithChildren { }
-const DisclaimerCard: FC<ImportantCardProps> = ({ children }) => (
-  <p className="rounded-lg bg-[#e9f1ff]/[.7] p-5">{children}</p>
-)
 
 const WhenToTakeYourPensions: FC = () => {
   const { t } = useTranslation('learn/when-to-take-your-pensions')
@@ -110,7 +100,7 @@ const WhenToTakeYourPensions: FC = () => {
           </tbody>
         </table>
       </div>
-      <ImportantCard>
+      <AlertCard type='important'>
         <Trans
           ns="learn/when-to-take-your-pensions"
           i18nKey="old-age-security.smart-tip.content"
@@ -131,7 +121,7 @@ const WhenToTakeYourPensions: FC = () => {
             )
           }}
         />
-      </ImportantCard>
+      </AlertCard>
       <p>{t('old-age-security.content-two')}</p>
       <div>
         <Image
@@ -181,11 +171,11 @@ const WhenToTakeYourPensions: FC = () => {
         {t('cpp-pension.heading')}
       </h2>
       <p>{t('cpp-pension.content-one')}</p>
-      <ImportantCard>
+      <AlertCard type='important'>
         <Trans
           ns="learn/when-to-take-your-pensions"
           i18nKey="cpp-pension.smart-tip" />
-      </ImportantCard>
+      </AlertCard>
       <div>
         <Image
           alt={t('cpp-pension.illustration.alt')}
@@ -262,12 +252,12 @@ const WhenToTakeYourPensions: FC = () => {
         </table>
       </div>
       <p>{t('cpp-pension.content-five')}</p>
-      <DisclaimerCard>
+      <AlertCard type='disclaimer'>
         <Trans
           ns="learn/when-to-take-your-pensions"
           i18nKey="cpp-pension.disclaimer"
         />
-      </DisclaimerCard>
+      </AlertCard>
 
       <h2 id="case-study" className="h2 !mt-0">
         {t('case-study.heading')}
@@ -293,11 +283,11 @@ const WhenToTakeYourPensions: FC = () => {
 
       </div>
       <p>{t('case-study.content-four')}</p>
-      <ImportantCard>
+      <AlertCard type='important'>
         <Trans
           ns="learn/when-to-take-your-pensions"
           i18nKey="case-study.smart-tip" />
-      </ImportantCard>
+      </AlertCard>
       <div>
         <Image
           alt={t('case-study.illustration-two.alt')}

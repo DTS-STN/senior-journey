@@ -1,5 +1,4 @@
-import { FC, PropsWithChildren } from 'react'
-
+import { FC } from 'react'
 import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
@@ -9,16 +8,7 @@ import { NextSeo } from 'next-seo'
 import {
   LearnPageLayout
 } from '../../components/LearnPageLayout'
-
-interface ImportantCardProps extends PropsWithChildren { }
-const ImportantCard: FC<ImportantCardProps> = ({ children }) => (
-  <p className="rounded-lg bg-[#ffe8a3]/[.3] p-5">{children}</p>
-)
-
-interface DisclaimerCardProps extends PropsWithChildren { }
-const DisclaimerCard: FC<DisclaimerCardProps> = ({ children }) => (
-  <p className="rounded-lg bg-[#e9f1ff]/[.7] p-5">{children}</p>
-)
+import AlertCard from '../../components/AlertCard'
 
 const FromWorkToRetirement: FC = () => {
   const { t } = useTranslation('learn/from-work-to-retirement')
@@ -116,12 +106,12 @@ const FromWorkToRetirement: FC = () => {
         />
       </p>
 
-      <ImportantCard>
+      <AlertCard>
         <Trans
           ns="learn/from-work-to-retirement"
           i18nKey="combine-job-pensions-income.smart-tip"
         />
-      </ImportantCard>
+      </AlertCard>
 
       <p>
         <Trans
@@ -145,12 +135,12 @@ const FromWorkToRetirement: FC = () => {
         {t('combine-job-pensions-income.sub-heading-two')}
       </h3>
       <p>{t('combine-job-pensions-income.content-six')}</p>
-      <DisclaimerCard>
+      <AlertCard type='disclaimer'>
         <Trans
           ns="learn/from-work-to-retirement"
           i18nKey="combine-job-pensions-income.disclaimer"
         />
-      </DisclaimerCard>
+      </AlertCard>
 
       <h2 id="case-study" className="h2">
         {t('case-study.heading')}

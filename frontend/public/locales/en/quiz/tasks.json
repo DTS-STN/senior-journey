@@ -6,5 +6,8 @@
       "text":"Retirement Hub",
       "link":"/"
     }
-  }
+  },
+  "filter-tasks": "Filter Tasks",
+  "your-retirement-checklist": "Your retirement checklist",
+  "show-filters": "show filters"
 }
