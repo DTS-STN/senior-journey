@@ -23,7 +23,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
     <Accordion className="mb-4"
     sx={{
       "@media print": {
-        ".mui-style-bz4dnt-MuiCollapse-root": {
+        ".MuiCollapse-root": {
           height: "auto !important",
           visibility: "visible !important"
         }
