@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Checkbox } from '@mui/material'
 
 import { TaskDto } from '../lib/types'
 import TaskCard from './TaskCard'
@@ -42,6 +42,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
       {tasks.map((task) => (
         <Accordion key={task.id}>
           <AccordionSummary className="font-display font-bold" expandIcon={<ExpandMoreIcon />}>
+          <Checkbox className="-mt-2.5 hidden print:inline"/>
             {task.title}
           </AccordionSummary>
           <AccordionDetails>
