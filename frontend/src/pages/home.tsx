@@ -70,10 +70,7 @@ const Home: FC = () => {
   }
 
   return (
-    <Layout
-    breadcrumbItems={[]}
-    contained={false}
-    >
+    <Layout breadcrumbItems={[]} contained={false}>
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
 
@@ -130,7 +127,7 @@ const Home: FC = () => {
                             <List disablePadding>
                               {links.map(({ title, url }) => (
                                 <React.Fragment key={title}>
-                                  <ListItem disablePadding>
+                                  <ListItem disablePadding className="border-b">
                                     <ListItemButton href={url} component={Link}>
                                       <ListItemText
                                         primary={title}
@@ -141,7 +138,6 @@ const Home: FC = () => {
                                       <NavigateNextIcon color="primary" />
                                     </ListItemButton>
                                   </ListItem>
-                                  <Divider component="li" />
                                 </React.Fragment>
                               ))}
                             </List>
@@ -166,7 +162,7 @@ const Home: FC = () => {
                           <List disablePadding>
                             {links.map(({ title, url, description }) => (
                               <React.Fragment key={title}>
-                                <ListItem disablePadding>
+                                <ListItem disablePadding className="border-b">
                                   <ListItemButton href={url} component={Link}>
                                     <ListItemText
                                       primary={title}
@@ -181,7 +177,6 @@ const Home: FC = () => {
                                     <NavigateNextIcon color="primary" />
                                   </ListItemButton>
                                 </ListItem>
-                                <Divider component="li" />
                               </React.Fragment>
                             ))}
                           </List>

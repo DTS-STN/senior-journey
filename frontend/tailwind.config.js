@@ -1,9 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    borderColor: {
+      // Material UI Palette Divider
+      DEFAULT: 'rgba(0, 0, 0, 0.12)',
+    },
     extend: {
       fontFamily: {
         display: ['Lato', 'sans-serif'],
@@ -53,15 +55,10 @@ module.exports = {
           dark: '#cfd1d5',
           deep: '#bbbfc5',
           modal: '#999999',
-          surface: '#ededed',
+          surface: 'rgba(33, 33, 33, 0.08)',
         },
         orange: {
           dark: '#e59700',
-        },
-        aqua: {
-          default: '#274448',
-          light: '#008490',
-          dark: '#004F56',
         },
         primary: {
           50: '#cdf9ff',
