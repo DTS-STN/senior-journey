@@ -58,14 +58,14 @@ Cypress.Commands.add('getBearerToken', () => {
       scope: oauthScope,
     },
   })
-  .then(({ body }) => {
-    const oauthAccessToken = body['access_token']
-    const oauthAccessTokenExpiry = Date.now() + body['expires_in'] * 1000
+    .then(({ body }) => {
+      const oauthAccessToken = body['access_token']
+      const oauthAccessTokenExpiry = Date.now() + body['expires_in'] * 1000
 
-    Cypress.env({ oauthAccessToken, oauthAccessTokenExpiry })
+      Cypress.env({ oauthAccessToken, oauthAccessTokenExpiry })
 
-    return oauthAccessToken
-  })
+      return oauthAccessToken
+    })
 })
 
 /**
@@ -88,37 +88,36 @@ Cypress.Commands.overwrite('visit', (originalFn, url, options) => {
 })
 
 //insert the `visitAndWait` command to wrap it up (including the visit) into a custom command.
-
-let appHasStarted
-function spyOnAddEventListener(win) {
-  // win = window object in our application
-  const addListener = win.EventTarget.prototype.addEventListener
-  win.EventTarget.prototype.addEventListener = function (name) {
-    if (name === 'change') {
-      // web app added an event listener to the input box -
-      // that means the web application has started
-      appHasStarted = true
-      // restore the original event listener
-      win.EventTarget.prototype.addEventListener = addListener
-    }
-    return addListener.apply(this, arguments)
-  }
-}
-
-function waitForAppStart() {
-  // keeps rechecking "appHasStarted" variable
-  return new Cypress.Promise((resolve, reject) => {
-    const isReady = () => {
-      if (appHasStarted) {
-        return resolve()
+Cypress.Commands.add('visitAndWait', (url) => {
+  let appHasStarted = false
+  const spyOnAddEventListener = (win) => {
+    // win = window object in our application
+    const addListener = win.EventTarget.prototype.addEventListener
+    win.EventTarget.prototype.addEventListener = function (name) {
+      if (name === 'change') {
+        // web app added an event listener to the input box -
+        // that means the web application has started
+        appHasStarted = true
+        // restore the original event listener
+        win.EventTarget.prototype.addEventListener = addListener
       }
-      setTimeout(isReady, 0)
+      return addListener.apply(this, arguments)
     }
-    isReady()
-  })
-}
+  }
 
-Cypress.Commands.add('visitAndWait', (url) =>
+  const waitForAppStart = () => {
+    // keeps rechecking "appHasStarted" variable
+    return new Cypress.Promise((resolve, reject) => {
+      const isReady = () => {
+        if (appHasStarted) {
+          return resolve()
+        }
+        setTimeout(isReady, 0)
+      }
+      isReady()
+    })
+  }
+
   cy.visit(url, { onBeforeLoad: spyOnAddEventListener })
     .then({ timeout: 10000 }, waitForAppStart)
-)
+})
