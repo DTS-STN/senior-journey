@@ -1,4 +1,4 @@
-import { Button, Link as MuiLink } from '@mui/material'
+import { Button, Link as MuiLink, Paper } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
@@ -7,16 +7,9 @@ import Link from 'next/link'
 const Index = () => {
   return (
     <>
-      <NextSeo
-        noindex
-        title="Retirement Hub | Retirement Hub (FR)"
-        titleTemplate="%s - Canada.ca"
-      />
-      <main
-        role="main"
-        className="flex h-screen bg-splash-page bg-cover bg-center"
-      >
-        <div className="m-auto w-[300px] bg-gray-lighter md:w-[400px] lg:w-[500px]">
+      <NextSeo noindex title="Retirement Hub | Retirement Hub (FR)" titleTemplate="%s - Canada.ca" />
+      <main role="main" className="flex h-screen bg-splash-page bg-cover bg-center">
+        <Paper square elevation={0} className="m-auto w-[300px] md:w-[400px] lg:w-[500px]">
           <div className="p-8">
             <h1 className="sr-only">Retirement Hub | Retirement Hub (FR)</h1>
             <div className="w-11/12 lg:w-8/12">
@@ -67,7 +60,7 @@ const Index = () => {
               </section>
             </div>
           </div>
-          <div className="flex items-center justify-between gap-6 bg-gray-light p-8">
+          <div className="flex items-center justify-between gap-6 bg-gray-surface p-8">
             <div className="w-7/12 md:w-8/12">
               <MuiLink
                 data-cy="terms"
@@ -101,7 +94,7 @@ const Index = () => {
               </span>
             </div>
           </div>
-        </div>
+        </Paper>
       </main>
     </>
   )

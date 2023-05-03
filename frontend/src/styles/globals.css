@@ -134,7 +134,6 @@ video {
   @apply font-display;
   @apply text-4xl;
   @apply mb-8;
-  @apply text-aqua-default;
 }
 
 p {
