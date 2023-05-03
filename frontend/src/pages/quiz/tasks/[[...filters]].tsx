@@ -85,7 +85,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
         text: t("breadcrumbs.home.text")
       }
     ]}>
-      <div className="grid gap-6 lg:grid-cols-12">
+      <div className="print:block grid gap-6 lg:grid-cols-12">
         <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">
             <Button
