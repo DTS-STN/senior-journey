@@ -87,7 +87,7 @@ const MyApp = ({
 }
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {
-  const webVitalHistogram = createHistogram('senior-journey.' + metric.label + '.' + metric.name)
+  const webVitalHistogram = createHistogram(`senior-journey.${metric.label}.${metric.name}`)
   const attributes = {id: metric.id, startTime: metric.startTime, value: metric.value, description: metric.name, unit: 'ms', valueType: ValueType.INT}
   webVitalHistogram.record(metric.value, attributes)
 }
