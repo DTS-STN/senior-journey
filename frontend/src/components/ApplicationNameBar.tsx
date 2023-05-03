@@ -2,8 +2,10 @@ import { FC, useEffect, useState } from 'react'
 
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
+import { compact } from 'lodash'
 import Link from 'next/link'
 
+import { Filters } from '../pages/quiz/tasks/[[...filters]]'
 import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
@@ -16,12 +18,19 @@ export interface ApplicationNameBarProps {
 }
 
 const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
-  let [checklistUrl, setChecklistUrl] = useState<string>('/learn')
+  let [checklistUrl, setChecklistUrl] = useState('/learn')
+
   useEffect(() => {
-    let quiz = localStorage.getItem('quiz')
-    if (quiz === null) return
-    let encodedFilters = encodeURIComponent(window.btoa(quiz ?? ''))
-    setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
+    // try to get stored quiz form values
+    try {
+      const storedFormValues = JSON.parse(localStorage.getItem('quiz') ?? '')
+      const filters: Filters = { answers: compact(Object.values<string>(storedFormValues)) }
+      // Encodes a js object as a url-safe base64 string.
+      const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+      setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
+    } catch (err) {
+      return
+    }
   }, [])
 
   return (
