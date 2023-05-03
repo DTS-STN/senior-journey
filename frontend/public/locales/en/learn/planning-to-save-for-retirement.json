@@ -3,7 +3,7 @@
     "breadcrumbs": {
       "home":{
         "text":"Retirement Hub",
-        "link":"/home"
+        "link":"/"
       },
       "learn":{
           "text":"Learn",

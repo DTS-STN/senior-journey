@@ -14,7 +14,7 @@ import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import Layout from './Layout'
 import { TableOfContents } from './TableOfContents'
 import { TableOfContentsDialog } from './TableOfContentsDialog'
-import { BreadcrumbItemType } from './Breadcrumb'
+import { BreadcrumbItem } from './Breadcrumb'
 
 export interface LearnMoreLink {
   href: string
@@ -27,7 +27,7 @@ export interface LearnPageLayoutProps {
   header: string
   learnMoreHeader: string
   learnMoreLinks: ReadonlyArray<LearnMoreLink>
-  breadcrumbItems: BreadcrumbItemType[];
+  breadcrumbItems?: BreadcrumbItem[];
 }
 
 export const LearnPageLayout: FC<LearnPageLayoutProps> = ({

@@ -4,14 +4,14 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
 
-import {Breadcrumb, BreadcrumbItemType} from './Breadcrumb'
+import {Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
   text: string
   href: string
   checklist: string
   checklistUrl: string
-  breadcrumbItems: BreadcrumbItemType[];
+  breadcrumbItems?: BreadcrumbItem[];
 }
 
 const ApplicationNameBar: FC<ApplicationNameBarProps> = ({

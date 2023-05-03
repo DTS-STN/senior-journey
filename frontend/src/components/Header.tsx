@@ -10,13 +10,13 @@ import { useRouter } from 'next/router'
 import { resolveHref } from '../lib/utils/url-utils'
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
-import { BreadcrumbItemType } from './Breadcrumb'
+import { BreadcrumbItem } from './Breadcrumb'
 
 
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
-  breadcrumbItems: BreadcrumbItemType[];
+  breadcrumbItems?: BreadcrumbItem[];
 }
 
 const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) => {

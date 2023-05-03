@@ -4,11 +4,11 @@ import { useTranslation } from 'next-i18next'
 
 import Footer from './Footer'
 import Header from './Header'
-import { BreadcrumbItemType } from './Breadcrumb'
+import { BreadcrumbItem } from './Breadcrumb'
 
 export interface LayoutProps {
   children: ReactNode
-  breadcrumbItems: BreadcrumbItemType[];
+  breadcrumbItems?: BreadcrumbItem[];
 }
 
 const Layout: FC<LayoutProps> = ({ children, breadcrumbItems }) => {
