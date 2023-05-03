@@ -140,7 +140,12 @@ const Learn: FC = () => {
   }
 
   return (
-    <Layout>
+      <Layout breadcrumbItems={[
+        {
+          link: t("breadcrumbs.home.link"), 
+          text: t("breadcrumbs.home.text")
+        }
+      ]}>
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
       <section className="rounded-3xl bg-[#f5f5f5] ">

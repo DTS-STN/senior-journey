@@ -1,5 +1,15 @@
 {
     "header": "(FR) When to take your pensions",
+    "breadcrumbs": {
+        "home":{
+          "text":"(FR) Retirement Hub",
+          "link":"/"
+        },
+        "learn":{
+            "text":"(FR) Learn",
+            "link":"/learn"
+        }
+    },
     "key-takeaways": {
         "heading": "(FR) Key Takeaways",
         "list": {

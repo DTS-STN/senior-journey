@@ -10,13 +10,16 @@ import { useRouter } from 'next/router'
 import { resolveHref } from '../lib/utils/url-utils'
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
+import { BreadcrumbItem } from './Breadcrumb'
+
 
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
+  breadcrumbItems?: BreadcrumbItem[];
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) => {
   const config = getConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
@@ -106,6 +109,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText }) => {
           href="/"
           checklist={t('checklist')}
           checklistUrl={t('checklist-url')}
+          breadcrumbItems={breadcrumbItems}
         />
 
         {/* <Menu

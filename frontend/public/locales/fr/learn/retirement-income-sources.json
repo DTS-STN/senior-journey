@@ -1,4 +1,14 @@
 {
+  "breadcrumbs": {
+    "home":{
+      "text":"(FR) Retirement Hub",
+      "link":"/"
+    },
+    "learn":{
+        "text":"(FR) Learn",
+        "link":"/learn"
+    }
+  },
   "canada-pension-plan-program": {
     "cpp-post-retirement-benefit": {
       "header": "(FR) CPP Post-Retirement Benefit",

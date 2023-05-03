@@ -70,7 +70,10 @@ const Home: FC = () => {
   }
 
   return (
-    <Layout contained={false}>
+    <Layout
+    breadcrumbItems={[]}
+    contained={false}
+    >
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
 

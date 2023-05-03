@@ -13,12 +13,22 @@ import AlertCard from '../../components/AlertCard'
 
 const RuleOfThumbPublicPensions: FC = () => {
   const { t } = useTranslation('learn/rule-of-thumb-public-pensions')
-
+  
   return (
     <LearnPageLayout
       header={t('header')}
       learnMoreHeader={t('learn-more-heading')}
       learnMoreLinks={[]}
+      breadcrumbItems={[
+        {
+          link: t("breadcrumbs.home.link"), 
+          text: t("breadcrumbs.home.text")
+        },
+        {
+          link: t("breadcrumbs.learn.link"), 
+          text: t("breadcrumbs.learn.text")
+        },
+      ]}
     >
       <NextSeo title={t('header')} />
       <h2 id="key-takeaways" className="h2 !mt-0">

@@ -1,5 +1,15 @@
 {
     "header": "(FR) Rules of thumb for public pensions",
+    "breadcrumbs": {
+        "home":{
+          "text":"(FR) Retirement Hub",
+          "link":"/"
+        },
+        "learn":{
+            "text":"(FR) Learn",
+            "link":"/learn"
+        }
+    },
     "key-takeaways": {
         "heading": "(FR) Key Takeaways",
         "list-one": {

@@ -75,7 +75,12 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
   }
 
   return (
-    <Layout>
+    <Layout breadcrumbItems={[
+      {
+        link: t("breadcrumbs.home.link"), 
+        text: t("breadcrumbs.home.text")
+      }
+    ]}>
       <div className="grid gap-6 lg:grid-cols-12">
         <section className="lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">

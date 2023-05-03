@@ -14,6 +14,7 @@ import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import Layout from './Layout'
 import { TableOfContents } from './TableOfContents'
 import { TableOfContentsDialog } from './TableOfContentsDialog'
+import { BreadcrumbItem } from './Breadcrumb'
 
 export interface LearnMoreLink {
   href: string
@@ -26,6 +27,7 @@ export interface LearnPageLayoutProps {
   header: string
   learnMoreHeader: string
   learnMoreLinks: ReadonlyArray<LearnMoreLink>
+  breadcrumbItems?: BreadcrumbItem[];
 }
 
 export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
@@ -33,10 +35,11 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
   header,
   learnMoreHeader,
   learnMoreLinks,
+  breadcrumbItems,
 }) => {
   const tableOfContentsData = useTableOfContentsData()
   return (
-    <Layout>
+    <Layout breadcrumbItems={breadcrumbItems}>
       <h1 className="mb-10 rounded-3xl bg-[#212121]/[.08] px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
         {header}
       </h1>

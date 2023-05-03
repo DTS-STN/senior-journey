@@ -1,30 +1,40 @@
 {
-  "header": "(FR) From work to retirement",
-  "key-takeaways": {
-    "heading": "(FR) Key Takeaways",
-    "list": {
-      "choices-to-start": "(FR) There are many choices available to you on when to finish or continue working in retirement, and when to start your pensions.",
-      "retire-from-work": "(FR) Retiring from work and claiming your pensions are two different things. You are free to combine your income from work and savings with pensions. However, the later you claim your OAS and CPP, the higher your monthly pensions will be.",
-      "afford-to-delay": "(FR) If you can afford to delay your OAS and CPP until age 70, you will increase your OAS monthly pension by more than one-third, and you will more than double your CPP retirement pension, compared to the earliest age when you can claim them.",
-      "public-pensions": "(FR) The public pensions provide stable, inflation-proof income that will support you for the rest of your life, and would reduce uncertainty of your private investments and risk of outliving your savings.",
-      "at-age": "(FR) If at age 65 you have low income and qualify for the OAS, do not delay as you might receive additional income from the Guaranteed Income Supplement (GIS). You need to be in receipt of OAS to get your GIS, as you will be at a loss, if you delay your OAS. You may also consider starting your CPP earlier than age 65."
+    "header": "(FR) From work to retirement",
+    "breadcrumbs": {
+        "home":{
+          "text":"(FR) Retirement Hub",
+          "link":"/"
+        },
+        "learn":{
+            "text":"(FR) Learn",
+            "link":"/learn"
+        }
     },
-    "retirement-today": "(FR) Retirement today is not what it was ten years ago, as people now have more choices and flexibility to tailor their retirement plans to fit their lifestyle preferences. This new chapter of life could include:",
-    "life-chapters": {
-      "phase-retirement": {
-        "content": "(FR) <a>Phased retirement</a>: a gradual transition from full-time to part-time employment and then full retirement.",
-        "link": "https://google.com"
-      },
-      "second-career": {
-        "content": "(FR) <a>A second career</a>:  when retirees change their jobs altogether, or open a new business, pursuing their long-time dreams.",
-        "link": "https://google.com"
-      },
-      "full-retirement": {
-        "content": "(FR) <a>Full retirement</a> when people retire from work for good.",
-        "link": "https://google.com"
-      },
-      "content": "(FR) Learn how you can structure your finances in these cases."
-    }
+    "key-takeaways": {
+        "heading": "(FR) Key Takeaways",
+        "list": {
+            "choices-to-start": "(FR) There are many choices available to you on when to finish or continue working in retirement, and when to start your pensions.",
+            "retire-from-work": "(FR) Retiring from work and claiming your pensions are two different things. You are free to combine your income from work and savings with pensions. However, the later you claim your OAS and CPP, the higher your monthly pensions will be.",
+            "afford-to-delay": "(FR) If you can afford to delay your OAS and CPP until age 70, you will increase your OAS monthly pension by more than one-third, and you will more than double your CPP retirement pension, compared to the earliest age when you can claim them.",
+            "public-pensions": "(FR) The public pensions provide stable, inflation-proof income that will support you for the rest of your life, and would reduce uncertainty of your private investments and risk of outliving your savings.",
+            "at-age": "(FR) If at age 65 you have low income and qualify for the OAS, do not delay as you might receive additional income from the Guaranteed Income Supplement (GIS). You need to be in receipt of OAS to get your GIS, as you will be at a loss, if you delay your OAS. You may also consider starting your CPP earlier than age 65."
+        },
+        "retirement-today": "(FR) Retirement today is not what it was ten years ago, as people now have more choices and flexibility to tailor their retirement plans to fit their lifestyle preferences. This new chapter of life could include:",
+        "life-chapters": {
+            "phase-retirement": {
+                "content": "(FR) <a>Phased retirement</a>: a gradual transition from full-time to part-time employment and then full retirement.",
+                "link": "https://google.com"
+            },
+            "second-career": {
+                "content": "(FR) <a>A second career</a>:  when retirees change their jobs altogether, or open a new business, pursuing their long-time dreams.",
+                "link": "https://google.com"
+            },
+            "full-retirement": {
+                "content": "(FR) <a>Full retirement</a> when people retire from work for good.",
+                "link": "https://google.com"
+            },
+            "content": "(FR) Learn how you can structure your finances in these cases."
+        }
   },
   "phased-retirement": {
     "heading": "(FR) Phased retirement",
