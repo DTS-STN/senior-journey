@@ -100,22 +100,15 @@ const Home: FC = () => {
               centered={!mobile}
             >
               {tabsData.map(({ id, title }) => (
-                <Tab
-                  key={id}
-                  value={id}
-                  label={title}
-                  id={`tab-${id}`}
-                  aria-controls={`tabpanel-${id}`}
-                  className="px-10 pt-4 text-lg md:text-2xl"
-                />
+                <Tab key={id} value={id} label={title} className="px-10 pt-4 text-lg md:text-2xl" />
               ))}
             </TabList>
           </Paper>
 
           <div className="bg-gray-surface">
             <Container>
-              {tabsData.map(({ id, title, heading, description, button, links, linksTitle }) => (
-                <TabPanel key={id} value={id} id={`tabpanel-${id}`} aria-labelledby={`tab-${id}`} className="px-0 py-8">
+              {tabsData.map(({ id, heading, description, button, links, linksTitle }) => (
+                <TabPanel key={id} value={id} className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
                     <Paper className="p-8 md:w-2/5 md:grow">
                       <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{heading}</h2>
@@ -123,14 +116,14 @@ const Home: FC = () => {
                       {description.map(({ text, list, links }) => (
                         <React.Fragment key={text}>
                           <p>{text}</p>
-                          {list != null && list != undefined && (
+                          {list && list.length > 0 && (
                             <ul className="list-disc space-y-2 pl-7">
                               {list.map((litem) => (
                                 <li key={litem}>{litem}</li>
                               ))}
                             </ul>
                           )}
-                          {links != null && links != undefined && (
+                          {links && links.length > 0 && (
                             <List disablePadding>
                               {links.map(({ title, url }) => (
                                 <React.Fragment key={title}>
@@ -152,7 +145,7 @@ const Home: FC = () => {
                           )}
                         </React.Fragment>
                       ))}
-                      {button != null && button != undefined && (
+                      {button && (
                         <>
                           <Divider className="my-8" />
                           <div className="text-right">
@@ -163,10 +156,10 @@ const Home: FC = () => {
                         </>
                       )}
                     </Paper>
-                    {linksTitle != null && linksTitle != undefined && (
+                    {linksTitle && (
                       <Paper className="p-8 md:w-3/5">
                         <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">{linksTitle}</h3>
-                        {links != null && links != undefined && (
+                        {links && links.length > 0 && (
                           <List disablePadding>
                             {links.map(({ title, url, description }) => (
                               <React.Fragment key={title}>
