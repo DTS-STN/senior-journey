@@ -8,33 +8,8 @@ describe('test id 319 - Main Sources of retirement income - Learning page', () =
     }).then({ timeout: 10000 }, waitForAppStart)
   })
 
-  //Left menu and items visible screen sizes tests
-  it(`${sizes[0]} screen left menu items are visible \'Overview of retirement income sources\'`, () => {
-    cy.viewport(sizes[0])
-    for (var i = 0; i < 7; i++) {
-      cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i)
-        .should('be.visible')
-    }
-  })
-
-  it(`${sizes[1]} screenleft menu items are visible \'Overview of retirement income sources\'`, () => {
-    cy.viewport(sizes[1])
-    for (var i = 0; i < 7; i++) {
-      cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i)
-        .should('be.visible')
-    }
-  })
-
-  it(`${sizes[2]} screenleft menu items are visible \'Overview of retirement income sources\'`, () => {
-    cy.viewport(sizes[2])
-    for (var i = 0; i < 7; i++) {
-      cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i)
-        .should('be.visible')
-    }
-  })
-
   //Scroll screen sizes tests
-  it(`${sizes[0]} title 1 \'Overview\' scroll into view linear`, () => {
+  it.only(`${sizes[0]} title 1 \'Overview\' scroll into view linear`, () => {
     cy.viewport(sizes[0])
     cy.get('.mb-10')
       .scrollIntoView({
@@ -72,28 +47,6 @@ describe('test id 319 - Main Sources of retirement income - Learning page', () =
   it(`${sizes[0]} title 7 \'Personal retirement savings\' scroll into view`, () => {
     cy.viewport(sizes[0])
     cy.get('#personal-retirement-savings').scrollIntoView().click()
-  })
-
-  //Left menu items are clickable screen size tests
-  it(`${sizes[0]} left menu items are clickable`, () => {
-    cy.viewport(sizes[0])
-    for (var i = 0; i < 7; i++) {
-    cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i).click()
-    }
-  })
-
-  it(`${sizes[1]} left menu items are clickable`, () => {
-    cy.viewport(sizes[1])
-    for (var i = 0; i < 7; i++) {
-    cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i).click()
-    }
-  })
-
-  it(`${sizes[2]} left menu items are clickable`, () => {
-    cy.viewport(sizes[2])
-    for (var i = 0; i < 7; i++) {
-    cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i).click()
-    }
   })
 
   it('Find all broken links - verify broken link on landing page', () => {

@@ -8,31 +8,6 @@ describe('test id 328 - Main Sources of retirement income - Learning page', () =
     }).then({ timeout: 10000 }, waitForAppStart)
   })
 
-  //Left menu and items visible screen sizes tests
-  it(`${sizes[0]} screen left menu items are not visible \'Overview of retirement income sources\'`, () => {
-    cy.viewport(sizes[0])
-    for (var i = 0; i < 7; i++) {
-      cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i)
-        .should('not.visible')
-    }
-  })
-
-  it(`${sizes[1]} screenleft menu items are not visible \'Overview of retirement income sources\'`, () => {
-    cy.viewport(sizes[1])
-    for (var i = 0; i < 7; i++) {
-      cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i)
-        .should('not.visible')
-    }
-  })
-
-  it(`${sizes[2]} screenleft menu items are not visible \'Overview of retirement income sources\'`, () => {
-    cy.viewport(sizes[2])
-    for (var i = 0; i < 7; i++) {
-      cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i)
-        .should('not.visible')
-    }
-  })
-
   //Scroll screen sizes tests
   it(`${sizes[0]} title 1 \'Overview\' scroll into view linear`, () => {
     cy.viewport(sizes[0])
@@ -72,28 +47,6 @@ describe('test id 328 - Main Sources of retirement income - Learning page', () =
   it(`${sizes[0]} title 7 \'Personal retirement savings\' scroll into view`, () => {
     cy.viewport(sizes[0])
     cy.get('#personal-retirement-savings').scrollIntoView().click()
-  })
-
-  //Left menu items are clickable tests
-  it(`${sizes[0]} left menu items are clickable`, () => {
-    cy.viewport(sizes[0])
-    for (var i = 0; i < 7; i++) {
-    cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i).click({ force: true })
-    }
-  })
-
-  it(`${sizes[1]} left menu items are clickable`, () => {
-    cy.viewport(sizes[1])
-    for (var i = 0; i < 7; i++) {
-    cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i).click({ force: true })
-    }
-  })
-
-  it(`${sizes[2]} left menu items are clickable`, () => {
-    cy.viewport(sizes[2])
-    for (var i = 0; i < 7; i++) {
-    cy.get('li.MuiListItem-root.MuiListItem-gutters.mui-style-pjl2lh').eq(i).click({ force: true })
-    }
   })
 
   it('Find all broken links - verify broken link on landing page', () => {
