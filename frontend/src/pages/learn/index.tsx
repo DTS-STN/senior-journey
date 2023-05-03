@@ -189,9 +189,7 @@ const Learn: FC = () => {
               const filters: Filters = { answers: compact(Object.values<string>(values)) }
               // Encodes a js object as a url-safe base64 string.
               const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
-
-              localStorage.setItem('quiz', encodedFilters)
-
+              localStorage.setItem('quiz', JSON.stringify(filters))
               router.push(`/quiz/tasks/${encodedFilters}`)
             }}
             validateOnNext

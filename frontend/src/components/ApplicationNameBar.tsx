@@ -1,9 +1,8 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
@@ -13,16 +12,17 @@ export interface ApplicationNameBarProps {
   checklist: string
   checklistUrl: string
   breadcrumbItems?: BreadcrumbItem[]
+  hideChecklist?: boolean
 }
 
-const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, checklistUrl, breadcrumbItems }) => {
-  let router = useRouter()
-
-  function handleClick(e: React.MouseEvent) {
-    e.preventDefault()
-    let encodedFilters = localStorage.getItem('quiz')
-    router.push(encodedFilters === null ? `/${router.locale}/learn` : `/quiz/tasks/${encodedFilters}`)
-  }
+const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
+  let [checklistUrl, setChecklistUrl] = useState<string>('/learn')
+  useEffect(() => {
+    let quiz = localStorage.getItem('quiz')
+    if (quiz === null) return
+    let encodedFilters = encodeURIComponent(window.btoa(quiz ?? ''))
+    setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
+  }, [])
 
   return (
     <div id="app-bar">
@@ -37,15 +37,8 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
           >
             <h2>{text}</h2>
           </MuiLink>
-          {router.pathname !== '/quiz/tasks/[[...filters]]' && (
-            <Button
-              component={Link}
-              href={checklistUrl}
-              startIcon={<BookmarkBorderIcon />}
-              size="large"
-              onClick={handleClick}
-              disabled={!router.isReady}
-            >
+          {!hideChecklist && (
+            <Button component={Link} href={checklistUrl} startIcon={<BookmarkBorderIcon />} size="large">
               {checklist}
             </Button>
           )}

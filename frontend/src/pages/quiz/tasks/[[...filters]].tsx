@@ -77,11 +77,12 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
   function handleClick(e: React.MouseEvent) {
     e.preventDefault()
     localStorage.removeItem('quiz')
-    router.push(`/${router.locale}/learn`)
+    router.push('/learn')
   }
 
   return (
     <Layout
+      hideChecklist={true}
       breadcrumbItems={[
         {
           link: t('breadcrumbs.home.link'),
