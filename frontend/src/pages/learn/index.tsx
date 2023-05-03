@@ -140,12 +140,14 @@ const Learn: FC = () => {
   }
 
   return (
-      <Layout breadcrumbItems={[
+    <Layout
+      breadcrumbItems={[
         {
-          link: t("breadcrumbs.home.link"), 
-          text: t("breadcrumbs.home.text")
-        }
-      ]}>
+          link: t('breadcrumbs.home.link'),
+          text: t('breadcrumbs.home.text'),
+        },
+      ]}
+    >
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
       <section className="rounded-3xl bg-[#f5f5f5] ">
@@ -187,6 +189,9 @@ const Learn: FC = () => {
               const filters: Filters = { answers: compact(Object.values<string>(values)) }
               // Encodes a js object as a url-safe base64 string.
               const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+
+              localStorage.setItem('quiz', encodedFilters)
+
               router.push(`/quiz/tasks/${encodedFilters}`)
             }}
             validateOnNext
