@@ -2,9 +2,10 @@ import { FC, useEffect, useState } from 'react'
 
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
-import { compact } from 'lodash'
+import { compact, isEmpty } from 'lodash'
 import Link from 'next/link'
 
+import { useQuizData } from '../lib/hooks/useQuizData'
 import { Filters } from '../pages/quiz/tasks/[[...filters]]'
 import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
@@ -19,19 +20,20 @@ export interface ApplicationNameBarProps {
 
 const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
   let [checklistUrl, setChecklistUrl] = useState('/learn')
+  const { data: quizData } = useQuizData()
 
   useEffect(() => {
-    // try to get stored quiz form values
-    try {
-      const storedFormValues = JSON.parse(localStorage.getItem('quiz') ?? '')
-      const filters: Filters = { answers: compact(Object.values<string>(storedFormValues)) }
-      // Encodes a js object as a url-safe base64 string.
-      const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
-      setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
-    } catch (err) {
+    const answers = quizData ? compact(Object.values<string>(quizData)) : []
+    if (isEmpty(answers)) {
+      setChecklistUrl('/learn')
       return
     }
-  }, [])
+
+    // Encodes a js object as a url-safe base64 string.
+    const filters: Filters = { answers }
+    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+    setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
+  }, [quizData])
 
   return (
     <div id="app-bar">

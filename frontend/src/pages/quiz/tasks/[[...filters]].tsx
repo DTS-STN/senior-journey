@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react'
+import React, { FC, useMemo, useState } from 'react'
 
 import { ExpandMore, FilterList } from '@mui/icons-material'
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked'
@@ -16,6 +16,7 @@ import * as yup from 'yup'
 import Layout from '../../../components/Layout'
 import NestedAccordion from '../../../components/NestedAccordion'
 import tasksData from '../../../data/tasks.json'
+import { useRemoveQuizData } from '../../../lib/hooks/useRemoveQuizData'
 import * as tasksGroupDtoMapper from '../../../lib/mappers/tasks-group-dto-mapper'
 import { TaskTagDto, TasksGroupDto } from '../../../lib/types'
 import { getLogger } from '../../../logging/log-util'
@@ -39,8 +40,9 @@ interface TasksProps {
 const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
   const { t } = useTranslation('quiz/tasks')
   let router = useRouter()
+  const { mutate: removeQuizData } = useRemoveQuizData()
 
-  let [expanded, setExpanded] = React.useState<boolean>(true)
+  let [expanded, setExpanded] = useState<boolean>(true)
 
   function filterTasksByTag({ tags }: { tags: ReadonlyArray<{ code: string }> }, filters?: Filters | null) {
     if (isEmpty(filters?.tags)) return true
@@ -76,7 +78,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
 
   function handleClick(e: React.MouseEvent) {
     e.preventDefault()
-    localStorage.removeItem('quiz')
+    removeQuizData()
     router.push('/learn')
   }
 
