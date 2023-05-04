@@ -5,7 +5,7 @@ var sizes = ["macbook-13", "macbook-11", "macbook-16"]
 
 describe(`[${langurl}] - ${sizes[0]} test id 156 - verify Top Learning links - Landing page`, () => {
   beforeEach(() => {
-    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_testPlans/define?planId=127&suiteId=129')
+    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_workitems/edit/156')
     cy.visitAndWait(`/${langurl}/home`)
   })
 
@@ -38,7 +38,7 @@ describe(`[${langurl}] - ${sizes[0]} test id 156 - verify Top Learning links - L
 
 describe(`[${langurl}] - ${sizes[1]} test id 156 - verify Top Learning links - Landing page`, () => {
   beforeEach(() => {
-    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_testPlans/define?planId=127&suiteId=129')
+    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_workitems/edit/156')
     cy.visitAndWait(`/${langurl}/home`)
   })
 
@@ -71,7 +71,7 @@ describe(`[${langurl}] - ${sizes[1]} test id 156 - verify Top Learning links - L
 
 describe(`[${langurl}] - ${sizes[2]} test id 156 - verify Top Learning links - Landing page`, () => {
   beforeEach(() => {
-    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_testPlans/define?planId=127&suiteId=129')
+    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_workitems/edit/156')
     cy.visitAndWait(`/${langurl}/home`)
   })
 
