@@ -1,35 +1,103 @@
 import { utility } from "../../support/Utility"
+let langurl = Cypress.config().language
+let language = new utility().getLanguage()
+var sizes = ["macbook-13", "macbook-11", "macbook-16"]
 
-describe('test id 156 - verify Top Learning links - Landing page', () => {
+describe(`[${langurl}] - ${sizes[0]} test id 156 - verify Top Learning links - Landing page`, () => {
   beforeEach(() => {
-    cy.visitAndWait('/en/home')
+    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_testPlans/define?planId=127&suiteId=129')
+    cy.visitAndWait(`/${langurl}/home`)
   })
 
-  it('Top learning title is visible', () => {
-    cy.get('h3').eq(2).should('be.visible')
+  it(`[${langurl}] - ${sizes[0]} - Top learning title is visible`, () => {
+    cy.viewport(sizes[0])
+    cy.get('h3').first().should('be.visible')
   })
 
-  it('Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr', ()=> {
-    let language = new utility().getLanguageTabletOrMonitorScreen()
-    cy.wait(2000)
-    cy.get('button').eq(0).click()
-    cy.get(':nth-child(1) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
-    cy.location('pathname').should('equal', language ? '/en/test' : '/fr/test')
+  it(`[${langurl}] - ${sizes[0]} - Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr`, ()=> {
+    cy.viewport(sizes[0])
+    cy.get('li').eq(1)
+    .should('have.attr', 'href', language ? '/en/test' : '/fr/test')
+    .should('be.visible')
   })
 
-  it('Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr', () => {
-    let language = new utility().getLanguageTabletOrMonitorScreen()
-    cy.wait(2000)
-    cy.get('button').eq(0).click()
-    cy.get(':nth-child(3) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
-    cy.location('pathname').should('equal', language ? '/en/test2' : '/fr/test2')
+  it(`[${langurl}] - ${sizes[0]} - Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr`, () => {
+    cy.viewport(sizes[0])
+    cy.get('li').eq(2)
+    .should('have.attr', 'href', language ? '/en/test2' : '/fr/test2')
+    .should('be.visible')
   })
 
-  it('When to take your public pensions link click url redirects to /en/fr/ when accessing /en/fr', () => {
-    let language = new utility().getLanguageTabletOrMonitorScreen()
-    cy.wait(2000)
-    cy.get('button').eq(0).click()
-    cy.get(':nth-child(5) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-body1').click()
-    cy.location('pathname').should('equal', language ? '/en/test3' : '/fr/test3')
+  it(`[${langurl}] - ${sizes[0]} - When to take your public pensions link click url redirects to /en/fr/ when accessing /en/fr`, () => {
+    cy.viewport(sizes[0])
+    cy.get('li').eq(3)
+    .should('have.attr', 'href', language ? '/en/test3' : '/fr/test3')
+    .should('be.visible')
+  })
+})
+
+describe(`[${langurl}] - ${sizes[1]} test id 156 - verify Top Learning links - Landing page`, () => {
+  beforeEach(() => {
+    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_testPlans/define?planId=127&suiteId=129')
+    cy.visitAndWait(`/${langurl}/home`)
+  })
+
+  it(`[${langurl}] - ${sizes[1]} - Top learning title is visible`, () => {
+    cy.viewport(sizes[1])
+    cy.get('h3').first().should('be.visible')
+  })
+
+  it(`[${langurl}] - ${sizes[1]} - Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr`, ()=> {
+    cy.viewport(sizes[1])
+    cy.get('li').eq(1)
+    .should('have.attr', 'href', language ? '/en/test' : '/fr/test')
+    .should('be.visible')
+  })
+
+  it(`[${langurl}] - ${sizes[1]} - Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr`, () => {
+    cy.viewport(sizes[1])
+    cy.get('li').eq(2)
+    .should('have.attr', 'href', language ? '/en/test2' : '/fr/test2')
+    .should('be.visible')
+  })
+
+  it(`[${langurl}] - ${sizes[1]} - When to take your public pensions link click url redirects to /en/fr/ when accessing /en/fr`, () => {
+    cy.viewport(sizes[1])
+    cy.get('li').eq(3)
+    .should('have.attr', 'href', language ? '/en/test3' : '/fr/test3')
+    .should('be.visible')
+  })
+})
+
+describe(`[${langurl}] - ${sizes[2]} test id 156 - verify Top Learning links - Landing page`, () => {
+  beforeEach(() => {
+    cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_testPlans/define?planId=127&suiteId=129')
+    cy.visitAndWait(`/${langurl}/home`)
+  })
+
+  it(`[${langurl}] - ${sizes[2]} - Top learning title is visible`, () => {
+    cy.viewport(sizes[0])
+    cy.get('h3').first().should('be.visible')
+  })
+
+  it(`[${langurl}] - ${sizes[2]} - Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr`, ()=> {
+    cy.viewport(sizes[0])
+    cy.get('li').eq(1)
+    .should('have.attr', 'href', language ? '/en/test' : '/fr/test')
+    .should('be.visible')
+  })
+
+  it(`[${langurl}] - ${sizes[2]} - Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr`, () => {
+    cy.viewport(sizes[0])
+    cy.get('li').eq(2)
+    .should('have.attr', 'href', language ? '/en/test2' : '/fr/test2')
+    .should('be.visible')
+  })
+
+  it(`[${langurl}] - ${sizes[2]} - When to take your public pensions link click url redirects to /en/fr/ when accessing /en/fr`, () => {
+    cy.viewport(sizes[2])
+    cy.get('li').eq(3)
+    .should('have.attr', 'href', language ? '/en/test3' : '/fr/test3')
+    .should('be.visible')
   })
 })

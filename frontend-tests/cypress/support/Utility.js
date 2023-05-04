@@ -24,7 +24,6 @@ export class utility {
 
     getLanguage() {
         if (language == "French") {
-            cy.get('[data-cy="toggle-language-link"]').click({force: true})
             return false
         }
         else {
