@@ -1,4 +1,4 @@
-import { FC, useEffect, useMemo, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
@@ -36,10 +36,13 @@ import Question5 from '../../components/questions/Question5'
 import Question6 from '../../components/questions/Question6'
 import Question7 from '../../components/questions/Question7'
 import Question8 from '../../components/questions/Question8'
+import { useQuizData } from '../../lib/hooks/useQuizData'
+import { useRemoveQuizData } from '../../lib/hooks/useRemoveQuizData'
+import { useSetQuizData } from '../../lib/hooks/useSetQuizData'
 import { Filters } from '../quiz/tasks/[[...filters]]'
 
 // TODO: map form values to "answer-id" from locales/(en/fr)/quiz/tasks/task-list.json once it has been finalized
-export interface QuizFormState {
+export interface QuizFormState extends Record<string, string> {
   retirementAge: string
   single: string
   marriedOrCommonLaw: string
@@ -112,55 +115,11 @@ const Learn: FC = () => {
   const theme = useTheme()
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
 
-  const sections = t<string, { cards: any[] }[]>('sections', {
-    returnObjects: true,
-  })
-
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [showConfirmation, setShowConfirmation] = useState(false)
-
-  const handleOpenModal = () => {
-    setIsModalOpen(true)
-  }
-
-  const handleCloseModal = () => {
-    if (showConfirmation) {
-      // remove stored form state
-      localStorage.removeItem('quiz')
-
-      setIsModalOpen(false)
-
-      // 1 second timeout otherwise dialog shows quiz content and close
-      setTimeout(function () {
-        setShowConfirmation(false)
-      }, 1000)
-    } else {
-      setShowConfirmation(true)
-    }
-  }
-
-  const handleConfirmationCancel = () => {
-    setShowConfirmation(false)
-  }
-
-  const initialValues = useMemo<QuizFormState>(() => {
-    // check if it's server side
-    if (typeof window === 'undefined') return defaultFormValues
-
-    // try to get and merge stored quiz form values
-    try {
-      const storedFormValues = JSON.parse(localStorage.getItem('quiz') ?? '')
-      return { ...defaultFormValues, ...storedFormValues }
-    } catch (err) {
-      return defaultFormValues
-    }
-  }, [])
-
   const formikWizard = useFormikWizard({
-    initialValues: initialValues,
+    initialValues: defaultFormValues,
     onSubmit: (values) => {
-      const filters: Filters = { answers: compact(Object.values<string>(values)) }
       // Encodes a js object as a url-safe base64 string.
+      const filters: Filters = { answers: compact(Object.values<string>(values)) }
       const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
       router.push(`/quiz/tasks/${encodedFilters}`)
     },
@@ -179,10 +138,49 @@ const Learn: FC = () => {
     ],
   })
 
+  useQuizData({
+    onSuccess: (data) => {
+      if (data) {
+        // override initial form values with stored values
+        formikWizard.setValues({ ...defaultFormValues, ...data })
+      }
+    },
+  })
+
+  const { mutate: removeQuizData } = useRemoveQuizData()
+  const { mutate: setQuizData } = useSetQuizData()
+
+  const sections = t<string, { cards: any[] }[]>('sections', {
+    returnObjects: true,
+  })
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [showConfirmation, setShowConfirmation] = useState(false)
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    if (showConfirmation) {
+      removeQuizData()
+      setIsModalOpen(false)
+      // 1 second timeout otherwise dialog shows quiz content and close
+      setTimeout(function () {
+        setShowConfirmation(false)
+      }, 1000)
+    } else {
+      setShowConfirmation(true)
+    }
+  }
+
+  const handleConfirmationCancel = () => {
+    setShowConfirmation(false)
+  }
+
   useEffect(() => {
-    // store any form values changes in locale storage
-    localStorage.setItem('quiz', JSON.stringify(formikWizard.values))
-  }, [formikWizard.values])
+    setQuizData(formikWizard.values as QuizFormState)
+  }, [formikWizard.values, setQuizData])
 
   return (
     <Layout
