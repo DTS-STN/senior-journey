@@ -74,13 +74,22 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
     router.push(`/quiz/tasks/${encodedFilters}`)
   }
 
+  function handleClick(e: React.MouseEvent) {
+    e.preventDefault()
+    localStorage.removeItem('quiz')
+    router.push('/learn')
+  }
+
   return (
-    <Layout breadcrumbItems={[
-      {
-        link: t("breadcrumbs.home.link"), 
-        text: t("breadcrumbs.home.text")
-      }
-    ]}>
+    <Layout
+      hideChecklist={true}
+      breadcrumbItems={[
+        {
+          link: t('breadcrumbs.home.link'),
+          text: t('breadcrumbs.home.text'),
+        },
+      ]}
+    >
       <div className="grid gap-6 lg:grid-cols-12">
         <section className="lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">
@@ -91,6 +100,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
               startIcon={<RefreshIcon />}
               size="large"
               className="w-full md:w-auto lg:w-full"
+              onClick={handleClick}
             >
               {t('restart-quiz')}
             </Button>

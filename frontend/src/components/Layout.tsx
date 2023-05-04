@@ -2,22 +2,28 @@ import { FC, ReactNode } from 'react'
 
 import { useTranslation } from 'next-i18next'
 
+import { BreadcrumbItem } from './Breadcrumb'
 import Container from './Container'
 import Footer from './Footer'
 import Header from './Header'
-import { BreadcrumbItem } from './Breadcrumb'
 
 export interface LayoutProps {
   children: ReactNode
-  breadcrumbItems?: BreadcrumbItem[];
+  breadcrumbItems?: BreadcrumbItem[]
   contained?: boolean
+  hideChecklist?: boolean
 }
 
-const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems }) => {
+const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideChecklist }) => {
   const { t } = useTranslation('common')
   return (
     <div className="flex min-h-screen flex-col">
-      <Header skipToMainText={t('header.skip-to-main')} gocLink={t('header.goc-link')} breadcrumbItems={breadcrumbItems} />
+      <Header
+        skipToMainText={t('header.skip-to-main')}
+        gocLink={t('header.goc-link')}
+        breadcrumbItems={breadcrumbItems}
+        hideChecklist={hideChecklist}
+      />
       <main role="main" id="mainContent" className="mt-5 flex-1 pb-8">
         {contained ? <Container>{children}</Container> : <>{children}</>}
       </main>

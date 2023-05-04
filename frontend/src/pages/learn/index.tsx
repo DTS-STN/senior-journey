@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useEffect, useMemo, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
@@ -12,11 +12,11 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
-  MobileStepper,
+  LinearProgress,
   useMediaQuery,
   useTheme,
 } from '@mui/material'
-import { FormikWizard } from 'formik-wizard-form'
+import { useFormikWizard } from 'formik-wizard-form'
 import { compact } from 'lodash'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
@@ -39,7 +39,7 @@ import Question8 from '../../components/questions/Question8'
 import { Filters } from '../quiz/tasks/[[...filters]]'
 
 // TODO: map form values to "answer-id" from locales/(en/fr)/quiz/tasks/task-list.json once it has been finalized
-export interface FormValues {
+export interface QuizFormState {
   retirementAge: string
   single: string
   marriedOrCommonLaw: string
@@ -52,6 +52,21 @@ export interface FormValues {
   legalStatus: string
   yearsInCanada: string
   hasCppDisabilityBenefits: string
+}
+
+const defaultFormValues: QuizFormState = {
+  retirementAge: '',
+  single: '',
+  marriedOrCommonLaw: '',
+  divorcedOrSeparated: '',
+  widowed: '',
+  hasChildren: '',
+  financialPreparedness: '',
+  retirementTimeframe: '',
+  hasExtraIncome: '',
+  legalStatus: '',
+  yearsInCanada: '',
+  hasCppDisabilityBenefits: '',
 }
 
 export interface QuizConfirmationProps {
@@ -110,7 +125,11 @@ const Learn: FC = () => {
 
   const handleCloseModal = () => {
     if (showConfirmation) {
+      // remove stored form state
+      localStorage.removeItem('quiz')
+
       setIsModalOpen(false)
+
       // 1 second timeout otherwise dialog shows quiz content and close
       setTimeout(function () {
         setShowConfirmation(false)
@@ -124,28 +143,56 @@ const Learn: FC = () => {
     setShowConfirmation(false)
   }
 
-  const initialValues: FormValues = {
-    retirementAge: '',
-    single: '',
-    marriedOrCommonLaw: '',
-    divorcedOrSeparated: '',
-    widowed: '',
-    hasChildren: '',
-    financialPreparedness: '',
-    retirementTimeframe: '',
-    hasExtraIncome: '',
-    legalStatus: '',
-    yearsInCanada: '',
-    hasCppDisabilityBenefits: '',
-  }
+  const initialValues = useMemo<QuizFormState>(() => {
+    // check if it's server side
+    if (typeof window === 'undefined') return defaultFormValues
+
+    // try to get and merge stored quiz form values
+    try {
+      const storedFormValues = JSON.parse(localStorage.getItem('quiz') ?? '')
+      return { ...defaultFormValues, ...storedFormValues }
+    } catch (err) {
+      return defaultFormValues
+    }
+  }, [])
+
+  const formikWizard = useFormikWizard({
+    initialValues: initialValues,
+    onSubmit: (values) => {
+      const filters: Filters = { answers: compact(Object.values<string>(values)) }
+      // Encodes a js object as a url-safe base64 string.
+      const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+      router.push(`/quiz/tasks/${encodedFilters}`)
+    },
+    validateOnNext: true,
+    activeStepIndex: 0,
+    steps: [
+      { component: QuizLandingPage },
+      { component: Question1 },
+      { component: Question2 },
+      { component: Question3 },
+      { component: Question4 },
+      { component: Question5 },
+      { component: Question6 },
+      { component: Question7 },
+      { component: Question8 },
+    ],
+  })
+
+  useEffect(() => {
+    // store any form values changes in locale storage
+    localStorage.setItem('quiz', JSON.stringify(formikWizard.values))
+  }, [formikWizard.values])
 
   return (
-      <Layout breadcrumbItems={[
+    <Layout
+      breadcrumbItems={[
         {
-          link: t("breadcrumbs.home.link"), 
-          text: t("breadcrumbs.home.text")
-        }
-      ]}>
+          link: t('breadcrumbs.home.link'),
+          text: t('breadcrumbs.home.text'),
+        },
+      ]}
+    >
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
       <section className="rounded-3xl bg-[#f5f5f5] ">
@@ -181,106 +228,69 @@ const Learn: FC = () => {
             noText={t('quiz.confirmation.no')}
           />
         ) : (
-          <FormikWizard
-            initialValues={initialValues}
-            onSubmit={(values) => {
-              const filters: Filters = { answers: compact(Object.values<string>(values)) }
-              // Encodes a js object as a url-safe base64 string.
-              const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
-              router.push(`/quiz/tasks/${encodedFilters}`)
-            }}
-            validateOnNext
-            activeStepIndex={0}
-            steps={[
-              {
-                component: QuizLandingPage,
-              },
-              {
-                component: Question1,
-              },
-              {
-                component: Question2,
-              },
-              {
-                component: Question3,
-              },
-              {
-                component: Question4,
-              },
-              {
-                component: Question5,
-              },
-              {
-                component: Question6,
-              },
-              {
-                component: Question7,
-              },
-              {
-                component: Question8,
-              },
-            ]}
-          >
-            {({ currentStepIndex, renderComponent, handlePrev, handleNext, isNextDisabled, isPrevDisabled }) => {
-              return (
-                <div className="flex min-h-[850px] flex-col">
-                  <DialogTitle className="text-right">
-                    <Button variant="text" onClick={handleCloseModal} startIcon={<CloseIcon />} size="large">
-                      {t('quiz.navigation.close')}
-                    </Button>
-                  </DialogTitle>
-                  <DialogContent className="flex flex-col">
-                    <h2 className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
-                      {t('quiz.navigation.title')}
-                    </h2>
-                    <div className="mb-5">{renderComponent()}</div>
-                    {(currentStepIndex ?? 0) > 0 && (
-                      <div className="mt-auto">
-                        <MobileStepper
-                          variant="progress"
-                          steps={9}
-                          position="static"
-                          activeStep={currentStepIndex}
-                          backButton={undefined}
-                          nextButton={undefined}
-                          classes={{
-                            progress: 'w-full',
-                          }}
-                        />
-                        <p className="m-0 text-center">
-                          {currentStepIndex} {t('quiz.navigation.of')} 8
-                        </p>
-                      </div>
-                    )}
-                  </DialogContent>
-                  <DialogActions className="block">
-                    {currentStepIndex === 0 ? (
-                      <Button onClick={handleNext} disabled={isNextDisabled} size="large" fullWidth autoFocus>
-                        {t('quiz.navigation.start')}
+          <>
+            <div className="flex min-h-[850px] flex-col">
+              <DialogTitle className="text-right">
+                <Button variant="text" onClick={handleCloseModal} startIcon={<CloseIcon />} size="large">
+                  {t('quiz.navigation.close')}
+                </Button>
+              </DialogTitle>
+              <DialogContent className="flex flex-col">
+                <h2 className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
+                  {t('quiz.navigation.title')}
+                </h2>
+                <div className="mb-5">{formikWizard.renderComponent()}</div>
+                {!formikWizard.isFirstStep && (
+                  <div className="mt-auto">
+                    <LinearProgress
+                      variant="determinate"
+                      value={((formikWizard.currentStepIndex ?? 0) / 8) * 100}
+                      aria-labelledby="progress-label"
+                      className="my-2"
+                    />
+                    <p id="progress-label" className="m-0 text-center">
+                      {formikWizard.currentStepIndex} {t('quiz.navigation.of')} 8
+                    </p>
+                  </div>
+                )}
+              </DialogContent>
+              <DialogActions className="block">
+                {formikWizard.isFirstStep ? (
+                  <Button
+                    onClick={formikWizard.handleNext}
+                    disabled={formikWizard.isNextDisabled}
+                    size="large"
+                    fullWidth
+                    autoFocus
+                  >
+                    {t('quiz.navigation.start')}
+                  </Button>
+                ) : (
+                  <>
+                    <div className="grid gap-2 md:grid-cols-2 md:gap-6">
+                      <Button
+                        onClick={formikWizard.handlePrev}
+                        disabled={formikWizard.isPrevDisabled}
+                        size="large"
+                        fullWidth
+                        variant="outlined"
+                      >
+                        {t('quiz.navigation.previous')}
                       </Button>
-                    ) : (
-                      <>
-                        <div className="grid gap-2 md:grid-cols-2 md:gap-6">
-                          <Button
-                            onClick={handlePrev}
-                            disabled={isPrevDisabled}
-                            size="large"
-                            fullWidth
-                            variant="outlined"
-                          >
-                            {t('quiz.navigation.previous')}
-                          </Button>
-                          <Button onClick={handleNext} disabled={isNextDisabled} size="large" fullWidth>
-                            {currentStepIndex === 8 ? t('quiz.navigation.submit') : t('quiz.navigation.next')}
-                          </Button>
-                        </div>
-                      </>
-                    )}
-                  </DialogActions>
-                </div>
-              )
-            }}
-          </FormikWizard>
+                      <Button
+                        onClick={formikWizard.handleNext}
+                        disabled={formikWizard.isNextDisabled}
+                        size="large"
+                        fullWidth
+                      >
+                        {formikWizard.isLastStep ? t('quiz.navigation.submit') : t('quiz.navigation.next')}
+                      </Button>
+                    </div>
+                  </>
+                )}
+              </DialogActions>
+            </div>
+          </>
         )}
       </Dialog>
 

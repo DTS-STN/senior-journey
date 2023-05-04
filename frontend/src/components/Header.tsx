@@ -12,14 +12,14 @@ import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
 import { BreadcrumbItem } from './Breadcrumb'
 
-
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
-  breadcrumbItems?: BreadcrumbItem[];
+  breadcrumbItems?: BreadcrumbItem[]
+  hideChecklist?: boolean
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist }) => {
   const config = getConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
@@ -47,23 +47,14 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) =
       </nav>
 
       <header>
-        {showBanner && (
-          <Banner
-            alert={t('banner.alert')}
-            description={t('banner.description')}
-          />
-        )}
+        {showBanner && <Banner alert={t('banner.alert')} description={t('banner.description')} />}
         <div className="container mx-auto flex flex-col justify-between px-4 py-2.5 md:flex md:flex-row">
           <div className="flex flex-row content-center items-center justify-between md:mt-7">
             <a href={gocLink}>
               <Image
                 key={locale}
                 className="h-7 w-auto lg:h-8"
-                alt={
-                  locale === 'en'
-                    ? 'Government of Canada'
-                    : 'Gouvernement du Canada'
-                }
+                alt={locale === 'en' ? 'Government of Canada' : 'Gouvernement du Canada'}
                 src={`/assets/sig-blk-${locale}.svg`}
                 width={300}
                 height={28}
@@ -110,6 +101,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) =
           checklist={t('checklist')}
           checklistUrl={t('checklist-url')}
           breadcrumbItems={breadcrumbItems}
+          hideChecklist={hideChecklist}
         />
 
         {/* <Menu

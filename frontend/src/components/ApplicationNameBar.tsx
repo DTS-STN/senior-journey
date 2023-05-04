@@ -1,26 +1,38 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
+import { compact } from 'lodash'
 import Link from 'next/link'
 
-import {Breadcrumb, BreadcrumbItem } from './Breadcrumb'
+import { Filters } from '../pages/quiz/tasks/[[...filters]]'
+import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
   text: string
   href: string
   checklist: string
   checklistUrl: string
-  breadcrumbItems?: BreadcrumbItem[];
+  breadcrumbItems?: BreadcrumbItem[]
+  hideChecklist?: boolean
 }
 
-const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
-  text,
-  href,
-  checklist,
-  checklistUrl,
-  breadcrumbItems,
-}) => {
+const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
+  let [checklistUrl, setChecklistUrl] = useState('/learn')
+
+  useEffect(() => {
+    // try to get stored quiz form values
+    try {
+      const storedFormValues = JSON.parse(localStorage.getItem('quiz') ?? '')
+      const filters: Filters = { answers: compact(Object.values<string>(storedFormValues)) }
+      // Encodes a js object as a url-safe base64 string.
+      const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+      setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
+    } catch (err) {
+      return
+    }
+  }, [])
+
   return (
     <div id="app-bar">
       <section className="container mx-auto p-4">
@@ -34,14 +46,11 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
           >
             <h2>{text}</h2>
           </MuiLink>
-          <Button
-            component={Link}
-            href={checklistUrl}
-            startIcon={<BookmarkBorderIcon />}
-            size="large"
-          >
-            {checklist}
-          </Button>
+          {!hideChecklist && (
+            <Button component={Link} href={checklistUrl} startIcon={<BookmarkBorderIcon />} size="large">
+              {checklist}
+            </Button>
+          )}
         </div>
         <Breadcrumb items={breadcrumbItems} />
       </section>
