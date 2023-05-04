@@ -2,15 +2,15 @@
 module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    borderColor: {
-      // Material UI Palette Divider
-      DEFAULT: 'rgba(0, 0, 0, 0.12)',
-    },
     extend: {
       fontFamily: {
         display: ['Lato', 'sans-serif'],
         body: ['"Noto Sans"', 'sans-serif'],
         extra: ['Patua One', 'cursive'],
+      },
+      borderColor: {
+        // Material UI Palette Divider
+        DEFAULT: 'rgba(0, 0, 0, 0.12)',
       },
       borderWidth: {
         6: '6px',
