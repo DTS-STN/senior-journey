@@ -76,19 +76,19 @@ describe(`[${langurl}] - ${sizes[2]} test id 156 - verify Top Learning links - L
   })
 
   it(`[${langurl}] - ${sizes[2]} - Top learning title is visible`, () => {
-    cy.viewport(sizes[0])
+    cy.viewport(sizes[2])
     cy.get('h3').first().should('be.visible')
   })
 
   it(`[${langurl}] - ${sizes[2]} - Main sources of retirement income link click url redirects to /en/fr/ when accessing /en/fr`, ()=> {
-    cy.viewport(sizes[0])
+    cy.viewport(sizes[2])
     cy.get('li').eq(1)
     .should('have.attr', 'href', language ? '/en/test' : '/fr/test')
     .should('be.visible')
   })
 
   it(`[${langurl}] - ${sizes[2]} - Planning to save for retirement link click url redirects to /en/fr/ when accessing /en/fr`, () => {
-    cy.viewport(sizes[0])
+    cy.viewport(sizes[2])
     cy.get('li').eq(2)
     .should('have.attr', 'href', language ? '/en/test2' : '/fr/test2')
     .should('be.visible')
