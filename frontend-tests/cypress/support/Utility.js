@@ -23,7 +23,7 @@ export class utility {
     }
 
     getLanguage() {
-        if (language == "French") {
+        if (language == "fr") {
             return false
         }
         else {
