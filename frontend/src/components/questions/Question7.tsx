@@ -75,11 +75,11 @@ const Question7 = ({ values, setFieldValue }: QuestionProps) => {
         </ToggleButton>
         <ToggleButton
           value="unsure-in-canada"
-          aria-label={t('quiz.questions.question-7.option-3')}
+          aria-label={t('quiz.questions.question-7.option-4')}
           className="my-4 font-display text-base font-bold normal-case"
           selected={values['yearsInCanada'] === 'unsure-in-canada'}
         >
-          {t('quiz.questions.question-7.option-3')}
+          {t('quiz.questions.question-7.option-4')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
