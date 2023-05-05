@@ -5,10 +5,11 @@ import { ExpandLess, ExpandMore } from '@mui/icons-material';
 
 export interface AccessibilityGraphContainerProps {
     tableData: TableData,
-    description: string
+    description: string,
+    buttonLabel: string,
 }
 
-const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = ({ description, tableData }) => {
+const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = ({ description, tableData, buttonLabel }) => {
     const [open, setOpen] = useState(false);
 
     const handleClick = () => {
@@ -19,7 +20,7 @@ const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = 
         <div className="pb-2">
             
             <div>
-                <IconButton onClick={handleClick}>
+                <IconButton onClick={handleClick} aria-label={buttonLabel}>
                     {open ? <ExpandMore /> : <ExpandLess />}
                 </IconButton>
                 <span>{tableData.caption}</span>

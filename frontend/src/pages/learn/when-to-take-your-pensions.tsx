@@ -119,6 +119,7 @@ const WhenToTakeYourPensions: FC = () => {
       <AccessibilityGraphContainer
         tableData={illustrationOASGraphData}
         description={t('old-age-security.illustration.description')}
+        buttonLabel={t('show-accessible-table')}
       />
       <p>{t('old-age-security.content-three')}</p>
       <p>{t('old-age-security.content-four')}</p>
@@ -160,6 +161,7 @@ const WhenToTakeYourPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCPPGraphData}
           description={t('cpp-pension.illustration.description')}
+          buttonLabel={t('show-accessible-table')}
         />
       </div>
       <p>{t('cpp-pension.content-two')}</p>
@@ -250,6 +252,7 @@ const WhenToTakeYourPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCaseStudyData1}
           description={t('case-study.illustration-one.description')}
+          buttonLabel={t('show-accessible-table')}
         />
       </div>
       <p>{t('case-study.content-four')}</p>
@@ -267,6 +270,7 @@ const WhenToTakeYourPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCaseStudyData2}
           description={t('case-study.illustration-two.description')}
+          buttonLabel={t('show-accessible-table')}
         />
       </div>
       <p>{t('case-study.content-five')}</p>
@@ -285,6 +289,7 @@ const WhenToTakeYourPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCaseStudyData3}
           description={t('case-study.illustration-three.description')}
+          buttonLabel={t('show-accessible-table')}
         />
       </div>
       <p>{t('case-study.content-seven')}</p>
@@ -299,6 +304,7 @@ const WhenToTakeYourPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCaseStudyData4}
           description={t('case-study.illustration-four.description')}
+          buttonLabel={t('show-accessible-table')}
         />
       </div>
       <p>{t('case-study.content-eight')}</p>
@@ -313,6 +319,7 @@ const WhenToTakeYourPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCaseStudyData5}
           description={t('case-study.illustration-five.description')}
+          buttonLabel={t('show-accessible-table')}
         />
       </div>
       <p>{t('case-study.content-nine')}</p>
