@@ -8,19 +8,18 @@ type QuestionProps = {
   setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
 }
 
-const Question5 = ({ values, setFieldValue }: QuestionProps) => {
-  let { t } = useTranslation('learn')
+export const Question7 = ({ values, setFieldValue }: QuestionProps) => {
+  const { t } = useTranslation('quiz')
   const [value, setValue] = React.useState('')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue('hasExtraIncome', values['hasExtraIncome'] === answerId ? '' : answerId ?? '')
+    setFieldValue('yearsInCanada', values['yearsInCanada'] === answerId ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">{t('quiz.questions.question-5.title')}</h5>
-      <p className="mt-5 font-display text-sm font-light">{t('quiz.questions.question-5.subtitle')}</p>
+      <h5 className="font-display text-2xl font-light">{t('questions.question-7.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -43,32 +42,38 @@ const Question5 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="no-income"
-          aria-label={t('quiz.questions.question-5.option-1')}
+          value="in-canada-40-plus"
+          aria-label={t('questions.question-7.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === 'no-income'}
+          selected={values['yearsInCanada'] === 'in-canada-40-plus'}
         >
-          {t('quiz.questions.question-5.option-1')}
+          {t('questions.question-7.option-1')}
         </ToggleButton>
         <ToggleButton
-          value="yes-income"
-          aria-label={t('quiz.questions.question-5.option-2')}
+          value="in-canada-10-to-39"
+          aria-label={t('questions.question-7.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === 'yes-income'}
+          selected={values['yearsInCanada'] === 'in-canada-10-to-39'}
         >
-          {t('quiz.questions.question-5.option-2')}
+          {t('questions.question-7.option-2')}
         </ToggleButton>
         <ToggleButton
-          value="unsure-income"
-          aria-label={t('quiz.questions.question-5.option-3')}
+          value="in-canada-less-than-10"
+          aria-label={t('questions.question-7.option-3')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === 'unsure-income'}
+          selected={values['yearsInCanada'] === 'in-canada-less-than-10'}
         >
-          {t('quiz.questions.question-5.option-3')}
+          {t('questions.question-7.option-3')}
+        </ToggleButton>
+        <ToggleButton
+          value="unsure-in-canada"
+          aria-label={t('questions.question-7.option-4')}
+          className="my-4 font-display text-base font-bold normal-case"
+          selected={values['yearsInCanada'] === 'unsure-in-canada'}
+        >
+          {t('questions.question-7.option-4')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
   )
 }
-
-export default Question5

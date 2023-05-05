@@ -2,113 +2,15 @@
   "header": "(FR) Learn",
   "explore": "(FR) Explore our content",
   "breadcrumbs": {
-    "home":{
-      "text":"(FR) Retirement Hub",
-      "link":"/"
+    "home": {
+      "text": "(FR) Retirement Hub",
+      "link": "/"
     }
   },
   "banner": {
     "title": "(FR) Not sure where to begin? Take the quiz!",
     "text": "(FR) Take our quiz and receive a personalized checklist to help guide you through retirement.",
     "quiz": "(FR) Take the quiz now!"
-  },
-  "quiz": {
-    "confirmation":{
-      "sure":"(FR) Are you sure you want to close this quiz? You will lose your progress.",
-      "no": "(FR) No, Return to Quiz",
-      "yes": "(FR) Yes, Close"
-    },
-    "navigation": {
-      "start": "(FR) Start The Quiz",
-      "previous": "(FR) Previous Question",
-      "next": "(FR) Next Question",
-      "submit": "(FR) Submit",
-      "close": "(FR) Close",
-      "title": "(FR) Retirement Ready Quiz",
-      "of": "(FR) of"
-    },
-    "landing": {
-      "p1": "(FR) Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
-      "p2": "(FR) Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
-      "whatyouneed": "(FR) What you'll need",
-      "p3": "(FR) You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
-      "legal": "(FR) <strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
-      "residence": "(FR) <strong>residence history</strong> (number of years lived in Canada)",
-      "marital": "(FR) <strong>marital status</strong>",
-      "retirement": "(FR) <strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
-      "timetocomplete": "(FR) Time to complete survey",
-      "minutes": "(FR) 3 minutes"
-    },
-    "questions":{
-      "question-1":{
-        "title": "(FR) When do you plan on retiring?",
-        "option-1": "(FR) Before Age 60",
-        "option-2": "(FR) Between ages 60 and 65",
-        "option-3": "(FR) At Age 65",
-        "option-4": "(FR) Between ages 65 and 70",
-        "option-5": "(FR) After Age 70",
-        "option-6": "(FR) Not sure"
-      },
-      "question-2": {
-        "question-1": {
-          "title": "(FR) Select all that apply to you. You are...",
-          "option-1": "(FR) Single",
-          "option-2": "(FR) Married or common-law",
-          "option-3": "(FR) Divorced or separated",
-          "option-4": "(FR) Widowed"
-        },
-        "question-2": {
-          "title": "(FR) Do you have children?",
-          "option-1": "(FR) Yes",
-          "option-2": "(FR) No"
-        }
-      },      
-      "question-3": {
-        "title": "(FR) How financially prepared do you feel for retirement?",
-        "subtitle": "(FR) Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
-        "option-1": "(FR) Very unprepared",
-        "option-2": "(FR) Unprepared",
-        "option-3": "(FR) Not sure",
-        "option-4": "(FR) Prepared",
-        "option-5": "(FR) Very Prepared"
-      },
-      "question-4": {
-        "title": "(FR) Where do you plan on living when you retire?",
-        "option-1": "(FR) In Canada",
-        "option-2": "(FR) In Canada MORE Than 6 Months a Year",
-        "option-3": "(FR) In Canada LESS than 6 months a year",
-        "option-4": "(FR) Outside Canada",
-        "option-5": "(FR) Not Sure",
-        "option-2-label": "(FR) In Canada more than 6 months a year",
-        "option-3-label": "(FR) In Canada less than 6 months a year"
-      },
-      "question-5": {
-        "title": "(FR) Do you plan to earn money while receiving retirement benefits",
-        "subtitle": "(FR) Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
-        "option-1": "(FR) No",
-        "option-2": "(FR) Yes",
-        "option-3": "(FR) Not sure"
-      },
-      "question-6": {
-        "title": "(FR) When you retire, what will your legal status be in Canada?",
-        "option-1": "(FR) Canadian Citizen or Permanent Resident",
-        "option-2": "(FR) Métis, Inuit, or Member of First Nation",
-        "option-3": "(FR) Sponsored Resident (less than 10 years in Canada)",
-        "option-4": "(FR) Visitor, Student, or Temporary Worker"
-      },
-      "question-7": {
-        "title": "(FR) From age 18, how many years will you have lived in Canada when you apply for retirement benefits?",
-        "option-1": "(FR) 40 years or more",
-        "option-2": "(FR) 10 to 39 years",
-        "option-3": "(FR) Less than 10 years",
-        "option-4": "(FR) Not sure"
-      },
-      "question-8": {
-        "title": "(FR) Are you receiving CPP-Disability benefits?",
-        "option-1": "(FR) Yes",
-        "option-2": "(FR) No"
-      }
-    }
   },
   "sections": [
     {
