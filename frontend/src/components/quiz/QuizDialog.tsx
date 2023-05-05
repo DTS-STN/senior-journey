@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
@@ -17,8 +17,6 @@ import { compact } from 'lodash'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 
-import { useQuizData } from '../../lib/hooks/useQuizData'
-import { useRemoveQuizData } from '../../lib/hooks/useRemoveQuizData'
 import { useSetQuizData } from '../../lib/hooks/useSetQuizData'
 import { Filters } from '../../pages/quiz/tasks/[[...filters]]'
 import { QuizLanding } from './QuizLanding'
@@ -104,10 +102,13 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
   const theme = useTheme()
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
   const [showConfirmation, setShowConfirmation] = useState(false)
+  const { mutate: setQuizData } = useSetQuizData()
 
   const formikWizard = useFormikWizard({
     initialValues: defaultFormValues,
     onSubmit: (values) => {
+      setQuizData(values as QuizFormState)
+
       // Encodes a js object as a url-safe base64 string.
       const filters: Filters = { answers: compact(Object.values<string>(values)) }
       const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
@@ -128,21 +129,8 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
     ],
   })
 
-  useQuizData({
-    onSuccess: (data) => {
-      if (data) {
-        // override initial form values with stored values
-        formikWizard.setValues({ ...defaultFormValues, ...data })
-      }
-    },
-  })
-
-  const { mutate: removeQuizData } = useRemoveQuizData()
-  const { mutate: setQuizData } = useSetQuizData()
-
   const handleOnClose = () => {
     if (showConfirmation) {
-      removeQuizData()
       onClose()
       // 1 second timeout otherwise dialog shows quiz content and close
       setTimeout(function () {
@@ -156,10 +144,6 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
   const handleOnConfirmationCancel = () => {
     setShowConfirmation(false)
   }
-
-  useEffect(() => {
-    setQuizData(formikWizard.values as QuizFormState)
-  }, [formikWizard.values, setQuizData])
 
   return (
     <Dialog
