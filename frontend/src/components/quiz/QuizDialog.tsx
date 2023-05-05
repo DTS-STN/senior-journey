@@ -75,7 +75,7 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, 
         <div className="mb-10 text-center">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
         </div>
-        <p>{sureText}</p>
+        <p id="quiz-modal-close-confirmation">{sureText}</p>
       </DialogContent>
       <DialogActions className="block">
         <div className="grid gap-2 md:grid-cols-2 md:gap-6">
@@ -149,7 +149,7 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
     <Dialog
       onClose={handleOnClose}
       open={open}
-      aria-describedby="QuizModal-header"
+      aria-labelledby="quiz-modal-header quiz-modal-close-confirmation"
       scroll="body"
       fullScreen={fullScreen}
       maxWidth="md"
@@ -172,7 +172,7 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
               </Button>
             </DialogTitle>
             <DialogContent className="flex flex-col">
-              <h2 className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
+              <h2 id="quiz-modal-header" className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                 {t('navigation.title')}
               </h2>
               <div className="mb-5">{formikWizard.renderComponent()}</div>
