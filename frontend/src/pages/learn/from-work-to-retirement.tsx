@@ -1,14 +1,13 @@
 import { FC } from 'react'
+
 import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 
-import {
-  LearnPageLayout
-} from '../../components/LearnPageLayout'
 import AlertCard from '../../components/AlertCard'
+import { LearnPageLayout } from '../../components/LearnPageLayout'
 
 const FromWorkToRetirement: FC = () => {
   const { t } = useTranslation('learn/from-work-to-retirement')
@@ -16,16 +15,14 @@ const FromWorkToRetirement: FC = () => {
   return (
     <LearnPageLayout
       header={t('header')}
-      learnMoreHeader={t('learn-more-heading')}
-      learnMoreLinks={[]}
       breadcrumbItems={[
         {
-          link: t("breadcrumbs.home.link"), 
-          text: t("breadcrumbs.home.text")
+          link: t('breadcrumbs.home.link'),
+          text: t('breadcrumbs.home.text'),
         },
         {
-          link: t("breadcrumbs.learn.link"), 
-          text: t("breadcrumbs.learn.text")
+          link: t('breadcrumbs.learn.link'),
+          text: t('breadcrumbs.learn.text'),
         },
       ]}
     >
@@ -48,7 +45,7 @@ const FromWorkToRetirement: FC = () => {
             ns="learn/from-work-to-retirement"
             i18nKey="key-takeaways.life-chapters.phase-retirement.content"
             components={{
-              a: (<MuiLink href={t('key-takeaways.life-chapters.phase-retirement.link')} />),
+              a: <MuiLink href={t('key-takeaways.life-chapters.phase-retirement.link')} />,
             }}
           />
         </li>
@@ -57,7 +54,7 @@ const FromWorkToRetirement: FC = () => {
             ns="learn/from-work-to-retirement"
             i18nKey="key-takeaways.life-chapters.second-career.content"
             components={{
-              a: (<MuiLink href={t('key-takeaways.life-chapters.second-career.link')} />),
+              a: <MuiLink href={t('key-takeaways.life-chapters.second-career.link')} />,
             }}
           />
         </li>
@@ -66,7 +63,7 @@ const FromWorkToRetirement: FC = () => {
             ns="learn/from-work-to-retirement"
             i18nKey="key-takeaways.life-chapters.full-retirement.content"
             components={{
-              a: (<MuiLink href={t('key-takeaways.life-chapters.full-retirement.link')} />),
+              a: <MuiLink href={t('key-takeaways.life-chapters.full-retirement.link')} />,
             }}
           />
         </li>
@@ -101,16 +98,13 @@ const FromWorkToRetirement: FC = () => {
           ns="learn/from-work-to-retirement"
           i18nKey="combine-job-pensions-income.content-three.content"
           components={{
-            a: (<MuiLink href={t('combine-job-pensions-income.content-three.link')} />),
+            a: <MuiLink href={t('combine-job-pensions-income.content-three.link')} />,
           }}
         />
       </p>
 
       <AlertCard>
-        <Trans
-          ns="learn/from-work-to-retirement"
-          i18nKey="combine-job-pensions-income.smart-tip"
-        />
+        <Trans ns="learn/from-work-to-retirement" i18nKey="combine-job-pensions-income.smart-tip" />
       </AlertCard>
 
       <p>
@@ -118,7 +112,7 @@ const FromWorkToRetirement: FC = () => {
           ns="learn/from-work-to-retirement"
           i18nKey="combine-job-pensions-income.content-four.content"
           components={{
-            a: (<MuiLink href={t('combine-job-pensions-income.content-four.link')} />),
+            a: <MuiLink href={t('combine-job-pensions-income.content-four.link')} />,
           }}
         />
       </p>
@@ -127,7 +121,7 @@ const FromWorkToRetirement: FC = () => {
           ns="learn/from-work-to-retirement"
           i18nKey="combine-job-pensions-income.content-five.content"
           components={{
-            a: (<MuiLink href={t('combine-job-pensions-income.content-five.link')} />),
+            a: <MuiLink href={t('combine-job-pensions-income.content-five.link')} />,
           }}
         />
       </p>
@@ -135,11 +129,8 @@ const FromWorkToRetirement: FC = () => {
         {t('combine-job-pensions-income.sub-heading-two')}
       </h3>
       <p>{t('combine-job-pensions-income.content-six')}</p>
-      <AlertCard type='disclaimer'>
-        <Trans
-          ns="learn/from-work-to-retirement"
-          i18nKey="combine-job-pensions-income.disclaimer"
-        />
+      <AlertCard type="disclaimer">
+        <Trans ns="learn/from-work-to-retirement" i18nKey="combine-job-pensions-income.disclaimer" />
       </AlertCard>
 
       <h2 id="case-study" className="h2">
@@ -148,7 +139,6 @@ const FromWorkToRetirement: FC = () => {
       <h3 id="case-study-sub-heading-one" className="h3">
         {t('case-study.sub-heading')}
       </h3>
-
     </LearnPageLayout>
   )
 }
@@ -156,10 +146,7 @@ const FromWorkToRetirement: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', [
-        'common',
-        'learn/from-work-to-retirement',
-      ])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/from-work-to-retirement'])),
     },
   }
 }

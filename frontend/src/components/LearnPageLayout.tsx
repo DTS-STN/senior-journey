@@ -1,36 +1,18 @@
 import React, { FC } from 'react'
 
-import NavigateNextIcon from '@mui/icons-material/NavigateNext'
-import { List, ListItem, ListItemButton, ListItemText } from '@mui/material'
-import Link from 'next/link'
-
 import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import { BreadcrumbItem } from './Breadcrumb'
 import Layout from './Layout'
 import { TableOfContents } from './TableOfContents'
 import { TableOfContentsDialog } from './TableOfContentsDialog'
 
-export interface LearnMoreLink {
-  href: string
-  primary: string
-  secondary?: string
-}
-
 export interface LearnPageLayoutProps {
   children: React.ReactNode
   header: string
-  learnMoreHeader: string
-  learnMoreLinks: ReadonlyArray<LearnMoreLink>
   breadcrumbItems?: BreadcrumbItem[]
 }
 
-export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
-  children,
-  header,
-  learnMoreHeader,
-  learnMoreLinks,
-  breadcrumbItems,
-}) => {
+export const LearnPageLayout: FC<LearnPageLayoutProps> = ({ children, header, breadcrumbItems }) => {
   const tableOfContentsData = useTableOfContentsData()
   return (
     <Layout breadcrumbItems={breadcrumbItems}>
@@ -46,31 +28,6 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
         </section>
         <section id="content" className="lg:col-span-8 xl:col-span-9">
           {children}
-          {learnMoreLinks.length > 0 && (
-            <>
-              <h2 className="h2">{learnMoreHeader}</h2>
-              <List disablePadding>
-                {learnMoreLinks.map(({ href, primary, secondary }) => (
-                  <React.Fragment key={primary}>
-                    <ListItem disablePadding className="border-b">
-                      <ListItemButton href={href} component={Link}>
-                        <ListItemText
-                          primary={primary}
-                          primaryTypographyProps={{
-                            variant: 'subtitle1',
-                            className: 'font-display font-medium',
-                            component: 'h3',
-                          }}
-                          secondary={secondary}
-                        />
-                        <NavigateNextIcon color="primary" />
-                      </ListItemButton>
-                    </ListItem>
-                  </React.Fragment>
-                ))}
-              </List>
-            </>
-          )}
         </section>
       </div>
     </Layout>
