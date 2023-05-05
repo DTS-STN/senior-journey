@@ -310,7 +310,7 @@ const Learn: FC = () => {
                       component="img"
                       alt={t(`sections.${index}.cards.${cardIndex}.title`)}
                       image={t(`sections.${index}.cards.${cardIndex}.image`)}
-                      className="h-72 bg-secondary-50 object-contain"
+                      className="h-64 w-full object-cover"
                     />
                     <CardContent>
                       <p className="mb-2 font-display text-sm font-bold">

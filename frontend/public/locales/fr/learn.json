@@ -119,14 +119,14 @@
           "title": "(FR) Overview of retirement income sources",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Learn about public & private pensions, personal savings and investments.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "image": "/assets/main-sources-of-income.svg",
           "link": "/learn/retirement-income-sources"
         },
         {
           "title": "(FR) Planning to save for retirement",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Learn how to maximize your savings and to better manage your money in retirement.",
-          "image": "/assets/supporting-seniors-representatives.svg",
+          "image": "/assets/planning-to-save-for-retirement.svg",
           "link": "/learn/planning-to-save-for-retirement"
         }
       ]
@@ -139,21 +139,21 @@
           "title": "(FR) When to take government pensions",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.svg",
+          "image": "/assets/when-to-take-your-public-pensions.svg",
           "link": "/learn/when-to-take-your-pensions"
         },
         {
           "title": "(FR) From work to retirement",
           "read": "(FR) 7 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg",
+          "image": "/assets/options-for-working-during-retirement.svg",
           "link": "/learn/from-work-to-retirement"
         },
         {
           "title": "(FR) Rules of thumb for CPP and OAS",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.svg",
+          "image": "/assets/rules-of-thumb-for-public-pensions.svg",
           "link": "/learn/rule-of-thumb-public-pensions"
         }
       ]
