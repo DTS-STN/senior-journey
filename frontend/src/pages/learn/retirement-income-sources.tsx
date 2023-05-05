@@ -158,10 +158,14 @@ const RetirementIncomeSources: FC = () => {
         </div>
         <div>
           <Paper className="p-4 sm:w-[264px]">
-            <h4 className="mb-4">{t('old-age-security-program.oas-pension.card.header')}</h4>
-            <p className="mb-4.5 text-xs">{t('old-age-security-program.oas-pension.card.content')}</p>
+            <h4 className="mb-4">
+              {t('old-age-security-program.oas-pension.card.header')}
+            </h4>
+            <p className="mb-4.5 text-xs" id="oas-pension-link-label">
+              {t('old-age-security-program.oas-pension.card.content')}
+            </p>
             <div className="text-right">
-              <MuiLink href="#" className="uppercase" color="primary">
+              <MuiLink href="#" className="uppercase" color="primary" aria-labelledby="oas-pension-link-label">
                 {t('old-age-security-program.oas-pension.card.learn-more')}
               </MuiLink>
             </div>
@@ -272,10 +276,14 @@ const RetirementIncomeSources: FC = () => {
       </h2>
       <p>{t('ongoing-earnings-from-your-job.overview')}</p>
       <Paper className="mb-4 p-4">
-        <h3 className="mb-4 font-display font-medium">{t('ongoing-earnings-from-your-job.card.header')}</h3>
-        <p className="mb-4.5 text-sm">{t('ongoing-earnings-from-your-job.card.content')}</p>
+        <h3 className="mb-4 font-display font-medium">
+          {t('ongoing-earnings-from-your-job.card.header')}
+        </h3>
+        <p className="mb-4.5 text-sm" id="ongoing-earnings-label">
+          {t('ongoing-earnings-from-your-job.card.content')}
+        </p>
         <div className="text-right">
-          <MuiLink href="#" className="uppercase" color="primary">
+          <MuiLink href="#" className="uppercase" color="primary" aria-labelledby="ongoing-earnings-label">
             {t('ongoing-earnings-from-your-job.card.learn-more')}
           </MuiLink>
         </div>
