@@ -28,8 +28,6 @@ const WhenToTakeYourPensions: FC = () => {
   return (
     <LearnPageLayout
       header={t('header')}
-      learnMoreHeader={t('learn-more-heading')}
-      learnMoreLinks={[]}
       breadcrumbItems={[
         {
           link: t('breadcrumbs.home.link'),

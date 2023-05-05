@@ -1,23 +1,22 @@
-import { FC, useMemo } from 'react'
+import { FC, Fragment, useMemo } from 'react'
 
-import { Link as MuiLink } from '@mui/material'
+import NavigateNextIcon from '@mui/icons-material/NavigateNext'
+import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import {
-  LearnMoreLink,
-  LearnPageLayout,
-} from '../../components/LearnPageLayout'
+import { LearnPageLayout } from '../../components/LearnPageLayout'
 
 const PlanningToSaveForRetirement: FC = () => {
   const { t } = useTranslation('learn/planning-to-save-for-retirement')
   const router = useRouter()
 
-  const learnMoreLinks = useMemo<ReadonlyArray<LearnMoreLink>>(
+  const learnMoreLinks = useMemo(
     () => [
       {
         href: '#',
@@ -46,16 +45,14 @@ const PlanningToSaveForRetirement: FC = () => {
   return (
     <LearnPageLayout
       header={t('header')}
-      learnMoreHeader={t('learn-more-heading')}
-      learnMoreLinks={learnMoreLinks}
       breadcrumbItems={[
         {
-          link: t("breadcrumbs.home.link"), 
-          text: t("breadcrumbs.home.text")
+          link: t('breadcrumbs.home.link'),
+          text: t('breadcrumbs.home.text'),
         },
         {
-          link: t("breadcrumbs.learn.link"), 
-          text: t("breadcrumbs.learn.text")
+          link: t('breadcrumbs.learn.link'),
+          text: t('breadcrumbs.learn.text'),
         },
       ]}
     >
@@ -95,6 +92,29 @@ const PlanningToSaveForRetirement: FC = () => {
         i18nKey="turning-savings-into-income-content-four"
         components={{ anchor: <MuiLink href={t('RRIF-link')} /> }}
       />
+      <h2 id="learn-more" className="h2">
+        {t('learn-more-heading')}
+      </h2>
+      <List disablePadding>
+        {learnMoreLinks.map(({ href, primary, secondary }) => (
+          <Fragment key={primary}>
+            <ListItem disablePadding className="border-b">
+              <ListItemButton href={href} component={Link}>
+                <ListItemText
+                  primary={primary}
+                  primaryTypographyProps={{
+                    variant: 'subtitle1',
+                    className: 'font-display font-medium',
+                    component: 'h3',
+                  }}
+                  secondary={secondary}
+                />
+                <NavigateNextIcon color="primary" />
+              </ListItemButton>
+            </ListItem>
+          </Fragment>
+        ))}
+      </List>
     </LearnPageLayout>
   )
 }
@@ -102,10 +122,7 @@ const PlanningToSaveForRetirement: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', [
-        'common',
-        'learn/planning-to-save-for-retirement',
-      ])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/planning-to-save-for-retirement'])),
     },
   }
 }
