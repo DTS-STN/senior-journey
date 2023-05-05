@@ -8,8 +8,8 @@ type QuestionProps = {
   setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
 }
 
-const Question2 = ({ values, setFieldValue }: QuestionProps) => {
-  let { t } = useTranslation('learn')
+export const Question2 = ({ values, setFieldValue }: QuestionProps) => {
+  const { t } = useTranslation('quiz')
   const [value, setValue] = React.useState('')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
@@ -18,13 +18,13 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
   }
 
   function handleCheckbox(e: React.ChangeEvent<any>, field: string) {
-    let answerId = e.target.value
+    const answerId = e.target.value
     setFieldValue(field, values[field] ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="h5">{t('quiz.questions.question-2.question-1.title')}</h5>
+      <h5 className="h5">{t('questions.question-2.question-1.title')}</h5>
       <FormGroup className="mb-2">
         <FormControlLabel
           control={
@@ -34,7 +34,7 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
               onChange={(e) => handleCheckbox(e, 'single')}
             />
           }
-          label={t('quiz.questions.question-2.question-1.option-1')}
+          label={t('questions.question-2.question-1.option-1')}
         />
         <FormControlLabel
           control={
@@ -44,7 +44,7 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
               onChange={(e) => handleCheckbox(e, 'marriedOrCommonLaw')}
             />
           }
-          label={t('quiz.questions.question-2.question-1.option-2')}
+          label={t('questions.question-2.question-1.option-2')}
         />
         <FormControlLabel
           control={
@@ -54,7 +54,7 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
               onChange={(e) => handleCheckbox(e, 'divorcedOrSeparated')}
             />
           }
-          label={t('quiz.questions.question-2.question-1.option-3')}
+          label={t('questions.question-2.question-1.option-3')}
         />
         <FormControlLabel
           control={
@@ -64,10 +64,10 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
               onChange={(e) => handleCheckbox(e, 'widowed')}
             />
           }
-          label={t('quiz.questions.question-2.question-1.option-4')}
+          label={t('questions.question-2.question-1.option-4')}
         />
       </FormGroup>
-      <h5 className="h5 mb-2">{t('quiz.questions.question-2.question-2.title')}</h5>
+      <h5 className="h5 mb-2">{t('questions.question-2.question-2.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -91,23 +91,21 @@ const Question2 = ({ values, setFieldValue }: QuestionProps) => {
       >
         <ToggleButton
           value="yes-kids"
-          aria-label={t('quiz.questions.question-2.question-2.option-1')}
+          aria-label={t('questions.question-2.question-2.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
           selected={values['hasChildren'] === 'yes-kids'}
         >
-          {t('quiz.questions.question-2.question-2.option-1')}
+          {t('questions.question-2.question-2.option-1')}
         </ToggleButton>
         <ToggleButton
           value="no-kids"
-          aria-label={t('quiz.questions.question-2.question-2.option-2')}
+          aria-label={t('questions.question-2.question-2.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
           selected={values['hasChildren'] === 'no-kids'}
         >
-          {t('quiz.questions.question-2.question-2.option-2')}
+          {t('questions.question-2.question-2.option-2')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
   )
 }
-
-export default Question2

@@ -8,8 +8,8 @@ type QuestionProps = {
   setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
 }
 
-const Question8 = ({ values, setFieldValue }: QuestionProps) => {
-  let { t } = useTranslation('learn')
+export const Question8 = ({ values, setFieldValue }: QuestionProps) => {
+  const { t } = useTranslation('quiz')
   const [value, setValue] = React.useState('')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
@@ -19,7 +19,7 @@ const Question8 = ({ values, setFieldValue }: QuestionProps) => {
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">{t('quiz.questions.question-8.title')}</h5>
+      <h5 className="font-display text-2xl font-light">{t('questions.question-8.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
@@ -43,23 +43,21 @@ const Question8 = ({ values, setFieldValue }: QuestionProps) => {
       >
         <ToggleButton
           value="cppd-yes"
-          aria-label={t('quiz.questions.question-8.option-1')}
+          aria-label={t('questions.question-8.option-1')}
           className="my-4 font-display text-base font-bold normal-case"
           selected={values['hasCppDisabilityBenefits'] === 'cppd-yes'}
         >
-          {t('quiz.questions.question-8.option-1')}
+          {t('questions.question-8.option-1')}
         </ToggleButton>
         <ToggleButton
           value="cppd-no"
-          aria-label={t('quiz.questions.question-8.option-2')}
+          aria-label={t('questions.question-8.option-2')}
           className="my-4 font-display text-base font-bold normal-case"
           selected={values['hasCppDisabilityBenefits'] === 'cppd-no'}
         >
-          {t('quiz.questions.question-8.option-2')}
+          {t('questions.question-8.option-2')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
   )
 }
-
-export default Question8
