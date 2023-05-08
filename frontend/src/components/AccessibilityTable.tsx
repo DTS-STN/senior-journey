@@ -21,7 +21,7 @@ const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
         <table>
             <thead>
                 <tr>
-                    <th></th>
+                    <th aria-hidden={true}></th>
                     {tableData.header.map((headerItem, index) => (
                         <th key={index}>{headerItem}</th>
                     ))}

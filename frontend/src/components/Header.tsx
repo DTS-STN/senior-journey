@@ -15,11 +15,12 @@ import { BreadcrumbItem } from './Breadcrumb'
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
-  breadcrumbItems?: BreadcrumbItem[]
+  breadcrumbItems?: BreadcrumbItem[];
+  className?: string
   hideChecklist?: boolean
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist, className }) => {
   const config = getConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
@@ -46,8 +47,13 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hid
         </a>
       </nav>
 
-      <header>
-        {showBanner && <Banner alert={t('banner.alert')} description={t('banner.description')} />}
+      <header className={className}>
+        {showBanner && (
+          <Banner
+            alert={t('banner.alert')}
+            description={t('banner.description')}
+          />
+        )}
         <div className="container mx-auto flex flex-col justify-between px-4 py-2.5 md:flex md:flex-row">
           <div className="flex flex-row content-center items-center justify-between md:mt-7">
             <a href={gocLink}>
