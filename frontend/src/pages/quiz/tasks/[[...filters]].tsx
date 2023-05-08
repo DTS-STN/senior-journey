@@ -84,7 +84,10 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
         link: t("breadcrumbs.home.link"), 
         text: t("breadcrumbs.home.text")
       }
-    ]}>
+    ]}
+    hideFooter='print'
+    hideHeader='print'
+    >
       <div className="print:block grid gap-6 lg:grid-cols-12">
         <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">

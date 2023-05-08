@@ -17,9 +17,10 @@ export interface HeaderProps {
   gocLink: string
   skipToMainText: string
   breadcrumbItems?: BreadcrumbItem[];
+  className?: string
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, className }) => {
   const config = getConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
@@ -28,8 +29,6 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) =
   const langSelectorAbbreviation = langSelectorLocale === 'fr' ? 'FR' : 'EN'
   const langSelectorText = langSelectorLocale === 'fr' ? 'Français' : 'English'
   const showBanner = config?.publicRuntimeConfig?.environment !== 'prod'
-
-  const isTasksPage = pathname.includes('/tasks');
 
   return (
     <>
@@ -48,7 +47,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems }) =
         </a>
       </nav>
 
-      <header className={`${isTasksPage && "print:hidden"}`}>
+      <header className={className}>
         {showBanner && (
           <Banner
             alert={t('banner.alert')}

@@ -39,7 +39,11 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({
 }) => {
   const tableOfContentsData = useTableOfContentsData()
   return (
-    <Layout breadcrumbItems={breadcrumbItems}>
+    <Layout 
+      breadcrumbItems={breadcrumbItems}
+      hideFooter='never'
+      hideHeader='never'
+    >
       <h1 className="mb-10 rounded-3xl bg-[#212121]/[.08] px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
         {header}
       </h1>
