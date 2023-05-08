@@ -75,7 +75,7 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, 
         <div className="mb-10 text-center">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
         </div>
-        <p>{sureText}</p>
+        <p id="quiz-modal-close-confirmation">{sureText}</p>
       </DialogContent>
       <DialogActions className="block">
         <div className="grid gap-2 md:grid-cols-2 md:gap-6">
@@ -149,7 +149,7 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
     <Dialog
       onClose={handleOnClose}
       open={open}
-      aria-describedby="QuizModal-header"
+      aria-labelledby={`${showConfirmation ? "quiz-modal-close-confirmation" : "quiz-modal-header"}`}
       scroll="body"
       fullScreen={fullScreen}
       maxWidth="md"
@@ -166,7 +166,7 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
       ) : (
         <>
           <div className="flex min-h-[850px] flex-col">
-            <DialogTitle className="text-right">
+            <DialogTitle className="text-right" id="quiz-modal-header">
               <Button variant="text" onClick={handleOnClose} startIcon={<CloseIcon />} size="large">
                 {t('navigation.close')}
               </Button>
