@@ -148,24 +148,12 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
               </FormGroup>
             </Collapse>
           </div>
-          <p>Answers:</p>
-          <ul className="mb-4 list-disc space-y-2 pl-7">
-            {filters?.answers?.map((answer) => (
-              <li key={answer}>{answer}</li>
-            ))}
-          </ul>
-          <p>Tags:</p>
-          <ul className="list-disc space-y-2 pl-7">
-            {filters?.tags?.map((tag) => (
-              <li key={tag}>{tag}</li>
-            ))}
-          </ul>
           <Button
               onClick={handlePrint}
               variant="outlined"
               startIcon={<Print />}
               size="large"
-              className="hidden md:inline md:w-full lg:w-2/5 font-bold border-gray-default"
+              className="hidden md:inline md:w-full lg:w-2/5 font-bold border-gray-default mt-5"
             >
               {t('print')}
             </Button>
