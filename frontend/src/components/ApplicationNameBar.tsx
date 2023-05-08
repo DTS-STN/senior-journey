@@ -23,14 +23,13 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
   const { data: quizData } = useQuizData()
 
   useEffect(() => {
-    const answers = quizData ? compact(Object.values<string>(quizData)) : []
-    if (isEmpty(answers)) {
+    if (isEmpty(quizData)) {
       setChecklistUrl('/learn')
       return
     }
 
     // Encodes a js object as a url-safe base64 string.
-    const filters: Filters = { answers }
+    const filters: Filters = { answers: compact(Object.values<string>(quizData)) }
     const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
     setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
   }, [quizData])
