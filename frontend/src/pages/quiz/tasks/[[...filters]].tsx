@@ -6,6 +6,7 @@ import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton } from '@mui/material'
 import { isEmpty, sortBy } from 'lodash'
+import Print from '@mui/icons-material/Print'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -76,24 +77,30 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
     router.push(`/quiz/tasks/${encodedFilters}`)
   }
 
+  const handlePrint = () => {
+    window.print();
+  };
+
   function handleClick(e: React.MouseEvent) {
     e.preventDefault()
     removeQuizData()
     router.push('/learn')
   }
-
+  
   return (
-    <Layout
-      hideChecklist={true}
-      breadcrumbItems={[
-        {
-          link: t('breadcrumbs.home.link'),
-          text: t('breadcrumbs.home.text'),
-        },
-      ]}
+    <Layout 
+    hideChecklist={true}
+    breadcrumbItems={[
+      {
+        link: t("breadcrumbs.home.link"), 
+        text: t("breadcrumbs.home.text")
+      }
+    ]}
+    hideFooter='print'
+    hideHeader='print'
     >
-      <div className="grid gap-6 lg:grid-cols-12">
-        <section className="lg:col-span-4 lg:block xl:col-span-3">
+      <div className="print:block grid gap-6 lg:grid-cols-12">
+        <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">
             <Button
               component={Link}
@@ -141,8 +148,29 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
               </FormGroup>
             </Collapse>
           </div>
+          <p>Answers:</p>
+          <ul className="mb-4 list-disc space-y-2 pl-7">
+            {filters?.answers?.map((answer) => (
+              <li key={answer}>{answer}</li>
+            ))}
+          </ul>
+          <p>Tags:</p>
+          <ul className="list-disc space-y-2 pl-7">
+            {filters?.tags?.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </ul>
+          <Button
+              onClick={handlePrint}
+              variant="outlined"
+              startIcon={<Print />}
+              size="large"
+              className="hidden md:inline md:w-full lg:w-2/5 font-bold border-gray-default"
+            >
+              {t('print')}
+            </Button>
         </section>
-        <section id="content" className="lg:col-span-8 xl:col-span-9">
+        <section id="content" className="lg:col-span-8 xl:col-span-9 print-href">
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={beforeRetiring.title}

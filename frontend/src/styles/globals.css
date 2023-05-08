@@ -97,6 +97,7 @@ video {
 /*
   Senior Journey - Custom css
 */
+
 .h6 {
   @apply font-bold;
   @apply font-display;
@@ -138,6 +139,12 @@ video {
 
 p {
   @apply mb-4;
+}
+
+@media print {
+  .print-href a:after {
+    content: " (" attr(href) ")";
+  }
 }
 
 main .external-link[target='_blank']::after {

@@ -6,6 +6,17 @@ import { axe, toHaveNoViolations } from 'jest-axe'
 
 import Footer from '../../src/components/Footer'
 
+const defaultRouterObj = {
+  pathname: '/',
+  asPath: '/',
+  locale: 'en',
+}
+
+// mocks useRouter to be able to use component' router.asPath
+jest.mock('next/router', () => ({
+  useRouter: jest.fn(() => defaultRouterObj),
+}))
+
 expect.extend(toHaveNoViolations)
 
 describe('Footer', () => {

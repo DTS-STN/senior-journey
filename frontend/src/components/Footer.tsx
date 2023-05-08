@@ -57,6 +57,11 @@ export interface FooterProps {
    * array of objects containing the link text and link
    */
   links: FooterLink[]
+
+  /**
+   * string of custom styles
+   */
+  className?: string
 }
 
 /**
@@ -72,9 +77,10 @@ const Footer: FC<FooterProps> = ({
   menuText,
   menuLinks,
   links,
+  className,
 }: FooterProps) => {
   return (
-    <footer>
+    <footer className={className}>
       <div className="bg-blue-dark text-white">
         <div className="container mx-auto px-4 py-8 md:pb-20">
           <h2 className="mb-8 font-display text-xl font-bold">{footerHeader}</h2>
