@@ -1,32 +1,28 @@
 import { FC } from 'react'
+
 import { Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 
-
-import {
-  LearnPageLayout
-} from '../../components/LearnPageLayout'
 import AlertCard from '../../components/AlertCard'
+import { LearnPageLayout } from '../../components/LearnPageLayout'
 
 const RuleOfThumbPublicPensions: FC = () => {
   const { t } = useTranslation('learn/rule-of-thumb-public-pensions')
-  
+
   return (
     <LearnPageLayout
       header={t('header')}
-      learnMoreHeader={t('learn-more-heading')}
-      learnMoreLinks={[]}
       breadcrumbItems={[
         {
-          link: t("breadcrumbs.home.link"), 
-          text: t("breadcrumbs.home.text")
+          link: t('breadcrumbs.home.link'),
+          text: t('breadcrumbs.home.text'),
         },
         {
-          link: t("breadcrumbs.learn.link"), 
-          text: t("breadcrumbs.learn.text")
+          link: t('breadcrumbs.learn.link'),
+          text: t('breadcrumbs.learn.text'),
         },
       ]}
     >
@@ -41,11 +37,8 @@ const RuleOfThumbPublicPensions: FC = () => {
         <li>{t('key-takeaways.list-one.item-4')}</li>
       </ul>
       <p>{t('key-takeaways.content-one')}</p>
-      <AlertCard type='important'>
-        <Trans
-          ns="learn/rule-of-thumb-public-pensions"
-          i18nKey="key-takeaways.smart-tip"
-        />
+      <AlertCard type="important">
+        <Trans ns="learn/rule-of-thumb-public-pensions" i18nKey="key-takeaways.smart-tip" />
       </AlertCard>
       <p>{t('key-takeaways.content-two')}</p>
       <p>{t('key-takeaways.content-three')}</p>
@@ -94,13 +87,15 @@ const RuleOfThumbPublicPensions: FC = () => {
         {t('key-takeaways.sub-heading-four')}
       </h3>
       <ul className="mb-5 list-disc space-y-2 pl-7">
-        <li><Trans
-          ns="learn/rule-of-thumb-public-pensions"
-          i18nKey="key-takeaways.list-five.item-1.content"
-          components={{
-            a: (<MuiLink href={t('key-takeaways.list-five.item-1.link')} />),
-          }}
-        /></li>
+        <li>
+          <Trans
+            ns="learn/rule-of-thumb-public-pensions"
+            i18nKey="key-takeaways.list-five.item-1.content"
+            components={{
+              a: <MuiLink href={t('key-takeaways.list-five.item-1.link')} />,
+            }}
+          />
+        </li>
         <li>{t('key-takeaways.list-five.item-2')}</li>
         <li>{t('key-takeaways.list-five.item-3')}</li>
         <li>{t('key-takeaways.list-five.item-4')}</li>
@@ -110,13 +105,15 @@ const RuleOfThumbPublicPensions: FC = () => {
       </h3>
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li>{t('key-takeaways.list-six.item-1')}</li>
-        <li><Trans
-          ns="learn/rule-of-thumb-public-pensions"
-          i18nKey="key-takeaways.list-six.item-2.content"
-          components={{
-            a: (<MuiLink href={t('key-takeaways.list-six.item-1.link')} />),
-          }}
-        /></li>
+        <li>
+          <Trans
+            ns="learn/rule-of-thumb-public-pensions"
+            i18nKey="key-takeaways.list-six.item-2.content"
+            components={{
+              a: <MuiLink href={t('key-takeaways.list-six.item-1.link')} />,
+            }}
+          />
+        </li>
         <li>{t('key-takeaways.list-six.item-3')}</li>
         <li>{t('key-takeaways.list-six.item-4')}</li>
       </ul>
@@ -124,22 +121,21 @@ const RuleOfThumbPublicPensions: FC = () => {
         {t('key-takeaways.sub-heading-six')}
       </h3>
       <ul className="mb-5 list-disc space-y-2 pl-7">
-        <li><Trans
-          ns="learn/rule-of-thumb-public-pensions"
-          i18nKey="key-takeaways.list-seven.item-1.content"
-          components={{
-            a: (<MuiLink href={t('key-takeaways.list-seven.item-1.link')} />),
-          }}
-        /></li>
+        <li>
+          <Trans
+            ns="learn/rule-of-thumb-public-pensions"
+            i18nKey="key-takeaways.list-seven.item-1.content"
+            components={{
+              a: <MuiLink href={t('key-takeaways.list-seven.item-1.link')} />,
+            }}
+          />
+        </li>
         <li>{t('key-takeaways.list-seven.item-2')}</li>
         <li>{t('key-takeaways.list-seven.item-3')}</li>
       </ul>
 
-      <AlertCard type='disclaimer'>
-        <Trans
-          ns="learn/rule-of-thumb-public-pensions"
-          i18nKey="key-takeaways.disclaimer"
-        />
+      <AlertCard type="disclaimer">
+        <Trans ns="learn/rule-of-thumb-public-pensions" i18nKey="key-takeaways.disclaimer" />
       </AlertCard>
     </LearnPageLayout>
   )
@@ -148,10 +144,7 @@ const RuleOfThumbPublicPensions: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', [
-        'common',
-        'learn/rule-of-thumb-public-pensions',
-      ])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/rule-of-thumb-public-pensions'])),
     },
   }
 }

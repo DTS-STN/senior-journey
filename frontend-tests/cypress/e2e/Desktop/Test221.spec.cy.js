@@ -2,7 +2,7 @@ import { utility } from "../../support/Utility"
 
 describe('test id 221 - verify Apply link - Landing page', () => {
   beforeEach(() => {
-    cy.visit('en/home')
+    cy.visitAndWait('en/home')
   })
   it('apply tab - verify is visible and html attributes', () => {
     cy.get('button').eq(2).should('have.attr', 'type', 'button')
@@ -27,6 +27,6 @@ describe('test id 221 - verify Apply link - Landing page', () => {
     cy.get('button').eq(2).click()
     cy.get(':nth-child(3) > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-root').click()
     cy.wait(2000)
-    cy.location('pathname').should('equal', language ? '/en/test2' : '/fr/test')
+    cy.location('pathname').should('equal', language ? '/en/test2' : '/fr/test2')
   })
 })

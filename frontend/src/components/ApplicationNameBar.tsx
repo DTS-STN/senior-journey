@@ -1,26 +1,40 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
+import { compact, isEmpty } from 'lodash'
 import Link from 'next/link'
 
-import {Breadcrumb, BreadcrumbItem } from './Breadcrumb'
+import { useQuizData } from '../lib/hooks/useQuizData'
+import { Filters } from '../pages/quiz/tasks/[[...filters]]'
+import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
   text: string
   href: string
   checklist: string
   checklistUrl: string
-  breadcrumbItems?: BreadcrumbItem[];
+  breadcrumbItems?: BreadcrumbItem[]
+  hideChecklist?: boolean
 }
 
-const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
-  text,
-  href,
-  checklist,
-  checklistUrl,
-  breadcrumbItems,
-}) => {
+const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
+  let [checklistUrl, setChecklistUrl] = useState('/learn')
+  const { data: quizData } = useQuizData()
+
+  useEffect(() => {
+    const answers = quizData ? compact(Object.values<string>(quizData)) : []
+    if (isEmpty(answers)) {
+      setChecklistUrl('/learn')
+      return
+    }
+
+    // Encodes a js object as a url-safe base64 string.
+    const filters: Filters = { answers }
+    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+    setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
+  }, [quizData])
+
   return (
     <div id="app-bar">
       <section className="container mx-auto p-4">
@@ -34,14 +48,11 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
           >
             <h2>{text}</h2>
           </MuiLink>
-          <Button
-            component={Link}
-            href={checklistUrl}
-            startIcon={<BookmarkBorderIcon />}
-            size="large"
-          >
-            {checklist}
-          </Button>
+          {!hideChecklist && (
+            <Button component={Link} href={checklistUrl} startIcon={<BookmarkBorderIcon />} size="large">
+              {checklist}
+            </Button>
+          )}
         </div>
         <Breadcrumb items={breadcrumbItems} />
       </section>

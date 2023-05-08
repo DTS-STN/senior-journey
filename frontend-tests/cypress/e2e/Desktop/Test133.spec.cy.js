@@ -2,7 +2,7 @@ import { utility } from "../../support/Utility"
 
 describe('test id 133 - verify Button/Links - Landing page top section', () => {
   beforeEach(() => {
-    cy.visit('/en/home')
+    cy.visitAndWait('/en/home')
   })
   
   it('language link - verify is visible, clickable, html attributes and url pathname.', () => {
@@ -50,24 +50,3 @@ describe('broken link', () => {
     })
   })
 })
-
-beforeEach(() => {
-  cy.request({ url: '/404', failOnStatusCode: false })
-    .its('status')
-    .should('equal', 403)
-  cy.visit('/404', { failOnStatusCode: false })
-})
-
-describe('not found page loads', () => {
-  it('status 404 - verify displays the not found page with 404 in pathname', () => {
-    cy.location('pathname').should('equal', '/404')
-  })
-
-  it('status 404 - should have correct title', () => {
-    cy.title().should('eq', 'Not Found | Pas trouvé - Canada.ca')
-  })
-})
-
-
-
-

@@ -2,7 +2,7 @@ import { utility } from "../../support/Utility"
 
 describe('test id 162 - verify Learn overview - Top section - Learn page', () => {
   beforeEach(() => {
-    cy.visit('/en/learn')
+    cy.visitAndWait('/en/learn')
   })
 
   it('Find all broken links - verify broken link on landing page', () => {

@@ -2,7 +2,7 @@ import { utility } from "../../support/Utility"
 
 describe('test id 157 - verify Supporting Seniors - Landing page ', () => {
   beforeEach(() => {
-    cy.visit('en/home')
+    cy.visitAndWait('en/home')
   })
 
   it('Supporting Seniors title is visible', () => {

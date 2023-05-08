@@ -4,7 +4,7 @@ import { utility } from "../../support/Utility"
 describe('Test id 228 - Top Section - Mobile', () => {
     context(`${sizes[1]} screen`, () => {
         beforeEach(() => {
-            cy.visit('/en/home')
+            cy.visitAndWait('/en/home')
             cy.viewport(sizes[0])
         })
 
@@ -14,4 +14,3 @@ describe('Test id 228 - Top Section - Mobile', () => {
         })
     })
 })
-

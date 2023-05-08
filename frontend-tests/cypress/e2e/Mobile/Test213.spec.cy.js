@@ -4,9 +4,9 @@ var sizes = ["iphone-3", "iphone-6", "ipad-mini", "macbook-13", "macbook-11", "m
 	describe('test id 213 - Automate - Middle Learning Links - Mobile', () => {
 	    context(`${sizes[0]} screen`, () => {
 	        beforeEach(() => {
-	            cy.visit('/en/home')
-	            cy.viewport(sizes[0])
-	        })
+				cy.visitAndWait('/en/home')
+				cy.viewport(sizes[0])
+			})
 	
 	        it('Find all broken links - verify broken link on landing page', () => {
 	            cy.get('a').each(link => {
@@ -23,9 +23,9 @@ var sizes = ["iphone-3", "iphone-6", "ipad-mini", "macbook-13", "macbook-11", "m
 	
 	    context(`${sizes[1]} screen`, () => {
 	        beforeEach(() => {
-	            cy.visit('/en/home')
-	            cy.viewport(sizes[1])
-	        })
+				cy.visitAndWait('/en/home')
+				cy.viewport(sizes[1])
+			})
 	
 	        it('Find all broken links - verify broken link on landing page', () => {
 	            cy.get('a').each(link => {
@@ -42,9 +42,9 @@ var sizes = ["iphone-3", "iphone-6", "ipad-mini", "macbook-13", "macbook-11", "m
 	
 	    context(`${sizes[2]} screen`, () => {
 	        beforeEach(() => {
-	            cy.visit('/fr/home')
-	            cy.viewport(sizes[2])
-	        })
+				cy.visitAndWait('/en/home')
+				cy.viewport(sizes[2])
+			})
 	
 	        it('Find all broken links - verify broken link on landing page', () => {
 	            cy.get('a').each(link => {

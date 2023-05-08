@@ -132,7 +132,7 @@ const Home: FC = () => {
                             <List disablePadding>
                               {links.map(({ title, url }) => (
                                 <React.Fragment key={title}>
-                                  <ListItem disablePadding>
+                                  <ListItem disablePadding className="border-b">
                                     <ListItemButton href={url} component={Link}>
                                       <ListItemText
                                         primary={title}
@@ -143,7 +143,6 @@ const Home: FC = () => {
                                       <NavigateNextIcon color="primary" />
                                     </ListItemButton>
                                   </ListItem>
-                                  <Divider component="li" />
                                 </React.Fragment>
                               ))}
                             </List>
@@ -168,7 +167,7 @@ const Home: FC = () => {
                           <List disablePadding>
                             {links.map(({ title, url, description }) => (
                               <React.Fragment key={title}>
-                                <ListItem disablePadding>
+                                <ListItem disablePadding className="border-b">
                                   <ListItemButton href={url} component={Link}>
                                     <ListItemText
                                       primary={title}
@@ -183,7 +182,6 @@ const Home: FC = () => {
                                     <NavigateNextIcon color="primary" />
                                   </ListItemButton>
                                 </ListItem>
-                                <Divider component="li" />
                               </React.Fragment>
                             ))}
                           </List>

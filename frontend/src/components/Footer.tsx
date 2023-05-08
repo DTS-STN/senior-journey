@@ -113,7 +113,7 @@ const Footer: FC<FooterProps> = ({
         </div>
       </div>
       <h2 className="sr-only">{footerHeader}</h2>
-      <div className="bg-gray-light pb-8 pt-6">
+      <div className="pb-8 pt-6">
         <div className="container mx-auto px-4">
           <div role="navigation" aria-labelledby="footerNav">
             <h3 className="sr-only" id="footerNav">

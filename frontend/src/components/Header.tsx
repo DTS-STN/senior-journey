@@ -12,15 +12,15 @@ import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
 import { BreadcrumbItem } from './Breadcrumb'
 
-
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
   breadcrumbItems?: BreadcrumbItem[];
   className?: string
+  hideChecklist?: boolean
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, className }) => {
+const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist, className }) => {
   const config = getConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
@@ -60,11 +60,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, cla
               <Image
                 key={locale}
                 className="h-7 w-auto lg:h-8"
-                alt={
-                  locale === 'en'
-                    ? 'Government of Canada'
-                    : 'Gouvernement du Canada'
-                }
+                alt={locale === 'en' ? 'Government of Canada' : 'Gouvernement du Canada'}
                 src={`/assets/sig-blk-${locale}.svg`}
                 width={300}
                 height={28}
@@ -111,6 +107,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, cla
           checklist={t('checklist')}
           checklistUrl={t('checklist-url')}
           breadcrumbItems={breadcrumbItems}
+          hideChecklist={hideChecklist}
         />
 
         {/* <Menu

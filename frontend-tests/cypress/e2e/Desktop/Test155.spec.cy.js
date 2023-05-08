@@ -2,7 +2,7 @@ import { utility } from "../../support/Utility"
 
 describe('test id 155 - verify Learn link - Landing page', () => {
   beforeEach(() => {
-    cy.visit('en/home')
+    cy.visitAndWait('/en/home')
   })
 
   it('learn tab - verify is visible and html attributes', () => {
@@ -13,7 +13,7 @@ describe('test id 155 - verify Learn link - Landing page', () => {
       .and('be.visible')
   })
 
-  it.only('learn link click url redirects to /en/fr/ when accessing /en/fr', () => {
+  it('learn link click url redirects to /en/fr/ when accessing /en/fr', () => {
     let language = new utility().getLanguageTabletOrMonitorScreen()
     cy.wait(2000)
     cy.get('button').eq(0).click()

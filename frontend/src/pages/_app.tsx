@@ -3,10 +3,11 @@ import { useEffect } from 'react'
 import { CacheProvider, EmotionCache } from '@emotion/react'
 import CssBaseline from '@mui/material/CssBaseline'
 import { ThemeProvider } from '@mui/material/styles'
+import { ValueType } from '@opentelemetry/api'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
-import { AppProps } from 'next/app'
+import { AppProps, NextWebVitalsMetric } from 'next/app'
 import getConfig from 'next/config'
 import Head from 'next/head'
 
@@ -16,12 +17,10 @@ import { getNextSEOConfig } from '../next-seo.config'
 import '../styles/globals.css'
 import '../styles/latofonts.css'
 import theme from '../theme'
-import { createCounter } from '../utils/metrics'
+import { createCounter, createHistogram } from '../utils/metrics'
 
 // Create a react-query client
-const queryClient = new QueryClient({
-  defaultOptions: { queries: { refetchOnWindowFocus: false } },
-})
+const queryClient = new QueryClient()
 
 // help to prevent double firing of adobe analytics pageLoad event
 let appPreviousLocationPathname = ''
@@ -35,12 +34,7 @@ export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache
 }
 
-const MyApp = ({
-  Component,
-  emotionCache = clientSideEmotionCache,
-  pageProps,
-  router,
-}: MyAppProps) => {
+const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, router }: MyAppProps) => {
   const config = getConfig()
   const appBaseUri = config?.publicRuntimeConfig?.appBaseUri
   const nextSEOConfig = getNextSEOConfig(appBaseUri, router)
@@ -83,6 +77,19 @@ const MyApp = ({
       </QueryClientProvider>
     </CacheProvider>
   )
+}
+
+export function reportWebVitals(metric: NextWebVitalsMetric) {
+  const webVitalHistogram = createHistogram(`senior-journey.${metric.label}.${metric.name}`)
+  const attributes = {
+    id: metric.id,
+    startTime: metric.startTime,
+    value: metric.value,
+    description: metric.name,
+    unit: 'ms',
+    valueType: ValueType.INT,
+  }
+  webVitalHistogram.record(metric.value, attributes)
 }
 
 export default appWithTranslation(MyApp)
