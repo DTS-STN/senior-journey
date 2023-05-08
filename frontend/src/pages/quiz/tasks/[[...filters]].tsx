@@ -1,12 +1,12 @@
 import React, { FC, useMemo, useState } from 'react'
 
 import { ExpandMore, FilterList } from '@mui/icons-material'
+import Print from '@mui/icons-material/Print'
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton } from '@mui/material'
 import { isEmpty, sortBy } from 'lodash'
-import Print from '@mui/icons-material/Print'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -34,13 +34,16 @@ export interface Filters extends yup.InferType<typeof filtersSchema> {}
 interface TasksProps {
   applyingBenefits: TasksGroupDto
   beforeRetiring: TasksGroupDto
-  filters?: Filters
+  validatedFilters?: Filters
   receivingBenefits: TasksGroupDto
 }
 
-const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
+const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, validatedFilters, receivingBenefits }) => {
   const { t } = useTranslation('quiz/tasks')
   let router = useRouter()
+
+  let filters = validatedFilters ?? { answers: [], tags: [] }
+
   const { mutate: removeQuizData } = useRemoveQuizData()
 
   let [expanded, setExpanded] = useState<boolean>(true)
@@ -70,7 +73,6 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
   }, [applyingBenefits.tasks, beforeRetiring.tasks, receivingBenefits.tasks])
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
-    if (!filters) filters = {}
     if (e.target.checked) filters.tags = [...(filters?.tags ?? []), e.target.value]
     else filters.tags = (filters?.tags ?? []).filter((tag) => tag !== e.target.value)
     const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
@@ -78,28 +80,27 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
   }
 
   const handlePrint = () => {
-    window.print();
-  };
+    window.print()
+  }
 
   function handleClick(e: React.MouseEvent) {
     e.preventDefault()
     removeQuizData()
     router.push('/learn')
   }
-  
+
   return (
-    <Layout 
-    hideChecklist={true}
-    breadcrumbItems={[
-      {
-        link: t("breadcrumbs.home.link"), 
-        text: t("breadcrumbs.home.text")
-      }
-    ]}
-    hideFooter='print'
-    hideHeader='print'
+    <Layout
+      hideChecklist={true}
+      breadcrumbItems={[
+        {
+          link: t('breadcrumbs.home.link'),
+          text: t('breadcrumbs.home.text'),
+        },
+      ]}
+      hideFooter="print"
     >
-      <div className="print:block grid gap-6 lg:grid-cols-12">
+      <div className="grid gap-6 print:block lg:grid-cols-12">
         <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">
             <Button
@@ -139,7 +140,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
                         value={code}
                         icon={<RadioButtonUncheckedIcon />}
                         checkedIcon={<RadioButtonCheckedIcon />}
-                        checked={filters?.tags?.includes(code)}
+                        checked={filters?.tags?.includes(code) ?? false}
                       />
                     }
                     label={title}
@@ -149,16 +150,16 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
             </Collapse>
           </div>
           <Button
-              onClick={handlePrint}
-              variant="outlined"
-              startIcon={<Print />}
-              size="large"
-              className="hidden md:inline md:w-full lg:w-2/5 font-bold border-gray-default mt-5"
-            >
-              {t('print')}
-            </Button>
+            onClick={handlePrint}
+            variant="outlined"
+            startIcon={<Print />}
+            size="large"
+            className="mt-5 hidden border-gray-default font-bold md:inline md:w-full lg:w-2/5"
+          >
+            {t('print')}
+          </Button>
         </section>
-        <section id="content" className="lg:col-span-8 xl:col-span-9 print-href">
+        <section id="content" className="print-href lg:col-span-8 xl:col-span-9">
           <NestedAccordion
             linksHeader={t('links-header')}
             sectionTitle={beforeRetiring.title}
@@ -262,7 +263,7 @@ export const getServerSideProps: GetServerSideProps<TasksProps | {}> = async ({ 
       ...(await serverSideTranslations(locale ?? 'default', ['common', 'quiz/tasks'])),
       applyingBenefits: tasksGroupDtoMapper.toDto(applyingBenefits, locale),
       beforeRetiring: tasksGroupDtoMapper.toDto(beforeRetiring, locale),
-      filters: validatedFilters,
+      validatedFilters,
       receivingBenefits: tasksGroupDtoMapper.toDto(receivingBenefits, locale),
     },
   }
