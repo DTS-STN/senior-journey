@@ -25,7 +25,7 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
         skipToMainText={t('header.skip-to-main')} 
         gocLink={t('header.goc-link')} 
         breadcrumbItems={breadcrumbItems} 
-        className={`${hideHeader == 'print' && "print:hidden"}`}
+        className={hideHeader == 'print' ? "print:hidden" : undefined}
         hideChecklist={hideChecklist} 
       />
       }
@@ -35,7 +35,7 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
 
       {hideFooter !== 'always' && 
         <Footer
-          className={`${hideFooter == 'print' && "print:hidden"}`}
+          className={hideFooter == 'print' ? "print:hidden" : undefined}
           dateModifiedText={t('footer.date-modified-text')}
           footerHeader={t('footer.header')}
           footerLogo={{
@@ -125,6 +125,8 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
 
 Layout.defaultProps = {
   contained: true,
+  hideFooter: 'never',
+  hideHeader: 'never'
 }
 
 export default Layout

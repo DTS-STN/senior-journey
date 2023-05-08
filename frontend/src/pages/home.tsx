@@ -73,8 +73,6 @@ const Home: FC = () => {
     <Layout
     breadcrumbItems={[]}
     contained={false}
-    hideFooter='never'
-    hideHeader='never'
     >
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>

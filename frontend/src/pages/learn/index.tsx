@@ -35,8 +35,6 @@ const Learn: FC = () => {
           text: t("breadcrumbs.home.text")
         }
       ]}
-      hideFooter='never'
-      hideHeader='never'
       >
       <NextSeo title={t('header')} />
       <h1 className="sr-only">{t('header')}</h1>
