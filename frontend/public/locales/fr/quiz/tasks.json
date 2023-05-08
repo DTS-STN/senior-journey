@@ -1,10 +1,15 @@
 {
+  "title": "(FR) Your retirement checklist",
   "links-header": "(FR) More resources",
   "restart-quiz": "(FR) Restart quiz",
   "breadcrumbs": {
     "home":{
       "text":"(FR) Retirement Hub",
       "link":"/"
+    },
+    "learn":{
+      "text":"(FR) Learn",
+      "link":"/learn"
     }
   },
   "filter-tasks": "(FR) Filter Tasks",

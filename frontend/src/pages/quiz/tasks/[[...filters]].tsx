@@ -1,10 +1,10 @@
 import React, { FC, useMemo, useState } from 'react'
 
-import { ExpandMore, FilterList } from '@mui/icons-material'
+import { ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
-import RefreshIcon from '@mui/icons-material/Refresh'
-import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton } from '@mui/material'
+import Cached from '@mui/icons-material/Cached'
+import { Button, Checkbox, Collapse, Container, FormControlLabel, FormGroup, IconButton } from '@mui/material'
 import { isEmpty, sortBy } from 'lodash'
 import Print from '@mui/icons-material/Print'
 import { GetServerSideProps } from 'next'
@@ -21,6 +21,7 @@ import { useRemoveQuizData } from '../../../lib/hooks/useRemoveQuizData'
 import * as tasksGroupDtoMapper from '../../../lib/mappers/tasks-group-dto-mapper'
 import { TaskTagDto, TasksGroupDto } from '../../../lib/types'
 import { getLogger } from '../../../logging/log-util'
+import Image from 'next/image'
 
 const log = getLogger('quiz/tasks/[filters].tsx')
 
@@ -94,21 +95,36 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
       {
         link: t("breadcrumbs.home.link"), 
         text: t("breadcrumbs.home.text")
+      },
+      {
+        link: t("breadcrumbs.learn.link"), 
+        text: t("breadcrumbs.learn.text")
       }
     ]}
     hideFooter='print'
     hideHeader='print'
     >
+      <section className="print:hidden rounded-3xl bg-gray-surface mb-10 px-8 py-8 flex flex-col md:flex-row-reverse items-center">
+          <div className="pb-4 md:pb-0 sm:3/12 md:w-1/12">
+                <Image src="/assets/checklist.png" width={120} height={75} sizes="100%" alt="" priority />
+            </div>
+            <div className="w-11/12">
+              <h2 className="font-display text-4xl text-primary-700 md:text-6xl font-bold">
+                {t('title')}
+              </h2>
+            </div>
+        </section>
+      
       <div className="print:block grid gap-6 lg:grid-cols-12">
         <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
-          <div className="mb-4 text-right">
+          <div className="mb-4">
             <Button
               component={Link}
               href="/quiz/tasks"
-              variant="outlined"
-              startIcon={<RefreshIcon />}
+              variant="text"
+              startIcon={<Cached />}
               size="large"
-              className="w-full md:w-auto lg:w-full"
+              className="w-full md:w-auto lg:w-full justify-start font-bold text-base"
               onClick={handleClick}
             >
               {t('restart-quiz')}
@@ -124,7 +140,7 @@ const Tasks: FC<TasksProps> = ({ applyingBenefits, beforeRetiring, filters, rece
                 aria-expanded={expanded}
                 aria-label={t('show-filters')}
               >
-                <ExpandMore className="hidden md:block" />
+                 {expanded ? <ExpandLess className="hidden md:block" /> : <ExpandMore className="hidden md:block" />}
                 <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f] md:hidden" />
               </IconButton>
             </div>

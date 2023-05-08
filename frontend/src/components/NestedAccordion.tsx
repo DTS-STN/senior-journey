@@ -27,6 +27,9 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
           height: "auto !important",
           visibility: "visible !important"
         }
+      },
+      ".MuiAccordion-root.Mui-expanded":{
+        margin: "0"
       }
     }}>
       <AccordionSummary
@@ -35,13 +38,20 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
         expandIcon={<ExpandMoreIcon className="text-white" />}
       >
         <div>
-          <div className="mb-2 font-display font-bold">{sectionTitle}</div>
-          <div className="text-xs">{subSectionTitle}</div>
+          <div className="mb-2 font-display font-bold text-xl pt-8">{sectionTitle}</div>
+          <div className="text-sm opacity-70">{subSectionTitle}</div>
         </div>
       </AccordionSummary>
       {tasks.map((task) => (
-        <Accordion key={task.id}>
-          <AccordionSummary className="font-display font-bold" expandIcon={<ExpandMoreIcon />}>
+        <Accordion key={task.id}
+          sx={{
+            boxShadow: '0',
+            ".MuiAccordionSummary-root.Mui-expanded": {
+              borderTop: "1px solid rgba(0, 0, 0, 0.12)",
+            }
+          }}
+        >
+          <AccordionSummary className="font-display font-medium py-2 text-lg" expandIcon={<ExpandMoreIcon />}>
           <Checkbox className="-mt-2.5 hidden print:inline"/>
             {task.title}
           </AccordionSummary>
