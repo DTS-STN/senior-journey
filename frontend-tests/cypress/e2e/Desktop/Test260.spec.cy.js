@@ -3,7 +3,8 @@ import { utility } from "../../support/Utility"
 describe('test id 260 - verify Learn overview - Explore our Content - Making Retirement Decisions', () => {
 	['en', 'fr'].forEach(lang => {
 	  it(`[${lang}] Learn overview - Making retirement decisions`, () => {
-		cy.visit(`/${lang}/learn`).get('#mainContent h2').first().should('be.visible')
+		cy.log('https://dev.azure.com/JourneyLab/SeniorsJourney/_workitems/edit/260')		
+		cy.visitAndWait(`/${lang}/learn`).get('#mainContent h2').first().should('be.visible')
 	  })
   
 	  it(`[${lang}] Learn overview - Manage money cards are visible and link to expected pages`, () => {
@@ -15,7 +16,7 @@ describe('test id 260 - verify Learn overview - Explore our Content - Making Ret
 		]
   
 		cardSpecs.forEach(cardSpec => {
-		  cy.visit(`/${lang}/learn`)
+			cy.visitAndWait(`/${lang}/learn`)
 			.get(`#mainContent a[aria-describedby=${cardSpec['aria-describedby']}]`)
 			.should('have.attr', 'href', cardSpec['href'])
 			.should('be.visible')
