@@ -24,6 +24,7 @@ import Link from 'next/link'
 
 import Container from '../components/Container'
 import Layout from '../components/Layout'
+import { QuizDialog } from '../components/quiz/QuizDialog'
 
 export interface SupportingSeniorsCardProps {
   src: string
@@ -64,9 +65,18 @@ const Home: FC = () => {
 
   const tabsData = t<string, ReadonlyArray<TabData>>('tabs', { returnObjects: true })
   const [value, setValue] = useState(tabsData?.length ? tabsData[0].id : '')
+  const [quizDialogOpen, setQuizDialogOpen] = useState(false)
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue)
+  }
+
+  const handleOnQuizDialogTriggerClick = () => {
+    setQuizDialogOpen(true)
+  }
+
+  const handleOnQuizDialogClose = () => {
+    setQuizDialogOpen(false)
   }
 
   return (
@@ -151,9 +161,22 @@ const Home: FC = () => {
                         <>
                           <Divider className="my-8" />
                           <div className="text-right">
+                            {
+                            /** 
+                             * FIXME: This implementation is gross, and messy. It doesn't account for non-quiz buttons without urls.
+                             * This, and probably the whole loop needs to be revisited and possibly unwound since the tabs are 
+                             * probably going to differ far too much.
+                            **/
+                            button.url && (
                             <Button component={Link} href={button.url} size="large">
                               {button.text}
                             </Button>
+                            )}
+                            {(button.url == null || button.url == undefined) && (
+                                <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
+                                  {button.text}
+                                </Button>
+                            )}
                           </div>
                         </>
                       )}
@@ -197,14 +220,6 @@ const Home: FC = () => {
       <Container>
         <h2 className="h2 text-primary-700">{t('contact-us.title')}</h2>
         <p className="mb-8">{t('contact-us.description')}</p>
-        <Paper variant="outlined" className="mb-6 p-6">
-          <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.request-call.title')}</h3>
-          <Divider className="my-4" />
-          <p className="mt-3">{t('contact-us.cards.request-call.description')}</p>
-          <Button component={Link} variant="outlined" href={t('contact-us.cards.request-call.href')}>
-            {t('contact-us.cards.request-call.title')}
-          </Button>
-        </Paper>
         <Paper variant="outlined" className="mb-6 p-6">
           <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.call-us.title')}</h3>
           <Divider className="my-4" />
@@ -253,13 +268,14 @@ const Home: FC = () => {
           </Button>
         </Paper>
       </Container>
+      <QuizDialog open={quizDialogOpen} onClose={handleOnQuizDialogClose} />
     </Layout>
   )
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home'])),
+    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home', 'quiz'])),
   },
 })
 

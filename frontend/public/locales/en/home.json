@@ -10,7 +10,7 @@
         "title": "Request a call",
         "description": "Ask us to call you by using eServiceCanada",
         "link-text": "Request a call",
-        "href": "requesthref"
+        "href": "https://eservices.canada.ca/en/service/"
       },
       "call-us": {
         "title": "Call us",
@@ -22,7 +22,7 @@
         "outside": "Outside Canada and the United States:",
         "toll-number": "1-800-277-9914",
         "tty-number": "1-800-255-4786",
-        "outside-number": "1-613-957-1954 (Call collect)",
+        "outside-number": "1-613-957-1954 (call collect)",
         "toll-number-href": "tel:18002554786",
         "tty-number-href": "tel:18002554786",
         "outside-number-href": "tel:16139571954"
@@ -52,24 +52,24 @@
         }
       ],
       "button": {
-        "text": "Explore Retirement",
+        "text": "Explore retirement",
         "url": "/learn"
       },
       "linksTitle": "Top Learning Links",
       "links": [
         {
           "title": "Main sources of retirement income",
-          "url": "test",
+          "url": "/learn/retirement-income-sources",
           "description": "Learn about old age benefits, private retirement savings, and how they work together"
         },
         {
           "title": "Planning to save for retirement",
-          "url": "test2",
+          "url": "/learn/planning-to-save-for-retirement",
           "description": "Explore how to maximize your savings and better manage your money in retirement."
         },
         {
           "title": "When to take your public pensions",
-          "url": "test3",
+          "url": "/learn/when-to-take-your-pensions",
           "description": "You can choose when to start your old age benefits. Understand what to consider in making that decision"
         }
       ]
@@ -84,19 +84,18 @@
         }
       ],
       "button": {
-        "text": "Take The Quiz",
-        "url": "#"
+        "text": "Take The Quiz"
       },
       "linksTitle": "Other Tools",
       "links": [
         {
           "title": "Canadian Retirement Income Calculator",
-          "url": "test",
+          "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html",
           "description": "Get an estimate of your retirement income. This includes your federal old age benefits and private retirement income."
         },
         {
           "title": "Old Age Security eligibility estimator",
-          "url": "test2",
+          "url": "https://alpha.service.canada.ca/en/projects/oas-benefits-estimator",
           "description": "Find old how much money you may get from the Old Age Security program and its benefits."
         }
       ]
@@ -111,11 +110,11 @@
           "links": [
             {
               "title": "Canada Pension Plan: How to Apply",
-              "url": "test"
+              "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/apply.html"
             },
             {
               "title": "Old Age Security: How to Apply",
-              "url": "test2"
+              "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/apply.html"
             }
           ]
         }
@@ -137,7 +136,7 @@
       ],
       "button": {
         "text": "Sign Into MSCA",
-        "url": "#"
+        "url": "https://www.canada.ca/en/employment-social-development/services/my-account.html"
       }
     }
   ],
