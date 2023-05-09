@@ -10,7 +10,7 @@
         "title": "(FR) Request a call",
         "description": "(FR) Ask us to call you by using eServiceCanada",
         "link-text": "(FR) Request a call",
-        "href": "requesthref"
+        "href": "https://eservices.canada.ca/fr/service/"
       },
       "call-us": {
         "title": "(FR) Call us",
@@ -22,7 +22,7 @@
         "outside": "(FR) Outside Canada and the United States:",
         "toll-number": "1-800-277-9914",
         "tty-number": "1-800-255-4786",
-        "outside-number": "1-613-957-1954 (Call collect) (FR)",
+        "outside-number": "1-613-957-1954 (call collect) (FR)",
         "toll-number-href": "tel:18002554786",
         "tty-number-href": "tel:18002554786",
         "outside-number-href": "tel:16139571954"
@@ -52,7 +52,7 @@
         }
       ],
       "button": {
-        "text": "Explore Retirement (FR)",
+        "text": "Explore retirement (FR)",
         "url": "/learn"
       },
       "linksTitle": "Top Learning Links (FR)",
@@ -91,12 +91,12 @@
       "links": [
         {
           "title": "Canadian Retirement Income Calculator (FR)",
-          "url": "test",
+          "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
           "description": "Get an estimate of your retirement income. This includes your federal old age benefits and private retirement income. (FR)"
         },
         {
           "title": "Old Age Security eligibility estimator (FR)",
-          "url": "test2",
+          "url": "https://alpha.service.canada.ca/fr/projets/estimateur-prestations-sv",
           "description": "Find old how much money you may get from the Old Age Security program and its benefits. (FR)"
         }
       ]
@@ -111,11 +111,11 @@
           "links": [
             {
               "title": "Canada Pension Plan: How to Apply (FR)",
-              "url": "test"
+              "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html"
             },
             {
               "title": "Old Age Security: How to Apply (FR)",
-              "url": "test2"
+              "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html"
             }
           ]
         }
@@ -137,7 +137,7 @@
       ],
       "button": {
         "text": "Sign Into MSCA (FR)",
-        "url": "#"
+        "url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html"
       }
     }
   ],
