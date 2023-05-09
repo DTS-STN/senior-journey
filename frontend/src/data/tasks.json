@@ -7,7 +7,7 @@
     "tasks": [
       {
         "answerKey": "yes-income",
-        "descriptionEn": "If you earn money while receiving your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while receiving benefits, your income might be lower than you planned.",
+        "descriptionEn": "If you earn money while collecting your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while collecting benefits, your income might be lower than you planned.",
         "descriptionFr": "(FR) If you earn money while receiving your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while receiving benefits, your income might be lower than you planned.",
         "displayOrder": 1001,
         "id": 59,
@@ -26,12 +26,12 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Find out how much you will be taxed if you're earning other income",
+        "titleEn": "Find out how much you will be taxed on your other income",
         "titleFr": "(FR) Find out how much you will be taxed if you're earning other income"
       },
       {
         "answerKey": "unsure-income",
-        "descriptionEn": "If you earn money while receiving your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while receiving benefits, your income might be lower than you planned.",
+        "descriptionEn": "If you earn money while collecting your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while collecting benefits, your income might be lower than you planned.",
         "descriptionFr": "(FR) If you earn money while receiving your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while receiving benefits, your income might be lower than you planned.",
         "displayOrder": 1011,
         "id": 60,
@@ -50,12 +50,12 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Find out how much you will be taxed if you're earning other income",
+        "titleEn": "Consider how much you may be taxed if you're earning other income",
         "titleFr": "(FR) Find out how much you will be taxed if you're earning other income"
       },
       {
         "answerKey": "all",
-        "descriptionEn": "To apply for OAS and GIS, you may need to provide certain documents. To prepare, gather the following:\n\n- Documents to prove your legal status: if you were born outside of Canada or entered Canada under a Sponsorship Agreement, you will have to provide proof of your status in Canada, such as a [certified true copy](https://catalogue.servicecanada.gc.ca/apps/EForms/pdf/en/ISP-1730_CPP.pdf) of your permanent residence card.\n- Documents to prove your marital status: you must provide your marriage certificate or a [Statutory Declaration of Common-Law Union](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP3004CPP). If you are divorced or separated, you may need to provide a divorce certificate or a [Statutory Declaration of Separation](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1811OAS).\n- Banking information: you may provide banking information or a void cheque to receive your pension payments by direct deposit.",
+        "descriptionEn": "To apply for OAS and GIS, you may need to provide certain documents. To prepare, gather the following:\n\n- Documents to prove your legal status: if you were born outside of Canada or entered Canada under a Sponsorship Agreement, you will have to provide proof of your status in Canada, such as a [certified true copy](https://catalogue.servicecanada.gc.ca/apps/EForms/pdf/en/ISP-1730_CPP.pdf) of your permanent residence card.\n- Documents to prove your marital status: you must provide your marriage certificate or a [Statutory Declaration of Common-Law Union](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP3004CPP). If you are divorced or separated, you may need to provide a divorce certificate or a [Statutory Declaration of Separation](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1811OAS).\n- Banking information: you may provide banking information or a void cheque to collect your pension payments by direct deposit.",
         "descriptionFr": "(FR) To apply for OAS and GIS, you may need to provide certain documents. To prepare, gather the following:\n\n- Documents to prove your legal status: if you were born outside of Canada or entered Canada under a Sponsorship Agreement, you will have to provide proof of your status in Canada, such as a [certified true copy](https://catalogue.servicecanada.gc.ca/apps/EForms/pdf/en/ISP-1730_CPP.pdf) of your permanent residence card.\n- Documents to prove your marital status: you must provide your marriage certificate or a [Statutory Declaration of Common-Law Union](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP3004CPP). If you are divorced or separated, you may need to provide a divorce certificate or a [Statutory Declaration of Separation](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1811OAS).\n- Banking information: you may provide banking information or a void cheque to receive your pension payments by direct deposit.",
         "displayOrder": 1021,
         "id": 61,
@@ -79,7 +79,7 @@
       },
       {
         "answerKey": "all",
-        "descriptionEn": "The Guaranteed Income Supplement is a monthly payment you can get if you are receiving OAS and are low-income. Your eligibility is based on your income from the past year, so you must make sure you have filed your taxes to ensure your income is accurate.",
+        "descriptionEn": "The Guaranteed Income Supplement is a monthly payment you can get if you are collecting OAS and are low-income. Your eligibility is based on your income from the past year, so you must make sure you have filed your taxes to ensure your income is accurate.",
         "descriptionFr": "(FR) The Guaranteed Income Supplement is a monthly payment you can get if you are receiving OAS and are low-income. Your eligibility is based on your income from the past year, so you must make sure you have filed your taxes to ensure your income is accurate.",
         "displayOrder": 1031,
         "id": 62,
@@ -164,7 +164,7 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Decide if you would like to withhold tax on your pension(s)",
+        "titleEn": "Since you plan on living in Canada more than 6 months a year, decide if you would like to withhold tax on your pension(s)",
         "titleFr": "(FR) Decide if you would like to withhold tax on your pension(s)"
       },
       {
@@ -188,12 +188,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Decide if you would like to withhold tax on your pension(s)",
+        "titleEn": "Since you plan on living in Canada more than 6 months a year, decide if you would like to withhold tax on your pension(s)",
         "titleFr": "(FR) Decide if you would like to withhold tax on your pension(s)"
       },
       {
         "answerKey": "yes-kids",
-        "descriptionEn": "If you meet the eligibility criteria for the child-rearing provision, you can apply for it as part of applying for CPP or separately. You will need to have the following information:\n- Name(s), date(s) of birth, and social insurance number(s) for each child you were rearing\n- Date of child's entry to Canada, if they were born outside Canada. You must also provide documentation to show that child's date of entry into Canada\n- Whether you or your spouse received the Family Allowance or were eligible for the Canada Child Benefit\n- Periods of time when you were not the primary caregiver for each child",
+        "descriptionEn": "If you meet the eligibility criteria for the child-rearing provision, you can apply for it as part of applying for CPP or separately. You will need to have the following information:\n- Name(s), date(s) of birth, and social insurance number(s) for each child you were rearing\n- Date of child's entry to Canada, if they were born outside Canada. You must also provide documentation to show that child's date of entry into Canada\n- Whether you or your spouse collected the Family Allowance or were eligible for the Canada Child Benefit\n- Periods of time when you were not the primary caregiver for each child",
         "descriptionFr": "(FR) If you meet the eligibility criteria for the child-rearing provision, you can apply for it as part of applying for CPP or separately. You will need to have the following information:\n- Name(s), date(s) of birth, and social insurance number(s) for each child you were rearing\n- Date of child's entry to Canada, if they were born outside Canada. You must also provide documentation to show that child's date of entry into Canada\n- Whether you or your spouse received the Family Allowance or were eligible for the Canada Child Benefit\n- Periods of time when you were not the primary caregiver for each child",
         "displayOrder": 1071,
         "id": 66,
@@ -421,7 +421,7 @@
       },
       {
         "answerKey": "pre-60",
-        "descriptionEn": "You will need to wait until at least age 64 to apply for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
+        "descriptionEn": "You will need to wait until at least age 64 to apply for your OAS pension. You can choose to collect your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "descriptionFr": "(FR) You will need to wait until at least age 64 to apply for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "displayOrder": 1161,
         "id": 75,
@@ -445,7 +445,7 @@
       },
       {
         "answerKey": "between-60-and-65",
-        "descriptionEn": "You will need to wait until at least age 64 to apply for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
+        "descriptionEn": "You will need to wait until at least age 64 to apply for your OAS pension. You can choose to collect your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "descriptionFr": "(FR) You will need to wait until at least age 64 to apply for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "displayOrder": 1171,
         "id": 76,
@@ -469,7 +469,7 @@
       },
       {
         "answerKey": "unsure-retirement-age",
-        "descriptionEn": "You do not need to stop working in order to receive your OAS pension. \nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay receiving your OAS pension, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. \n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
+        "descriptionEn": "You do not need to stop working in order to collect your OAS pension. \nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay receiving your OAS pension, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. \n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "descriptionFr": "(FR) You do not need to stop working in order to receive your OAS pension. \nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay receiving your OAS pension, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. \n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "displayOrder": 1181,
         "id": 77,
@@ -493,7 +493,7 @@
       },
       {
         "answerKey": "at-65",
-        "descriptionEn": "You can apply at age 64 for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
+        "descriptionEn": "You can apply at age 64 for your OAS pension. You can choose to collect your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "descriptionFr": "(FR) You can apply at age 64 for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "displayOrder": 1191,
         "id": 78,
@@ -517,7 +517,7 @@
       },
       {
         "answerKey": "between-65-and-70",
-        "descriptionEn": "You can apply at age 64 for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
+        "descriptionEn": "You can apply at age 64 for your OAS pension. You can choose to collect your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "descriptionFr": "(FR) You can apply at age 64 for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. Your monthly amounts will not go up any further if you delay past age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "displayOrder": 1201,
         "id": 79,
@@ -541,7 +541,7 @@
       },
       {
         "answerKey": "after-70",
-        "descriptionEn": "You do not need to stop working in order to receive your OAS pension.\n\nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay receiving your OAS pension, the longer you wait, the higher your monthly amounts will be for life. **Your monthly amounts will not go up any further if you delay past age 70.**\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
+        "descriptionEn": "You do not need to stop working in order to collect your OAS pension.\n\nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay collecting your OAS pension, the longer you wait, the higher your monthly amounts will be for life. **Your monthly amounts will not go up any further if you delay past age 70.**\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can choose to collect your OAS pension between age 65 and age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "descriptionFr": "(FR) You do not need to stop working in order to receive your OAS pension.\n\nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay receiving your OAS pension, the longer you wait, the higher your monthly amounts will be for life. **Your monthly amounts will not go up any further if you delay past age 70.**\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can choose to receive your OAS pension between age 65 and age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
         "displayOrder": 1211,
         "id": 80,
@@ -644,7 +644,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Consider applying for pension splitting",
+        "titleEn": "Consider applying for pension splitting with your spouse/partner",
         "titleFr": "(FR) Consider applying for pension splitting"
       },
       {
@@ -873,7 +873,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Create a budget for day-to-day expenses",
+        "titleEn": "Since you are feeling very unprepared about your finances, create a budget for day-to-day expenses",
         "titleFr": "(FR) Create a budget for day-to-day expenses"
       },
       {
@@ -903,7 +903,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Create a budget for day-to-day expenses",
+        "titleEn": "Since you are feeling unprepared about your finances, create a budget for day-to-day expenses",
         "titleFr": "(FR) Create a budget for day-to-day expenses"
       },
       {
@@ -933,7 +933,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Create a budget for day-to-day expenses",
+        "titleEn": "Since you are feeling unsure about your finances, create a budget for day-to-day expenses",
         "titleFr": "(FR) Create a budget for day-to-day expenses"
       },
       {
@@ -1118,7 +1118,7 @@
       },
       {
         "answerKey": "yes-income",
-        "descriptionEn": "If you continue working, this may affect the amount of tax you need to pay on your income.\n\nIf you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life.\n\nIf you continue to work while receiving your CPP pension, and are under age 70, you can continue to take part in the CPP. Your CPP contributions will go toward post-retirement benefits (PRB), which will increase your retirement income.",
+        "descriptionEn": "If you continue working, this may affect the amount of tax you need to pay on your income.\n\nIf you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life.\n\nIf you continue to work while collecting your CPP pension, and are under age 70, you can continue to take part in the CPP. Your CPP contributions will go toward post-retirement benefits (PRB), which will increase your monthly pension amount.",
         "descriptionFr": "(FR) If you continue working, this may affect the amount of tax you need to pay on your income.\n\nIf you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life.\n\nIf you continue to work while receiving your CPP pension, and are under age 70, you can continue to take part in the CPP. Your CPP contributions will go toward post-retirement benefits (PRB), which will increase your retirement income.",
         "displayOrder": 111,
         "id": 12,
@@ -1143,7 +1143,7 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Consider impact of your income on your public pensions",
+        "titleEn": "Consider impact of your work income as you collect your pensions",
         "titleFr": "(FR) Consider impact of your income on your public pensions"
       },
       {
@@ -1220,7 +1220,7 @@
       },
       {
         "answerKey": "canada-pt-less-than-60",
-        "descriptionEn": "Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
+        "descriptionEn": "Spending time outside Canada may change the way you collect your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to collect your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and collecting Guaranteed Income Supplement (GIS), you will stop collecting your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "descriptionFr": "(FR) Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "displayOrder": 141,
         "id": 15,
@@ -1257,12 +1257,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Consider impacts of where you live on your public pensions and benefits",
+        "titleEn": "Since you plan to live outside of Canada for more than 6 months a year, consider impacts of where you live on your public pensions and benefits",
         "titleFr": "(FR) Consider impacts of where you live on your public pensions and benefits"
       },
       {
         "answerKey": "outside-canada",
-        "descriptionEn": "Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
+        "descriptionEn": "Spending time outside Canada may change the way you collect your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to collect your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and collecting Guaranteed Income Supplement (GIS), you will stop collecting your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "descriptionFr": "(FR) Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "displayOrder": 151,
         "id": 16,
@@ -1299,12 +1299,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Consider impacts of where you live on your public pensions and benefits",
+        "titleEn": "Since you plan to live outside of Canada for more than 6 months a year, consider impacts of where you live on your public pensions and benefits",
         "titleFr": "(FR) Consider impacts of where you live on your public pensions and benefits"
       },
       {
         "answerKey": "unsure-retirement-living",
-        "descriptionEn": "Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
+        "descriptionEn": "Spending time outside Canada may change the way you collect your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to collect your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and collecting Guaranteed Income Supplement (GIS), you will stop collecting your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "descriptionFr": "(FR) Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "displayOrder": 161,
         "id": 17,
@@ -1341,12 +1341,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Consider impacts of where you live on your public pensions and benefits",
+        "titleEn": "Since you're unsure if you'll stay in Canada in retirement, consider impacts of where you live on your public pensions and benefits",
         "titleFr": "(FR) Consider impacts of where you live on your public pensions and benefits"
       },
       {
         "answerKey": "retirement-living-skip",
-        "descriptionEn": "Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
+        "descriptionEn": "Spending time outside Canada may change the way you collect your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to collect your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and collecting Guaranteed Income Supplement (GIS), you will stop collecting your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "descriptionFr": "(FR) Spending time outside Canada may change the way you receive your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to receive your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and receiving Guaranteed Income Supplement (GIS), you will stop receiving your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
         "displayOrder": 171,
         "id": 18,
@@ -1407,7 +1407,7 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Determine if you are eligible for credit-splitting",
+        "titleEn": "Since you're divorced or separated, find out if you are eligible for credit-splitting",
         "titleFr": "(FR) Determine if you are eligible for credit-splitting"
       },
       {
@@ -1526,12 +1526,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Determine if and when you might become eligible for OAS",
+        "titleEn": "Since you have been in Canada for less than 10 years, find out if and when you might become eligible for OAS",
         "titleFr": "(FR) Determine if and when you might become eligible for OAS"
       },
       {
         "answerKey": "status-sponsored",
-        "descriptionEn": "If you are a sponsored immigrant and have lived in Canada for less than 10 years after age 18, you cannot receive the GIS while you are sponsored, unless your sponsor:\n- suffers personal bankruptcy\n- is imprisoned for more than 6 months\n- is convicted of abusing you\n- dies",
+        "descriptionEn": "If you are a sponsored immigrant and have lived in Canada for less than 10 years after age 18, you cannot collect the GIS while you are sponsored, unless your sponsor:\n- suffers personal bankruptcy\n- is imprisoned for more than 6 months\n- is convicted of abusing you\n- dies",
         "descriptionFr": "(FR) If you are a sponsored immigrant and have lived in Canada for less than 10 years after age 18, you cannot receive the GIS while you are sponsored, unless your sponsor:\n- suffers personal bankruptcy\n- is imprisoned for more than 6 months\n- is convicted of abusing you\n- dies",
         "displayOrder": 231,
         "id": 24,
@@ -1550,7 +1550,7 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Determine if you are eligible for the Guaranteed Income Supplement",
+        "titleEn": "Since you are still sponsored, find out if you are eligible for the Guaranteed Income Supplement",
         "titleFr": "(FR) Determine if you are eligible for the Guaranteed Income Supplement"
       },
       {
@@ -1645,7 +1645,7 @@
       },
       {
         "answerKey": "in-canada-40-plus",
-        "descriptionEn": "From age 18, if you have lived in Canada for at least 40 years, you may not need to apply in order to get your OAS pension.\n\nAt age 64, we may send you a letter to let you know that you will receive the Old Age Security (OAS) pension. This means that when you turn age 65, you will automatically start receiving your OAS pension. If you want to delay, your letter will explain how to make this change.",
+        "descriptionEn": "From age 18, if you have lived in Canada for at least 40 years, you may not need to apply in order to get your OAS pension.\n\nAt age 64, we may send you a letter to let you know that you will start collecting the Old Age Security (OAS) pension. This means that when you turn age 65, you will automatically start collecting your OAS pension. If you want to delay, your letter will explain how to make this change.",
         "descriptionFr": "(FR) From age 18, if you have lived in Canada for at least 40 years, you may not need to apply in order to get your OAS pension.\n\nAt age 64, we may send you a letter to let you know that you will receive the Old Age Security (OAS) pension. This means that when you turn age 65, you will automatically start receiving your OAS pension. If you want to delay, your letter will explain how to make this change.",
         "displayOrder": 261,
         "id": 28,
@@ -1664,12 +1664,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Determine whether you need to apply for your OAS pension",
+        "titleEn": "Since you have lived in Canada for 40 years or more, find out whether you need to apply for your OAS pension",
         "titleFr": "(FR) Determine whether you need to apply for your OAS pension"
       },
       {
         "answerKey": "status-first-nation",
-        "descriptionEn": "As a member of a First Nation, Métis or Inuit, if you have worked off Reserve, you are eligible to receive a Canada Pension Plan (CPP) retirement pension.\n\nIf you have worked only on a Reserve, it's possible that you have not contributed to CPP. If you're not sure, you can request a copy of your CPP Statement of Contributions from MSCA.",
+        "descriptionEn": "As a member of a First Nation, Métis or Inuit, if you have worked off Reserve, you are eligible to collect a Canada Pension Plan (CPP) retirement pension.\n\nIf you have worked only on a Reserve, it's possible that you have not contributed to CPP. If you're not sure, you can request a copy of your CPP Statement of Contributions from MSCA.",
         "descriptionFr": "(FR) As a member of a First Nation, Métis or Inuit, if you have worked off Reserve, you are eligible to receive a Canada Pension Plan (CPP) retirement pension.\n\nIf you have worked only on a Reserve, it's possible that you have not contributed to CPP. If you're not sure, you can request a copy of your CPP Statement of Contributions from MSCA.",
         "displayOrder": 271,
         "id": 29,
@@ -1694,7 +1694,7 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Check if you contributed to CPP",
+        "titleEn": "As a member of a First Nation, Métis, or Inuit, you may not have contributed to CPP. Check if you contributed to CPP",
         "titleFr": "(FR) Check if you contributed to CPP"
       },
       {
@@ -1819,7 +1819,7 @@
       },
       {
         "answerKey": "all",
-        "descriptionEn": "Your Canada Pension Plan (CPP) payments are based on how much and for how long you have contributed to the Plan, and on the age when you decide to start receiving your CPP retirement pension. To know how much you have contributed, you can access your “CPP Statement of Contributions” through My Service Canada Account or request it by mail.",
+        "descriptionEn": "Your Canada Pension Plan (CPP) payments are based on how much and for how long you have contributed to the Plan, and on the age when you decide to start collecting your CPP retirement pension. To know how much you have contributed, you can access your “CPP Statement of Contributions” through My Service Canada Account or request it by mail.",
         "descriptionFr": "(FR) Your Canada Pension Plan (CPP) payments are based on how much and for how long you have contributed to the Plan, and on the age when you decide to start receiving your CPP retirement pension. To know how much you have contributed, you can access your “CPP Statement of Contributions” through My Service Canada Account or request it by mail.",
         "displayOrder": 331,
         "id": 35,
@@ -1867,7 +1867,7 @@
       },
       {
         "answerKey": "pre-60",
-        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to receive your public pensions.\n\nYou are not eligible for public pensions until after age 60. If you choose to take your CPP pension early at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
+        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to receive your public pensions.\n\nYou are not eligible for public pensions until after age 60. If you choose to take your CPP pension early at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
         "descriptionFr": "(FR) One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to receive your public pensions.\n\nYou are not eligible for public pensions until after age 60. If you choose to take your CPP pension early at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
         "displayOrder": 361,
         "id": 37,
@@ -1879,12 +1879,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Decide when to apply for public pensions",
+        "titleEn": "Since you plan on retiring before age 60, decide when to apply for public pensions",
         "titleFr": "(FR) Decide when to apply for public pensions"
       },
       {
         "answerKey": "between-60-and-65",
-        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to receive your public pensions.\n\nWhile you can choose to  take your CPP pension at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
+        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to collect your public pensions.\n\nWhile you can choose to  take your CPP pension at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
         "descriptionFr": "(FR) One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to receive your public pensions.\n\nWhile you can choose to  take your CPP pension at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
         "displayOrder": 371,
         "id": 38,
@@ -1896,12 +1896,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Decide when to apply for public pensions",
+        "titleEn": "Since you plan on retiring between ages 60 and 65, decide when to apply for public pensions",
         "titleFr": "(FR) Decide when to apply for public pensions"
       },
       {
         "answerKey": "at-65",
-        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to receive your public pensions.\n\nYou can take both your OAS and CPP pensions at age 65. If you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible. You may also qualify for other benefits.",
+        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to collect your public pensions.\n\nYou can take both your OAS and CPP pensions at age 65. If you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible. You may also qualify for other benefits.",
         "descriptionFr": "(FR) One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to receive your public pensions.\n\nYou can take both your OAS and CPP pensions at age 65. If you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible. You may also qualify for other benefits.",
         "displayOrder": 381,
         "id": 39,
@@ -1913,12 +1913,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Decide when to apply for public pensions",
+        "titleEn": "Since you plan on retiring at age 65, decide when to apply for public pensions",
         "titleFr": "(FR) Decide when to apply for public pensions"
       },
       {
         "answerKey": "between-65-and-70",
-        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to receive your public pensions.\n\nYou can start both OAS and CPP pensions at age 65. If you don't need the additional money, you should not take your pensions before you retire from work. Each month that you delay increases your monthly payments. After age 70, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
+        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to collect your public pensions.\n\nYou can start both OAS and CPP pensions at age 65. If you don't need the additional money, you should not take your pensions before you retire from work. Each month that you delay increases your monthly payments. After age 70, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
         "descriptionFr": "(FR) One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to receive your public pensions.\n\nYou can start both OAS and CPP pensions at age 65. If you don't need the additional money, you should not take your pensions before you retire from work. Each month that you delay increases your monthly payments. After age 70, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
         "displayOrder": 391,
         "id": 40,
@@ -1930,12 +1930,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Decide when to apply for public pensions",
+        "titleEn": "Since you plan on retiring between age 65 and 70, decide when to apply for public pensions",
         "titleFr": "(FR) Decide when to apply for public pensions"
       },
       {
         "answerKey": "after-70",
-        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. Retiring from work and claiming your pensions are two different things.\n\nStarting OAS and CPP at age 70 means you are maximizing your monthly payments. After that age, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
+        "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. Retiring from work and collecting your pensions are two different things.\n\nStarting OAS and CPP at age 70 means you are maximizing your monthly payments. After that age, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
         "descriptionFr": "(FR) One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. Retiring from work and claiming your pensions are two different things.\n\nStarting OAS and CPP at age 70 means you are maximizing your monthly payments. After that age, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
         "displayOrder": 401,
         "id": 41,
@@ -1947,12 +1947,12 @@
             "titleFr": "(FR) Public pensions"
           }
         ],
-        "titleEn": "Decide when to apply for public pensions",
+        "titleEn": "Since you plan on retiring after age 70, decide when to apply for public pensions",
         "titleFr": "(FR) Decide when to apply for public pensions"
       },
       {
         "answerKey": "unsure-retirement-age",
-        "descriptionEn": "It is okay to not know when you want to retire! Choosing to retire from work and taking your public pensions are two separate things. However, it is important to decide when you want to take your public pensions. Having a plan before you retire can give you peace of mind.\n\nYou do not need to stop working to apply for your pensions. If you are eligible, you can apply for your CPP pension as early as age 60 but it will be significantly less each month for the rest of your life. You can apply as late as age 70 to get more each month. To receive your OAS pension, you must be at least age 65.\n\nIf you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. There are no financial advantages if you delay past age 70. If you are low income or in poor health, you should start when you are eligible.",
+        "descriptionEn": "It is okay to not know when you want to retire! Choosing to retire from work and taking your public pensions are two separate things. However, it is important to decide when you want to take your public pensions. Having a plan before you retire can give you peace of mind.\n\nYou do not need to stop working to apply for your pensions. If you are eligible, you can apply for your CPP pension as early as age 60 but it will be significantly less each month for the rest of your life. You can apply as late as age 70 to get more each month. To collect your OAS pension, you must be at least age 65.\n\nIf you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. There are no financial advantages if you delay past age 70. If you are low income or in poor health, you should start when you are eligible.",
         "descriptionFr": "(FR) It is okay to not know when you want to retire! Choosing to retire from work and taking your public pensions are two separate things. However, it is important to decide when you want to take your public pensions. Having a plan before you retire can give you peace of mind.\n\nYou do not need to stop working to apply for your pensions. If you are eligible, you can apply for your CPP pension as early as age 60 but it will be significantly less each month for the rest of your life. You can apply as late as age 70 to get more each month. To receive your OAS pension, you must be at least age 65.\n\nIf you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. There are no financial advantages if you delay past age 70. If you are low income or in poor health, you should start when you are eligible.",
         "displayOrder": 411,
         "id": 42,
@@ -1969,7 +1969,7 @@
       },
       {
         "answerKey": "retirement-age-skip",
-        "descriptionEn": "It is okay to not know when you want to retire! Choosing to retire from work and taking your public pensions are two separate things. However, it is important to decide when you want to take your public pensions. Having a plan before you retire can give you peace of mind.\n\nYou do not need to stop working to apply for your pensions. If you are eligible, you can apply for your CPP pension as early as age 60 but it will be significantly less each month for the rest of your life. You can apply as late as age 70 to get more each month. To receive your OAS pension, you must be at least age 65.\n\nIf you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. There are no financial advantages if you delay past age 70. If you are low income or in poor health, you should start when you are eligible.",
+        "descriptionEn": "It is okay to not know when you want to retire! Choosing to retire from work and taking your public pensions are two separate things. However, it is important to decide when you want to take your public pensions. Having a plan before you retire can give you peace of mind.\n\nYou do not need to stop working to apply for your pensions. If you are eligible, you can apply for your CPP pension as early as age 60 but it will be significantly less each month for the rest of your life. You can apply as late as age 70 to get more each month. To collect your OAS pension, you must be at least age 65.\n\nIf you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. There are no financial advantages if you delay past age 70. If you are low income or in poor health, you should start when you are eligible.",
         "descriptionFr": "(FR) It is okay to not know when you want to retire! Choosing to retire from work and taking your public pensions are two separate things. However, it is important to decide when you want to take your public pensions. Having a plan before you retire can give you peace of mind.\n\nYou do not need to stop working to apply for your pensions. If you are eligible, you can apply for your CPP pension as early as age 60 but it will be significantly less each month for the rest of your life. You can apply as late as age 70 to get more each month. To receive your OAS pension, you must be at least age 65.\n\nIf you can afford to delay receiving your public pensions, the longer you wait, the higher your monthly amounts will be for life. There are no financial advantages if you delay past age 70. If you are low income or in poor health, you should start when you are eligible.",
         "displayOrder": 421,
         "id": 43,
@@ -1986,7 +1986,7 @@
       },
       {
         "answerKey": "cppd-yes",
-        "descriptionEn": "Since you are receiving a CPP disability benefit, you don't need to apply for a CPP pension. Instead, your CPP disability benefit will convert to a CPP retirement pension at age 65. Your retirement pension will be less than your disability benefit. You can estimate your future retirement pension amount with the following calculation: subtract the [basic payment amount of the disability benefit](https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-disability-benefit/benefit-amount.html) from your monthly payments and divide the total by 0.75. The basic payment amount changes every year, so treat this as an estimate. Keep in mind you will also become eligible to apply for OAS and GIS, so your combined public pensions and benefits will go up.",
+        "descriptionEn": "Since you are collecting a CPP disability benefit, you don't need to apply for a CPP pension. Instead, your CPP disability benefit will convert to a CPP retirement pension at age 65. Your retirement monthly pension amounts will be less than your disability benefit. You can estimate your future retirement pension amount with the following calculation: subtract the [basic payment amount of the disability benefit](https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-disability-benefit/benefit-amount.html) from your monthly payments and divide the total by 0.75. The basic payment amount changes every year, so treat this as an estimate. Keep in mind you will also become eligible to apply for OAS and GIS, so your combined public pensions and benefits will go up.",
         "descriptionFr": "(FR) Since you are receiving a CPP disability benefit, you don't need to apply for a CPP pension. Instead, your CPP disability benefit will convert to a CPP retirement pension at age 65. Your retirement pension will be less than your disability benefit. You can estimate your future retirement pension amount with the following calculation: subtract the [basic payment amount of the disability benefit](https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-disability-benefit/benefit-amount.html) from your monthly payments and divide the total by 0.75. The basic payment amount changes every year, so treat this as an estimate. Keep in mind you will also become eligible to apply for OAS and GIS, so your combined public pensions and benefits will go up.",
         "displayOrder": 431,
         "id": 44,
@@ -2093,7 +2093,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Plan for the costs of living or travelling outside of Canada when you retire",
+        "titleEn": "Since you are planning on living outside Canada part time, plan for the costs of living or travelling outside of Canada when you retire",
         "titleFr": "(FR) Plan for the costs of living or travelling outside of Canada when you retire"
       },
       {
@@ -2117,7 +2117,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Plan for the costs of living or travelling outside of Canada when you retire",
+        "titleEn": "Since you are planning on living in Canada part time, plan for the costs of living or travelling outside of Canada when you retire",
         "titleFr": "(FR) Plan for the costs of living or travelling outside of Canada when you retire"
       },
       {
@@ -2141,7 +2141,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Plan for the costs of living or travelling outside of Canada when you retire",
+        "titleEn": "Since you are planning on living outside Canada, plan for the costs of living outside of Canada when you retire",
         "titleFr": "(FR) Plan for the costs of living or travelling outside of Canada when you retire"
       },
       {
@@ -2165,7 +2165,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Plan for the costs of living or travelling outside of Canada when you retire",
+        "titleEn": "Consider the costs of living or travelling outside of Canada when you retire",
         "titleFr": "(FR) Plan for the costs of living or travelling outside of Canada when you retire"
       },
       {
@@ -2189,7 +2189,7 @@
             "titleFr": "(FR) Managing finances"
           }
         ],
-        "titleEn": "Plan for the costs of living or travelling outside of Canada when you retire",
+        "titleEn": "Consider the costs of living or travelling outside of Canada when you retire",
         "titleFr": "(FR) Plan for the costs of living or travelling outside of Canada when you retire"
       },
       {
@@ -2260,7 +2260,7 @@
       },
       {
         "answerKey": "all",
-        "descriptionEn": "Explore the possibility of receiving support from your province or territory. Use the Benefits Finder to help identify the benefits that are most relevant to you.",
+        "descriptionEn": "Explore the supports offered by your province or territory. Use the Benefits Finder to help identify the benefits that are most relevant to you.\nIf you live or have worked in Quebec, you may collect the Québec Pension Plan (QPP) retirement pension.\nTo learn more, visit the [QPP website.](https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx)",
         "descriptionFr": "(FR) Explore the possibility of receiving support from your province or territory. Use the Benefits Finder to help identify the benefits that are most relevant to you.",
         "displayOrder": 541,
         "id": 55,
@@ -2332,7 +2332,7 @@
       },
       {
         "answerKey": "in-canada-10-to-39",
-        "descriptionEn": "You may qualify to receive a pension from another country even if Canada does not have a social security agreement. It is up to you to apply for these pensions separately.",
+        "descriptionEn": "You may qualify to collect a pension from another country even if Canada does not have a social security agreement. It is up to you to apply for these pensions separately.",
         "descriptionFr": "(FR) You may qualify to receive a pension from another country even if Canada does not have a social security agreement. It is up to you to apply for these pensions separately.",
         "displayOrder": 571,
         "id": 58,
@@ -2689,7 +2689,7 @@
       },
       {
         "answerKey": "married-or-cl",
-        "descriptionEn": "You can share your Canada Pension Plan (CPP) retirement pension with your legal spouse or common-law partner. To do so, you must be receiving your pension, or be eligible to receive it, and be living with your legal spouse or common-law partner.\n\nSharing your pension won't change your pension amount, but may result in tax savings.",
+        "descriptionEn": "You can share your Canada Pension Plan (CPP) retirement pension with your legal spouse or common-law partner. To do so, you must be collecting your pension, or be eligible to collect it, and be living with your legal spouse or common-law partner.\n\nSharing your pension won't change your pension amount, but may result in tax savings.",
         "descriptionFr": "(FR) You can share your Canada Pension Plan (CPP) retirement pension with your legal spouse or common-law partner. To do so, you must be receiving your pension, or be eligible to receive it, and be living with your legal spouse or common-law partner.\n\nSharing your pension won't change your pension amount, but may result in tax savings.",
         "displayOrder": null,
         "id": 103,
