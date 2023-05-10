@@ -83,7 +83,7 @@ export const QuestionWhen = ({ values, setFieldValue }: QuestionProps) => {
           aria-label={t('questions.question-when.option-after-70.text')}
           data-cy={t('questions.question-when.option-after-70.id')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === t('questions.question-when.option-after-70.valie')}
+          selected={values['retirementAge'] === t('questions.question-when.option-after-70.value')}
         >
           {t('questions.question-when.option-after-70.text')}
         </ToggleButton>
