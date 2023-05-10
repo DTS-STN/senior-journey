@@ -9,8 +9,8 @@ import { NextSeo } from 'next-seo'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 
-const FromWorkToRetirement: FC = () => {
-  const { t } = useTranslation('learn/from-work-to-retirement')
+const GoingFromWorkToRetirement: FC = () => {
+  const { t } = useTranslation('learn/going-from-work-to-retirement')
 
   return (
     <LearnPageLayout
@@ -42,7 +42,7 @@ const FromWorkToRetirement: FC = () => {
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li>
           <Trans
-            ns="learn/from-work-to-retirement"
+            ns="learn/going-from-work-to-retirement"
             i18nKey="key-takeaways.life-chapters.phase-retirement.content"
             components={{
               a: <MuiLink href={t('key-takeaways.life-chapters.phase-retirement.link')} />,
@@ -51,7 +51,7 @@ const FromWorkToRetirement: FC = () => {
         </li>
         <li>
           <Trans
-            ns="learn/from-work-to-retirement"
+            ns="learn/going-from-work-to-retirement"
             i18nKey="key-takeaways.life-chapters.second-career.content"
             components={{
               a: <MuiLink href={t('key-takeaways.life-chapters.second-career.link')} />,
@@ -60,7 +60,7 @@ const FromWorkToRetirement: FC = () => {
         </li>
         <li>
           <Trans
-            ns="learn/from-work-to-retirement"
+            ns="learn/going-from-work-to-retirement"
             i18nKey="key-takeaways.life-chapters.full-retirement.content"
             components={{
               a: <MuiLink href={t('key-takeaways.life-chapters.full-retirement.link')} />,
@@ -95,7 +95,7 @@ const FromWorkToRetirement: FC = () => {
       <p>{t('combine-job-pensions-income.content-two')}</p>
       <p>
         <Trans
-          ns="learn/from-work-to-retirement"
+          ns="learn/going-from-work-to-retirement"
           i18nKey="combine-job-pensions-income.content-three.content"
           components={{
             a: <MuiLink href={t('combine-job-pensions-income.content-three.link')} />,
@@ -104,12 +104,12 @@ const FromWorkToRetirement: FC = () => {
       </p>
 
       <AlertCard>
-        <Trans ns="learn/from-work-to-retirement" i18nKey="combine-job-pensions-income.smart-tip" />
+        <Trans ns="learn/going-from-work-to-retirement" i18nKey="combine-job-pensions-income.smart-tip" />
       </AlertCard>
 
       <p>
         <Trans
-          ns="learn/from-work-to-retirement"
+          ns="learn/going-from-work-to-retirement"
           i18nKey="combine-job-pensions-income.content-four.content"
           components={{
             a: <MuiLink href={t('combine-job-pensions-income.content-four.link')} />,
@@ -118,7 +118,7 @@ const FromWorkToRetirement: FC = () => {
       </p>
       <p>
         <Trans
-          ns="learn/from-work-to-retirement"
+          ns="learn/going-from-work-to-retirement"
           i18nKey="combine-job-pensions-income.content-five.content"
           components={{
             a: <MuiLink href={t('combine-job-pensions-income.content-five.link')} />,
@@ -130,7 +130,7 @@ const FromWorkToRetirement: FC = () => {
       </h3>
       <p>{t('combine-job-pensions-income.content-six')}</p>
       <AlertCard type="disclaimer">
-        <Trans ns="learn/from-work-to-retirement" i18nKey="combine-job-pensions-income.disclaimer" />
+        <Trans ns="learn/going-from-work-to-retirement" i18nKey="combine-job-pensions-income.disclaimer" />
       </AlertCard>
 
       <h2 id="case-study" className="h2">
@@ -146,9 +146,9 @@ const FromWorkToRetirement: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/from-work-to-retirement'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/going-from-work-to-retirement'])),
     },
   }
 }
 
-export default FromWorkToRetirement
+export default GoingFromWorkToRetirement

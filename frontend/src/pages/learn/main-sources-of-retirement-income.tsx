@@ -18,9 +18,9 @@ const MainSourcesOfRetirementIncome: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
-        href: '/learn/transitioning-from-work-to-retirement',
-        primary: t('learn-more.transitioning-from-work-to-retirement.header'),
-        secondary: t('learn-more.transitioning-from-work-to-retirement.description'),
+        href: '/learn/going-from-work-to-retirement',
+        primary: t('learn-more.going-from-work-to-retirement.header'),
+        secondary: t('learn-more.going-from-work-to-retirement.description'),
       },
       {
         href: '/learn/canada-pension-plan-program',
