@@ -8,21 +8,22 @@ type QuestionProps = {
   setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
 }
 
-export const Question6 = ({ values, setFieldValue }: QuestionProps) => {
+export const QuestionDisabilityBenefits = ({ values, setFieldValue }: QuestionProps) => {
   const { t } = useTranslation('quiz')
   const [value, setValue] = React.useState('')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
     setValue(answerId)
-    setFieldValue('legalStatus', values['legalStatus'] === answerId ? '' : answerId ?? '')
+    setFieldValue('hasCppDisabilityBenefits', values['hasCppDisabilityBenefits'] === answerId ? '' : answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">{t('questions.question-6.title')}</h5>
+      <h5 className="font-display text-2xl font-light">{t('questions.question-disability-benefits.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
+        data-cy={t('questions.question-disability-benefits.id')}
         fullWidth={true}
         className="my-4"
         value={value}
@@ -42,36 +43,22 @@ export const Question6 = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value="status-citizen"
-          aria-label={t('questions.question-6.option-1')}
+          value={t('questions.question-disability-benefits.option-cppd-yes.value')}
+          aria-label={t('questions.question-disability-benefits.option-cppd-yes.text')}
+          data-cy={t('questions.question-disability-benefits.option-cppd-yes.id')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'status-citizen'}
+          selected={values['hasCppDisabilityBenefits'] === t('questions.question-disability-benefits.option-cppd-yes.value')}
         >
-          {t('questions.question-6.option-1')}
+          {t('questions.question-disability-benefits.option-cppd-yes.text')}
         </ToggleButton>
         <ToggleButton
-          value="status-first-nation"
-          aria-label={t('questions.question-6.option-2')}
+          value={t('questions.question-disability-benefits.option-cppd-no.value')}
+          aria-label={t('questions.question-disability-benefits.option-cppd-no.text')}
+          data-cy={t('questions.question-disability-benefits.option-cppd-no.id')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'status-first-nation'}
+          selected={values['hasCppDisabilityBenefits'] === t('questions.question-disability-benefits.option-cppd-no.value')}
         >
-          {t('questions.question-6.option-2')}
-        </ToggleButton>
-        <ToggleButton
-          value="status-sponsored"
-          aria-label={t('questions.question-6.option-3')}
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'status-sponsored'}
-        >
-          {t('questions.question-6.option-3')}
-        </ToggleButton>
-        <ToggleButton
-          value="status-other"
-          aria-label={t('questions.question-6.option-4')}
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === 'status-other'}
-        >
-          {t('questions.question-6.option-4')}
+          {t('questions.question-disability-benefits.option-cppd-no.text')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

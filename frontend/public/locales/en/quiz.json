@@ -1,17 +1,43 @@
 {
   "confirmation": {
     "sure": "Are you sure you want to close this quiz? You will lose your progress.",
-    "no": "No, Return to Quiz",
-    "yes": "Yes, Close"
+    "no": {
+      "id": "no-button",
+      "text": "No, Return to Quiz"
+    },
+    "yes": {
+      "id": "yes-button",
+      "text": "Yes, Close"
+    }
   },
   "navigation": {
-    "start": "Start The Quiz",
-    "previous": "Previous Question",
-    "next": "Next Question",
-    "submit": "Submit",
-    "close": "Close",
+    "id": "navigation-container",
+    "start": {
+      "id": "start-button",
+      "text": "Start The Quiz"
+    },
+    "previous": {
+      "id":"previous-button",
+      "text": "Previous Question"
+    },
+    "next": {
+      "id": "next-button",
+      "text": "Next Question"
+    },
+    "submit": {
+      "id": "submit-button",
+      "text": "Submit"
+    },
+    "close": {
+      "id": "close-button",
+      "text": "Close"
+    },
     "title": "Retirement Ready Quiz",
-    "of": "of"
+    "of": "of",
+    "progress": {
+      "id": "progress-bar",
+      "label": "progress-label"
+    }
   },
   "landing": {
     "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
@@ -26,73 +52,221 @@
     "minutes": "3 minutes"
   },
   "questions": {
-    "question-1": {
+    "question-when": {
+      "id": "question-when",
       "title": "When do you plan on retiring?",
-      "option-1": "Before Age 60",
-      "option-2": "Between ages 60 and 65",
-      "option-3": "At Age 65",
-      "option-4": "Between ages 65 and 70",
-      "option-5": "After Age 70",
-      "option-6": "Not sure"
-    },
-    "question-2": {
-      "question-1": {
-        "title": "Select all that apply to you. You are...",
-        "option-1": "Single",
-        "option-2": "Married or common-law",
-        "option-3": "Divorced or separated",
-        "option-4": "Widowed"
+      "option-pre-60": {
+        "id": "pre-60-button",
+        "text": "Before Age 60",
+        "value": "pre-60"
       },
-      "question-2": {
-        "title": "Do you have children?",
-        "option-1": "Yes",
-        "option-2": "No"
+      "option-between-60-and-65": {
+        "id": "between-60-and-65-button",
+        "text": "Between ages 60 and 65",
+        "value": "between-60-and-65"
+      },
+      "option-at-65": {
+        "id": "at-65-button",
+        "text": "At Age 65",
+        "value": "at-65"
+      },
+      "option-between-65-and-70": {
+        "id": "between-65-and-70-button",
+        "text": "Between ages 65 and 70",
+        "value": "between-65-and-70"
+      },
+      "option-after-70": {
+        "id": "after-70-button",
+        "text": "After Age 70",
+        "value": "after-70"
+      },
+      "option-unsure-retirement-age": {
+        "id": "unsure-retirement-age-button",
+        "text": "Not sure",
+        "value": "unsure-retirement-age"
       }
     },
-    "question-3": {
+    "question-apply": {
+      "id": "question-apply",
+      "question-marital-status": {
+        "id": "apply-subquestion-marital-status",
+        "title": "Select all that apply to you. You are...",
+        "option-single": {
+          "id": "single-button",
+          "text": "Single",
+          "value": "single"
+        },
+        "option-married-or-cl": {
+          "id": "married-or-cl-button",
+          "text": "Married or common-law",
+          "value": "married-or-cl"
+        },
+        "option-divorced-or-separated": {
+          "id": "divorced-or-separated-button",
+          "text": "Divorced or separated",
+          "value": "divorced-or-separated"
+        },
+        "option-widowed": {
+          "id": "widowed-button",
+          "text": "Widowed",
+          "value": "widowed"
+        }
+      },
+      "question-children": {
+        "id": "apply-subquestion-children",
+        "title": "Do you have children?",
+        "option-yes-kids": {
+          "id": "yes-kids-button",
+          "text": "Yes",
+          "value": "yes-kids"
+        },
+        "option-no-kids": {
+          "id": "no-kids-button",
+          "text": "No",
+          "value": "no-kids"
+        }
+      }
+    },
+    "question-feel": {
+      "id": "question-feel-button",
       "title": "How financially prepared do you feel for retirement?",
       "subtitle": "Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
-      "option-1": "Very unprepared",
-      "option-2": "Unprepared",
-      "option-3": "Not sure",
-      "option-4": "Prepared",
-      "option-5": "Very Prepared"
+      "option-very-unprepared": {
+        "id": "very-unprepared-button",
+        "text": "Very unprepared",
+        "value": "very-unprepared"
+      },
+      "option-unprepared": {
+        "id": "unprepared-button",
+        "text":"Unprepared",
+        "value": "unprepared"
+      },
+      "option-unsure-preparedness": {
+        "id": "unsure-preparedness-button",
+        "text": "Not sure",
+        "value": "unsure-preparedness"
+      },
+      "option-prepared": {
+        "id": "prepared-button",
+        "text": "Prepared",
+        "value": "prepared"
+      },
+      "option-very-prepared": {
+        "id": "very-prepared-button",
+        "text": "Very Prepared",
+        "value": "very-prepared"
+      }
     },
-    "question-4": {
+    "question-where": {
+      "id": "question-where",
       "title": "Where do you plan on living when you retire?",
-      "option-1": "In Canada",
-      "option-2": "In Canada MORE Than 6 Months a Year",
-      "option-3": "In Canada LESS than 6 months a year",
-      "option-4": "Outside Canada",
-      "option-5": "Not Sure",
-      "option-2-label": "In Canada more than 6 months a year",
-      "option-3-label": "In Canada more than 6 months a year"
+      "option-canada-ft": {
+        "id": "canada-ft-button",
+        "text": "In Canada",
+        "value": "canada-ft"
+      },
+      "option-canada-pt-60-or-more": {
+        "id": "canada-pt-60-or-more-button",
+        "text": "In Canada MORE Than 6 Months a Year",
+        "value": "canada-pt-60-or-more"
+      },
+      "option-canada-pt-less-than-60": {
+        "id": "canada-pt-less-than-60-button",
+        "text": "In Canada LESS than 6 months a year",
+        "value": "canada-pt-less-than-60"
+      },
+      "option-outside-canada": {
+        "id": "outside-canada-button",
+        "text": "Outside Canada",
+        "value": "outside-canada"
+      },
+      "option-unsure-retirement-living": {
+        "id": "unsure-retirement-living-button",
+        "text": "Not Sure",
+        "value": "unsure-retirement-living"
+      }
     },
-    "question-5": {
+    "question-earn": {
+      "id": "question-earn",
       "title": "Do you plan to earn money while receiving retirement benefits",
       "subtitle": "Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
-      "option-1": "No",
-      "option-2": "Yes",
-      "option-3": "Not sure"
+      "option-no-income": {
+        "id": "no-income-button",
+        "text": "No",
+        "value": "no-income"
+      },
+      "option-yes-income": {
+        "id": "yes-income-button",
+        "text": "Yes",
+        "value": "yes-income"
+      },
+      "option-unsure-income": {
+        "id": "unsure-income-button",
+        "text": "Not sure",
+        "value": "unsure-income"
+      }
     },
-    "question-6": {
+    "question-status": {
+      "id": "question-status",
       "title": "When you retire, what will your legal status be in Canada?",
-      "option-1": "Canadian Citizen or Permanent Resident",
-      "option-2": "Métis, Inuit, or Member of First Nation",
-      "option-3": "Sponsored Resident (less than 10 years in Canada)",
-      "option-4": "Visitor, Student, or Temporary Worker"
+      "option-status-citizen": {
+        "id": "status-citizen-button",
+        "text": "Canadian Citizen or Permanent Resident",
+        "value": "status-citizen"
+      },
+      "option-status-first-nation": {
+        "id": "status-first-nation",
+        "text": "Métis, Inuit, or Member of First Nation",
+        "value": "status-first-nation"
+      },
+      "option-status-sponsored": {
+        "id": "status-sponsored-button",
+        "text": "Sponsored Resident (less than 10 years in Canada)",
+        "value": "status-sponsored"
+      },
+      "option-status-other": {
+        "id": "status-other-button",
+        "text": "Visitor, Student, or Temporary Worker",
+        "value": "status-other"
+      }
     },
-    "question-7": {
+    "question-how-long": {
+      "id": "question-how-long-button",
       "title": "From age 18, how many years will you have lived in Canada when you apply for retirement benefits?",
-      "option-1": "40 years or more",
-      "option-2": "10 to 39 years",
-      "option-3": "Less than 10 years",
-      "option-4": "Not sure"
+      "option-in-canada-40-plus": {
+        "id": "in-canada-40-plus-button",
+        "text": "40 years or more",
+        "value": "in-canada-40-plus"
+      },
+      "option-in-canada-10-to-39": {
+        "id": "in-canada-10-to-39-button",
+        "text": "10 to 39 years",
+        "value": "in-canada-10-to-39"
+      },
+      "option-in-canada-less-than-10": {
+        "id": "in-canada-less-than-10-button",
+        "text": "Less than 10 years",
+        "value": "in-canada-less-than-10"
+      },
+      "option-unsure-in-canada": {
+        "id": "unsure-in-canada-button",
+        "text": "Not sure",
+        "value": "unsure-in-canada"
+      }
     },
-    "question-8": {
+    "question-disability-benefits": {
+      "id": "question-disability-benefits",
       "title": "Are you receiving CPP-Disability benefits?",
-      "option-1": "Yes",
-      "option-2": "No"
+      "option-cppd-yes": {
+        "id": "cppd-yes-button",
+        "text": "Yes",
+        "value": "cppd-yes"
+      },
+      "option-cppd-no": {
+        "id": "cppd-no-button",
+        "text": "No",
+        "value": "cppd-no"
+      }
     }
   }
 }
