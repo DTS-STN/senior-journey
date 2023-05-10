@@ -1,9 +1,7 @@
 import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
 
-import { ExpandMore, FilterList } from '@mui/icons-material'
+import { CheckBoxOutlineBlankOutlined, CheckBoxOutlined, ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
-import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked'
-import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton } from '@mui/material'
 import { isEmpty, sortBy } from 'lodash'
@@ -121,7 +119,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
                 aria-expanded={expanded}
                 aria-label={t('show-filters')}
               >
-                <ExpandMore className="hidden md:block" />
+                {expanded ? <ExpandLess className="hidden md:block" /> : <ExpandMore className="hidden md:block" />}
                 <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f] md:hidden" />
               </IconButton>
             </div>
@@ -130,13 +128,13 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
                 {tagsFilter.map(({ code, title }) => (
                   <FormControlLabel
                     key={code}
-                    className="m-0 rounded-full bg-gray-200"
+                    className={`m-0 rounded ${filters?.tags.includes(code) ? 'bg-[#CDF9FF]' : 'bg-gray-200'}`}
                     control={
                       <Checkbox
                         value={code}
-                        icon={<RadioButtonUncheckedIcon />}
-                        checkedIcon={<RadioButtonCheckedIcon />}
-                        checked={filters.tags.includes(code)}
+                        icon={<CheckBoxOutlineBlankOutlined />}
+                        checkedIcon={<CheckBoxOutlined />}
+                        checked={filters.tags.includes(code) ?? false}
                       />
                     }
                     label={title}
@@ -182,8 +180,6 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
 
 export const getServerSideProps: GetServerSideProps<ChecklistProps | {}> = async ({ locale, params }) => {
   const filters = params?.filters
-
-  console.log({ filters })
 
   if (typeof filters !== 'string') {
     // page not found
