@@ -18,11 +18,11 @@
       "body": "(FR) Prepare for a comfortable retirement by exploring our money management section, which includes guidance on personal savings, identifying potential income sources, tax implications, and more - all with CPP and OAS benefits in mind.",
       "cards": [
         {
-          "title": "(FR) Overview of retirement income sources",
+          "title": "(FR) Main sources of retirement income",
           "read": "(FR) 5 MIN READ",
           "body": "(FR) Learn about public & private pensions, personal savings and investments.",
-          "image": "/assets/main-sources-of-income-sm.jpg",
-          "link": "/learn/retirement-income-sources"
+          "image": "/assets/main-sources-of-retirement-income-sm.jpg",
+          "link": "/learn/main-sources-of-retirement-income"
         },
         {
           "title": "(FR) Planning to save for retirement",

@@ -1,12 +1,12 @@
 {
   "breadcrumbs": {
-    "home":{
-      "text":"Retirement Hub",
-      "link":"/"
+    "home": {
+      "text": "Retirement Hub",
+      "link": "/"
     },
-    "learn":{
-        "text":"Learn",
-        "link":"/learn"
+    "learn": {
+      "text": "Learn",
+      "link": "/learn"
     }
   },
   "canada-pension-plan-program": {
@@ -56,7 +56,7 @@
     "public": "Public",
     "three-pillar-system": "A three-pillar system"
   },
-  "header": "Overview of retirement income sources",
+  "header": "Main sources of retirement income",
   "learn-more": {
     "canada-pension-plan-program": {
       "description": "The official Canada.ca page of the CPP program with information on the CPP retirement pension, and other CPP related benefits.",
