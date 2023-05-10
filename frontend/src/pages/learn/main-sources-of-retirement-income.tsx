@@ -12,8 +12,8 @@ import Link from 'next/link'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 
-const RetirementIncomeSources: FC = () => {
-  const { t } = useTranslation('learn/retirement-income-sources')
+const MainSourcesOfRetirementIncome: FC = () => {
+  const { t } = useTranslation('learn/main-sources-of-retirement-income')
 
   const learnMoreLinks = useMemo(
     () => [
@@ -33,7 +33,7 @@ const RetirementIncomeSources: FC = () => {
         secondary: t('learn-more.old-age-security-program.description'),
       },
       {
-        href: '/learn/retirement-income-sources',
+        href: '/learn/main-sources-of-retirement-income',
         primary: t('learn-more.sources-of-retirement-income.header'),
         secondary: t('learn-more.sources-of-retirement-income.description'),
       },
@@ -70,7 +70,7 @@ const RetirementIncomeSources: FC = () => {
       <p>{t('overview.paragraph-2')}</p>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="overview.paragraph-3.content"
           components={{ a: <MuiLink href={t('overview.paragraph-3.link')} /> }}
         />
@@ -127,7 +127,7 @@ const RetirementIncomeSources: FC = () => {
       <h3 className="h3">{t('old-age-security-program.oas-pension.header')}</h3>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="old-age-security-program.oas-pension.paragraph-1.content"
           components={{
             a: <MuiLink href={t('old-age-security-program.oas-pension.paragraph-1.link')} />,
@@ -136,7 +136,7 @@ const RetirementIncomeSources: FC = () => {
       </p>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="old-age-security-program.oas-pension.paragraph-2.content"
           components={{
             a: <MuiLink href={t('old-age-security-program.oas-pension.paragraph-2.link')} />,
@@ -147,7 +147,7 @@ const RetirementIncomeSources: FC = () => {
         <div>
           <p>
             <Trans
-              ns="learn/retirement-income-sources"
+              ns="learn/main-sources-of-retirement-income"
               i18nKey="old-age-security-program.oas-pension.paragraph-3.content"
               components={{
                 a: <MuiLink color="secondary" href={t('old-age-security-program.oas-pension.paragraph-3.link')} />,
@@ -158,9 +158,7 @@ const RetirementIncomeSources: FC = () => {
         </div>
         <div>
           <Paper className="p-4 sm:w-[264px]">
-            <h4 className="mb-4">
-              {t('old-age-security-program.oas-pension.card.header')}
-            </h4>
+            <h4 className="mb-4">{t('old-age-security-program.oas-pension.card.header')}</h4>
             <p className="mb-4.5 text-xs" id="oas-pension-link-label">
               {t('old-age-security-program.oas-pension.card.content')}
             </p>
@@ -174,7 +172,7 @@ const RetirementIncomeSources: FC = () => {
       </div>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="old-age-security-program.oas-pension.paragraph-5.content"
           components={{
             a1: <MuiLink href={t('old-age-security-program.oas-pension.paragraph-5.link-1')} />,
@@ -190,7 +188,7 @@ const RetirementIncomeSources: FC = () => {
         <li>{t('old-age-security-program.guaranteed-income-supplement.list.receive-pension')}</li>
         <li>
           <Trans
-            ns="learn/retirement-income-sources"
+            ns="learn/main-sources-of-retirement-income"
             i18nKey="old-age-security-program.guaranteed-income-supplement.list.income-below-maximum.content"
             components={{
               a: (
@@ -205,7 +203,7 @@ const RetirementIncomeSources: FC = () => {
       <p>{t('old-age-security-program.guaranteed-income-supplement.paragraph-2')}</p>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="old-age-security-program.guaranteed-income-supplement.paragraph-3.content"
           components={{
             a: <MuiLink href={t('old-age-security-program.guaranteed-income-supplement.paragraph-3.link')} />,
@@ -214,7 +212,7 @@ const RetirementIncomeSources: FC = () => {
       </p>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="old-age-security-program.guaranteed-income-supplement.paragraph-4.content"
           components={{
             a: <MuiLink href={t('old-age-security-program.guaranteed-income-supplement.paragraph-4.link')} />,
@@ -235,7 +233,7 @@ const RetirementIncomeSources: FC = () => {
       <p>{t('canada-pension-plan-program.cpp-retirement-pension.paragraph-4')}</p>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="canada-pension-plan-program.cpp-retirement-pension.paragraph-5.content"
           components={{
             a: <MuiLink href={t('canada-pension-plan-program.cpp-retirement-pension.paragraph-5.link')} />,
@@ -244,7 +242,7 @@ const RetirementIncomeSources: FC = () => {
       </p>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="canada-pension-plan-program.cpp-retirement-pension.paragraph-6"
           components={{
             Link: <MuiLink component={Link} href="/learn/cpp-retirement-pension" />,
@@ -256,7 +254,7 @@ const RetirementIncomeSources: FC = () => {
       <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.paragraph-1')}</p>
       <p>
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="canada-pension-plan-program.cpp-post-retirement-benefit.paragraph-2"
           components={{
             Link: <MuiLink component={Link} href="/learn/cpp-pension" />,
@@ -266,7 +264,7 @@ const RetirementIncomeSources: FC = () => {
 
       <AlertCard type="important">
         <Trans
-          ns="learn/retirement-income-sources"
+          ns="learn/main-sources-of-retirement-income"
           i18nKey="canada-pension-plan-program.cpp-post-retirement-benefit.important-notice"
         />
       </AlertCard>
@@ -276,9 +274,7 @@ const RetirementIncomeSources: FC = () => {
       </h2>
       <p>{t('ongoing-earnings-from-your-job.overview')}</p>
       <Paper className="mb-4 p-4">
-        <h3 className="mb-4 font-display font-medium">
-          {t('ongoing-earnings-from-your-job.card.header')}
-        </h3>
+        <h3 className="mb-4 font-display font-medium">{t('ongoing-earnings-from-your-job.card.header')}</h3>
         <p className="mb-4.5 text-sm" id="ongoing-earnings-label">
           {t('ongoing-earnings-from-your-job.card.content')}
         </p>
@@ -316,7 +312,10 @@ const RetirementIncomeSources: FC = () => {
           className="w-full max-w-md"
         />
         <AlertCard type="important">
-          <Trans ns="learn/retirement-income-sources" i18nKey="personal-retirement-savings.rrsp.important-notice" />
+          <Trans
+            ns="learn/main-sources-of-retirement-income"
+            i18nKey="personal-retirement-savings.rrsp.important-notice"
+          />
         </AlertCard>
       </div>
 
@@ -331,7 +330,10 @@ const RetirementIncomeSources: FC = () => {
           className="w-full max-w-md"
         />
         <AlertCard type="important">
-          <Trans ns="learn/retirement-income-sources" i18nKey="personal-retirement-savings.tfsa.important-notice" />
+          <Trans
+            ns="learn/main-sources-of-retirement-income"
+            i18nKey="personal-retirement-savings.tfsa.important-notice"
+          />
         </AlertCard>
       </div>
       <h2 id="learn-more" className="h2">
@@ -363,8 +365,8 @@ const RetirementIncomeSources: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/retirement-income-sources'])),
+    ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/main-sources-of-retirement-income'])),
   },
 })
 
-export default RetirementIncomeSources
+export default MainSourcesOfRetirementIncome
