@@ -61,11 +61,11 @@ export const QuestionEarn = ({ values, setFieldValue }: QuestionProps) => {
           {t('questions.question-earn.option-yes-income.text')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-earn.option-yes-income.value')}
+          value={t('questions.question-earn.option-unsure-income.value')}
           aria-label={t('questions.question-earn.option-unsure-income.text')}
-          data-cy={t('questions.question-earn.option-yes-income.id')}
+          data-cy={t('questions.question-earn.option-unsure-income.id')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === t('questions.question-earn.option-yes-income.value')}
+          selected={values['hasExtraIncome'] === t('questions.question-earn.option-unsure-income.value')}
         >
           {t('questions.question-earn.option-unsure-income.text')}
         </ToggleButton>

@@ -61,11 +61,11 @@ export const QuestionStatus = ({ values, setFieldValue }: QuestionProps) => {
           {t('questions.question-status.option-status-first-nation.text')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-status.option-status-first-nation.value')}
+          value={t('questions.question-status.option-status-sponsored.value')}
           aria-label={t('questions.question-status.option-status-sponsored.text')}
-          data-cy={t('questions.question-status.option-status-first-nation.id')}
+          data-cy={t('questions.question-status.option-status-sponsored.id')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === t('questions.question-status.option-status-first-nation.value')}
+          selected={values['legalStatus'] === t('questions.question-status.option-status-sponsored.value')}
         >
           {t('questions.question-status.option-status-sponsored.text')}
         </ToggleButton>
