@@ -9,8 +9,8 @@ import { NextSeo } from 'next-seo'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 
-const RuleOfThumbPublicPensions: FC = () => {
-  const { t } = useTranslation('learn/rule-of-thumb-public-pensions')
+const RulesOfThumbForPublicPensions: FC = () => {
+  const { t } = useTranslation('learn/rules-of-thumb-for-public-pensions')
 
   return (
     <LearnPageLayout
@@ -38,7 +38,7 @@ const RuleOfThumbPublicPensions: FC = () => {
       </ul>
       <p>{t('key-takeaways.content-one')}</p>
       <AlertCard type="important">
-        <Trans ns="learn/rule-of-thumb-public-pensions" i18nKey="key-takeaways.smart-tip" />
+        <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="key-takeaways.smart-tip" />
       </AlertCard>
       <p>{t('key-takeaways.content-two')}</p>
       <p>{t('key-takeaways.content-three')}</p>
@@ -89,7 +89,7 @@ const RuleOfThumbPublicPensions: FC = () => {
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li>
           <Trans
-            ns="learn/rule-of-thumb-public-pensions"
+            ns="learn/rules-of-thumb-for-public-pensions"
             i18nKey="key-takeaways.list-five.item-1.content"
             components={{
               a: <MuiLink href={t('key-takeaways.list-five.item-1.link')} />,
@@ -107,7 +107,7 @@ const RuleOfThumbPublicPensions: FC = () => {
         <li>{t('key-takeaways.list-six.item-1')}</li>
         <li>
           <Trans
-            ns="learn/rule-of-thumb-public-pensions"
+            ns="learn/rules-of-thumb-for-public-pensions"
             i18nKey="key-takeaways.list-six.item-2.content"
             components={{
               a: <MuiLink href={t('key-takeaways.list-six.item-1.link')} />,
@@ -123,7 +123,7 @@ const RuleOfThumbPublicPensions: FC = () => {
       <ul className="mb-5 list-disc space-y-2 pl-7">
         <li>
           <Trans
-            ns="learn/rule-of-thumb-public-pensions"
+            ns="learn/rules-of-thumb-for-public-pensions"
             i18nKey="key-takeaways.list-seven.item-1.content"
             components={{
               a: <MuiLink href={t('key-takeaways.list-seven.item-1.link')} />,
@@ -135,7 +135,7 @@ const RuleOfThumbPublicPensions: FC = () => {
       </ul>
 
       <AlertCard type="disclaimer">
-        <Trans ns="learn/rule-of-thumb-public-pensions" i18nKey="key-takeaways.disclaimer" />
+        <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="key-takeaways.disclaimer" />
       </AlertCard>
     </LearnPageLayout>
   )
@@ -144,9 +144,9 @@ const RuleOfThumbPublicPensions: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/rule-of-thumb-public-pensions'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/rules-of-thumb-for-public-pensions'])),
     },
   }
 }
 
-export default RuleOfThumbPublicPensions
+export default RulesOfThumbForPublicPensions
