@@ -12,8 +12,8 @@ import { TableData } from '../../components/AccessibilityTable'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 
-const WhenToTakeYourPensions: FC = () => {
-  const { t } = useTranslation('learn/when-to-take-your-pensions')
+const DecidingWhenToCollectPublicPensions: FC = () => {
+  const { t } = useTranslation('learn/deciding-when-to-collect-public-pensions')
 
   const illustrationOASGraphData: TableData = t('old-age-security.illustration.accessibility', { returnObjects: true })
   const illustrationCPPGraphData: TableData = t('cpp-pension.illustration.accessibility', { returnObjects: true })
@@ -98,7 +98,7 @@ const WhenToTakeYourPensions: FC = () => {
       </Paper>
       <AlertCard type="important" className="mb-8">
         <Trans
-          ns="learn/when-to-take-your-pensions"
+          ns="learn/deciding-when-to-collect-public-pensions"
           i18nKey="old-age-security.smart-tip.content"
           components={{
             a1: <a className="underline" href={t('old-age-security.smart-tip.link-one')} />,
@@ -123,7 +123,7 @@ const WhenToTakeYourPensions: FC = () => {
       <p>{t('old-age-security.content-four')}</p>
       <p>
         <Trans
-          ns="learn/when-to-take-your-pensions"
+          ns="learn/deciding-when-to-collect-public-pensions"
           i18nKey="old-age-security.content-five.content"
           components={{
             a1: <a className="underline" href={t('old-age-security.content-five.link-one')} />,
@@ -133,7 +133,7 @@ const WhenToTakeYourPensions: FC = () => {
       <p>{t('old-age-security.content-six')}</p>
       <p>
         <Trans
-          ns="learn/when-to-take-your-pensions"
+          ns="learn/deciding-when-to-collect-public-pensions"
           i18nKey="old-age-security.content-seven.content"
           components={{
             a1: <a className="underline" href={t('old-age-security.content-seven.link-one')} />,
@@ -146,7 +146,7 @@ const WhenToTakeYourPensions: FC = () => {
       </h2>
       <p>{t('cpp-pension.content-one')}</p>
       <AlertCard type="important">
-        <Trans ns="learn/when-to-take-your-pensions" i18nKey="cpp-pension.smart-tip" />
+        <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
       </AlertCard>
       <div>
         <Image
@@ -165,7 +165,7 @@ const WhenToTakeYourPensions: FC = () => {
       <p>{t('cpp-pension.content-two')}</p>
       <p>
         <Trans
-          ns="learn/when-to-take-your-pensions"
+          ns="learn/deciding-when-to-collect-public-pensions"
           i18nKey="cpp-pension.content-three.content"
           components={{
             a1: <a className="underline" href={t('cpp-pension.content-three.link-one')} />,
@@ -224,7 +224,7 @@ const WhenToTakeYourPensions: FC = () => {
       </Paper>
       <p>{t('cpp-pension.content-five')}</p>
       <AlertCard type="disclaimer">
-        <Trans ns="learn/when-to-take-your-pensions" i18nKey="cpp-pension.disclaimer" />
+        <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.disclaimer" />
       </AlertCard>
 
       <h2 id="case-study" className="h2">
@@ -255,7 +255,7 @@ const WhenToTakeYourPensions: FC = () => {
       </div>
       <p>{t('case-study.content-four')}</p>
       <AlertCard type="important">
-        <Trans ns="learn/when-to-take-your-pensions" i18nKey="case-study.smart-tip" />
+        <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="case-study.smart-tip" />
       </AlertCard>
       <div>
         <Image
@@ -329,9 +329,12 @@ const WhenToTakeYourPensions: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/when-to-take-your-pensions'])),
+      ...(await serverSideTranslations(locale ?? 'default', [
+        'common',
+        'learn/deciding-when-to-collect-public-pensions',
+      ])),
     },
   }
 }
 
-export default WhenToTakeYourPensions
+export default DecidingWhenToCollectPublicPensions
