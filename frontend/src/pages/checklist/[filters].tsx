@@ -10,6 +10,7 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
 import * as yup from 'yup'
+import Image from 'next/image'
 
 import Layout from '../../components/Layout'
 import NestedAccordion from '../../components/NestedAccordion'
@@ -92,10 +93,26 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
           link: t('breadcrumbs.home.link'),
           text: t('breadcrumbs.home.text'),
         },
+        {
+        link: t("breadcrumbs.learn.link"), 
+        text: t("breadcrumbs.learn.text")
+        }
       ]}
       hideFooter="print"
       hideHeader="print"
     >
+
+        <section className="print:hidden rounded-3xl bg-gray-surface mb-10 px-8 py-8 flex flex-col md:flex-row-reverse items-center">
+          <div className="pb-4 md:pb-0 sm:3/12 md:w-1/12">
+                <Image src="/assets/checklist.png" width={120} height={75} sizes="100%" alt="" priority />
+            </div>
+            <div className="w-11/12">
+              <h2 className="font-display text-4xl text-primary-700 md:text-6xl font-bold">
+                {t('your-retirement-checklist')}
+              </h2>
+            </div>
+        </section>
+        
       <div className="grid gap-6 print:block lg:grid-cols-12">
         <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
           <div className="mb-4 text-right">

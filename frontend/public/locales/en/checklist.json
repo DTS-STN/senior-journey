@@ -5,6 +5,10 @@
     "home":{
       "text":"Retirement Hub",
       "link":"/"
+    },
+    "learn":{
+      "text":"Learn",
+      "link":"/learn"
     }
   },
   "filter-tasks": "Filter Tasks",
