@@ -71,9 +71,9 @@
       "description": "Public pensions, OAS, CPP, employer pensions, RRSPs and other sources of personal savings.= from the Financial Consumer Agency of Canada",
       "header": "Sources of retirement income"
     },
-    "transitioning-from-work-to-retirement": {
+    "going-from-work-to-retirement": {
       "description": "You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
-      "header": "Transitioning from work to retirement"
+      "header": "Going from work to retirement"
     }
   },
   "old-age-security-program": {
@@ -130,7 +130,7 @@
   "ongoing-earnings-from-your-job": {
     "card": {
       "content": "You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
-      "header": "Transitioning from work to retirement",
+      "header": "Going from work to retirement",
       "learn-more": "Learn More"
     },
     "header": "Ongoing earnings from your job",
