@@ -18,7 +18,7 @@ import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 
 import { useSetQuizData } from '../../lib/hooks/useSetQuizData'
-import { Filters } from '../../pages/quiz/tasks/[[...filters]]'
+import { ChecklistFilters } from '../../pages/checklist/[filters]'
 import { QuizLanding } from './QuizLanding'
 import { Question1 } from './questions/Question1'
 import { Question2 } from './questions/Question2'
@@ -75,7 +75,7 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, 
         <div className="mb-10 text-center">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
         </div>
-        <p>{sureText}</p>
+        <p id="quiz-modal-close-confirmation">{sureText}</p>
       </DialogContent>
       <DialogActions className="block">
         <div className="grid gap-2 md:grid-cols-2 md:gap-6">
@@ -110,9 +110,9 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
       setQuizData(values as QuizFormState)
 
       // Encodes a js object as a url-safe base64 string.
-      const filters: Filters = { answers: compact(Object.values<string>(values)) }
-      const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
-      router.push(`/quiz/tasks/${encodedFilters}`)
+      const checklistFilters: ChecklistFilters = { answers: compact(Object.values<string>(values)), tags: [] }
+      const encodedChecklistFilters = encodeURIComponent(window.btoa(JSON.stringify(checklistFilters)))
+      router.push(`/checklist/${encodedChecklistFilters}`)
     },
     validateOnNext: true,
     activeStepIndex: 0,
@@ -149,7 +149,7 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
     <Dialog
       onClose={handleOnClose}
       open={open}
-      aria-describedby="QuizModal-header"
+      aria-labelledby={`${showConfirmation ? 'quiz-modal-close-confirmation' : 'quiz-modal-header'}`}
       scroll="body"
       fullScreen={fullScreen}
       maxWidth="md"
@@ -166,7 +166,7 @@ export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
       ) : (
         <>
           <div className="flex min-h-[850px] flex-col">
-            <DialogTitle className="text-right">
+            <DialogTitle className="text-right" id="quiz-modal-header">
               <Button variant="text" onClick={handleOnClose} startIcon={<CloseIcon />} size="large">
                 {t('navigation.close')}
               </Button>

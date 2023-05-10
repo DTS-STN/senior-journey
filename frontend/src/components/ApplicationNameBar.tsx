@@ -6,7 +6,7 @@ import { compact, isEmpty } from 'lodash'
 import Link from 'next/link'
 
 import { useQuizData } from '../lib/hooks/useQuizData'
-import { Filters } from '../pages/quiz/tasks/[[...filters]]'
+import { ChecklistFilters } from '../pages/checklist/[filters]'
 import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
@@ -23,16 +23,15 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist
   const { data: quizData } = useQuizData()
 
   useEffect(() => {
-    const answers = quizData ? compact(Object.values<string>(quizData)) : []
-    if (isEmpty(answers)) {
+    if (isEmpty(quizData)) {
       setChecklistUrl('/learn')
       return
     }
 
     // Encodes a js object as a url-safe base64 string.
-    const filters: Filters = { answers }
-    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
-    setChecklistUrl(`/quiz/tasks/${encodedFilters}`)
+    const checklistFilters: ChecklistFilters = { answers: compact(Object.values<string>(quizData)), tags: [] }
+    const encodedChecklistFilters = encodeURIComponent(window.btoa(JSON.stringify(checklistFilters)))
+    setChecklistUrl(`/checklist/${encodedChecklistFilters}`)
   }, [quizData])
 
   return (
