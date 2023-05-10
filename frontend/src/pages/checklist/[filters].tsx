@@ -72,7 +72,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
     if (e.target.checked) newFilters.tags = [...newFilters.tags, e.target.value]
     else newFilters.tags = newFilters.tags.filter((tag) => tag !== e.target.value)
     const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(newFilters)))
-    router.push(`/checklist/${encodedFilters}`)
+    router.push(`/checklist/${encodedFilters}`, undefined, { scroll: false })
   }
 
   const handlePrint = () => {
