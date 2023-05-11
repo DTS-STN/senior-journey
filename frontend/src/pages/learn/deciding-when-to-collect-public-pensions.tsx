@@ -11,9 +11,12 @@ import AccessibilityGraphContainer from '../../components/AccessibilityGraphCont
 import { TableData } from '../../components/AccessibilityTable'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
+import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const DecidingWhenToCollectPublicPensions: FC = () => {
-  const { t } = useTranslation('learn/deciding-when-to-collect-public-pensions')
+  const { t, i18n } = useTranslation('learn/deciding-when-to-collect-public-pensions')
+  const en = i18n.getFixedT('en', 'learn/deciding-when-to-collect-public-pensions')
+  const fr = i18n.getFixedT('fr', 'learn/deciding-when-to-collect-public-pensions')
 
   const illustrationOASGraphData: TableData = t('old-age-security.illustration.accessibility', { returnObjects: true })
   const illustrationCPPGraphData: TableData = t('cpp-pension.illustration.accessibility', { returnObjects: true })
@@ -26,76 +29,77 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
   const illustrationCaseStudyData5: TableData = t('case-study.illustration-five.accessibility', { returnObjects: true })
 
   return (
-    <LearnPageLayout
-      header={t('header')}
-      breadcrumbItems={[
-        {
-          link: t('breadcrumbs.home.link'),
-          text: t('breadcrumbs.home.text'),
-        },
-        {
-          link: t('breadcrumbs.learn.link'),
-          text: t('breadcrumbs.learn.text'),
-        },
-      ]}
-    >
-      <NextSeo title={t('header')} />
+    <>
+      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <LearnPageLayout
+        header={t('header')}
+        breadcrumbItems={[
+          {
+            link: t('breadcrumbs.home.link'),
+            text: t('breadcrumbs.home.text'),
+          },
+          {
+            link: t('breadcrumbs.learn.link'),
+            text: t('breadcrumbs.learn.text'),
+          },
+        ]}
+      >
+        <h2 id="key-takeaways" className="h2 !mt-0">
+          {t('key-takeaways.heading')}
+        </h2>
+        <ul className="mb-5 list-disc space-y-2 pl-7">
+          <li>{t('key-takeaways.list.public-pensions')}</li>
+          <li>{t('key-takeaways.list.you-can-claim')}</li>
+          <li>{t('key-takeaways.list.to-make-a-wise')}</li>
+          <li>{t('key-takeaways.list.consider-using')}</li>
+        </ul>
+        <p>{t('key-takeaways.content-one')}</p>
 
-      <h2 id="key-takeaways" className="h2 !mt-0">
-        {t('key-takeaways.heading')}
-      </h2>
-      <ul className="mb-5 list-disc space-y-2 pl-7">
-        <li>{t('key-takeaways.list.public-pensions')}</li>
-        <li>{t('key-takeaways.list.you-can-claim')}</li>
-        <li>{t('key-takeaways.list.to-make-a-wise')}</li>
-        <li>{t('key-takeaways.list.consider-using')}</li>
-      </ul>
-      <p>{t('key-takeaways.content-one')}</p>
+        <h2 id="old-age-security" className="h2">
+          {t('old-age-security.heading')}
+        </h2>
+        <p>{t('old-age-security.content-one')}</p>
 
-      <h2 id="old-age-security" className="h2">
-        {t('old-age-security.heading')}
-      </h2>
-      <p>{t('old-age-security.content-one')}</p>
+        <h3 className="h3">{t('old-age-security.table-one.title')}</h3>
 
-      <h3 className="h3">{t('old-age-security.table-one.title')}</h3>
-
-      <Paper variant="outlined" className="mb-6">
-        <table className="min-w-full border-collapse divide-y text-left">
-          <thead className="bg-gray-surface">
-            <tr className="divide-x">
-              <th scope="col" className="px-3 py-2.5">
-                {t('old-age-security.table-one.header-one')}
-              </th>
-              <th scope="col" className="px-3 py-2.5">
-                {t('old-age-security.table-one.header-two')}
-              </th>
-              <th scope="col" className="px-3 py-2.5">
-                {t('old-age-security.table-one.header-two')}
-              </th>
-            </tr>
-          </thead>
-          <tbody className="divide-y">
-            {[
-              {
-                col1: t('old-age-security.table-one.row-one.column-one-value'),
-                col2: t('old-age-security.table-one.row-one.column-two-value'),
-                col3: t('old-age-security.table-one.row-one.column-three-value'),
-              },
-              {
-                col1: t('old-age-security.table-one.row-two.column-one-value'),
-                col2: t('old-age-security.table-one.row-two.column-two-value'),
-                col3: t('old-age-security.table-one.row-two.column-three-value'),
-              },
-            ].map((row) => (
-              <tr key={row.col1} className="divide-x">
-                <td className="px-3 py-2.5">{row.col1}</td>
-                <td className="px-3 py-2.5">{row.col2}</td>
-                <td className="px-3 py-2.5">{row.col3}</td>
+        <Paper variant="outlined" className="mb-6">
+          <table className="min-w-full border-collapse divide-y text-left">
+            <thead className="bg-gray-surface">
+              <tr className="divide-x">
+                <th scope="col" className="px-3 py-2.5">
+                  {t('old-age-security.table-one.header-one')}
+                </th>
+                <th scope="col" className="px-3 py-2.5">
+                  {t('old-age-security.table-one.header-two')}
+                </th>
+                <th scope="col" className="px-3 py-2.5">
+                  {t('old-age-security.table-one.header-two')}
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </Paper>
+            </thead>
+            <tbody className="divide-y">
+              {[
+                {
+                  col1: t('old-age-security.table-one.row-one.column-one-value'),
+                  col2: t('old-age-security.table-one.row-one.column-two-value'),
+                  col3: t('old-age-security.table-one.row-one.column-three-value'),
+                },
+                {
+                  col1: t('old-age-security.table-one.row-two.column-one-value'),
+                  col2: t('old-age-security.table-one.row-two.column-two-value'),
+                  col3: t('old-age-security.table-one.row-two.column-three-value'),
+                },
+              ].map((row) => (
+                <tr key={row.col1} className="divide-x">
+                  <td className="px-3 py-2.5">{row.col1}</td>
+                  <td className="px-3 py-2.5">{row.col2}</td>
+                  <td className="px-3 py-2.5">{row.col3}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Paper>
+        
       <AlertCard type="important" className="mb-8">
         <Trans
           ns="learn/deciding-when-to-collect-public-pensions"
@@ -152,10 +156,10 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
       </AlertCard>
       <div>
         <Image
-          alt={t('cpp-pension.illustration.alt')}
-          src={t('cpp-pension.illustration.img-url')}
-          width={551}
-          height={361}
+          alt={t('old-age-security.illustration.alt')}
+          src={t('old-age-security.illustration.img-url')}
+          width={842}
+          height={519}
           className="w-full"
         />
         <AccessibilityGraphContainer
@@ -165,72 +169,116 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           valuesHeading={t('values-heading')}
           buttonLabel={t('show-accessible-table')}
         />
-      </div>
-      <p>{t('cpp-pension.content-two')}</p>
-      <p>
-        <Trans
-          ns="learn/deciding-when-to-collect-public-pensions"
-          i18nKey="cpp-pension.content-three.content"
-          components={{
-            a1: <a className="underline" href={t('cpp-pension.content-three.link-one')} />,
-          }}
-        />
-      </p>
-      <p>{t('cpp-pension.content-four')}</p>
+        <p>{t('old-age-security.content-three')}</p>
+        <p>{t('old-age-security.content-four')}</p>
+        <p>
+          <Trans
+            ns="learn/deciding-when-to-collect-public-pensions"
+            i18nKey="old-age-security.content-five.content"
+            components={{
+              a1: <a className="underline" href={t('old-age-security.content-five.link-one')} />,
+            }}
+          />
+        </p>
+        <p>{t('old-age-security.content-six')}</p>
+        <p>
+          <Trans
+            ns="learn/deciding-when-to-collect-public-pensions"
+            i18nKey="old-age-security.content-seven.content"
+            components={{
+              a1: <a className="underline" href={t('old-age-security.content-seven.link-one')} />,
+            }}
+          />
+        </p>
 
-      <Paper variant="outlined" className="mb-6">
-        <table className="min-w-full border-collapse divide-y text-left">
-          <thead className="bg-gray-surface">
-            <tr className="divide-x">
-              <th scope="col" className="px-3 py-2.5">
-                {t('cpp-pension.cpp-income-table.header-column-one-value')}
-              </th>
-              <th scope="col" className="px-3 py-2.5">
-                {t('cpp-pension.cpp-income-table.header-column-two-value')}
-              </th>
-            </tr>
-          </thead>
-          <tbody className="divide-y">
-            {[
-              {
-                id: t('cpp-pension.cpp-income-table.row-one.id'),
-                col1: t('cpp-pension.cpp-income-table.row-one.column-one-value'),
-                col2: t('cpp-pension.cpp-income-table.row-one.column-two-value'),
-              },
-              {
-                id: t('cpp-pension.cpp-income-table.row-two.id'),
-                col1: t('cpp-pension.cpp-income-table.row-two.column-one-value'),
-                col2: t('cpp-pension.cpp-income-table.row-two.column-two-value'),
-              },
-              {
-                id: t('cpp-pension.cpp-income-table.row-three.id'),
-                col1: t('cpp-pension.cpp-income-table.row-three.column-one-value'),
-                col2: t('cpp-pension.cpp-income-table.row-three.column-two-value'),
-              },
-              {
-                id: t('cpp-pension.cpp-income-table.row-four.id'),
-                col1: t('cpp-pension.cpp-income-table.row-four.column-one-value'),
-                col2: t('cpp-pension.cpp-income-table.row-four.column-two-value'),
-              },
-              {
-                id: t('cpp-pension.cpp-income-table.row-five.id'),
-                col1: t('cpp-pension.cpp-income-table.row-five.column-one-value'),
-                col2: t('cpp-pension.cpp-income-table.row-five.column-two-value'),
-              },
-            ].map((row) => (
-              <tr key={row.id} className="divide-x">
-                <td className="px-3 py-2.5">{row.col1}</td>
-                <td className="px-3 py-2.5">{row.col2}</td>
+        <h2 id="cpp-pension" className="h2">
+          {t('cpp-pension.heading')}
+        </h2>
+        <p>{t('cpp-pension.content-one')}</p>
+        <AlertCard type="important">
+          <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
+        </AlertCard>
+        <div>
+          <Image
+            alt={t('cpp-pension.illustration.alt')}
+            src={t('cpp-pension.illustration.img-url')}
+            width={551}
+            height={361}
+            className="w-full"
+          />
+          <AccessibilityGraphContainer
+            tableData={illustrationCPPGraphData}
+            description={t('cpp-pension.illustration.description')}
+            buttonLabel={t('show-accessible-table')}
+            valuesHeading={t('values-heading')}
+            descriptionHeading={t('description-heading')}
+          />
+        </div>
+        <p>{t('cpp-pension.content-two')}</p>
+        <p>
+          <Trans
+            ns="learn/deciding-when-to-collect-public-pensions"
+            i18nKey="cpp-pension.content-three.content"
+            components={{
+              a1: <a className="underline" href={t('cpp-pension.content-three.link-one')} />,
+            }}
+          />
+        </p>
+        <p>{t('cpp-pension.content-four')}</p>
+
+        <Paper variant="outlined" className="mb-6">
+          <table className="min-w-full border-collapse divide-y text-left">
+            <thead className="bg-gray-surface">
+              <tr className="divide-x">
+                <th scope="col" className="px-3 py-2.5">
+                  {t('cpp-pension.cpp-income-table.header-column-one-value')}
+                </th>
+                <th scope="col" className="px-3 py-2.5">
+                  {t('cpp-pension.cpp-income-table.header-column-two-value')}
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </Paper>
-      <p>{t('cpp-pension.content-five')}</p>
-      <AlertCard type="disclaimer">
-        <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.disclaimer" />
-      </AlertCard>
-
+            </thead>
+            <tbody className="divide-y">
+              {[
+                {
+                  id: t('cpp-pension.cpp-income-table.row-one.id'),
+                  col1: t('cpp-pension.cpp-income-table.row-one.column-one-value'),
+                  col2: t('cpp-pension.cpp-income-table.row-one.column-two-value'),
+                },
+                {
+                  id: t('cpp-pension.cpp-income-table.row-two.id'),
+                  col1: t('cpp-pension.cpp-income-table.row-two.column-one-value'),
+                  col2: t('cpp-pension.cpp-income-table.row-two.column-two-value'),
+                },
+                {
+                  id: t('cpp-pension.cpp-income-table.row-three.id'),
+                  col1: t('cpp-pension.cpp-income-table.row-three.column-one-value'),
+                  col2: t('cpp-pension.cpp-income-table.row-three.column-two-value'),
+                },
+                {
+                  id: t('cpp-pension.cpp-income-table.row-four.id'),
+                  col1: t('cpp-pension.cpp-income-table.row-four.column-one-value'),
+                  col2: t('cpp-pension.cpp-income-table.row-four.column-two-value'),
+                },
+                {
+                  id: t('cpp-pension.cpp-income-table.row-five.id'),
+                  col1: t('cpp-pension.cpp-income-table.row-five.column-one-value'),
+                  col2: t('cpp-pension.cpp-income-table.row-five.column-two-value'),
+                },
+              ].map((row) => (
+                <tr key={row.id} className="divide-x">
+                  <td className="px-3 py-2.5">{row.col1}</td>
+                  <td className="px-3 py-2.5">{row.col2}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Paper>
+        <p>{t('cpp-pension.content-five')}</p>
+        <AlertCard type="disclaimer">
+          <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.disclaimer" />
+        </AlertCard>
+      </div>
       <h2 id="case-study" className="h2">
         {t('case-study.heading')}
       </h2>
@@ -337,16 +385,19 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
       <p>{t('case-study.content-nine')}</p>
       <p>{t('case-study.content-ten')}</p>
     </LearnPageLayout>
+  </>
   )
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', [
-        'common',
-        'learn/deciding-when-to-collect-public-pensions',
-      ])),
+      ...(await serverSideTranslations(
+        locale ?? 'default',
+        ['common', 'learn/deciding-when-to-collect-public-pensions'],
+        null,
+        ['en', 'fr']
+      )),
     },
   }
 }

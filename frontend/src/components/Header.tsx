@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { resolveHref } from '../lib/utils/url-utils'
+import { resolveHref } from '../utils/url-utils'
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
 import { BreadcrumbItem } from './Breadcrumb'
@@ -15,7 +15,7 @@ import { BreadcrumbItem } from './Breadcrumb'
 export interface HeaderProps {
   gocLink: string
   skipToMainText: string
-  breadcrumbItems?: BreadcrumbItem[];
+  breadcrumbItems?: BreadcrumbItem[]
   className?: string
   hideChecklist?: boolean
 }
@@ -48,12 +48,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hid
       </nav>
 
       <header className={className}>
-        {showBanner && (
-          <Banner
-            alert={t('banner.alert')}
-            description={t('banner.description')}
-          />
-        )}
+        {showBanner && <Banner alert={t('banner.alert')} description={t('banner.description')} />}
         <div className="container mx-auto flex flex-col justify-between px-4 py-2.5 md:flex md:flex-row">
           <div className="flex flex-row content-center items-center justify-between md:mt-7">
             <a href={gocLink}>

@@ -25,6 +25,7 @@ import Link from 'next/link'
 import Container from '../components/Container'
 import Layout from '../components/Layout'
 import { QuizDialog } from '../components/quiz/QuizDialog'
+import { getDCTermsTitle } from '../utils/seo-utils'
 
 export interface SupportingSeniorsCardProps {
   src: string
@@ -59,7 +60,10 @@ interface TabData {
 }
 
 const Home: FC = () => {
-  const { t } = useTranslation('home')
+  const { t, i18n } = useTranslation('home')
+  const en = i18n.getFixedT('en', 'home')
+  const fr = i18n.getFixedT('fr', 'home')
+
   const theme = useTheme()
   const mobile = useMediaQuery(theme.breakpoints.down('md'))
 
@@ -80,11 +84,8 @@ const Home: FC = () => {
   }
 
   return (
-    <Layout
-    breadcrumbItems={[]}
-    contained={false}
-    >
-      <NextSeo title={t('header')} />
+    <Layout breadcrumbItems={[]} contained={false}>
+      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
       <h1 className="sr-only">{t('header')}</h1>
 
       <Container className="mb-10">
@@ -162,20 +163,21 @@ const Home: FC = () => {
                           <Divider className="my-8" />
                           <div className="text-right">
                             {
-                            /** 
-                             * FIXME: This implementation is gross, and messy. It doesn't account for non-quiz buttons without urls.
-                             * This, and probably the whole loop needs to be revisited and possibly unwound since the tabs are 
-                             * probably going to differ far too much.
-                            **/
-                            button.url && (
-                            <Button component={Link} href={button.url} size="large">
-                              {button.text}
-                            </Button>
-                            )}
-                            {(button.url == null || button.url == undefined) && (
-                                <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
+                              /**
+                               * FIXME: This implementation is gross, and messy. It doesn't account for non-quiz buttons without urls.
+                               * This, and probably the whole loop needs to be revisited and possibly unwound since the tabs are
+                               * probably going to differ far too much.
+                               **/
+                              button.url && (
+                                <Button component={Link} href={button.url} size="large">
                                   {button.text}
                                 </Button>
+                              )
+                            }
+                            {(button.url == null || button.url == undefined) && (
+                              <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
+                                {button.text}
+                              </Button>
                             )}
                           </div>
                         </>
@@ -275,7 +277,7 @@ const Home: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home', 'quiz'])),
+    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home', 'quiz'], null, ['en', 'fr'])),
   },
 })
 

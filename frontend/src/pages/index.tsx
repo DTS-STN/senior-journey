@@ -4,10 +4,17 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { getDCTermsTitle } from '../utils/seo-utils'
+
 const Index = () => {
   return (
     <>
-      <NextSeo noindex title="Retirement Hub | Retirement Hub (FR)" titleTemplate="%s - Canada.ca" />
+      <NextSeo
+        noindex
+        title="Retirement Hub | Retirement Hub (FR)"
+        titleTemplate="%s - Canada.ca"
+        additionalMetaTags={[getDCTermsTitle('Retirement Hub', 'Retirement Hub (FR)')]}
+      />
       <main role="main" className="flex h-screen bg-splash-page bg-cover bg-center">
         <Paper square elevation={0} className="m-auto w-[300px] md:w-[400px] lg:w-[500px]">
           <div className="p-8">
