@@ -13,6 +13,7 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend
+          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230511-0153-1cb5576c
           env:
             - name: OTEL_API_KEY
               valueFrom:
