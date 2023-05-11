@@ -17,9 +17,10 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
     setFieldValue('hasChildren', values['hasChildren'] === answerId ? '' : answerId ?? '')
   }
 
-  function handleCheckbox(e: React.ChangeEvent<any>, field: string) {
-    const answerId = e.target.value
-    setFieldValue(field, values[field] ? '' : answerId ?? '')
+  function handleCheckbox(e: React.ChangeEvent<HTMLInputElement>) {
+    const field = e.target.name
+    const value = e.target.value
+    setFieldValue(field, values[field] ? '' : value)
   }
 
   return (
@@ -28,11 +29,7 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
       <FormGroup className="mb-2" data-cy={t('questions.question-apply.question-marital-status.id')}>
         <FormControlLabel
           control={
-            <Checkbox
-              value="single"
-              checked={values['single'] === 'single'}
-              onChange={(e) => handleCheckbox(e, 'single')}
-            />
+            <Checkbox name="single" value="single" checked={values['single'] === 'single'} onChange={handleCheckbox} />
           }
           data-cy={t('questions.question-apply.question-marital-status.option-single.id')}
           label={t('questions.question-apply.question-marital-status.option-single.text')}
@@ -40,9 +37,13 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
         <FormControlLabel
           control={
             <Checkbox
+              name="marriedOrCommonLaw"
               value={t('questions.question-apply.question-marital-status.option-married-or-cl.value')}
-              checked={values['marriedOrCommonLaw'] === t('questions.question-apply.question-marital-status.option-married-or-cl.value')}
-              onChange={(e) => handleCheckbox(e, 'marriedOrCommonLaw')}
+              checked={
+                values['marriedOrCommonLaw'] ===
+                t('questions.question-apply.question-marital-status.option-married-or-cl.value')
+              }
+              onChange={handleCheckbox}
             />
           }
           data-cy={t('questions.question-apply.question-marital-status.option-married-or-cl.id')}
@@ -51,9 +52,13 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
         <FormControlLabel
           control={
             <Checkbox
+              name="divorcedOrSeparated"
               value={t('questions.question-apply.question-marital-status.option-divorced-or-separated.value')}
-              checked={values['divorcedOrSeparated'] === t('questions.question-apply.question-marital-status.option-divorced-or-separated.value')}
-              onChange={(e) => handleCheckbox(e, 'divorcedOrSeparated')}
+              checked={
+                values['divorcedOrSeparated'] ===
+                t('questions.question-apply.question-marital-status.option-divorced-or-separated.value')
+              }
+              onChange={handleCheckbox}
             />
           }
           data-cy={t('questions.question-apply.question-marital-status.option-divorced-or-separated.id')}
@@ -62,9 +67,10 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
         <FormControlLabel
           control={
             <Checkbox
+              name="widowed"
               value={t('questions.question-apply.question-marital-status.option-widowed.value')}
               checked={values['widowed'] === t('questions.question-apply.question-marital-status.option-widowed.value')}
-              onChange={(e) => handleCheckbox(e, 'widowed')}
+              onChange={handleCheckbox}
             />
           }
           data-cy={t('questions.question-apply.question-marital-status.option-widowed.id')}

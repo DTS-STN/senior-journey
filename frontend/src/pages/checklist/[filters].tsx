@@ -8,9 +8,10 @@ import { isEmpty, sortBy } from 'lodash'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { NextSeo } from 'next-seo'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import * as yup from 'yup'
-import Image from 'next/image'
 
 import Layout from '../../components/Layout'
 import NestedAccordion from '../../components/NestedAccordion'
@@ -19,6 +20,7 @@ import { useRemoveQuizData } from '../../lib/hooks/useRemoveQuizData'
 import * as tasksGroupDtoMapper from '../../lib/mappers/tasks-group-dto-mapper'
 import { TaskTagDto, TasksGroupDto } from '../../lib/types'
 import { getLogger } from '../../logging/log-util'
+import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const log = getLogger('pages/checklist/[filters].tsx')
 
@@ -37,7 +39,10 @@ interface ChecklistProps {
 }
 
 const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
-  const { t } = useTranslation('checklist')
+  const { t, i18n } = useTranslation('checklist')
+  const en = i18n.getFixedT('en', 'checklist')
+  const fr = i18n.getFixedT('fr', 'checklist')
+
   let router = useRouter()
   const { mutate: removeQuizData } = useRemoveQuizData()
 
@@ -86,112 +91,114 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
   }
 
   return (
-    <Layout
-      hideChecklist={true}
-      breadcrumbItems={[
-        {
-          link: t('breadcrumbs.home.link'),
-          text: t('breadcrumbs.home.text'),
-        },
-        {
-        link: t("breadcrumbs.learn.link"), 
-        text: t("breadcrumbs.learn.text")
-        }
-      ]}
-      hideFooter="print"
-      hideHeader="print"
-    >
+    <>
+      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <Layout
+        hideChecklist={true}
+        breadcrumbItems={[
+          {
+            link: t('breadcrumbs.home.link'),
+            text: t('breadcrumbs.home.text'),
+          },
+          {
+            link: t('breadcrumbs.learn.link'),
+            text: t('breadcrumbs.learn.text'),
+          },
+        ]}
+        hideFooter="print"
+        hideHeader="print"
+      >
+        <section className="mb-10 flex flex-col items-center rounded-3xl bg-gray-surface px-8 py-8 print:hidden md:flex-row-reverse">
+          <div className="sm:3/12 pb-4 md:w-1/12 md:pb-0">
+            <Image src="/assets/checklist.png" width={120} height={75} sizes="100%" alt="" priority />
+          </div>
+          <div className="w-11/12">
+            <h2 className="font-display text-4xl font-bold text-primary-700 md:text-6xl">
+              {t('your-retirement-checklist')}
+            </h2>
+          </div>
+        </section>
 
-        <section className="print:hidden rounded-3xl bg-gray-surface mb-10 px-8 py-8 flex flex-col md:flex-row-reverse items-center">
-          <div className="pb-4 md:pb-0 sm:3/12 md:w-1/12">
-                <Image src="/assets/checklist.png" width={120} height={75} sizes="100%" alt="" priority />
-            </div>
-            <div className="w-11/12">
-              <h2 className="font-display text-4xl text-primary-700 md:text-6xl font-bold">
-                {t('your-retirement-checklist')}
-              </h2>
-            </div>
-        </section>
-        
-      <div className="grid gap-6 print:block lg:grid-cols-12">
-        <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
-          <div className="mb-4 text-right">
-            <Button
-              variant="outlined"
-              startIcon={<RefreshIcon />}
-              size="large"
-              className="w-full md:w-auto lg:w-full"
-              onClick={handleOnRestartQuizClick}
-            >
-              {t('restart-quiz')}
-            </Button>
-          </div>
-          <div className="mt-2">
-            <div className="mb-2 flex items-center justify-between border-b">
-              <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
-              <div className="text-2xl md:hidden">{t('your-retirement-checklist')}</div>
-              <IconButton
-                color="primary"
-                onClick={() => setExpanded(!expanded)}
-                aria-expanded={expanded}
-                aria-label={t('show-filters')}
+        <div className="grid gap-6 print:block lg:grid-cols-12">
+          <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
+            <div className="mb-4 text-right">
+              <Button
+                variant="outlined"
+                startIcon={<RefreshIcon />}
+                size="large"
+                className="w-full md:w-auto lg:w-full"
+                onClick={handleOnRestartQuizClick}
               >
-                {expanded ? <ExpandLess className="hidden md:block" /> : <ExpandMore className="hidden md:block" />}
-                <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f] md:hidden" />
-              </IconButton>
+                {t('restart-quiz')}
+              </Button>
             </div>
-            <Collapse in={expanded}>
-              <FormGroup className="space-y-2" onChange={handleChange}>
-                {tagsFilter.map(({ code, title }) => (
-                  <FormControlLabel
-                    key={code}
-                    className={`m-0 rounded ${filters?.tags.includes(code) ? 'bg-[#CDF9FF]' : 'bg-gray-200'}`}
-                    control={
-                      <Checkbox
-                        value={code}
-                        icon={<CheckBoxOutlineBlankOutlined />}
-                        checkedIcon={<CheckBoxOutlined />}
-                        checked={filters.tags.includes(code) ?? false}
-                      />
-                    }
-                    label={title}
-                  />
-                ))}
-              </FormGroup>
-            </Collapse>
-          </div>
-          <Button
-            onClick={handlePrint}
-            variant="outlined"
-            startIcon={<Print />}
-            size="large"
-            className="mt-5 hidden border-gray-default font-bold md:inline md:w-full lg:w-2/5"
-          >
-            {t('print')}
-          </Button>
-        </section>
-        <section id="content" className="print-href lg:col-span-8 xl:col-span-9">
-          <NestedAccordion
-            linksHeader={t('links-header')}
-            sectionTitle={beforeRetiring.title}
-            subSectionTitle={beforeRetiring.subTitle}
-            tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, filters))}
-          />
-          <NestedAccordion
-            linksHeader={t('links-header')}
-            sectionTitle={applyingBenefits.title}
-            subSectionTitle={applyingBenefits.subTitle}
-            tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
-          />
-          <NestedAccordion
-            linksHeader={t('links-header')}
-            sectionTitle={receivingBenefits.title}
-            subSectionTitle={receivingBenefits.subTitle}
-            tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
-          />
-        </section>
-      </div>
-    </Layout>
+            <div className="mt-2">
+              <div className="mb-2 flex items-center justify-between border-b">
+                <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
+                <div className="text-2xl md:hidden">{t('your-retirement-checklist')}</div>
+                <IconButton
+                  color="primary"
+                  onClick={() => setExpanded(!expanded)}
+                  aria-expanded={expanded}
+                  aria-label={t('show-filters')}
+                >
+                  {expanded ? <ExpandLess className="hidden md:block" /> : <ExpandMore className="hidden md:block" />}
+                  <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f] md:hidden" />
+                </IconButton>
+              </div>
+              <Collapse in={expanded}>
+                <FormGroup className="space-y-2" onChange={handleChange}>
+                  {tagsFilter.map(({ code, title }) => (
+                    <FormControlLabel
+                      key={code}
+                      className={`m-0 rounded ${filters?.tags.includes(code) ? 'bg-[#CDF9FF]' : 'bg-gray-200'}`}
+                      control={
+                        <Checkbox
+                          value={code}
+                          icon={<CheckBoxOutlineBlankOutlined />}
+                          checkedIcon={<CheckBoxOutlined />}
+                          checked={filters.tags.includes(code) ?? false}
+                        />
+                      }
+                      label={title}
+                    />
+                  ))}
+                </FormGroup>
+              </Collapse>
+            </div>
+            <Button
+              onClick={handlePrint}
+              variant="outlined"
+              startIcon={<Print />}
+              size="large"
+              className="mt-5 hidden border-gray-default font-bold md:inline md:w-full lg:w-2/5"
+            >
+              {t('print')}
+            </Button>
+          </section>
+          <section id="content" className="print-href lg:col-span-8 xl:col-span-9">
+            <NestedAccordion
+              linksHeader={t('links-header')}
+              sectionTitle={beforeRetiring.title}
+              subSectionTitle={beforeRetiring.subTitle}
+              tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, filters))}
+            />
+            <NestedAccordion
+              linksHeader={t('links-header')}
+              sectionTitle={applyingBenefits.title}
+              subSectionTitle={applyingBenefits.subTitle}
+              tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
+            />
+            <NestedAccordion
+              linksHeader={t('links-header')}
+              sectionTitle={receivingBenefits.title}
+              subSectionTitle={receivingBenefits.subTitle}
+              tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
+            />
+          </section>
+        </div>
+      </Layout>
+    </>
   )
 }
 
@@ -250,7 +257,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistProps | {}> = async
 
     return {
       props: {
-        ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'])),
+        ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'], null, ['en', 'fr'])),
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
         filters: validatedFilters,
