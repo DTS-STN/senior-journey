@@ -6,29 +6,29 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 
 import { LearnPageLayout } from '../../../components/LearnPageLayout'
+import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Fred: FC = () => {
-  const { t } = useTranslation('learn/case-studies/keith')
+  const { t, i18n } = useTranslation('learn/case-studies/keith')
+  const en = i18n.getFixedT('en', 'learn/case-studies/keith')
+  const fr = i18n.getFixedT('fr', 'learn/case-studies/keith')
 
   return (
-    <LearnPageLayout
-      header={t('header')}
-      breadcrumbItems={[
-
-      ]}
-    >
-      <NextSeo title={t('header')} />
-
-    </LearnPageLayout>
+    <>
+      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <LearnPageLayout header={t('header')} breadcrumbItems={[]}>
+        Content here
+      </LearnPageLayout>
+    </>
   )
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', [
-        'common',
-        'learn/case-studies/keith',
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'], null, [
+        'en',
+        'fr',
       ])),
     },
   }

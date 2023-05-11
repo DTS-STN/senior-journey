@@ -2,17 +2,17 @@
   "links-header": "(FR) More resources",
   "restart-quiz": "(FR) Restart quiz",
   "breadcrumbs": {
-    "home":{
-      "text":"(FR) Retirement Hub",
-      "link":"/"
+    "home": {
+      "text": "(FR) Retirement Hub",
+      "link": "/"
     },
-    "learn":{
-      "text":"(FR) Learn",
-      "link":"/learn"
+    "learn": {
+      "text": "(FR) Learn",
+      "link": "/learn"
     }
   },
   "filter-tasks": "(FR) Filter Tasks",
-  "your-retirement-checklist": "(FR) Your retirement checklist",
+  "header": "(FR) Your retirement checklist",
   "show-filters": "(FR) show filters",
   "print": "(FR) Print"
 }
