@@ -117,6 +117,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
       <AccessibilityGraphContainer
         tableData={illustrationOASGraphData}
         description={t('old-age-security.illustration.description')}
+        descriptionHeading={t('description-heading')}
+        valuesHeading={t('values-heading')}
         buttonLabel={t('show-accessible-table')}
       />
       <p>{t('old-age-security.content-three')}</p>
@@ -159,6 +161,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCPPGraphData}
           description={t('cpp-pension.illustration.description')}
+          descriptionHeading={t('description-heading')}
+          valuesHeading={t('values-heading')}
           buttonLabel={t('show-accessible-table')}
         />
       </div>
@@ -250,6 +254,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={illustrationCaseStudyData1}
           description={t('case-study.illustration-one.description')}
+          descriptionHeading={t('description-heading')}
+          valuesHeading={t('values-heading')}
           buttonLabel={t('show-accessible-table')}
         />
       </div>
@@ -269,6 +275,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           tableData={illustrationCaseStudyData2}
           description={t('case-study.illustration-two.description')}
           buttonLabel={t('show-accessible-table')}
+          descriptionHeading={t('description-heading')}
+          valuesHeading={t('values-heading')}
         />
       </div>
       <p>{t('case-study.content-five')}</p>
@@ -288,6 +296,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           tableData={illustrationCaseStudyData3}
           description={t('case-study.illustration-three.description')}
           buttonLabel={t('show-accessible-table')}
+          descriptionHeading={t('description-heading')}
+          valuesHeading={t('values-heading')}
         />
       </div>
       <p>{t('case-study.content-seven')}</p>
@@ -303,6 +313,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           tableData={illustrationCaseStudyData4}
           description={t('case-study.illustration-four.description')}
           buttonLabel={t('show-accessible-table')}
+          descriptionHeading={t('description-heading')}
+          valuesHeading={t('values-heading')}
         />
       </div>
       <p>{t('case-study.content-eight')}</p>
@@ -318,6 +330,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           tableData={illustrationCaseStudyData5}
           description={t('case-study.illustration-five.description')}
           buttonLabel={t('show-accessible-table')}
+          descriptionHeading={t('description-heading')}
+          valuesHeading={t('values-heading')}
         />
       </div>
       <p>{t('case-study.content-nine')}</p>
