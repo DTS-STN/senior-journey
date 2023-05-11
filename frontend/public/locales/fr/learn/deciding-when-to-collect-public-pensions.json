@@ -55,17 +55,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -98,17 +95,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -169,17 +163,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -197,17 +188,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -226,17 +214,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -253,17 +238,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -280,17 +262,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -299,5 +278,7 @@
     "content-nine": "And only by age 89, Fred's lifetime pensions that begins at 70 will surpass the one that begins at 68. He makes the decision to apply for the OAS pension at age 68, and not to wait until age 70. The OAS monthly benefit will supplement his income and will help him delay CPP until age 70, as CPP provides a much higher advantage to delay.",
     "content-ten": "To support himself earlier in retirement, Fred is planning to use his private savings and work part-time driving at a rideshare company."
   },
-  "show-accessible-table": "(FR) Show accessible table format"
+  "show-accessible-table": "(FR) Show accessible table format",
+  "description-heading": "(FR) Description",
+  "values-heading": "(FR) Values"
 }
