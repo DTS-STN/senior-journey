@@ -10,13 +10,13 @@ describe('test id 133 - verify Button/Links - Landing page top section', () => {
         cy.viewport(size)
         cy.get('[data-cy="toggle-language-link"]').click()
         cy.get('[data-cy="toggle-language-link"]').should('have.attr', 'lang', lang)
-          .and('have.attr', 'href', `${lang}/home`)
+          .and('have.attr', 'href', `/${lang}/home`)
           .and('be.visible')
         if (lang == 'fr') {
-          cy.location('pathname').should('equal', 'en/home')
+          cy.location('pathname').should('equal', '/en/home')
         }
         else {
-          cy.location('pathname').should('equal', 'fr/home')
+          cy.location('pathname').should('equal', '/fr/home')
         }
       })
     })
