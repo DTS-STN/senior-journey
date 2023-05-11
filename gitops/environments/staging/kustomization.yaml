@@ -1,0 +1,45 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  # commonLabels must have at least one unique label
+  # per environment to ensure selectors are applied correctly
+  app.kubernetes.io/environment: staging
+  app.kubernetes.io/managed-by: kustomize
+  app.kubernetes.io/part-of: seniors-journey
+bases:
+  - ../../applications/seniors-journey-frontend/
+namePrefix: staging-
+namespace: seniors-journey
+resources:
+  - ./ingresses.yaml
+patchesStrategicMerge:
+  - ./deployments.patch.yaml
+  - ./services.patch.yaml
+configMapGenerator:
+  - name: seniors-journey-frontend
+    options:
+      labels:
+        app.kubernetes.io/name: seniors-journey-frontend
+    literals:
+      - OTEL_ENVIRONMENT=staging
+      - OTEL_METRICS_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/metrics
+      - OTEL_TRACES_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/traces
+  - name: seniors-journey-frontend-auth
+    options:
+      labels:
+        app.kubernetes.io/name: seniors-journey-frontend-auth
+    files:
+      - oauth-proxy.cfg
+secretGenerator:
+  - name: seniors-journey-frontend
+    options:
+      labels:
+        app.kubernetes.io/name: seniors-journey-frontend
+    envs:
+      - .env.seniors-journey-frontend
+  - name: seniors-journey-frontend-auth
+    options:
+      labels:
+        app.kubernetes.io/name: seniors-journey-frontend-auth
+    envs:
+      - .env.seniors-journey-frontend-auth

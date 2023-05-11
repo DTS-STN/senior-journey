@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seniors-journey-frontend
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: seniors-journey-frontend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: seniors-journey-frontend
+    spec:
+      containers:
+        - name: seniors-journey-frontend
+          env:
+            - name: OTEL_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_API_KEY
+            - name: OTEL_ENVIRONMENT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_ENVIRONMENT
+            - name: OTEL_METRICS_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_METRICS_ENDPOINT
+            - name: OTEL_TRACES_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: OTEL_TRACES_ENDPOINT
+        - name: oauth-proxy
+          image: quay.io/oauth2-proxy/oauth2-proxy:v7.4.0
+          args:
+            - --config=/etc/oauth2-proxy.cfg
+          env:
+            - name: OAUTH2_PROXY_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: seniors-journey-frontend-auth
+                  key: client-secret
+            - name: OAUTH2_PROXY_COOKIE_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: seniors-journey-frontend-auth
+                  key: cookie-secret
+          ports:
+            - name: oauth-proxy
+              containerPort: 4180
+          livenessProbe:
+            httpGet:
+              path: /ping
+              port: oauth-proxy
+            initialDelaySeconds: 0
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /ping
+              port: oauth-proxy
+            initialDelaySeconds: 0
+            timeoutSeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+          resources:
+            requests:
+              cpu: 50m
+              memory: 32Mi
+            limits:
+              cpu: 100m
+              memory: 64Mi
+          volumeMounts:
+            - name: seniors-journey-frontend-auth
+              mountPath: /etc/oauth2-proxy.cfg
+              subPath: oauth-proxy.cfg
+      volumes:
+        - name: seniors-journey-frontend-auth
+          configMap:
+            name: seniors-journey-frontend-auth
