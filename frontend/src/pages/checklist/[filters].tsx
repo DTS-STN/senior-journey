@@ -113,9 +113,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
             <Image src="/assets/checklist.png" width={120} height={75} sizes="100%" alt="" priority />
           </div>
           <div className="w-11/12">
-            <h2 className="font-display text-4xl font-bold text-primary-700 md:text-6xl">
-              {t('your-retirement-checklist')}
-            </h2>
+            <h1 className="font-display text-4xl font-bold text-primary-700 md:text-6xl">{t('header')}</h1>
           </div>
         </section>
 
@@ -135,7 +133,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
             <div className="mt-2">
               <div className="mb-2 flex items-center justify-between border-b">
                 <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
-                <div className="text-2xl md:hidden">{t('your-retirement-checklist')}</div>
+                <div className="text-2xl md:hidden">{t('header')}</div>
                 <IconButton
                   color="primary"
                   onClick={() => setExpanded(!expanded)}
