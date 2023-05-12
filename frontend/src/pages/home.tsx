@@ -34,31 +34,6 @@ export interface SupportingSeniorsCardProps {
   text: string
 }
 
-interface TabLinkData {
-  title: string
-  url: string
-  description?: string
-}
-
-interface TabBlockText {
-  text: string
-  list?: Array<string>
-  links?: Array<TabLinkData>
-}
-
-interface TabData {
-  id: string
-  title: string
-  heading: string
-  description: Array<TabBlockText>
-  button?: {
-    text: string
-    url: string
-  }
-  linksTitle?: string
-  links?: Array<TabLinkData>
-}
-
 const Home: FC = () => {
   const { t, i18n } = useTranslation('home')
   const en = i18n.getFixedT('en', 'home')
@@ -67,8 +42,7 @@ const Home: FC = () => {
   const theme = useTheme()
   const mobile = useMediaQuery(theme.breakpoints.down('md'))
 
-  const tabsData = t<string, ReadonlyArray<TabData>>('tabs', { returnObjects: true })
-  const [value, setValue] = useState(tabsData?.length ? tabsData[0].id : '')
+  const [value, setValue] = useState(t('tabs.learn.id') ? t('tabs.learn.id') : '')
   const [quizDialogOpen, setQuizDialogOpen] = useState(false)
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -113,107 +87,184 @@ const Home: FC = () => {
               scrollButtons="auto"
               centered={!mobile}
             >
-              {tabsData.map(({ id, title }) => (
-                <Tab key={id} value={id} label={title} className="px-10 pt-4 text-lg md:text-2xl" />
-              ))}
+              <Tab key={t('tabs.learn.id')} value={t('tabs.learn.id')} label={t('tabs.learn.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab key={t('tabs.plan.id')} value={t('tabs.plan.id')} label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab key={t('tabs.apply.id')} value={t('tabs.apply.id')} label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab key={t('tabs.manage.id')} value={t('tabs.manage.id')} label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />
             </TabList>
           </Paper>
 
           <div className="bg-gray-surface">
             <Container>
-              {tabsData.map(({ id, heading, description, button, links, linksTitle }) => (
-                <TabPanel key={id} value={id} className="px-0 py-8">
-                  <div className="flex flex-col gap-6 md:flex-row">
-                    <Paper className="p-8 md:w-2/5 md:grow">
-                      <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{heading}</h2>
-                      <Divider className="mb-8" />
-                      {description.map(({ text, list, links }) => (
-                        <React.Fragment key={text}>
-                          <p>{text}</p>
-                          {list && list.length > 0 && (
-                            <ul className="list-disc space-y-2 pl-7">
-                              {list.map((litem) => (
-                                <li key={litem}>{litem}</li>
-                              ))}
-                            </ul>
-                          )}
-                          {links && links.length > 0 && (
-                            <List disablePadding>
-                              {links.map(({ title, url }) => (
-                                <React.Fragment key={title}>
-                                  <ListItem disablePadding className="border-b">
-                                    <ListItemButton href={url} component={Link}>
-                                      <ListItemText
-                                        primary={title}
-                                        primaryTypographyProps={{
-                                          className: 'font-display font-medium',
-                                        }}
-                                      />
-                                      <NavigateNextIcon color="primary" />
-                                    </ListItemButton>
-                                  </ListItem>
-                                </React.Fragment>
-                              ))}
-                            </List>
-                          )}
-                        </React.Fragment>
-                      ))}
-                      {button && (
-                        <>
-                          <Divider className="my-8" />
-                          <div className="text-right">
-                            {
-                              /**
-                               * FIXME: This implementation is gross, and messy. It doesn't account for non-quiz buttons without urls.
-                               * This, and probably the whole loop needs to be revisited and possibly unwound since the tabs are
-                               * probably going to differ far too much.
-                               **/
-                              button.url && (
-                                <Button component={Link} href={button.url} size="large">
-                                  {button.text}
-                                </Button>
-                              )
-                            }
-                            {(button.url == null || button.url == undefined) && (
-                              <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
-                                {button.text}
-                              </Button>
-                            )}
-                          </div>
-                        </>
-                      )}
-                    </Paper>
-                    {linksTitle && (
-                      <Paper className="p-8 md:w-3/5">
-                        <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">{linksTitle}</h3>
-                        {links && links.length > 0 && (
-                          <List disablePadding>
-                            {links.map(({ title, url, description }) => (
-                              <React.Fragment key={title}>
-                                <ListItem disablePadding className="border-b">
-                                  <ListItemButton href={url} component={Link}>
-                                    <ListItemText
-                                      primary={title}
-                                      primaryTypographyProps={{
-                                        className: 'font-display font-medium',
-                                      }}
-                                      secondary={description}
-                                      secondaryTypographyProps={{
-                                        className: 'text-sm',
-                                      }}
-                                    />
-                                    <NavigateNextIcon color="primary" />
-                                  </ListItemButton>
-                                </ListItem>
-                              </React.Fragment>
-                            ))}
-                          </List>
-                        )}
-                      </Paper>
-                    )}
-                  </div>
-                </TabPanel>
-              ))}
+              <TabPanel value={t('tabs.learn.id')} className="px-0 py-8">
+                <div className="flex flex-col gap-6 md:flex-row">
+                  <Paper className="p-8 md:w-2/5 md:grow">
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.learn.heading')}</h2>
+                    <Divider className="mb-8" />
+                    <p>{t('tabs.learn.description.0.text')}</p>
+                    <p>{t('tabs.learn.description.1.text')}</p>
+                    <Divider className="my-8" />
+                    <div className="text-right">
+                      <Button component={Link} href={t('tabs.learn.button.url')} size="large">
+                        {t('tabs.learn.button.text')}
+                      </Button>
+                    </div>
+                  </Paper>
+                  <Paper className="p-8 md:w-3/5">
+                    <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">{t('tabs.learn.linksTitle')}</h3>
+                    <List disablePadding>
+                      <ListItem disablePadding className="border-b">
+                        <ListItemButton href={t('tabs.learn.links.0.url')} component={Link}>
+                          <ListItemText
+                            primary={t('tabs.learn.links.0.title')}
+                            primaryTypographyProps={{
+                              className: 'font-display font-medium',
+                            }}
+                            secondary={t('tabs.learn.links.0.description')}
+                            secondaryTypographyProps={{
+                              className: 'text-sm',
+                            }}
+                          />
+                          <NavigateNextIcon color="primary" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding className="border-b">
+                        <ListItemButton href={t('tabs.learn.links.1.url')} component={Link}>
+                          <ListItemText
+                            primary={t('tabs.learn.links.1.title')}
+                            primaryTypographyProps={{
+                              className: 'font-display font-medium',
+                            }}
+                            secondary={t('tabs.learn.links.1.description')}
+                            secondaryTypographyProps={{
+                              className: 'text-sm',
+                            }}
+                          />
+                          <NavigateNextIcon color="primary" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding className="border-b">
+                        <ListItemButton href={t('tabs.learn.links.2.url')} component={Link}>
+                          <ListItemText
+                            primary={t('tabs.learn.links.2.title')}
+                            primaryTypographyProps={{
+                              className: 'font-display font-medium',
+                            }}
+                            secondary={t('tabs.learn.links.2.description')}
+                            secondaryTypographyProps={{
+                              className: 'text-sm',
+                            }}
+                          />
+                          <NavigateNextIcon color="primary" />
+                        </ListItemButton>
+                      </ListItem>
+                    </List>
+                  </Paper>
+                </div>
+              </TabPanel>
+              <TabPanel value={t('tabs.plan.id')} className="px-0 py-8">
+                <div className="flex flex-col gap-6 md:flex-row">
+                  <Paper className="p-8 md:w-2/5 md:grow">
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.plan.heading')}</h2>
+                    <Divider className="mb-8" />
+                      <p>{t('tabs.plan.description.0.text')}</p>
+                      <Divider className="my-8" />
+                      <div className="text-right">
+                        <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
+                          {t('tabs.plan.button.text')}
+                        </Button>
+                      </div>
+                  </Paper>
+                  <Paper className="p-8 md:w-3/5">
+                    <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">{t('tabs.plan.linksTitle')}</h3>
+                    <List disablePadding>
+                      <ListItem disablePadding className="border-b">
+                        <ListItemButton href={t('tabs.plan.links.0.url')} component={Link}>
+                          <ListItemText
+                            primary={t('tabs.plan.links.0.title')}
+                            primaryTypographyProps={{
+                              className: 'font-display font-medium',
+                            }}
+                            secondary={t('tabs.plan.links.0.description')}
+                            secondaryTypographyProps={{
+                              className: 'text-sm',
+                            }}
+                          />
+                          <NavigateNextIcon color="primary" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding className="border-b">
+                        <ListItemButton href={t('tabs.plan.links.1.url')} component={Link}>
+                          <ListItemText
+                            primary={t('tabs.plan.links.1.title')}
+                            primaryTypographyProps={{
+                              className: 'font-display font-medium',
+                            }}
+                            secondary={t('tabs.plan.links.1.description')}
+                            secondaryTypographyProps={{
+                              className: 'text-sm',
+                            }}
+                          />
+                          <NavigateNextIcon color="primary" />
+                        </ListItemButton>
+                      </ListItem>
+                    </List>
+                  </Paper>
+                </div>
+              </TabPanel>
+              <TabPanel value={t('tabs.apply.id')} className="px-0 py-8">
+                <div className="flex flex-col gap-6 md:flex-row">
+                  <Paper className="p-8 md:w-2/5 md:grow">
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.apply.heading')}</h2>
+                    <Divider className="mb-8" />
+                    <p>{t('tabs.apply.description.0.text')}</p>
+                    <List disablePadding>
+                      <ListItem disablePadding className="border-b">
+                        <ListItemButton href={t('tabs.apply.description.0.links.0.url')} component={Link}>
+                          <ListItemText
+                            primary={t('tabs.apply.description.0.links.0.title')}
+                            primaryTypographyProps={{
+                              className: 'font-display font-medium',
+                            }}
+                          />
+                          <NavigateNextIcon color="primary" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding className="border-b">
+                        <ListItemButton href={t('tabs.apply.description.0.links.1.url')} component={Link}>
+                          <ListItemText
+                            primary={t('tabs.apply.description.0.links.1.title')}
+                            primaryTypographyProps={{
+                              className: 'font-display font-medium',
+                            }}
+                          />
+                          <NavigateNextIcon color="primary" />
+                        </ListItemButton>
+                      </ListItem>
+                    </List>
+                  </Paper>  
+                </div>
+              </TabPanel>
+              <TabPanel value={t('tabs.manage.id')} className="px-0 py-8">
+                <div className="flex flex-col gap-6 md:flex-row">
+                  <Paper className="p-8 md:w-2/5 md:grow">
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.manage.heading')}</h2>
+                    <Divider className="mb-8" />
+                    <p>{t('tabs.manage.description.0.text')}</p>
+                    <ul className="list-disc space-y-2 pl-7">
+                      <li>{t('tabs.manage.description.0.list.0')}</li>
+                      <li>{t('tabs.manage.description.0.list.1')}</li>
+                      <li>{t('tabs.manage.description.0.list.2')}</li>
+                    </ul>
+                    <Divider className="my-8" />
+                    <div className="text-right">
+                      <Button component={Link} href={t('tabs.manage.button.url')} size="large">
+                        {t('tabs.manage.button.text')}
+                      </Button>
+                    </div>
+                  </Paper>
+                </div>
+              </TabPanel>
             </Container>
           </div>
         </TabContext>

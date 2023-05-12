@@ -38,8 +38,8 @@
     "title": "(FR) Learn and plan for your retirement",
     "text": "(FR) It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income."
   },
-  "tabs": [
-    {
+  "tabs": {
+    "learn": {
       "id": "learn",
       "title": "Learn (FR)",
       "heading": "Get the most out of your retirement benefits in Canada (FR)",
@@ -74,7 +74,7 @@
         }
       ]
     },
-    {
+    "plan": {
       "id": "plan",
       "title": "Plan (FR)",
       "heading": "Not sure where to begin? Take the quiz! (FR)",
@@ -101,7 +101,7 @@
         }
       ]
     },
-    {
+    "apply": {
       "id": "apply",
       "title": "Apply (FR)",
       "heading": "Ready to Apply of CPP and OAS? Get started now (FR)",
@@ -121,7 +121,7 @@
         }
       ]
     },
-    {
+    "manage": {
       "id": "manage",
       "title": "Manage (FR)",
       "heading": "Take control of your federal old age benefits with the \"My Service Canada\" Account (MSCA) (FR)",
@@ -140,7 +140,7 @@
         "url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html"
       }
     }
-  ],
+  },
   "supporting-seniors": {
     "title": "FR Supporting Seniors",
     "cards": {
