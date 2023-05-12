@@ -62,28 +62,28 @@
     },
     {
       "title": "(FR) Federal benefit scenarios: from retirees to new pensioners",
-      "body": "(FR) Lorem ipsum dolor sit amet consectetur. Pulvinar accumsan volutpat vel odio magna rhoncus. Nisl eleifend auctor purus semper magnis aliquet sed. Vitae penatibus duis quis pulvinar ac dui elit. Mi sem dictumst ac cursus cursus adipiscing purus felis tortor. Eu lacus ac nulla.",
+      "body": "(FR) Not sure when to retire? Learn about the different choices people make about their public pensions and how it impacts their lives. These stories give valuable lessons and inspiration for people looking to plan their own retirement.",
       "cards": [
         {
-          "title": "(FR) Case 1",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.png",
-          "link": "/learn"
+          "title": "(FR) Fred decides when to take his public pensions",
+          "read": "(FR) 9 min read",
+          "body": "(FR) As Fred can afford to wait, he decides to delay. This will increase his monthly and lifetime pensions.",
+          "image": "/assets/fred-decides-when-to-take-his-pensions-sm.jpg",
+          "link": "/learn/case-studies/fred"
         },
         {
-          "title": "(FR) Case 2",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.png",
-          "link": "/learn"
+          "title": "(FR) Bonnie delays to reduce  the savings she needs",
+          "read": "(FR) 9 min read",
+          "body": "(FR) Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP pension.",
+          "image": "/assets/bonnie-delays-to-reduce-the-savings-she-needs-sm.jpg",
+          "link": "/learn/case-studies/bonnie"
         },
         {
-          "title": "(FR) Case 3",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.png",
-          "link": "/learn"
+          "title": "(FR) Keith combines his work with his public pensions",
+          "read": "(FR) 9 min read",
+          "body": "(FR) Keith chooses between delaying his public pensions or taking Post Retirement Benefits while working.",
+          "image": "/assets/keith-combines-his-work-with-his-public-pensions-sm.jpg",
+          "link": "/learn/case-studies/keith"
         }
       ]
     },
