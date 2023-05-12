@@ -62,28 +62,28 @@
     },
     {
       "title": "Real-life retirement stories",
-      "body": "Not sure when to retire? Read the stories that people shared with us. Learn about the different choices and compare them to your personal situation.",
+      "body": "Not sure when to retire? Learn about the different choices people make about their public pensions and how it impacts their lives. These stories give valuable lessons and inspiration for people looking to plan their own retirement.",
       "cards": [
         {
-          "title": "Frank - Working past 70",
-          "read": "5 min read",
-          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.png",
-          "link": "/learn"
+          "title": "Fred decides when to take his public pensions",
+          "read": "9 min read",
+          "body": "As Fred can afford to wait, he decides to delay. This will increase his monthly and lifetime pensions.",
+          "image": "/assets/fred-decides-when-to-take-his-pensions-sm.jpg",
+          "link": "/learn/case-studies/fred"
         },
         {
-          "title": "Frank - Working past 70",
-          "read": "5 min read",
-          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.png",
-          "link": "/learn"
+          "title": "Bonnie delays to reduce  the savings she needs",
+          "read": "9 min read",
+          "body": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP pension.",
+          "image": "/assets/bonnie-delays-to-reduce-the-savings-she-needs-sm.jpg",
+          "link": "/learn/case-studies/bonnie"
         },
         {
-          "title": "Frank - Working past 70",
-          "read": "5 min read",
-          "body": "Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.png",
-          "link": "/learn"
+          "title": "Keith combines his work with his public pensions",
+          "read": "9 min read",
+          "body": "Keith chooses between delaying his public pensions or taking Post Retirement Benefits while working.",
+          "image": "/assets/keith-combines-his-work-with-his-public-pensions-sm.jpg",
+          "link": "/learn/case-studies/keith"
         }
       ]
     }
