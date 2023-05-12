@@ -27,7 +27,7 @@ const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = 
   }
 
   return (
-    <div className="border-t border-t-primary-500 pb-2">
+    <div className="border-t border-t-primary-500 border-b border-b-primary-500 mb-5">
       <div>
         <IconButton onClick={handleClick} aria-label={buttonLabel}>
           {open ? <ExpandMore /> : <ExpandLess />}
