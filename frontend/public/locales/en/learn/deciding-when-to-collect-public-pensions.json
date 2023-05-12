@@ -55,17 +55,14 @@
         "rows": [
           {
             "id": 1,
-            "label": "label 1",
             "data": ["data 1", "data 2", "data 3"]
           },
           {
             "id": 2,
-            "label": "label 2",
             "data": ["data a", "data b", "data c"]
           },
           {
             "id": 3,
-            "label": "label 3",
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -87,7 +84,7 @@
   "cpp-pension": {
     "heading": "Canada Pension Plan (CPP) Retirement Pension",
     "content-one": "The amount of your CPP retirement pension depends on how much and for how long you have contributed to the Plan while working in Canada. The amount also changes based on your age when you decide to take your CPP retirement pension.",
-    "smart-tip": "Smart tip: Deciding when to take your CPP pension is important. Each month of delay after age 60 counts. By age 65, you can increase your pension by over one-half. By age 70, you can more than double your pension amount that you could receive at age 60. An average Canadian, who takes their pension at 60, may be giving up about $100,000 in extra income in retirement. CPP pensions are well protected against high inflation. Possible market downturns will not affect your CPP pension. Your patience could be rewarded greatly! Most Canadians would benefit financially by delaying their CPP pensions.",
+    "smart-tip": "<strong>Smart tip:</strong> Deciding when to take your CPP pension is important. Each month of delay after age 60 counts. By age 65, you can increase your pension by over one-half. By age 70, you can more than double your pension amount that you could receive at age 60. An average Canadian, who takes their pension at 60, may be giving up about $100,000 in extra income in retirement. CPP pensions are well protected against high inflation. Possible market downturns will not affect your CPP pension. Your patience could be rewarded greatly! Most Canadians would benefit financially by delaying their CPP pensions.",
     "illustration": {
       "alt": "Your CPP pension could be signifficantly increased if you delay",
       "img-url": "/assets/cpp-income-en.jpg",
