@@ -16,7 +16,7 @@ interface TableProps {
 const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
   return (
     <table className="min-w-full border-collapse divide-y border text-left">
-      <caption className="text-left">{tableData.caption}</caption>
+      <caption className="text-left pb-4">{tableData.caption}</caption>
       <thead className="bg-gray-surface">
         <tr className="divide-x">
           {tableData.header.map((headerItem, index) => (

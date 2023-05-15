@@ -18,7 +18,7 @@ export const LearnPageLayout: FC<LearnPageLayoutProps> = ({ children, header, br
     <Layout 
       breadcrumbItems={breadcrumbItems}
     >
-      <h1 className="mb-10 rounded-3xl bg-gray-surface px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-24 md:py-16 md:text-5xl md:font-bold">
+      <h1 className="mb-10 rounded-3xl bg-gray-surface px-4 py-6 font-display text-4xl font-medium text-primary-700 md:mb-12 md:px-10 md:py-10 md:text-6xl md:font-bold">
         {header}
       </h1>
       <div className="grid gap-6 lg:grid-cols-12">
