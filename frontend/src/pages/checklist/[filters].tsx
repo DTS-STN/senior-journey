@@ -1,6 +1,6 @@
 import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
 
-import { CheckBoxOutlineBlankOutlined, CheckBoxOutlined, ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
+import { ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton } from '@mui/material'
@@ -130,7 +130,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
                 {t('restart-quiz')}
               </Button>
             </div>
-            <div className="mt-2">
+            <div className="mb-4">
               <div className="mb-2 flex items-center justify-between border-b">
                 <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
                 <div className="text-2xl md:hidden">{t('header')}</div>
@@ -145,19 +145,11 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
                 </IconButton>
               </div>
               <Collapse in={expanded}>
-                <FormGroup className="space-y-2" onChange={handleChange}>
+                <FormGroup onChange={handleChange} data-cy="form-group-filter-tasks">
                   {tagsFilter.map(({ code, title }) => (
                     <FormControlLabel
                       key={code}
-                      className={`m-0 rounded ${filters?.tags.includes(code) ? 'bg-[#CDF9FF]' : 'bg-gray-200'}`}
-                      control={
-                        <Checkbox
-                          value={code}
-                          icon={<CheckBoxOutlineBlankOutlined />}
-                          checkedIcon={<CheckBoxOutlined />}
-                          checked={filters.tags.includes(code) ?? false}
-                        />
-                      }
+                      control={<Checkbox name={code} value={code} checked={filters.tags.includes(code) ?? false} />}
                       label={title}
                     />
                   ))}
@@ -169,7 +161,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
               variant="outlined"
               startIcon={<Print />}
               size="large"
-              className="mt-5 hidden border-gray-default font-bold md:inline md:w-full lg:w-2/5"
+              className="hidden md:inline-block lg:w-full"
             >
               {t('print')}
             </Button>
