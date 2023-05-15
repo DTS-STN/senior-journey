@@ -24,7 +24,6 @@ import Link from 'next/link'
 
 import Container from '../components/Container'
 import Layout from '../components/Layout'
-import { QuizDialog } from '../components/quiz/QuizDialog'
 import { getDCTermsTitle } from '../utils/seo-utils'
 
 export interface SupportingSeniorsCardProps {
@@ -43,18 +42,9 @@ const Home: FC = () => {
   const mobile = useMediaQuery(theme.breakpoints.down('md'))
 
   const [value, setValue] = useState(t('tabs.learn.id') ? t('tabs.learn.id') : '')
-  const [quizDialogOpen, setQuizDialogOpen] = useState(false)
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue)
-  }
-
-  const handleOnQuizDialogTriggerClick = () => {
-    setQuizDialogOpen(true)
-  }
-
-  const handleOnQuizDialogClose = () => {
-    setQuizDialogOpen(false)
   }
 
   return (
@@ -93,10 +83,22 @@ const Home: FC = () => {
               scrollButtons="auto"
               centered={!mobile}
             >
-              <Tab key={t('tabs.learn.id')} value={t('tabs.learn.id')} label={t('tabs.learn.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-              <Tab key={t('tabs.plan.id')} value={t('tabs.plan.id')} label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-              <Tab key={t('tabs.apply.id')} value={t('tabs.apply.id')} label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-              <Tab key={t('tabs.manage.id')} value={t('tabs.manage.id')} label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab
+                value={t('tabs.learn.id')}
+                label={t('tabs.learn.title')}
+                className="px-10 pt-4 text-lg md:text-2xl"
+              />
+              <Tab value={t('tabs.plan.id')} label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab
+                value={t('tabs.apply.id')}
+                label={t('tabs.apply.title')}
+                className="px-10 pt-4 text-lg md:text-2xl"
+              />
+              <Tab
+                value={t('tabs.manage.id')}
+                label={t('tabs.manage.title')}
+                className="px-10 pt-4 text-lg md:text-2xl"
+              />
             </TabList>
           </Paper>
 
@@ -105,7 +107,9 @@ const Home: FC = () => {
               <TabPanel value={t('tabs.learn.id')} className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
-                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.learn.heading')}</h2>
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
+                      {t('tabs.learn.heading')}
+                    </h2>
                     <Divider className="mb-8" />
                     <p>{t('tabs.learn.description.0.text')}</p>
                     <p>{t('tabs.learn.description.1.text')}</p>
@@ -117,7 +121,9 @@ const Home: FC = () => {
                     </div>
                   </Paper>
                   <Paper className="p-8 md:w-3/5">
-                    <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">{t('tabs.learn.linksTitle')}</h3>
+                    <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
+                      {t('tabs.learn.linksTitle')}
+                    </h3>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
                         <ListItemButton href={t('tabs.learn.links.0.url')} component={Link}>
@@ -171,18 +177,22 @@ const Home: FC = () => {
               <TabPanel value={t('tabs.plan.id')} className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
-                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.plan.heading')}</h2>
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
+                      {t('tabs.plan.heading')}
+                    </h2>
                     <Divider className="mb-8" />
-                      <p>{t('tabs.plan.description.0.text')}</p>
-                      <Divider className="my-8" />
-                      <div className="text-right">
-                        <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
-                          {t('tabs.plan.button.text')}
-                        </Button>
-                      </div>
+                    <p>{t('tabs.plan.description.0.text')}</p>
+                    <Divider className="my-8" />
+                    <div className="text-right">
+                      <Button component={Link} id="quiz-dialog-link" size="large" href="/quiz">
+                        {t('tabs.plan.button.text')}
+                      </Button>
+                    </div>
                   </Paper>
                   <Paper className="p-8 md:w-3/5">
-                    <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">{t('tabs.plan.linksTitle')}</h3>
+                    <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
+                      {t('tabs.plan.linksTitle')}
+                    </h3>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
                         <ListItemButton href={t('tabs.plan.links.0.url')} component={Link}>
@@ -221,7 +231,9 @@ const Home: FC = () => {
               <TabPanel value={t('tabs.apply.id')} className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
-                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.apply.heading')}</h2>
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
+                      {t('tabs.apply.heading')}
+                    </h2>
                     <Divider className="mb-8" />
                     <p>{t('tabs.apply.description.0.text')}</p>
                     <List disablePadding>
@@ -248,13 +260,15 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                     </List>
-                  </Paper>  
+                  </Paper>
                 </div>
               </TabPanel>
               <TabPanel value={t('tabs.manage.id')} className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
-                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">{t('tabs.manage.heading')}</h2>
+                    <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
+                      {t('tabs.manage.heading')}
+                    </h2>
                     <Divider className="mb-8" />
                     <p>{t('tabs.manage.description.0.text')}</p>
                     <ul className="list-disc space-y-2 pl-7">
@@ -327,14 +341,13 @@ const Home: FC = () => {
           </Button>
         </Paper>
       </Container>
-      <QuizDialog open={quizDialogOpen} onClose={handleOnQuizDialogClose} />
     </Layout>
   )
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home', 'quiz'], null, ['en', 'fr'])),
+    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home'], null, ['en', 'fr'])),
   },
 })
 

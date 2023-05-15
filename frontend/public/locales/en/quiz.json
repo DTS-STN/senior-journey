@@ -1,4 +1,18 @@
 {
+  "landing": {
+    "header": "Retirement Ready Quiz",
+    "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
+    "p2": "Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
+    "whatyouneed": "What you'll need",
+    "p3": "You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
+    "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
+    "residence": "<strong>residence history</strong> (number of years lived in Canada)",
+    "marital": "<strong>marital status</strong>",
+    "retirement": "<strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
+    "timetocomplete": "Time to complete survey",
+    "minutes": "3 minutes",
+    "start-the-quiz": "Start the quiz"
+  },
   "confirmation": {
     "sure": "Are you sure you want to close this quiz? You will lose your progress.",
     "no": {
@@ -12,12 +26,8 @@
   },
   "navigation": {
     "id": "navigation-container",
-    "start": {
-      "id": "start-button",
-      "text": "Start The Quiz"
-    },
     "previous": {
-      "id":"previous-button",
+      "id": "previous-button",
       "text": "Previous Question"
     },
     "next": {
@@ -38,18 +48,6 @@
       "id": "progress-bar",
       "label": "progress-label"
     }
-  },
-  "landing": {
-    "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
-    "p2": "Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
-    "whatyouneed": "What you'll need",
-    "p3": "You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
-    "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
-    "residence": "<strong>residence history</strong> (number of years lived in Canada)",
-    "marital": "<strong>marital status</strong>",
-    "retirement": "<strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
-    "timetocomplete": "Time to complete survey",
-    "minutes": "3 minutes"
   },
   "questions": {
     "question-when": {
@@ -138,7 +136,7 @@
       },
       "option-unprepared": {
         "id": "unprepared-button",
-        "text":"Unprepared",
+        "text": "Unprepared",
         "value": "unprepared"
       },
       "option-unsure-preparedness": {
