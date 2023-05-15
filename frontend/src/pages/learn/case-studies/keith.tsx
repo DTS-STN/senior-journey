@@ -20,7 +20,7 @@ const Keith: FC = () => {
   const en = i18n.getFixedT('en', 'learn/case-studies/keith')
   const fr = i18n.getFixedT('fr', 'learn/case-studies/keith')
 
-  let mobile = useMediaQuery(theme.breakpoints.down('sm'))
+  const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   const learnMoreLinks = useMemo(
     () => [
@@ -74,15 +74,33 @@ const Keith: FC = () => {
         <h2 id="key-takeaways" className="h2 !mt-0">
           {t('key-takeaways.heading')}
         </h2>
-        <ul className='space-y-2'>
-        {Array(6)
-          .fill(null)
-          .map((_, i) => (
-            <li key={`key-takeaways.li${i + 1}`} className={i % 2 ? 'text-md border-b pb-4 opacity-80' : 'text-lg'}>
-              {t(`key-takeaways.li${i + 1}`)}
-            </li>
+        <List disablePadding>
+          {[
+            {
+              primaryI18nKey: 'key-takeaways.li1',
+              secondaryI18nKey: 'key-takeaways.li2',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.li3',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.li4',
+              secondaryI18nKey: 'key-takeaways.li5',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.li6',
+            },
+          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
+            <ListItem key={primaryI18nKey} disablePadding className="border-b py-2">
+              <ListItemText
+                primary={t(primaryI18nKey)}
+                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display' }}
+                secondary={secondaryI18nKey ? t(secondaryI18nKey): null}
+                secondaryTypographyProps={{ className: 'text-base' }}
+              />
+            </ListItem>
           ))}
-        </ul>
+        </List>
 
         <h2 id="overview" className="h2">
           {t('overview.heading')}
@@ -116,15 +134,10 @@ const Keith: FC = () => {
         <h2 id="prb-choices" className="h2">
           {t('cpp.prb-choices.heading')}
         </h2>
-        <ul className='space-y-2'>
-        {Array(4)
-          .fill(null)
-          .map((_, i) => (
-            <li key={`cpp.prb-choices.list.li${i + 1}`}>
-              <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li${i + 1}`)} />
-            </li>
-          ))}
-        </ul>
+        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li1`)} /></p>
+        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li2`)} /></p>
+        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li3`)} /></p>
+        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li4`)} /></p>
 
         <h2 id="cpp-choices" className="h2">
           {t('cpp.cpp-choices.heading')}
@@ -154,15 +167,23 @@ const Keith: FC = () => {
           {t('cpp.what-else.heading')}
         </h2>
         <p>{t('cpp.what-else.p1')}</p>
-        <ul className='list-disc pl-6 pb-4'>
-        {Array(2)
-          .fill(null)
-          .map((_, i) => (
-            <li key={`cpp.what-else.list.li${i + 1}`}>
-              <Trans ns="learn/case-studies/keith" i18nKey={t(`cpp.what-else.list.li${i + 1}`)} />
-            </li>
+        <List disablePadding className='text-black pl-6 pb-4' sx={{ listStyleType: 'disc'}}>
+          {[
+            {
+              primaryI18nKey: 'cpp.what-else.list.li1',
+            },
+            {
+              primaryI18nKey: 'cpp.what-else.list.li2',
+            },
+          ].map(({ primaryI18nKey }) => (
+            <ListItem key={primaryI18nKey} sx={{ display: 'list-item' }} disablePadding>
+              <ListItemText
+                primary={t(primaryI18nKey)}
+              />
+            </ListItem>
           ))}
-        </ul>
+        </List>
+
         <p>{t('cpp.what-else.p2')}</p>
         <AlertCard type="tip">
           <Trans ns="learn/case-studies/keith" 
