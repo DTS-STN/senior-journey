@@ -117,7 +117,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h3 id="canada-retirement-income-system" className="mb-4 font-display text-3xl font-light">
+        <h3 id="canada-retirement-income-system" className="h3">
           {t('canada-retirement-income-system.header')}
         </h3>
         <h3 className="mb-6 bg-primary-600 p-4 font-display text-2xl font-light text-white">
