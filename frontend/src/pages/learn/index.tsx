@@ -45,11 +45,12 @@ const Learn: FC = () => {
         <h1 className="sr-only">{t('header')}</h1>
         <section className="rounded-3xl bg-[#f5f5f5] ">
           <div className="flex flex-col items-center md:flex-row-reverse">
-            <div className="w-1/2 md:w-1/3 flex flex-row">
-              <Image src="/assets/left.svg" width={34} height={302} className='w-[34px] h-[100%]' alt=''/>
-              <div className='flex flex-row flex-end'>
-                <Image src="/assets/right.svg" width={34} height={302} className='absolute z-30 w-[34px] md:max-h-full' alt=''/>
-                <Image src="/assets/learn-banner.jpg" width={460} height={302} sizes="100%" alt="" className='rounded-2xl md:max-h-full' />
+            <div className="md:w-1/3 flex flex-row">
+              <Image src="/assets/left.svg" width={34} height={302} className='hidden md:block w-[34px] h-[100%]' alt=''/>
+              <div className='relative md:flex md:flex-row md:flex-end'>
+                <Image src="/assets/right.svg" width={34} height={302} className='hidden md:block absolute z-30 w-[34px] md:max-h-full' alt=''/>
+                <Image src="/assets/learn-banner.jpg" width={460} height={302} sizes="100%" alt="" className='rounded-2xl w-[460px]  md:max-h-full' />
+                <Image src="/assets/bottom.svg" width={368} height={34} className='md:hidden absolute bottom-0 z-20 max-w-full' alt=''/>
               </div>
             </div>
             <div className="px-6 pb-10 text-center md:w-2/3 md:pb-0 md:pl-12 md:pt-0 md:text-left lg:w-4/5 lg:pb-4">
