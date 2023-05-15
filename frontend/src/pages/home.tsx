@@ -78,7 +78,7 @@ const Home: FC = () => {
               <h2 className="font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
                 {t('banner.title')}
               </h2>
-              <p className="m-0">{t('banner.text')}</p>
+              <p className="m-0 pt-2 md:pt-4">{t('banner.text')}</p>
             </div>
           </div>
         </section>
