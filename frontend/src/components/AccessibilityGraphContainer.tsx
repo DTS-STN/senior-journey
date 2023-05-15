@@ -27,18 +27,20 @@ const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = 
   }
 
   return (
-    <div className="border-t border-t-primary-500 pb-2">
+    <div className="border-t border-t-primary-500 border-b border-b-primary-500 mb-5">
       <div>
-        <IconButton onClick={handleClick} aria-label={buttonLabel}>
-          {open ? <ExpandMore /> : <ExpandLess />}
+        <IconButton onClick={handleClick} aria-label={buttonLabel} className='text-primary-500'>
+          {open ? <ExpandLess /> : <ExpandMore />}
         </IconButton>
         <span>{buttonLabel}</span>
       </div>
       <Collapse in={open}>
-        <h3 className="font-bold">{descriptionHeading}</h3>
+        <div className='py-6'>
+        <h3 className="font-bold pb-4">{descriptionHeading}</h3>
         <p>{description}</p>
-        <h3 className="font-bold">{valuesHeading}</h3>
+        <h3 className="font-bold pb-4">{valuesHeading}</h3>
         <AccessibilityTable tableData={tableData} />
+        </div>
       </Collapse>
     </div>
   )
