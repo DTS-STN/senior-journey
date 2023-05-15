@@ -47,13 +47,20 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <h2 id="key-takeaways" className="h2 !mt-0">
           {t('key-takeaways.heading')}
         </h2>
-        <ul className="mb-5 list-disc space-y-2 pl-7">
-          <li>{t('key-takeaways.list.public-pensions')}</li>
-          <li>{t('key-takeaways.list.you-can-claim')}</li>
-          <li>{t('key-takeaways.list.to-make-a-wise')}</li>
-          <li>{t('key-takeaways.list.consider-using')}</li>
+        <ul className="space-y-2">
+          {Array(8)
+            .fill(null)
+            .map((_, i) => (
+              <li key={`key-takeaways.li${i + 1}`} className={i % 2 ? 'text-md border-b pb-4 opacity-80' : 'text-lg'}>
+                {t(`key-takeaways.li${i + 1}`)}
+              </li>
+            ))}
         </ul>
-        <p>{t('key-takeaways.content-one')}</p>
+
+        <h2 id="overview" className="h2">
+          {t('overview.heading')}
+        </h2>
+        <p>{t('overview.p1')}</p>
 
         <h2 id="old-age-security" className="h2">
           {t('old-age-security.heading')}

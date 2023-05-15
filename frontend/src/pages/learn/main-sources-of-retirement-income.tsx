@@ -60,7 +60,20 @@ const MainSourcesOfRetirementIncome: FC = () => {
           },
         ]}
       >
-        <h2 id="overview" className="sr-only">
+        <h2 id="key-takeaways" className="h2 !mt-0">
+          {t('key-takeaways.heading')}
+        </h2>
+        <ul className="space-y-2">
+          {Array(10)
+            .fill(null)
+            .map((_, i) => (
+              <li key={`key-takeaways.li${i + 1}`} className={i % 2 ? 'text-md border-b pb-4 opacity-80' : 'text-lg'}>
+                {t(`key-takeaways.li${i + 1}`)}
+              </li>
+            ))}
+        </ul>
+
+        <h2 id="overview" className="h2">
           {t('overview.header')}
         </h2>
         <p>{t('overview.paragraph-1')}</p>
@@ -80,9 +93,9 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h2 id="canada-retirement-income-system" className="h2">
+        <h3 id="canada-retirement-income-system" className="mb-4 font-display text-3xl font-light">
           {t('canada-retirement-income-system.header')}
-        </h2>
+        </h3>
         <h3 className="mb-6 bg-primary-600 p-4 font-display text-2xl font-light text-white">
           {t('canada-retirement-income-system.three-pillar-system')}
         </h3>

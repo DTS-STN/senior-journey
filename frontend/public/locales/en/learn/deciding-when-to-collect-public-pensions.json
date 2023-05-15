@@ -11,14 +11,19 @@
   },
   "header": "Deciding when to collect public pensions",
   "key-takeaways": {
-    "heading": "Key Takeaways",
-    "list": {
-      "public-pensions": "Public pensions in Canada offer a great degree of flexibility for when to start and how much you can receive in pension income.",
-      "you-can-claim": "You can claim your CPP retirement any time between age 60 and 70, and your OAS between 65 and 70. The longer you wait, the larger your monthly pension will be. However, for the low-income individuals the Guaranteed Income Supplement (GIS) could make a large difference and such clients should not delay to apply for public pensions.",
-      "to-make-a-wise": "To make a wise decision in your personal circumstances, you need to consider many different factors, such as your health and longevity, other sources of retirement income, your and your spouse's plans for retirement.",
-      "consider-using": "Consider using the lifetime pension amount to determine whether to take your benefits early or delay instead of the monthly payment amount."
-    },
-    "content-one": "Public pensions such as the Old Age Security (OAS) and Canada Pension Plan (CPP) are intended to provide a basic, secure and inflation-proof income that you and your family can rely on. One of the most important decisions you can make related to your retirement benefits is knowing when to take them. We understand this can be a difficult choice and our goal is to explain how your decision at what age to begin your OAS and CPP may change your pensions amounts."
+    "heading": "Key takeaways",
+    "li1": "You can claim your Canada Pension Plan (CPP) retirement any time between age 60 and 70, and your Old Age Security (OAS) pension between 65 and 70",
+    "li2": "The longer you wait, the larger your monthly pension will be. For low-income individuals the Guaranteed Income Supplement (GIS) could make a large difference and shouldn't delay to apply for public pensions.",
+    "li3": "Consider your personal circumstances for retirement.",
+    "li4": "Think about your health and longevity, other sources of retirement income, you and your spouse's plans for retirement.",
+    "li5": "Use both the lifetime pension amount and monthly payment amount to decide when to take your public pensions.",
+    "li6": "The amount of money you could get over your lifetime gives you a bigger picture than just your monthly amount.",
+    "li7": "You could more than double your CPP pension if you delay it from age 60 to 70.",
+    "li8": "The public pensions provide a stable and inflation-proof income that you can rely on for life. Delaying your OAS and CPP pensions would reduce the risk of outliving your savings."
+  },
+  "overview": {
+    "heading": "Overview",
+    "p1": "The Old Age Security (OAS) and Canada Pension Plan (CPP) pensions are meant to be a basic, secure and inflation-proof income that you can rely on. An important decision you have to make for your public pensions is when to take them. Our goal is to explain how the age you start your OAS and CPP can change your pensions amounts."
   },
   "old-age-security": {
     "heading": "Old Age Security (OAS) Pension",
