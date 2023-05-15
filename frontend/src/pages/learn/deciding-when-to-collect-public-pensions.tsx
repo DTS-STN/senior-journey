@@ -151,7 +151,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         {t('cpp-pension.heading')}
       </h2>
       <p>{t('cpp-pension.content-one')}</p>
-      <AlertCard type="important">
+      <AlertCard type="tip">
         <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
       </AlertCard>
       <div>
