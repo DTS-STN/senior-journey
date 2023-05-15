@@ -62,17 +62,23 @@ const Home: FC = () => {
       <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
       <h1 className="sr-only">{t('header')}</h1>
 
-      <Container className="mb-10">
+      <Container className="">
         <section className="rounded-3xl bg-gray-surface ">
-          <div className="flex flex-col items-center pt-10 md:flex-row-reverse">
-            <div className="mb-4 w-2/3 md:mb-0 md:w-2/3 lg:w-3/5">
-              <Image src="/assets/banner.svg" width={742} height={548} sizes="100%" alt="" priority />
+          <div className="flex flex-col items-center md:flex-row-reverse  md:max-h-[300px]">
+            <div className="md:mb-0 md:w-2/3 lg:w-2/5 flex flex-col md:flex-row">
+              <Image src="/assets/left.svg" width={34} height={302} className='hidden md:block w-[34px] h-[100%]' alt=''/>
+              <div className='relative md:flex md:flex-row md:flex-end'>              
+              <Image src="/assets/right.svg" width={34} height={302} className='hidden md:block absolute z-30 w-[34px] md:max-h-[300px]' alt=''/>
+                <Image src="/assets/landing-page.jpg" width={460} height={302} sizes="100%" alt="" className='rounded-2xl w-full  md:max-h-[300px]' />
+                <Image src="/assets/bottom-top.svg" width={368} height={34} className='md:hidden absolute bottom-0 z-20 w-full max-w-full' alt=''/>
+              </div>
+              <Image src="/assets/bottom-bottom.svg" width={468} height={34} className='md:hidden w-full max-w-full' alt=''/>
             </div>
-            <div className="px-6 pb-4 md:w-2/3 md:pl-14 lg:w-4/5">
-              <h2 className="mb-4 font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
+            <div className="pt-12 md:pt-8 pb-6 px-6 md:w-2/3 md:pl-14 lg:w-4/5">
+              <h2 className="font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
                 {t('banner.title')}
               </h2>
-              <p className="m-0">{t('banner.text')}</p>
+              <p className="m-0 pt-2 md:pt-4">{t('banner.text')}</p>
             </div>
           </div>
         </section>

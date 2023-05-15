@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { Paper } from '@mui/material'
+import { List, ListItem, ListItemText, Paper } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -47,13 +47,40 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <h2 id="key-takeaways" className="h2 !mt-0">
           {t('key-takeaways.heading')}
         </h2>
-        <ul className="mb-5 list-disc space-y-2 pl-7">
-          <li>{t('key-takeaways.list.public-pensions')}</li>
-          <li>{t('key-takeaways.list.you-can-claim')}</li>
-          <li>{t('key-takeaways.list.to-make-a-wise')}</li>
-          <li>{t('key-takeaways.list.consider-using')}</li>
-        </ul>
-        <p>{t('key-takeaways.content-one')}</p>
+        <List disablePadding>
+          {[
+            {
+              primaryI18nKey: 'key-takeaways.cpp-oas.header',
+              secondaryI18nKey: 'key-takeaways.cpp-oas.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.personal-circumstances.header',
+              secondaryI18nKey: 'key-takeaways.personal-circumstances.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.lifetime-and-monthly.header',
+              secondaryI18nKey: 'key-takeaways.lifetime-and-monthly.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.double-and-delay.header',
+              secondaryI18nKey: 'key-takeaways.double-and-delay.description',
+            },
+          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
+            <ListItem key={primaryI18nKey} className="border-b">
+              <ListItemText
+                primary={t(primaryI18nKey)}
+                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display py-2' }}
+                secondary={t(secondaryI18nKey)}
+                secondaryTypographyProps={{ className: 'text-base' }}
+              />
+            </ListItem>
+          ))}
+        </List>
+
+        <h2 id="overview" className="h2">
+          {t('overview.heading')}
+        </h2>
+        <p>{t('overview.p1')}</p>
 
         <h2 id="old-age-security" className="h2">
           {t('old-age-security.heading')}

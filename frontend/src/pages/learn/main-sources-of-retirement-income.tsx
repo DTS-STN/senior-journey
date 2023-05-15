@@ -60,7 +60,44 @@ const MainSourcesOfRetirementIncome: FC = () => {
           },
         ]}
       >
-        <h2 id="overview" className="sr-only">
+        <h2 id="key-takeaways" className="h2 !mt-0">
+          {t('key-takeaways.heading')}
+        </h2>
+        <List disablePadding>
+          {[
+            {
+              primaryI18nKey: 'key-takeaways.cpp-oas.header',
+              secondaryI18nKey: 'key-takeaways.cpp-oas.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.cpp-oas-retirement-income-plan.header',
+              secondaryI18nKey: 'key-takeaways.cpp-oas-retirement-income-plan.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.cpp-oas-adjusted-for-inflation.header',
+              secondaryI18nKey: 'key-takeaways.cpp-oas-adjusted-for-inflation.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.cpp-oas-taxable-income.header',
+              secondaryI18nKey: 'key-takeaways.cpp-oas-taxable-income.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.not-need-to-stop-working.header',
+              secondaryI18nKey: 'key-takeaways.not-need-to-stop-working.description',
+            },
+          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
+            <ListItem key={primaryI18nKey} className="border-b">
+              <ListItemText
+                primary={t(primaryI18nKey)}
+                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display py-2' }}
+                secondary={t(secondaryI18nKey)}
+                secondaryTypographyProps={{ className: 'text-base' }}
+              />
+            </ListItem>
+          ))}
+        </List>
+
+        <h2 id="overview" className="h2">
           {t('overview.header')}
         </h2>
         <p>{t('overview.paragraph-1')}</p>
@@ -80,9 +117,9 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h2 id="canada-retirement-income-system" className="h2">
+        <h3 id="canada-retirement-income-system" className="h3">
           {t('canada-retirement-income-system.header')}
-        </h2>
+        </h3>
         <h3 className="mb-6 bg-primary-600 p-4 font-display text-2xl font-light text-white">
           {t('canada-retirement-income-system.three-pillar-system')}
         </h3>
