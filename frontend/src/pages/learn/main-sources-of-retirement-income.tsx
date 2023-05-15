@@ -86,10 +86,10 @@ const MainSourcesOfRetirementIncome: FC = () => {
               secondaryI18nKey: 'key-takeaways.not-need-to-stop-working.description',
             },
           ].map(({ primaryI18nKey, secondaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} disablePadding className="border-b">
+            <ListItem key={primaryI18nKey} className="border-b">
               <ListItemText
                 primary={t(primaryI18nKey)}
-                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display' }}
+                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display py-2' }}
                 secondary={t(secondaryI18nKey)}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />

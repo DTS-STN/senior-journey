@@ -9,17 +9,25 @@
       "link": "/learn"
     }
   },
-  "header": "Deciding when to collect public pensions",
+  "header": "When to collect public pensions",
   "key-takeaways": {
     "heading": "Key takeaways",
-    "li1": "You can claim your Canada Pension Plan (CPP) retirement any time between age 60 and 70, and your Old Age Security (OAS) pension between 65 and 70",
-    "li2": "The longer you wait, the larger your monthly pension will be. For low-income individuals the Guaranteed Income Supplement (GIS) could make a large difference and shouldn't delay to apply for public pensions.",
-    "li3": "Consider your personal circumstances for retirement.",
-    "li4": "Think about your health and longevity, other sources of retirement income, you and your spouse's plans for retirement.",
-    "li5": "Use both the lifetime pension amount and monthly payment amount to decide when to take your public pensions.",
-    "li6": "The amount of money you could get over your lifetime gives you a bigger picture than just your monthly amount.",
-    "li7": "You could more than double your CPP pension if you delay it from age 60 to 70.",
-    "li8": "The public pensions provide a stable and inflation-proof income that you can rely on for life. Delaying your OAS and CPP pensions would reduce the risk of outliving your savings."
+    "cpp-oas": {
+      "header":  "You can claim your Canada Pension Plan (CPP) retirement any time between age 60 and 70, and your Old Age Security (OAS) pension between 65 and 70",
+      "description": "The longer you wait, the larger your monthly pension will be. For low-income individuals the Guaranteed Income Supplement (GIS) could make a large difference and shouldn't delay to apply for public pensions."
+    },
+    "personal-circumstances": {
+      "header": "Consider your personal circumstances for retirement.",
+      "description": "Think about your health and longevity, other sources of retirement income, you and your spouse's plans for retirement."
+    },
+    "lifetime-and-monthly": {
+      "header": "Use both the lifetime pension amount and monthly payment amount to decide when to take your public pensions.",
+      "description": "The amount of money you could get over your lifetime gives you a bigger picture than just your monthly amount."
+    },
+    "double-and-delay": {
+      "header": "You could more than double your CPP pension if you delay it from age 60 to 70.",
+      "description": "The public pensions provide a stable and inflation-proof income that you can rely on for life. Delaying your OAS and CPP pensions would reduce the risk of outliving your savings."
+    }
   },
   "overview": {
     "heading": "Overview",

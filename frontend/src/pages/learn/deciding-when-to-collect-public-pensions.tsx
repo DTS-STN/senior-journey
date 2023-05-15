@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { Paper } from '@mui/material'
+import { List, ListItem, ListItemText, Paper } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -47,15 +47,35 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <h2 id="key-takeaways" className="h2 !mt-0">
           {t('key-takeaways.heading')}
         </h2>
-        <ul className="space-y-2">
-          {Array(8)
-            .fill(null)
-            .map((_, i) => (
-              <li key={`key-takeaways.li${i + 1}`} className={i % 2 ? 'text-md border-b pb-4 opacity-80' : 'text-lg'}>
-                {t(`key-takeaways.li${i + 1}`)}
-              </li>
-            ))}
-        </ul>
+        <List disablePadding>
+          {[
+            {
+              primaryI18nKey: 'key-takeaways.cpp-oas.header',
+              secondaryI18nKey: 'key-takeaways.cpp-oas.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.personal-circumstances.header',
+              secondaryI18nKey: 'key-takeaways.personal-circumstances.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.lifetime-and-monthly.header',
+              secondaryI18nKey: 'key-takeaways.lifetime-and-monthly.description',
+            },
+            {
+              primaryI18nKey: 'key-takeaways.double-and-delay.header',
+              secondaryI18nKey: 'key-takeaways.double-and-delay.description',
+            },
+          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
+            <ListItem key={primaryI18nKey} className="border-b">
+              <ListItemText
+                primary={t(primaryI18nKey)}
+                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display py-2' }}
+                secondary={t(secondaryI18nKey)}
+                secondaryTypographyProps={{ className: 'text-base' }}
+              />
+            </ListItem>
+          ))}
+        </List>
 
         <h2 id="overview" className="h2">
           {t('overview.heading')}

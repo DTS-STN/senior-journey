@@ -49,8 +49,8 @@ const Learn: FC = () => {
               <Image src="/assets/left.svg" width={34} height={302} className='hidden md:block w-[34px] h-[100%]' alt=''/>
               <div className='relative md:flex md:flex-row md:flex-end'>
                 <Image src="/assets/right.svg" width={34} height={302} className='hidden md:block absolute z-30 w-[34px] md:max-h-full' alt=''/>
-                <Image src="/assets/learn-banner.jpg" width={460} height={302} sizes="100%" alt="" className='rounded-2xl w-[460px]  md:max-h-full' />
-                <Image src="/assets/bottom-top.svg" width={368} height={34} className='md:hidden absolute bottom-0 z-20 max-w-full' alt=''/>
+                <Image src="/assets/learn-banner.jpg" width={460} height={302} sizes="100%" alt="" className='rounded-2xl w-[460px] md:max-h-full' />
+                <Image src="/assets/bottom-top.svg" width={368} height={34} className='md:hidden absolute bottom-0 z-20 w-full max-w-full' alt=''/>
               </div>
               <Image src="/assets/bottom-bottom.svg" width={468} height={34} className='md:hidden' alt=''/>
             </div>
