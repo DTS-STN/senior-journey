@@ -85,7 +85,7 @@ const Learn: FC = () => {
                           image={t(`sections.${index}.cards.${cardIndex}.image`)}
                           className="h-64 w-full object-cover"
                           />
-                        <Image src="/assets/bottom.svg" width={2000} height={50} className='absolute z-30 w-full md:max-h-[300px]' alt=''/>
+                        <Image src="/assets/bottom-top.svg" width={2000} height={50} className='absolute z-30 w-full md:max-h-[300px]' alt=''/>
                       </div>
                       <CardContent>
                         <p className="mb-2 font-display text-sm font-bold">
