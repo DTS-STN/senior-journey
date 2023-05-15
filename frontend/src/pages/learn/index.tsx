@@ -45,15 +45,16 @@ const Learn: FC = () => {
         <h1 className="sr-only">{t('header')}</h1>
         <section className="rounded-3xl bg-[#f5f5f5] ">
           <div className="flex flex-col items-center md:flex-row-reverse">
-            <div className="md:w-1/3 flex flex-row">
+            <div className="md:w-1/3 flex flex-col  md:flex-row">
               <Image src="/assets/left.svg" width={34} height={302} className='hidden md:block w-[34px] h-[100%]' alt=''/>
               <div className='relative md:flex md:flex-row md:flex-end'>
                 <Image src="/assets/right.svg" width={34} height={302} className='hidden md:block absolute z-30 w-[34px] md:max-h-full' alt=''/>
                 <Image src="/assets/learn-banner.jpg" width={460} height={302} sizes="100%" alt="" className='rounded-2xl w-[460px]  md:max-h-full' />
-                <Image src="/assets/bottom.svg" width={368} height={34} className='md:hidden absolute bottom-0 z-20 max-w-full' alt=''/>
+                <Image src="/assets/bottom-top.svg" width={368} height={34} className='md:hidden absolute bottom-0 z-20 max-w-full' alt=''/>
               </div>
+              <Image src="/assets/bottom-bottom.svg" width={468} height={34} className='md:hidden' alt=''/>
             </div>
-            <div className="px-6 pb-10 text-center md:w-2/3 md:pb-0 md:pl-12 md:pt-0 md:text-left lg:w-4/5 lg:pb-4">
+            <div className="pt-12 px-6 pb-10 text-center md:w-2/3 md:pb-0 md:pl-12 md:pt-0 md:text-left lg:w-4/5 lg:pb-4">
               <h2 className="mb-4 text-left font-display text-5xl font-bold text-primary-700">{t('banner.title')}</h2>
               <p className="pb-4 text-left text-lg font-normal md:w-4/5">{t('banner.text')}</p>
               <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
