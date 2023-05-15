@@ -77,7 +77,7 @@ const Learn: FC = () => {
                       className="h-full"
                       aria-describedby={`section-${index}-card-${cardIndex}`}
                     >
-                      <div className='flex flex-col-reverse'>
+                      <div className="relative">
 
                         <CardMedia
                           component="img"
