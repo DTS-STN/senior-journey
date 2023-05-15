@@ -62,14 +62,18 @@ const Home: FC = () => {
       <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
       <h1 className="sr-only">{t('header')}</h1>
 
-      <Container className="mb-10">
+      <Container className="">
         <section className="rounded-3xl bg-gray-surface ">
-          <div className="flex flex-col items-center pt-10 md:flex-row-reverse">
-            <div className="mb-4 w-2/3 md:mb-0 md:w-2/3 lg:w-3/5">
-              <Image src="/assets/banner.svg" width={742} height={548} sizes="100%" alt="" priority />
+          <div className="flex flex-col items-center md:flex-row-reverse  md:max-h-[300px]">
+            <div className="w-2/3 md:mb-0 md:w-2/3 lg:w-2/5 flex flex-cols">
+              <Image src="/assets/left.svg" width={34} height={302} className='w-[34px] h-[100%]' alt=''/>
+              <div className='flex flex-row flex-start'>
+                <Image src="/assets/right.svg" width={34} height={302} className='absolute z-30 w-[34px] md:max-h-[300px]' alt=''/>
+                <Image src="/assets/landing-page.jpg" width={460} height={302} sizes="100%" alt="" className='right-0 rounded-2xl md:max-h-[300px]' />
+              </div>
             </div>
-            <div className="px-6 pb-4 md:w-2/3 md:pl-14 lg:w-4/5">
-              <h2 className="mb-4 font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
+            <div className="px-6 md:w-2/3 md:pl-14 lg:w-4/5">
+              <h2 className="font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
                 {t('banner.title')}
               </h2>
               <p className="m-0">{t('banner.text')}</p>
