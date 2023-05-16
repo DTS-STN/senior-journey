@@ -1,4 +1,10 @@
 {
+  "breadcrumbs": {
+    "home": {
+      "text": "(FR) Retirement Hub",
+      "link": "/"
+    }
+  },
   "landing": {
     "header": "(FR) Retirement Ready Quiz",
     "p1": "(FR) Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
