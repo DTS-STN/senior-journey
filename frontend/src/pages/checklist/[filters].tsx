@@ -235,20 +235,20 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
       return validatedFilters.answers.some((answer) => answer === answerKey)
     }
 
-    const applyingBenefitsDtos = tasksGroupDtoMapper.toDto({
-      ...applyingBenefits,
-      tasks: applyingBenefitsTasks.filter(filterTasksByAnswers),
-    })
+    const applyingBenefitsDtos = tasksGroupDtoMapper.toDto(
+      { ...applyingBenefits, tasks: applyingBenefitsTasks.filter(filterTasksByAnswers) },
+      locale
+    )
 
-    const beforeRetiringDtos = tasksGroupDtoMapper.toDto({
-      ...beforeRetiring,
-      tasks: beforeRetiringTasks.filter(filterTasksByAnswers),
-    })
+    const beforeRetiringDtos = tasksGroupDtoMapper.toDto(
+      { ...beforeRetiring, tasks: beforeRetiringTasks.filter(filterTasksByAnswers) },
+      locale
+    )
 
-    const receivingBenefitsDtos = tasksGroupDtoMapper.toDto({
-      ...receivingBenefits,
-      tasks: receivingBenefitsTasks.filter(filterTasksByAnswers),
-    })
+    const receivingBenefitsDtos = tasksGroupDtoMapper.toDto(
+      { ...receivingBenefits, tasks: receivingBenefitsTasks.filter(filterTasksByAnswers) },
+      locale
+    )
 
     return {
       props: {
