@@ -221,7 +221,7 @@ const Bonnie: FC = () => {
           valuesHeading={t('values-heading')}
         />
 
-        <h2 id="early-pension" className="h2">
+        <h2 id="conclusion" className="h2">
           {t('conclusion.heading')}
         </h2>
         <p>{t('conclusion.p1')}</p>
