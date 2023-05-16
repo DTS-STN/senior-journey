@@ -9,12 +9,12 @@
   },
   "banner": {
     "title": "Not sure where to begin? Take the quiz!",
-    "text": "Take our quiz and receive a personalized checklist to help guide you through retirement.",
+    "text": "Receive a personalized checklist to guide you through retirement.",
     "quiz": "Take the quiz now!"
   },
   "sections": [
     {
-      "title": "Managing your money in retirement",
+      "title": "Exploring your retirement income choices",
       "body": "Prepare for old age by exploring retirement income sources and learn how to manage your money after you retire.",
       "cards": [
         {
@@ -25,9 +25,9 @@
           "link": "/learn/main-sources-of-retirement-income"
         },
         {
-          "title": "Planning to save for retirement",
+          "title": "Planning your retirement",
           "read": "5 min read",
-          "body": "Explore how to maximize your savings and better manage your money in retirement.",
+          "body": "RRIF, savings strategy",
           "image": "/assets/planning-to-save-for-retirement-sm.jpg",
           "link": "/learn/planning-to-save-for-retirement"
         }
@@ -38,14 +38,14 @@
       "body": "Feel more confident about your choices in retirement. Use these resources to better understand your options and their impact on your benefits.",
       "cards": [
         {
-          "title": "When to take government pensions",
+          "title": "When to take public pensions",
           "read": "8 min read",
-          "body": "You can choose when to start your old age benefits. Understand what to consider in making that decision.",
+          "body": "Flexible OAS/CPP pensions offer choice for retirement. Learn how to choose and what to consider.",
           "image": "/assets/deciding-when-to-collect-public-pensions-sm.jpg",
           "link": "/learn/deciding-when-to-collect-public-pensions"
         },
         {
-          "title": "Going from work to retirement",
+          "title": "Options for working during retirement",
           "read": "7 min read",
           "body": "Many Canadians continue to work in retirement. Learn how the money you earn has an impact on your benefits.",
           "image": "/assets/going-from-work-to-retirement-sm.jpg",

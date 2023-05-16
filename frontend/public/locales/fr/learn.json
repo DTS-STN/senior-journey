@@ -3,70 +3,70 @@
   "explore": "(FR) Explore our content",
   "breadcrumbs": {
     "home": {
-      "text": "(FR) Retirement Hub",
+      "text": "Carrefour retraite",
       "link": "/"
     }
   },
   "banner": {
-    "title": "(FR) Not sure where to begin? Take the quiz!",
-    "text": "(FR) Take our quiz and receive a personalized checklist to help guide you through retirement.",
-    "quiz": "(FR) Take the quiz now!"
+    "title": "Vous ne savez pas par où commencer. Répondez à notre questionnaire!",
+    "text": "Recevez une liste de vérification personnalisée pour vous guider tout au long de votre retraite.",
+    "quiz": "Répondez au questionnaire maintenant!"
   },
   "sections": [
     {
-      "title": "(FR) Managing your money in retirement",
-      "body": "(FR) Prepare for a comfortable retirement by exploring our money management section, which includes guidance on personal savings, identifying potential income sources, tax implications, and more - all with CPP and OAS benefits in mind.",
+      "title": "Gérer votre argent à la retraite",
+      "body": "Préparez votre vieillesse en examinant les différentes sources de revenus de retraite et apprenez à gérer votre argent une fois à la retraite.",
       "cards": [
         {
-          "title": "(FR) Main sources of retirement income",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Learn about public & private pensions, personal savings and investments.",
+          "title": "Principales sources de revenus de retraite",
+          "read": "Temps de lecture : 9 minutes",
+          "body": "Renseignez-vous sur les prestations de vieillesse, les régimes privés d'épargne-retraite et la manière dont ils fonctionnent ensemble",
           "image": "/assets/main-sources-of-retirement-income-sm.jpg",
           "link": "/learn/main-sources-of-retirement-income"
         },
         {
-          "title": "(FR) Planning to save for retirement",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Learn how to maximize your savings and to better manage your money in retirement.",
+          "title": "Planifiez pour épargner en vue de la retraite",
+          "read": "Temps de lecture: 5 minutes",
+          "body": "Découvrez comment maximiser votre épargne et mieux gérer votre argent à la retraite.",
           "image": "/assets/planning-to-save-for-retirement-sm.jpg",
           "link": "/learn/planning-to-save-for-retirement"
         }
       ]
     },
     {
-      "title": "(FR) Making retirement decisions",
-      "body": "(FR) Gain clarity and confidence when making retirement decisions with our comprehensive section on CPP and OAS pension timing and transitioning from work, designed to support and empower you on your retirement journey.",
+      "title": "Prendre des décisions concernant la retraite",
+      "body": "Soyez plus confiant dans les choix que vous faites concernant votre retraite. Utilisez ces ressources pour mieux comprendre les options qui s'offrent à vous et leur incidence sur vos prestations.",
       "cards": [
         {
-          "title": "(FR) When to take government pensions",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "title": "Quand commencer à recevoir des pensions gouvernementales",
+          "read": "Temps de lecture : 9 minutes",
+          "body": "Vous pouvez choisir le moment où vous souhaitez commencer à recevoir vos prestations de vieillesse. Assurez-vous de bien comprendre les éléments dont il faut tenir compte pour prendre cette décision.",
           "image": "/assets/deciding-when-to-collect-public-pensions-sm.jpg",
           "link": "/learn/deciding-when-to-collect-public-pensions"
         },
         {
-          "title": "(FR) Going from work to retirement",
-          "read": "(FR) 7 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
+          "title": "Working during retirement",
+          "read": "Temps de lecture: 7 minutes",
+          "body": "De nombreux Canadiens continuent à travailler pendant la retraite. Découvrez l'incidence que peuvent avoir les sommes que vous gagnez sur vos prestations.",
           "image": "/assets/going-from-work-to-retirement-sm.jpg",
           "link": "/learn/going-from-work-to-retirement"
         },
         {
-          "title": "(FR) Rules of thumb for public pensions",
-          "read": "(FR) 5 min read",
-          "body": "(FR) Pension tips based on your personal situation.",
+          "title": "Règles générales concernant les prestations de vieillesse fédérales",
+          "read": "Temps de lecture: 5 minutes",
+          "body": "Conseils en matière de pension selon votre situation personnelle.",
           "image": "/assets/rules-of-thumb-for-public-pensions-sm.jpg",
           "link": "/learn/rules-of-thumb-for-public-pensions"
         }
       ]
     },
     {
-      "title": "(FR) Federal benefit scenarios: from retirees to new pensioners",
-      "body": "(FR) Not sure when to retire? Learn about the different choices people make about their public pensions and how it impacts their lives. These stories give valuable lessons and inspiration for people looking to plan their own retirement.",
+      "title": "Histoires réelles de retraite",
+      "body": "Vous ne savez pas quand prendre votre retraite. Lisez les histoires dont certaines personnes nous ont fait part. Découvrez les différents choix et comparez-les à votre situation personnelle.",
       "cards": [
         {
           "title": "(FR) Fred decides when to take his public pensions",
-          "read": "(FR) 9 min read",
+          "read": "Temps de lecture: 9 minutes",
           "body": "(FR) As Fred can afford to wait, he decides to delay. This will increase his monthly and lifetime pensions.",
           "image": "/assets/fred-decides-when-to-take-his-pensions-sm.jpg",
           "link": "/learn/case-studies/fred"
