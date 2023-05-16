@@ -78,7 +78,7 @@ const Quiz: FC = () => {
           onClick={handleOnQuizDialogTriggerClick}
           data-cy="button-start-the-quiz"
           size="large"
-          className="w-full md:w-1/2"
+          className="w-full"
         >
           {t('landing.start-the-quiz')}
         </Button>

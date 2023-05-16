@@ -1,91 +1,91 @@
 {
   "breadcrumbs": {
     "home": {
-      "text": "(FR) Retirement Hub",
+      "text": "Carrefour retraite",
       "link": "/"
     }
   },
   "landing": {
-    "header": "(FR) Retirement Ready Quiz",
-    "p1": "(FR) Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
-    "p2": "(FR) Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
-    "whatyouneed": "(FR) What you'll need",
-    "p3": "(FR) You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
-    "legal": "(FR) <strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
-    "residence": "(FR) <strong>residence history</strong> (number of years lived in Canada)",
-    "marital": "(FR) <strong>marital status</strong>",
-    "retirement": "(FR) <strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
-    "timetocomplete": "(FR) Time to complete survey",
-    "minutes": "(FR) 3 minutes",
-    "start-the-quiz": "(FR) Start the quiz"
+    "header": "Questionnaire sur la préparation à la retraite",
+    "p1": "Vous n'être pas sûr d'avoir tout fait pour prendre votre retraite? Répondez à ce questionnaire comme première étape sur votre liste de contrôle pour la retraite.",
+    "p2": "Vos réponses aideront à identifier les pensions et prestations publiques dont vous pourriez bénéficier. Ils vous guideront également sur ce qu'il faut prendre en considération pour mieux préparer votre retraite.",
+    "whatyouneed": "De quoi aurez-vous besoin",
+    "p3": "Vous n'avez besoin d'aucune information particulière pour répondre à ce questionnaire. Pour créer la liste de contrôle de retraite la plus appropriée à votre situation , vous devrez fournir des informations sur les éléments suivants\u00a0:",
+    "legal": "<strong>Votre statut légal</strong> (tel que citoyen canadien, statut d'Indien ou résident permanent)",
+    "residence": "<strong>Votre historique de résidence</strong> (nombre d'années vécues au Canada)",
+    "marital": "<strong>État civil</strong>",
+    "retirement": "<strong>Plan de retraite</strong> (quand vous prévoyez prendre votre retraite, où vous prévoyez vivre à la retraite, etc.)",
+    "timetocomplete": "Temps nécessaire pour répondre au questionnaire",
+    "minutes": "3 minutes",
+    "start-the-quiz": "Commencez le questionnaire"
   },
   "confirmation": {
-    "sure": "(FR) Are you sure you want to close this quiz? You will lose your progress.",
+    "sure": "Vous êtes sûr que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu’à maintenant.",
     "no": {
       "id": "no-button",
-      "text": "(FR) No, Return to Quiz"
+      "text": "Non, retournez au questionnaire"
     },
     "yes": {
       "id": "yes-button",
-      "text": "(FR) Yes, Close"
+      "text": "Oui, annulé"
     }
   },
   "navigation": {
     "previous": {
       "id": "previous-button",
-      "text": "(FR) Previous Question"
+      "text": "Question précédente"
     },
     "next": {
       "id": "next-button",
-      "text": "(FR) Next Question"
+      "text": "Prochaine question"
     },
     "submit": {
       "id": "submit-button",
-      "text": "(FR) Submit"
+      "text": "Soumettre"
     },
     "close": {
       "id": "close-button",
-      "text": "(FR) Close"
+      "text": "Quitter"
     },
-    "title": "(FR) Retirement Ready Quiz",
-    "of": "(FR) of",
+    "title": "Questionnaire sur la préparation à la retraite",
+    "of": "de",
     "progress": {
       "id": "progress-bar",
-      "label": "progress-label"
+      "label": "barre de progression"
     }
   },
   "questions": {
     "question-when": {
       "id": "question-when",
-      "title": "(FR) When do you plan on retiring?",
+      "title": "Quand comptez-vous prendre votre retraite?",
       "option-pre-60": {
         "id": "pre-60-button",
-        "text": "(FR) Before Age 60",
+        "text": "Avant 60 ans",
         "value": "pre-60"
       },
       "option-between-60-and-65": {
         "id": "between-60-and-65-button",
-        "text": "(FR) Between ages 60 and 65",
+        "text": "De 60 à 64 ans",
         "value": "between-60-and-65"
       },
       "option-at-65": {
         "id": "at-65-button",
-        "text": "(FR) At Age 65",
+        "text": "À 65 ans",
         "value": "at-65"
       },
       "option-between-65-and-70": {
         "id": "between-65-and-70-button",
-        "text": "(FR) Between ages 65 and 70",
+        "text": "De 66 à 70 ans",
         "value": "between-65-and-70"
       },
       "option-after-70": {
         "id": "after-70-button",
-        "text": "(FR) After Age 70",
+        "text": "Après 70 ans",
         "value": "after-70"
       },
       "option-unsure-retirement-age": {
         "id": "unsure-retirement-age-button",
-        "text": "(FR) Not sure",
+        "text": "Je ne sais pas",
         "value": "unsure-retirement-age"
       }
     },
@@ -93,181 +93,181 @@
       "id": "question-apply",
       "question-marital-status": {
         "id": "apply-subquestion-marital-status",
-        "title": "(FR) Select all that apply to you. You are...",
+        "title": "Veuillez sélectionner tous les énoncés qui s'appliquent à vous.",
         "option-single": {
           "id": "single-button",
-          "text": "(FR) Single",
+          "text": "Célibataire",
           "value": "single"
         },
         "option-married-or-cl": {
           "id": "married-or-cl-button",
-          "text": "(FR) Married or common-law",
+          "text": "Marié(e) ou en union de fait",
           "value": "married-or-cl"
         },
         "option-divorced-or-separated": {
           "id": "divorced-or-separated-button",
-          "text": "(FR) Divorced or separated",
+          "text": "Divorcé(e) ou séparé(e)",
           "value": "divorced-or-separated"
         },
         "option-widowed": {
           "id": "widowed-button",
-          "text": "(FR) Widowed",
+          "text": "Veuf ou veuve",
           "value": "widowed"
         }
       },
       "question-children": {
         "id": "apply-subquestion-children",
-        "title": "(FR) Do you have children?",
+        "title": "Avez-vous des enfants?",
         "option-yes-kids": {
           "id": "yes-kids-button",
-          "text": "(FR) Yes",
+          "text": "Oui",
           "value": "yes-kids"
         },
         "option-no-kids": {
           "id": "no-kids-button",
-          "text": "(FR) No",
+          "text": "Non",
           "value": "no-kids"
         }
       }
     },
     "question-feel": {
       "id": "question-feel-button",
-      "title": "(FR) How financially prepared do you feel for retirement?",
-      "subtitle": "(FR) Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
+      "title": "Dans quelle mesure vous sentez-vous prêt(e) financièrement à prendre votre retraite?",
+      "subtitle": "Êtes-vous sûr d'avoir suffisamment d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
       "option-very-unprepared": {
         "id": "very-unprepared-button",
-        "text": "(FR) Very unprepared",
+        "text": "Très peu préparé(e)",
         "value": "very-unprepared"
       },
       "option-unprepared": {
         "id": "unprepared-button",
-        "text": "(FR) Unprepared",
+        "text": "Peu préparé(e)",
         "value": "unprepared"
       },
       "option-unsure-preparedness": {
         "id": "unsure-preparedness-button",
-        "text": "(FR) Not sure",
+        "text": "Je ne sais pas",
         "value": "unsure-preparedness"
       },
       "option-prepared": {
         "id": "prepared-button",
-        "text": "(FR) Prepared",
+        "text": "Préparé(e)",
         "value": "prepared"
       },
       "option-very-prepared": {
         "id": "very-prepared-button",
-        "text": "(FR) Very Prepared",
+        "text": "Très bien préparé(e)",
         "value": "very-prepared"
       }
     },
     "question-where": {
       "id": "question-where",
-      "title": "(FR) Where do you plan on living when you retire?",
+      "title": "Où prévoyez-vous de vivre lorsque vous prendrez votre retraite?",
       "option-canada-ft": {
         "id": "canada-ft-button",
-        "text": "(FR) In Canada",
+        "text": "Au Canada",
         "value": "canada-ft"
       },
       "option-canada-pt-60-or-more": {
         "id": "canada-pt-60-or-more-button",
-        "text": "(FR) In Canada MORE Than 6 Months a Year",
+        "text": "Au Canada plus de 6 mois par an",
         "value": "canada-pt-60-or-more"
       },
       "option-canada-pt-less-than-60": {
         "id": "canada-pt-less-than-60-button",
-        "text": "(FR) In Canada LESS than 6 months a year",
+        "text": "Au Canada moins de 6 mois par an",
         "value": "canada-pt-less-than-60"
       },
       "option-outside-canada": {
         "id": "outside-canada-button",
-        "text": "(FR) Outside Canada",
+        "text": "À l'extérieur du Canada",
         "value": "outside-canada"
       },
       "option-unsure-retirement-living": {
         "id": "unsure-retirement-living-button",
-        "text": "(FR) Not Sure",
+        "text": "Je ne sais pas",
         "value": "unsure-retirement-living"
       }
     },
     "question-earn": {
       "id": "question-earn",
-      "title": "(FR) Do you plan to earn money while receiving retirement benefits",
-      "subtitle": "(FR) Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
+      "title": "Prévoyez-vous de gagner de l'argent tout en percevant des prestations de retraite?",
+      "subtitle": "Certaines personnes choisissent de travailler ou de gagner de l'argent à la retraite. Cela peut affecter vos montants de pension mensuels.",
       "option-no-income": {
         "id": "no-income-button",
-        "text": "(FR) No",
+        "text": "Non",
         "value": "no-income"
       },
       "option-yes-income": {
         "id": "yes-income-button",
-        "text": "(FR) Yes",
+        "text": "Oui",
         "value": "yes-income"
       },
       "option-unsure-income": {
         "id": "unsure-income-button",
-        "text": "(FR) Not sure",
+        "text": "Je ne sais pas",
         "value": "unsure-income"
       }
     },
     "question-status": {
       "id": "question-status",
-      "title": "(FR) When you retire, what will your legal status be in Canada?",
+      "title": "Lorsque vous prendrez votre retraite, quel sera votre statut juridique au Canada?",
       "option-status-citizen": {
         "id": "status-citizen-button",
-        "text": "(FR) Canadian Citizen or Permanent Resident",
+        "text": "Citoyen Canadien ou résident permanent",
         "value": "status-citizen"
       },
       "option-status-first-nation": {
         "id": "status-first-nation",
-        "text": "(FR) Métis, Inuit, or Member of First Nation",
+        "text": "Métis, Inuit ou membre d'une Première Nation",
         "value": "status-first-nation"
       },
       "option-status-sponsored": {
         "id": "status-sponsored-button",
-        "text": "(FR) Sponsored Resident (less than 10 years in Canada)",
+        "text": "Résident parrainé (moins de 10 ans au Canada)",
         "value": "status-sponsored"
       },
       "option-status-other": {
         "id": "status-other-button",
-        "text": "(FR) Visitor, Student, or Temporary Worker",
+        "text": "Visiteur, étudiant ou travailleur temporaire",
         "value": "status-other"
       }
     },
     "question-how-long": {
       "id": "question-how-long-button",
-      "title": "(FR) From age 18, how many years will you have lived in Canada when you apply for retirement benefits?",
+      "title": "À partir de l'âge de 18 ans, pendant combien d'années aurez-vous vécu au Canada lorsque vous demanderez des prestations de retraite?",
       "option-in-canada-40-plus": {
         "id": "in-canada-40-plus-button",
-        "text": "(FR) 40 years or more",
+        "text": "40 ans ou plus",
         "value": "in-canada-40-plus"
       },
       "option-in-canada-10-to-39": {
         "id": "in-canada-10-to-39-button",
-        "text": "(FR) 10 to 39 years",
+        "text": "De 10 à 39 ans",
         "value": "in-canada-10-to-39"
       },
       "option-in-canada-less-than-10": {
         "id": "in-canada-less-than-10-button",
-        "text": "(FR) Less than 10 years",
+        "text": "Moins de 10 ans",
         "value": "in-canada-less-than-10"
       },
       "option-unsure-in-canada": {
         "id": "unsure-in-canada-button",
-        "text": "(FR) Not sure",
+        "text": "Je ne sais pas",
         "value": "unsure-in-canada"
       }
     },
     "question-disability-benefits": {
       "id": "question-disability-benefits",
-      "title": "(FR) Are you receiving CPP-Disability benefits?",
+      "title": "Recevez-vous des prestations d'invalidité du RPC?",
       "option-cppd-yes": {
         "id": "cppd-yes-button",
-        "text": "(FR) Yes",
+        "text": "Oui",
         "value": "cppd-yes"
       },
       "option-cppd-no": {
         "id": "cppd-no-button",
-        "text": "(FR) No",
+        "text": "Non",
         "value": "cppd-no"
       }
     }
