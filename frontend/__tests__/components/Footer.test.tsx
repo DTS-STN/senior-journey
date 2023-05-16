@@ -23,7 +23,6 @@ describe('Footer', () => {
   it('renders Footer with links', () => {
     render(
       <Footer
-        dateModifiedText="testDateModified"
         footerHeader="testFooterHeader"
         footerLogo={{
           alt: 'testAltText',
@@ -64,6 +63,13 @@ describe('Footer', () => {
             linkText: 'some-link-1',
           },
         ]}
+        retirementStoriesText="retirement stories text"
+        retirementStoriesLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
       />
     )
     const footerLink = screen.getByText('some-link-4')
@@ -73,7 +79,6 @@ describe('Footer', () => {
   it('has no a11y violations', async () => {
     const { container } = render(
       <Footer
-        dateModifiedText="testDateModified"
         footerHeader="testFooterHeader"
         footerLogo={{
           alt: 'testAltText',
@@ -97,6 +102,13 @@ describe('Footer', () => {
         ]}
         menuText="footer.menu-text"
         menuLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
+        retirementStoriesText="retirement stories text"
+        retirementStoriesLinks={[
           {
             link: 'https://some-link-1.com',
             linkText: 'some-link-1',

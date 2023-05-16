@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react'
 
 import { useTranslation } from 'next-i18next'
 
+import { useChecklistUrl } from '../lib/hooks/useChecklistUrl'
 import { BreadcrumbItem } from './Breadcrumb'
 import Container from './Container'
 import Footer from './Footer'
@@ -11,32 +12,33 @@ export interface LayoutProps {
   children: ReactNode
   breadcrumbItems?: BreadcrumbItem[]
   contained?: boolean
-  hideFooter?: "never" | "always" | "print"
-  hideHeader?: "never" | "always" | "print"
+  hideFooter?: 'never' | 'always' | 'print'
+  hideHeader?: 'never' | 'always' | 'print'
   hideChecklist?: boolean
 }
 
 const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFooter, hideHeader, hideChecklist }) => {
   const { t } = useTranslation('common')
+  const checklistUrl = useChecklistUrl()
+
   return (
     <div className="flex min-h-screen flex-col">
-      {hideHeader !== 'always' && 
-      <Header 
-        skipToMainText={t('header.skip-to-main')} 
-        gocLink={t('header.goc-link')} 
-        breadcrumbItems={breadcrumbItems} 
-        className={hideHeader == 'print' ? "print:hidden" : undefined}
-        hideChecklist={hideChecklist} 
-      />
-      }
+      {hideHeader !== 'always' && (
+        <Header
+          skipToMainText={t('header.skip-to-main')}
+          gocLink={t('header.goc-link')}
+          breadcrumbItems={breadcrumbItems}
+          className={hideHeader == 'print' ? 'print:hidden' : undefined}
+          hideChecklist={hideChecklist}
+        />
+      )}
       <main role="main" id="mainContent" className="mt-5 flex-1 pb-8">
         {contained ? <Container>{children}</Container> : <>{children}</>}
       </main>
 
-      {hideFooter !== 'always' && 
+      {hideFooter !== 'always' && (
         <Footer
-          className={hideFooter == 'print' ? "print:hidden" : undefined}
-          dateModifiedText={t('footer.date-modified-text')}
+          className={hideFooter == 'print' ? 'print:hidden' : undefined}
           footerHeader={t('footer.header')}
           footerLogo={{
             alt: t('footer.canada-ca-alt-text'),
@@ -58,67 +60,70 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
           learningMaterialsText={t('footer.learning-materials-text')}
           learningMaterialsLinks={[
             {
-              link: t('footer.learning-materials.ri-url'),
-              linkText: t('footer.learning-materials.ri'),
+              link: '/learn/main-sources-of-retirement-income',
+              linkText: t('footer.learning-materials.main-sources-of-retirement-income'),
             },
             {
-              link: t('footer.learning-materials.cpp-url'),
-              linkText: t('footer.learning-materials.cpp'),
+              link: '/learn/planning-to-save-for-retirement',
+              linkText: t('footer.learning-materials.planning-to-save-for-retirement'),
             },
             {
-              link: t('footer.learning-materials.oas-url'),
-              linkText: t('footer.learning-materials.oas'),
+              link: '/learn/deciding-when-to-collect-public-pensions',
+              linkText: t('footer.learning-materials.when-to-collect-public-pensions'),
             },
             {
-              link: t('footer.learning-materials.sfr-url'),
-              linkText: t('footer.learning-materials.sfr'),
+              link: '/learn/going-from-work-to-retirement',
+              linkText: t('footer.learning-materials.going-from-work-to-retirement'),
             },
             {
-              link: t('footer.learning-materials.qual-url'),
-              linkText: t('footer.learning-materials.qual'),
-            },
-            {
-              link: t('footer.learning-materials.con-url'),
-              linkText: t('footer.learning-materials.con'),
-            },
-            {
-              link: t('footer.learning-materials.sit-url'),
-              linkText: t('footer.learning-materials.sit'),
-            },
-            {
-              link: t('footer.learning-materials.when-url'),
-              linkText: t('footer.learning-materials.when'),
-            },
-            {
-              link: t('footer.learning-materials.qualoas-url'),
-              linkText: t('footer.learning-materials.qualoas'),
-            },
-            {
-              link: t('footer.learning-materials.how-url'),
-              linkText: t('footer.learning-materials.how'),
+              link: '/learn/rules-of-thumb-for-public-pensions',
+              linkText: t('footer.learning-materials.rules-of-thumb-for-public-pensions'),
             },
           ]}
           menuText={t('footer.menu-text')}
           menuLinks={[
             {
-              link: t('footer.menu.learn-url'),
-              linkText: t('footer.menu.learn'),
+              link: '/learn',
+              linkText: t('footer.menu.explore-retirement'),
             },
             {
-              link: t('footer.menu.plan-url'),
-              linkText: t('footer.menu.plan'),
+              link: checklistUrl,
+              linkText: t('footer.menu.checklist'),
             },
             {
-              link: t('footer.menu.app-url'),
-              linkText: t('footer.menu.app'),
+              link: t('footer.menu.cpp-url'),
+              linkText: t('footer.menu.cpp'),
             },
             {
-              link: t('footer.menu.man-url'),
-              linkText: t('footer.menu.man'),
+              link: t('footer.menu.oas-url'),
+              linkText: t('footer.menu.oas'),
+            },
+            {
+              link: t('footer.menu.msca-url'),
+              linkText: t('footer.menu.msca'),
+            },
+            {
+              link: t('footer.menu.contact-us-url'),
+              linkText: t('footer.menu.contact-us'),
+            },
+          ]}
+          retirementStoriesText={t('footer.retirement-stories-text')}
+          retirementStoriesLinks={[
+            {
+              link: '/learn/case-studies/fred',
+              linkText: t('footer.retirement-stories.fred'),
+            },
+            {
+              link: '/learn/case-studies/bonnie',
+              linkText: t('footer.retirement-stories.bonnie'),
+            },
+            {
+              link: '/learn/case-studies/keith',
+              linkText: t('footer.retirement-stories.keith'),
             },
           ]}
         />
-      }
+      )}
     </div>
   )
 }
@@ -126,7 +131,7 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
 Layout.defaultProps = {
   contained: true,
   hideFooter: 'never',
-  hideHeader: 'never'
+  hideHeader: 'never',
 }
 
 export default Layout
