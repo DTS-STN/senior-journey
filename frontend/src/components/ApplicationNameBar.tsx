@@ -1,12 +1,10 @@
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
-import { compact, isEmpty } from 'lodash'
 import Link from 'next/link'
 
-import { useQuizData } from '../lib/hooks/useQuizData'
-import { ChecklistFilters } from '../pages/checklist/[filters]'
+import { useChecklistUrl } from '../lib/hooks/useChecklistUrl'
 import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
@@ -19,20 +17,7 @@ export interface ApplicationNameBarProps {
 }
 
 const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
-  let [checklistUrl, setChecklistUrl] = useState('/quiz')
-  const { data: quizData } = useQuizData()
-
-  useEffect(() => {
-    if (isEmpty(quizData)) {
-      setChecklistUrl('/quiz')
-      return
-    }
-
-    // Encodes a js object as a url-safe base64 string.
-    const checklistFilters: ChecklistFilters = { answers: compact(Object.values<string>(quizData)), tags: [] }
-    const encodedChecklistFilters = encodeURIComponent(window.btoa(JSON.stringify(checklistFilters)))
-    setChecklistUrl(`/checklist/${encodedChecklistFilters}`)
-  }, [quizData])
+  const checklistUrl = useChecklistUrl()
 
   return (
     <div id="app-bar">

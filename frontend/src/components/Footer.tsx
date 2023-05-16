@@ -17,8 +17,6 @@ export interface FooterLink {
 }
 
 export interface FooterProps {
-  dateModifiedText: string
-
   /**
    * footer header
    */
@@ -37,12 +35,12 @@ export interface FooterProps {
   /**
    * Learning Matierials Header for appropriate menu
    */
-  learningMaterialsText: string
+  explorePublicPensionsText: string
 
   /**
    * array of objects containing the Learning materials link text and link
    */
-  learningMaterialsLinks: FooterLink[]
+  explorePublicPensionsLinks: FooterLink[]
 
   /**
    * Menu Header for appropriate menu
@@ -52,6 +50,16 @@ export interface FooterProps {
    * array of objects containing the Menu link text and link
    */
   menuLinks: FooterLink[]
+
+  /**
+   * Retirement stories Header for appropriate menu
+   */
+  retirementStoriesText: string
+
+  /**
+   * array of objects containing the Retirement stories link text and link
+   */
+  retirementStoriesLinks: FooterLink[]
 
   /**
    * array of objects containing the link text and link
@@ -68,28 +76,29 @@ export interface FooterProps {
  * footer element for all pages
  */
 const Footer: FC<FooterProps> = ({
-  dateModifiedText,
+  className,
   footerHeader,
   footerLogo,
   footerNavHeader,
-  learningMaterialsText,
-  learningMaterialsLinks,
-  menuText,
-  menuLinks,
+  explorePublicPensionsLinks,
+  explorePublicPensionsText,
   links,
-  className,
+  menuLinks,
+  menuText,
+  retirementStoriesLinks,
+  retirementStoriesText,
 }: FooterProps) => {
   return (
     <footer className={className}>
       <div className="bg-blue-dark text-white">
-        <div className="container mx-auto px-4 py-8 md:pb-20">
-          <h2 className="mb-8 font-display text-xl font-bold">{footerHeader}</h2>
-          <div className="grid gap-6 md:grid-cols-4">
-            <div className="md:col-span-3">
-              <h2 className="mb-4 font-display font-medium">{learningMaterialsText}</h2>
-              <ul className="col-span-2 space-y-2 md:columns-2">
-                {learningMaterialsLinks.map(({ link, linkText }) => (
-                  <li key={link} className="text-sm">
+        <div className="container mx-auto px-4 py-8">
+          <h2 className="mb-8 font-display font-bold md:text-lg">{footerHeader}</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div>
+              <h3 className="mb-4 font-display font-medium md:text-xl">{explorePublicPensionsText}</h3>
+              <ul className="space-y-2 text-sm">
+                {explorePublicPensionsLinks.map(({ link, linkText }) => (
+                  <li key={link}>
                     <MuiLink component={Link} color="inherit" underline="hover" href={link}>
                       {linkText}
                     </MuiLink>
@@ -98,10 +107,22 @@ const Footer: FC<FooterProps> = ({
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 font-display font-medium">{menuText}</h2>
-              <ul className="space-y-2">
+              <h3 className="mb-4 font-display font-medium md:text-xl">{retirementStoriesText}</h3>
+              <ul className="space-y-2 text-sm">
+                {retirementStoriesLinks.map(({ link, linkText }) => (
+                  <li key={link}>
+                    <MuiLink component={Link} color="inherit" underline="hover" href={link}>
+                      {linkText}
+                    </MuiLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-4 font-display font-medium md:text-xl">{menuText}</h3>
+              <ul className="space-y-2 text-sm">
                 {menuLinks.map(({ link, linkText }) => (
-                  <li key={link} className="text-sm">
+                  <li key={link}>
                     <MuiLink component={Link} color="inherit" underline="hover" href={link}>
                       {linkText}
                     </MuiLink>

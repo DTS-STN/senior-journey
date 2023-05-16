@@ -11,39 +11,32 @@
     "canada-ca-alt-text": "Symbol of the Government of Canada",
     "header": "Retirement Hub",
     "nav-header": "Government of Canada Corporate",
-    "learning-materials-text": "Learning Materials",
-    "learning-materials": {
-      "ri": "Sources of retirement income",
-      "ri-url": "sources-of-retirement-income",
-      "cpp": "CPP Program Overview",
-      "cpp-url": "cpp-program-overview",
-      "oas": "OAS Program Overview",
-      "oas-url": "oas-program-overview",
-      "sfr": "Saving for retirement",
-      "sfr-url": "saving-for-retirement",
-      "qual": "Do you qualify for CPP retirement pension",
-      "qual-url": "do-you-qualify-for-cpp-retirement-pension",
-      "con": "Contributions to the CPP",
-      "con-url": "contributions-to-the-cpp",
-      "sit": "Situations that can affect your pension amount",
-      "sit-url": "situations-that-can-affect-your-pension-amount",
-      "when": "When to start your retirement pension",
-      "when-url": "when-to-start-your-retirement-pension",
-      "qualoas": "Do you qualify for the OAS pension",
-      "qualoas-url": "do-you-qualify-for-the-oas-pension",
-      "how": "How much could you receive from OAS",
-      "how-url": "how-much-could-you-receive-from-oas"
+    "explore-public-pensions-text": "Explore public pensions",
+    "explore-public-pensions": {
+      "going-from-work-to-retirement": "Going from work to retirement",
+      "main-sources-of-retirement-income": "Main sources of retirement income",
+      "planning-to-save-for-retirement": "Planning to save for retirement",
+      "rules-of-thumb-for-public-pensions": "Rules of thumb for public pensions",
+      "when-to-collect-public-pensions": "When to collect public pensions"
     },
     "menu-text": "Menu",
     "menu": {
-      "learn": "Learn",
-      "learn-url": "/learn",
-      "plan": "Plan",
-      "plan-url": "/plan",
-      "app": "Apply",
-      "app-url": "/apply",
-      "man": "Manage",
-      "man-url": "/manage"
+      "checklist": "Checklist",
+      "contact-us-url": "https://www.canada.ca/en/contact/contact-1-800-o-canada.html",
+      "contact-us": "Contact us",
+      "cpp-url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/apply.html",
+      "cpp": "CPP: How to apply",
+      "explore-retirement": "Explore retirement",
+      "msca-url": "https://www.canada.ca/en/employment-social-development/services/my-account.html",
+      "msca": "My Service Canada Account",
+      "oas-url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/apply.html",
+      "oas": "OAS: How to apply"
+    },
+    "retirement-stories-text": "Retirement stories",
+    "retirement-stories": {
+      "bonnie": "Bonnie delays to reduce the savings she needs",
+      "fred": "Fred decides when to take his public pensions",
+      "keith": "Keith collects his public pensions while working"
     },
     "links": {
       "terms-and-condition": "Terms and conditions",
@@ -98,9 +91,6 @@
   },
   "application-name-bar": "Retirement Hub",
   "checklist": "Checklist",
-  "checklist-url": "#",
-  "my-notes": "My Notes",
-  "my-notes-url": "#",
   "table-of-contents": {
     "aria-label": "Table of contents",
     "dialog": {

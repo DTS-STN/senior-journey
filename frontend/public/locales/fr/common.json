@@ -9,41 +9,34 @@
   "footer": {
     "date-modified-text": "Date de modification\u00A0:",
     "canada-ca-alt-text": "Symbole du gouvernement du Canada",
-    "header": "Retirement Hub (FR)",
+    "header": "Carrefour retraite",
     "nav-header": "Organisation du gouvernement du Canada",
-    "learning-materials-text": "Learning Materials (FR)",
-    "learning-materials": {
-      "ri": "Sources of retirement income (FR)",
-      "ri-url": "sources-of-retirement-income-fr",
-      "cpp": "CPP Program Overview (FR)",
-      "cpp-url": "cpp-program-overview-fr",
-      "oas": "OAS Program Overview (FR)",
-      "oas-url": "oas-program-overview-fr",
-      "sfr": "Saving for retirement (FR)",
-      "sfr-url": "saving-for-retirement-fr",
-      "qual": "Do you qualify for CPP retirement pension (FR)",
-      "qual-url": "do-you-qualify-for-cpp-retirement-pension-fr",
-      "con": "Contributions to the CPP (FR)",
-      "con-url": "contributions-to-the-cpp-fr",
-      "sit": "Situations that can affect your pension amount (FR)",
-      "sit-url": "situations-that-can-affect-your-pension-amount-fr",
-      "when": "When to start your retirement pension (FR)",
-      "when-url": "when-to-start-your-retirement-pension-fr",
-      "qualoas": "Do you qualify for the OAS pension (FR)",
-      "qualoas-url": "do-you-qualify-for-the-oas-pension-fr",
-      "how": "How much could you receive from OAS (FR)",
-      "how-url": "how-much-could-you-receive-from-oas-fr"
+    "explore-public-pensions-text": "Renseignez-vous sur la retraite",
+    "explore-public-pensions": {
+      "going-from-work-to-retirement": "Transition du monde du travail à la retraite",
+      "main-sources-of-retirement-income": "Principales sources de revenus de retraite",
+      "planning-to-save-for-retirement": "Planifiez pour épargner en vue de la retraite",
+      "rules-of-thumb-for-public-pensions": "Règles générales concernant les prestations de vieillesse fédérales",
+      "when-to-collect-public-pensions": "Quand commencer à recevoir des pensions gouvernementales"
     },
-    "menu-text": "Menu (FR)",
+    "menu-text": "Menu",
     "menu": {
-      "learn": "Learn (FR)",
-      "learn-url": "/learn",
-      "plan": "Plan (FR)",
-      "plan-url": "/plan",
-      "app": "Apply (FR)",
-      "app-url": "/apply",
-      "man": "Manage (FR)",
-      "man-url": "/manage"
+      "checklist": "Liste de contrôle",
+      "contact-us-url": "https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html",
+      "contact-us": "Communiquez avec nous",
+      "cpp-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html",
+      "cpp": "RPC\u00A0: Comment présenter une demande",
+      "explore-retirement": "Renseignez-vous sur la retraite",
+      "msca-url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
+      "msca": "Mon dossier Service Canada",
+      "oas-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html",
+      "oas": "SV\u00A0: Comment présenter une demande"
+    },
+    "retirement-stories-text": "Histoires réelles de retraite",
+    "retirement-stories": {
+      "bonnie": "Bonnie retarde la réduction des épargnes dont elle a besoin",
+      "fred": "Fred décide quand prendre sa pension publique",
+      "keith": "Keith combine son travail avec ses pensions publiques"
     },
     "links": {
       "about-canada-ca": "À propos de Canada.ca",
@@ -96,12 +89,13 @@
     "alert": "Lieu de test",
     "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
   },
-  "application-name-bar": "Retirement Hub (FR)",
+  "application-name-bar": "Carrefour retraite",
+  "checklist": "Liste de contrôle",
   "table-of-contents": {
-    "aria-label": "(FR) Table of contents",
+    "aria-label": "Table des matières",
     "dialog": {
-      "trigger-aria-label": "(FR) Open table of contents"
+      "trigger-aria-label": "Ouvrir la table des matières"
     },
-    "header": "(FR) Contents"
+    "header": "Contenu"
   }
 }

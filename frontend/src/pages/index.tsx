@@ -11,14 +11,14 @@ const Index = () => {
     <>
       <NextSeo
         noindex
-        title="Retirement Hub | Retirement Hub (FR)"
+        title="Retirement Hub | Carrefour retraite"
         titleTemplate="%s - Canada.ca"
-        additionalMetaTags={[getDCTermsTitle('Retirement Hub', 'Retirement Hub (FR)')]}
+        additionalMetaTags={[getDCTermsTitle('Retirement Hub', 'Carrefour retraite')]}
       />
       <main role="main" className="flex h-screen bg-splash-page bg-cover bg-center">
         <Paper square elevation={0} className="m-auto w-[300px] md:w-[400px] lg:w-[500px]">
           <div className="p-8">
-            <h1 className="sr-only">Retirement Hub | Retirement Hub (FR)</h1>
+            <h1 className="sr-only">Retirement Hub | Carrefour retraite</h1>
             <div className="w-11/12 lg:w-8/12">
               <Image
                 className="mb-1.5"
