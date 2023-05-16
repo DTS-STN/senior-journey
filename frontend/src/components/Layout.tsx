@@ -57,27 +57,27 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
               linkText: t('footer.links.privacy'),
             },
           ]}
-          learningMaterialsText={t('footer.learning-materials-text')}
-          learningMaterialsLinks={[
+          explorePublicPensionsText={t('footer.explore-public-pensions-text')}
+          explorePublicPensionsLinks={[
             {
               link: '/learn/main-sources-of-retirement-income',
-              linkText: t('footer.learning-materials.main-sources-of-retirement-income'),
+              linkText: t('footer.explore-public-pensions.main-sources-of-retirement-income'),
             },
             {
               link: '/learn/planning-to-save-for-retirement',
-              linkText: t('footer.learning-materials.planning-to-save-for-retirement'),
+              linkText: t('footer.explore-public-pensions.planning-to-save-for-retirement'),
             },
             {
               link: '/learn/deciding-when-to-collect-public-pensions',
-              linkText: t('footer.learning-materials.when-to-collect-public-pensions'),
+              linkText: t('footer.explore-public-pensions.when-to-collect-public-pensions'),
             },
             {
               link: '/learn/going-from-work-to-retirement',
-              linkText: t('footer.learning-materials.going-from-work-to-retirement'),
+              linkText: t('footer.explore-public-pensions.going-from-work-to-retirement'),
             },
             {
               link: '/learn/rules-of-thumb-for-public-pensions',
-              linkText: t('footer.learning-materials.rules-of-thumb-for-public-pensions'),
+              linkText: t('footer.explore-public-pensions.rules-of-thumb-for-public-pensions'),
             },
           ]}
           menuText={t('footer.menu-text')}

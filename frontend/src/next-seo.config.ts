@@ -26,9 +26,7 @@ export const getLanguageAlternates = (
   ]
 }
 
-export const getOpenGraphImages = (
-  appBaseUri: string
-): ReadonlyArray<OpenGraphMedia> | undefined => {
+export const getOpenGraphImages = (appBaseUri: string): ReadonlyArray<OpenGraphMedia> | undefined => {
   if (!appBaseUri) return
   return [
     {
@@ -39,14 +37,11 @@ export const getOpenGraphImages = (
   ]
 }
 
-export type GetNextSEOConfig = (
-  appBaseUri: string,
-  router: NextSEORouter
-) => DefaultSeoProps
+export type GetNextSEOConfig = (appBaseUri: string, router: NextSEORouter) => DefaultSeoProps
 
 export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Canada.ca',
-  defaultTitle: 'Retirement Hub | Retirement Hub (FR)',
+  defaultTitle: 'Retirement Hub | Carrefour retraite',
   description:
     "Avoid waiting on the phone and request the status of your application online. | Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
   additionalMetaTags: [
@@ -95,7 +90,7 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'en_CA',
-    siteName: 'Retirement Hub | Retirement Hub (FR) - Canada.ca',
+    siteName: 'Retirement Hub | Carrefour retraite - Canada.ca',
     type: 'website',
   },
   twitter: {
@@ -107,8 +102,7 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Retirement Hub - Canada.ca',
   defaultTitle: 'Retirement Hub - Canada.ca',
-  description:
-    'Avoid waiting on the phone and request the status of your application online.',
+  description: 'Avoid waiting on the phone and request the status of your application online.',
   additionalMetaTags: [
     {
       name: 'author',
@@ -141,10 +135,9 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 })
 
 export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
-  titleTemplate: '%s - Retirement Hub (FR) - Canada.ca',
-  defaultTitle: 'Retirement Hub (FR) - Canada.ca',
-  description:
-    "Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
+  titleTemplate: '%s - Carrefour retraite - Canada.ca',
+  defaultTitle: 'Carrefour retraite - Canada.ca',
+  description: "Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
   additionalMetaTags: [
     {
       name: 'author',
@@ -167,7 +160,7 @@ export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   openGraph: {
     images: getOpenGraphImages(appBaseUri),
     locale: 'fr_CA',
-    siteName: 'Retirement Hub (FR) - Canada.ca',
+    siteName: 'Carrefour retraite - Canada.ca',
     type: 'website',
   },
   twitter: {

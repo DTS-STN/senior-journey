@@ -11,8 +11,8 @@
     "canada-ca-alt-text": "Symbol of the Government of Canada",
     "header": "Retirement Hub",
     "nav-header": "Government of Canada Corporate",
-    "learning-materials-text": "Learning materials",
-    "learning-materials": {
+    "explore-public-pensions-text": "Explore public pensions",
+    "explore-public-pensions": {
       "going-from-work-to-retirement": "Going from work to retirement",
       "main-sources-of-retirement-income": "Main sources of retirement income",
       "planning-to-save-for-retirement": "Planning to save for retirement",
@@ -91,9 +91,6 @@
   },
   "application-name-bar": "Retirement Hub",
   "checklist": "Checklist",
-  "checklist-url": "#",
-  "my-notes": "My Notes",
-  "my-notes-url": "#",
   "table-of-contents": {
     "aria-label": "Table of contents",
     "dialog": {

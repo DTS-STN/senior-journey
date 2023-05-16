@@ -9,34 +9,34 @@
   "footer": {
     "date-modified-text": "Date de modification\u00A0:",
     "canada-ca-alt-text": "Symbole du gouvernement du Canada",
-    "header": "Retirement Hub (FR)",
+    "header": "Carrefour retraite",
     "nav-header": "Organisation du gouvernement du Canada",
-    "learning-materials-text": "(FR) Learning materials",
-    "learning-materials": {
-      "going-from-work-to-retirement": "(FR) Going from work to retirement",
-      "main-sources-of-retirement-income": "(FR) Main sources of retirement income",
-      "planning-to-save-for-retirement": "(FR) Planning to save for retirement",
-      "rules-of-thumb-for-public-pensions": "(FR) Rules of thumb for public pensions",
-      "when-to-collect-public-pensions": "(FR) When to collect public pensions"
+    "explore-public-pensions-text": "Renseignez-vous sur la retraite",
+    "explore-public-pensions": {
+      "going-from-work-to-retirement": "Transition du monde du travail à la retraite",
+      "main-sources-of-retirement-income": "Principales sources de revenus de retraite",
+      "planning-to-save-for-retirement": "Planifiez pour épargner en vue de la retraite",
+      "rules-of-thumb-for-public-pensions": "Règles générales concernant les prestations de vieillesse fédérales",
+      "when-to-collect-public-pensions": "Quand commencer à recevoir des pensions gouvernementales"
     },
-    "menu-text": "(FR) Menu",
+    "menu-text": "Menu",
     "menu": {
-      "checklist": "(FR) Checklist",
+      "checklist": "Liste de contrôle",
       "contact-us-url": "https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html",
-      "contact-us": "(FR) Contact us",
+      "contact-us": "Communiquez avec nous",
       "cpp-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html",
-      "cpp": "(FR) CPP: How to apply",
-      "explore-retirement": "(FR) Explore retirement",
+      "cpp": "RPC\u00A0: Comment présenter une demande",
+      "explore-retirement": "Renseignez-vous sur la retraite",
       "msca-url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
-      "msca": "(FR) My Service Canada Account",
+      "msca": "Mon dossier Service Canada",
       "oas-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html",
-      "oas": "(FR) OAS: How to apply"
+      "oas": "SV\u00A0: Comment présenter une demande"
     },
-    "retirement-stories-text": "(FR) Retirement stories",
+    "retirement-stories-text": "Histoires réelles de retraite",
     "retirement-stories": {
-      "bonnie": "(FR) Bonnie delays to reduce the savings she needs",
-      "fred": "(FR) Fred decides when to take his public pensions",
-      "keith": "(FR) Keith collects his public pensions while working"
+      "bonnie": "Bonnie retarde la réduction des épargnes dont elle a besoin",
+      "fred": "Fred décide quand prendre sa pension publique",
+      "keith": "Keith combine son travail avec ses pensions publiques"
     },
     "links": {
       "about-canada-ca": "À propos de Canada.ca",
@@ -89,12 +89,13 @@
     "alert": "Lieu de test",
     "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
   },
-  "application-name-bar": "Retirement Hub (FR)",
+  "application-name-bar": "Carrefour retraite",
+  "checklist": "Liste de contrôle",
   "table-of-contents": {
-    "aria-label": "(FR) Table of contents",
+    "aria-label": "Table des matières",
     "dialog": {
-      "trigger-aria-label": "(FR) Open table of contents"
+      "trigger-aria-label": "Ouvrir la table des matières"
     },
-    "header": "(FR) Contents"
+    "header": "Contenu"
   }
 }
