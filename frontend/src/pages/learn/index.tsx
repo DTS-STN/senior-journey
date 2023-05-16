@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 
 import { Button, Card, CardActionArea, CardContent, CardMedia } from '@mui/material'
 import { GetServerSideProps } from 'next'
@@ -9,7 +9,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Layout from '../../components/Layout'
-import { QuizDialog } from '../../components/quiz/QuizDialog'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const Learn: FC = () => {
@@ -17,19 +16,9 @@ const Learn: FC = () => {
   const en = i18n.getFixedT('en', 'learn')
   const fr = i18n.getFixedT('fr', 'learn')
 
-  const [quizDialogOpen, setQuizDialogOpen] = useState(false)
-
   const sections = t<string, { cards: any[] }[]>('sections', {
     returnObjects: true,
   })
-
-  const handleOnQuizDialogTriggerClick = () => {
-    setQuizDialogOpen(true)
-  }
-
-  const handleOnQuizDialogClose = () => {
-    setQuizDialogOpen(false)
-  }
 
   return (
     <>
@@ -57,7 +46,7 @@ const Learn: FC = () => {
             <div className="pt-12 px-6 pb-10 text-center md:w-2/3 md:pb-0 md:pl-12 md:pt-0 md:text-left lg:w-4/5 lg:pb-4">
               <h2 className="mb-4 text-left font-display text-5xl font-bold text-primary-700">{t('banner.title')}</h2>
               <p className="pb-4 text-left text-lg font-normal md:w-4/5">{t('banner.text')}</p>
-              <Button id="quiz-dialog-trigger" size="large" onClick={handleOnQuizDialogTriggerClick}>
+              <Button component={Link} id="quiz-dialog-link" size="large" href="/quiz">
                 {t('banner.quiz')}
               </Button>
             </div>
@@ -109,7 +98,6 @@ const Learn: FC = () => {
             </div>
           ))}
         </section>
-        <QuizDialog open={quizDialogOpen} onClose={handleOnQuizDialogClose} />
       </Layout>
     </>
   )
@@ -118,7 +106,7 @@ const Learn: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn', 'quiz'], null, ['en', 'fr'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'], null, ['en', 'fr'])),
     },
   }
 }

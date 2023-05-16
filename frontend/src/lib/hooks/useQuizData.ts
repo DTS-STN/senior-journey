@@ -7,7 +7,7 @@ import { getLogger } from '../../logging/log-util'
 const logger = getLogger('useQuizData')
 
 /**
- * Retrieves Quiz stored data from localStorage
+ * Retrieves Quiz stored data from sessionStorage
  * @returns null if no data stored or it can't be parsed else a QuizFormState object
  */
 export const useQuizData = (options?: UseQueryOptions<QuizFormState | null>) => {
@@ -15,7 +15,7 @@ export const useQuizData = (options?: UseQueryOptions<QuizFormState | null>) => 
     ['quiz'],
     () => {
       try {
-        const data = localStorage.getItem('quiz')
+        const data = sessionStorage.getItem('quiz')
         return data === null || isEmpty(data) ? null : JSON.parse(data)
       } catch (err) {
         logger.warn(err, 'Problem occured when parsing quiz stored data')

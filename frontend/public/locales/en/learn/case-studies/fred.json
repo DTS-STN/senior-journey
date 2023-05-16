@@ -1,3 +1,182 @@
 {
-    "header": "Fred decides when to take his public pensions "
+  "breadcrumbs": {
+    "home": {
+      "text": "Retirement Hub",
+      "link": "/"
+    },
+    "learn": {
+      "text": "Learn",
+      "link": "/learn"
+    }
+  },
+  "header": "Fred decides when to take his public pensions",
+  "key-takeaways": {
+    "heading": "Key Takeaways",
+    "li1": "The CPP pension, if delayed until age 70, increases much more than the OAS pension.",
+    "li2": "If delayed until age 70, the CPP pension could more than double compared to starting it at 60.",
+    "li3": "The lifetime CPP pension has even bigger difference, if pension delayed from age 60 to age 70.",
+    "li4": "If delayed, the CPP lifetime pension can provide from $95,000 to $130,000 more in secure and inflation-protected pension.",
+    "li5": "The lifetime OAS pension, if delayed to later ages, does not provide a significantly larger income.",
+    "li6": "In fact, by age 86, the lifetime OAS income is higher, if started at age 68 rather than at age 70."
+  },
+  "overview": {
+    "heading": "Overview",
+    "p1": "Fred has lived in Canada all his life and worked for 40 years as a truck driver. He is turning 60 this year. Fred also thinks that he might outlive his parents, as he is quite healthy now. His dad passed away at 87, and his mother is still alive at age 91. He has received a letter from Service Canada. This letter explains that he is now eligible to apply for his CPP retirement pension. At age 65, his expected CPP pension amount is $1,300 a month. He will qualify for the maximum OAS pension as well, but he would not qualify for the GIS. He is curious about his options to take pensions earlier or choose to wait longer.",
+    "p2": "After thorough analysis, Fred decides to begin his OAS at age 68 and delay his CPP until age 70. Let us explore how he came to this conclusion!"
+  },
+  "cpp": {
+    "heading": "Fred's Canadian Pension Plan (CPP) retirement pension",
+    "smart-tip": "<strong>Smart tip:</strong> It's crucial to consider both the monthly and total amount you'll receive over your lifetime. Fred wants to see how his lifetime pension will be affected by starting at different ages before making his final decision.",
+    "monthly-pension": {
+      "p": "Fred's CPP monthly pension could grow by half, if started at age 65, and will more than double at age 70, compared to pension at 60.",
+      "img-url": {
+        "desktop": "/assets/fred-cpp-monthly-desktop-en.jpg",
+        "mobile": "/assets/fred-cpp-monthly-mobile-en.jpg"
+      },
+      "description": "The chart shows changes in Fred's CPP pension monthly payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he’ll receive every month. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
+      "accessibility": {
+        "caption": "Values presented on the image",
+        "button-label": "Text alternative for Fred's CPP monthly pension",
+        "header": ["Age when Fred starts taking his CPP pension", "Fred's CPP monthly pension"],
+        "rows": [
+          {
+            "id": 1,
+            "data": ["60", "$832"]
+          },
+          {
+            "id": 2,
+            "data": ["65", "$1,300"]
+          },
+          {
+            "id": 3,
+            "data": ["70", "$1,846"]
+          }
+        ]
+      }
+    },
+    "lifetime-pension": {
+      "p": "By age 86, Fred could receive $95,000 more, if he delays from 60 to 70. By age 89, this difference will be $130,000.",
+      "img-url": {
+        "desktop": "/assets/fred-cpp-lifetime-desktop-en.jpg",
+        "mobile": "/assets/fred-cpp-lifetime-mobile-en.jpg"
+      },
+      "description": "The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
+      "accessibility": {
+        "caption": "Values presented on the image",
+        "button-label": "Text alternative for Fred's CPP lifetime pension at age 86",
+        "header": ["Age when Fred starts taking his CPP pension", "Fred's CPP lifetime pension at age 86"],
+        "rows": [
+          {
+            "id": 1,
+            "data": ["60", "$259,584"]
+          },
+          {
+            "id": 2,
+            "data": ["65", "$327,600"]
+          },
+          {
+            "id": 3,
+            "data": ["70", "$354,432"]
+          }
+        ]
+      }
+    },
+    "p1": "The difference between the CPP retirement lifetime pension amounts when Fred turns 86 is very large. Fred could receive $68,000 more, if he starts his CPP at age 65, and almost $95,000 more, if he begins at age 70, compared to age 60.",
+    "p2": "By age 89, the difference would be even larger. Fred could receive almost $85,000 more in CPP pension income, if he claims begins at 65, and over $130,000 more, if he starts at 70. Delaying the CPP makes a lot of financial sense.",
+    "p3": "Fred thinks that even if his private investments would not do great, the CPP pension will be a good financial support for his older years. Fred makes the decision to wait and take his CPP at age 70. To cover the gap earlier in retirement, Fred decides to withdraw about $1,500 monthly from his savings and possibly work part time as a rideshare driver."
+  },
+  "oas": {
+    "heading": "Fred's Old Age Security (OAS) pensions",
+    "p": "The difference in monthly benefits from delaying the OAS pension is smaller than for the CPP pension. If delayed from age 65 to until age 67, he might get about $100 more in pre-tax monthly income. And if delayed by the full five years, the difference in monthly payments is approximately $250 in extra payments per month before tax. The difference is not very large, so Fred wants to explore his lifetime OAS pension.",
+    "monthly-pension": {
+      "p": "Incentive to delay is smaller for the OAS. If delayed from age 65 to 68, the difference is around $150 per month.",
+      "img-url": {
+        "desktop": "/assets/fred-oas-monthly-desktop-en.jpg",
+        "mobile": "/assets/fred-oas-monthly-mobile-en.jpg"
+      },
+      "description": "The chart shows changes in Fred's OAS pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he’ll receive every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount.",
+      "accessibility": {
+        "caption": "Values presented on the image",
+        "button-label": "Text alternative for Fred's OAS monthly pension",
+        "header": ["Age when Fred starts taking his OAS pension", "Fred's OAS monthly pension amount"],
+        "rows": [
+          {
+            "id": 1,
+            "data": ["65", "$691"]
+          },
+          {
+            "id": 2,
+            "data": ["67", "$791"]
+          },
+          {
+            "id": 3,
+            "data": ["68", "$840"]
+          },
+          {
+            "id": 4,
+            "data": ["70", "$940"]
+          }
+        ]
+      }
+    },
+    "lifetime-pension": {
+      "p1": "If looking at the lifetime pensions at age 86, Fred would be better off to start his OAS at age 68. Starting at age 67 is also an option.",
+      "p2": "By age 86, the lifetime OAS pension is higher, if Fred starts his OAS at age 68. Beginning it at age 67 is also an option.",
+      "img-url": {
+        "desktop": "/assets/fred-oas-lifetime-desktop-en.jpg",
+        "mobile": "/assets/fred-oas-lifetime-mobile-en.jpg"
+      },
+      "description": "The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
+      "accessibility": {
+        "caption": "Values presented on the image",
+        "button-label": "Text alternative for Fred's OAS lifetime pension at age 86",
+        "header": ["Age when Fred starts taking his OAS pension", "Fred's lifetime OAS pension"],
+        "rows": [
+          {
+            "id": 1,
+            "data": ["65", "$191,545"]
+          },
+          {
+            "id": 2,
+            "data": ["67", "$198,258"]
+          },
+          {
+            "id": 3,
+            "data": ["68", "$199,645"]
+          },
+          {
+            "id": 4,
+            "data": ["70", "$198,477"]
+          }
+        ]
+      }
+    },
+    "p1": "He makes the decision to apply for the OAS pension at age 68, and not to wait until age 70. The OAS monthly benefit will supplement his income and will help him delay CPP until age 70, as CPP provides a much higher advantage to delay.",
+    "p2": "To support himself earlier in retirement, Fred is planning to use his private savings and work part-time at a rideshare company."
+  },
+  "disclaimer": "<strong>Disclaimer:</strong> This website does not provide personal financial advice. Options and discussions presented provide general information only. The ultimate decision about your pensions should be made based on your personal life circumstances. If you are not certain which decision is best for you, seek professional financial advice for your specific case.",
+  "learn-more": {
+    "header": "Learn More",
+    "deciding-when-to-take-your-pensions": {
+      "description": "You can choose when to start your old age benefits. Understand what to consider in making that decision.",
+      "header": "Deciding when to collect public pensions"
+    },
+    "rules-of-thumb-for-public-pensions": {
+      "description": "Pension tips based on your personal situation.",
+      "header": "Rules of thumb for public pensions"
+    },
+    "oas": {
+      "href": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/benefit-amount.html",
+      "description": "Check here for the most up-to-date details on the maximum monthly payment amounts for OAS and how to find out what your monthly payments might be.",
+      "header": "Old Age Security: How much you could receive"
+    },
+    "cpp": {
+      "href": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/amount.html",
+      "description": "Check here for the most up-to-date details on the maximum monthly payment amounts for CPP and how to find out what your monthly payments might be.",
+      "header": "CPP Retirement pension: How much you could receive"
+    }
+  },
+  "show-accessible-table": "Show accessible table format",
+  "description-heading": "Description",
+  "values-heading": "Values"
 }
