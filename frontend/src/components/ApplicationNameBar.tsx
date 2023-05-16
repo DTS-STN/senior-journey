@@ -19,12 +19,12 @@ export interface ApplicationNameBarProps {
 }
 
 const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
-  let [checklistUrl, setChecklistUrl] = useState('/learn')
+  let [checklistUrl, setChecklistUrl] = useState('/quiz')
   const { data: quizData } = useQuizData()
 
   useEffect(() => {
     if (isEmpty(quizData)) {
-      setChecklistUrl('/learn')
+      setChecklistUrl('/quiz')
       return
     }
 

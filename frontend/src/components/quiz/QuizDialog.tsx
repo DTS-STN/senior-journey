@@ -19,7 +19,6 @@ import { useRouter } from 'next/router'
 
 import { useSetQuizData } from '../../lib/hooks/useSetQuizData'
 import { ChecklistFilters } from '../../pages/checklist/[filters]'
-import { QuizLanding } from './QuizLanding'
 import { QuestionApply } from './questions/QuestionApply'
 import { QuestionDisabilityBenefits } from './questions/QuestionDisabilityBenefits'
 import { QuestionEarn } from './questions/QuestionEarn'
@@ -126,7 +125,6 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
     validateOnNext: true,
     activeStepIndex: 0,
     steps: [
-      { component: QuizLanding },
       { component: QuestionWhen },
       { component: QuestionApply },
       { component: QuestionFeelPrepared },
@@ -193,58 +191,41 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 {t('navigation.title')}
               </h2>
               <div className="mb-5">{formikWizard.renderComponent()}</div>
-              {!formikWizard.isFirstStep && (
-                <div className="mt-auto">
-                  <LinearProgress
-                    variant="determinate"
-                    value={((formikWizard.currentStepIndex ?? 0) / 8) * 100}
-                    aria-labelledby={t('navigation.progress.label')}
-                    data-cy={t('navigation.progress.id')}
-                    className="my-2"
-                  />
-                  <p id="progress-label" className="m-0 text-center">
-                    {formikWizard.currentStepIndex} {t('navigation.of')} 8
-                  </p>
-                </div>
-              )}
+              <div className="mt-auto">
+                <LinearProgress
+                  variant="determinate"
+                  value={(((formikWizard.currentStepIndex ?? 0) + 1) / 8) * 100}
+                  aria-labelledby={t('navigation.progress.label')}
+                  data-cy={t('navigation.progress.id')}
+                  className="my-2"
+                />
+                <p id="progress-label" className="m-0 text-center">
+                  {(formikWizard.currentStepIndex ?? 0) + 1} {t('navigation.of')} 8
+                </p>
+              </div>
             </DialogContent>
             <DialogActions className="block">
-              {formikWizard.isFirstStep ? (
+              <div className="grid gap-2 md:grid-cols-2 md:gap-6">
+                <Button
+                  onClick={formikWizard.handlePrev}
+                  disabled={formikWizard.isPrevDisabled}
+                  data-cy={t('navigation.previous.id')}
+                  size="large"
+                  fullWidth
+                  variant="outlined"
+                >
+                  {t('navigation.previous.text')}
+                </Button>
                 <Button
                   onClick={formikWizard.handleNext}
                   disabled={formikWizard.isNextDisabled}
-                  data-cy={t('navigation.start.id')}
+                  data-cy={formikWizard.isLastStep ? t('navigation.submit.id') : t('navigation.next.id')}
                   size="large"
                   fullWidth
-                  autoFocus
                 >
-                  {t('navigation.start.text')}
+                  {formikWizard.isLastStep ? t('navigation.submit.text') : t('navigation.next.text')}
                 </Button>
-              ) : (
-                <>
-                  <div className="grid gap-2 md:grid-cols-2 md:gap-6">
-                    <Button
-                      onClick={formikWizard.handlePrev}
-                      disabled={formikWizard.isPrevDisabled}
-                      data-cy={t('navigation.previous.id')}
-                      size="large"
-                      fullWidth
-                      variant="outlined"
-                    >
-                      {t('navigation.previous.text')}
-                    </Button>
-                    <Button
-                      onClick={formikWizard.handleNext}
-                      disabled={formikWizard.isNextDisabled}
-                      data-cy={formikWizard.isLastStep ? t('navigation.submit.id') : t('navigation.next.id')}
-                      size="large"
-                      fullWidth
-                    >
-                      {formikWizard.isLastStep ? t('navigation.submit.text') : t('navigation.next.text')}
-                    </Button>
-                  </div>
-                </>
-              )}
+              </div>
             </DialogActions>
           </div>
         </>

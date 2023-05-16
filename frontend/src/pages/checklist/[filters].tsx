@@ -31,14 +31,19 @@ const checklistFiltersSchema = yup.object({
 
 export interface ChecklistFilters extends yup.InferType<typeof checklistFiltersSchema> {}
 
-interface ChecklistProps {
+interface ChecklistResultsProps {
   applyingBenefits: TasksGroupDto
   beforeRetiring: TasksGroupDto
   filters: ChecklistFilters
   receivingBenefits: TasksGroupDto
 }
 
-const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, receivingBenefits }) => {
+const ChecklistResults: FC<ChecklistResultsProps> = ({
+  applyingBenefits,
+  beforeRetiring,
+  filters,
+  receivingBenefits,
+}) => {
   const { t, i18n } = useTranslation('checklist')
   const en = i18n.getFixedT('en', 'checklist')
   const fr = i18n.getFixedT('fr', 'checklist')
@@ -87,7 +92,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
   function handleOnRestartQuizClick(e: MouseEvent) {
     e.preventDefault()
     removeQuizData()
-    router.push('/learn')
+    router.push('/quiz')
   }
 
   return (
@@ -192,7 +197,7 @@ const Tasks: FC<ChecklistProps> = ({ applyingBenefits, beforeRetiring, filters, 
   )
 }
 
-export const getServerSideProps: GetServerSideProps<ChecklistProps | {}> = async ({ locale, params }) => {
+export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> = async ({ locale, params }) => {
   const filters = params?.filters
 
   if (typeof filters !== 'string') {
@@ -265,4 +270,4 @@ export const getServerSideProps: GetServerSideProps<ChecklistProps | {}> = async
   }
 }
 
-export default Tasks
+export default ChecklistResults
