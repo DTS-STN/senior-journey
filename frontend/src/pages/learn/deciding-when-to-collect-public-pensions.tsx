@@ -89,7 +89,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
 
         <h3 className="h3">{t('old-age-security.table-one.title')}</h3>
 
-        <Paper variant="outlined" className="mb-6">
+        <Paper variant="outlined" className="mb-6 overflow-x-auto">
           <table className="min-w-full border-collapse divide-y text-left">
             <thead className="bg-gray-surface">
               <tr className="divide-x">
