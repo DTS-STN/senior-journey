@@ -87,12 +87,12 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({
         <p id="quiz-modal-close-confirmation">{sureText}</p>
       </DialogContent>
       <DialogActions className="block">
-        <div className="grid gap-2 md:grid-cols-2 md:gap-6">
+        <div className="sm:flex sm:flex-row-reverse sm:gap-2">
+          <Button data-cy={yesID} onClick={onClose} size="large" fullWidth className="mb-2 sm:mb-0">
+            {yesText}
+          </Button>
           <Button data-cy={noID} onClick={onCancel} variant="outlined" size="large" fullWidth>
             {noText}
-          </Button>
-          <Button data-cy={yesID} onClick={onClose} size="large" fullWidth>
-            {yesText}
           </Button>
         </div>
       </DialogActions>
@@ -205,26 +205,30 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
               </div>
             </DialogContent>
             <DialogActions className="block">
-              <div className="grid gap-2 md:grid-cols-2 md:gap-6">
-                <Button
-                  onClick={formikWizard.handlePrev}
-                  disabled={formikWizard.isPrevDisabled}
-                  data-cy={t('navigation.previous.id')}
-                  size="large"
-                  fullWidth
-                  variant="outlined"
-                >
-                  {t('navigation.previous.text')}
-                </Button>
+              <div className="sm:flex sm:flex-row-reverse sm:gap-2">
                 <Button
                   onClick={formikWizard.handleNext}
                   disabled={formikWizard.isNextDisabled}
                   data-cy={formikWizard.isLastStep ? t('navigation.submit.id') : t('navigation.next.id')}
                   size="large"
                   fullWidth
+                  className="mb-2 ml-auto sm:mb-0 sm:w-1/2"
                 >
                   {formikWizard.isLastStep ? t('navigation.submit.text') : t('navigation.next.text')}
                 </Button>
+                {!formikWizard.isPrevDisabled && (
+                  <Button
+                    onClick={formikWizard.handlePrev}
+                    disabled={formikWizard.isPrevDisabled}
+                    data-cy={t('navigation.previous.id')}
+                    size="large"
+                    fullWidth
+                    variant="outlined"
+                    className="sm:w-1/2"
+                  >
+                    {t('navigation.previous.text')}
+                  </Button>
+                )}
               </div>
             </DialogActions>
           </div>
