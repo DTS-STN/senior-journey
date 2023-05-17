@@ -106,8 +106,8 @@ const Home: FC = () => {
                       {t('tabs.learn.heading')}
                     </h2>
                     <Divider className="mb-8" />
-                    <p>{t('tabs.learn.description.0.text')}</p>
-                    <p>{t('tabs.learn.description.1.text')}</p>
+                    <p>{t('tabs.learn.description.0')}</p>
+                    <p>{t('tabs.learn.description.1')}</p>
                     <Divider className="my-8" />
                     <div className="text-right">
                       <Button component={Link} href={t('tabs.learn.button.url')} size="large">
@@ -176,7 +176,7 @@ const Home: FC = () => {
                       {t('tabs.plan.heading')}
                     </h2>
                     <Divider className="mb-8" />
-                    <p>{t('tabs.plan.description.0.text')}</p>
+                    <p>{t('tabs.plan.description')}</p>
                     <Divider className="my-8" />
                     <div className="text-right">
                       <Button component={Link} id="quiz-dialog-link" size="large" href="/quiz">
@@ -230,12 +230,12 @@ const Home: FC = () => {
                       {t('tabs.apply.heading')}
                     </h2>
                     <Divider className="mb-8" />
-                    <p>{t('tabs.apply.description.0.text')}</p>
+                    <p>{t('tabs.apply.description.text')}</p>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.apply.description.0.links.0.url')} component={Link}>
+                        <ListItemButton href={t('tabs.apply.description.links.0.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.apply.description.0.links.0.title')}
+                            primary={t('tabs.apply.description.links.0.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
@@ -246,7 +246,7 @@ const Home: FC = () => {
                       <ListItem disablePadding className="border-b">
                         <ListItemButton href={t('tabs.apply.description.0.links.1.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.apply.description.0.links.1.title')}
+                            primary={t('tabs.apply.description.links.1.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
@@ -265,11 +265,11 @@ const Home: FC = () => {
                       {t('tabs.manage.heading')}
                     </h2>
                     <Divider className="mb-8" />
-                    <p>{t('tabs.manage.description.0.text')}</p>
+                    <p>{t('tabs.manage.description.text')}</p>
                     <ul className="list-disc space-y-2 pl-7">
-                      <li>{t('tabs.manage.description.0.list.0')}</li>
-                      <li>{t('tabs.manage.description.0.list.1')}</li>
-                      <li>{t('tabs.manage.description.0.list.2')}</li>
+                      <li>{t('tabs.manage.description.list.0')}</li>
+                      <li>{t('tabs.manage.description.list.1')}</li>
+                      <li>{t('tabs.manage.description.list.2')}</li>
                     </ul>
                     <Divider className="my-8" />
                     <div className="text-right">

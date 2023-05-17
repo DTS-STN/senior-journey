@@ -2,162 +2,123 @@
   "description": "Description ici...",
   "header": "Acceuil",
   "contact-us": {
-    "title": "(FR) Contact us",
-    "description": "(FR) There are many ways to reach us about your public pensions.",
+    "title": "Communiquez avec nous",
+    "description": "Il y a plusieurs façons dont vous pouvez communiquer avec nous pour obtenir des renseignements au sujet de vos prestations de vieillesse fédérales",
     "link": "/contact-us",
     "cards": {
-      "request-call": {
-        "title": "(FR) Request a call",
-        "description": "(FR) Ask us to call you by using eServiceCanada",
-        "link-text": "(FR) Request a call",
-        "href": "https://eservices.canada.ca/fr/service/"
-      },
       "call-us": {
-        "title": "(FR) Call us",
-        "description": "(FR) You can reach us at the following numbers:",
-        "toll-free-description": "(FR) The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday.",
-        "outside-description": "(FR) The hours of operation are 8:30 am to 4:30 pm Eastern time, Monday to Friday.",
-        "toll-free": "(FR) Canada and the United States toll-free:",
-        "tty": "(FR) Canada and the United States TTY:",
-        "outside": "(FR) Outside Canada and the United States:",
-        "toll-number": "1-800-277-9914",
-        "tty-number": "1-800-255-4786",
-        "outside-number": "1-613-957-1954 (call collect) (FR)",
-        "toll-number-href": "tel:18002554786",
-        "tty-number-href": "tel:18002554786",
-        "outside-number-href": "tel:16139571954"
+        "title": "Appelez-nous",
+        "description": "Vous pouvez nous joindre aux numéros suivants\u00a0:",
+        "toll-free": "Téléphone\u00a0:",
+        "toll-free-description": "Les heures d'ouverture sont de 8 h à 17 h, heure locale, du lundi au vendredi.",
+        "toll-number": "1 800 O-Canada (1-800-622-6232)",
+        "toll-number-href": "tel:18006226232",
+        "tty": "ATS\u00a0:",
+        "tty-number": "1-800-926-9105",
+        "tty-number-href": "tel:18009269105",
+        "outside": "À l'extérieur du Canada\u00a0:",
+        "outside-description": "Les heures d'ouverture sont de de 8 h à 17 h, heure locale, du lundi au vendredi.",
+        "outside-number": "Composer le 1 800 O-Canada à l'étranger",
+        "outside-number-href": "tel:18006226232"
       },
       "find-office": {
-        "title": "(FR) Find an office",
-        "link-text": "(FR) Find a Service Canada office near you",
+        "title": "Trouver un bureau",
+        "link-text": "Trouver un Centre Service Canada près de chez vous",
         "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=fra"
       }
     }
   },
   "banner": {
-    "title": "(FR) Learn and plan for your retirement",
-    "text": "(FR) It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income."
+    "title": "Informez-vous sur votre retraite et planifiez en conséquence",
+    "text": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite."
   },
   "tabs": {
     "learn": {
       "id": "learn",
-      "title": "Learn (FR)",
-      "heading": "Get the most out of your retirement benefits in Canada (FR)",
+      "title": "Apprendre",
+      "heading": "Tirez le maximum de vos régimes de pension au Canada",
       "description": [
-        {
-          "text": "There are many factors to consider before you retire. (FR)"
-        },
-        {
-          "text": "Learn about the basics of Canada's old age benefits and ways to manage your money in retirement. (FR)"
-        }
+        "Il y a de nombreux facteurs à prendre en compte avant de prendre sa retraite.",
+        "Découvrez les bases des prestations de vieillesse au Canada et les moyens de gérer votre argent à la retraite."
       ],
       "button": {
-        "text": "Explore retirement (FR)",
+        "text": "Renseignez-vous sur la retraite",
         "url": "/learn"
       },
-      "linksTitle": "Top Learning Links (FR)",
+      "linksTitle": "Principaux liens pour l' apprentissage en ce qui concerne la retraite",
       "links": [
         {
-          "title": "Main sources of retirement income (FR)",
-          "url": "test",
-          "description": "Learn about old age benefits, private retirement savings, and how they work together (FR)"
+          "title": "Choisir quand commencer à recevoir vos pensions publiques",
+          "url": "/learn/main-sources-of-retirement-income",
+          "description": "La flexibilité des pensions de la SV et du RPC vous offre des choix pour votre retraite. Apprenez quels sont les aspects à prendre en considération et comment en venir à une décision."
         },
         {
-          "title": "Planning to save for retirement (FR)",
-          "url": "test2",
-          "description": "Explore how to maximize your savings and better manage your money in retirement. (FR)"
+          "title": "Règles générales sur les régimes de pensions publics",
+          "url": "/learn/planning-to-save-for-retirement",
+          "description": "Consultez ces conseils pour vous aider à décider quand prendre vos pensions de la SV et du RPC. Choisissez ce qui vous convient."
         },
         {
-          "title": "Deciding when to collect public pensions (FR)",
-          "url": "test3",
-          "description": "You can choose when to start your old age benefits. Understand what to consider in making that decision (FR)"
+          "title": "Bonnie décide d'attendre afin de réduire les épargnes dont elle a besoin",
+          "url": "/learn/deciding-when-to-collect-public-pensions",
+          "description": "Si Bonnie décide d'attendre avant de commencer à recevoir sa pension de la SV et du RPC, elle aura besoin de moins d'épargnes."
         }
       ]
     },
     "plan": {
       "id": "plan",
-      "title": "Plan (FR)",
-      "heading": "Not sure where to begin? Take the quiz! (FR)",
-      "description": [
-        {
-          "text": "Receive a personalized checklist to guide you through retirement. (FR)"
-        }
-      ],
+      "title": "Planifier",
+      "heading": "Vous ne savez pas par où commencer? Répondez à notre questionnaire!",
+      "description": "Recevez une liste personnalisée pour vous guider à travers la retraite.",
       "button": {
-        "text": "Take The Quiz (FR)",
-        "url": "#"
+        "text": "Répondez au questionnaire"
       },
-      "linksTitle": "Other Tools (FR)",
+      "linksTitle": "Autres outils",
       "links": [
         {
-          "title": "Canadian Retirement Income Calculator (FR)",
+          "title": "Calculatrice du revenu de retraite Canadienne (CRRC)",
           "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
-          "description": "Get an estimate of your retirement income. This includes your federal old age benefits and private retirement income. (FR)"
+          "description": "Obtenez une estimation de votre revenu de retraite. Cette estimation tient compte de vos prestations de vieillesse fédérales et de votre revenu de retraite d'un régime privé."
         },
         {
-          "title": "Old Age Security eligibility estimator (FR)",
+          "title": "Estimateur de prestations de la Sécurité de la vieillesse",
           "url": "https://alpha.service.canada.ca/fr/projets/estimateur-prestations-sv",
-          "description": "Find old how much money you may get from the Old Age Security program and its benefits. (FR)"
+          "description": "Découvrez les montants que vous pourriez recevoir dans le cadre du programme de la Sécurité de la vieillesse et ses prestations."
         }
       ]
     },
     "apply": {
       "id": "apply",
-      "title": "Apply (FR)",
-      "heading": "Ready to Apply of CPP and OAS? Get started now (FR)",
-      "description": [
-        {
-          "text": "To apply online you can sign in or register for a My Service Canada Account (MSCA). To apply in-person or by mail, you can complete a paper application. (FR)",
-          "links": [
-            {
-              "title": "Canada Pension Plan: How to Apply (FR)",
-              "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html"
-            },
-            {
-              "title": "Old Age Security: How to Apply (FR)",
-              "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html"
-            }
-          ]
-        }
-      ]
+      "title": "Presenter une demande",
+      "heading": "Vous êtes prêt à présenter une demande pour vos pensions publiques? Commencez maintenant",
+      "description": {
+        "text": "Pour présenter une demande en ligne, vous pouvez ouvrir une session dans Mon dossier Service Canada (MDSC) ou vous inscrire pour ouvrir un compte MDSC. Pour présenter une demande en personne ou par la poste, vous pouvez remplir une demande papier.",
+        "links": [
+          {
+            "title": "Régime de pensions du Canada\u00a0: Comment présenter une demande",
+            "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html"
+          },
+          {
+            "title": "Sécurité de la vieillesse\u00a0: Comment présenter une demande",
+            "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html"
+          }
+        ]
+      }
     },
     "manage": {
       "id": "manage",
-      "title": "Manage (FR)",
-      "heading": "Take control of your federal old age benefits with the \"My Service Canada\" Account (MSCA) (FR)",
-      "description": [
-        {
-          "text": "You can do a lot with your MSCA, including: (FR)",
-          "list": [
-            "Create and submit your Canada Pension Plan and Old Age Security application(s). (FR)",
-            "Check the status, payment dates and amounts for your federal old age benefits. (FR)",
-            "Update your mailing address and banking information. (FR)"
-          ]
-        }
-      ],
+      "title": "Gérer",
+      "heading": "Prenez le contrôle de vos prestations de vieillesse fédérales grâce à Mon dossier Service Canada (MDSC)",
+      "description": {
+        "text": "MDSC vous permet de faire beaucoup de choses, notamment\u00a0:",
+        "list": [
+          "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse.",
+          "Vérifier l'état, les dates de versement et les montants de vos prestations de vieillesse fédérales.",
+          "Mettre à jour votre adresse postale et vos renseignements bancaires."
+        ]
+      },
       "button": {
-        "text": "Sign Into MSCA (FR)",
+        "text": "Ouvrir une session dans MDSC",
         "url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html"
-      }
-    }
-  },
-  "supporting-seniors": {
-    "title": "FR Supporting Seniors",
-    "cards": {
-      "family-and-friends": {
-        "href": "/",
-        "link-text": "FR Family and Friends",
-        "text": "FR Learn how you can help your loved ones enter the retirement stage in their life."
-      },
-      "representatives": {
-        "href": "/",
-        "link-text": "FR Representatives",
-        "text": "FR Find resources to understand and navigate Canada’s pension system."
-      },
-      "organizations": {
-        "href": "/",
-        "link-text": "FR Organizations",
-        "text": "FR Learn how best to help and navigate clients as they plan for retirement."
       }
     }
   }
