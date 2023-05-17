@@ -19,10 +19,10 @@ import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import Container from '../components/Container'
+import { HeroBanner } from '../components/HeroBanner'
 import Layout from '../components/Layout'
 import { getDCTermsTitle } from '../utils/seo-utils'
 
@@ -53,56 +53,20 @@ const Home: FC = () => {
       <h1 className="sr-only">{t('header')}</h1>
 
       <Container className="mb-8 md:mb-12">
-        <section className="rounded-3xl bg-gray-surface">
-          <div className="flex flex-col items-center md:max-h-[300px]  md:flex-row-reverse">
-            <div className="flex flex-col md:mb-0 md:w-2/3 md:flex-row lg:w-2/5">
-              <Image
-                src="/assets/left.svg"
-                width={34}
-                height={302}
-                className="hidden h-[100%] w-[34px] md:block"
-                alt=""
-              />
-              <div className="md:flex-end relative md:flex md:flex-row">
-                <Image
-                  src="/assets/right.svg"
-                  width={34}
-                  height={302}
-                  className="absolute z-30 hidden w-[34px] md:block md:max-h-[300px]"
-                  alt=""
-                />
-                <Image
-                  src="/assets/landing-page.jpg"
-                  width={460}
-                  height={302}
-                  sizes="100%"
-                  alt=""
-                  className="w-full rounded-2xl  md:max-h-[300px]"
-                />
-                <Image
-                  src="/assets/bottom-top.svg"
-                  width={368}
-                  height={34}
-                  className="absolute bottom-0 z-20 w-full max-w-full md:hidden"
-                  alt=""
-                />
-              </div>
-              <Image
-                src="/assets/bottom-bottom.svg"
-                width={468}
-                height={34}
-                className="w-full max-w-full md:hidden"
-                alt=""
-              />
-            </div>
-            <div className="px-6 pb-6 pt-12 md:w-2/3 md:pl-14 md:pt-8 lg:w-4/5">
-              <h2 className="font-display text-4xl font-medium text-primary-700 md:text-5xl md:font-bold">
-                {t('banner.title')}
-              </h2>
-              <p className="m-0 pt-2 md:pt-4">{t('banner.text')}</p>
-            </div>
-          </div>
-        </section>
+        <HeroBanner
+          imageProps={{
+            alt: '',
+            className: 'md:object-right-bottom',
+            height: 427,
+            src: '/assets/landing-page.jpg',
+            width: 640,
+          }}
+        >
+          <h2 className="mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-6xl">
+            {t('banner.title')}
+          </h2>
+          <p className="m-0">{t('banner.text')}</p>
+        </HeroBanner>
       </Container>
 
       <section>
