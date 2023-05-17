@@ -69,8 +69,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
             <ListItem key={primaryI18nKey} className="border-b">
               <ListItemText
                 primary={t(primaryI18nKey)}
-                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display py-2' }}
-                secondary={t(secondaryI18nKey)}
+                primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
+                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
@@ -126,62 +126,18 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
             </tbody>
           </table>
         </Paper>
-        
-      <AlertCard type="important" className="mb-8">
-        <Trans
-          ns="learn/deciding-when-to-collect-public-pensions"
-          i18nKey="old-age-security.smart-tip.content"
-          components={{
-            a1: <a className="underline" href={t('old-age-security.smart-tip.link-one')} />,
-            a2: <a className="underline" href={t('old-age-security.smart-tip.link-two')} />,
-          }}
-        />
-      </AlertCard>
-      <p>{t('old-age-security.content-two')}</p>
-      <Image
-        alt={t('old-age-security.illustration.alt')}
-        src={t('old-age-security.illustration.img-url')}
-        width={842}
-        height={519}
-        className="w-full"
-      />
-      <AccessibilityGraphContainer
-        tableData={illustrationOASGraphData}
-        description={t('old-age-security.illustration.description')}
-        descriptionHeading={t('description-heading')}
-        valuesHeading={t('values-heading')}
-        buttonLabel={t('show-accessible-table')}
-      />
-      <p>{t('old-age-security.content-three')}</p>
-      <p>{t('old-age-security.content-four')}</p>
-      <p>
-        <Trans
-          ns="learn/deciding-when-to-collect-public-pensions"
-          i18nKey="old-age-security.content-five.content"
-          components={{
-            a1: <a className="underline" href={t('old-age-security.content-five.link-one')} />,
-          }}
-        />
-      </p>
-      <p>{t('old-age-security.content-six')}</p>
-      <p>
-        <Trans
-          ns="learn/deciding-when-to-collect-public-pensions"
-          i18nKey="old-age-security.content-seven.content"
-          components={{
-            a1: <a className="underline" href={t('old-age-security.content-seven.link-one')} />,
-          }}
-        />
-      </p>
 
-      <h2 id="cpp-pension" className="h2">
-        {t('cpp-pension.heading')}
-      </h2>
-      <p>{t('cpp-pension.content-one')}</p>
-      <AlertCard type="tip">
-        <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
-      </AlertCard>
-      <div>
+        <AlertCard type="important" className="mb-8">
+          <Trans
+            ns="learn/deciding-when-to-collect-public-pensions"
+            i18nKey="old-age-security.smart-tip.content"
+            components={{
+              a1: <a className="underline" href={t('old-age-security.smart-tip.link-one')} />,
+              a2: <a className="underline" href={t('old-age-security.smart-tip.link-two')} />,
+            }}
+          />
+        </AlertCard>
+        <p>{t('old-age-security.content-two')}</p>
         <Image
           alt={t('old-age-security.illustration.alt')}
           src={t('old-age-security.illustration.img-url')}
@@ -190,8 +146,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           className="w-full"
         />
         <AccessibilityGraphContainer
-          tableData={illustrationCPPGraphData}
-          description={t('cpp-pension.illustration.description')}
+          tableData={illustrationOASGraphData}
+          description={t('old-age-security.illustration.description')}
           descriptionHeading={t('description-heading')}
           valuesHeading={t('values-heading')}
           buttonLabel={t('show-accessible-table')}
@@ -222,197 +178,241 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           {t('cpp-pension.heading')}
         </h2>
         <p>{t('cpp-pension.content-one')}</p>
-        <AlertCard type="important">
+        <AlertCard type="tip">
           <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
         </AlertCard>
         <div>
           <Image
-            alt={t('cpp-pension.illustration.alt')}
-            src={t('cpp-pension.illustration.img-url')}
-            width={551}
-            height={361}
+            alt={t('old-age-security.illustration.alt')}
+            src={t('old-age-security.illustration.img-url')}
+            width={842}
+            height={519}
             className="w-full"
           />
           <AccessibilityGraphContainer
             tableData={illustrationCPPGraphData}
             description={t('cpp-pension.illustration.description')}
-            buttonLabel={t('show-accessible-table')}
-            valuesHeading={t('values-heading')}
             descriptionHeading={t('description-heading')}
+            valuesHeading={t('values-heading')}
+            buttonLabel={t('show-accessible-table')}
+          />
+          <p>{t('old-age-security.content-three')}</p>
+          <p>{t('old-age-security.content-four')}</p>
+          <p>
+            <Trans
+              ns="learn/deciding-when-to-collect-public-pensions"
+              i18nKey="old-age-security.content-five.content"
+              components={{
+                a1: <a className="underline" href={t('old-age-security.content-five.link-one')} />,
+              }}
+            />
+          </p>
+          <p>{t('old-age-security.content-six')}</p>
+          <p>
+            <Trans
+              ns="learn/deciding-when-to-collect-public-pensions"
+              i18nKey="old-age-security.content-seven.content"
+              components={{
+                a1: <a className="underline" href={t('old-age-security.content-seven.link-one')} />,
+              }}
+            />
+          </p>
+
+          <h2 id="cpp-pension" className="h2">
+            {t('cpp-pension.heading')}
+          </h2>
+          <p>{t('cpp-pension.content-one')}</p>
+          <AlertCard type="important">
+            <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
+          </AlertCard>
+          <div>
+            <Image
+              alt={t('cpp-pension.illustration.alt')}
+              src={t('cpp-pension.illustration.img-url')}
+              width={551}
+              height={361}
+              className="w-full"
+            />
+            <AccessibilityGraphContainer
+              tableData={illustrationCPPGraphData}
+              description={t('cpp-pension.illustration.description')}
+              buttonLabel={t('show-accessible-table')}
+              valuesHeading={t('values-heading')}
+              descriptionHeading={t('description-heading')}
+            />
+          </div>
+          <p>{t('cpp-pension.content-two')}</p>
+          <p>
+            <Trans
+              ns="learn/deciding-when-to-collect-public-pensions"
+              i18nKey="cpp-pension.content-three.content"
+              components={{
+                a1: <a className="underline" href={t('cpp-pension.content-three.link-one')} />,
+              }}
+            />
+          </p>
+          <p>{t('cpp-pension.content-four')}</p>
+
+          <Paper variant="outlined" className="mb-6">
+            <table className="min-w-full border-collapse divide-y text-left">
+              <thead className="bg-gray-surface">
+                <tr className="divide-x">
+                  <th scope="col" className="px-3 py-2.5">
+                    {t('cpp-pension.cpp-income-table.header-column-one-value')}
+                  </th>
+                  <th scope="col" className="px-3 py-2.5">
+                    {t('cpp-pension.cpp-income-table.header-column-two-value')}
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
+                {[
+                  {
+                    id: t('cpp-pension.cpp-income-table.row-one.id'),
+                    col1: t('cpp-pension.cpp-income-table.row-one.column-one-value'),
+                    col2: t('cpp-pension.cpp-income-table.row-one.column-two-value'),
+                  },
+                  {
+                    id: t('cpp-pension.cpp-income-table.row-two.id'),
+                    col1: t('cpp-pension.cpp-income-table.row-two.column-one-value'),
+                    col2: t('cpp-pension.cpp-income-table.row-two.column-two-value'),
+                  },
+                  {
+                    id: t('cpp-pension.cpp-income-table.row-three.id'),
+                    col1: t('cpp-pension.cpp-income-table.row-three.column-one-value'),
+                    col2: t('cpp-pension.cpp-income-table.row-three.column-two-value'),
+                  },
+                  {
+                    id: t('cpp-pension.cpp-income-table.row-four.id'),
+                    col1: t('cpp-pension.cpp-income-table.row-four.column-one-value'),
+                    col2: t('cpp-pension.cpp-income-table.row-four.column-two-value'),
+                  },
+                  {
+                    id: t('cpp-pension.cpp-income-table.row-five.id'),
+                    col1: t('cpp-pension.cpp-income-table.row-five.column-one-value'),
+                    col2: t('cpp-pension.cpp-income-table.row-five.column-two-value'),
+                  },
+                ].map((row) => (
+                  <tr key={row.id} className="divide-x">
+                    <td className="px-3 py-2.5">{row.col1}</td>
+                    <td className="px-3 py-2.5">{row.col2}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </Paper>
+          <p>{t('cpp-pension.content-five')}</p>
+          <AlertCard type="disclaimer">
+            <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.disclaimer" />
+          </AlertCard>
+        </div>
+        <h2 id="case-study" className="h2">
+          {t('case-study.heading')}
+        </h2>
+        <h3 id="case-study-sub-heading" className="h3">
+          {t('case-study.sub-heading')}
+        </h3>
+        <p>{t('case-study.content-one')}</p>
+        <p>{t('case-study.content-two')}</p>
+        <p>{t('case-study.content-three')}</p>
+        <h4 id="case-study-illustration-one-title" className="h4">
+          {t('case-study.illustration-one.title')}
+        </h4>
+        <div>
+          <Image
+            alt={t('case-study.illustration-one.alt')}
+            src={t('case-study.illustration-one.img-url')}
+            width={839}
+            height={558}
+            className="w-full"
+          />
+          <AccessibilityGraphContainer
+            tableData={illustrationCaseStudyData1}
+            description={t('case-study.illustration-one.description')}
+            descriptionHeading={t('description-heading')}
+            valuesHeading={t('values-heading')}
+            buttonLabel={t('show-accessible-table')}
           />
         </div>
-        <p>{t('cpp-pension.content-two')}</p>
-        <p>
-          <Trans
-            ns="learn/deciding-when-to-collect-public-pensions"
-            i18nKey="cpp-pension.content-three.content"
-            components={{
-              a1: <a className="underline" href={t('cpp-pension.content-three.link-one')} />,
-            }}
-          />
-        </p>
-        <p>{t('cpp-pension.content-four')}</p>
-
-        <Paper variant="outlined" className="mb-6">
-          <table className="min-w-full border-collapse divide-y text-left">
-            <thead className="bg-gray-surface">
-              <tr className="divide-x">
-                <th scope="col" className="px-3 py-2.5">
-                  {t('cpp-pension.cpp-income-table.header-column-one-value')}
-                </th>
-                <th scope="col" className="px-3 py-2.5">
-                  {t('cpp-pension.cpp-income-table.header-column-two-value')}
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y">
-              {[
-                {
-                  id: t('cpp-pension.cpp-income-table.row-one.id'),
-                  col1: t('cpp-pension.cpp-income-table.row-one.column-one-value'),
-                  col2: t('cpp-pension.cpp-income-table.row-one.column-two-value'),
-                },
-                {
-                  id: t('cpp-pension.cpp-income-table.row-two.id'),
-                  col1: t('cpp-pension.cpp-income-table.row-two.column-one-value'),
-                  col2: t('cpp-pension.cpp-income-table.row-two.column-two-value'),
-                },
-                {
-                  id: t('cpp-pension.cpp-income-table.row-three.id'),
-                  col1: t('cpp-pension.cpp-income-table.row-three.column-one-value'),
-                  col2: t('cpp-pension.cpp-income-table.row-three.column-two-value'),
-                },
-                {
-                  id: t('cpp-pension.cpp-income-table.row-four.id'),
-                  col1: t('cpp-pension.cpp-income-table.row-four.column-one-value'),
-                  col2: t('cpp-pension.cpp-income-table.row-four.column-two-value'),
-                },
-                {
-                  id: t('cpp-pension.cpp-income-table.row-five.id'),
-                  col1: t('cpp-pension.cpp-income-table.row-five.column-one-value'),
-                  col2: t('cpp-pension.cpp-income-table.row-five.column-two-value'),
-                },
-              ].map((row) => (
-                <tr key={row.id} className="divide-x">
-                  <td className="px-3 py-2.5">{row.col1}</td>
-                  <td className="px-3 py-2.5">{row.col2}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </Paper>
-        <p>{t('cpp-pension.content-five')}</p>
-        <AlertCard type="disclaimer">
-          <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.disclaimer" />
+        <p>{t('case-study.content-four')}</p>
+        <AlertCard type="important">
+          <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="case-study.smart-tip" />
         </AlertCard>
-      </div>
-      <h2 id="case-study" className="h2">
-        {t('case-study.heading')}
-      </h2>
-      <h3 id="case-study-sub-heading" className="h3">
-        {t('case-study.sub-heading')}
-      </h3>
-      <p>{t('case-study.content-one')}</p>
-      <p>{t('case-study.content-two')}</p>
-      <p>{t('case-study.content-three')}</p>
-      <h4 id="case-study-illustration-one-title" className="h4">
-        {t('case-study.illustration-one.title')}
-      </h4>
-      <div>
-        <Image
-          alt={t('case-study.illustration-one.alt')}
-          src={t('case-study.illustration-one.img-url')}
-          width={839}
-          height={558}
-          className="w-full"
-        />
-        <AccessibilityGraphContainer
-          tableData={illustrationCaseStudyData1}
-          description={t('case-study.illustration-one.description')}
-          descriptionHeading={t('description-heading')}
-          valuesHeading={t('values-heading')}
-          buttonLabel={t('show-accessible-table')}
-        />
-      </div>
-      <p>{t('case-study.content-four')}</p>
-      <AlertCard type="important">
-        <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="case-study.smart-tip" />
-      </AlertCard>
-      <div>
-        <Image
-          alt={t('case-study.illustration-two.alt')}
-          src={t('case-study.illustration-two.img-url')}
-          width={839}
-          height={450}
-          className="w-full"
-        />
-        <AccessibilityGraphContainer
-          tableData={illustrationCaseStudyData2}
-          description={t('case-study.illustration-two.description')}
-          buttonLabel={t('show-accessible-table')}
-          descriptionHeading={t('description-heading')}
-          valuesHeading={t('values-heading')}
-        />
-      </div>
-      <p>{t('case-study.content-five')}</p>
-      <p>{t('case-study.content-six')}</p>
-      <h4 id="case-study-illustration-three-title" className="h4">
-        {t('case-study.illustration-three.title')}
-      </h4>
-      <div>
-        <Image
-          alt={t('case-study.illustration-three.alt')}
-          src={t('case-study.illustration-three.img-url')}
-          width={839}
-          height={450}
-          className="w-full"
-        />
-        <AccessibilityGraphContainer
-          tableData={illustrationCaseStudyData3}
-          description={t('case-study.illustration-three.description')}
-          buttonLabel={t('show-accessible-table')}
-          descriptionHeading={t('description-heading')}
-          valuesHeading={t('values-heading')}
-        />
-      </div>
-      <p>{t('case-study.content-seven')}</p>
-      <div>
-        <Image
-          alt={t('case-study.illustration-four.alt')}
-          src={t('case-study.illustration-four.img-url')}
-          width={839}
-          height={450}
-          className="w-full"
-        />
-        <AccessibilityGraphContainer
-          tableData={illustrationCaseStudyData4}
-          description={t('case-study.illustration-four.description')}
-          buttonLabel={t('show-accessible-table')}
-          descriptionHeading={t('description-heading')}
-          valuesHeading={t('values-heading')}
-        />
-      </div>
-      <p>{t('case-study.content-eight')}</p>
-      <div>
-        <Image
-          alt={t('case-study.illustration-five.alt')}
-          src={t('case-study.illustration-five.img-url')}
-          width={839}
-          height={450}
-          className="w-full"
-        />
-        <AccessibilityGraphContainer
-          tableData={illustrationCaseStudyData5}
-          description={t('case-study.illustration-five.description')}
-          buttonLabel={t('show-accessible-table')}
-          descriptionHeading={t('description-heading')}
-          valuesHeading={t('values-heading')}
-        />
-      </div>
-      <p>{t('case-study.content-nine')}</p>
-      <p>{t('case-study.content-ten')}</p>
-    </LearnPageLayout>
-  </>
+        <div>
+          <Image
+            alt={t('case-study.illustration-two.alt')}
+            src={t('case-study.illustration-two.img-url')}
+            width={839}
+            height={450}
+            className="w-full"
+          />
+          <AccessibilityGraphContainer
+            tableData={illustrationCaseStudyData2}
+            description={t('case-study.illustration-two.description')}
+            buttonLabel={t('show-accessible-table')}
+            descriptionHeading={t('description-heading')}
+            valuesHeading={t('values-heading')}
+          />
+        </div>
+        <p>{t('case-study.content-five')}</p>
+        <p>{t('case-study.content-six')}</p>
+        <h4 id="case-study-illustration-three-title" className="h4">
+          {t('case-study.illustration-three.title')}
+        </h4>
+        <div>
+          <Image
+            alt={t('case-study.illustration-three.alt')}
+            src={t('case-study.illustration-three.img-url')}
+            width={839}
+            height={450}
+            className="w-full"
+          />
+          <AccessibilityGraphContainer
+            tableData={illustrationCaseStudyData3}
+            description={t('case-study.illustration-three.description')}
+            buttonLabel={t('show-accessible-table')}
+            descriptionHeading={t('description-heading')}
+            valuesHeading={t('values-heading')}
+          />
+        </div>
+        <p>{t('case-study.content-seven')}</p>
+        <div>
+          <Image
+            alt={t('case-study.illustration-four.alt')}
+            src={t('case-study.illustration-four.img-url')}
+            width={839}
+            height={450}
+            className="w-full"
+          />
+          <AccessibilityGraphContainer
+            tableData={illustrationCaseStudyData4}
+            description={t('case-study.illustration-four.description')}
+            buttonLabel={t('show-accessible-table')}
+            descriptionHeading={t('description-heading')}
+            valuesHeading={t('values-heading')}
+          />
+        </div>
+        <p>{t('case-study.content-eight')}</p>
+        <div>
+          <Image
+            alt={t('case-study.illustration-five.alt')}
+            src={t('case-study.illustration-five.img-url')}
+            width={839}
+            height={450}
+            className="w-full"
+          />
+          <AccessibilityGraphContainer
+            tableData={illustrationCaseStudyData5}
+            description={t('case-study.illustration-five.description')}
+            buttonLabel={t('show-accessible-table')}
+            descriptionHeading={t('description-heading')}
+            valuesHeading={t('values-heading')}
+          />
+        </div>
+        <p>{t('case-study.content-nine')}</p>
+        <p>{t('case-study.content-ten')}</p>
+      </LearnPageLayout>
+    </>
   )
 }
 
