@@ -89,8 +89,8 @@ const MainSourcesOfRetirementIncome: FC = () => {
             <ListItem key={primaryI18nKey} className="border-b">
               <ListItemText
                 primary={t(primaryI18nKey)}
-                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display py-2' }}
-                secondary={t(secondaryI18nKey)}
+                primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
+                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>

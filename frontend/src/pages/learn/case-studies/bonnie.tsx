@@ -93,11 +93,11 @@ const Bonnie: FC = () => {
               secondaryI18nKey: 'key-takeaways.li6',
             },
           ].map(({ primaryI18nKey, secondaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} disablePadding className="border-b">
+            <ListItem key={primaryI18nKey} className="border-b">
               <ListItemText
                 primary={t(primaryI18nKey)}
-                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display' }}
-                secondary={t(secondaryI18nKey)}
+                primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
+                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>

@@ -62,7 +62,7 @@ const PlanningToSaveForRetirement: FC = () => {
           },
         ]}
       >
-        <h2 id="overview" className="sr-only">
+        <h2 id="overview" className="h2 !mt-0">
           {t('overview-link-text')}
         </h2>
         <p>{t('overview')}</p>

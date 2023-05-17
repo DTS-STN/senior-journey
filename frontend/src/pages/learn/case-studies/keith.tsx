@@ -43,7 +43,7 @@ const Keith: FC = () => {
     [t]
   )
 
-  const Img = ({ pension, classes }: { pension: string, classes?: string }) => (
+  const Img = ({ pension, classes }: { pension: string; classes?: string }) => (
     <Image
       alt={t(`${pension}.description`)}
       src={t(`${pension}.img-url.${mobile ? 'mobile' : 'desktop'}`)}
@@ -70,7 +70,7 @@ const Keith: FC = () => {
         ]}
       >
         <NextSeo title={t('header')} />
-        
+
         <h2 id="key-takeaways" className="h2 !mt-0">
           {t('key-takeaways.heading')}
         </h2>
@@ -91,11 +91,11 @@ const Keith: FC = () => {
               primaryI18nKey: 'key-takeaways.li6',
             },
           ].map(({ primaryI18nKey, secondaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} disablePadding className="border-b py-2">
+            <ListItem key={primaryI18nKey} className="border-b">
               <ListItemText
                 primary={t(primaryI18nKey)}
-                primaryTypographyProps={{ className: 'font-medium text-base md:text-xl font-display' }}
-                secondary={secondaryI18nKey ? t(secondaryI18nKey): null}
+                primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
+                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
@@ -111,39 +111,45 @@ const Keith: FC = () => {
           {t('cpp-oas.heading')}
         </h2>
         <p>{t('cpp-oas.p1')}</p>
-        <p>{t('cpp-oas.p2')}
-          <Link
-            href={t('cpp-oas.oas-benefits.href')}
-            className='underline text-secondary-700'>
+        <p>
+          {t('cpp-oas.p2')}
+          <Link href={t('cpp-oas.oas-benefits.href')} className="text-secondary-700 underline">
             {t('cpp-oas.oas-benefits.text')}
           </Link>
         </p>
-        
+
         <h2 id="prb" className="h2">
           {t('cpp.prb.heading')}
         </h2>
-        <p>{t('cpp.prb.p1')} 
-        <Link
-            href={t('cpp.prb.cpp-post.href')}
-            className='underline text-secondary-700'>
+        <p>
+          {t('cpp.prb.p1')}
+          <Link href={t('cpp.prb.cpp-post.href')} className="text-secondary-700 underline">
             {t('cpp.prb.cpp-post.text')}
           </Link>
-          {t('cpp.prb.p2')} 
+          {t('cpp.prb.p2')}
         </p>
 
         <h2 id="prb-choices" className="h2">
           {t('cpp.prb-choices.heading')}
         </h2>
-        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li1`)} /></p>
-        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li2`)} /></p>
-        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li3`)} /></p>
-        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li4`)} /></p>
+        <p>
+          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li1`)} />
+        </p>
+        <p>
+          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li2`)} />
+        </p>
+        <p>
+          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li3`)} />
+        </p>
+        <p>
+          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li4`)} />
+        </p>
 
         <h2 id="cpp-choices" className="h2">
           {t('cpp.cpp-choices.heading')}
         </h2>
         <Img pension="cpp.cpp-choices" />
-        <div className='grid md:grid-cols-2 grid-cols-1 text-center py-4'>
+        <div className="grid grid-cols-1 py-4 text-center md:grid-cols-2">
           <div>
             <p>{t('cpp.cpp-choices.choices.li1')}</p>
             <p>{t('cpp.cpp-choices.choices.li2')}</p>
@@ -167,7 +173,7 @@ const Keith: FC = () => {
           {t('cpp.what-else.heading')}
         </h2>
         <p>{t('cpp.what-else.p1')}</p>
-        <List disablePadding className='text-black pl-6 pb-4' sx={{ listStyleType: 'disc'}}>
+        <List disablePadding className="pb-4 pl-6 text-black" sx={{ listStyleType: 'disc' }}>
           {[
             {
               primaryI18nKey: 'cpp.what-else.list.li1',
@@ -177,31 +183,35 @@ const Keith: FC = () => {
             },
           ].map(({ primaryI18nKey }) => (
             <ListItem key={primaryI18nKey} sx={{ display: 'list-item' }} disablePadding>
-              <ListItemText
-                primary={t(primaryI18nKey)}
-              />
+              <ListItemText primary={t(primaryI18nKey)} />
             </ListItem>
           ))}
         </List>
 
         <p>{t('cpp.what-else.p2')}</p>
         <AlertCard type="tip">
-          <Trans ns="learn/case-studies/keith" 
-          i18nKey="cpp.what-else.smart-tip.content"
-          components={{
-            a1: <a className="underline text-secondary-700" href={t('cpp.what-else.smart-tip.link-one')} />,
-            a2: <a className="underline text-secondary-700" href={t('cpp.what-else.smart-tip.link-two')} />,
-          }} />
+          <Trans
+            ns="learn/case-studies/keith"
+            i18nKey="cpp.what-else.smart-tip.content"
+            components={{
+              a1: <a className="text-secondary-700 underline" href={t('cpp.what-else.smart-tip.link-one')} />,
+              a2: <a className="text-secondary-700 underline" href={t('cpp.what-else.smart-tip.link-two')} />,
+            }}
+          />
         </AlertCard>
 
         <h2 id="keith-pension-87" className="h2">
           {t('cpp.keith-pension-87.heading')}
         </h2>
         <p>{t('cpp.keith-pension-87.p1')}</p>
-        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p2`)} /></p>
-        <p><Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p3`)} /></p>
+        <p>
+          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p2`)} />
+        </p>
+        <p>
+          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p3`)} />
+        </p>
         <Img pension="cpp.keith-pension-87" />
-        <div className='grid md:grid-cols-2 grid-cols-1 text-center py-4'>
+        <div className="grid grid-cols-1 py-4 text-center md:grid-cols-2">
           <div>
             <p>{t('cpp.keith-pension-87.choices.li1')}</p>
             <p>{t('cpp.keith-pension-87.choices.li2')}</p>
@@ -225,7 +235,7 @@ const Keith: FC = () => {
         </h2>
         <p>{t('cpp.keith-pension-90.p1')}</p>
         <Img pension="cpp.keith-pension-90" />
-        <div className='grid md:grid-cols-2 grid-cols-1 text-center py-4'>
+        <div className="grid grid-cols-1 py-4 text-center md:grid-cols-2">
           <div>
             <p>{t('cpp.keith-pension-90.choices.li1')}</p>
             <p>{t('cpp.keith-pension-90.choices.li2')}</p>
@@ -247,24 +257,20 @@ const Keith: FC = () => {
         <h2 id="oas" className="h2">
           {t('oas.heading')}
         </h2>
-        <p>{t('oas.p1')} 
-        <Link
-            href={t('oas.gis.href')}
-            className='underline text-secondary-700'>
+        <p>
+          {t('oas.p1')}
+          <Link href={t('oas.gis.href')} className="text-secondary-700 underline">
             {t('oas.gis.text')}
           </Link>
           {t('oas.p2')}
-          <Link
-            href={t('oas.low-income.href')}
-            className='underline text-secondary-700'>
+          <Link href={t('oas.low-income.href')} className="text-secondary-700 underline">
             {t('oas.low-income.text')}
           </Link>
         </p>
         <p>{t('oas.p3')}</p>
-        <p>{t('oas.p4')} 
-        <Link
-            href={t('oas.fred-story.href')}
-            className='underline text-secondary-700'>
+        <p>
+          {t('oas.p4')}
+          <Link href={t('oas.fred-story.href')} className="text-secondary-700 underline">
             {t('oas.fred-story.text')}
           </Link>
         </p>
@@ -295,8 +301,7 @@ const Keith: FC = () => {
             </Fragment>
           ))}
         </List>
-
-        </LearnPageLayout>
+      </LearnPageLayout>
     </>
   )
 }
@@ -304,7 +309,10 @@ const Keith: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'], null, ['en', 'fr'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'], null, [
+        'en',
+        'fr',
+      ])),
     },
   }
 }
