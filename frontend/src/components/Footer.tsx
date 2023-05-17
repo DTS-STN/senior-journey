@@ -35,12 +35,12 @@ export interface FooterProps {
   /**
    * Learning Matierials Header for appropriate menu
    */
-  explorePublicPensionsText: string
+  exploreRetirementText: string
 
   /**
    * array of objects containing the Learning materials link text and link
    */
-  explorePublicPensionsLinks: FooterLink[]
+  exploreRetirementLinks: FooterLink[]
 
   /**
    * Menu Header for appropriate menu
@@ -80,8 +80,8 @@ const Footer: FC<FooterProps> = ({
   footerHeader,
   footerLogo,
   footerNavHeader,
-  explorePublicPensionsLinks,
-  explorePublicPensionsText,
+  exploreRetirementLinks,
+  exploreRetirementText,
   links,
   menuLinks,
   menuText,
@@ -95,9 +95,9 @@ const Footer: FC<FooterProps> = ({
           <h2 className="mb-8 font-display font-bold md:text-lg">{footerHeader}</h2>
           <div className="grid gap-6 md:grid-cols-3">
             <div>
-              <h3 className="mb-4 font-display font-medium md:text-xl">{explorePublicPensionsText}</h3>
+              <h3 className="mb-4 font-display font-medium md:text-xl">{exploreRetirementText}</h3>
               <ul className="space-y-2 text-sm">
-                {explorePublicPensionsLinks.map(({ link, linkText }) => (
+                {exploreRetirementLinks.map(({ link, linkText }) => (
                   <li key={link}>
                     <MuiLink component={Link} color="inherit" underline="hover" href={link}>
                       {linkText}

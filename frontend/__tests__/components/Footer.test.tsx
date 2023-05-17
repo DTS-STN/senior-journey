@@ -49,8 +49,8 @@ describe('Footer', () => {
             linkText: 'some-link-4',
           },
         ]}
-        explorePublicPensionsText="learning materials text"
-        explorePublicPensionsLinks={[
+        exploreRetirementText="learning materials text"
+        exploreRetirementLinks={[
           {
             link: 'https://some-link-1.com',
             linkText: 'some-link-1',
@@ -93,8 +93,8 @@ describe('Footer', () => {
           },
         ]}
         footerNavHeader="testFooterNavHeader"
-        explorePublicPensionsText="learning materials text"
-        explorePublicPensionsLinks={[
+        exploreRetirementText="learning materials text"
+        exploreRetirementLinks={[
           {
             link: 'https://some-link-1.com',
             linkText: 'some-link-1',
