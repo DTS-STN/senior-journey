@@ -38,7 +38,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
         expandIcon={<ExpandMoreIcon className="text-white" />}
       >
         <div>
-          <div className="mb-2 font-display font-bold text-xl pt-8">{sectionTitle}</div>
+          <div className="mb-2 font-display font-bold text-xl">{sectionTitle}</div>
           <div className="text-sm opacity-70">{subSectionTitle}</div>
         </div>
       </AccordionSummary>
