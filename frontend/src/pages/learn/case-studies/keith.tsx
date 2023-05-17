@@ -149,7 +149,7 @@ const Keith: FC = () => {
           {t('cpp.cpp-choices.heading')}
         </h2>
         <Img pension="cpp.cpp-choices" />
-        <div className="grid grid-cols-1 py-4 text-center md:grid-cols-2">
+        <div className="grid grid-cols-1 py-4 md:text-center md:grid-cols-2">
           <div>
             <p>{t('cpp.cpp-choices.choices.li1')}</p>
             <p>{t('cpp.cpp-choices.choices.li2')}</p>
@@ -211,7 +211,7 @@ const Keith: FC = () => {
           <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p3`)} />
         </p>
         <Img pension="cpp.keith-pension-87" />
-        <div className="grid grid-cols-1 py-4 text-center md:grid-cols-2">
+        <div className="grid grid-cols-1 py-4 md:text-center md:grid-cols-2">
           <div>
             <p>{t('cpp.keith-pension-87.choices.li1')}</p>
             <p>{t('cpp.keith-pension-87.choices.li2')}</p>
@@ -235,7 +235,7 @@ const Keith: FC = () => {
         </h2>
         <p>{t('cpp.keith-pension-90.p1')}</p>
         <Img pension="cpp.keith-pension-90" />
-        <div className="grid grid-cols-1 py-4 text-center md:grid-cols-2">
+        <div className='grid md:grid-cols-2 grid-cols-1 md:text-center py-4'>
           <div>
             <p>{t('cpp.keith-pension-90.choices.li1')}</p>
             <p>{t('cpp.keith-pension-90.choices.li2')}</p>
