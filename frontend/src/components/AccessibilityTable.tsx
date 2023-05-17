@@ -16,7 +16,7 @@ interface TableProps {
 const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
   return (
     <div className='overflow-x-scroll w-full'>
-      <table className="whitespace-nowrap min-w-full border-collapse divide-y border text-left">
+      <table className="min-w-full border-collapse divide-y border text-left">
         <caption className="text-left">{tableData.caption}</caption>
         <thead className="bg-gray-surface">
           <tr className="divide-x">
