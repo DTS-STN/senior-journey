@@ -244,7 +244,7 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.apply.description.0.links.1.url')} component={Link}>
+                        <ListItemButton href={t('tabs.apply.description.links.1.url')} component={Link}>
                           <ListItemText
                             primary={t('tabs.apply.description.links.1.title')}
                             primaryTypographyProps={{
