@@ -1,33 +1,6 @@
 {
   "description": "Description here...",
   "header": "Home",
-  "contact-us": {
-    "title": "Contact us",
-    "description": "There are many ways to reach us about your public pensions.",
-    "link": "/contact-us",
-    "cards": {
-      "call-us": {
-        "title": "Call us",
-        "description": "You can reach us at the following numbers:",
-        "toll-free": "Telephone",
-        "toll-free-description": "The hours of operation are 8:30 am to 5:00 pm local time, Monday to Friday.",
-        "toll-number": "1 800 O-Canada (1-800-622-6232)",
-        "toll-number-href": "tel:18006226232",
-        "tty": "TTY:",
-        "tty-number": "TTY: 1-800-926-9105",
-        "tty-number-href": "tel:18009269105",
-        "outside": "From outside Canada",
-        "outside-description": "The hours of operation are 8:30 am to 5:00 pm Eastern time, Monday to Friday.",
-        "outside-number": "Call 1 800 O-Canada from abroad",
-        "outside-number-href": "tel:18006226232"
-      },
-      "find-office": {
-        "title": "Find an office",
-        "link-text": "Find a Service Canada office near you",
-        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp"
-      }
-    }
-  },
   "banner": {
     "title": "Learn and plan for your retirement",
     "text": "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to collect them and tips to consider for your retirement income."
@@ -38,87 +11,120 @@
       "title": "Learn",
       "heading": "Get the most out of your Canadian public pensions",
       "description": [
-        "Learn about your retirement income options, and tips for your OAS/CPP pension choices.", 
+        "Learn about your retirement income options, and tips for your OAS/CPP pension choices.",
         "Read the stories of retirees and their public pension decisions."
       ],
       "button": {
         "text": "Explore retirement",
         "url": "/learn"
       },
-      "linksTitle": "Top Learning Links",
-      "links": [
-        {
+      "linksTitle": "Top learning links",
+      "links": {
+        "when-to-collect": {
           "title": "Deciding when to start your public pensions",
           "url": "/learn/deciding-when-to-collect-public-pensions",
           "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider."
         },
-        {
+        "rules-of-thumb": {
           "title": "Rules of thumb for your public pensions",
           "url": "/learn/rules-of-thumb-for-public-pensions",
           "description": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you."
         },
-        {
+        "case-study-bonnie": {
           "title": "Bonnie delays to reduce the savings she needs",
           "url": "/learn/case-studies/bonnie",
           "description": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension."
         }
-      ]
+      }
     },
     "plan": {
       "id": "plan",
       "title": "Plan",
-      "heading": "Not sure where to begin? Take the quiz!",
+      "heading": "Not sure where to start? Take our quiz!",
       "description": "Receive a personalized checklist to guide you through retirement.",
       "button": {
-        "text": "Take The Quiz"
+        "text": "Take the quiz"
       },
       "linksTitle": "Other Tools",
-      "links": [
-        {
+      "links": {
+        "retirement-income-calculator": {
           "title": "Canadian Retirement Income Calculator",
           "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html",
-          "description": "Get an estimate of your retirement income. This includes your federal old age benefits and private retirement income."
+          "description": "The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits."
         },
-        {
+        "oas-eligibility-estimator": {
           "title": "Old Age Security eligibility estimator",
           "url": "https://alpha.service.canada.ca/en/projects/oas-benefits-estimator",
-          "description": "Find old how much money you may get from the Old Age Security program and its benefits."
+          "description": "Find out how much money you may get from the Old Age Security program and its benefits."
         }
-      ]
+      }
     },
     "apply": {
       "id": "apply",
       "title": "Apply",
-      "heading": "Ready to Apply of CPP and OAS? Get started now",
+      "heading": "Ready to apply for your public pensions? Get started now",
       "description": {
         "text": "To apply online you can sign in or register for a My Service Canada Account (MSCA). To apply in-person or by mail, you can complete a paper application.",
-        "links": [
-          {
-            "title": "Canada Pension Plan: How to Apply",
+        "links": {
+          "how-to-apply": {
+            "title": "Canada Pension Plan: How to apply",
             "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/apply.html"
           },
-          {
-            "title": "Old Age Security: How to Apply",
+          "oas-apply": {
+            "title": "Old Age Security: How to apply",
             "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/apply.html"
           }
-        ]
+        }
       }
     },
     "manage": {
       "id": "manage",
       "title": "Manage",
-      "heading": "Take control of your federal old age benefits with the \"My Service Canada\" Account (MSCA)",
+      "heading": "Take control of your public pensions with the My Service Canada Account (MSCA)",
       "description": {
         "text": "You can do a lot with your MSCA, including:",
         "list": [
           "Create and submit your Canada Pension Plan and Old Age Security application(s).",
-          "Check the status, payment dates and amounts for your federal old age benefits.",
+          "Check the status, payment dates and amounts for your public pensions.",
           "Update your mailing address and banking information."
         ]
       },
       "button": {
-        "text": "Sign Into MSCA",
+        "text": "Sign into MSCA",
         "url": "https://www.canada.ca/en/employment-social-development/services/my-account.html"
+      }
+    }
+  },
+  "contact-us": {
+    "title": "Contact us",
+    "description": "There are many ways to reach us about your public pensions.",
+    "link": "/contact-us",
+    "cards": {
+      "call-us": {
+        "title": "Call us",
+        "description": "You can reach us at the following numbers:",
+        "toll-free": {
+          "title": "Telephone",
+          "description": "The hours of operation are 8:30 am to 5 pm local time, Monday to Friday.",
+          "number": "1 800 O-Canada (1-800-622-6232)",
+          "href": "tel:18006226232"
+        },
+        "tty": {
+          "title": "TTY:",
+          "number": "1-800-926-9105",
+          "href": "tel:18009269105"
+        },
+        "outside": {
+          "title": "From outside Canada",
+          "description": "The hours of operation are 8:30 am to 5 pm Eastern time, Monday to Friday.",
+          "number": "Call 1 800 O-Canada from abroad",
+          "href": "tel:18006226232"
+        }
+      },
+      "find-office": {
+        "title": "Find an office",
+        "link-text": "Find a Service Canada office near you",
+        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp"
       }
     }
   }

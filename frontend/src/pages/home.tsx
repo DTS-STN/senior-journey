@@ -121,13 +121,13 @@ const Home: FC = () => {
                     </h3>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.learn.links.0.url')} component={Link}>
+                        <ListItemButton href={t('tabs.learn.links.when-to-collect.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.learn.links.0.title')}
+                            primary={t('tabs.learn.links.when-to-collect.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
-                            secondary={t('tabs.learn.links.0.description')}
+                            secondary={t('tabs.learn.links.when-to-collect.description')}
                             secondaryTypographyProps={{
                               className: 'text-sm',
                             }}
@@ -136,13 +136,13 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.learn.links.1.url')} component={Link}>
+                        <ListItemButton href={t('tabs.learn.links.rules-of-thumb.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.learn.links.1.title')}
+                            primary={t('tabs.learn.links.rules-of-thumb.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
-                            secondary={t('tabs.learn.links.1.description')}
+                            secondary={t('tabs.learn.links.rules-of-thumb.description')}
                             secondaryTypographyProps={{
                               className: 'text-sm',
                             }}
@@ -151,13 +151,13 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.learn.links.2.url')} component={Link}>
+                        <ListItemButton href={t('tabs.learn.links.case-study-bonnie.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.learn.links.2.title')}
+                            primary={t('tabs.learn.links.case-study-bonnie.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
-                            secondary={t('tabs.learn.links.2.description')}
+                            secondary={t('tabs.learn.links.case-study-bonnie.description')}
                             secondaryTypographyProps={{
                               className: 'text-sm',
                             }}
@@ -190,13 +190,13 @@ const Home: FC = () => {
                     </h3>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.plan.links.0.url')} component={Link}>
+                        <ListItemButton href={t('tabs.plan.links.retirement-income-calculator.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.plan.links.0.title')}
+                            primary={t('tabs.plan.links.retirement-income-calculator.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
-                            secondary={t('tabs.plan.links.0.description')}
+                            secondary={t('tabs.plan.links.retirement-income-calculator.description')}
                             secondaryTypographyProps={{
                               className: 'text-sm',
                             }}
@@ -205,13 +205,13 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.plan.links.1.url')} component={Link}>
+                        <ListItemButton href={t('tabs.plan.links.oas-eligibility-estimator.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.plan.links.1.title')}
+                            primary={t('tabs.plan.links.oas-eligibility-estimator.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
-                            secondary={t('tabs.plan.links.1.description')}
+                            secondary={t('tabs.plan.links.oas-eligibility-estimator.description')}
                             secondaryTypographyProps={{
                               className: 'text-sm',
                             }}
@@ -233,9 +233,9 @@ const Home: FC = () => {
                     <p>{t('tabs.apply.description.text')}</p>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.apply.description.links.0.url')} component={Link}>
+                        <ListItemButton href={t('tabs.apply.description.links.how-to-apply.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.apply.description.links.0.title')}
+                            primary={t('tabs.apply.description.links.how-to-apply.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
@@ -244,9 +244,9 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.apply.description.links.1.url')} component={Link}>
+                        <ListItemButton href={t('tabs.apply.description.links.oas-apply.url')} component={Link}>
                           <ListItemText
-                            primary={t('tabs.apply.description.links.1.title')}
+                            primary={t('tabs.apply.description.links.oas-apply.title')}
                             primaryTypographyProps={{
                               className: 'font-display font-medium',
                             }}
@@ -294,39 +294,39 @@ const Home: FC = () => {
           <p>{t('contact-us.cards.call-us.description')}</p>
           <div className="grid lg:grid-cols-2">
             <p>
-              <strong>{t('contact-us.cards.call-us.toll-free')}</strong>{' '}
+              <strong>{t('contact-us.cards.call-us.toll-free.title')}</strong>{' '}
               <MuiLink
                 component={Link}
                 className="whitespace-nowrap"
-                href={t('contact-us.cards.call-us.toll-number-href')}
+                href={t('contact-us.cards.call-us.toll-free.href')}
               >
-                {t('contact-us.cards.call-us.toll-number')}
+                {t('contact-us.cards.call-us.toll-free.number')}
               </MuiLink>
             </p>
             <p>
-              <strong>{t('contact-us.cards.call-us.tty')}</strong>{' '}
+              <strong>{t('contact-us.cards.call-us.tty.title')}</strong>{' '}
               <MuiLink
                 component={Link}
                 className="whitespace-nowrap"
-                href={t('contact-us.cards.call-us.tty-number-href')}
+                href={t('contact-us.cards.call-us.tty.href')}
               >
-                {t('contact-us.cards.call-us.tty-number')}
+                {t('contact-us.cards.call-us.tty.number')}
               </MuiLink>
             </p>
           </div>
-          <p>{t('contact-us.cards.call-us.toll-free-description')}</p>
+          <p>{t('contact-us.cards.call-us.toll-free.description')}</p>
           <Divider className="my-4" />
           <p>
-            <strong>{t('contact-us.cards.call-us.outside')}</strong>{' '}
+            <strong>{t('contact-us.cards.call-us.outside.title')}</strong>{' '}
             <MuiLink
               component={Link}
               className="whitespace-nowrap"
-              href={t('contact-us.cards.call-us.outside-number-href')}
+              href={t('contact-us.cards.call-us.outside.href')}
             >
-              {t('contact-us.cards.call-us.outside-number')}
+              {t('contact-us.cards.call-us.outside.number')}
             </MuiLink>
           </p>
-          <p className="m-0">{t('contact-us.cards.call-us.outside-description')}</p>
+          <p className="m-0">{t('contact-us.cards.call-us.outside.description')}</p>
         </Paper>
         <Paper variant="outlined" className="p-6">
           <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.find-office.title')}</h3>
