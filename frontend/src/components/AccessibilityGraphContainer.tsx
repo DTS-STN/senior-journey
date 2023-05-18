@@ -7,7 +7,7 @@ import AccessibilityTable, { TableData } from './AccessibilityTable'
 
 export interface AccessibilityGraphContainerProps {
   tableData: TableData
-  description: string
+  description:  React.ReactNode
   descriptionHeading: string
   valuesHeading: string
   buttonLabel: string
