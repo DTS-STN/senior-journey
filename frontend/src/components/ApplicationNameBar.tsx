@@ -4,21 +4,25 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
 
-import { useChecklistUrl } from '../lib/hooks/useChecklistUrl'
 import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
 
 export interface ApplicationNameBarProps {
-  text: string
-  href: string
+  breadcrumbItems?: BreadcrumbItem[]
   checklist: string
   checklistUrl: string
-  breadcrumbItems?: BreadcrumbItem[]
   hideChecklist?: boolean
+  href: string
+  text: string
 }
 
-const ApplicationNameBar: FC<ApplicationNameBarProps> = ({ text, href, checklist, breadcrumbItems, hideChecklist }) => {
-  const checklistUrl = useChecklistUrl()
-
+const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
+  breadcrumbItems,
+  checklist,
+  checklistUrl,
+  hideChecklist,
+  href,
+  text,
+}) => {
   return (
     <div id="app-bar">
       <section className="container mx-auto p-4">

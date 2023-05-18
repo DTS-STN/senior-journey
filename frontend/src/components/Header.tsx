@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import { useChecklistUrl } from '../lib/hooks/useChecklistUrl'
 import { resolveHref } from '../utils/url-utils'
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
@@ -24,6 +25,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hid
   const config = getConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
+  const checklistUrl = useChecklistUrl()
 
   const langSelectorLocale = locale === 'en' ? 'fr' : 'en'
   const langSelectorAbbreviation = langSelectorLocale === 'fr' ? 'FR' : 'EN'
@@ -91,8 +93,6 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hid
             >
               {langSelectorText}
             </MuiLink>
-            {/* Placeholder for SearchBar in case is back in ver 4??? */}
-            {/* <SearchBar /> */}
           </div>
         </div>
 
@@ -100,28 +100,10 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hid
           text={t('application-name-bar')}
           href="/"
           checklist={t('checklist')}
-          checklistUrl={t('checklist-url')}
+          checklistUrl={checklistUrl}
           breadcrumbItems={breadcrumbItems}
           hideChecklist={hideChecklist}
         />
-
-        {/* <Menu
-          loginText={t('login')}
-          items={[
-            {
-              link: '/search',
-              text: t('service-and-benefits'),
-            },
-            {
-              link: '/',
-              text: t('tools'),
-            },
-            {
-              link: '/',
-              text: t('contact-us'),
-            },
-          ]}
-        /> */}
       </header>
     </>
   )
