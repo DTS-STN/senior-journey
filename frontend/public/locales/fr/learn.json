@@ -86,33 +86,6 @@
           "link": "/learn/case-studies/keith"
         }
       ]
-    },
-    {
-      "title": "(FR) Information for caregivers and support workers",
-      "body": "(FR) Lorem ipsum dolor sit amet consectetur. Pulvinar accumsan volutpat vel odio magna rhoncus. Nisl eleifend auctor purus semper magnis aliquet sed. Vitae penatibus duis quis pulvinar ac dui elit. Mi sem dictumst ac cursus cursus adipiscing purus felis tortor. Eu lacus ac nulla.",
-      "cards": [
-        {
-          "title": "(FR) Case 1",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-family-and-friends.png",
-          "link": "/learn"
-        },
-        {
-          "title": "(FR) Case 2",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.png",
-          "link": "/learn"
-        },
-        {
-          "title": "(FR) Case 3",
-          "read": "(FR) 5 MIN READ",
-          "body": "(FR) Lorem ipsum dolor sit amet consectetur. Gravida eget tristique in ipsum eget ornare libero.",
-          "image": "/assets/supporting-seniors-representatives.png",
-          "link": "/learn"
-        }
-      ]
     }
   ]
 }
