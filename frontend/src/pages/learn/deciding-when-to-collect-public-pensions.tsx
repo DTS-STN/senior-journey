@@ -50,27 +50,27 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <List disablePadding>
           {[
             {
-              primaryI18nKey: 'key-takeaways.cpp-oas.header',
-              secondaryI18nKey: 'key-takeaways.cpp-oas.description',
+              primary: t('key-takeaways.cpp-oas.header'),
+              secondary: t('key-takeaways.cpp-oas.description'),
             },
             {
-              primaryI18nKey: 'key-takeaways.personal-circumstances.header',
-              secondaryI18nKey: 'key-takeaways.personal-circumstances.description',
+              primary: t('key-takeaways.personal-circumstances.header'),
+              secondary: t('key-takeaways.personal-circumstances.description'),
             },
             {
-              primaryI18nKey: 'key-takeaways.lifetime-and-monthly.header',
-              secondaryI18nKey: 'key-takeaways.lifetime-and-monthly.description',
+              primary: t('key-takeaways.lifetime-and-monthly.header'),
+              secondary: t('key-takeaways.lifetime-and-monthly.description'),
             },
             {
-              primaryI18nKey: 'key-takeaways.double-and-delay.header',
-              secondaryI18nKey: 'key-takeaways.double-and-delay.description',
+              primary: t('key-takeaways.double-and-delay.header'),
+              secondary: t('key-takeaways.double-and-delay.description'),
             },
-          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} className="border-b">
+          ].map(({ primary, secondary }) => (
+            <ListItem key={primary} className="border-b">
               <ListItemText
-                primary={t(primaryI18nKey)}
+                primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
+                secondary={secondary}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>

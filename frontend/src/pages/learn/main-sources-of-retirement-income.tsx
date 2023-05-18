@@ -66,31 +66,31 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <List disablePadding>
           {[
             {
-              primaryI18nKey: 'key-takeaways.cpp-oas.header',
-              secondaryI18nKey: 'key-takeaways.cpp-oas.description',
+              primary: t('key-takeaways.cpp-oas.header'),
+              secondary: t('key-takeaways.cpp-oas.description'),
             },
             {
-              primaryI18nKey: 'key-takeaways.cpp-oas-retirement-income-plan.header',
-              secondaryI18nKey: 'key-takeaways.cpp-oas-retirement-income-plan.description',
+              primary: t('key-takeaways.cpp-oas-retirement-income-plan.header'),
+              secondary: t('key-takeaways.cpp-oas-retirement-income-plan.description'),
             },
             {
-              primaryI18nKey: 'key-takeaways.cpp-oas-adjusted-for-inflation.header',
-              secondaryI18nKey: 'key-takeaways.cpp-oas-adjusted-for-inflation.description',
+              primary: t('key-takeaways.cpp-oas-adjusted-for-inflation.header'),
+              secondary: t('key-takeaways.cpp-oas-adjusted-for-inflation.description'),
             },
             {
-              primaryI18nKey: 'key-takeaways.cpp-oas-taxable-income.header',
-              secondaryI18nKey: 'key-takeaways.cpp-oas-taxable-income.description',
+              primary: t('key-takeaways.cpp-oas-taxable-income.header'),
+              secondary: t('key-takeaways.cpp-oas-taxable-income.description'),
             },
             {
-              primaryI18nKey: 'key-takeaways.not-need-to-stop-working.header',
-              secondaryI18nKey: 'key-takeaways.not-need-to-stop-working.description',
+              primary: t('key-takeaways.not-need-to-stop-working.header'),
+              secondary: t('key-takeaways.not-need-to-stop-working.description'),
             },
-          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} className="border-b">
+          ].map(({ primary, secondary }) => (
+            <ListItem key={primary} className="border-b">
               <ListItemText
-                primary={t(primaryI18nKey)}
+                primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
+                secondary={secondary}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>

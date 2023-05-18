@@ -77,25 +77,25 @@ const Keith: FC = () => {
         <List disablePadding>
           {[
             {
-              primaryI18nKey: 'key-takeaways.li1',
-              secondaryI18nKey: 'key-takeaways.li2',
+              primary: t('key-takeaways.li1'),
+              secondary: t('key-takeaways.li2'),
             },
             {
-              primaryI18nKey: 'key-takeaways.li3',
+              primary: t('key-takeaways.li3'),
             },
             {
-              primaryI18nKey: 'key-takeaways.li4',
-              secondaryI18nKey: 'key-takeaways.li5',
+              primary: t('key-takeaways.li4'),
+              secondary: t('key-takeaways.li5'),
             },
             {
-              primaryI18nKey: 'key-takeaways.li6',
+              primary: t('key-takeaways.li6'),
             },
-          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} className="border-b">
+          ].map(({ primary, secondary }) => (
+            <ListItem key={primary} className="border-b">
               <ListItemText
-                primary={t(primaryI18nKey)}
+                primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
+                secondary={secondary}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
@@ -149,7 +149,7 @@ const Keith: FC = () => {
           {t('cpp.cpp-choices.heading')}
         </h2>
         <Img pension="cpp.cpp-choices" />
-        <div className="grid grid-cols-1 py-4 md:text-center md:grid-cols-2">
+        <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
           <div>
             <p>{t('cpp.cpp-choices.choices.li1')}</p>
             <p>{t('cpp.cpp-choices.choices.li2')}</p>
@@ -174,16 +174,9 @@ const Keith: FC = () => {
         </h2>
         <p>{t('cpp.what-else.p1')}</p>
         <List disablePadding className="pb-4 pl-6 text-black" sx={{ listStyleType: 'disc' }}>
-          {[
-            {
-              primaryI18nKey: 'cpp.what-else.list.li1',
-            },
-            {
-              primaryI18nKey: 'cpp.what-else.list.li2',
-            },
-          ].map(({ primaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} sx={{ display: 'list-item' }} disablePadding>
-              <ListItemText primary={t(primaryI18nKey)} />
+          {[t('cpp.what-else.list.li1'), t('cpp.what-else.list.li2')].map((value) => (
+            <ListItem key={value} sx={{ display: 'list-item' }} disablePadding>
+              <ListItemText primary={value} />
             </ListItem>
           ))}
         </List>
@@ -211,7 +204,7 @@ const Keith: FC = () => {
           <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p3`)} />
         </p>
         <Img pension="cpp.keith-pension-87" />
-        <div className="grid grid-cols-1 py-4 md:text-center md:grid-cols-2">
+        <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
           <div>
             <p>{t('cpp.keith-pension-87.choices.li1')}</p>
             <p>{t('cpp.keith-pension-87.choices.li2')}</p>
@@ -235,7 +228,7 @@ const Keith: FC = () => {
         </h2>
         <p>{t('cpp.keith-pension-90.p1')}</p>
         <Img pension="cpp.keith-pension-90" />
-        <div className='grid md:grid-cols-2 grid-cols-1 md:text-center py-4'>
+        <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
           <div>
             <p>{t('cpp.keith-pension-90.choices.li1')}</p>
             <p>{t('cpp.keith-pension-90.choices.li2')}</p>

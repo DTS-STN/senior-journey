@@ -81,23 +81,23 @@ const Bonnie: FC = () => {
         <List disablePadding>
           {[
             {
-              primaryI18nKey: 'key-takeaways.li1',
-              secondaryI18nKey: 'key-takeaways.li2',
+              primary: t('key-takeaways.li1'),
+              secondary: t('key-takeaways.li2'),
             },
             {
-              primaryI18nKey: 'key-takeaways.li3',
-              secondaryI18nKey: 'key-takeaways.li4',
+              primary: t('key-takeaways.li3'),
+              secondary: t('key-takeaways.li4'),
             },
             {
-              primaryI18nKey: 'key-takeaways.li5',
-              secondaryI18nKey: 'key-takeaways.li6',
+              primary: t('key-takeaways.li5'),
+              secondary: t('key-takeaways.li6'),
             },
-          ].map(({ primaryI18nKey, secondaryI18nKey }) => (
-            <ListItem key={primaryI18nKey} className="border-b">
+          ].map(({ primary, secondary }) => (
+            <ListItem key={primary} className="border-b">
               <ListItemText
-                primary={t(primaryI18nKey)}
+                primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={secondaryI18nKey ? t(secondaryI18nKey) : undefined}
+                secondary={secondary}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
