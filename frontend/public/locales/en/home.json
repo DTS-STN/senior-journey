@@ -9,17 +9,17 @@
       "call-us": {
         "title": "Call us",
         "description": "You can reach us at the following numbers:",
-        "toll-free": "Canada and the United States toll-free:",
-        "toll-free-description": "The hours of operation are 8:30 am to 4:30 pm local time, Monday to Friday.",
-        "toll-number": "1-800-277-9914",
-        "toll-number-href": "tel:18002554786",
-        "tty": "Canada and the United States TTY:",
-        "tty-number": "1-800-255-4786",
-        "tty-number-href": "tel:18002554786",
-        "outside": "Outside Canada and the United States:",
-        "outside-description": "The hours of operation are 8:30 am to 4:30 pm Eastern time, Monday to Friday.",
-        "outside-number": "1-613-957-1954 (call collect)",
-        "outside-number-href": "tel:16139571954"
+        "toll-free": "Telephone",
+        "toll-free-description": "The hours of operation are 8:30 am to 5:00 pm local time, Monday to Friday.",
+        "toll-number": "1 800 O-Canada (1-800-622-6232)",
+        "toll-number-href": "tel:18006226232",
+        "tty": "TTY:",
+        "tty-number": "TTY: 1-800-926-9105",
+        "tty-number-href": "tel:18009269105",
+        "outside": "From outside Canada",
+        "outside-description": "The hours of operation are 8:30 am to 5:00 pm Eastern time, Monday to Friday.",
+        "outside-number": "Call 1 800 O-Canada from abroad",
+        "outside-number-href": "tel:18006226232"
       },
       "find-office": {
         "title": "Find an office",
@@ -30,16 +30,16 @@
   },
   "banner": {
     "title": "Learn and plan for your retirement",
-    "text": "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income."
+    "text": "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to collect them and tips to consider for your retirement income."
   },
   "tabs": {
     "learn": {
       "id": "learn",
       "title": "Learn",
-      "heading": "Get the most out of your retirement benefits in Canada",
+      "heading": "Get the most out of your Canadian public pensions",
       "description": [
-        "There are many factors to consider before you retire.",
-        "Learn about the basics of Canada's old age benefits and ways to manage your money in retirement."
+        "Learn about your retirement income options, and tips for your OAS/CPP pension choices.", 
+        "Read the stories of retirees and their public pension decisions."
       ],
       "button": {
         "text": "Explore retirement",
@@ -48,19 +48,19 @@
       "linksTitle": "Top Learning Links",
       "links": [
         {
-          "title": "Main sources of retirement income",
-          "url": "/learn/main-sources-of-retirement-income",
-          "description": "Learn about old age benefits, private retirement savings, and how they work together"
-        },
-        {
-          "title": "Planning to save for retirement",
-          "url": "/learn/planning-to-save-for-retirement",
-          "description": "Explore how to maximize your savings and better manage your money in retirement."
-        },
-        {
-          "title": "Deciding when to collect public pensions",
+          "title": "Deciding when to start your public pensions",
           "url": "/learn/deciding-when-to-collect-public-pensions",
-          "description": "You can choose when to start your old age benefits. Understand what to consider in making that decision"
+          "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider."
+        },
+        {
+          "title": "Rules of thumb for your public pensions",
+          "url": "/learn/rules-of-thumb-for-public-pensions",
+          "description": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you."
+        },
+        {
+          "title": "Bonnie delays to reduce the savings she needs",
+          "url": "/learn/case-studies/bonnie",
+          "description": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension."
         }
       ]
     },
