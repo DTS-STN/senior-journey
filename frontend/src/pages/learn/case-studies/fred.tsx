@@ -93,6 +93,10 @@ const Fred: FC = () => {
               primary: t('key-takeaways.li5'),
               secondary: t('key-takeaways.li6'),
             },
+            {
+              primary: t('key-takeaways.li7'),
+              secondary: t('key-takeaways.li8'),
+            },
           ].map(({ primary, secondary }) => (
             <ListItem key={primary} className="border-b">
               <ListItemText
@@ -104,18 +108,93 @@ const Fred: FC = () => {
             </ListItem>
           ))}
         </List>
+        <AlertCard type="tip" className="mt-5">
+          <Trans
+            ns="learn/case-studies/fred"
+            i18nKey="key-takeaways.smart-tip"
+            components={{
+              a1: (
+                <a
+                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
+                  href={t('key-takeaways.a1')}
+                />
+              ),
+              a2: (
+                <a
+                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
+                  href={t('key-takeaways.a2')}
+                />
+              ),
+            }}
+          />
+        </AlertCard>
 
         <h2 id="overview" className="h2">
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p1')}</p>
+        <AlertCard type="tip" className="my-5">
+          <Trans
+            ns="learn/case-studies/fred"
+            i18nKey="overview.smart-tip"
+            components={{
+              a1: (
+                <a
+                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
+                  href={t('overview.a1')}
+                />
+              ),
+              a2: (
+                <a
+                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
+                  href={t('overview.a2')}
+                />
+              ),
+            }}
+          />
+        </AlertCard>
         <p>{t('overview.p2')}</p>
+        <p>{t('overview.p3')}</p>
+        <p>{t('overview.p4')}</p>
+        <p>{t('overview.p5')}</p>
+
+        <h2 id="monthly-amounts" className="h2">
+          {t('monthly-amounts.heading')}
+        </h2>
+        <p>
+          <Trans
+            ns="learn/case-studies/fred"
+            i18nKey="monthly-amounts.p1"
+            components={{
+              a1: (
+                <a
+                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
+                  href={t('monthly-amounts.a1')}
+                />
+              ),
+            }}
+          />
+        </p>
+        <p>
+          <Trans
+            ns="learn/case-studies/fred"
+            i18nKey="monthly-amounts.p2"
+            components={{
+              a2: (
+                <a
+                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
+                  href={t('monthly-amounts.a2')}
+                />
+              ),
+            }}
+          />
+        </p>
 
         <h2 id="fred-cpp" className="h2">
           {t('cpp.heading')}
         </h2>
         <Img pension="cpp.monthly-pension" />
-        <p>{t('cpp.monthly-pension.p')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.monthly-pension.p1')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.monthly-pension.accessibility', { returnObjects: true })}
           description={t('cpp.monthly-pension.description')}
@@ -123,11 +202,13 @@ const Fred: FC = () => {
           descriptionHeading={t('description-heading')}
           valuesHeading={t('values-heading')}
         />
-        <AlertCard type="tip">
+        <AlertCard type="tip" className="mb-5">
           <Trans ns="learn/case-studies/fred" i18nKey="cpp.smart-tip" />
         </AlertCard>
+        <p>{t('cpp.monthly-pension.p2')}</p>
+        <p>{t('cpp.monthly-pension.p3')}</p>
         <Img pension="cpp.lifetime-pension" classes="mt-10 mb-5" />
-        <p>{t('cpp.lifetime-pension.p')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.lifetime-pension.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.lifetime-pension.accessibility', { returnObjects: true })}
           description={t('cpp.lifetime-pension.description')}
@@ -142,9 +223,8 @@ const Fred: FC = () => {
         <h2 id="fred-oas" className="h2">
           {t('oas.heading')}
         </h2>
-        <p>{t('oas.p')}</p>
         <Img pension="oas.monthly-pension" />
-        <p>{t('oas.monthly-pension.p')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('oas.monthly-pension.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('oas.monthly-pension.accessibility', { returnObjects: true })}
           description={t('oas.monthly-pension.description')}
@@ -154,7 +234,7 @@ const Fred: FC = () => {
         />
         <p>{t('oas.lifetime-pension.p1')}</p>
         <Img pension="oas.lifetime-pension" classes="mb-5" />
-        <p>{t('oas.lifetime-pension.p2')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('oas.lifetime-pension.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('oas.lifetime-pension.accessibility', { returnObjects: true })}
           description={t('oas.lifetime-pension.description')}
@@ -165,8 +245,12 @@ const Fred: FC = () => {
         <p>{t('oas.p1')}</p>
         <p>{t('oas.p2')}</p>
 
-        <AlertCard type="disclaimer">
-          <Trans ns="learn/case-studies/fred" i18nKey="disclaimer" />
+        <h2 id="fred-conclusion" className="h2">
+          {t('conclusion.heading')}
+        </h2>
+        <p>{t('conclusion.p')}</p>
+        <AlertCard type="disclaimer" className="mt-5">
+          <Trans ns="learn/case-studies/fred" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
         <h2 id="learn-more" className="h2">
