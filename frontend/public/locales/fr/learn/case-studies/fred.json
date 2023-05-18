@@ -50,8 +50,8 @@
       "p2": "(FR) Fred's monthly CPP retirement pension at age 70 could be over $1,000 per month more than his pension at age 60. Fred wants to take the higher monthly pension at age 70, but he will need some other income at the start of retirement . He has some retirement savings that he can use while waiting to start his CPP retirement pension.",
       "p3": "(FR) When Fred talks to his friends about his decision. Many of them point out how he's giving up income early in retirement to get that higher monthly payment. And so, Fred decides to look at how much he’ll collect in total from the CPP over his lifetime. He sees that, even with a normal life expectancy, he'll get more over time by waiting.",
       "img-url": {
-        "desktop": "/assets/fred-cpp-monthly-desktop-en.jpg",
-        "mobile": "/assets/fred-cpp-monthly-mobile-en.jpg"
+        "desktop": "/assets/fred-cpp-monthly-desktop-fr.jpg",
+        "mobile": "/assets/fred-cpp-monthly-mobile-fr.jpg"
       },
       "description": "(FR) The chart shows changes in Fred's CPP pension monthly payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive every month. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
       "accessibility": {
@@ -77,8 +77,8 @@
     "lifetime-pension": {
       "p": "(FR) By age 86, Fred could receive $95,000 more, if he delays from 60 to 70. By age 89, this difference will be $130,000.",
       "img-url": {
-        "desktop": "/assets/fred-cpp-lifetime-desktop-en.jpg",
-        "mobile": "/assets/fred-cpp-lifetime-mobile-en.jpg"
+        "desktop": "/assets/fred-cpp-lifetime-desktop-fr.jpg",
+        "mobile": "/assets/fred-cpp-lifetime-mobile-fr.jpg"
       },
       "description": "(FR) The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
       "accessibility": {
@@ -110,8 +110,8 @@
     "monthly-pension": {
       "p": "(FR) If OAS pension is delayed from age 65 to 68, the difference is around $150 per month.",
       "img-url": {
-        "desktop": "/assets/fred-oas-monthly-desktop-en.jpg",
-        "mobile": "/assets/fred-oas-monthly-mobile-en.jpg"
+        "desktop": "/assets/fred-oas-monthly-desktop-fr.jpg",
+        "mobile": "/assets/fred-oas-monthly-mobile-fr.jpg"
       },
       "description": "(FR) The chart shows changes in Fred's OAS pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he’ll receive every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount.",
       "accessibility": {
@@ -142,8 +142,8 @@
       "p1": "(FR) The difference in monthly benefits from delaying the Old Age Security (OAS) pension is smaller than for the Canada Pension Plan (CPP) retirement pension. If Fred takes his OAS pension later, the difference in monthly payments is a few hundred dollars. Fred wants to explore his lifetime OAS pension to see the full picture.",
       "p2": "(FR) By age 86, the lifetime OAS pension is higher, if Fred starts his OAS at age 68. Starting to collect it at age 67 is also an option.",
       "img-url": {
-        "desktop": "/assets/fred-oas-lifetime-desktop-en.jpg",
-        "mobile": "/assets/fred-oas-lifetime-mobile-en.jpg"
+        "desktop": "/assets/fred-oas-lifetime-desktop-fr.jpg",
+        "mobile": "/assets/fred-oas-lifetime-mobile-fr.jpg"
       },
       "description": "(FR) The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
       "accessibility": {
@@ -185,7 +185,7 @@
       "header": "(FR) Deciding when to collect public pensions"
     },
     "rules-of-thumb-for-public-pensions": {
-      "description": "(FR) ension tips based on your personal situation.",
+      "description": "(FR) Pension tips based on your personal situation.",
       "header": "(FR) Rules of thumb for public pensions"
     },
     "oas": {

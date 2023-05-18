@@ -1,7 +1,7 @@
 import { FC, Fragment, useMemo } from 'react'
 
 import { NavigateNext } from '@mui/icons-material'
-import { List, ListItem, ListItemButton, ListItemText, useMediaQuery } from '@mui/material'
+import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, useMediaQuery } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -113,18 +113,8 @@ const Fred: FC = () => {
             ns="learn/case-studies/fred"
             i18nKey="key-takeaways.smart-tip"
             components={{
-              a1: (
-                <a
-                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
-                  href={t('key-takeaways.a1')}
-                />
-              ),
-              a2: (
-                <a
-                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
-                  href={t('key-takeaways.a2')}
-                />
-              ),
+              a1: <MuiLink href={t('key-takeaways.a1')} />,
+              a2: <MuiLink href={t('key-takeaways.a2')} />,
             }}
           />
         </AlertCard>
@@ -138,18 +128,8 @@ const Fred: FC = () => {
             ns="learn/case-studies/fred"
             i18nKey="overview.smart-tip"
             components={{
-              a1: (
-                <a
-                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
-                  href={t('overview.a1')}
-                />
-              ),
-              a2: (
-                <a
-                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
-                  href={t('overview.a2')}
-                />
-              ),
+              a1: <MuiLink href={t('overview.a1')} />,
+              a2: <MuiLink href={t('overview.a2')} />,
             }}
           />
         </AlertCard>
@@ -166,12 +146,7 @@ const Fred: FC = () => {
             ns="learn/case-studies/fred"
             i18nKey="monthly-amounts.p1"
             components={{
-              a1: (
-                <a
-                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
-                  href={t('monthly-amounts.a1')}
-                />
-              ),
+              a1: <MuiLink href={t('monthly-amounts.a1')} />,
             }}
           />
         </p>
@@ -180,12 +155,7 @@ const Fred: FC = () => {
             ns="learn/case-studies/fred"
             i18nKey="monthly-amounts.p2"
             components={{
-              a2: (
-                <a
-                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
-                  href={t('monthly-amounts.a2')}
-                />
-              ),
+              a2: <MuiLink href={t('monthly-amounts.a2')} />,
             }}
           />
         </p>
