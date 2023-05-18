@@ -1,7 +1,7 @@
 import { FC, Fragment, useMemo } from 'react'
 
 import { NavigateNext } from '@mui/icons-material'
-import { Link, List, ListItem, ListItemButton, ListItemText, useMediaQuery } from '@mui/material'
+import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, useMediaQuery } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -108,8 +108,8 @@ const Bonnie: FC = () => {
             ns="learn/case-studies/bonnie"
             i18nKey="key-takeaways.smart-tip"
             components={{
-              a1: <a className="underline" href={t('key-takeaways.a1')} />,
-              a2: <a className="underline" href={t('key-takeaways.a2')} />,
+              a1: <MuiLink href={t('key-takeaways.a1')} />,
+              a2: <MuiLink href={t('key-takeaways.a2')} />,
             }}
           />
         </AlertCard>
@@ -125,9 +125,8 @@ const Bonnie: FC = () => {
             ns="learn/case-studies/bonnie"
             i18nKey="overview.smart-tip"
             components={{
-              a1: <a className="underline" href={t('overview.a1')} />,
-              a2: <a className="underline" href={t('overview.a2')} />,
-              a3: <a className="underline" href={t('overview.a3')} />,
+              a1: <MuiLink href={t('overview.a1')} />,
+              a2: <MuiLink href={t('overview.a2')} />,
             }}
           />
         </AlertCard>
@@ -136,7 +135,7 @@ const Bonnie: FC = () => {
           {t('stopping-earnings.heading')}
         </h2>
         <Img pension="stopping-earnings" />
-        <p>{t('stopping-earnings.p')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('stopping-earnings.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('stopping-earnings.accessibility', { returnObjects: true })}
           description={t('stopping-earnings.description')}
@@ -148,9 +147,20 @@ const Bonnie: FC = () => {
         <h2 id="adding-oas" className="h2">
           {t('adding-oas.heading')}
         </h2>
-        <p>{t('adding-oas.p1')}</p>
+        <p>
+          <Trans ns="learn/case-studies/bonnie" i18nKey="adding-oas.p1" />
+        </p>
+        <p>
+          <Trans
+            ns="learn/case-studies/bonnie"
+            i18nKey="adding-oas.p2"
+            components={{
+              a1: <MuiLink href={t('adding-oas.a1')} />,
+            }}
+          />
+        </p>
         <Img pension="adding-oas" />
-        <p>{t('adding-oas.p2')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('adding-oas.p3')}</p>
         <AccessibilityGraphContainer
           tableData={t('adding-oas.accessibility', { returnObjects: true })}
           description={t('adding-oas.description')}
@@ -158,32 +168,18 @@ const Bonnie: FC = () => {
           descriptionHeading={t('description-heading')}
           valuesHeading={t('values-heading')}
         />
-        <p>
-          <Trans
-            ns="learn/case-studies/bonnie"
-            i18nKey="adding-oas.p3"
-            components={{
-              a1: (
-                <a
-                  className="text-link-default underline visited:text-link-visited focus-visible:text-link-selected"
-                  href={t('adding-oas.a1')}
-                />
-              ),
-            }}
-          />
-        </p>
 
         <h2 id="cpp" className="h2">
           {t('cpp.heading')}
         </h2>
         <p>{t('cpp.p1')}</p>
-        <ul className="ml-5 list-inside list-disc">
+        <ul className="mb-2 ml-5 list-inside list-disc">
           <li>{t('cpp.li1')}</li>
           <li>{t('cpp.li2')}</li>
           <li>{t('cpp.li3')}</li>
         </ul>
         <Img pension="cpp" />
-        <p>{t('cpp.p2')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.accessibility', { returnObjects: true })}
           description={t('cpp.description')}
@@ -196,12 +192,16 @@ const Bonnie: FC = () => {
         <h2 id="own-savings" className="h2">
           {t('own-savings.heading')}
         </h2>
-        <p>{t('own-savings.p1')}</p>
+        <p>
+          <Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.p1" />
+        </p>
         <Img pension="own-savings" />
-        <p>{t('own-savings.p2')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">
+          <Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.p2" />
+        </p>
         <AccessibilityGraphContainer
           tableData={t('own-savings.accessibility', { returnObjects: true })}
-          description={t('own-savings.description')}
+          description={<Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.description" />}
           buttonLabel={t('own-savings.accessibility.button-label')}
           descriptionHeading={t('description-heading')}
           valuesHeading={t('values-heading')}
@@ -212,10 +212,13 @@ const Bonnie: FC = () => {
         </h2>
         <p>{t('early-pension.p1')}</p>
         <Img pension="early-pension" />
-        <p>{t('early-pension.p2')}</p>
+
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">
+          <Trans ns="learn/case-studies/bonnie" i18nKey="early-pension.p2" />
+        </p>
         <AccessibilityGraphContainer
           tableData={t('early-pension.accessibility', { returnObjects: true })}
-          description={t('early-pension.description')}
+          description={<Trans ns="learn/case-studies/bonnie" i18nKey="early-pension.description" />}
           buttonLabel={t('early-pension.accessibility.button-label')}
           descriptionHeading={t('description-heading')}
           valuesHeading={t('values-heading')}
@@ -224,8 +227,12 @@ const Bonnie: FC = () => {
         <h2 id="conclusion" className="h2">
           {t('conclusion.heading')}
         </h2>
-        <p>{t('conclusion.p1')}</p>
-        <p>{t('conclusion.p2')}</p>
+        <p>
+          <Trans ns="learn/case-studies/bonnie" i18nKey="conclusion.p1" />
+        </p>
+        <p>
+          <Trans ns="learn/case-studies/bonnie" i18nKey="conclusion.p2" />
+        </p>
         <p>{t('conclusion.p3')}</p>
         <p>{t('conclusion.p4')}</p>
         <p>{t('conclusion.p5')}</p>
@@ -240,7 +247,7 @@ const Bonnie: FC = () => {
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>
               <ListItem disablePadding className="border-b">
-                <ListItemButton href={href} component={Link}>
+                <ListItemButton href={href} component={MuiLink}>
                   <ListItemText
                     primary={primary}
                     primaryTypographyProps={{
