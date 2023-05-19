@@ -65,12 +65,12 @@ const Fred: FC = () => {
         header={t('header')}
         breadcrumbItems={[
           {
-            link: t('breadcrumbs.home.link'),
-            text: t('breadcrumbs.home.text'),
+            link: '/',
+            text: t('common:application-name'),
           },
           {
-            link: t('breadcrumbs.learn.link'),
-            text: t('breadcrumbs.learn.text'),
+            link: '/learn',
+            text: t('breadcrumbs.learn'),
           },
         ]}
       >

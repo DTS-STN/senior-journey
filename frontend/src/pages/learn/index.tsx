@@ -27,8 +27,8 @@ const Learn: FC = () => {
       <Layout
         breadcrumbItems={[
           {
-            link: t('breadcrumbs.home.link'),
-            text: t('breadcrumbs.home.text'),
+            link: '/',
+            text: t('common:application-name'),
           },
         ]}
       >

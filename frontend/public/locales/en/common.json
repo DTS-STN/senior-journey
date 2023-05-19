@@ -89,7 +89,7 @@
     "alert": "Test site",
     "description": "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change."
   },
-  "application-name-bar": "Retirement Hub",
+  "application-name": "Retirement Hub",
   "checklist": "Checklist",
   "table-of-contents": {
     "aria-label": "Table of contents",

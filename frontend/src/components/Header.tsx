@@ -97,7 +97,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hid
         </div>
 
         <ApplicationNameBar
-          text={t('application-name-bar')}
+          text={t('application-name')}
           href="/"
           checklist={t('checklist')}
           checklistUrl={checklistUrl}

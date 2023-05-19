@@ -1,14 +1,7 @@
 {
   "header": "Planning to save for retirement",
   "breadcrumbs": {
-    "home": {
-      "text": "Retirement Hub",
-      "link": "/"
-    },
-    "learn": {
-      "text": "Learn",
-      "link": "/learn"
-    }
+    "learn": "Learn"
   },
   "overview-link-text": "Overview",
   "back-to-top": "BACK TO TOP",

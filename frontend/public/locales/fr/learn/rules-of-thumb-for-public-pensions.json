@@ -1,13 +1,6 @@
 {
   "breadcrumbs": {
-    "home": {
-      "text": "Carrefour retraite",
-      "link": "/"
-    },
-    "learn": {
-      "text": "(FR) Learn",
-      "link": "/learn"
-    }
+    "learn": "(FR) Learn"
   },
   "header": "(FR) Rules of thumb for public pensions",
   "key-takeaways": {

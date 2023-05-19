@@ -1,13 +1,6 @@
 {
   "breadcrumbs": {
-    "home": {
-      "text": "Retirement Hub",
-      "link": "/"
-    },
-    "learn": {
-      "text": "Learn",
-      "link": "/learn"
-    }
+    "learn": "Learn"
   },
   "header": "Keith collects his public pensions while working",
   "key-takeaways": {
