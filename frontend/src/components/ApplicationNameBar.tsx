@@ -26,23 +26,29 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
   return (
     <div id="app-bar">
       <section className="container mx-auto p-4">
-        <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-          <MuiLink
-            component={Link}
-            href={href}
-            color="primary"
-            className="font-display text-2xl font-bold"
-            underline="hover"
-          >
-            <h2>{text}</h2>
-          </MuiLink>
-          {!hideChecklist && (
-            <Button component={Link} href={checklistUrl} startIcon={<BookmarkBorderIcon />} size="large">
-              {checklist}
-            </Button>
-          )}
+        <div className="flex flex-col justify-between gap-4 md:flex-row">
+          <div>
+            <div className="mb-2 font-display text-2xl font-bold">
+              <MuiLink
+                component={Link}
+                href={href}
+                color="primary"
+                className="font-display text-2xl font-bold"
+                underline="hover"
+              >
+                <h2>{text}</h2>
+              </MuiLink>
+            </div>
+            <Breadcrumb items={breadcrumbItems} />
+          </div>
+          <div>
+            {!hideChecklist && (
+              <Button component={Link} href={checklistUrl} startIcon={<BookmarkBorderIcon />} size="large">
+                {checklist}
+              </Button>
+            )}
+          </div>
         </div>
-        <Breadcrumb items={breadcrumbItems} />
       </section>
     </div>
   )
