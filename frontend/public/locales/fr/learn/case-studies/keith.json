@@ -1,7 +1,7 @@
 {
   "breadcrumbs": {
     "home": {
-      "text": "Carrefour retraite",
+      "text": "(FR) Retirement Hub",
       "link": "/"
     },
     "learn": {
@@ -11,49 +11,47 @@
   },
   "header": "(FR) Keith collects his public pensions while working",
   "key-takeaways": {
-    "heading": "(FR) Key Takeaways",
-    "li1": "(FR) Choosing to take your public pensions and retiring from work are two different things.",
-    "li2": "(FR) You can delay both of your public pensions.",
-    "li3": "(FR) You can take your Canada Pension Plan (CPP) pension and continue contributing to the plan, and earn Post-Retirement Benefits (PRBs).",
-    "li4": "(FR) If you are working with higher earnings and have some retirement savings your lifetime CPP pension might matter more than your monthly pension.",
-    "li5": "(FR) You can receive more lifetime pension, if you take CPP at age 65 and get PRBs up to age 70.",
-    "li6": "(FR) If your higher monthly pension income is more important to you, you can delay taking CPP up to age 70.",
-    "smart-tip": "(FR) <strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the Guaranteed Income Supplement (GIS). You cannot receive the GIS if you are delaying your OAS pension. People who qualify for the GIS should not wait to apply past age 65."
+    "heading": "(FR) Key takeaways",
+    "li1": "(FR) Choosing to start your public pensions and retiring from work are two different things.",
+    "li2": "(FR) You can delay both the Old Age Security (OAS) and Canada Pension Plan (CPP) and start them at different ages.",
+    "li3": "(FR) You can start your CPP retirement pension and continue contributing to the plan and earn Post-Retirement Benefits (PRBs).",
+    "li4": "(FR) If you want or need your retirement pension earlier, the PRB could be an excellent way to increase your retirement income.",
+    "li5": "(FR) They give a small boost that's payable for life and fully protected against inflation.",
+    "li6": "(FR) Like the retirement pension, PRB amounts increase based on the age you start taking them.",
+    "li7": "(FR) This means that PRBs earned later in life are worth more.",
+    "li8": "(FR) You can get more lifetime CPP income by taking CPP retirement pension at age 65 and contributing to PRBs until age 70.",
+    "li9": "(FR) If you delay your CPP retirement pension until age 70, you will get the largest monthly amount.",
+    "smart-tip": "(FR) <strong>Smart tip:</strong>  If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the <a1>Guaranteed Income Supplement (GIS)</a1>. You cannot collect the GIS if you are delaying your OAS pension. People who qualify for the GIS should not wait to apply past age 65.",
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html"
   },
   "overview": {
     "heading": "(FR) Overview",
     "p1": "(FR) Keith worked in construction all his life and just accepted a new site job at 60. Keith has some savings, but still plans to work until at least age 70. Keith wants to know what the best strategy for his Canada Pension Plan (CPP), and Old Age Security (OAS) pensions will be."
   },
   "cpp-oas": {
-    "heading": "(FR) How did Keith find his CPP and OAS monthly amounts?",
-    "p1": "(FR) Keith went to My Service Canada Account to see his personal statement of contributions to the CPP and got his estimated CPP pension at age 65.",
+    "heading": "(FR) How did Keith find his monthly CPP and OAS amounts?",
+    "p1": "(FR) Keith went to My Service Canada Account to see his personal statement of contributions. He saw what his estimated CPP retirement pension at age 65 would be.",
     "p2": "(FR) For his expected OAS pension he went to ",
-    "oas-benefits": {
-      "text": "(FR) OAS benefits estimator.",
-      "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
-    }
+    "p3": "(FR) For his expected OAS pension he went to <a1>OAS benefits estimator</a1>.",
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
   },
   "cpp": {
     "prb": {
       "heading": "(FR) What is the PRB?",
-      "p1": "(FR) If you work while collecting your Canada Pension Plan (CPP) pension, you can also receive the ",
-      "cpp-post": {
-        "text": "(FR) CPP Post-Retirement Benefits (PRBs).",
-        "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html"
-      },
-      "p2": " (FR) This is because you will have to contribute to the plan until age 65 at least. Each year that you work and contribute, you will receive a small new top-up from an additional PRB that will be added to your CPP pension and benefits."
+      "p1": "(FR) If you work while collecting your Canada Pension Plan (CPP) retirement pension, you can also collect <a1>CPP Post-Retirement Benefits (PRBs)</a1>. This is because you will have to contribute to the plan until age 65 at least. Each year that you work and contribute, you will collect a small top-up from an additional PRB that will be added to your CPP retirement pension and benefits. The PRBs are adjusted to your age. If you are younger than 65, the PRBs will be reduced. If you're older than 65, the new benefits are worth more.",
+      "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html"
     },
     "prb-choices": {
-      "heading": "(FR) What are Keith's choices to combine his CPP pension with PRBs?",
+      "heading": "(FR) What are Keith's choices to combine his CPP retirement pension with PRBs?",
       "list": {
-        "li1": "(FR) <strong>Choice 1:</strong> Take Canada Pension Plan (CPP) pension at age 60 for the lowest monthly pension. Keith will continue working and contributing until age 70 and receive 10 Post-Retirement Benefits (PRBs).",
-        "li2": "(FR) <strong>Choice 2:</strong> Take CPP pension at age 60 for the lowest monthly pension. Keith will continue working until age 70, but stop contributing at age 65 and receive 5 PRBs.",
-        "li3": "(FR) <strong>Choice 3:</strong> Take CPP pension at age 65 and continue contributing to the CPP until age 70. This will give Keith 5 PRBs.",
+        "li1": "(FR) <strong>Choice 1:</strong> Take Canada Pension Plan (CPP) retirement pension at age 60 for the lowest monthly pension. Keith will continue working and contributing until age 70 and collect 10 Post-Retirement Benefits (PRBs).",
+        "li2": "(FR) <strong>Choice 2:</strong> Take CPP retirement pension at age 60 for the lowest monthly pension. Keith will continue working until age 70 but stops contributing at age 65 and collect just 5 PRBs.",
+        "li3": "(FR) <strong>Choice 3:</strong> Take CPP retirement pension at age 65 and continue contributing to the CPP until age 70. This will give Keith 5 PRBs.",
         "li4": "(FR) <strong>Choice 4:</strong> Take CPP retirement at age 70 for the highest monthly pension, without PRBs."
       }
     },
     "cpp-choices": {
-      "heading": "(FR) What are the CPP monthly pensions for these choices?",
+      "heading": "(FR) What are the monthly CPP retirement pensions for each choice?",
       "img-url": {
         "desktop": "/assets/keith-cpp-70-desktop-en.jpg",
         "mobile": "/assets/keith-cpp-70-mobile-en.jpg"
@@ -64,10 +62,10 @@
         "li3": "(FR) Choice 3: Take CPP at 65, contribute to 70.",
         "li4": "(FR) Choice 4: Contribute to 70, take CPP at 70."
       },
-      "description": "(FR) This chart shows four choices Keith has for his monthly retirement income. He has two potential sources of income between his CPP pension and his Post-retirement benefits. For all choices, the CPP pensions makes up the most of his monthly income. Taking his CPP at age 70 is the largest amount of monthly income. Taking his CPP at age 65 and continuing to work for 5 years to receive 5 Post-retirement benefits is the smallest amount of monthly income.",
+      "description": "(FR) This chart shows four choices Keith has for his monthly retirement income. He has two potential sources of income between his CPP retirement pension and his Post-retirement benefits. For all choices, the CPP retirement pension makes up the most of his monthly income. Taking his CPP at age 70 is the largest amount of monthly income. Taking his CPP at age 65 and continuing to work for 5 years to receive 5 Post-retirement benefits is the smallest amount of monthly income.",
       "accessibility": {
         "caption": "(FR) Values presented on the image:",
-        "button-label": "(FR) Text alternative for Compare Keith's monthly CPP at age 70 for different choices",
+        "button-label": "(FR) Text alternative for Compare Keith's monthly CPP retirement pension at age 70 for different choices",
         "header": [
           "(FR) Choices Keith is considering",
           "(FR) Base CPP retirement pension based on starting age",
@@ -77,44 +75,44 @@
         "rows": [
           {
             "id": 1,
-            "data": ["(FR) Choice 1: Take CPP at 60, contribute to 70.", "$640", "$325", "$965"]
+            "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$640", "$325", "$965"]
           },
           {
             "id": 2,
-            "data": ["(FR) Choice 2: Take CPP at 60, contribute to 65.", "$640", "$132", "$772"]
+            "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$640", "$132", "$772"]
           },
           {
             "id": 3,
-            "data": ["(FR) Choice 3: Take CPP at 65, contribute to 70.", "$1,000", "$193", "$1,193"]
+            "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$1,000", "$193", "$1,193"]
           },
           {
             "id": 4,
-            "data": ["(FR) Choice 4: Contribute to 70, take CPP at 70.", "$1,420", "-", "$1,420"]
+            "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$1,420", "-", "$1,420"]
           }
         ]
       },
-      "p1": "(FR) The monthly CPP retirement pension will be paid at the time when Keith applies to receive it. However, the PRBs will accumulate slowly during the years when Keith continues to work and contribute. Each year of additional contributions to the plan will result in an additional small top-up to the existing pension and benefits next year. The graph compares the pension at age 70 for different choice. And the amounts are quite different",
-      "p2": "(FR) Choices 3 and 4 are about Keith taking his CPP pension later in life, at age 65 and 70, and receiving higher monthly pension amounts. Keith would like to choose his strategy between these two options."
+      "p1": "(FR) The monthly Canada Pension Plan (CPP) retirement pension will be paid at the time when Keith applies to collect it. However, the PRBs will accumulate slowly during the years when Keith continues to work and contribute. Each year of additional contributions to the plan will result in an additional small top-up to the existing pension and benefits next year. The graph compares the pension at age 70 for different choice. And the amounts are quite different.",
+      "p2": "(FR) Choices 3 and 4 are about Keith taking his CPP retirement pension later in life, at age 65 and 70, and receiving higher monthly pension amounts. Keith would like to choose his strategy between these two options."
     },
     "what-else": {
       "heading": "(FR) What else should Keith consider when choosing?",
-      "p1": "(FR) When deciding the time to start your public pensions, it is important to look at two things:",
+      "p1": "(FR) When Keith is deciding when to start his public pensions, it is important he thinks about:",
       "list": {
-        "li1": "(FR) Your monthly amount",
-        "li2": "(FR) The total amount you will receive over your lifetime."
+        "li1": "(FR) his monthly amount",
+        "li2": "(FR) the total amount he will collect over his lifetime"
       },
-      "p2": "(FR) Before making his final decision, Keith wants to see how his lifetime pension will change if he starts at different ages.",
+      "p2": "(FR) Before making his final decision, Keith wants to check one more thing. He wants to see how his lifetime pension will change if he starts at different ages.",
       "smart-tip": {
-        "content": "(FR) <strong>Smart tip:</strong>  Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live at least another 20 years.</a1> In fact, there is <a2> about 50% chance </a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life.",
-        "link-one": "https://www.osfi-bsif.gc.ca/fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
-        "link-two": "https://www.osfi-bsif.gc.ca/fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32"
+        "content": "(FR) <strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live until age 86-88</a1> and need to plan for at least another 20 years. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life.",
+        "link-one": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
+        "link-two": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32"
       }
     },
     "keith-pension-87": {
       "heading": "(FR) What will be Keith's pension by age 87?",
-      "p1": "(FR) As Keith is still healthy and working, he should plan on living for another 22-25 years (age 87-90) or longer.",
-      "p2": "(FR) <strong>Choice 3</strong> was about Keith taking his Canada Pension Plan (CPP) pension at age 65 and contributing to the plan until age 70. He will have his pension monthly income earlier in life and a higher lifetime pension.",
-      "p3": "(FR) <strong>Choice 4</strong> was about Keith delaying his CPP pension until age 70. It is also a good option since it gives the highest monthly pension and a high lifetime pension as well.",
+      "p1": "(FR) As Keith is still healthy and working, he should plan on living for another 22-25 years (age 87-90) or longer. He would like to choose between Choices 3 and 4.",
+      "li1": "(FR) Choice 3 was about Keith taking his Canada Pension Plan (CPP) retirement pension at age 65 and contributing to the plan until age 70. He will have his pension monthly income earlier in life and a higher lifetime pension.",
+      "li2": "(FR) Choice 4 was about Keith delaying his CPP retirement pension until age 70. It is also a good option since it gives the highest monthly pension and a high lifetime pension as well.",
       "img-url": {
         "desktop": "/assets/keith-cpp-87-desktop-en.jpg",
         "mobile": "/assets/keith-cpp-87-mobile-en.jpg"
@@ -128,28 +126,28 @@
       "description": "(FR) This chart shows the lifetime pension amount for 4 choices Keith is thinking about. It shows that by age 87, the choice of starting his CPP pension at age 65 and working until 70 would give Keith the most retirement income.",
       "accessibility": {
         "caption": "(FR) Values presented on the image:",
-        "button-label": "(FR) Text alternative for Keith's CPP lifetime pension at age 87",
-        "header": ["(FR) Choices Keith is considering", "(FR) Lifetime CPP pension amount at age 87"],
+        "button-label": "(FR) Text alternative for Keith's lifetime CPP retirement pension at age 87",
+        "header": ["(FR) Choices Keith is considering", "(FR) Lifetime CPP retirement pension amount at age 87"],
         "rows": [
           {
             "id": 1,
-            "data": ["(FR) Choice 1: Take CPP at 60, contribute to 70.", "$288,726"]
+            "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$288,726"]
           },
           {
             "id": 2,
-            "data": ["(FR) Choice 2: Take CPP at 60, contribute to 65.", "$245,076"]
+            "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$245,076"]
           },
           {
             "id": 3,
-            "data": ["(FR) Choice 3: Take CPP at 65, contribute to 70.", "$307,659"]
+            "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$307,659"]
           },
           {
             "id": 4,
-            "data": ["(FR) Choice 4: Contribute to 70, take CPP at 70.", "$289,681"]
+            "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$289,681"]
           }
         ]
       },
-      "p4": "(FR) Keith also sees that taking his CPP pension at age 60 and stopping his contributions at age 65 has the lowest monthly and lifetime pensions."
+      "p2": "(FR) Keith looks at taking his CPP retirement pension at age 60 and stopping his contributions at age 65. This choice has the lowest monthly and lifetime pensions."
     },
     "keith-pension-90": {
       "heading": "(FR) What will be Keith's pension by age 90?",
@@ -164,31 +162,31 @@
         "li3": "(FR) Choice 3: Take CPP at 65, contribute to 70.",
         "li4": "(FR) Choice 4: Contribute to 70, take CPP at 70."
       },
-      "description": "(FR) This chart shows the lifetime pension amount for 4 choices Keith is thinking about. It shows that if Keith lives to age 90, starting his CPP pension at age 65 and working until 70 would give him the most retirement income.",
+      "description": "(FR) This chart shows the lifetime CPP retirement pension amount for 4 choices Keith is thinking about. It shows that if Keith lives to age 90, starting his CPP retirement pension at age 65 and working until 70 would give him the most retirement income.",
       "accessibility": {
         "caption": "(FR) Values presented on the image:",
-        "button-label": "(FR) Text alternative for Keith's CPP lifetime pension at age 90",
+        "button-label": "(FR) Text alternative for Keith's lifetime CPP retirement pension at age 90",
         "header": ["(FR) Choices Keith is considering", "(FR) Lifetime CPP pension amount at age 90"],
         "rows": [
           {
             "id": 1,
-            "data": ["(FR) Choice 1: Take CPP at 60, contribute to 70.", "$323,455"]
+            "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$323,455"]
           },
           {
             "id": 2,
-            "data": ["(FR) Choice 2: Take CPP at 60, contribute to 65.", "$272,854"]
+            "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$272,854"]
           },
           {
             "id": 3,
-            "data": ["(FR) Choice 3: Take CPP at 65, contribute to 70.", "$350,601"]
+            "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$350,601"]
           },
           {
             "id": 4,
-            "data": ["(FR) Choice 4: Contribute to 70, take CPP at 70.", "$340,801"]
+            "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$340,801"]
           }
         ]
       },
-      "p4": "(FR) Even at age 90, Choice 3 still has the highest lifetime pension. Keith decides that taking his CPP pension at age 65 and contributing until 70 is his best option."
+      "p4": "(FR) Even at age 90, Choice 3 still has the highest lifetime pension. Keith decides that taking his CPP retirement pension at age 65 and contributing until 70 is his best option."
     }
   },
 
@@ -197,31 +195,38 @@
     "p1": "(FR) Keith's income would not qualify him for the ",
     "gis": {
       "text": "(FR) Guaranteed Income Supplement",
-      "href": "https://www.canada.ca/fr/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html"
+      "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html"
     },
     "p2": " (FR) (GIS), as he will continue to work up until age 70 with good salary. The GIS is for people with ",
     "low-income": {
       "text": "(FR) low income.",
-      "href": "https://www.canada.ca/fr/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/benefit-amount.html"
+      "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
     },
     "p3": "(FR) Keith chooses to delay the Old Age Security (OAS) pension until age 70 to permanently increase it by 36%. This higher pension will help him transition better into retirement when he stops working at age 70.",
     "p4": "(FR) To learn more about what to consider when choosing the age you want to start your OAS pension, ",
     "fred-story": {
-      "text": "(FR) read Fred's story.",
-      "href": "/fred"
-    },
+      "text": "(FR) Fred decides when to start his public pensions",
+      "href": "/fr/learn/case-studies/fred"
+    }
+  },
+
+  "conclusion": {
+    "heading": "(FR) Conclusion",
+    "p1": "(FR) Keith is working later in retirement and plans to stay on the job until age 70. He might not need the Canada Pension Plan (CPP) retirement pension income immediately and does not qualify for the Guaranteed Income Supplement (GIS). He wants to take the largest pensions from the Old Age Security (OAS) and CPP retirement pensions available to him. He would like to know how he can use Post-retirement benefits (PRBs), if he chooses to take CPP before he retires from his job.",
+    "p2": "(FR) Keith decided to start CPP at age 65 and continue contributing to age 70, receiving 5 PRBs. This choice will give a high monthly pension that will be topped up annually with five additional PRB. And it will provide the largest lifetime pension by age 87 and 90.",
+    "p3": "(FR) Keith also decides to delay his OAS pension until age 70. The higher monthly benefit will help when he retires from work.",
     "disclaimer": "(FR) <strong>Disclaimer:</strong> These stories are only simplified examples to illustrate the various factors that should be considered when deciding when to start collecting your public pensions, and potential outcomes. They do not include the effects of taxation or investment growth. These stories are not intended to provide financial advice, and we strongly encourage you to seek help from a financial advisor as you plan your retirement."
   },
 
   "learn-more": {
     "header": "(FR) Learn More",
     "going-from-work-to-retirement": {
-      "description": "(FR) Many Canadians continue to work in retirement. Learn how the money you earn has an impact on your benefits.",
+      "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
       "header": "(FR) Going from work to retirement"
     },
     "rules-of-thumb-for-public-pensions": {
-      "description": "(FR) Pension tips based on your personal situation.",
-      "header": "(FR) Rules of thumb for public pensions"
+      "description": "(FR) Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
+      "header": "(FR) Rules of thumb for your public pensions"
     },
     "cpp-prb": {
       "description": "(FR) Check here for details about the CPP Post-Retirement Benefit, who is eligible for it, how much you could receive, and how to apply.",

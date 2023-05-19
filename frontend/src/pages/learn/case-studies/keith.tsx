@@ -1,7 +1,7 @@
 import { FC, Fragment, useMemo } from 'react'
 
 import { NavigateNext } from '@mui/icons-material'
-import { List, ListItem, ListItemButton, ListItemText, useMediaQuery } from '@mui/material'
+import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, useMediaQuery } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -89,6 +89,11 @@ const Keith: FC = () => {
             },
             {
               primary: t('key-takeaways.li6'),
+              secondary: t('key-takeaways.li7'),
+            },
+            {
+              primary: t('key-takeaways.li8'),
+              secondary: t('key-takeaways.li9'),
             },
           ].map(({ primary, secondary }) => (
             <ListItem key={primary} className="border-b">
@@ -101,6 +106,13 @@ const Keith: FC = () => {
             </ListItem>
           ))}
         </List>
+        <AlertCard type="tip" className="mt-5">
+          <Trans
+            ns="learn/case-studies/keith"
+            i18nKey="key-takeaways.smart-tip"
+            components={{ a1: <MuiLink href={t('key-takeaways.a1')} /> }}
+          />
+        </AlertCard>
 
         <h2 id="overview" className="h2">
           {t('overview.heading')}
@@ -112,21 +124,18 @@ const Keith: FC = () => {
         </h2>
         <p>{t('cpp-oas.p1')}</p>
         <p>
-          {t('cpp-oas.p2')}
-          <Link href={t('cpp-oas.oas-benefits.href')} className="text-secondary-700 underline">
-            {t('cpp-oas.oas-benefits.text')}
-          </Link>
+          <Trans ns="learn/case-studies/keith" i18nKey="cpp-oas.p3" components={{a1: <MuiLink href={t('cpp-oas.a1')} />}}/>
         </p>
 
         <h2 id="prb" className="h2">
           {t('cpp.prb.heading')}
         </h2>
         <p>
-          {t('cpp.prb.p1')}
-          <Link href={t('cpp.prb.cpp-post.href')} className="text-secondary-700 underline">
-            {t('cpp.prb.cpp-post.text')}
-          </Link>
-          {t('cpp.prb.p2')}
+          <Trans
+            ns="learn/case-studies/keith"
+            i18nKey="cpp.prb.p1"
+            components={{ a1: <MuiLink href={t('cpp.prb.a1')} /> }}
+          />
         </p>
 
         <h2 id="prb-choices" className="h2">
@@ -173,13 +182,11 @@ const Keith: FC = () => {
           {t('cpp.what-else.heading')}
         </h2>
         <p>{t('cpp.what-else.p1')}</p>
-        <List disablePadding className="pb-4 pl-6 text-black" sx={{ listStyleType: 'disc' }}>
+        <ul className="mb-5 list-disc space-y-2 pl-10">
           {[t('cpp.what-else.list.li1'), t('cpp.what-else.list.li2')].map((value) => (
-            <ListItem key={value} sx={{ display: 'list-item' }} disablePadding>
-              <ListItemText primary={value} />
-            </ListItem>
+            <li key={value}>{value}</li>
           ))}
-        </List>
+        </ul>
 
         <p>{t('cpp.what-else.p2')}</p>
         <AlertCard type="tip">
@@ -187,8 +194,8 @@ const Keith: FC = () => {
             ns="learn/case-studies/keith"
             i18nKey="cpp.what-else.smart-tip.content"
             components={{
-              a1: <a className="text-secondary-700 underline" href={t('cpp.what-else.smart-tip.link-one')} />,
-              a2: <a className="text-secondary-700 underline" href={t('cpp.what-else.smart-tip.link-two')} />,
+              a1: <MuiLink href={t('cpp.what-else.smart-tip.link-one')}/>,
+              a2: <MuiLink href={t('cpp.what-else.smart-tip.link-two')}/>
             }}
           />
         </AlertCard>
@@ -197,12 +204,12 @@ const Keith: FC = () => {
           {t('cpp.keith-pension-87.heading')}
         </h2>
         <p>{t('cpp.keith-pension-87.p1')}</p>
-        <p>
-          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p2`)} />
-        </p>
-        <p>
-          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.keith-pension-87.p3`)} />
-        </p>
+        <ul className="mb-5 list-disc space-y-2 pl-10">
+          {[t('cpp.keith-pension-87.li1'), t('cpp.keith-pension-87.li2')].map((value) => (
+            <li key={value}>{value}</li>
+          ))}
+        </ul>
+
         <Img pension="cpp.keith-pension-87" />
         <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
           <div>
@@ -221,7 +228,7 @@ const Keith: FC = () => {
           descriptionHeading={t('description-heading')}
           valuesHeading={t('values-heading')}
         />
-        <p>{t('cpp.keith-pension-87.p4')}</p>
+        <p>{t('cpp.keith-pension-87.p2')}</p>
 
         <h2 id="keith-pension-90" className="h2">
           {t('cpp.keith-pension-90.heading')}
@@ -252,23 +259,24 @@ const Keith: FC = () => {
         </h2>
         <p>
           {t('oas.p1')}
-          <Link href={t('oas.gis.href')} className="text-secondary-700 underline">
-            {t('oas.gis.text')}
-          </Link>
+          <MuiLink href={t('oas.gis.text')} />
           {t('oas.p2')}
-          <Link href={t('oas.low-income.href')} className="text-secondary-700 underline">
-            {t('oas.low-income.text')}
-          </Link>
+          <MuiLink href={t('oas.low-income.text')} />
         </p>
         <p>{t('oas.p3')}</p>
         <p>
           {t('oas.p4')}
-          <Link href={t('oas.fred-story.href')} className="text-secondary-700 underline">
-            {t('oas.fred-story.text')}
-          </Link>
+          <MuiLink href={t('oas.fred-story.text')} />
         </p>
+
+        <h2 id="conclusion" className="h2">
+          {t('conclusion.heading')}
+        </h2>
+        <p>{t('conclusion.p1')}</p>
+        <p>{t('conclusion.p2')}</p>
+        <p>{t('conclusion.p3')}</p>
         <AlertCard type="disclaimer">
-          <Trans ns="learn/case-studies/keith" i18nKey="oas.disclaimer" />
+          <Trans ns="learn/case-studies/keith" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
         <h2 id="learn-more" className="h2">
