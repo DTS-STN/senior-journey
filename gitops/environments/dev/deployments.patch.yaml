@@ -14,6 +14,8 @@ spec:
       containers:
         - name: seniors-journey-frontend
           env:
+            - name: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
+              value: "https://assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-cad75bf2f0d2-staging.min.js"
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:
