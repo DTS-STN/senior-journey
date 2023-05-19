@@ -295,34 +295,18 @@ const Home: FC = () => {
           <div className="grid lg:grid-cols-2">
             <p>
               <strong>{t('contact-us.cards.call-us.toll-free.title')}</strong>{' '}
-              <MuiLink
-                component={Link}
-                className="whitespace-nowrap"
-                href={t('contact-us.cards.call-us.toll-free.href')}
-              >
-                {t('contact-us.cards.call-us.toll-free.number')}
-              </MuiLink>
+              <span className="whitespace-nowrap">{t('contact-us.cards.call-us.toll-free.number')}</span>
             </p>
             <p>
               <strong>{t('contact-us.cards.call-us.tty.title')}</strong>{' '}
-              <MuiLink
-                component={Link}
-                className="whitespace-nowrap"
-                href={t('contact-us.cards.call-us.tty.href')}
-              >
-                {t('contact-us.cards.call-us.tty.number')}
-              </MuiLink>
+              <span className="whitespace-nowrap">{t('contact-us.cards.call-us.tty.number')}</span>
             </p>
           </div>
           <p>{t('contact-us.cards.call-us.toll-free.description')}</p>
           <Divider className="my-4" />
           <p>
             <strong>{t('contact-us.cards.call-us.outside.title')}</strong>{' '}
-            <MuiLink
-              component={Link}
-              className="whitespace-nowrap"
-              href={t('contact-us.cards.call-us.outside.href')}
-            >
+            <MuiLink component={Link} className="whitespace-nowrap" href={t('contact-us.cards.call-us.outside.href')}>
               {t('contact-us.cards.call-us.outside.number')}
             </MuiLink>
           </p>

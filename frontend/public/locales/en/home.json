@@ -104,18 +104,16 @@
         "title": "Call us",
         "description": "You can reach us at the following numbers:",
         "toll-free": {
-          "title": "Telephone",
+          "title": "Telephone:",
           "description": "The hours of operation are 8:30 am to 5 pm local time, Monday to Friday.",
-          "number": "1 800 O-Canada (1-800-622-6232)",
-          "href": "tel:18006226232"
+          "number": "1 800 O-Canada (1-800-622-6232)"
         },
         "tty": {
           "title": "TTY:",
-          "number": "1-800-926-9105",
-          "href": "tel:18009269105"
+          "number": "1-800-926-9105"
         },
         "outside": {
-          "title": "From outside Canada",
+          "title": "From outside Canada:",
           "description": "The hours of operation are 8:30 am to 5 pm Eastern time, Monday to Friday.",
           "number": "Call 1 800 O-Canada from abroad",
           "href": "https://www.canada.ca/en/contact/international.html"
