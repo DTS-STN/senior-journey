@@ -74,19 +74,15 @@
         ],
         "rows": [
           {
-            "id": 1,
             "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$640", "$325", "$965"]
           },
           {
-            "id": 2,
             "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$640", "$132", "$772"]
           },
           {
-            "id": 3,
             "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$1,000", "$193", "$1,193"]
           },
           {
-            "id": 4,
             "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$1,420", "-", "$1,420"]
           }
         ]
@@ -130,19 +126,15 @@
         "header": ["(FR) Choices Keith is considering", "(FR) Lifetime CPP retirement pension amount at age 87"],
         "rows": [
           {
-            "id": 1,
             "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$288,726"]
           },
           {
-            "id": 2,
             "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$245,076"]
           },
           {
-            "id": 3,
             "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$307,659"]
           },
           {
-            "id": 4,
             "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$289,681"]
           }
         ]
@@ -169,19 +161,15 @@
         "header": ["(FR) Choices Keith is considering", "(FR) Lifetime CPP pension amount at age 90"],
         "rows": [
           {
-            "id": 1,
             "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$323,455"]
           },
           {
-            "id": 2,
             "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$272,854"]
           },
           {
-            "id": 3,
             "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$350,601"]
           },
           {
-            "id": 4,
             "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$340,801"]
           }
         ]

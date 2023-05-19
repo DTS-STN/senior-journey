@@ -4,7 +4,6 @@ export interface TableData {
   caption: string
   header: string[]
   rows: {
-    id: number
     data: string[]
   }[]
 }
@@ -20,8 +19,8 @@ const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
         <caption className="text-left">{tableData.caption}</caption>
         <thead className="bg-gray-surface">
           <tr className="divide-x">
-            {tableData.header.map((headerItem, index) => (
-              <th scope="col" key={index} className="px-3 py-2.5">
+            {tableData.header.map((headerItem,index) => (
+              <th scope="col" key={`${index}-${headerItem}`} className="px-3 py-2.5">
                 {headerItem}
               </th>
             ))}
@@ -29,9 +28,9 @@ const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
         </thead>
         <tbody className="divide-y">
           {tableData.rows.map((row) => (
-            <tr key={row.id} className="divide-x">
-              {row.data.map((cellData, cellIndex) => (
-                <td key={cellIndex} className="px-3 py-2.5">
+            <tr key={row.data.toString()} className="divide-x">
+              {row.data.map((cellData,index) => (
+                <td key={`${index}-${cellData}`} className="px-3 py-2.5">
                   {cellData}
                 </td>
               ))}

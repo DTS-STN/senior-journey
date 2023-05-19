@@ -60,15 +60,12 @@
         "header": ["(FR) Age when Fred starts taking his CPP pension", "(FR) Fred's CPP monthly pension"],
         "rows": [
           {
-            "id": 1,
             "data": ["60", "$832"]
           },
           {
-            "id": 2,
             "data": ["65", "$1,300"]
           },
           {
-            "id": 3,
             "data": ["70", "$1,846"]
           }
         ]
@@ -87,15 +84,12 @@
         "header": ["(FR) Age when Fred starts taking his CPP pension", "(FR) Fred's CPP lifetime pension at age 86"],
         "rows": [
           {
-            "id": 1,
             "data": ["60", "$259,584"]
           },
           {
-            "id": 2,
             "data": ["65", "$327,600"]
           },
           {
-            "id": 3,
             "data": ["70", "$354,432"]
           }
         ]
@@ -120,19 +114,15 @@
         "header": ["(FR) Age when Fred starts taking his OAS pension", "(FR) Fred's OAS monthly pension amount"],
         "rows": [
           {
-            "id": 1,
             "data": ["65", "$691"]
           },
           {
-            "id": 2,
             "data": ["67", "$791"]
           },
           {
-            "id": 3,
             "data": ["68", "$840"]
           },
           {
-            "id": 4,
             "data": ["70", "$940"]
           }
         ]
@@ -152,19 +142,15 @@
         "header": ["(FR) Age when Fred starts taking his OAS pension", "(FR) Fred's lifetime OAS pension"],
         "rows": [
           {
-            "id": 1,
             "data": ["65", "$191,545"]
           },
           {
-            "id": 2,
             "data": ["67", "$198,258"]
           },
           {
-            "id": 3,
             "data": ["68", "$199,645"]
           },
           {
-            "id": 4,
             "data": ["70", "$198,477"]
           }
         ]
