@@ -1,5 +1,4 @@
 {
-  "header": "(FR) Rules of thumb for public pensions",
   "breadcrumbs": {
     "home": {
       "text": "Carrefour retraite",
@@ -10,79 +9,88 @@
       "link": "/learn"
     }
   },
+  "header": "(FR) Rules of thumb for public pensions",
   "key-takeaways": {
-    "heading": "(FR) Key Takeaways",
-    "list-one": {
-      "item-1": "Financial circumstances are only one aspect of your decision when to take your pensions.",
-      "item-2": "Think about your retirement goals and plans, a lifestyle you want and place you would like to live. Timing of retirement is more than about your money and age.",
-      "item-3": "If you have low income, or you are seriously ill, you might want to take your CPP and OAS earlier. If you have private savings and can delay taking your public pensions, you can increase your pension income significantly.",
-      "item-4": "If you experience low income, you may qualify for the GIS. Understand the rules and file your taxes annually to maintain your eligibility"
+    "heading": "(FR) Key takeaways",
+    "li1": "(FR) Your current financial situation is only one part of your public pension decision.",
+    "li2": "(FR) Think about your retirement goals and plans, the lifestyle you want and the places you would like to visit or live.",
+    "li3": "(FR) If you need the money right away to deal with your bills or debts, consider taking your public pensions early. If you don't need the money now - because you are still working, have savings or other sources of income, consider delaying your public pensions.",
+    "li4": "(FR) Each month that you delay increases your monthly payments for life.",
+    "li5": "(FR) People who qualify for the Guaranteed Income Supplement (GIS) should not wait to apply past age 65.",
+    "li6": "(FR) If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "li7": "(FR) You don't need to stop working to start collecting your public pensions."
+  },
+  "overview": {
+    "heading": "(FR) Overview",
+    "smart-tip": "(FR) <strong>Smart tip:</strong> Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live at least another 20 years</a1>. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life.",
+    "a1": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
+    "a2": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
+    "p1": "(FR) The OAS and CPP programs have two different pensions. You can start them at different times. The timing of your pensions may also be different than your spouse or common-law partner.",
+    "p2": "(FR) You should consider all parts of your life for the next decades, including your health, finances and what you are planning to do in retirement. Depending on your retirement goals and personal circumstances, you may choose to retire and collect pensions earlier, even if it means having less money on a monthly basis.",
+    "p3": "(FR) The tips below may help you get a higher retirement income from public pensions, but the decisions are yours."
+  },
+
+  "cpp": {
+    "heading": "(FR) Rules of thumb for the CPP retirement pension",
+    "p1": "(FR) The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.",
+    "p2": "(FR) If you start at age 70, you may get about $100,000 more from the CPP retirement pension. Your pension will also be adjusted for inflation. This means it will reflect the most current cost of living.",
+    "sub-heading-one": "(FR) You may want to consider starting your CPP retirement pension earlier if\u00a0:",
+    "li1": "(FR) you have major health risks, suffer from a serious illness or disability, but don't qualify for the CPP Disability Pension or <a1>Post-Retirement Disability Benefit</a1>",
+    "li2": "(FR) you have reasons to believe that you will have a much shorter life than the average Canadian (and remember, Canadians generally underestimate their longevity)",
+    "li3": "(FR) you have low or no income and need money now to help cover your basic needs",
+    "li4": "(FR) you have little or no retirement savings to delay your pensions",
+    "li5": "(FR) you provide full-time unpaid care to a family member or a loved one, and money is needed now to cover your basic needs",
+    "li6": "(FR) you are paying a large debt with high interest and worry about not making your monthly payments",
+    "li7": "(FR) you have very high income in retirement and the CPP retirement pension amount will not have a major impact on your financial plan",
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-prestation-invalidite-apres-retraite.html",
+    "smart-tip": "(FR) <strong>Smart tip:</strong> If you are receiving provincial disability benefits and start your CPP retirement pension earlier than age 65, your provincial benefit amount will be reduced. It may be good to wait and start your CPP pension at age 65.",
+    "sub-heading-two": "(FR) You may want to consider starting your CPP retirement pension later if\u00a0:",
+    "li8": "(FR) you are in good health and expect a long, healthy retirement",
+    "li9": "(FR) you continue to work, and your salary is enough to cover your needs",
+    "li10": "(FR) you continue to work and want to cover the time of low contributions to the CPP when you were either in school or working outside of Canada, or changing your career",
+    "li11": "(FR) you can support your current lifestyle by using your retirement savings and don't need to collect your CPP retirement pension now",
+    "li12": "(FR) you lived and worked in Canada for less than 40 years",
+    "li13": "(FR) you are divorced and had to split some pension credits with your former spouse or common-law partner",
+    "li14": "(FR) you want to reduce your risk of outliving your retirement savings",
+    "li15": "(FR) you want to increase your monthly and lifetime CPP retirement pension amount"
+  },
+
+  "oas": {
+    "heading": "(FR) Rules of Thumb for the OAS pension",
+    "p1": "(FR) You can start collecting your Old Age Security (OAS) pension at age 65 but you can also delay up to age 70. After age 70, there is no advantage in delaying your first payment.",
+    "sub-heading-one": "(FR) You may want to consider starting your OAS pension earlier if\u00a0:",
+    "li1": "(FR) you qualify for the Guaranteed Income Supplement (GIS). If you qualify for the OAS pension and have <a1>low income</a1>, you may also get the GIS. People who qualify for the GIS should not wait to apply past age 65. You cannot receive the GIS if you are delaying your OAS pension",
+    "li2": "(FR) you believe that you may have a shorter life than the average Canadian",
+    "li3": "(FR) you're unable to work or choose not to work past age 65",
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "smart-tip-p1": "(FR) <strong>Smart tip:</strong> If you work and receive the GIS, you can earn up to $5,000 and keep collecting the full GIS monthly amount. If you make between $5,000 and $15,000, your GIS amount will be reduced by 50 cents for every dollar of your work earnings.",
+    "smart-tip-p2": "(FR) Learn more on the <a2>GIS</a2>.",
+    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
+    "sub-heading-two": "(FR) You may want to consider starting your OAS pension later if\u00a0:",
+    "li4": "(FR) you don't qualify for the GIS",
+    "li5": "(FR) you feel comfortable with your income in retirement",
+    "li6": "(FR) you plan to continue working for a few years",
+    "li7": "(FR) you believe that you will live longer than the average Canadian",
+    "disclaimer": "(FR) Disclaimer: This website meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor."
+  },
+
+  "learn-more": {
+    "header": "(FR) Learn More",
+    "main-sources-of-retirement-income": {
+      "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
+      "header": "(FR) Main sources of retirement income"
     },
-    "content-one": "When is the best time for you to start your OAS and CPP pensions? It is not an simple question, and the answer depends on your priorities and plans for retirement. There is no right or wrong response. Some might want to retire early, even if it means having a lower standard of living all retirement. Others want to leave some savings for their children, yet others want to maximize their pension income in retirement.",
-    "smart-tip": "<strong>Smart tip:</strong> Planning for your retirement, your personal longevity is very important. This might be an uncomfortable topic for most people, but your decisions could be different, depending on how long you will need to receive your pensions. For many people the prospect of outliving their savings carries more risk than passing away prematurely. Individuals usually under-estimate their own longevity greatly. The average life expectancy has been increasing steadily and will continue to grow. Keep in mind you will most likely live longer than your parents or grandparents. Plan your finances accordingly.",
-    "content-two": "In the next chapter we will provide a few common rules of thumb aiming to get the most from the OAS and CPP. This might involve other personal choices you might have to make. However, financial analysis is only one part of your big picture for retirement. You have to weigh in on all aspects of your retirement, including the retirement of your spouse. The final decision is always yours.",
-    "content-three": "The OAS and CPP are two different programs, and you can start them at different time. The timing of your pensions may differ from the timing for your spouse.",
-    "content-four": "If you would like to increase your monthly and lifetime OAS and CPP pensions, consider the following options.",
-    "sub-heading-one": "(FR) Consider taking CPP retirement pension earlier if you have at least one condition:",
-    "list-two": {
-      "item-1": "You have serious health risks, suffer from a serious illness or disability, you may want to take your CPP pension early and try to qualify for the Post-Retirement Disability Benefit",
-      "item-2": "You may have serious reasons to believe that you would (live less than average life expectancy)",
-      "item-3": "Your income is low, and you may not have other sources of income, or little or no retirement savings to support any pension delay",
-      "item-4": "You lost your job and unable to find another similar or acceptable employment, and money is needed immediately to cover your basic needs",
-      "item-5": "You provide full-time unpaid care to a family member or a loved one, and money is needed immediately to cover your basic needs",
-      "item-6": "You are paying debt with high interest and struggle to make debt payments without additional income",
-      "item-7": "You have very high income in retirement, and CPP pension amount would not play a major role in your financial picture"
+    "planning-to-save-for-retirement": {
+      "description": "(FR) Learn about how the income you'll need in retirement will change. Your financial needs, and considerations will also change.",
+      "header": "(FR) Planning to save for retirement"
     },
-    "sub-heading-two": "(FR) Consider taking CPP retirement pension at age 65, if you have at least one condition:",
-    "list-three": {
-      "item-1": "You have ill health",
-      "item-2": "You are receiving provincial disability benefits. If you start your CPP earlier than age 65, your provincial pension will be reduced dollar for dollar for any additional CPP pension income.",
-      "item-3": "You may have serious reasons to believe that you would not outlive your parents",
-      "item-4": "Your income at age 65 is modest, and you have small retirement savings",
-      "item-5": "You are unwilling or unable to work past age 65, and you don't have enough savings to cover your basic needs",
-      "item-6": "You are paying high interest debt",
-      "item-7": "You had continuous employment history with minimal gaps"
+    "going-from-work-to-retirement": {
+      "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
+      "header": "(FR) Going from work to retirement"
     },
-    "sub-heading-three": "(FR) Consider delaying CPP retirement pension up to age 70, if you have at least one condition:",
-    "list-four": {
-      "item-1": "You have average or good health",
-      "item-2": "You expect to live a long life",
-      "item-3": "Your income is medium or high, and you have other sources of income or retirement savings to help you maintain your standard of living early in retirement.",
-      "item-4": "You want to continue to work",
-      "item-5": "Your employment history has considerable gaps (e.g. because you immigrated to Canada in the middle of your career, or your study period was long, or you had an unstable career).",
-      "item-6": "You were divorced and lost some pension credits upon credit split.",
-      "item-7": "You would like to increase your monthly and lifetime pension."
-    },
-    "content-five": "You can begin receiving your OAS pension at any age between 65 and 70; however, to maximize your income from the OAS program consider our following rules of thumb.",
-    "sub-heading-four": "(FR) Consider taking OAS pension early if...:",
-    "list-five": {
-      "item-1": {
-        "content": "Your income is low, you have no other sources of income, and little or no retirement savings. You may qualify for the <a>Guaranteed Income Supplement (GIS)</a>.",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
-      },
-      "item-2": "You believe that you may live as long as your parents did.",
-      "item-3": "You are unwilling or unable to work past age 65",
-      "item-4": "You are paying high interest debt cc"
-    },
-    "sub-heading-five": "(FR) Consider taking OAS pension at age 67-68 if you have at least one condition:",
-    "list-six": {
-      "item-1": "Your income in retirement is average or above average. You do not qualify for the GIS.",
-      "item-2": {
-        "content": "Your income is below the <a>OAS recovery tax threshold</a>.",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html"
-      },
-      "item-3": "You believe that you may live as long as your parents did, or even longer",
-      "item-4": "You may be still working"
-    },
-    "sub-heading-six": "(FR) Consider delaying OAS pension to age 70 if you have at least one condition:",
-    "list-seven": {
-      "item-1": {
-        "content": "Your income is above the <a>OAS recovery tax threshold</a> , or your OAS pension could be fully recovered",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html"
-      },
-      "item-2": "You believe that you may live longer than your parents did",
-      "item-3": "You may be still working with high earnings"
-    },
-    "disclaimer": "<strong>Disclaimer:</strong> This website does not provide personal financial advice. Options and discussions presented provide general information only. The ultimate decision about your pensions should be made based on your personal life circumstances. If you are not certain which decision is best for you, seek professional financial advice for your specific case."
+    "deciding-when-to-start": {
+      "description": "(FR) Flexible public pensions offer choices for retirement. Learn how to choose and what to consider.",
+      "header": "(FR) Deciding when to start your public pensions"
+    }
   }
 }
