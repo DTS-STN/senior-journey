@@ -3,16 +3,8 @@ import React from 'react'
 
 import createEmotionServer from '@emotion/server/create-instance'
 import { AppType } from 'next/app'
-import Document, {
-  DocumentContext,
-  DocumentProps,
-  Head,
-  Html,
-  Main,
-  NextScript,
-} from 'next/document'
+import Document, { DocumentContext, DocumentProps, Head, Html, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-
 
 import createEmotionCache from '../createEmotionCache'
 import { getLogger } from '../logging/log-util'
@@ -24,17 +16,12 @@ const log = getLogger('_document.tsx')
 const adobeAnalyticsConfigured = process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC !== undefined
 const devmodeEnabled = process.env.NODE_ENV !== 'production'
 
-const defaultAdobeAnalyticsDomains = [
-  '*.demdex.net',
-  'assets.adobedtm.com',
-  'cm.everesttech.net',
-  'code.jquery.com',
-]
+const defaultAdobeAnalyticsDomains = ['*.demdex.net', 'assets.adobedtm.com', 'cm.everesttech.net', 'code.jquery.com']
 
 const defaultAdobeAnalyticsScriptHashes = [
-  `'sha256-eUTan7s7Let/AtTx7e/BFrXBJ1hNp+oNNppAFt05OMc='`,
-  `'sha256-ijXSZE47lIAA0cp6SwVwWQroK1Mbcv6gKq8PugakSdI='`,
-  `'sha256-WR7dYY/Sv6nA60KEEdlxilApWnN1lTS8373DIVAL42U='`,
+  `'sha256-SbwS/K+ycdnXmsF91EJ1RaerocvjlmnkzhkrH0lsfmo='`,
+  `'sha256-S5S8B4yXwfmeO1318DmBVjwCSPs19f1v2irN9r+ztfI='`,
+  `'sha256-2Lg07GDbbANg7c3a33S33icql5kUlBCWXV1SKxoE71w='`,
 ]
 
 /**
@@ -89,7 +76,7 @@ function generateCsp(nonce: string): string {
     'frame-ancestors': ["'self'"],
     'frame-src': ["'self'"],
     'script-src': ["'self'"],
-    'style-src': ["'self'"]
+    'style-src': ["'self'"],
   }
 
   // required by MUI; TODO: figure out how to tighten this up
@@ -143,15 +130,22 @@ export default function MyDocument({ emotionStyleTags, locale, nonce }: MyDocume
         {/** Google font **/}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap"
+          rel="stylesheet"
+        />
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
       <body>
         <Main />
         <NextScript nonce={nonce} />
-        {adobeAnalyticsConfigured && (<Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />)}
-        {adobeAnalyticsConfigured && (<Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />)}
+        {adobeAnalyticsConfigured && (
+          <Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />
+        )}
+        {adobeAnalyticsConfigured && (
+          <Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />
+        )}
       </body>
     </Html>
   )
@@ -207,7 +201,12 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html)
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     // eslint-disable-next-line react/no-danger
-    <style data-emotion={`${style.key} ${style.ids.join(' ')}`} key={style.key} dangerouslySetInnerHTML={{ __html: style.css }} nonce={nonce} />
+    <style
+      data-emotion={`${style.key} ${style.ids.join(' ')}`}
+      key={style.key}
+      dangerouslySetInnerHTML={{ __html: style.css }}
+      nonce={nonce}
+    />
   ))
 
   return {
