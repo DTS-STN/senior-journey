@@ -106,13 +106,11 @@
         "toll-free": {
           "title": "Téléphone\u00a0:",
           "description": "Les heures d'ouverture sont de 8 h à 17 h, heure locale, du lundi au vendredi.",
-          "number": "1 800 O-Canada (1-800-622-6232)",
-          "href": "tel:18006226232"
+          "number": "1 800 O-Canada (1-800-622-6232)"
         },
         "tty": {
           "title": "ATS\u00a0:",
-          "number": "1-800-926-9105",
-          "href": "tel:18009269105"
+          "number": "1-800-926-9105"
         },
         "outside": {
           "title": "À l'extérieur du Canada\u00a0:",
