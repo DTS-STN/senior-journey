@@ -1,14 +1,7 @@
 {
   "header": "(FR) Planning to save for retirement",
   "breadcrumbs": {
-    "home": {
-      "text": "Carrefour retraite",
-      "link": "/"
-    },
-    "learn": {
-      "text": "(FR) Learn",
-      "link": "/learn"
-    }
+    "learn": "(FR) Learn"
   },
   "overview-link-text": "(FR) Overview",
   "back-to-top": "(FR) BACK TO TOP",

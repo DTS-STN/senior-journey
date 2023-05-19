@@ -1,13 +1,6 @@
 {
   "breadcrumbs": {
-    "home": {
-      "text": "Retirement Hub",
-      "link": "/"
-    },
-    "learn": {
-      "text": "Learn",
-      "link": "/learn"
-    }
+    "learn": "Learn"
   },
   "key-takeaways": {
     "heading": "Key Takeaways",
@@ -18,11 +11,11 @@
     "cpp-oas-retirement-income-plan": {
       "header": "The OAS and CPP pensions are meant to be one part of your retirement income plan.",
       "description": "You can add income from many sources like personal savings, or a workplace pension if you have one."
-    },    
+    },
     "cpp-oas-adjusted-for-inflation": {
       "header": "Both the OAS and CPP pensions are adjusted for inflation.",
       "description": "Your public pensions are a secure and inflation-proof retirement income you can rely on."
-    },    
+    },
     "cpp-oas-taxable-income": {
       "header": "The OAS and CPP are taxable income.",
       "description": "When looking at figures and tables keep in mind that you will be taxed based on your total income and the amount you receive may be less."

@@ -1,12 +1,6 @@
 {
   "header": "Learn",
   "explore": "Explore our content",
-  "breadcrumbs": {
-    "home": {
-      "text": "Retirement Hub",
-      "link": "/"
-    }
-  },
   "banner": {
     "title": "Not sure where to begin? Take the quiz!",
     "text": "Receive a personalized checklist to guide you through retirement.",

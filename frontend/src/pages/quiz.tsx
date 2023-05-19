@@ -35,8 +35,8 @@ const Quiz: FC = () => {
         hideChecklist={true}
         breadcrumbItems={[
           {
-            link: t('breadcrumbs.home.link'),
-            text: t('breadcrumbs.home.text'),
+            link: '/',
+            text: t('common:application-name'),
           },
         ]}
         hideFooter="print"

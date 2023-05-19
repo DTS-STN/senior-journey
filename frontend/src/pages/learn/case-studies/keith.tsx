@@ -60,12 +60,12 @@ const Keith: FC = () => {
         header={t('header')}
         breadcrumbItems={[
           {
-            link: t('breadcrumbs.home.link'),
-            text: t('breadcrumbs.home.text'),
+            link: '/',
+            text: t('common:application-name'),
           },
           {
-            link: t('breadcrumbs.learn.link'),
-            text: t('breadcrumbs.learn.text'),
+            link: '/learn',
+            text: t('breadcrumbs.learn'),
           },
         ]}
       >
@@ -124,7 +124,11 @@ const Keith: FC = () => {
         </h2>
         <p>{t('cpp-oas.p1')}</p>
         <p>
-          <Trans ns="learn/case-studies/keith" i18nKey="cpp-oas.p3" components={{a1: <MuiLink href={t('cpp-oas.a1')} />}}/>
+          <Trans
+            ns="learn/case-studies/keith"
+            i18nKey="cpp-oas.p3"
+            components={{ a1: <MuiLink href={t('cpp-oas.a1')} /> }}
+          />
         </p>
 
         <h2 id="prb" className="h2">
@@ -194,8 +198,8 @@ const Keith: FC = () => {
             ns="learn/case-studies/keith"
             i18nKey="cpp.what-else.smart-tip.content"
             components={{
-              a1: <MuiLink href={t('cpp.what-else.smart-tip.link-one')}/>,
-              a2: <MuiLink href={t('cpp.what-else.smart-tip.link-two')}/>
+              a1: <MuiLink href={t('cpp.what-else.smart-tip.link-one')} />,
+              a2: <MuiLink href={t('cpp.what-else.smart-tip.link-two')} />,
             }}
           />
         </AlertCard>

@@ -1,19 +1,12 @@
 {
   "breadcrumbs": {
-    "home": {
-      "text": "Retirement Hub",
-      "link": "/"
-    },
-    "learn": {
-      "text": "Learn",
-      "link": "/learn"
-    }
+    "learn": "Learn"
   },
   "header": "When to collect public pensions",
   "key-takeaways": {
     "heading": "Key takeaways",
     "cpp-oas": {
-      "header":  "You can claim your Canada Pension Plan (CPP) retirement any time between age 60 and 70, and your Old Age Security (OAS) pension between 65 and 70",
+      "header": "You can claim your Canada Pension Plan (CPP) retirement any time between age 60 and 70, and your Old Age Security (OAS) pension between 65 and 70",
       "description": "The longer you wait, the larger your monthly pension will be. For low-income individuals the Guaranteed Income Supplement (GIS) could make a large difference and shouldn't delay to apply for public pensions."
     },
     "personal-circumstances": {

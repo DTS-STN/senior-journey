@@ -1,13 +1,6 @@
 {
   "breadcrumbs": {
-    "home": {
-      "text": "Retirement Hub",
-      "link": "/"
-    },
-    "learn": {
-      "text": "Learn",
-      "link": "/learn"
-    }
+    "learn": "Learn"
   },
   "header": "Rules of thumb for public pensions",
   "key-takeaways": {

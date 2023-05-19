@@ -2,14 +2,7 @@
   "links-header": "More resources",
   "restart-quiz": "Restart quiz",
   "breadcrumbs": {
-    "home": {
-      "text": "Retirement Hub",
-      "link": "/"
-    },
-    "learn": {
-      "text": "Learn",
-      "link": "/learn"
-    }
+    "learn": "Learn"
   },
   "filter-tasks": "Filter Tasks",
   "header": "Your retirement checklist",

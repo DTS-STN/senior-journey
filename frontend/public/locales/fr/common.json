@@ -89,7 +89,7 @@
     "alert": "Lieu de test",
     "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
   },
-  "application-name-bar": "Carrefour retraite",
+  "application-name": "Carrefour retraite",
   "checklist": "Liste de contrôle",
   "table-of-contents": {
     "aria-label": "Table des matières",
