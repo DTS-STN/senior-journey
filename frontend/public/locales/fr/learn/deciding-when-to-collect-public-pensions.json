@@ -60,15 +60,12 @@
         "header": ["Header 1", "Header 2", "Header 3"],
         "rows": [
           {
-            "id": 1,
             "data": ["data 1", "data 2", "data 3"]
           },
           {
-            "id": 2,
             "data": ["data a", "data b", "data c"]
           },
           {
-            "id": 3,
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -100,15 +97,12 @@
         "header": ["Header 1", "Header 2", "Header 3"],
         "rows": [
           {
-            "id": 1,
             "data": ["data 1", "data 2", "data 3"]
           },
           {
-            "id": 2,
             "data": ["data a", "data b", "data c"]
           },
           {
-            "id": 3,
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -124,27 +118,22 @@
       "header-column-one-value": "Delaying pension",
       "header-column-two-value": "Will increase your pension if delayed by one year (above the rate of average wage growth)",
       "row-one": {
-        "id": 1,
         "column-one-value": "From age 60 to 61",
         "column-two-value": "11.25%"
       },
       "row-two": {
-        "id": 2,
         "column-one-value": "From age 61 to 62",
         "column-two-value": "10.11%"
       },
       "row-three": {
-        "id": 3,
         "column-one-value": "From age 62 to 63",
         "column-two-value": "9.18%"
       },
       "row-four": {
-        "id": 4,
         "column-one-value": "From age 63 to 64",
         "column-two-value": "8.41%"
       },
       "row-five": {
-        "id": 5,
         "column-one-value": "From age 64 to 65",
         "column-two-value": "7.76%"
       }
@@ -168,15 +157,12 @@
         "header": ["Header 1", "Header 2", "Header 3"],
         "rows": [
           {
-            "id": 1,
             "data": ["data 1", "data 2", "data 3"]
           },
           {
-            "id": 2,
             "data": ["data a", "data b", "data c"]
           },
           {
-            "id": 3,
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -193,15 +179,12 @@
         "header": ["Header 1", "Header 2", "Header 3"],
         "rows": [
           {
-            "id": 1,
             "data": ["data 1", "data 2", "data 3"]
           },
           {
-            "id": 2,
             "data": ["data a", "data b", "data c"]
           },
           {
-            "id": 3,
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -219,15 +202,12 @@
         "header": ["Header 1", "Header 2", "Header 3"],
         "rows": [
           {
-            "id": 1,
             "data": ["data 1", "data 2", "data 3"]
           },
           {
-            "id": 2,
             "data": ["data a", "data b", "data c"]
           },
           {
-            "id": 3,
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -243,15 +223,12 @@
         "header": ["Header 1", "Header 2", "Header 3"],
         "rows": [
           {
-            "id": 1,
             "data": ["data 1", "data 2", "data 3"]
           },
           {
-            "id": 2,
             "data": ["data a", "data b", "data c"]
           },
           {
-            "id": 3,
             "data": ["data x", "data y", "data z"]
           }
         ]
@@ -267,15 +244,12 @@
         "header": ["Header 1", "Header 2", "Header 3"],
         "rows": [
           {
-            "id": 1,
             "data": ["data 1", "data 2", "data 3"]
           },
           {
-            "id": 2,
             "data": ["data a", "data b", "data c"]
           },
           {
-            "id": 3,
             "data": ["data x", "data y", "data z"]
           }
         ]
