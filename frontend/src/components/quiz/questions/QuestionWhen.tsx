@@ -22,7 +22,7 @@ export const QuestionWhen = ({ values, setFieldValue }: QuestionProps) => {
       <h5 className="font-display text-2xl font-light">{t('questions.question-when.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
-        data-cy={t('questions.question-when.id')}
+        data-cy="question-when"
         exclusive
         fullWidth={true}
         className="my-4"
@@ -43,58 +43,58 @@ export const QuestionWhen = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value={t('questions.question-when.option-pre-60.value')}
-          aria-label={t('questions.question-when.option-pre-60.text')}
-          data-cy={t('questions.question-when.option-pre-60.id')}
+          value="pre-60"
+          aria-label={t('questions.question-when.option-pre-60')}
+          data-cy="pre-60-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === t('questions.question-when.option-pre-60.value')}
+          selected={values['retirementAge'] === 'pre-60'}
         >
-          {t('questions.question-when.option-pre-60.text')}
+          {t('questions.question-when.option-pre-60')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-when.option-between-60-and-65.value')}
-          aria-label={t('questions.question-when.option-between-60-and-65.text')}
-          data-cy={t('questions.question-when.option-between-60-and-65.id')}
+          value="between-60-and-65"
+          aria-label={t('questions.question-when.option-between-60-and-65')}
+          data-cy="between-60-and-65-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === t('questions.question-when.option-between-60-and-65.value')}
+          selected={values['retirementAge'] === 'between-60-and-65'}
         >
-          {t('questions.question-when.option-between-60-and-65.text')}
+          {t('questions.question-when.option-between-60-and-65')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-when.option-at-65.value')}
-          aria-label={t('questions.question-when.option-at-65.text')}
-          data-cy={t('questions.question-when.option-at-65.id')}
+          value="at-65"
+          aria-label={t('questions.question-when.option-at-65')}
+          data-cy="at-65-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === t('questions.question-when.option-at-65.value')}
+          selected={values['retirementAge'] === 'at-65'}
         >
-          {t('questions.question-when.option-at-65.text')}
+          {t('questions.question-when.option-at-65')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-when.option-between-65-and-70.value')}
-          aria-label={t('questions.question-when.option-between-65-and-70.text')}
-          data-cy={t('questions.question-when.option-between-65-and-70.id')}
+          value="between-65-and-70"
+          aria-label={t('questions.question-when.option-between-65-and-70')}
+          data-cy="between-65-and-70-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === t('questions.question-when.option-between-65-and-70.value')}
+          selected={values['retirementAge'] === 'between-65-and-70'}
         >
-          {t('questions.question-when.option-between-65-and-70.text')}
+          {t('questions.question-when.option-between-65-and-70')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-when.option-after-70.value')}
-          aria-label={t('questions.question-when.option-after-70.text')}
-          data-cy={t('questions.question-when.option-after-70.id')}
+          value="after-70"
+          aria-label={t('questions.question-when.option-after-70')}
+          data-cy="after-70-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === t('questions.question-when.option-after-70.value')}
+          selected={values['retirementAge'] === 'after-70'}
         >
-          {t('questions.question-when.option-after-70.text')}
+          {t('questions.question-when.option-after-70')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-when.option-unsure-retirement-age.value')}
-          aria-label={t('questions.question-when.option-unsure-retirement-age.text')}
-          data-cy={t('questions.question-when.option-unsure-retirement-age.id')}
+          value="unsure-retirement-age"
+          aria-label={t('questions.question-when.option-unsure-retirement-age')}
+          data-cy="unsure-retirement-age-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementAge'] === t('questions.question-when.option-unsure-retirement-age.value')}
+          selected={values['retirementAge'] === 'unsure-retirement-age'}
         >
-          {t('questions.question-when.option-unsure-retirement-age.text')}
+          {t('questions.question-when.option-unsure-retirement-age')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

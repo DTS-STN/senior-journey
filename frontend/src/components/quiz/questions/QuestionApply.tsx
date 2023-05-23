@@ -26,60 +26,54 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
   return (
     <div>
       <h5 className="h5">{t('questions.question-apply.question-marital-status.title')}</h5>
-      <FormGroup className="mb-2" data-cy={t('questions.question-apply.question-marital-status.id')}>
+      <FormGroup className="mb-2" data-cy="apply-subquestion-marital-status">
         <FormControlLabel
           control={
             <Checkbox name="single" value="single" checked={values['single'] === 'single'} onChange={handleCheckbox} />
           }
-          data-cy={t('questions.question-apply.question-marital-status.option-single.id')}
-          label={t('questions.question-apply.question-marital-status.option-single.text')}
+          data-cy="single-button"
+          label={t('questions.question-apply.question-marital-status.option-single')}
         />
         <FormControlLabel
           control={
             <Checkbox
               name="marriedOrCommonLaw"
-              value={t('questions.question-apply.question-marital-status.option-married-or-cl.value')}
-              checked={
-                values['marriedOrCommonLaw'] ===
-                t('questions.question-apply.question-marital-status.option-married-or-cl.value')
-              }
+              value="married-or-cl"
+              checked={values['marriedOrCommonLaw'] === 'married-or-cl'}
               onChange={handleCheckbox}
             />
           }
-          data-cy={t('questions.question-apply.question-marital-status.option-married-or-cl.id')}
-          label={t('questions.question-apply.question-marital-status.option-married-or-cl.text')}
+          data-cy="married-or-cl-button"
+          label={t('questions.question-apply.question-marital-status.option-married-or-cl')}
         />
         <FormControlLabel
           control={
             <Checkbox
               name="divorcedOrSeparated"
-              value={t('questions.question-apply.question-marital-status.option-divorced-or-separated.value')}
-              checked={
-                values['divorcedOrSeparated'] ===
-                t('questions.question-apply.question-marital-status.option-divorced-or-separated.value')
-              }
+              value="divorced-or-separated"
+              checked={values['divorcedOrSeparated'] === 'divorced-or-separated'}
               onChange={handleCheckbox}
             />
           }
-          data-cy={t('questions.question-apply.question-marital-status.option-divorced-or-separated.id')}
-          label={t('questions.question-apply.question-marital-status.option-divorced-or-separated.text')}
+          data-cy="divorced-or-separated-button"
+          label={t('questions.question-apply.question-marital-status.option-divorced-or-separated')}
         />
         <FormControlLabel
           control={
             <Checkbox
               name="widowed"
-              value={t('questions.question-apply.question-marital-status.option-widowed.value')}
-              checked={values['widowed'] === t('questions.question-apply.question-marital-status.option-widowed.value')}
+              value="widowed"
+              checked={values['widowed'] === 'widowed'}
               onChange={handleCheckbox}
             />
           }
-          data-cy={t('questions.question-apply.question-marital-status.option-widowed.id')}
-          label={t('questions.question-apply.question-marital-status.option-widowed.text')}
+          data-cy="widowed-button"
+          label={t('questions.question-apply.question-marital-status.option-widowed')}
         />
       </FormGroup>
       <h5 className="h5 mb-2">{t('questions.question-apply.question-children.title')}</h5>
       <ToggleButtonGroup
-        data-cy={t('questions.question-apply.question-children.id')}
+        data-cy="apply-subquestion-children"
         orientation="vertical"
         exclusive
         fullWidth={true}
@@ -101,22 +95,22 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value={t('questions.question-apply.question-children.option-yes-kids.value')}
-          aria-label={t('questions.question-apply.question-children.option-yes-kids.text')}
-          data-cy={t('questions.question-apply.question-children.option-yes-kids.id')}
+          value="yes-kids"
+          aria-label={t('questions.question-apply.question-children.option-yes-kids')}
+          data-cy="yes-kids-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasChildren'] === t('questions.question-apply.question-children.option-yes-kids.value')}
+          selected={values['hasChildren'] === 'yes-kids'}
         >
-          {t('questions.question-apply.question-children.option-yes-kids.text')}
+          {t('questions.question-apply.question-children.option-yes-kids')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-apply.question-children.option-no-kids.value')}
-          aria-label={t('questions.question-apply.question-children.option-no-kids.text')}
-          data-cy={t('questions.question-apply.question-children.option-no-kids.id')}
+          value="no-kids"
+          aria-label={t('questions.question-apply.question-children.option-no-kids')}
+          data-cy="no-kids-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasChildren'] === t('questions.question-apply.question-children.option-no-kids.value')}
+          selected={values['hasChildren'] === 'no-kids'}
         >
-          {t('questions.question-apply.question-children.option-no-kids.text')}
+          {t('questions.question-apply.question-children.option-no-kids')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

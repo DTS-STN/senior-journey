@@ -24,7 +24,7 @@ export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) =
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
-        data-cy={t('questions.question-feel.id')}
+        data-cy="question-feel"
         fullWidth={true}
         className="my-4"
         value={value}
@@ -45,48 +45,48 @@ export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) =
       >
         <ToggleButton
           value="very-unprepared"
-          aria-label={t('questions.question-feel.option-very-unprepared.text')}
-          data-cy={t('questions.question-feel.option-very-unprepared.id')}
+          aria-label={t('questions.question-feel.option-very-unprepared')}
+          data-cy="very-unprepared-button"
           className="my-4 font-display text-base font-bold normal-case"
           selected={values['financialPreparedness'] === 'very-unprepared'}
         >
-          {t('questions.question-feel.option-very-unprepared.text')}
+          {t('questions.question-feel.option-very-unprepared')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-feel.option-unprepared.value')}
-          aria-label={t('questions.question-feel.option-unprepared.text')}
-          data-cy={t('questions.question-feel.option-unprepared.id')}
+          value="unprepared"
+          aria-label={t('questions.question-feel.option-unprepared')}
+          data-cy="unprepared-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === t('questions.question-feel.option-unprepared.value')}
+          selected={values['financialPreparedness'] === 'unprepared'}
         >
-          {t('questions.question-feel.option-unprepared.text')}
+          {t('questions.question-feel.option-unprepared')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-feel.option-unsure-preparedness.value')}
-          aria-label={t('questions.question-feel.option-unsure-preparedness.text')}
-          data-cy={t('questions.question-feel.option-unsure-preparedness.id')}
+          value="unsure-preparedness"
+          aria-label={t('questions.question-feel.option-unsure-preparedness')}
+          data-cy="unsure-preparedness-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === t('questions.question-feel.option-unsure-preparedness.value')}
+          selected={values['financialPreparedness'] === 'unsure-preparedness'}
         >
-          {t('questions.question-feel.option-unsure-preparedness.text')}
+          {t('questions.question-feel.option-unsure-preparedness')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-feel.option-prepared.value')}
-          aria-label={t('questions.question-feel.option-prepared.text')}
-          data-cy={t('questions.question-feel.option-prepared.id')}
+          value="prepared"
+          aria-label={t('questions.question-feel.option-prepared')}
+          data-cy="prepared-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === t('questions.question-feel.option-prepared.value')}
+          selected={values['financialPreparedness'] === 'prepared'}
         >
-          {t('questions.question-feel.option-prepared.text')}
+          {t('questions.question-feel.option-prepared')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-feel.option-very-prepared.value')}
-          aria-label={t('questions.question-feel.option-very-prepared.text')}
-          data-cy={t('questions.question-feel.option-very-prepared.id')}
+          value="very-prepared"
+          aria-label={t('questions.question-feel.option-very-prepared')}
+          data-cy="very-prepared-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === t('questions.question-feel.option-very-prepared.value')}
+          selected={values['financialPreparedness'] === 'very-prepared'}
         >
-          {t('questions.question-feel.option-very-prepared.text')}
+          {t('questions.question-feel.option-very-prepared')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

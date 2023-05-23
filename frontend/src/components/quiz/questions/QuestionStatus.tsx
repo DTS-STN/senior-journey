@@ -23,7 +23,7 @@ export const QuestionStatus = ({ values, setFieldValue }: QuestionProps) => {
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
-        data-cy={t('questions.question-status.id')}
+        data-cy="question-status"
         fullWidth={true}
         className="my-4"
         value={value}
@@ -43,40 +43,40 @@ export const QuestionStatus = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value={t('questions.question-status.option-status-citizen.value')}
-          aria-label={t('questions.question-status.option-status-citizen.text')}
-          data-cy={t('questions.question-status.option-status-citizen.id')}
+          value="status-citizen"
+          aria-label={t('questions.question-status.option-status-citizen')}
+          data-cy="status-citizen-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === t('questions.question-status.option-status-citizen.value')}
+          selected={values['legalStatus'] === "status-citizen"}
         >
-          {t('questions.question-status.option-status-citizen.text')}
+          {t('questions.question-status.option-status-citizen')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-status.option-status-first-nation.value')}
-          aria-label={t('questions.question-status.option-status-first-nation.text')}
-          data-cy={t('questions.question-status.option-status-first-nation.id')}
+          value="status-first-nation"
+          aria-label={t('questions.question-status.option-status-first-nation')}
+          data-cy="status-first-nation-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === t('questions.question-status.option-status-first-nation.value')}
+          selected={values['legalStatus'] === "status-first-nation"}
         >
-          {t('questions.question-status.option-status-first-nation.text')}
+          {t('questions.question-status.option-status-first-nation')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-status.option-status-sponsored.value')}
-          aria-label={t('questions.question-status.option-status-sponsored.text')}
-          data-cy={t('questions.question-status.option-status-sponsored.id')}
+          value="status-sponsored"
+          aria-label={t('questions.question-status.option-status-sponsored')}
+          data-cy="status-sponsored-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === t('questions.question-status.option-status-sponsored.value')}
+          selected={values['legalStatus'] === "status-sponsored"}
         >
-          {t('questions.question-status.option-status-sponsored.text')}
+          {t('questions.question-status.option-status-sponsored')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-status.option-status-other.value')}
-          aria-label={t('questions.question-status.option-status-other.text')}
-          data-cy={t('questions.question-status.option-status-other.id')}
+          value="status-other"
+          aria-label={t('questions.question-status.option-status-other')}
+          data-cy="status-other-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['legalStatus'] === t('questions.question-status.option-status-other.value')}
+          selected={values['legalStatus'] === "status-other"}
         >
-          {t('questions.question-status.option-status-other.text')}
+          {t('questions.question-status.option-status-other')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

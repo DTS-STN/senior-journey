@@ -23,7 +23,7 @@ export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
-        data-cy={t('questions.question-where.id')}
+        data-cy='question-where'
         fullWidth={true}
         className="my-4"
         value={value}
@@ -43,49 +43,49 @@ export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value={t('questions.question-where.option-canada-ft.value')}
-          aria-label={t('questions.question-where.option-canada-ft.text')}
-          data-cy={t('questions.question-where.option-canada-ft.id')}
+          value="canada-ft"
+          aria-label={t('questions.question-where.option-canada-ft')}
+          data-cy="canada-ft-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === t('questions.question-where.option-canada-ft.value')}
+          selected={values['retirementTimeframe'] === "canada-ft"}
         >
-          {t('questions.question-where.option-canada-ft.text')}
+          {t('questions.question-where.option-canada-ft')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-where.option-canada-pt-60-or-more.value')}
-          aria-label={t('questions.question-where.option-canada-pt-60-or-more.text')}
-          data-cy={t('questions.question-where.option-canada-pt-60-or-more.id')}
+          value="canada-pt-60-or-more"
+          aria-label={t('questions.question-where.option-canada-pt-60-or-more')}
+          data-cy="canada-pt-60-or-more-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === t('questions.question-where.option-canada-pt-60-or-more.value')}
+          selected={values['retirementTimeframe'] === "canada-pt-60-or-more"}
         >
-          {t('questions.question-where.option-canada-pt-60-or-more.text')}
+          {t('questions.question-where.option-canada-pt-60-or-more')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-where.option-canada-pt-less-than-60.value')}
-          aria-label={t('questions.question-where.option-canada-pt-less-than-60.text')}
-          data-cy={t('questions.question-where.option-canada-pt-less-than-60.id')}
+          value="canada-pt-less-than-60"
+          aria-label={t('questions.question-where.option-canada-pt-less-than-60')}
+          data-cy="canada-pt-less-than-60-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === t('questions.question-where.option-canada-pt-less-than-60.value')}
+          selected={values['retirementTimeframe'] === "canada-pt-less-than-60"}
         >
-          {t('questions.question-where.option-canada-pt-less-than-60.text')}
+          {t('questions.question-where.option-canada-pt-less-than-60')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-where.option-outside-canada.value')}
-          aria-label={t('questions.question-where.option-outside-canada.text')}
-          data-cy={t('questions.question-where.option-outside-canada.id')}
+          value="outside-canada"
+          aria-label={t('questions.question-where.option-outside-canada')}
+          data-cy="outside-canada-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === t('questions.question-where.option-outside-canada.value')}
+          selected={values['retirementTimeframe'] === "outside-canada"}
         >
-          {t('questions.question-where.option-outside-canada.text')}
+          {t('questions.question-where.option-outside-canada')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-where.option-unsure-retirement-living.value')}
-          aria-label={t('questions.question-where.option-unsure-retirement-living.text')}
-          data-cy={t('questions.question-where.option-unsure-retirement-living.id')}
+          value="unsure-retirement-living"
+          aria-label={t('questions.question-where.option-unsure-retirement-living')}
+          data-cy="unsure-retirement-living-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === t('questions.question-where.option-unsure-retirement-living.value')}
+          selected={values['retirementTimeframe'] === "unsure-retirement-living"}
         >
-          {t('questions.question-where.option-unsure-retirement-living.text')}
+          {t('questions.question-where.option-unsure-retirement-living')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
