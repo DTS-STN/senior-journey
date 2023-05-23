@@ -24,7 +24,7 @@ export const QuestionEarn = ({ values, setFieldValue }: QuestionProps) => {
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
-        data-cy={t('questions.question-earn.id')}
+        data-cy="question-earn"
         fullWidth={true}
         className="my-4"
         value={value}
@@ -44,30 +44,30 @@ export const QuestionEarn = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value={t('questions.question-earn.option-no-income.value')}
-          aria-label={t('questions.question-earn.option-no-income.text')}
-          data-cy={t('questions.question-earn.option-no-income.id')}
+          value="no-income"
+          aria-label={t('questions.question-earn.option-no-income')}
+          data-cy="no-income-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === t('questions.question-earn.option-no-income.value')}
+          selected={values['hasExtraIncome'] === "no-income"}
         >
-          {t('questions.question-earn.option-no-income.text')}
+          {t('questions.question-earn.option-no-income')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-earn.option-yes-income.value')}
-          aria-label={t('questions.question-earn.option-yes-income.text')}
+          value="yes-income"
+          aria-label={t('questions.question-earn.option-yes-income')}
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === t('questions.question-earn.option-yes-income.value')}
+          selected={values['hasExtraIncome'] === "yes-income"}
         >
-          {t('questions.question-earn.option-yes-income.text')}
+          {t('questions.question-earn.option-yes-income')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-earn.option-unsure-income.value')}
-          aria-label={t('questions.question-earn.option-unsure-income.text')}
-          data-cy={t('questions.question-earn.option-unsure-income.id')}
+          value="unsure-income"
+          aria-label={t('questions.question-earn.option-unsure-income')}
+          data-cy="unsure-income-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasExtraIncome'] === t('questions.question-earn.option-unsure-income.value')}
+          selected={values['hasExtraIncome'] === "unsure-income"}
         >
-          {t('questions.question-earn.option-unsure-income.text')}
+          {t('questions.question-earn.option-unsure-income')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

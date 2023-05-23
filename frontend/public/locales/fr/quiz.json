@@ -14,256 +14,84 @@
     "start-the-quiz": "Commencez le questionnaire"
   },
   "confirmation": {
-    "sure": "Vous êtes sûr que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu’à maintenant.",
-    "no": {
-      "id": "no-button",
-      "text": "Non, retournez au questionnaire"
-    },
-    "yes": {
-      "id": "yes-button",
-      "text": "Oui, annulé"
-    }
+    "sure": "Vous êtes sûr que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu'à maintenant.",
+    "no": "Non, retournez au questionnaire",
+    "yes": "Oui, annulé"
   },
   "navigation": {
-    "previous": {
-      "id": "previous-button",
-      "text": "Question précédente"
-    },
-    "next": {
-      "id": "next-button",
-      "text": "Prochaine question"
-    },
-    "submit": {
-      "id": "submit-button",
-      "text": "Soumettre"
-    },
-    "close": {
-      "id": "close-button",
-      "text": "Quitter"
-    },
+    "previous": "Question précédente",
+    "next": "Prochaine question",
+    "submit": "Soumettre",
+    "close": "Quitter",
     "title": "Questionnaire sur la préparation à la retraite",
-    "of": "de",
-    "progress": {
-      "id": "progress-bar",
-      "label": "barre de progression"
-    }
+    "progress": "Question {{currentStep}} de {{totalSteps}}"
   },
   "questions": {
     "question-when": {
-      "id": "question-when",
       "title": "Quand comptez-vous prendre votre retraite?",
-      "option-pre-60": {
-        "id": "pre-60-button",
-        "text": "Avant 60 ans",
-        "value": "pre-60"
-      },
-      "option-between-60-and-65": {
-        "id": "between-60-and-65-button",
-        "text": "De 60 à 64 ans",
-        "value": "between-60-and-65"
-      },
-      "option-at-65": {
-        "id": "at-65-button",
-        "text": "À 65 ans",
-        "value": "at-65"
-      },
-      "option-between-65-and-70": {
-        "id": "between-65-and-70-button",
-        "text": "De 66 à 70 ans",
-        "value": "between-65-and-70"
-      },
-      "option-after-70": {
-        "id": "after-70-button",
-        "text": "Après 70 ans",
-        "value": "after-70"
-      },
-      "option-unsure-retirement-age": {
-        "id": "unsure-retirement-age-button",
-        "text": "Je ne sais pas",
-        "value": "unsure-retirement-age"
-      }
+      "option-pre-60": "Avant 60 ans",
+      "option-between-60-and-65": "De 60 à 64 ans",
+      "option-at-65": "À 65 ans",
+      "option-between-65-and-70": "De 66 à 70 ans",
+      "option-after-70": "Après 70 ans",
+      "option-unsure-retirement-age": "Je ne sais pas"
     },
     "question-apply": {
-      "id": "question-apply",
       "question-marital-status": {
-        "id": "apply-subquestion-marital-status",
         "title": "Veuillez sélectionner tous les énoncés qui s'appliquent à vous.",
-        "option-single": {
-          "id": "single-button",
-          "text": "Célibataire",
-          "value": "single"
-        },
-        "option-married-or-cl": {
-          "id": "married-or-cl-button",
-          "text": "Marié(e) ou en union de fait",
-          "value": "married-or-cl"
-        },
-        "option-divorced-or-separated": {
-          "id": "divorced-or-separated-button",
-          "text": "Divorcé(e) ou séparé(e)",
-          "value": "divorced-or-separated"
-        },
-        "option-widowed": {
-          "id": "widowed-button",
-          "text": "Veuf ou veuve",
-          "value": "widowed"
-        }
+        "option-single": "Célibataire",
+        "option-married-or-cl": "Marié(e) ou en union de fait",
+        "option-divorced-or-separated": "Divorcé(e) ou séparé(e)",
+        "option-widowed": "Veuf ou veuve"
       },
       "question-children": {
-        "id": "apply-subquestion-children",
         "title": "Avez-vous des enfants?",
-        "option-yes-kids": {
-          "id": "yes-kids-button",
-          "text": "Oui",
-          "value": "yes-kids"
-        },
-        "option-no-kids": {
-          "id": "no-kids-button",
-          "text": "Non",
-          "value": "no-kids"
-        }
+        "option-yes-kids": "Oui",
+        "option-no-kids": "Non"
       }
     },
     "question-feel": {
-      "id": "question-feel-button",
       "title": "Dans quelle mesure vous sentez-vous prêt(e) financièrement à prendre votre retraite?",
       "subtitle": "Êtes-vous sûr d'avoir suffisamment d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
-      "option-very-unprepared": {
-        "id": "very-unprepared-button",
-        "text": "Très peu préparé(e)",
-        "value": "very-unprepared"
-      },
-      "option-unprepared": {
-        "id": "unprepared-button",
-        "text": "Peu préparé(e)",
-        "value": "unprepared"
-      },
-      "option-unsure-preparedness": {
-        "id": "unsure-preparedness-button",
-        "text": "Je ne sais pas",
-        "value": "unsure-preparedness"
-      },
-      "option-prepared": {
-        "id": "prepared-button",
-        "text": "Préparé(e)",
-        "value": "prepared"
-      },
-      "option-very-prepared": {
-        "id": "very-prepared-button",
-        "text": "Très bien préparé(e)",
-        "value": "very-prepared"
-      }
+      "option-very-unprepared": "Très peu préparé(e)",
+      "option-unprepared": "Peu préparé(e)",
+      "option-unsure-preparedness": "Je ne sais pas",
+      "option-prepared": "Préparé(e)",
+      "option-very-prepared": "Très bien préparé(e)"
     },
     "question-where": {
-      "id": "question-where",
       "title": "Où prévoyez-vous de vivre lorsque vous prendrez votre retraite?",
-      "option-canada-ft": {
-        "id": "canada-ft-button",
-        "text": "Au Canada",
-        "value": "canada-ft"
-      },
-      "option-canada-pt-60-or-more": {
-        "id": "canada-pt-60-or-more-button",
-        "text": "Au Canada plus de 6 mois par an",
-        "value": "canada-pt-60-or-more"
-      },
-      "option-canada-pt-less-than-60": {
-        "id": "canada-pt-less-than-60-button",
-        "text": "Au Canada moins de 6 mois par an",
-        "value": "canada-pt-less-than-60"
-      },
-      "option-outside-canada": {
-        "id": "outside-canada-button",
-        "text": "À l'extérieur du Canada",
-        "value": "outside-canada"
-      },
-      "option-unsure-retirement-living": {
-        "id": "unsure-retirement-living-button",
-        "text": "Je ne sais pas",
-        "value": "unsure-retirement-living"
-      }
+      "option-canada-ft": "Au Canada",
+      "option-canada-pt-60-or-more": "Au Canada plus de 6 mois par an",
+      "option-canada-pt-less-than-60": "Au Canada moins de 6 mois par an",
+      "option-outside-canada": "À l'extérieur du Canada",
+      "option-unsure-retirement-living": "Je ne sais pas"
     },
     "question-earn": {
-      "id": "question-earn",
       "title": "Prévoyez-vous de gagner de l'argent tout en percevant des prestations de retraite?",
       "subtitle": "Certaines personnes choisissent de travailler ou de gagner de l'argent à la retraite. Cela peut affecter vos montants de pension mensuels.",
-      "option-no-income": {
-        "id": "no-income-button",
-        "text": "Non",
-        "value": "no-income"
-      },
-      "option-yes-income": {
-        "id": "yes-income-button",
-        "text": "Oui",
-        "value": "yes-income"
-      },
-      "option-unsure-income": {
-        "id": "unsure-income-button",
-        "text": "Je ne sais pas",
-        "value": "unsure-income"
-      }
+      "option-no-income": "Non",
+      "option-yes-income": "Oui",
+      "option-unsure-income": "Je ne sais pas"
     },
     "question-status": {
-      "id": "question-status",
       "title": "Lorsque vous prendrez votre retraite, quel sera votre statut juridique au Canada?",
-      "option-status-citizen": {
-        "id": "status-citizen-button",
-        "text": "Citoyen Canadien ou résident permanent",
-        "value": "status-citizen"
-      },
-      "option-status-first-nation": {
-        "id": "status-first-nation",
-        "text": "Métis, Inuit ou membre d'une Première Nation",
-        "value": "status-first-nation"
-      },
-      "option-status-sponsored": {
-        "id": "status-sponsored-button",
-        "text": "Résident parrainé (moins de 10 ans au Canada)",
-        "value": "status-sponsored"
-      },
-      "option-status-other": {
-        "id": "status-other-button",
-        "text": "Visiteur, étudiant ou travailleur temporaire",
-        "value": "status-other"
-      }
+      "option-status-citizen": "Citoyen Canadien ou résident permanent",
+      "option-status-first-nation": "Métis, Inuit ou membre d'une Première Nation",
+      "option-status-sponsored": "Résident parrainé (moins de 10 ans au Canada)",
+      "option-status-other": "Visiteur, étudiant ou travailleur temporaire"
     },
     "question-how-long": {
-      "id": "question-how-long-button",
       "title": "À partir de l'âge de 18 ans, pendant combien d'années aurez-vous vécu au Canada lorsque vous demanderez des prestations de retraite?",
-      "option-in-canada-40-plus": {
-        "id": "in-canada-40-plus-button",
-        "text": "40 ans ou plus",
-        "value": "in-canada-40-plus"
-      },
-      "option-in-canada-10-to-39": {
-        "id": "in-canada-10-to-39-button",
-        "text": "De 10 à 39 ans",
-        "value": "in-canada-10-to-39"
-      },
-      "option-in-canada-less-than-10": {
-        "id": "in-canada-less-than-10-button",
-        "text": "Moins de 10 ans",
-        "value": "in-canada-less-than-10"
-      },
-      "option-unsure-in-canada": {
-        "id": "unsure-in-canada-button",
-        "text": "Je ne sais pas",
-        "value": "unsure-in-canada"
-      }
+      "option-in-canada-40-plus": "40 ans ou plus",
+      "option-in-canada-10-to-39": "De 10 à 39 ans",
+      "option-in-canada-less-than-10": "Moins de 10 ans",
+      "option-unsure-in-canada": "Je ne sais pas"
     },
     "question-disability-benefits": {
-      "id": "question-disability-benefits",
       "title": "Recevez-vous des prestations d'invalidité du RPC?",
-      "option-cppd-yes": {
-        "id": "cppd-yes-button",
-        "text": "Oui",
-        "value": "cppd-yes"
-      },
-      "option-cppd-no": {
-        "id": "cppd-no-button",
-        "text": "Non",
-        "value": "cppd-no"
-      }
+      "option-cppd-yes": "Oui",
+      "option-cppd-no": "Non"
     }
   }
 }

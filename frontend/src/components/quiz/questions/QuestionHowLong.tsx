@@ -23,7 +23,7 @@ export const QuestionHowLong = ({ values, setFieldValue }: QuestionProps) => {
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
-        data-cy={t('questions.question-how-long.id')}
+        data-cy="question-how-long"
         fullWidth={true}
         className="my-4"
         value={value}
@@ -43,40 +43,40 @@ export const QuestionHowLong = ({ values, setFieldValue }: QuestionProps) => {
         }}
       >
         <ToggleButton
-          value={t('questions.question-how-long.option-in-canada-40-plus.value')}
-          aria-label={t('questions.question-how-long.option-in-canada-40-plus.text')}
-          data-cy={t('questions.question-how-long.option-in-canada-40-plus.id')}
+          value="in-canada-40-plus"
+          aria-label={t('questions.question-how-long.option-in-canada-40-plus')}
+          data-cy="in-canada-40-plus"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === t('questions.question-how-long.option-in-canada-40-plus.value')}
+          selected={values['yearsInCanada'] === "in-canada-40-plus"}
         >
-          {t('questions.question-how-long.option-in-canada-40-plus.text')}
+          {t('questions.question-how-long.option-in-canada-40-plus')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-how-long.option-in-canada-10-to-39.value')}
-          aria-label={t('questions.question-how-long.option-in-canada-10-to-39.text')}
-          data-cy={t('questions.question-how-long.option-in-canada-10-to-39.id')}
+          value="in-canada-10-to-39"
+          aria-label={t('questions.question-how-long.option-in-canada-10-to-39')}
+          data-cy="in-canada-10-to-39"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === t('questions.question-how-long.option-in-canada-10-to-39.value')}
+          selected={values['yearsInCanada'] === "in-canada-10-to-39"}
         >
-          {t('questions.question-how-long.option-in-canada-10-to-39.text')}
+          {t('questions.question-how-long.option-in-canada-10-to-39')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-how-long.option-in-canada-less-than-10.value')}
-          aria-label={t('questions.question-how-long.option-in-canada-less-than-10.text')}
-          data-cy={t('questions.question-how-long.option-in-canada-less-than-10.id')}
+          value="in-canada-less-than-10"
+          aria-label={t('questions.question-how-long.option-in-canada-less-than-10')}
+          data-cy="in-canada-less-than-10"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === t('questions.question-how-long.option-in-canada-less-than-10.value')}
+          selected={values['yearsInCanada'] === "in-canada-less-than-10"}
         >
-          {t('questions.question-how-long.option-in-canada-less-than-10.text')}
+          {t('questions.question-how-long.option-in-canada-less-than-10')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-how-long.option-unsure-in-canada.value')}
-          aria-label={t('questions.question-how-long.option-unsure-in-canada.text')}
-          data-cy={t('questions.question-how-long.option-unsure-in-canada.id')}
+          value="unsure-in-canada"
+          aria-label={t('questions.question-how-long.option-unsure-in-canada')}
+          data-cy="unsure-in-canada"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === t('questions.question-how-long.option-unsure-in-canada.value')}
+          selected={values['yearsInCanada'] === "unsure-in-canada"}
         >
-          {t('questions.question-how-long.option-unsure-in-canada.text')}
+          {t('questions.question-how-long.option-unsure-in-canada')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

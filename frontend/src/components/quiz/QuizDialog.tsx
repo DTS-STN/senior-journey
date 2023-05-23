@@ -61,23 +61,13 @@ const defaultFormValues: QuizFormState = {
 
 export interface QuizConfirmationProps {
   noText: string
-  noID: string
   onCancel: () => void
   onClose: () => void
   sureText: string
   yesText: string
-  yesID: string
 }
 
-export const QuizConfirmation: FC<QuizConfirmationProps> = ({
-  noText,
-  noID,
-  onCancel,
-  onClose,
-  sureText,
-  yesText,
-  yesID,
-}) => {
+export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, onClose, sureText, yesText }) => {
   return (
     <>
       <DialogContent>
@@ -88,10 +78,10 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({
       </DialogContent>
       <DialogActions className="block">
         <div className="sm:flex sm:flex-row-reverse sm:gap-2">
-          <Button data-cy={yesID} onClick={onClose} size="large" fullWidth className="mb-2 sm:mb-0">
+          <Button data-cy="yes-button" onClick={onClose} size="large" fullWidth className="mb-2 sm:mb-0">
             {yesText}
           </Button>
-          <Button data-cy={noID} onClick={onCancel} variant="outlined" size="large" fullWidth>
+          <Button data-cy="no-button" onClick={onCancel} variant="outlined" size="large" fullWidth>
             {noText}
           </Button>
         </div>
@@ -167,23 +157,21 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
           onClose={handleOnClose}
           onCancel={handleOnConfirmationCancel}
           sureText={t('confirmation.sure')}
-          yesText={t('confirmation.yes.text')}
-          yesID={t('confirmation.yes.id')}
-          noText={t('confirmation.no.text')}
-          noID={t('confirmation.no.id')}
+          yesText={t('confirmation.yes')}
+          noText={t('confirmation.no')}
         />
       ) : (
         <>
-          <div className="flex min-h-[850px] flex-col" data-cy={t('navigation.id')}>
+          <div className="flex min-h-[850px] flex-col" data-cy="navigation-container">
             <DialogTitle className="text-right" id="quiz-modal-header">
               <Button
-                data-cy={t('navigation.close.id')}
+                data-cy="close-button"
                 variant="text"
                 onClick={handleOnClose}
                 startIcon={<CloseIcon />}
                 size="large"
               >
-                {t('navigation.close.text')}
+                {t('navigation.close')}
               </Button>
             </DialogTitle>
             <DialogContent className="flex flex-col">
@@ -195,12 +183,12 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 <LinearProgress
                   variant="determinate"
                   value={(((formikWizard.currentStepIndex ?? 0) + 1) / 8) * 100}
-                  aria-labelledby={t('navigation.progress.label')}
-                  data-cy={t('navigation.progress.id')}
+                  aria-labelledby="progress-label"
+                  data-cy="progress-bar"
                   className="my-2"
                 />
                 <p id="progress-label" className="m-0 text-center">
-                  {(formikWizard.currentStepIndex ?? 0) + 1} {t('navigation.of')} 8
+                  {t('navigation.progress', { currentStep: (formikWizard.currentStepIndex ?? 0) + 1, totalSteps: 8 })}
                 </p>
               </div>
             </DialogContent>
@@ -209,24 +197,24 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 <Button
                   onClick={formikWizard.handleNext}
                   disabled={formikWizard.isNextDisabled}
-                  data-cy={formikWizard.isLastStep ? t('navigation.submit.id') : t('navigation.next.id')}
+                  data-cy={formikWizard.isLastStep ? 'submit-button' : 'next-button'}
                   size="large"
                   fullWidth
                   className="mb-2 ml-auto sm:mb-0 sm:w-1/2"
                 >
-                  {formikWizard.isLastStep ? t('navigation.submit.text') : t('navigation.next.text')}
+                  {formikWizard.isLastStep ? t('navigation.submit') : t('navigation.next')}
                 </Button>
                 {!formikWizard.isPrevDisabled && (
                   <Button
                     onClick={formikWizard.handlePrev}
                     disabled={formikWizard.isPrevDisabled}
-                    data-cy={t('navigation.previous.id')}
+                    data-cy="previous-button"
                     size="large"
                     fullWidth
                     variant="outlined"
                     className="sm:w-1/2"
                   >
-                    {t('navigation.previous.text')}
+                    {t('navigation.previous')}
                   </Button>
                 )}
               </div>

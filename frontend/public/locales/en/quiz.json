@@ -15,256 +15,83 @@
   },
   "confirmation": {
     "sure": "Are you sure you want to close this quiz? You will lose your progress.",
-    "no": {
-      "id": "no-button",
-      "text": "No, Return to Quiz"
-    },
-    "yes": {
-      "id": "yes-button",
-      "text": "Yes, Close"
-    }
+    "no": "No, return to quiz",
+    "yes": "Yes, close"
   },
   "navigation": {
-    "id": "navigation-container",
-    "previous": {
-      "id": "previous-button",
-      "text": "Previous Question"
-    },
-    "next": {
-      "id": "next-button",
-      "text": "Next Question"
-    },
-    "submit": {
-      "id": "submit-button",
-      "text": "Submit"
-    },
-    "close": {
-      "id": "close-button",
-      "text": "Close"
-    },
+    "previous": "Previous question",
+    "next": "Next question",
+    "submit": "Submit",
+    "close": "Close",
     "title": "Retirement Ready Quiz",
-    "of": "of",
-    "progress": {
-      "id": "progress-bar",
-      "label": "progress-label"
-    }
+    "progress": "Question {{currentStep}} of {{totalSteps}}"
   },
   "questions": {
     "question-when": {
-      "id": "question-when",
       "title": "When do you plan on retiring?",
-      "option-pre-60": {
-        "id": "pre-60-button",
-        "text": "Before Age 60",
-        "value": "pre-60"
-      },
-      "option-between-60-and-65": {
-        "id": "between-60-and-65-button",
-        "text": "Between ages 60 and 65",
-        "value": "between-60-and-65"
-      },
-      "option-at-65": {
-        "id": "at-65-button",
-        "text": "At Age 65",
-        "value": "at-65"
-      },
-      "option-between-65-and-70": {
-        "id": "between-65-and-70-button",
-        "text": "Between ages 65 and 70",
-        "value": "between-65-and-70"
-      },
-      "option-after-70": {
-        "id": "after-70-button",
-        "text": "After Age 70",
-        "value": "after-70"
-      },
-      "option-unsure-retirement-age": {
-        "id": "unsure-retirement-age-button",
-        "text": "Not sure",
-        "value": "unsure-retirement-age"
-      }
+      "option-pre-60": "Before age 60",
+      "option-between-60-and-65": "Between ages 60 and 65",
+      "option-at-65": "At age 65",
+      "option-between-65-and-70": "Between ages 65 and 70",
+      "option-after-70": "After age 70",
+      "option-unsure-retirement-age": "Not sure"
     },
     "question-apply": {
-      "id": "question-apply",
       "question-marital-status": {
-        "id": "apply-subquestion-marital-status",
         "title": "Select all that apply to you. You are...",
-        "option-single": {
-          "id": "single-button",
-          "text": "Single",
-          "value": "single"
-        },
-        "option-married-or-cl": {
-          "id": "married-or-cl-button",
-          "text": "Married or common-law",
-          "value": "married-or-cl"
-        },
-        "option-divorced-or-separated": {
-          "id": "divorced-or-separated-button",
-          "text": "Divorced or separated",
-          "value": "divorced-or-separated"
-        },
-        "option-widowed": {
-          "id": "widowed-button",
-          "text": "Widowed",
-          "value": "widowed"
-        }
+        "option-single": "Single",
+        "option-married-or-cl": "Married or common-law",
+        "option-divorced-or-separated": "Divorced or separated",
+        "option-widowed": "Widowed"
       },
       "question-children": {
-        "id": "apply-subquestion-children",
         "title": "Do you have children?",
-        "option-yes-kids": {
-          "id": "yes-kids-button",
-          "text": "Yes",
-          "value": "yes-kids"
-        },
-        "option-no-kids": {
-          "id": "no-kids-button",
-          "text": "No",
-          "value": "no-kids"
-        }
+        "option-yes-kids": "Yes",
+        "option-no-kids": "No"
       }
     },
     "question-feel": {
-      "id": "question-feel-button",
       "title": "How financially prepared do you feel for retirement?",
       "subtitle": "Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
-      "option-very-unprepared": {
-        "id": "very-unprepared-button",
-        "text": "Very unprepared",
-        "value": "very-unprepared"
-      },
-      "option-unprepared": {
-        "id": "unprepared-button",
-        "text": "Unprepared",
-        "value": "unprepared"
-      },
-      "option-unsure-preparedness": {
-        "id": "unsure-preparedness-button",
-        "text": "Not sure",
-        "value": "unsure-preparedness"
-      },
-      "option-prepared": {
-        "id": "prepared-button",
-        "text": "Prepared",
-        "value": "prepared"
-      },
-      "option-very-prepared": {
-        "id": "very-prepared-button",
-        "text": "Very Prepared",
-        "value": "very-prepared"
-      }
+      "option-very-unprepared": "Very unprepared",
+      "option-unprepared": "Unprepared",
+      "option-unsure-preparedness": "Not sure",
+      "option-prepared": "Prepared",
+      "option-very-prepared": "Very Prepared"
     },
     "question-where": {
-      "id": "question-where",
       "title": "Where do you plan on living when you retire?",
-      "option-canada-ft": {
-        "id": "canada-ft-button",
-        "text": "In Canada",
-        "value": "canada-ft"
-      },
-      "option-canada-pt-60-or-more": {
-        "id": "canada-pt-60-or-more-button",
-        "text": "In Canada MORE Than 6 Months a Year",
-        "value": "canada-pt-60-or-more"
-      },
-      "option-canada-pt-less-than-60": {
-        "id": "canada-pt-less-than-60-button",
-        "text": "In Canada LESS than 6 months a year",
-        "value": "canada-pt-less-than-60"
-      },
-      "option-outside-canada": {
-        "id": "outside-canada-button",
-        "text": "Outside Canada",
-        "value": "outside-canada"
-      },
-      "option-unsure-retirement-living": {
-        "id": "unsure-retirement-living-button",
-        "text": "Not Sure",
-        "value": "unsure-retirement-living"
-      }
+      "option-canada-ft": "In Canada",
+      "option-canada-pt-60-or-more": "In Canada MORE Than 6 Months a Year",
+      "option-canada-pt-less-than-60": "In Canada LESS than 6 months a year",
+      "option-outside-canada": "Outside Canada",
+      "option-unsure-retirement-living": "Not Sure"
     },
     "question-earn": {
-      "id": "question-earn",
       "title": "Do you plan to earn money while receiving retirement benefits",
       "subtitle": "Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
-      "option-no-income": {
-        "id": "no-income-button",
-        "text": "No",
-        "value": "no-income"
-      },
-      "option-yes-income": {
-        "id": "yes-income-button",
-        "text": "Yes",
-        "value": "yes-income"
-      },
-      "option-unsure-income": {
-        "id": "unsure-income-button",
-        "text": "Not sure",
-        "value": "unsure-income"
-      }
+      "option-no-income": "No",
+      "option-yes-income": "Yes",
+      "option-unsure-income": "Not sure"
     },
     "question-status": {
-      "id": "question-status",
       "title": "When you retire, what will your legal status be in Canada?",
-      "option-status-citizen": {
-        "id": "status-citizen-button",
-        "text": "Canadian Citizen or Permanent Resident",
-        "value": "status-citizen"
-      },
-      "option-status-first-nation": {
-        "id": "status-first-nation",
-        "text": "Métis, Inuit, or Member of First Nation",
-        "value": "status-first-nation"
-      },
-      "option-status-sponsored": {
-        "id": "status-sponsored-button",
-        "text": "Sponsored Resident (less than 10 years in Canada)",
-        "value": "status-sponsored"
-      },
-      "option-status-other": {
-        "id": "status-other-button",
-        "text": "Visitor, Student, or Temporary Worker",
-        "value": "status-other"
-      }
+      "option-status-citizen": "Canadian Citizen or Permanent Resident",
+      "option-status-first-nation": "Métis, Inuit, or Member of First Nation",
+      "option-status-sponsored": "Sponsored Resident (less than 10 years in Canada)",
+      "option-status-other": "Visitor, Student, or Temporary Worker"
     },
     "question-how-long": {
-      "id": "question-how-long-button",
       "title": "From age 18, how many years will you have lived in Canada when you apply for retirement benefits?",
-      "option-in-canada-40-plus": {
-        "id": "in-canada-40-plus-button",
-        "text": "40 years or more",
-        "value": "in-canada-40-plus"
-      },
-      "option-in-canada-10-to-39": {
-        "id": "in-canada-10-to-39-button",
-        "text": "10 to 39 years",
-        "value": "in-canada-10-to-39"
-      },
-      "option-in-canada-less-than-10": {
-        "id": "in-canada-less-than-10-button",
-        "text": "Less than 10 years",
-        "value": "in-canada-less-than-10"
-      },
-      "option-unsure-in-canada": {
-        "id": "unsure-in-canada-button",
-        "text": "Not sure",
-        "value": "unsure-in-canada"
-      }
+      "option-in-canada-40-plus": "40 years or more",
+      "option-in-canada-10-to-39": "10 to 39 years",
+      "option-in-canada-less-than-10": "Less than 10 years",
+      "option-unsure-in-canada": "Not sure"
     },
     "question-disability-benefits": {
-      "id": "question-disability-benefits",
       "title": "Are you receiving CPP-Disability benefits?",
-      "option-cppd-yes": {
-        "id": "cppd-yes-button",
-        "text": "Yes",
-        "value": "cppd-yes"
-      },
-      "option-cppd-no": {
-        "id": "cppd-no-button",
-        "text": "No",
-        "value": "cppd-no"
-      }
+      "option-cppd-yes": "Yes",
+      "option-cppd-no": "No"
     }
   }
 }

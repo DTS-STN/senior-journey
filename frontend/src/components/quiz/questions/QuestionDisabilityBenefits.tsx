@@ -23,7 +23,7 @@ export const QuestionDisabilityBenefits = ({ values, setFieldValue }: QuestionPr
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
-        data-cy={t('questions.question-disability-benefits.id')}
+        data-cy="question-disability-benefits"
         fullWidth={true}
         className="my-4"
         value={value}
@@ -43,22 +43,22 @@ export const QuestionDisabilityBenefits = ({ values, setFieldValue }: QuestionPr
         }}
       >
         <ToggleButton
-          value={t('questions.question-disability-benefits.option-cppd-yes.value')}
-          aria-label={t('questions.question-disability-benefits.option-cppd-yes.text')}
-          data-cy={t('questions.question-disability-benefits.option-cppd-yes.id')}
+          value="cppd-yes"
+          aria-label={t('questions.question-disability-benefits.option-cppd-yes')}
+          data-cy="cppd-yes-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasCppDisabilityBenefits'] === t('questions.question-disability-benefits.option-cppd-yes.value')}
+          selected={values['hasCppDisabilityBenefits'] === 'cppd-yes'}
         >
-          {t('questions.question-disability-benefits.option-cppd-yes.text')}
+          {t('questions.question-disability-benefits.option-cppd-yes')}
         </ToggleButton>
         <ToggleButton
-          value={t('questions.question-disability-benefits.option-cppd-no.value')}
-          aria-label={t('questions.question-disability-benefits.option-cppd-no.text')}
-          data-cy={t('questions.question-disability-benefits.option-cppd-no.id')}
+          value="cppd-no"
+          aria-label={t('questions.question-disability-benefits.option-cppd-no')}
+          data-cy="cppd-no-button"
           className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasCppDisabilityBenefits'] === t('questions.question-disability-benefits.option-cppd-no.value')}
+          selected={values['hasCppDisabilityBenefits'] === 'cppd-no'}
         >
-          {t('questions.question-disability-benefits.option-cppd-no.text')}
+          {t('questions.question-disability-benefits.option-cppd-no')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
