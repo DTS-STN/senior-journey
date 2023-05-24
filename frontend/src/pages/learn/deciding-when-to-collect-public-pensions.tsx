@@ -80,24 +80,24 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <List disablePadding>
           {[
             {
-              primary: t('key-takeaways.li1'),
-              secondary: t('key-takeaways.li2'),
+              primary: t('key-takeaways.highest-monthly-amount'),
+              secondary: t('key-takeaways.start-collecting'),
             },
             {
-              primary: t('key-takeaways.li3'),
-              secondary: t('key-takeaways.li4'),
+              primary: t('key-takeaways.payment-increase'),
+              secondary: t('key-takeaways.no-benefit'),
             },
             {
-              primary: t('key-takeaways.li5'),
-              secondary: t('key-takeaways.li6'),
+              primary: t('key-takeaways.people-who-qualify'),
+              secondary: t('key-takeaways.if-you-qualify'),
             },
             {
-              primary: t('key-takeaways.li7'),
-              secondary: t('key-takeaways.li8'),
+              primary: t('key-takeaways.more-than-double'),
+              secondary: t('key-takeaways.pensions-adjusted'),
             },
             {
-              primary: t('key-takeaways.li9'),
-              secondary: t('key-takeaways.li10'),
+              primary: t('key-takeaways.planning-retirement'),
+              secondary: t('key-takeaways.common-law'),
             },
           ].map(({ primary, secondary }) => (
             <ListItem key={primary} className="border-b">
