@@ -1,62 +1,62 @@
 {
-  "header": "Learn",
-  "explore": "Explore our content",
   "banner": {
-    "title": "Not sure where to begin? Take the quiz!",
+    "quiz": "Take the quiz now!",
     "text": "Receive a personalized checklist to guide you through retirement.",
-    "quiz": "Take the quiz now!"
+    "title": "Not sure where to begin? Take the quiz!"
   },
+  "explore": "Explore our content",
+  "header": "Learn",
   "min-read": "{{minRead}} min read",
   "sections": {
     "learn-about": {
-      "title": "Learn about your retirement income choices",
       "body": "Prepare for old age by exploring retirement income sources and learn how to manage your money after you retire.",
       "cards": {
-        "sources-of-income": {
-          "title": "Main sources of retirement income",
-          "body": "See the different types of retirement income you could have. Look at your current income sources and find potential gaps."
-        },
         "planning-to-save": {
-          "title": "Planning to save for retirement",
-          "body": "Learn about how the income you'll need in retirement will change. Your financial needs and considerations will also change."
+          "body": "Learn about how the income you'll need in retirement will change. Your financial needs and considerations will also change.",
+          "title": "Planning to save for retirement"
+        },
+        "sources-of-income": {
+          "body": "See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
+          "title": "Main sources of retirement income"
         }
-      }
+      },
+      "title": "Learn about your retirement income choices"
     },
     "making-decisions": {
-      "title": "Making retirement decisions",
       "body": "Feel more confident about your choices in retirement. Use these resources to better understand your options and their impact on your public pensions.",
       "cards": {
-        "when-to-collect": {
-          "title": "Deciding when to start your public pensions",
-          "body": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider."
-        },
         "from-work-to-retirement": {
-          "title": "Going from work to retirement",
-          "body": "You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things."
+          "body": "You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
+          "title": "Going from work to retirement"
         },
         "rules-of-thumb": {
-          "title": "Rules of thumb for your public pensions",
-          "body": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you."
+          "body": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
+          "title": "Rules of thumb for your public pensions"
+        },
+        "when-to-collect": {
+          "body": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider.",
+          "title": "Deciding when to start your public pensions"
         }
-      }
+      },
+      "title": "Making retirement decisions"
     },
     "stories": {
-      "title": "Retirement stories",
       "body": "Not sure when to retire? Read the stories that people shared with us. Learn about the different choices and compare them to your personal situation.",
       "cards": {
-        "fred": {
-          "title": "Fred decides when to start his public pensions",
-          "body": "Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him."
-        },
         "bonnie": {
-          "title": "Bonnie delays to reduce the savings she needs",
-          "body": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension."
+          "body": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension.",
+          "title": "Bonnie delays to reduce the savings she needs"
+        },
+        "fred": {
+          "body": "Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him.",
+          "title": "Fred decides when to start his public pensions"
         },
         "keith": {
-          "title": "Keith collects his public pensions while working",
-          "body": "Keith chooses between delaying his public pensions or taking Post-Retirement Benefits while working."
+          "body": "Keith chooses between delaying his public pensions or taking Post-Retirement Benefits while working.",
+          "title": "Keith collects his public pensions while working"
         }
-      }
+      },
+      "title": "Retirement stories"
     }
   }
 }
