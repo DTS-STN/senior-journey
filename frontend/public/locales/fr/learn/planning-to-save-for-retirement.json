@@ -3,29 +3,52 @@
   "breadcrumbs": {
     "learn": "(FR) Learn"
   },
-  "overview-link-text": "(FR) Overview",
-  "back-to-top": "(FR) BACK TO TOP",
-  "overview": "(FR) Planning for retirement may feel overwhelming, but it's an essential step to ensuring a comfortable and secure future. With so many options available, it can be challenging to know where to begin and how to maximize your savings. The sections below provide some information you may find useful as you navigate this important process.",
-  "how-much-will-you-need-heading": "(FR) How much will you need in retirement",
-  "how-much-will-you-need-content": "(FR) When you retire, the money you need will be different than what you need now. You might not need to drive as much, or you might want to travel more. Everyone's retirement looks different, so it's important to think about what you want and plan for it. Think about things like your health, where you want to live, and how much money you'll have from pensions and savings. Generally, you won't need as much money as you do now to maintain your way of living. Experts suggest you should aim to have around 70% of your current income to have enough money in retirement. However, this rule doesn't work for everyone. If you have a low income, you might need the same amount of money in retirement or more, to cover all your basic needs, and it is hard to save for retirement. The income-tested <anchor>Guaranteed Income Supplement (GIS)</anchor> available under the Old Age Security program may be an important source for low-income retirees. For people with high-income, aiming to have around 50 to 60% of their current income might be enough for a comfortable retirement. It's important to think about your personal situation when planning for retirement, so you can save the right amount.",
-  "GIS-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
-  "changes-with-age-heading": "(FR) How your financial needs may change with age",
-  "changes-with-age-content-one": "(FR) While you are budgeting for retirement, remember that your budget will not always be the same! During the early stages of retirement, you may want to have more disposable income to travel, pursue hobbies, or other activities that you may not have had time for during your working years. However, as you get older, you may find that your spending habits begin to shift. You may spend less on clothing and entertainment, and more on healthcare, medications, and home care.",
-  "changes-with-age-content-two": "(FR) As you get older, you may also need to consider long-term care costs, such as assisted living or nursing home care. These expenses can be significant, and it's important to either have savings in place ahead of time or to purchase an insurance to cover any unexpected costs.",
-  "turning-savings-into-income-heading": "(FR) Turning your retirement savings into income",
-  "turning-savings-into-income-content-one": "(FR) When you retire, you may want to turn your savings and investments into income to support your lifestyle. There are different ways to do this, and you'll need to choose which one works best for you. You could convert your RRSP into a Registered Retirement Income Fund (RRIF), invest in other products like stocks or bonds, or withdraw your savings as cash. It's important to think about which option is right for you and get help if you need it.",
-  "turning-savings-into-income-content-two": "(FR) If you hold funds in an RRSP, you should contact your financial institution to convert it into a Registered Retirement Income Fund. A RRIF acts like your RRSP but in reverse: you can transfer your accumulated savings tax-free from RRSP to your RRIF, and your bank will start making payments to you. The main purpose of the RRIF is to take out and use your retirement savings. You cannot contribute more money into your RRIF. Similar to an RRSP, you can hold a wide variety of investment in an RRIF, and the money you make from your investments will not be taxed until you take it out.",
-  "turning-savings-into-income-content-three": "(FR) You must convert your RRSP into an RRIF by the end of the year in which you turn 71, but it can also be converted before that. In the year you turn 72, you will have to take out a certain percentage of your total RRIF saving but all withdrawals will be taxable. If you need more information, we recommend talking to your financial advisor.",
-  "turning-savings-into-income-content-four": "(FR) To learn more about RRIF, visit the <anchor>RRIF CRA page.</anchor>",
-  "RRIF-link": "https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/fonds-enregistre-revenu-retraite-ferr.html",
-  "rrif-alt": "(FR) Money transferred from your RRSP and growing investments in your RRIF are sheltered from taxes (shown under an umbrella), however you will pay taxes on withdrawals (shown outside the umbrella",
-  "learn-more-heading": "(FR) Learn More",
-  "transitioning-heading": "(FR) Going from work to retirement",
-  "transitioning-content": "(FR) You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
-  "cpp-heading": "(FR) Canada Pension Plan (CPP) Program",
-  "cpp-content": "(FR) The official Canada.ca page of the CPP program with information on the CPP retirement pension, and other CPP related benefits.",
-  "oas-heading": "(FR) Old Age Security Program",
-  "oas-content": "(FR) The official Canada.ca page of the OAS program with information on the OAS retirement pension, and other OAS related benefits.",
-  "sources-of-income-heading": "(FR) Sources of retirement income",
-  "sources-of-income-content": "(FR) Public pensions, OAS, CPP, employer pensions, RRSPs and other sources of personal savings from the Financial Consumer Agency of Canada."
+  "key-takeaways": {
+    "heading": "(FR) Key takeaways",
+    "li1": "(FR) When planning for retirement, consider how much money you'll need based on your personal situation.",
+    "li2": "(FR) Your health, your income, and what you want your retirement to look like will change your budget.",
+    "li3": "(FR) Your financial needs and circumstances may change with age.",
+    "li4": "(FR) It's important to review your financial plan to change as needed."
+  },
+  "overview": {
+    "heading": "(FR) Overview",
+    "p": "(FR) Planning for retirement may feel stressful, but it's needed to make sure you've got a comfortable and secure future that aligns with your goals. With so many choices, it can be hard to know where to start to get the most out of your savings. The sections below are meant to inform you as you go through this important process."
+  },
+  "how-much": {
+    "heading": "(FR) How much you could need in retirement",
+    "p1": "(FR) When you retire, you may need less money per month than what you need now. You might not need to drive as much, have less work-related spending, reduced child-related and housing costs. With more free time, you might want to travel more, or do some renovations in your house. Everyone's retirement looks different, so it's important to think about what you want and plan for it. Think about things like your health, where you want to live, and how much money you'll have from pensions and savings.  Generally, you won't need as much as you do now to keep your way of living. Many financial planners say that having 60 to 70% of your current income in retirement will allow you to maintain your lifestyle in retirement. But, this rule of thumb doesn't work for everyone. If you have <a1>low income</a1>, you might need the same amount of money when you retire as you do now to cover all your basic needs. The <a2>Guaranteed Income Supplement (GIS)</a2> is an important source of income for low-income retirees. People with higher income may only need have 50 to 60% of their current income in retirement. Think about your personal situation when planning for retirement, so you can save the right amount.",
+    "p2": "(FR) You can model your future retirement income from different sources using the <a3>Canadian Retirement Income Calculator</a3>.",
+    "p3": "(FR) Create a customized budget using the <a4>FCAC Budget planner</a4>.",
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
+    "a3": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
+    "a4": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/planificateur-budgetaire"
+  },
+  "changes-with-age": {
+    "heading": "(FR) How your financial needs may change with age",
+    "p1": "(FR) While you're budgeting for retirement, remember that your budget won't always be the same. In early retirement, you may want extra money to travel, or pursue hobbies that you didn't have the time for during your working years. As you get older, you may find your spending habits shift. You may spend less money on shopping or going out, and more on healthcare, medications, and home care.",
+    "p2": "(FR) As you age, you may consider long-term care costs such as assisted living or nursing home care. These choices cost a lot, and you should consider having a plan. You could have savings ahead of time or buy insurance to cover any costs you didn’t plan for. These are some options that could work for you, depending on your situation.",
+    "disclaimer": "(FR) <strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor."
+  },
+  "learn-more": {
+    "heading": "(FR) Learn More",
+    "main-sources-of-retirment-income": {
+      "header": "(FR) Main sources of retirement income",
+      "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps."
+    },
+    "going-from-work-to-retirement": {
+      "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
+      "header": "(FR) Going from work to retirement"
+    },
+    "budget-planner": {
+      "href": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/planificateur-budgetaire",
+      "description": "(FR) The Budget Planner helps you create a customized budget in 3 simple steps.",
+      "header": "(FR) Budget Planner Tool - Financial Consumer Agency of Canada"
+    },
+    "saving-for-retirement": {
+      "href": "https://www.canada.ca/fr/agence-consommation-matiere-financiere/services/planification-retraite/economiser-pour-retraite.html",
+      "description": "(FR) When, why and how to start saving for your retirement and tips to help balance your financial priorities.",
+      "header": "(FR) Saving for retirement"
+    }
+  }
 }
