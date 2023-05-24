@@ -1,97 +1,97 @@
 {
-  "landing": {
-    "header": "Questionnaire sur la préparation à la retraite",
-    "p1": "Vous n'être pas sûr d'avoir tout fait pour prendre votre retraite? Répondez à ce questionnaire comme première étape sur votre liste de contrôle pour la retraite.",
-    "p2": "Vos réponses aideront à identifier les pensions et prestations publiques dont vous pourriez bénéficier. Ils vous guideront également sur ce qu'il faut prendre en considération pour mieux préparer votre retraite.",
-    "whatyouneed": "De quoi aurez-vous besoin",
-    "p3": "Vous n'avez besoin d'aucune information particulière pour répondre à ce questionnaire. Pour créer la liste de contrôle de retraite la plus appropriée à votre situation , vous devrez fournir des informations sur les éléments suivants\u00a0:",
-    "legal": "<strong>Votre statut légal</strong> (tel que citoyen canadien, statut d'Indien ou résident permanent)",
-    "residence": "<strong>Votre historique de résidence</strong> (nombre d'années vécues au Canada)",
-    "marital": "<strong>État civil</strong>",
-    "retirement": "<strong>Plan de retraite</strong> (quand vous prévoyez prendre votre retraite, où vous prévoyez vivre à la retraite, etc.)",
-    "timetocomplete": "Temps nécessaire pour répondre au questionnaire",
-    "minutes": "3 minutes",
-    "start-the-quiz": "Commencez le questionnaire"
-  },
   "confirmation": {
-    "sure": "Vous êtes sûr que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu'à maintenant.",
     "no": "Non, retournez au questionnaire",
+    "sure": "Vous êtes sûr que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu'à maintenant.",
     "yes": "Oui, annulé"
   },
+  "landing": {
+    "header": "Questionnaire sur la préparation à la retraite",
+    "legal": "<strong>Votre statut légal</strong> (tel que citoyen canadien, statut d'Indien ou résident permanent)",
+    "marital": "<strong>État civil</strong>",
+    "minutes": "3 minutes",
+    "p1": "Vous n'être pas sûr d'avoir tout fait pour prendre votre retraite? Répondez à ce questionnaire comme première étape sur votre liste de contrôle pour la retraite.",
+    "p2": "Vos réponses aideront à identifier les pensions et prestations publiques dont vous pourriez bénéficier. Ils vous guideront également sur ce qu'il faut prendre en considération pour mieux préparer votre retraite.",
+    "p3": "Vous n'avez besoin d'aucune information particulière pour répondre à ce questionnaire. Pour créer la liste de contrôle de retraite la plus appropriée à votre situation , vous devrez fournir des informations sur les éléments suivants :",
+    "residence": "<strong>Votre historique de résidence</strong> (nombre d'années vécues au Canada)",
+    "retirement": "<strong>Plan de retraite</strong> (quand vous prévoyez prendre votre retraite, où vous prévoyez vivre à la retraite, etc.)",
+    "start-the-quiz": "Commencez le questionnaire",
+    "timetocomplete": "Temps nécessaire pour répondre au questionnaire",
+    "whatyouneed": "De quoi aurez-vous besoin"
+  },
   "navigation": {
-    "previous": "Question précédente",
-    "next": "Prochaine question",
-    "submit": "Soumettre",
     "close": "Quitter",
-    "title": "Questionnaire sur la préparation à la retraite",
-    "progress": "Question {{currentStep}} de {{totalSteps}}"
+    "next": "Prochaine question",
+    "previous": "Question précédente",
+    "progress": "Question {{currentStep}} de {{totalSteps}}",
+    "submit": "Soumettre",
+    "title": "Questionnaire sur la préparation à la retraite"
   },
   "questions": {
-    "question-when": {
-      "title": "Quand comptez-vous prendre votre retraite?",
-      "option-pre-60": "Avant 60 ans",
-      "option-between-60-and-65": "De 60 à 64 ans",
-      "option-at-65": "À 65 ans",
-      "option-between-65-and-70": "De 66 à 70 ans",
-      "option-after-70": "Après 70 ans",
-      "option-unsure-retirement-age": "Je ne sais pas"
-    },
     "question-apply": {
-      "question-marital-status": {
-        "title": "Veuillez sélectionner tous les énoncés qui s'appliquent à vous.",
-        "option-single": "Célibataire",
-        "option-married-or-cl": "Marié(e) ou en union de fait",
-        "option-divorced-or-separated": "Divorcé(e) ou séparé(e)",
-        "option-widowed": "Veuf ou veuve"
-      },
       "question-children": {
-        "title": "Avez-vous des enfants?",
+        "option-no-kids": "Non",
         "option-yes-kids": "Oui",
-        "option-no-kids": "Non"
+        "title": "Avez-vous des enfants?"
+      },
+      "question-marital-status": {
+        "option-divorced-or-separated": "Divorcé(e) ou séparé(e)",
+        "option-married-or-cl": "Marié(e) ou en union de fait",
+        "option-single": "Célibataire",
+        "option-widowed": "Veuf ou veuve",
+        "title": "Veuillez sélectionner tous les énoncés qui s'appliquent à vous."
       }
     },
+    "question-disability-benefits": {
+      "option-cppd-no": "Non",
+      "option-cppd-yes": "Oui",
+      "title": "Recevez-vous des prestations d'invalidité du RPC?"
+    },
+    "question-earn": {
+      "option-no-income": "Non",
+      "option-unsure-income": "Je ne sais pas",
+      "option-yes-income": "Oui",
+      "subtitle": "Certaines personnes choisissent de travailler ou de gagner de l'argent à la retraite. Cela peut affecter vos montants de pension mensuels.",
+      "title": "Prévoyez-vous de gagner de l'argent tout en percevant des prestations de retraite?"
+    },
     "question-feel": {
-      "title": "Dans quelle mesure vous sentez-vous prêt(e) financièrement à prendre votre retraite?",
-      "subtitle": "Êtes-vous sûr d'avoir suffisamment d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
-      "option-very-unprepared": "Très peu préparé(e)",
+      "option-prepared": "Préparé(e)",
       "option-unprepared": "Peu préparé(e)",
       "option-unsure-preparedness": "Je ne sais pas",
-      "option-prepared": "Préparé(e)",
-      "option-very-prepared": "Très bien préparé(e)"
+      "option-very-prepared": "Très bien préparé(e)",
+      "option-very-unprepared": "Très peu préparé(e)",
+      "subtitle": "Êtes-vous sûr d'avoir suffisamment d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
+      "title": "Dans quelle mesure vous sentez-vous prêt(e) financièrement à prendre votre retraite?"
+    },
+    "question-how-long": {
+      "option-in-canada-10-to-39": "De 10 à 39 ans",
+      "option-in-canada-40-plus": "40 ans ou plus",
+      "option-in-canada-less-than-10": "Moins de 10 ans",
+      "option-unsure-in-canada": "Je ne sais pas",
+      "title": "À partir de l'âge de 18 ans, pendant combien d'années aurez-vous vécu au Canada lorsque vous demanderez des prestations de retraite?"
+    },
+    "question-status": {
+      "option-status-citizen": "Citoyen Canadien ou résident permanent",
+      "option-status-first-nation": "Métis, Inuit ou membre d'une Première Nation",
+      "option-status-other": "Visiteur, étudiant ou travailleur temporaire",
+      "option-status-sponsored": "Résident parrainé (moins de 10 ans au Canada)",
+      "title": "Lorsque vous prendrez votre retraite, quel sera votre statut juridique au Canada?"
+    },
+    "question-when": {
+      "option-after-70": "Après 70 ans",
+      "option-at-65": "À 65 ans",
+      "option-between-60-and-65": "De 60 à 64 ans",
+      "option-between-65-and-70": "De 66 à 70 ans",
+      "option-pre-60": "Avant 60 ans",
+      "option-unsure-retirement-age": "Je ne sais pas",
+      "title": "Quand comptez-vous prendre votre retraite?"
     },
     "question-where": {
-      "title": "Où prévoyez-vous de vivre lorsque vous prendrez votre retraite?",
       "option-canada-ft": "Au Canada",
       "option-canada-pt-60-or-more": "Au Canada plus de 6 mois par an",
       "option-canada-pt-less-than-60": "Au Canada moins de 6 mois par an",
       "option-outside-canada": "À l'extérieur du Canada",
-      "option-unsure-retirement-living": "Je ne sais pas"
-    },
-    "question-earn": {
-      "title": "Prévoyez-vous de gagner de l'argent tout en percevant des prestations de retraite?",
-      "subtitle": "Certaines personnes choisissent de travailler ou de gagner de l'argent à la retraite. Cela peut affecter vos montants de pension mensuels.",
-      "option-no-income": "Non",
-      "option-yes-income": "Oui",
-      "option-unsure-income": "Je ne sais pas"
-    },
-    "question-status": {
-      "title": "Lorsque vous prendrez votre retraite, quel sera votre statut juridique au Canada?",
-      "option-status-citizen": "Citoyen Canadien ou résident permanent",
-      "option-status-first-nation": "Métis, Inuit ou membre d'une Première Nation",
-      "option-status-sponsored": "Résident parrainé (moins de 10 ans au Canada)",
-      "option-status-other": "Visiteur, étudiant ou travailleur temporaire"
-    },
-    "question-how-long": {
-      "title": "À partir de l'âge de 18 ans, pendant combien d'années aurez-vous vécu au Canada lorsque vous demanderez des prestations de retraite?",
-      "option-in-canada-40-plus": "40 ans ou plus",
-      "option-in-canada-10-to-39": "De 10 à 39 ans",
-      "option-in-canada-less-than-10": "Moins de 10 ans",
-      "option-unsure-in-canada": "Je ne sais pas"
-    },
-    "question-disability-benefits": {
-      "title": "Recevez-vous des prestations d'invalidité du RPC?",
-      "option-cppd-yes": "Oui",
-      "option-cppd-no": "Non"
+      "option-unsure-retirement-living": "Je ne sais pas",
+      "title": "Où prévoyez-vous de vivre lorsque vous prendrez votre retraite?"
     }
   }
 }
