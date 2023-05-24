@@ -65,6 +65,10 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         header={t('header')}
         breadcrumbItems={[
           {
+            link: '/',
+            text: t('common:application-name'),
+          },
+          {
             link: '/learn',
             text: t('breadcrumbs.learn'),
           },
