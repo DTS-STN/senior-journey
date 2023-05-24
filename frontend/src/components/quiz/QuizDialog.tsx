@@ -13,12 +13,12 @@ import {
   useTheme,
 } from '@mui/material'
 import { useFormikWizard } from 'formik-wizard-form'
-import { compact } from 'lodash'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 
 import { useSetQuizData } from '../../lib/hooks/useSetQuizData'
-import { ChecklistFilters } from '../../pages/checklist/[filters]'
+import { toChecklistFilter } from '../../lib/mappers/quiz-form-state-mapper'
+import { QuizFormState } from '../../lib/types'
 import { QuestionApply } from './questions/QuestionApply'
 import { QuestionDisabilityBenefits } from './questions/QuestionDisabilityBenefits'
 import { QuestionEarn } from './questions/QuestionEarn'
@@ -28,35 +28,19 @@ import { QuestionStatus } from './questions/QuestionStatus'
 import { QuestionWhen } from './questions/QuestionWhen'
 import { QuestionWhere } from './questions/QuestionWhere'
 
-// TODO: map form values to "answer-id" from locales/(en/fr)/quiz/tasks/task-list.json once it has been finalized
-export interface QuizFormState extends Record<string, string> {
-  retirementAge: string
-  single: string
-  marriedOrCommonLaw: string
-  divorcedOrSeparated: string
-  widowed: string
-  hasChildren: string
-  financialPreparedness: string
-  retirementTimeframe: string
-  hasExtraIncome: string
-  legalStatus: string
-  yearsInCanada: string
-  hasCppDisabilityBenefits: string
-}
-
 const defaultFormValues: QuizFormState = {
-  retirementAge: '',
-  single: '',
-  marriedOrCommonLaw: '',
   divorcedOrSeparated: '',
-  widowed: '',
-  hasChildren: '',
   financialPreparedness: '',
-  retirementTimeframe: '',
+  hasChildren: '',
+  hasCppDisabilityBenefits: '',
   hasExtraIncome: '',
   legalStatus: '',
+  marriedOrCommonLaw: '',
+  retirementAge: '',
+  retirementTimeframe: '',
+  single: '',
+  widowed: '',
   yearsInCanada: '',
-  hasCppDisabilityBenefits: '',
 }
 
 export interface QuizConfirmationProps {
@@ -104,13 +88,13 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
 
   const formikWizard = useFormikWizard({
     initialValues: defaultFormValues,
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       setQuizData(values as QuizFormState)
 
       // Encodes a js object as a url-safe base64 string.
-      const checklistFilters: ChecklistFilters = { answers: compact(Object.values<string>(values)), tags: [] }
+      const checklistFilters = toChecklistFilter(values as QuizFormState)
       const encodedChecklistFilters = encodeURIComponent(window.btoa(JSON.stringify(checklistFilters)))
-      router.push(`/checklist/${encodedChecklistFilters}`)
+      await router.push(`/checklist/${encodedChecklistFilters}`)
     },
     validateOnNext: true,
     activeStepIndex: 0,

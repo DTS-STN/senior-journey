@@ -1,8 +1,8 @@
 import { UseQueryOptions, useQuery } from '@tanstack/react-query'
 import { isEmpty } from 'lodash'
 
-import { QuizFormState } from '../../components/quiz/QuizDialog'
 import { getLogger } from '../../logging/log-util'
+import { QuizFormState } from '../types'
 
 const logger = getLogger('useQuizData')
 

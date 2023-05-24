@@ -11,25 +11,18 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import * as yup from 'yup'
 
 import Layout from '../../components/Layout'
 import NestedAccordion from '../../components/NestedAccordion'
 import tasksData from '../../data/tasks.json'
 import { useRemoveQuizData } from '../../lib/hooks/useRemoveQuizData'
 import * as tasksGroupDtoMapper from '../../lib/mappers/tasks-group-dto-mapper'
-import { TaskTagDto, TasksGroupDto } from '../../lib/types'
+import { checklistFiltersSchema } from '../../lib/schemas/checklist-filters-schema'
+import { ChecklistFilters, TaskTagDto, TasksGroupDto } from '../../lib/types'
 import { getLogger } from '../../logging/log-util'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const log = getLogger('pages/checklist/[filters].tsx')
-
-const checklistFiltersSchema = yup.object({
-  answers: yup.array(yup.string().required()).required(),
-  tags: yup.array(yup.string().required()).required(),
-})
-
-export interface ChecklistFilters extends yup.InferType<typeof checklistFiltersSchema> {}
 
 interface ChecklistResultsProps {
   applyingBenefits: TasksGroupDto
@@ -77,7 +70,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
     ])
   }, [applyingBenefits.tasks, beforeRetiring.tasks, receivingBenefits.tasks])
 
-  function handleChange(e: ChangeEvent<HTMLInputElement>): void {
+  function handleChange(e: ChangeEvent<HTMLInputElement>) {
     const newFilters = { ...filters }
     if (e.target.checked) newFilters.tags = [...newFilters.tags, e.target.value]
     else newFilters.tags = newFilters.tags.filter((tag) => tag !== e.target.value)
