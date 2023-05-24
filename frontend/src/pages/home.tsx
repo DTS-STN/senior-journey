@@ -41,7 +41,7 @@ const Home: FC = () => {
   const theme = useTheme()
   const mobile = useMediaQuery(theme.breakpoints.down('md'))
 
-  const [value, setValue] = useState(t('tabs.learn.id') ? t('tabs.learn.id') : '')
+  const [value, setValue] = useState('learn')
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue)
@@ -78,40 +78,28 @@ const Home: FC = () => {
               scrollButtons="auto"
               centered={!mobile}
             >
-              <Tab
-                value={t('tabs.learn.id')}
-                label={t('tabs.learn.title')}
-                className="px-10 pt-4 text-lg md:text-2xl"
-              />
-              <Tab value={t('tabs.plan.id')} label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-              <Tab
-                value={t('tabs.apply.id')}
-                label={t('tabs.apply.title')}
-                className="px-10 pt-4 text-lg md:text-2xl"
-              />
-              <Tab
-                value={t('tabs.manage.id')}
-                label={t('tabs.manage.title')}
-                className="px-10 pt-4 text-lg md:text-2xl"
-              />
+              <Tab value="learn" label={t('tabs.learn.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab value="plan" label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab value="apply" label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+              <Tab value="manage" label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />
             </TabList>
           </Paper>
 
           <div className="bg-gray-surface">
             <Container>
-              <TabPanel value={t('tabs.learn.id')} className="px-0 py-8">
+              <TabPanel value="learn" className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
                     <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
                       {t('tabs.learn.heading')}
                     </h2>
                     <Divider className="mb-8" />
-                    <p>{t('tabs.learn.description.0')}</p>
-                    <p>{t('tabs.learn.description.1')}</p>
+                    <p>{t('tabs.learn.description.options-and-tips')}</p>
+                    <p>{t('tabs.learn.description.stories')}</p>
                     <Divider className="my-8" />
                     <div className="text-right">
-                      <Button component={Link} href={t('tabs.learn.button.url')} size="large">
-                        {t('tabs.learn.button.text')}
+                      <Button component={Link} href="/learn" size="large">
+                        {t('tabs.learn.button-text')}
                       </Button>
                     </div>
                   </Paper>
@@ -121,7 +109,7 @@ const Home: FC = () => {
                     </h3>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.learn.links.when-to-collect.url')} component={Link}>
+                        <ListItemButton href="/learn/deciding-when-to-collect-public-pensions" component={Link}>
                           <ListItemText
                             primary={t('tabs.learn.links.when-to-collect.title')}
                             primaryTypographyProps={{
@@ -136,7 +124,7 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.learn.links.rules-of-thumb.url')} component={Link}>
+                        <ListItemButton href="/learn/rules-of-thumb-for-public-pensions" component={Link}>
                           <ListItemText
                             primary={t('tabs.learn.links.rules-of-thumb.title')}
                             primaryTypographyProps={{
@@ -151,7 +139,7 @@ const Home: FC = () => {
                         </ListItemButton>
                       </ListItem>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href={t('tabs.learn.links.case-study-bonnie.url')} component={Link}>
+                        <ListItemButton href="/learn/case-studies/bonnie" component={Link}>
                           <ListItemText
                             primary={t('tabs.learn.links.case-study-bonnie.title')}
                             primaryTypographyProps={{
@@ -169,7 +157,7 @@ const Home: FC = () => {
                   </Paper>
                 </div>
               </TabPanel>
-              <TabPanel value={t('tabs.plan.id')} className="px-0 py-8">
+              <TabPanel value="plan" className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
                     <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
@@ -223,7 +211,7 @@ const Home: FC = () => {
                   </Paper>
                 </div>
               </TabPanel>
-              <TabPanel value={t('tabs.apply.id')} className="px-0 py-8">
+              <TabPanel value="apply" className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
                     <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
@@ -258,7 +246,7 @@ const Home: FC = () => {
                   </Paper>
                 </div>
               </TabPanel>
-              <TabPanel value={t('tabs.manage.id')} className="px-0 py-8">
+              <TabPanel value="manage" className="px-0 py-8">
                 <div className="flex flex-col gap-6 md:flex-row">
                   <Paper className="p-8 md:w-2/5 md:grow">
                     <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
@@ -267,9 +255,9 @@ const Home: FC = () => {
                     <Divider className="mb-8" />
                     <p>{t('tabs.manage.description.text')}</p>
                     <ul className="list-disc space-y-2 pl-7">
-                      <li>{t('tabs.manage.description.list.0')}</li>
-                      <li>{t('tabs.manage.description.list.1')}</li>
-                      <li>{t('tabs.manage.description.list.2')}</li>
+                      <li>{t('tabs.manage.description.list.create-and-submit-application')}</li>
+                      <li>{t('tabs.manage.description.list.check-status-payment-dates-and-amounts')}</li>
+                      <li>{t('tabs.manage.description.list.Update-mailing-address-and-banking-information')}</li>
                     </ul>
                     <Divider className="my-8" />
                     <div className="text-right">

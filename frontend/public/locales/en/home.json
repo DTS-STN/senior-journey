@@ -1,5 +1,4 @@
 {
-  "description": "Description here...",
   "header": "Home",
   "banner": {
     "title": "Learn and plan for your retirement",
@@ -7,38 +6,30 @@
   },
   "tabs": {
     "learn": {
-      "id": "learn",
       "title": "Learn",
       "heading": "Get the most out of your Canadian public pensions",
-      "description": [
-        "Learn about your retirement income options, and tips for your OAS/CPP pension choices.",
-        "Read the stories of retirees and their public pension decisions."
-      ],
-      "button": {
-        "text": "Explore retirement",
-        "url": "/learn"
+      "description": {
+        "options-and-tips": "Learn about your retirement income options, and tips for your OAS/CPP pension choices.",
+        "stories": "Read the stories of retirees and their public pension decisions."
       },
+      "button-text": "Explore retirement",
       "linksTitle": "Top learning links",
       "links": {
         "when-to-collect": {
           "title": "Deciding when to start your public pensions",
-          "url": "/learn/deciding-when-to-collect-public-pensions",
           "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider."
         },
         "rules-of-thumb": {
           "title": "Rules of thumb for your public pensions",
-          "url": "/learn/rules-of-thumb-for-public-pensions",
           "description": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you."
         },
         "case-study-bonnie": {
           "title": "Bonnie delays to reduce the savings she needs",
-          "url": "/learn/case-studies/bonnie",
           "description": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension."
         }
       }
     },
     "plan": {
-      "id": "plan",
       "title": "Plan",
       "heading": "Not sure where to start? Take our quiz!",
       "description": "Receive a personalized checklist to guide you through retirement.",
@@ -60,7 +51,6 @@
       }
     },
     "apply": {
-      "id": "apply",
       "title": "Apply",
       "heading": "Ready to apply for your public pensions? Get started now",
       "description": {
@@ -78,16 +68,15 @@
       }
     },
     "manage": {
-      "id": "manage",
       "title": "Manage",
       "heading": "Take control of your public pensions with the My Service Canada Account (MSCA)",
       "description": {
         "text": "You can do a lot with your MSCA, including:",
-        "list": [
-          "Create and submit your Canada Pension Plan and Old Age Security application(s).",
-          "Check the status, payment dates and amounts for your public pensions.",
-          "Update your mailing address and banking information."
-        ]
+        "list": {
+          "create-and-submit-application": "Create and submit your Canada Pension Plan and Old Age Security application(s).",
+          "check-status-payment-dates-and-amounts": "Check the status, payment dates and amounts for your public pensions.",
+          "Update-mailing-address-and-banking-information": "Update your mailing address and banking information."
+        }
       },
       "button": {
         "text": "Sign into MSCA",
@@ -98,7 +87,6 @@
   "contact-us": {
     "title": "Contact us",
     "description": "There are many ways to reach us about your public pensions.",
-    "link": "/contact-us",
     "cards": {
       "call-us": {
         "title": "Call us",

@@ -1,5 +1,4 @@
 {
-  "description": "Description ici...",
   "header": "Acceuil",
   "banner": {
     "title": "Informez-vous sur votre retraite et planifiez en conséquence",
@@ -7,38 +6,30 @@
   },
   "tabs": {
     "learn": {
-      "id": "learn",
       "title": "Apprendre",
       "heading": "Tirez le maximum de vos régimes de pension au Canada",
-      "description": [
-        "Il y a de nombreux facteurs à prendre en compte avant de prendre sa retraite.",
-        "Découvrez les bases des prestations de vieillesse au Canada et les moyens de gérer votre argent à la retraite."
-      ],
-      "button": {
-        "text": "Renseignez-vous sur la retraite",
-        "url": "/learn"
+      "description": {
+        "options-and-tips": "Il y a de nombreux facteurs à prendre en compte avant de prendre sa retraite.",
+        "stories": "Découvrez les bases des prestations de vieillesse au Canada et les moyens de gérer votre argent à la retraite."
       },
+      "button-text": "Renseignez-vous sur la retraite",
       "linksTitle": "Principaux liens pour l' apprentissage en ce qui concerne la retraite",
       "links": {
         "when-to-collect": {
           "title": "Choisir quand commencer à recevoir vos pensions publiques",
-          "url": "/learn/deciding-when-to-collect-public-pensions",
           "description": "La flexibilité des pensions de la SV et du RPC vous offre des choix pour votre retraite. Apprenez quels sont les aspects à prendre en considération et comment en venir à une décision."
         },
         "rules-of-thumb": {
           "title": "Règles générales sur les régimes de pensions publics",
-          "url": "/learn/rules-of-thumb-for-public-pensions",
           "description": "Consultez ces conseils pour vous aider à décider quand prendre vos pensions de la SV et du RPC. Choisissez ce qui vous convient."
         },
         "case-study-bonnie": {
           "title": "Bonnie décide d'attendre afin de réduire les épargnes dont elle a besoin",
-          "url": "/learn/case-studies/bonnie",
           "description": "Si Bonnie décide d'attendre avant de commencer à recevoir sa pension de la SV et du RPC, elle aura besoin de moins d'épargnes."
         }
       }
     },
     "plan": {
-      "id": "plan",
       "title": "Planifier",
       "heading": "Vous ne savez pas par où commencer? Répondez à notre questionnaire!",
       "description": "Recevez une liste personnalisée pour vous guider à travers la retraite.",
@@ -60,7 +51,6 @@
       }
     },
     "apply": {
-      "id": "apply",
       "title": "Presenter une demande",
       "heading": "Vous êtes prêt à présenter une demande pour vos pensions publiques? Commencez maintenant",
       "description": {
@@ -78,16 +68,15 @@
       }
     },
     "manage": {
-      "id": "manage",
       "title": "Gérer",
       "heading": "Prenez le contrôle de vos prestations de vieillesse fédérales grâce à Mon dossier Service Canada (MDSC)",
       "description": {
         "text": "MDSC vous permet de faire beaucoup de choses, notamment\u00a0:",
-        "list": [
-          "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse.",
-          "Vérifier l'état, les dates de versement et les montants de vos prestations de vieillesse fédérales.",
-          "Mettre à jour votre adresse postale et vos renseignements bancaires."
-        ]
+        "list": {
+          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse.",
+          "check-status-payment-dates-and-amounts": "Vérifier l'état, les dates de versement et les montants de vos prestations de vieillesse fédérales.",
+          "Update-mailing-address-and-banking-information": "Mettre à jour votre adresse postale et vos renseignements bancaires."
+        }
       },
       "button": {
         "text": "Ouvrir une session dans MDSC",
@@ -98,7 +87,6 @@
   "contact-us": {
     "title": "Communiquez avec nous",
     "description": "Il y a plusieurs façons dont vous pouvez communiquer avec nous pour obtenir des renseignements au sujet de vos prestations de vieillesse fédérales",
-    "link": "/contact-us",
     "cards": {
       "call-us": {
         "title": "Appelez-nous",
