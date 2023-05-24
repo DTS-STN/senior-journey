@@ -1,4 +1,10 @@
 {
+  "application-name": "Carrefour retraite",
+  "banner": {
+    "alert": "Lieu de test",
+    "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
+  },
+  "checklist": "Liste de contrôle",
   "contact-us": "Nous contacter",
   "date-select-field": {
     "day": "Jour",
@@ -7,11 +13,8 @@
   },
   "english": "English",
   "footer": {
-    "date-modified-text": "Date de modification\u00A0:",
     "canada-ca-alt-text": "Symbole du gouvernement du Canada",
-    "header": "Carrefour retraite",
-    "nav-header": "Organisation du gouvernement du Canada",
-    "explore-retirement-text": "Renseignez-vous sur la retraite",
+    "date-modified-text": "Date de modification\u00a0:",
     "explore-retirement": {
       "going-from-work-to-retirement": "Transition du monde du travail à la retraite",
       "main-sources-of-retirement-income": "Principales sources de revenus de retraite",
@@ -19,25 +22,8 @@
       "rules-of-thumb-for-public-pensions": "Règles générales concernant les prestations de vieillesse fédérales",
       "when-to-collect-public-pensions": "Quand commencer à recevoir des pensions gouvernementales"
     },
-    "menu-text": "Menu",
-    "menu": {
-      "checklist": "Liste de contrôle",
-      "contact-us-url": "https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html",
-      "contact-us": "Communiquez avec nous",
-      "cpp-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html",
-      "cpp": "RPC\u00A0: Comment présenter une demande",
-      "explore-retirement": "Renseignez-vous sur la retraite",
-      "msca-url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
-      "msca": "Mon dossier Service Canada",
-      "oas-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html",
-      "oas": "SV\u00A0: Comment présenter une demande"
-    },
-    "retirement-stories-text": "Histoires réelles de retraite",
-    "retirement-stories": {
-      "bonnie": "Bonnie retarde la réduction des épargnes dont elle a besoin",
-      "fred": "Fred décide quand prendre sa pension publique",
-      "keith": "Keith combine son travail avec ses pensions publiques"
-    },
+    "explore-retirement-text": "Renseignez-vous sur la retraite",
+    "header": "Carrefour retraite",
     "links": {
       "about-canada-ca": "À propos de Canada.ca",
       "about-canada-ca-url": "https://www.canada.ca/fr/gouvernement/a-propos.html",
@@ -49,10 +35,30 @@
       "social-media-url": "https://www.canada.ca/fr/sociaux.html",
       "terms-and-condition": "Avis",
       "terms-and-condition-url": "https://www.canada.ca/fr/transparence/avis.html"
-    }
+    },
+    "menu": {
+      "checklist": "Liste de contrôle",
+      "contact-us": "Communiquez avec nous",
+      "contact-us-url": "https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html",
+      "cpp": "RPC\u00a0: Comment présenter une demande",
+      "cpp-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html",
+      "explore-retirement": "Renseignez-vous sur la retraite",
+      "msca": "Mon dossier Service Canada",
+      "msca-url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
+      "oas": "SV\u00a0: Comment présenter une demande",
+      "oas-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html"
+    },
+    "menu-text": "Menu",
+    "nav-header": "Organisation du gouvernement du Canada",
+    "retirement-stories": {
+      "bonnie": "Bonnie retarde la réduction des épargnes dont elle a besoin",
+      "fred": "Fred décide quand prendre sa pension publique",
+      "keith": "Keith combine son travail avec ses pensions publiques"
+    },
+    "retirement-stories-text": "Histoires réelles de retraite"
   },
-  "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00A0:",
-  "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00A0:",
+  "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00a0:",
+  "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00a0:",
   "francais": "Français",
   "goc": "Governement du Canada",
   "goc-site": "Canada.ca",
@@ -62,40 +68,33 @@
   },
   "language-selection": "Sélection de la langue",
   "login": "Connexion",
+  "modal-go-back": {
+    "cancel-button": "Annuler",
+    "description": "Êtes-vous sûr de vouloir revenir en arrière?",
+    "header": "Retournez à la page d'accueil",
+    "no-button": "Non",
+    "yes-button": "Oui"
+  },
+  "modal-idle-timeout": {
+    "continue-session": "Continuer la session",
+    "description": "Vous avez été inactif pendant 10 minutes et votre session doit expirer dans {{timeRemaining}}. Sélectionnez 'Continuer la session' pour continuer votre session.",
+    "end-session": "Terminer la session",
+    "header": "Avertissement d'expiration de la session"
+  },
+  "opens-in-new-tab": "(s'ouvre dans un nouvel onglet)",
   "required": "(obligatoire)",
   "service-and-benefits": "Service et avantages",
   "skip-to": {
     "about-government": "Passer à «\u00a0Au sujet du gouvernement\u00a0»"
   },
-  "title": "accueil",
-  "tools": "Outils",
-  "top-of-page": "Haut de la page",
-  "welcome": "Bienvenue à",
-  "modal-go-back": {
-    "cancel-button": "Annuler",
-    "yes-button": "Oui",
-    "no-button": "Non",
-    "header": "Retournez à la page d'accueil",
-    "description": "Êtes-vous sûr de vouloir revenir en arrière?"
-  },
-  "modal-idle-timeout": {
-    "header": "Avertissement d'expiration de la session",
-    "description": "Vous avez été inactif pendant 10 minutes et votre session doit expirer dans {{timeRemaining}}. Sélectionnez 'Continuer la session' pour continuer votre session.",
-    "continue-session": "Continuer la session",
-    "end-session": "Terminer la session"
-  },
-  "opens-in-new-tab": "(s'ouvre dans un nouvel onglet)",
-  "banner": {
-    "alert": "Lieu de test",
-    "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
-  },
-  "application-name": "Carrefour retraite",
-  "checklist": "Liste de contrôle",
   "table-of-contents": {
     "aria-label": "Table des matières",
     "dialog": {
       "trigger-aria-label": "Ouvrir la table des matières"
     },
     "header": "Contenu"
-  }
+  },
+  "title": "accueil",
+  "tools": "Outils",
+  "top-of-page": "Haut de la page"
 }
