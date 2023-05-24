@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import { compact, isEmpty } from 'lodash'
+import { isEmpty } from 'lodash'
 
-import { ChecklistFilters } from '../../pages/checklist/[filters]'
+import { toChecklistFilter } from '../mappers/quiz-form-state-mapper'
 import { useQuizData } from './useQuizData'
 
 export const useChecklistUrl = () => {
@@ -16,7 +16,7 @@ export const useChecklistUrl = () => {
     }
 
     // Encodes a js object as a url-safe base64 string.
-    const checklistFilters: ChecklistFilters = { answers: compact(Object.values<string>(quizData)), tags: [] }
+    const checklistFilters = toChecklistFilter(quizData)
     const encodedChecklistFilters = encodeURIComponent(window.btoa(JSON.stringify(checklistFilters)))
     setChecklistUrl(`/checklist/${encodedChecklistFilters}`)
   }, [quizData])

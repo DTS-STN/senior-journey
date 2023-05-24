@@ -1,6 +1,6 @@
 import { UseMutationOptions, useMutation, useQueryClient } from '@tanstack/react-query'
 
-import { QuizFormState } from '../../components/quiz/QuizDialog'
+import { QuizFormState } from '../types'
 
 /**
  * Stores Quiz data in sessionStorage

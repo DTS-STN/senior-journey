@@ -1,4 +1,7 @@
+import * as yup from 'yup'
+
 import tasksData from '../data/tasks.json'
+import { checklistFiltersSchema } from './schemas/checklist-filters-schema'
 
 export type AdobeDataLayer = { push?: (object: Record<string, string>) => void }
 
@@ -47,3 +50,20 @@ export type TasksGroupData =
   | typeof tasksData.applyingBenefits
   | typeof tasksData.beforeRetiring
   | typeof tasksData.receivingBenefits
+
+export interface QuizFormState {
+  divorcedOrSeparated: string
+  financialPreparedness: string
+  hasChildren: string
+  hasCppDisabilityBenefits: string
+  hasExtraIncome: string
+  legalStatus: string
+  marriedOrCommonLaw: string
+  retirementAge: string
+  retirementTimeframe: string
+  single: string
+  widowed: string
+  yearsInCanada: string
+}
+
+export interface ChecklistFilters extends yup.InferType<typeof checklistFiltersSchema> {}
