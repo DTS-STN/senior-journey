@@ -1,62 +1,62 @@
 {
-  "header": "(FR) Learn",
-  "explore": "(FR) Explore our content",
   "banner": {
-    "title": "Vous ne savez pas par où commencer. Répondez à notre questionnaire!",
+    "quiz": "Répondez au questionnaire maintenant!",
     "text": "Recevez une liste de vérification personnalisée pour vous guider tout au long de votre retraite.",
-    "quiz": "Répondez au questionnaire maintenant!"
+    "title": "Vous ne savez pas par où commencer. Répondez à notre questionnaire!"
   },
+  "explore": "(FR) Explore our content",
+  "header": "(FR) Learn",
   "min-read": "Temps de lecture\u00a0: {{minRead}} minutes",
   "sections": {
     "learn-about": {
-      "title": "Gérer votre argent à la retraite",
       "body": "Préparez votre vieillesse en examinant les différentes sources de revenus de retraite et apprenez à gérer votre argent une fois à la retraite.",
       "cards": {
-        "sources-of-income": {
-          "title": "Principales sources de revenus de retraite",
-          "body": "Renseignez-vous sur les prestations de vieillesse, les régimes privés d'épargne-retraite et la manière dont ils fonctionnent ensemble."
-        },
         "planning-to-save": {
-          "title": "Planifiez pour épargner en vue de la retraite",
-          "body": "Découvrez comment maximiser votre épargne et mieux gérer votre argent à la retraite."
+          "body": "Découvrez comment maximiser votre épargne et mieux gérer votre argent à la retraite.",
+          "title": "Planifiez pour épargner en vue de la retraite"
+        },
+        "sources-of-income": {
+          "body": "Renseignez-vous sur les prestations de vieillesse, les régimes privés d'épargne-retraite et la manière dont ils fonctionnent ensemble.",
+          "title": "Principales sources de revenus de retraite"
         }
-      }
+      },
+      "title": "Gérer votre argent à la retraite"
     },
     "making-decisions": {
-      "title": "Prendre des décisions concernant la retraite",
       "body": "Soyez plus confiant dans les choix que vous faites concernant votre retraite. Utilisez ces ressources pour mieux comprendre les options qui s'offrent à vous et leur incidence sur vos prestations.",
       "cards": {
-        "when-to-collect": {
-          "title": "Quand commencer à recevoir des pensions gouvernementales",
-          "body": "Vous pouvez choisir le moment où vous souhaitez commencer à recevoir vos prestations de vieillesse. Assurez-vous de bien comprendre les éléments dont il faut tenir compte pour prendre cette décision."
-        },
         "from-work-to-retirement": {
-          "title": "(FR) Working during retirement",
-          "body": "De nombreux Canadiens continuent à travailler pendant la retraite. Découvrez l'incidence que peuvent avoir les sommes que vous gagnez sur vos prestations."
+          "body": "De nombreux Canadiens continuent à travailler pendant la retraite. Découvrez l'incidence que peuvent avoir les sommes que vous gagnez sur vos prestations.",
+          "title": "(FR) Working during retirement"
         },
         "rules-of-thumb": {
-          "title": "Règles générales concernant les prestations de vieillesse fédérales",
-          "body": "Conseils en matière de pension selon votre situation personnelle."
+          "body": "Conseils en matière de pension selon votre situation personnelle.",
+          "title": "Règles générales concernant les prestations de vieillesse fédérales"
+        },
+        "when-to-collect": {
+          "body": "Vous pouvez choisir le moment où vous souhaitez commencer à recevoir vos prestations de vieillesse. Assurez-vous de bien comprendre les éléments dont il faut tenir compte pour prendre cette décision.",
+          "title": "Quand commencer à recevoir des pensions gouvernementales"
         }
-      }
+      },
+      "title": "Prendre des décisions concernant la retraite"
     },
     "stories": {
-      "title": "Histoires réelles de retraite",
       "body": "Vous ne savez pas quand prendre votre retraite. Lisez les histoires dont certaines personnes nous ont fait part. Découvrez les différents choix et comparez-les à votre situation personnelle.",
       "cards": {
-        "fred": {
-          "title": "(FR) Fred decides when to take his public pensions",
-          "body": "(FR) As Fred can afford to wait, he decides to delay. This will increase his monthly and lifetime pensions."
-        },
         "bonnie": {
-          "title": "(FR) Bonnie delays to reduce  the savings she needs",
-          "body": "(FR) Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP pension."
+          "body": "(FR) Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP pension.",
+          "title": "(FR) Bonnie delays to reduce  the savings she needs"
+        },
+        "fred": {
+          "body": "(FR) As Fred can afford to wait, he decides to delay. This will increase his monthly and lifetime pensions.",
+          "title": "(FR) Fred decides when to take his public pensions"
         },
         "keith": {
-          "title": "(FR) Keith combines his work with his public pensions",
-          "body": "(FR) Keith chooses between delaying his public pensions or taking Post Retirement Benefits while working."
+          "body": "(FR) Keith chooses between delaying his public pensions or taking Post Retirement Benefits while working.",
+          "title": "(FR) Keith combines his work with his public pensions"
         }
-      }
+      },
+      "title": "Histoires réelles de retraite"
     }
   }
 }
