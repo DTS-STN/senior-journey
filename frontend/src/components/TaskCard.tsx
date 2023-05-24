@@ -28,7 +28,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, task }) 
         </>
       )}
       {task.tags.length > 0 && (
-        <div className="flex gap-">
+        <div className="flex gap-2">
           {task.tags.map((tag) => (
             <Chip key={tag.code} label={tag.title} />
           ))}
