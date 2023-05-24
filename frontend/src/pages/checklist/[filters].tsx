@@ -115,7 +115,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
           </div>
         </section>
 
-        <div className="grid gap-6 print:block lg:grid-cols-12">
+        <div className="print:block sm:grid sm:gap-6 lg:grid-cols-12">
           <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
             <div className="mb-4 text-right">
               <Button
