@@ -47,16 +47,6 @@ const Bonnie: FC = () => {
     [t]
   )
 
-  const Img = ({ pension, classes }: { pension: string; classes?: string }) => (
-    <Image
-      alt={t(`${pension}.description`)}
-      src={t(`${pension}.img-url.${mobile ? 'mobile' : 'desktop'}`)}
-      width={842}
-      height={519}
-      className={`w-full ${classes}`}
-    />
-  )
-
   return (
     <>
       <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
@@ -134,7 +124,13 @@ const Bonnie: FC = () => {
         <h2 id="stopping-earnings" className="h2">
           {t('stopping-earnings.heading')}
         </h2>
-        <Img pension="stopping-earnings" />
+        <Image
+          alt={t('stopping-earnings.description')}
+          src={t(`stopping-earnings.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('stopping-earnings.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('stopping-earnings.accessibility', { returnObjects: true })}
@@ -159,7 +155,13 @@ const Bonnie: FC = () => {
             }}
           />
         </p>
-        <Img pension="adding-oas" />
+        <Image
+          alt={t('adding-oas.description')}
+          src={t(`adding-oas.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('adding-oas.p3')}</p>
         <AccessibilityGraphContainer
           tableData={t('adding-oas.accessibility', { returnObjects: true })}
@@ -178,7 +180,13 @@ const Bonnie: FC = () => {
           <li>{t('cpp.li2')}</li>
           <li>{t('cpp.li3')}</li>
         </ul>
-        <Img pension="cpp" />
+        <Image
+          alt={t('cpp.description')}
+          src={t(`cpp.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.accessibility', { returnObjects: true })}
@@ -195,7 +203,13 @@ const Bonnie: FC = () => {
         <p>
           <Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.p1" />
         </p>
-        <Img pension="own-savings" />
+        <Image
+          alt={t('own-savings.description')}
+          src={t(`own-savings.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">
           <Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.p2" />
         </p>
@@ -211,7 +225,13 @@ const Bonnie: FC = () => {
           {t('early-pension.heading')}
         </h2>
         <p>{t('early-pension.p1')}</p>
-        <Img pension="early-pension" />
+        <Image
+          alt={t('early-pension.description')}
+          src={t(`early-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
 
         <p className="mt-2 rounded-lg bg-gray-surface p-4">
           <Trans ns="learn/case-studies/bonnie" i18nKey="early-pension.p2" />
