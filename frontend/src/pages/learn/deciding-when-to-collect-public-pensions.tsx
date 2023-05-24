@@ -48,16 +48,6 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
     [t]
   )
 
-  const Img = ({ pension, classes }: { pension: string; classes?: string }) => (
-    <Image
-      alt={t(`${pension}.description`)}
-      src={t(`${pension}.img-url.${mobile ? 'mobile' : 'desktop'}`)}
-      width={842}
-      height={519}
-      className={`w-full ${classes}`}
-    />
-  )
-
   return (
     <>
       <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
@@ -170,7 +160,13 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           </table>
         </Paper>
 
-        <Img pension="old-age-security.oas-delay" />
+        <Image
+          alt={t('old-age-security.oas-delay.description')}
+          src={t(`old-age-security.oas-delay.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('old-age-security.oas-delay.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('old-age-security.oas-delay.accessibility', { returnObjects: true })}
@@ -181,7 +177,13 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         />
 
         <p>{t('old-age-security.auto-increase.p1')}</p>
-        <Img pension="old-age-security.auto-increase" />
+        <Image
+          alt={t('old-age-security.auto-increase.description')}
+          src={t(`old-age-security.auto-increase.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('old-age-security.auto-increase.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('old-age-security.auto-increase.accessibility', { returnObjects: true })}
@@ -217,7 +219,13 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <AlertCard type="tip">
           <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
         </AlertCard>
-        <Img pension="cpp-pension" classes="mt-2" />
+        <Image
+          alt={t('cpp-pension.description')}
+          src={t(`cpp-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="mt-2 w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp-pension.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp-pension.accessibility', { returnObjects: true })}

@@ -48,16 +48,6 @@ const Fred: FC = () => {
     [t]
   )
 
-  const Img = ({ pension, classes }: { pension: string; classes?: string }) => (
-    <Image
-      alt={t(`${pension}.description`)}
-      src={t(`${pension}.img-url.${mobile ? 'mobile' : 'desktop'}`)}
-      width={842}
-      height={519}
-      className={`w-full ${classes}`}
-    />
-  )
-
   return (
     <>
       <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
@@ -163,7 +153,13 @@ const Fred: FC = () => {
         <h2 id="fred-cpp" className="h2">
           {t('cpp.heading')}
         </h2>
-        <Img pension="cpp.monthly-pension" />
+        <Image
+          alt={t('cpp.monthly-pension.description')}
+          src={t(`cpp.monthly-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.monthly-pension.p1')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.monthly-pension.accessibility', { returnObjects: true })}
@@ -177,7 +173,13 @@ const Fred: FC = () => {
         </AlertCard>
         <p>{t('cpp.monthly-pension.p2')}</p>
         <p>{t('cpp.monthly-pension.p3')}</p>
-        <Img pension="cpp.lifetime-pension" classes="mt-10 mb-5" />
+        <Image
+          alt={t('cpp.lifetime-pension.description')}
+          src={t(`cpp.lifetime-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="mb-5 mt-10 w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.lifetime-pension.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.lifetime-pension.accessibility', { returnObjects: true })}
@@ -193,7 +195,13 @@ const Fred: FC = () => {
         <h2 id="fred-oas" className="h2">
           {t('oas.heading')}
         </h2>
-        <Img pension="oas.monthly-pension" />
+        <Image
+          alt={t('oas.monthly-pension.description')}
+          src={t(`oas.monthly-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('oas.monthly-pension.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('oas.monthly-pension.accessibility', { returnObjects: true })}
@@ -203,7 +211,13 @@ const Fred: FC = () => {
           valuesHeading={t('values-heading')}
         />
         <p>{t('oas.lifetime-pension.p1')}</p>
-        <Img pension="oas.lifetime-pension" classes="mb-5" />
+        <Image
+          alt={t('oas.lifetime-pension.description')}
+          src={t(`oas.lifetime-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="mb-5 w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('oas.lifetime-pension.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('oas.lifetime-pension.accessibility', { returnObjects: true })}

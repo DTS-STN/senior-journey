@@ -43,16 +43,6 @@ const Keith: FC = () => {
     [t]
   )
 
-  const Img = ({ pension, classes }: { pension: string; classes?: string }) => (
-    <Image
-      alt={t(`${pension}.description`)}
-      src={t(`${pension}.img-url.${mobile ? 'mobile' : 'desktop'}`)}
-      width={842}
-      height={519}
-      className={`w-full ${classes}`}
-    />
-  )
-
   return (
     <>
       <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
@@ -161,7 +151,13 @@ const Keith: FC = () => {
         <h2 id="cpp-choices" className="h2">
           {t('cpp.cpp-choices.heading')}
         </h2>
-        <Img pension="cpp.cpp-choices" />
+        <Image
+          alt={t('cpp.cpp-choices.description')}
+          src={t(`cpp.cpp-choices.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
           <div>
             <p>{t('cpp.cpp-choices.choices.li1')}</p>
@@ -214,7 +210,13 @@ const Keith: FC = () => {
           ))}
         </ul>
 
-        <Img pension="cpp.keith-pension-87" />
+        <Image
+          alt={t('cpp.keith-pension-87.description')}
+          src={t(`cpp.keith-pension-87.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
           <div>
             <p>{t('cpp.keith-pension-87.choices.li1')}</p>
@@ -238,7 +240,13 @@ const Keith: FC = () => {
           {t('cpp.keith-pension-90.heading')}
         </h2>
         <p>{t('cpp.keith-pension-90.p1')}</p>
-        <Img pension="cpp.keith-pension-90" />
+        <Image
+          alt={t('cpp.keith-pension-90.description')}
+          src={t(`cpp.keith-pension-90.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
           <div>
             <p>{t('cpp.keith-pension-90.choices.li1')}</p>
