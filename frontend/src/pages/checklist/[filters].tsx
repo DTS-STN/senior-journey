@@ -231,7 +231,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
     const receivingBenefitsTasks = sortTasksByDisplayOrder(receivingBenefits.tasks)
 
     function filterTasksByAnswers({ answerKey }: { answerKey: string }) {
-      if (isEmpty(validatedFilters.answers) && answerKey === 'all') return true
+      if (answerKey === 'all') return true
       return validatedFilters.answers.some((answer) => answer === answerKey)
     }
 
