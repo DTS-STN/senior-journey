@@ -1,97 +1,97 @@
 {
-  "landing": {
-    "header": "Retirement Ready Quiz",
-    "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
-    "p2": "Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
-    "whatyouneed": "What you'll need",
-    "p3": "You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
-    "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
-    "residence": "<strong>residence history</strong> (number of years lived in Canada)",
-    "marital": "<strong>marital status</strong>",
-    "retirement": "<strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
-    "timetocomplete": "Time to complete survey",
-    "minutes": "3 minutes",
-    "start-the-quiz": "Start the quiz"
-  },
   "confirmation": {
-    "sure": "Are you sure you want to close this quiz? You will lose your progress.",
     "no": "No, return to quiz",
+    "sure": "Are you sure you want to close this quiz? You will lose your progress.",
     "yes": "Yes, close"
   },
+  "landing": {
+    "header": "Retirement Ready Quiz",
+    "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
+    "marital": "<strong>marital status</strong>",
+    "minutes": "3 minutes",
+    "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
+    "p2": "Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
+    "p3": "You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
+    "residence": "<strong>residence history</strong> (number of years lived in Canada)",
+    "retirement": "<strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
+    "start-the-quiz": "Start the quiz",
+    "timetocomplete": "Time to complete survey",
+    "whatyouneed": "What you'll need"
+  },
   "navigation": {
-    "previous": "Previous question",
-    "next": "Next question",
-    "submit": "Submit",
     "close": "Close",
-    "title": "Retirement Ready Quiz",
-    "progress": "Question {{currentStep}} of {{totalSteps}}"
+    "next": "Next question",
+    "previous": "Previous question",
+    "progress": "Question {{currentStep}} of {{totalSteps}}",
+    "submit": "Submit",
+    "title": "Retirement Ready Quiz"
   },
   "questions": {
-    "question-when": {
-      "title": "When do you plan on retiring?",
-      "option-pre-60": "Before age 60",
-      "option-between-60-and-65": "Between ages 60 and 65",
-      "option-at-65": "At age 65",
-      "option-between-65-and-70": "Between ages 65 and 70",
-      "option-after-70": "After age 70",
-      "option-unsure-retirement-age": "Not sure"
-    },
     "question-apply": {
-      "question-marital-status": {
-        "title": "Select all that apply to you. You are...",
-        "option-single": "Single",
-        "option-married-or-cl": "Married or common-law",
-        "option-divorced-or-separated": "Divorced or separated",
-        "option-widowed": "Widowed"
-      },
       "question-children": {
-        "title": "Do you have children?",
+        "option-no-kids": "No",
         "option-yes-kids": "Yes",
-        "option-no-kids": "No"
+        "title": "Do you have children?"
+      },
+      "question-marital-status": {
+        "option-divorced-or-separated": "Divorced or separated",
+        "option-married-or-cl": "Married or common-law",
+        "option-single": "Single",
+        "option-widowed": "Widowed",
+        "title": "Select all that apply to you. You are..."
       }
     },
+    "question-disability-benefits": {
+      "option-cppd-no": "No",
+      "option-cppd-yes": "Yes",
+      "title": "Are you receiving CPP-Disability benefits?"
+    },
+    "question-earn": {
+      "option-no-income": "No",
+      "option-unsure-income": "Not sure",
+      "option-yes-income": "Yes",
+      "subtitle": "Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
+      "title": "Do you plan to earn money while receiving retirement benefits"
+    },
     "question-feel": {
-      "title": "How financially prepared do you feel for retirement?",
-      "subtitle": "Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
-      "option-very-unprepared": "Very unprepared",
+      "option-prepared": "Prepared",
       "option-unprepared": "Unprepared",
       "option-unsure-preparedness": "Not sure",
-      "option-prepared": "Prepared",
-      "option-very-prepared": "Very Prepared"
+      "option-very-prepared": "Very Prepared",
+      "option-very-unprepared": "Very unprepared",
+      "subtitle": "Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
+      "title": "How financially prepared do you feel for retirement?"
+    },
+    "question-how-long": {
+      "option-in-canada-10-to-39": "10 to 39 years",
+      "option-in-canada-40-plus": "40 years or more",
+      "option-in-canada-less-than-10": "Less than 10 years",
+      "option-unsure-in-canada": "Not sure",
+      "title": "From age 18, how many years will you have lived in Canada when you apply for retirement benefits?"
+    },
+    "question-status": {
+      "option-status-citizen": "Canadian Citizen or Permanent Resident",
+      "option-status-first-nation": "Métis, Inuit, or Member of First Nation",
+      "option-status-other": "Visitor, Student, or Temporary Worker",
+      "option-status-sponsored": "Sponsored Resident (less than 10 years in Canada)",
+      "title": "When you retire, what will your legal status be in Canada?"
+    },
+    "question-when": {
+      "option-after-70": "After age 70",
+      "option-at-65": "At age 65",
+      "option-between-60-and-65": "Between ages 60 and 65",
+      "option-between-65-and-70": "Between ages 65 and 70",
+      "option-pre-60": "Before age 60",
+      "option-unsure-retirement-age": "Not sure",
+      "title": "When do you plan on retiring?"
     },
     "question-where": {
-      "title": "Where do you plan on living when you retire?",
       "option-canada-ft": "In Canada",
       "option-canada-pt-60-or-more": "In Canada MORE Than 6 Months a Year",
       "option-canada-pt-less-than-60": "In Canada LESS than 6 months a year",
       "option-outside-canada": "Outside Canada",
-      "option-unsure-retirement-living": "Not Sure"
-    },
-    "question-earn": {
-      "title": "Do you plan to earn money while receiving retirement benefits",
-      "subtitle": "Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
-      "option-no-income": "No",
-      "option-yes-income": "Yes",
-      "option-unsure-income": "Not sure"
-    },
-    "question-status": {
-      "title": "When you retire, what will your legal status be in Canada?",
-      "option-status-citizen": "Canadian Citizen or Permanent Resident",
-      "option-status-first-nation": "Métis, Inuit, or Member of First Nation",
-      "option-status-sponsored": "Sponsored Resident (less than 10 years in Canada)",
-      "option-status-other": "Visitor, Student, or Temporary Worker"
-    },
-    "question-how-long": {
-      "title": "From age 18, how many years will you have lived in Canada when you apply for retirement benefits?",
-      "option-in-canada-40-plus": "40 years or more",
-      "option-in-canada-10-to-39": "10 to 39 years",
-      "option-in-canada-less-than-10": "Less than 10 years",
-      "option-unsure-in-canada": "Not sure"
-    },
-    "question-disability-benefits": {
-      "title": "Are you receiving CPP-Disability benefits?",
-      "option-cppd-yes": "Yes",
-      "option-cppd-no": "No"
+      "option-unsure-retirement-living": "Not Sure",
+      "title": "Where do you plan on living when you retire?"
     }
   }
 }
