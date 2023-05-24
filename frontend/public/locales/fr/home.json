@@ -1,60 +1,42 @@
 {
-  "header": "Acceuil",
   "banner": {
-    "title": "Informez-vous sur votre retraite et planifiez en conséquence",
-    "text": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite."
+    "text": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite.",
+    "title": "Informez-vous sur votre retraite et planifiez en conséquence"
   },
+  "contact-us": {
+    "cards": {
+      "call-us": {
+        "description": "Vous pouvez nous joindre aux numéros suivants\u00a0:",
+        "outside": {
+          "description": "Les heures d'ouverture sont de de 8 h à 17 h, heure locale, du lundi au vendredi.",
+          "href": "https://www.canada.ca/fr/contact/international.html",
+          "number": "Composer le 1\u00a0800\u00a0O\u2011Canada à l'étranger",
+          "title": "À l'extérieur du Canada\u00a0:"
+        },
+        "title": "Appelez-nous",
+        "toll-free": {
+          "description": "Les heures d'ouverture sont de 8 h à 17 h, heure locale, du lundi au vendredi.",
+          "number": "1\u00a0800\u00a0O\u2011Canada (1\u2011800\u2011622\u20116232)",
+          "title": "Téléphone\u00a0:"
+        },
+        "tty": {
+          "number": "1\u2011800\u2011926\u20119105",
+          "title": "ATS\u00a0:"
+        }
+      },
+      "find-office": {
+        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=fra",
+        "link-text": "Trouver un Centre Service Canada près de chez vous",
+        "title": "Trouver un bureau"
+      }
+    },
+    "description": "Il y a plusieurs façons dont vous pouvez communiquer avec nous pour obtenir des renseignements au sujet de vos prestations de vieillesse fédérales",
+    "title": "Communiquez avec nous"
+  },
+  "header": "Acceuil",
   "tabs": {
-    "learn": {
-      "title": "Apprendre",
-      "heading": "Tirez le maximum de vos régimes de pension au Canada",
-      "description": {
-        "options-and-tips": "Il y a de nombreux facteurs à prendre en compte avant de prendre sa retraite.",
-        "stories": "Découvrez les bases des prestations de vieillesse au Canada et les moyens de gérer votre argent à la retraite."
-      },
-      "button-text": "Renseignez-vous sur la retraite",
-      "linksTitle": "Principaux liens pour l' apprentissage en ce qui concerne la retraite",
-      "links": {
-        "when-to-collect": {
-          "title": "Choisir quand commencer à recevoir vos pensions publiques",
-          "description": "La flexibilité des pensions de la SV et du RPC vous offre des choix pour votre retraite. Apprenez quels sont les aspects à prendre en considération et comment en venir à une décision."
-        },
-        "rules-of-thumb": {
-          "title": "Règles générales sur les régimes de pensions publics",
-          "description": "Consultez ces conseils pour vous aider à décider quand prendre vos pensions de la SV et du RPC. Choisissez ce qui vous convient."
-        },
-        "case-study-bonnie": {
-          "title": "Bonnie décide d'attendre afin de réduire les épargnes dont elle a besoin",
-          "description": "Si Bonnie décide d'attendre avant de commencer à recevoir sa pension de la SV et du RPC, elle aura besoin de moins d'épargnes."
-        }
-      }
-    },
-    "plan": {
-      "title": "Planifier",
-      "heading": "Vous ne savez pas par où commencer? Répondez à notre questionnaire!",
-      "description": "Recevez une liste personnalisée pour vous guider à travers la retraite.",
-      "button": {
-        "text": "Répondez au questionnaire"
-      },
-      "linksTitle": "Autres outils",
-      "links": {
-        "retirement-income-calculator": {
-          "title": "Calculatrice du revenu de retraite Canadienne (CRRC)",
-          "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
-          "description": "Obtenez une estimation de votre revenu de retraite. Cette estimation tient compte de vos prestations de vieillesse fédérales et de votre revenu de retraite d'un régime privé."
-        },
-        "oas-eligibility-estimator": {
-          "title": "Estimateur de prestations de la Sécurité de la vieillesse",
-          "url": "https://alpha.service.canada.ca/fr/projets/estimateur-prestations-sv",
-          "description": "Découvrez les montants que vous pourriez recevoir dans le cadre du programme de la Sécurité de la vieillesse et ses prestations."
-        }
-      }
-    },
     "apply": {
-      "title": "Presenter une demande",
-      "heading": "Vous êtes prêt à présenter une demande pour vos pensions publiques? Commencez maintenant",
       "description": {
-        "text": "Pour présenter une demande en ligne, vous pouvez ouvrir une session dans Mon dossier Service Canada (MDSC) ou vous inscrire pour ouvrir un compte MDSC. Pour présenter une demande en personne ou par la poste, vous pouvez remplir une demande papier.",
         "links": {
           "how-to-apply": {
             "title": "Régime de pensions du Canada\u00a0: Comment présenter une demande",
@@ -64,54 +46,72 @@
             "title": "Sécurité de la vieillesse\u00a0: Comment présenter une demande",
             "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/demande.html"
           }
-        }
-      }
+        },
+        "text": "Pour présenter une demande en ligne, vous pouvez ouvrir une session dans Mon dossier Service Canada (MDSC) ou vous inscrire pour ouvrir un compte MDSC. Pour présenter une demande en personne ou par la poste, vous pouvez remplir une demande papier."
+      },
+      "heading": "Vous êtes prêt à présenter une demande pour vos pensions publiques? Commencez maintenant",
+      "title": "Presenter une demande"
     },
-    "manage": {
-      "title": "Gérer",
-      "heading": "Prenez le contrôle de vos prestations de vieillesse fédérales grâce à Mon dossier Service Canada (MDSC)",
+    "learn": {
+      "button-text": "Renseignez-vous sur la retraite",
       "description": {
-        "text": "MDSC vous permet de faire beaucoup de choses, notamment\u00a0:",
-        "list": {
-          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse.",
-          "check-status-payment-dates-and-amounts": "Vérifier l'état, les dates de versement et les montants de vos prestations de vieillesse fédérales.",
-          "Update-mailing-address-and-banking-information": "Mettre à jour votre adresse postale et vos renseignements bancaires."
+        "options-and-tips": "Il y a de nombreux facteurs à prendre en compte avant de prendre sa retraite.",
+        "stories": "Découvrez les bases des prestations de vieillesse au Canada et les moyens de gérer votre argent à la retraite."
+      },
+      "heading": "Tirez le maximum de vos régimes de pension au Canada",
+      "links": {
+        "case-study-bonnie": {
+          "description": "Si Bonnie décide d'attendre avant de commencer à recevoir sa pension de la SV et du RPC, elle aura besoin de moins d'épargnes.",
+          "title": "Bonnie décide d'attendre afin de réduire les épargnes dont elle a besoin"
+        },
+        "rules-of-thumb": {
+          "description": "Consultez ces conseils pour vous aider à décider quand prendre vos pensions de la SV et du RPC. Choisissez ce qui vous convient.",
+          "title": "Règles générales sur les régimes de pensions publics"
+        },
+        "when-to-collect": {
+          "description": "La flexibilité des pensions de la SV et du RPC vous offre des choix pour votre retraite. Apprenez quels sont les aspects à prendre en considération et comment en venir à une décision.",
+          "title": "Choisir quand commencer à recevoir vos pensions publiques"
         }
       },
+      "linksTitle": "Principaux liens pour l' apprentissage en ce qui concerne la retraite",
+      "title": "Apprendre"
+    },
+    "manage": {
       "button": {
         "text": "Ouvrir une session dans MDSC",
         "url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html"
-      }
-    }
-  },
-  "contact-us": {
-    "title": "Communiquez avec nous",
-    "description": "Il y a plusieurs façons dont vous pouvez communiquer avec nous pour obtenir des renseignements au sujet de vos prestations de vieillesse fédérales",
-    "cards": {
-      "call-us": {
-        "title": "Appelez-nous",
-        "description": "Vous pouvez nous joindre aux numéros suivants\u00a0:",
-        "toll-free": {
-          "title": "Téléphone\u00a0:",
-          "description": "Les heures d'ouverture sont de 8 h à 17 h, heure locale, du lundi au vendredi.",
-          "number": "1 800 O-Canada (1-800-622-6232)"
+      },
+      "description": {
+        "list": {
+          "Update-mailing-address-and-banking-information": "Mettre à jour votre adresse postale et vos renseignements bancaires.",
+          "check-status-payment-dates-and-amounts": "Vérifier l'état, les dates de versement et les montants de vos prestations de vieillesse fédérales.",
+          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse."
         },
-        "tty": {
-          "title": "ATS\u00a0:",
-          "number": "1-800-926-9105"
+        "text": "MDSC vous permet de faire beaucoup de choses, notamment\u00a0:"
+      },
+      "heading": "Prenez le contrôle de vos prestations de vieillesse fédérales grâce à Mon dossier Service Canada (MDSC)",
+      "title": "Gérer"
+    },
+    "plan": {
+      "button": {
+        "text": "Répondez au questionnaire"
+      },
+      "description": "Recevez une liste personnalisée pour vous guider à travers la retraite.",
+      "heading": "Vous ne savez pas par où commencer? Répondez à notre questionnaire!",
+      "links": {
+        "oas-eligibility-estimator": {
+          "description": "Découvrez les montants que vous pourriez recevoir dans le cadre du programme de la Sécurité de la vieillesse et ses prestations.",
+          "title": "Estimateur de prestations de la Sécurité de la vieillesse",
+          "url": "https://alpha.service.canada.ca/fr/projets/estimateur-prestations-sv"
         },
-        "outside": {
-          "title": "À l'extérieur du Canada\u00a0:",
-          "description": "Les heures d'ouverture sont de de 8 h à 17 h, heure locale, du lundi au vendredi.",
-          "number": "Composer le 1 800 O-Canada à l'étranger",
-          "href": "https://www.canada.ca/fr/contact/international.html"
+        "retirement-income-calculator": {
+          "description": "Obtenez une estimation de votre revenu de retraite. Cette estimation tient compte de vos prestations de vieillesse fédérales et de votre revenu de retraite d'un régime privé.",
+          "title": "Calculatrice du revenu de retraite Canadienne (CRRC)",
+          "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html"
         }
       },
-      "find-office": {
-        "title": "Trouver un bureau",
-        "link-text": "Trouver un Centre Service Canada près de chez vous",
-        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=fra"
-      }
+      "linksTitle": "Autres outils",
+      "title": "Planifier"
     }
   }
 }

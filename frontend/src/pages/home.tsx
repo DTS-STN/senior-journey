@@ -282,12 +282,12 @@ const Home: FC = () => {
           <p>{t('contact-us.cards.call-us.description')}</p>
           <div className="grid lg:grid-cols-2">
             <p>
-              <strong>{t('contact-us.cards.call-us.toll-free.title')}</strong>{' '}
-              <span>{t('contact-us.cards.call-us.toll-free.number')}</span>
+              <strong>{t('contact-us.cards.call-us.toll-free.title')}</strong>
+              {' ' + t('contact-us.cards.call-us.toll-free.number')}
             </p>
             <p>
-              <strong>{t('contact-us.cards.call-us.tty.title')}</strong>{' '}
-              <span>{t('contact-us.cards.call-us.tty.number')}</span>
+              <strong>{t('contact-us.cards.call-us.tty.title')}</strong>
+              {' ' + t('contact-us.cards.call-us.tty.number')}
             </p>
           </div>
           <p>{t('contact-us.cards.call-us.toll-free.description')}</p>
