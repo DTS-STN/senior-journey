@@ -1,11 +1,11 @@
 {
-  "links-header": "More resources",
-  "restart-quiz": "Restart quiz",
   "breadcrumbs": {
     "learn": "Learn"
   },
   "filter-tasks": "Filter Tasks",
   "header": "Your retirement checklist",
-  "show-filters": "show filters",
-  "print": "Print"
+  "links-header": "More resources",
+  "print": "Print",
+  "restart-quiz": "Restart quiz",
+  "show-filters": "show filters"
 }
