@@ -1,10 +1,13 @@
 {
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
   },
   "filter-tasks": "(FR) Filter Tasks",
-  "header": "(FR) Your retirement checklist",
+  "header": "Liste de contrôle pour votre retraite",
   "links-header": "(FR) More resources",
+  "meta": {
+    "description": "Planifiez votre retraite avec une liste de contrôle personnalisée pour mieux vous préparez à la retraite!"
+  },
   "print": "(FR) Print",
   "restart-quiz": "(FR) Restart quiz",
   "show-filters": "(FR) show filters"

@@ -4,8 +4,10 @@
     "text": "Recevez une liste de vérification personnalisée pour vous guider tout au long de votre retraite.",
     "title": "Vous ne savez pas par où commencer. Répondez à notre questionnaire!"
   },
-  "explore": "(FR) Explore our content",
-  "header": "(FR) Learn",
+  "header": "Explorer la retraite",
+  "meta": {
+    "description": "Renseignez-vous sur vos options de revenu de retraite et des conseils pour vos choix de pension de la SV/RPC. Lisez les histoires de retraités et leur choix de pension publique."
+  },
   "min-read": "Temps de lecture\u00a0: {{minRead}} minutes",
   "sections": {
     "learn-about": {

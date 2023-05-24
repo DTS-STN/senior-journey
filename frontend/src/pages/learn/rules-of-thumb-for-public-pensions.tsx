@@ -45,7 +45,11 @@ const RulesOfThumbForPublicPensions: FC = () => {
 
   return (
     <>
-      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <NextSeo
+        title={t('header')}
+        description={t('meta.description')}
+        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+      />
       <LearnPageLayout
         header={t('header')}
         breadcrumbItems={[

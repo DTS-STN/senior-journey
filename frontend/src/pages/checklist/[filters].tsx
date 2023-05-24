@@ -90,7 +90,11 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
 
   return (
     <>
-      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <NextSeo
+        title={t('header')}
+        description={t('meta.description')}
+        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+      />
       <Layout
         hideChecklist={true}
         breadcrumbItems={[

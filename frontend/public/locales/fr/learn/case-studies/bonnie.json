@@ -1,8 +1,11 @@
 {
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
   },
-  "header": "(FR) Bonnie delays to reduce the savings she needs",
+  "header": "Bonnie retarde la réduction des épargnes dont elle a besoin",
+  "meta": {
+    "description": "Bonnie aurait besoin de moins d'économies si elle retardait ses versements de la SV et du RPC pour prendre sa retraite à l'aise."
+  },
   "key-takeaways": {
     "heading": "(FR) Key takeaways",
     "li1": "(FR) When you start your retirement, you should think about all your income sources and how they will work together.",
@@ -575,16 +578,16 @@
   },
 
   "learn-more": {
-    "header": "(FR) Learn More",
+    "header": "En savoir pluse",
     "main-sources-of-retirment-income": {
       "href": "/fr/learn/main-sources-of-retirement-income",
-      "header": "(FR) Main sources of retirement income",
+      "header": "Principales sources de revenus de retraite",
       "description": "(FR) Learn about federal benefits, private retirement savings, and how they work together."
     },
     "going-from-work-to-retirement": {
       "href": "/fr/learn/going-from-work-to-retirement",
       "description": "(FR) Many Canadians continue to work in retirement. Learn how the money you earn has an impact on your benefits.",
-      "header": "(FR) Going from work to retirement"
+      "header": "Transition du monde du travail à la retraite"
     },
     "deciding-when-to-take-your-pensions": {
       "href": "/fr/learn/deciding-when-to-collect-public-pensions",

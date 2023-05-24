@@ -1,7 +1,10 @@
 {
-  "header": "(FR) Planning to save for retirement",
+  "header": "Planifiez pour épargner en vue de la retraite",
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
+  },
+  "meta": {
+    "description": "Découvrez comment vos besoins en ce qui concerne vos revenus vont changer. Vos besoins financiers et vos préoccupations vont aussi changer."
   },
   "key-takeaways": {
     "heading": "(FR) Key takeaways",
@@ -31,14 +34,14 @@
     "disclaimer": "(FR) <strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor."
   },
   "learn-more": {
-    "heading": "(FR) Learn More",
+    "heading": "En savoir plus",
     "main-sources-of-retirment-income": {
-      "header": "(FR) Main sources of retirement income",
+      "header": "Principales sources de revenus de retraite",
       "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps."
     },
     "going-from-work-to-retirement": {
       "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
-      "header": "(FR) Going from work to retirement"
+      "header": "Transition du monde du travail à la retraite"
     },
     "budget-planner": {
       "href": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/planificateur-budgetaire",

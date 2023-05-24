@@ -1,8 +1,11 @@
 {
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
   },
-  "header": "(FR) Deciding when to start your public pensions",
+  "header": "Prendre la décision de quand commencer à recevoir des pensions publiques",
+  "meta": {
+    "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer."
+  },
   "key-takeaways": {
     "heading": "(FR) Key takeaways",
     "highest-monthly-amount": "(FR) The highest monthly amount you can start collecting from your public pensions is at age 70.",
@@ -156,22 +159,22 @@
     }
   },
   "learn-more": {
-    "header": "(FR) Learn More",
+    "header": "En savoir plus",
     "main-sources-of-retirment-income": {
       "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
-      "header": "(FR) Main sources of retirement income"
+      "header": "Principales sources de revenus de retraite"
     },
     "going-from-work-to-retirement": {
       "description": "(FR) Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
-      "header": "(FR) Going from work to retirement"
+      "header": "Transition du monde du travail à la retraite"
     },
     "fred-case-study": {
       "description": "(FR) Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him.",
-      "header": "(FR) Fred decides when to start his public pensions"
+      "header": "Fred décide quand prendre sa pension publique"
     },
     "bonnie-case-study": {
       "description": "(FR) Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension.",
-      "header": "(FR) Bonnie delays to reduce the savings she needs"
+      "header": "Bonnie retarde la réduction des épargnes dont elle a besoin"
     }
   },
   "show-accessible-table": "(FR) Show accessible table format",

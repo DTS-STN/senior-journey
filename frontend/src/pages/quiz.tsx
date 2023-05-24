@@ -29,6 +29,7 @@ const Quiz: FC = () => {
     <>
       <NextSeo
         title={t('landing.header')}
+        description={t('landing.meta.description')}
         additionalMetaTags={[getDCTermsTitle(en('landing.header'), fr('landing.header'))]}
       />
       <Layout

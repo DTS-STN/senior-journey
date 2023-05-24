@@ -160,7 +160,11 @@ const Learn: FC = () => {
 
   return (
     <>
-      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <NextSeo
+        title={t('header')}
+        description={t('meta.description')}
+        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+      />
       <Layout
         breadcrumbItems={[
           {

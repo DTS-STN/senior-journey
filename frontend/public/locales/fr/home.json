@@ -34,6 +34,9 @@
     "title": "Communiquez avec nous"
   },
   "header": "Acceuil",
+  "meta": {
+    "description": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite."
+  },
   "tabs": {
     "apply": {
       "description": {
