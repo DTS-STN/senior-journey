@@ -272,15 +272,26 @@ const Keith: FC = () => {
           {t('oas.heading')}
         </h2>
         <p>
-          {t('oas.p1')}
-          <MuiLink href={t('oas.gis.text')} />
-          {t('oas.p2')}
-          <MuiLink href={t('oas.low-income.text')} />
+          <Trans
+            ns="learn/case-studies/keith"
+            i18nKey="oas.p1"
+            components={{
+              a1: <MuiLink href={t('oas.gis-link')} />,
+              a2: <MuiLink href={t('oas.low-income-link')} />,
+            }}
+          />
         </p>
-        <p>{t('oas.p3')}</p>
         <p>
-          {t('oas.p4')}
-          <MuiLink href={t('oas.fred-story.text')} />
+          <Trans ns="learn/case-studies/keith" i18nKey="oas.p2" />
+        </p>
+        <p>
+          <Trans
+            ns="learn/case-studies/keith"
+            i18nKey="oas.p3"
+            components={{
+              a3: <MuiLink component={Link} href="/learn/case-studies/fred" />,
+            }}
+          />
         </p>
 
         <h2 id="conclusion" className="h2">
