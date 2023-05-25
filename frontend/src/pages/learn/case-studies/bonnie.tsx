@@ -7,6 +7,7 @@ import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import AccessibilityGraphContainer from '../../../components/AccessibilityGraphContainer'
 import AlertCard from '../../../components/AlertCard'
@@ -24,17 +25,17 @@ const Bonnie: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
-        href: t('learn-more.main-sources-of-retirment-income.href'),
+        href: '/learn/main-sources-of-retirement-income',
         primary: t('learn-more.main-sources-of-retirment-income.header'),
         secondary: t('learn-more.main-sources-of-retirment-income.description'),
       },
       {
-        href: t('learn-more.going-from-work-to-retirement.href'),
+        href: '/learn/going-from-work-to-retirement',
         primary: t('learn-more.going-from-work-to-retirement.header'),
         secondary: t('learn-more.going-from-work-to-retirement.description'),
       },
       {
-        href: t('learn-more.deciding-when-to-take-your-pensions.href'),
+        href: '/learn/deciding-when-to-collect-public-pensions',
         primary: t('learn-more.deciding-when-to-take-your-pensions.header'),
         secondary: t('learn-more.deciding-when-to-take-your-pensions.description'),
       },
@@ -153,7 +154,7 @@ const Bonnie: FC = () => {
             ns="learn/case-studies/bonnie"
             i18nKey="adding-oas.p2"
             components={{
-              a1: <MuiLink href={t('adding-oas.a1')} />,
+              a1: <MuiLink component={Link} href="/learn/case-studies/fred" />,
             }}
           />
         </p>
@@ -269,7 +270,7 @@ const Bonnie: FC = () => {
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>
               <ListItem disablePadding className="border-b">
-                <ListItemButton href={href} component={MuiLink}>
+                <ListItemButton href={href} component={Link}>
                   <ListItemText
                     primary={primary}
                     primaryTypographyProps={{
