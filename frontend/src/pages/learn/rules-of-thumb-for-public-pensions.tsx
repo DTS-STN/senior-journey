@@ -136,7 +136,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
         <AlertCard type="tip" className="mt-5">
           <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="cpp.smart-tip" />
         </AlertCard>
-        <h3 id="key-takeaways" className="h3">
+        <h3 className="h3">
           {t('cpp.sub-heading-two')}
         </h3>
         <ul className="ml-7 list-disc">
