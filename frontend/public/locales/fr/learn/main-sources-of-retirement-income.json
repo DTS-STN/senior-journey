@@ -1,6 +1,9 @@
 {
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
+  },
+  "meta": {
+    "description": "Renseignez-vous sur les différentes sources de revenus de retraite dont vous pourriez bénéficier. Examiner vos sources de revenus et identifier les écarts potentiel."
   },
   "key-takeaways": {
     "heading": "(FR) Key Takeaways",
@@ -72,13 +75,13 @@
     "public": "(FR) Public",
     "three-pillar-system": "(FR) A three-pillar system"
   },
-  "header": "(FR) Main sources of retirement income",
+  "header": "Principales sources de revenus de retraite",
   "learn-more": {
     "canada-pension-plan-program": {
       "description": "(FR) The official Canada.ca page of the CPP program with information on the CPP retirement pension, and other CPP related benefits.",
       "header": "(FR) Canada Pension Plan (CPP) Program"
     },
-    "header": "(FR) Learn More",
+    "header": "En savoir plus",
     "old-age-security-program": {
       "description": "(FR) The official Canada.ca page of the OAS program with information on the OAS retirement pension, and other OAS related benefits.",
       "header": "(FR) Old Age Security Program"
@@ -89,7 +92,7 @@
     },
     "going-from-work-to-retirement": {
       "description": "(FR) You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
-      "header": "(FR) Going from work to retirement"
+      "header": "Transition du monde du travail à la retraite"
     }
   },
   "old-age-security-program": {
@@ -119,7 +122,7 @@
       "card": {
         "content": "(FR) The OAS and CPP provide basic inflation-proof retirement income. Learn how you can increase your monthly and life-time pensions.",
         "header": "(FR) When to take your government pensions",
-        "learn-more": "(FR) Learn More"
+        "learn-more": "En savoir plus"
       },
       "header": "(FR) OAS pension",
       "paragraph-1": {
@@ -146,8 +149,8 @@
   "ongoing-earnings-from-your-job": {
     "card": {
       "content": "(FR) You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
-      "header": "(FR) Going from work to retirement",
-      "learn-more": "(FR) Learn More"
+      "header": "Transition du monde du travail à la retraite",
+      "learn-more": "En savoir plus"
     },
     "header": "(FR) Ongoing earnings from your job",
     "overview": "(FR) Many seniors are deciding to continue working while receiving their retirement benefits. This can mean that they are reducing their work hours from full-time to part-time before retiring completely, starting a new career or a business. If this sounds like something you're interested in, we've created a page that explains how it could impact your retirement benefits and provides some helpful tips to get you started!"

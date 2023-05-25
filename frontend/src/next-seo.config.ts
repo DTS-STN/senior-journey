@@ -43,7 +43,7 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Canada.ca',
   defaultTitle: 'Retirement Hub | Carrefour retraite',
   description:
-    "Avoid waiting on the phone and request the status of your application online. | Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
+    "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income. | Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite.",
   additionalMetaTags: [
     {
       name: 'author',
@@ -73,17 +73,17 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
       lang: 'fr',
       content: 'fra',
     },
-    { name: 'dcterms.service', content: 'ESDC-EDSC_PASC-VEDP' },
+    { name: 'dcterms.service', content: 'ESDC-EDSC_RH-CR' },
     { name: 'dcterms.spatial', content: 'Canada' },
     {
       name: 'dcterms.subject',
-      content: 'Travel and Tourism',
+      content: 'SO Society and Culture; Seniors',
     },
     {
       name: 'dcterms.subject',
       keyOverride: 'dcterms.subject:fr',
       lang: 'fr',
-      content: 'Voyage et tourisme',
+      content: 'SO Société et Culture; Aînés',
     },
   ],
   languageAlternates: getLanguageAlternates(appBaseUri, router),
@@ -102,7 +102,8 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Retirement Hub - Canada.ca',
   defaultTitle: 'Retirement Hub - Canada.ca',
-  description: 'Avoid waiting on the phone and request the status of your application online.',
+  description:
+    "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income.",
   additionalMetaTags: [
     {
       name: 'author',
@@ -114,11 +115,11 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
       content: 'Employment and Social Development Canada',
     },
     { name: 'dcterms.language', content: 'eng' },
-    { name: 'dcterms.service', content: 'ESDC-EDSC_PASC-VEDP' },
+    { name: 'dcterms.service', content: 'ESDC-EDSC_RH-CR' },
     { name: 'dcterms.spatial', content: 'Canada' },
     {
       name: 'dcterms.subject',
-      content: 'Travel and Tourism',
+      content: 'SO Society and Culture; Seniors',
     },
   ],
   languageAlternates: getLanguageAlternates(appBaseUri, router),
@@ -137,7 +138,8 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
 export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
   titleTemplate: '%s - Carrefour retraite - Canada.ca',
   defaultTitle: 'Carrefour retraite - Canada.ca',
-  description: "Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne.",
+  description:
+    "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite.",
   additionalMetaTags: [
     {
       name: 'author',
@@ -149,11 +151,11 @@ export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
       content: 'Emploi et Développement social Canada',
     },
     { name: 'dcterms.language', content: 'fra' },
-    { name: 'dcterms.service', content: 'ESDC-EDSC_PASC-VEDP' },
+    { name: 'dcterms.service', content: 'ESDC-EDSC_RH-CR' },
     { name: 'dcterms.spatial', content: 'Canada' },
     {
       name: 'dcterms.subject',
-      content: 'Voyage et tourisme',
+      content: 'SO Société et Culture; Aînés',
     },
   ],
   languageAlternates: getLanguageAlternates(appBaseUri, router),

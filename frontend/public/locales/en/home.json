@@ -34,6 +34,9 @@
     "title": "Contact us"
   },
   "header": "Home",
+  "meta": {
+    "description": "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income."
+  },
   "tabs": {
     "apply": {
       "description": {

@@ -1,8 +1,11 @@
 {
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
   },
-  "header": "(FR) Fred decides when to start his public pensions",
+  "header": "Fred décide quand prendre sa pension publique",
+  "meta": {
+    "description": "Fred choisi de prendre ses prestation du régime de pension du Canada et sa sécurité de vieillesse de manière à maximise ses paiements."
+  },
   "key-takeaways": {
     "heading": "(FR) Key Takeaways",
     "li1": "(FR) You do not have to start your Canada Pension Plan (CPP) and Old Age Security (OAS) retirement pensions at the same age.",
@@ -158,7 +161,7 @@
     "disclaimer": "(FR) <strong>Disclaimer:</strong> These stories are only simplified examples to illustrate the various factors that should be considered when deciding when to start collecting your public pensions, and potential outcomes.  They do not, for example, include the effects of taxation or investment growth, and assume that Fred’s goal is stable income across his entire life. These stories are not intended to provide financial advice, and we strongly encourage you to seek help from a financial advisor as you plan your retirement."
   },
   "learn-more": {
-    "header": "(FR) Learn More",
+    "header": "En savoir plus",
     "deciding-when-to-take-your-pensions": {
       "description": "(FR) You can choose when to start your old age benefits. Understand what to consider in making that decision.",
       "header": "(FR) Deciding when to collect public pensions"

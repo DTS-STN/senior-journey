@@ -1,8 +1,11 @@
 {
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
   },
-  "header": "(FR) Keith collects his public pensions while working",
+  "header": "Keith combine son travail avec ses pensions publiques",
+  "meta": {
+    "description": "Keith choisit entre retarder ses pensions publiques ou prendre des prestations après-retraite tout en travaillant."
+  },
   "key-takeaways": {
     "heading": "(FR) Key takeaways",
     "li1": "(FR) Choosing to start your public pensions and retiring from work are two different things.",
@@ -186,7 +189,7 @@
     "p3": "(FR) Keith chooses to delay the Old Age Security (OAS) pension until age 70 to permanently increase it by 36%. This higher pension will help him transition better into retirement when he stops working at age 70.",
     "p4": "(FR) To learn more about what to consider when choosing the age you want to start your OAS pension, ",
     "fred-story": {
-      "text": "(FR) Fred decides when to start his public pensions",
+      "text": "Fred décide quand prendre sa pension publique",
       "href": "/fr/learn/case-studies/fred"
     }
   },
@@ -200,14 +203,14 @@
   },
 
   "learn-more": {
-    "header": "(FR) Learn More",
+    "header": "En savoir plus",
     "going-from-work-to-retirement": {
       "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
-      "header": "(FR) Going from work to retirement"
+      "header": "Transition du monde du travail à la retraite"
     },
     "rules-of-thumb-for-public-pensions": {
       "description": "(FR) Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
-      "header": "(FR) Rules of thumb for your public pensions"
+      "header": "Règles générales concernant les pensions publiques"
     },
     "cpp-prb": {
       "description": "(FR) Check here for details about the CPP Post-Retirement Benefit, who is eligible for it, how much you could receive, and how to apply.",

@@ -4,8 +4,10 @@
     "text": "Receive a personalized checklist to guide you through retirement.",
     "title": "Not sure where to begin? Take the quiz!"
   },
-  "explore": "Explore our content",
-  "header": "Learn",
+  "header": "Explore Retirement",
+  "meta": {
+    "description": "Learn about your retirement income options, and tips for your OAS/CPP pension choices. Read the stories of retirees and their public pension decisions."
+  },
   "min-read": "{{minRead}} min read",
   "sections": {
     "learn-about": {

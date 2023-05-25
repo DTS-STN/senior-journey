@@ -21,7 +21,7 @@ describe('getNextSEOConfig', () => {
 
     // assert
     expect(act.description).toBe(
-      "Avoid waiting on the phone and request the status of your application online. | Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne."
+      "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income. | Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite."
     )
   })
 
@@ -35,7 +35,7 @@ describe('getNextSEOConfig', () => {
 
     // assert
     expect(act.description).toBe(
-      'Avoid waiting on the phone and request the status of your application online.'
+      "It's never too early or too late to learn about your retirement options and plan for your future. Find out about public pensions, when to take them and tips to consider for your retirement income."
     )
   })
 
@@ -49,7 +49,7 @@ describe('getNextSEOConfig', () => {
 
     // assert
     expect(act.description).toBe(
-      "Évitez d'attendre au téléphone et demandez l'état de votre demande en ligne."
+      "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite."
     )
   })
 })

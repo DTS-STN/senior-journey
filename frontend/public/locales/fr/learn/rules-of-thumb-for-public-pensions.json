@@ -1,8 +1,11 @@
 {
   "breadcrumbs": {
-    "learn": "(FR) Learn"
+    "learn": "Apprendre"
   },
   "header": "(FR) Rules of thumb for public pensions",
+  "meta": {
+    "description": "Jetez un coup d' œil sur ces conseils pour vous aider a prendre la décision de quand commencer à recevoir vos pensions.  Faite le choix adapter à votre situation."
+  },
   "key-takeaways": {
     "heading": "(FR) Key takeaways",
     "li1": "(FR) Your current financial situation is only one part of your public pension decision.",
@@ -68,22 +71,22 @@
   },
 
   "learn-more": {
-    "header": "(FR) Learn More",
+    "header": "En savoir plus",
     "main-sources-of-retirement-income": {
       "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
-      "header": "(FR) Main sources of retirement income"
+      "header": "Principales sources de revenus de retraite"
     },
     "planning-to-save-for-retirement": {
       "description": "(FR) Learn about how the income you'll need in retirement will change. Your financial needs, and considerations will also change.",
-      "header": "(FR) Planning to save for retirement"
+      "header": "Planifiez pour épargner en vue de la retraite"
     },
     "going-from-work-to-retirement": {
       "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
-      "header": "(FR) Going from work to retirement"
+      "header": "Transition du monde du travail à la retraite"
     },
     "deciding-when-to-start": {
       "description": "(FR) Flexible public pensions offer choices for retirement. Learn how to choose and what to consider.",
-      "header": "(FR) Deciding when to start your public pensions"
+      "header": "Prendre la décision de quand commencer à recevoir des pensions publiques"
     }
   }
 }

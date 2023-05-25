@@ -3,6 +3,9 @@
     "learn": "Learn"
   },
   "header": "Fred decides when to start his public pensions",
+  "meta": {
+    "description": "Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him."
+  },
   "key-takeaways": {
     "heading": "Key Takeaways",
     "li1": "You do not have to start your Canada Pension Plan (CPP) and Old Age Security (OAS) retirement pensions at the same age.",

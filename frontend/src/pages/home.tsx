@@ -49,7 +49,11 @@ const Home: FC = () => {
 
   return (
     <Layout contained={false}>
-      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <NextSeo
+        title={t('header')}
+        description={t('meta.description')}
+        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+      />
       <h1 className="sr-only">{t('header')}</h1>
 
       <Container className="mb-8 md:mb-12">

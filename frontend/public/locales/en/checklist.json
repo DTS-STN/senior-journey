@@ -5,6 +5,9 @@
   "filter-tasks": "Filter Tasks",
   "header": "Your retirement checklist",
   "links-header": "More resources",
+  "meta": {
+    "description": "Plan for your retirement with a personalized retirement preparedness checklist!"
+  },
   "print": "Print",
   "restart-quiz": "Restart quiz",
   "show-filters": "show filters"

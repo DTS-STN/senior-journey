@@ -20,12 +20,12 @@ const PlanningToSaveForRetirement: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
-        href: "/learn/main-sources-of-retirement-income",
+        href: '/learn/main-sources-of-retirement-income',
         primary: t('learn-more.main-sources-of-retirment-income.header'),
         secondary: t('learn-more.main-sources-of-retirment-income.description'),
       },
       {
-        href: "/learn/going-from-work-to-retirement",
+        href: '/learn/going-from-work-to-retirement',
         primary: t('learn-more.going-from-work-to-retirement.header'),
         secondary: t('learn-more.going-from-work-to-retirement.description'),
       },
@@ -45,7 +45,11 @@ const PlanningToSaveForRetirement: FC = () => {
 
   return (
     <>
-      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <NextSeo
+        title={t('header')}
+        description={t('meta.description')}
+        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+      />
       <LearnPageLayout
         header={t('header')}
         breadcrumbItems={[

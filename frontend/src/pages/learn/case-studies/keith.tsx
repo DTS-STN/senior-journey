@@ -45,7 +45,11 @@ const Keith: FC = () => {
 
   return (
     <>
-      <NextSeo title={t('header')} additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]} />
+      <NextSeo
+        title={t('header')}
+        description={t('meta.description')}
+        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+      />
       <LearnPageLayout
         header={t('header')}
         breadcrumbItems={[
@@ -59,8 +63,6 @@ const Keith: FC = () => {
           },
         ]}
       >
-        <NextSeo title={t('header')} />
-
         <h2 id="key-takeaways" className="h2 !mt-0">
           {t('key-takeaways.heading')}
         </h2>
