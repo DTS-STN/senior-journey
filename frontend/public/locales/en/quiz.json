@@ -8,6 +8,9 @@
     "header": "Retirement Ready Quiz",
     "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
     "marital": "<strong>marital status</strong>",
+    "meta": {
+      "description": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist."
+    },
     "minutes": "3 minutes",
     "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
     "p2": "Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
