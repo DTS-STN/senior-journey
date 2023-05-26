@@ -10,9 +10,9 @@
     "heading": "Key takeaways",
     "li1": "Choosing to start your public pensions and retiring from work are two different things.",
     "li2": "You can delay both the Old Age Security (OAS) and Canada Pension Plan (CPP) and start them at different ages.",
-    "li3": "You can start your CPP retirement pension and continue contributing to the plan and earn Post-Retirement Benefits (PRBs).",
+    "li3": "You can start your CPP retirement pension and continue contributing to the plan up to age 70 and earn Post-Retirement Benefits (PRBs).",
     "li4": "If you want or need your retirement pension earlier, the PRB could be an excellent way to increase your retirement income.",
-    "li5": "They give a small boost that's payable for life and fully protected against inflation.",
+    "li5": "Each PRB gives a small boost that's payable for life and fully protected against inflation.",
     "li6": "Like the retirement pension, PRB amounts increase based on the age you start taking them.",
     "li7": "This means that PRBs earned later in life are worth more.",
     "li8": "You can get more lifetime CPP income by taking CPP retirement pension at age 65 and contributing to PRBs until age 70.",
@@ -34,7 +34,7 @@
   "cpp": {
     "prb": {
       "heading": "What is the PRB?",
-      "p1": "If you work while collecting your Canada Pension Plan (CPP) retirement pension, you can also collect <a1>CPP Post-Retirement Benefits (PRBs)</a1>. This is because you will have to contribute to the plan until age 65 at least. Each year that you work and contribute, you will collect a small top-up from an additional PRB that will be added to your CPP retirement pension and benefits. The PRBs are adjusted to your age. If you are younger than 65, the PRBs will be reduced. If you're older than 65, the new benefits are worth more.",
+      "p1": "If you work while collecting your Canada Pension Plan (CPP) retirement pension, you can also collect <a1>CPP Post-Retirement Benefits (PRBs)</a1>. Each year that you work and contribute, you will collect a small top-up from an additional PRB that will be added to your CPP retirement pension and benefits. Each PRB is adjusted based on your age when you start receiving it. If you are younger than 65, that PRB will be reduced. If you're older than 65, a new PRB is worth more.",
       "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement.html"
     },
     "prb-choices": {
@@ -84,7 +84,7 @@
         ]
       },
       "p1": "The monthly Canada Pension Plan (CPP) retirement pension will be paid at the time when Keith applies to collect it. However, the PRBs will accumulate slowly during the years when Keith continues to work and contribute. Each year of additional contributions to the plan will result in an additional small top-up to the existing pension and benefits next year. The graph compares the pension at age 70 for different choice. And the amounts are quite different.",
-      "p2": "Choices 3 and 4 are about Keith taking his CPP retirement pension later in life, at age 65 and 70, and receiving higher monthly pension amounts. Keith would like to choose his strategy between these two options."
+      "p2": "Choices 3 and 4 are about Keith taking his CPP retirement pension later in life, at age 65 and 70, and receiving higher monthly pension amounts. Keith would like to choose his strategy between these two options. For both options, Keith knows he will continue paying contributions until age 70."
     },
     "what-else": {
       "heading": "What else should Keith consider when choosing?",

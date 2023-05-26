@@ -34,7 +34,7 @@
       "desktop": "/assets/bonnie-stopping-earnings-desktop-en.jpg",
       "mobile": "/assets/bonnie-stopping-earnings-mobile-en.jpg"
     },
-    "description": "This chart shows that Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. Bonnie’s target monthly income also reduces to 70% because she might need less income in retirement. There’s a gap between Bonnie’s monthly income from working part-time and from her target monthly income in retirement. At age 65, Bonnie fully retires and has no money from the job to meet her target monthly income. Bonnie’s target monthly income grows slightly as she gets older until age 88 because of inflation.",
+    "description": "This chart shows that Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. Bonnie's target monthly income also reduces to 70% because she might need less income in retirement. There's a gap between Bonnie's monthly income from working part-time and from her target monthly income in retirement. At age 65, Bonnie fully retires and has no money from the job to meet her target monthly income. Bonnie's target monthly income grows slightly as she gets older until age 88 because of inflation.",
     "accessibility": {
       "caption": "Values presented on the image",
       "button-label": "Text alternative for Earnings from work",
@@ -130,7 +130,7 @@
 
   "adding-oas": {
     "heading": "Adding OAS pension to the mix",
-    "p1": "Bonnie will receive a full Old Age Security (OAS) pension at age 65. However, she knows that by waiting she can increase that amount even further. In the end, Bonnie decides to take her OAS pension at age 65, when she fully retires from work. Every three months, her monthly amount will be adjusted for inflation. Bonnie <strong>does not</strong> qualify for the Guaranteed Income Supplement (GIS). Her target income is around $47,000, which is more than double the threshold to get the GIS.",
+    "p1": "Bonnie has lived in Canada her entire life, and can receive a full Olf Age Security (OAS) pension at age 65. However, she knows that by waiting she can increase that amount even further. In the end, Bonnie decides to take her OAS pension at age 65, when she fully retires from work. Every three months, her monthly amount will be adjusted for inflation. Bonnie does not qualify for the Guaranteed Income Supplement (GIS). Her target income is around $47,000, which is more than double the threshold to get the GIS.",
     "p2": "To learn more about what to consider when choosing the age you want to start your OAS pension, read <a1>Fred decides when to start his public pensions</a1>.",
     "p3": "Bonnie started OAS pension at 65 and needs to decide when to start her CPP retirement pension and how to use her retirement savings to reach her target monthly income in retirement.",
     "img-url": {
