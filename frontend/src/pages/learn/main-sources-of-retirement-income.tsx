@@ -1,7 +1,7 @@
 import { FC, Fragment, useMemo } from 'react'
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
-import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, Paper } from '@mui/material'
+import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, useMediaQuery } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -12,6 +12,8 @@ import Link from 'next/link'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
+import AccessibilityGraphContainer from '../../components/AccessibilityGraphContainer'
+import theme from '../../theme'
 
 const MainSourcesOfRetirementIncome: FC = () => {
   const { t, i18n } = useTranslation('learn/main-sources-of-retirement-income')
@@ -21,28 +23,30 @@ const MainSourcesOfRetirementIncome: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
+        href: '/learn/deciding-when-to-collect-public-pensions',
+        primary: t('learn-more.when-to-start.header'),
+        secondary: t('learn-more.when-to-start.description'),
+      },
+      {
         href: '/learn/going-from-work-to-retirement',
         primary: t('learn-more.going-from-work-to-retirement.header'),
         secondary: t('learn-more.going-from-work-to-retirement.description'),
       },
       {
-        href: '/learn/canada-pension-plan-program',
-        primary: t('learn-more.canada-pension-plan-program.header'),
-        secondary: t('learn-more.canada-pension-plan-program.description'),
+        href: 'https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html',
+        primary: t('learn-more.savings-and-pension.header'),
+        secondary: t('learn-more.savings-and-pension.description'),
       },
       {
-        href: '/learn/old-age-security-program',
-        primary: t('learn-more.old-age-security-program.header'),
-        secondary: t('learn-more.old-age-security-program.description'),
-      },
-      {
-        href: '/learn/main-sources-of-retirement-income',
-        primary: t('learn-more.sources-of-retirement-income.header'),
-        secondary: t('learn-more.sources-of-retirement-income.description'),
+        href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html',
+        primary: t('learn-more.income-calculator.header'),
+        secondary: t('learn-more.income-calculator.description'),
       },
     ],
     [t]
   )
+
+  const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <>
@@ -65,7 +69,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         ]}
       >
         <h2 id="key-takeaways" className="h2 !mt-0">
-          {t('key-takeaways.heading')}
+          {t('key-takeaways.header')}
         </h2>
         <List disablePadding>
           {[
@@ -74,16 +78,15 @@ const MainSourcesOfRetirementIncome: FC = () => {
               secondary: t('key-takeaways.cpp-oas.description'),
             },
             {
-              primary: t('key-takeaways.cpp-oas-retirement-income-plan.header'),
-              secondary: t('key-takeaways.cpp-oas-retirement-income-plan.description'),
+              primary: t('key-takeaways.cpp-part-of-plan.header'),
+              secondary: t('key-takeaways.cpp-part-of-plan.description'),
+            },
+            {
+              primary: t('key-takeaways.cpp-oas-available.header'),
             },
             {
               primary: t('key-takeaways.cpp-oas-adjusted-for-inflation.header'),
               secondary: t('key-takeaways.cpp-oas-adjusted-for-inflation.description'),
-            },
-            {
-              primary: t('key-takeaways.cpp-oas-taxable-income.header'),
-              secondary: t('key-takeaways.cpp-oas-taxable-income.description'),
             },
             {
               primary: t('key-takeaways.not-need-to-stop-working.header'),
@@ -104,7 +107,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <h2 id="overview" className="h2">
           {t('overview.header')}
         </h2>
-        <p>{t('overview.paragraph-1')}</p>
+        <p>{t('overview.overview')}</p>
         <ul className="mb-5 list-disc space-y-2 pl-7">
           <li>{t('overview.list.oas-and-gis')}</li>
           <li>{t('overview.list.cpp')}</li>
@@ -112,223 +115,276 @@ const MainSourcesOfRetirementIncome: FC = () => {
           <li>{t('overview.list.workplace')}</li>
           <li>{t('overview.list.savings-and-investments')}</li>
         </ul>
-        <p>{t('overview.paragraph-2')}</p>
+        <p>{t('overview.qpp')}</p>
         <p>
           <Trans
             ns="learn/main-sources-of-retirement-income"
-            i18nKey="overview.paragraph-3.content"
-            components={{ a: <MuiLink href={t('overview.paragraph-3.link')} /> }}
+            i18nKey="overview.learn-more.content"
+            components={{ a: <MuiLink href={t('overview.learn-more.link')} /> }}
           />
         </p>
 
         <h3 id="canada-retirement-income-system" className="h3">
-          {t('canada-retirement-income-system.header')}
+          {t('overview.canada-retirement-income-system.header')}
         </h3>
         <h3 className="mb-6 bg-primary-600 p-4 font-display text-2xl font-light text-white">
-          {t('canada-retirement-income-system.three-pillar-system')}
+          {t('overview.canada-retirement-income-system.three-pillar-system')}
         </h3>
         <div className="grid gap-6 md:grid-cols-3">
           <div className="flex h-full flex-col gap-6 md:col-span-2">
             <h4 className="bg-secondary-700 p-4 font-display text-xl font-bold text-white">
-              {t('canada-retirement-income-system.public')}
+              {t('overview.canada-retirement-income-system.public')}
             </h4>
             <div className="grid h-full gap-6 md:grid-cols-2">
               <div className="h-full bg-secondary-100 p-4">
                 <h5 className="mb-2.5 font-display text-xs font-semibold uppercase">
-                  {t('canada-retirement-income-system.pillar-1.header')}
+                  {t('overview.canada-retirement-income-system.oas.pillar')}
                 </h5>
-                <p className="mb-2.5 font-bold">{t('canada-retirement-income-system.pillar-1.paragraph-1')}</p>
-                <p className="text-sm">{t('canada-retirement-income-system.pillar-1.paragraph-2')}</p>
+                <p className="mb-2.5 font-bold">{t('overview.canada-retirement-income-system.oas.header')}</p>
+                <p className="text-sm">{t('overview.canada-retirement-income-system.oas.content')}</p>
               </div>
               <div className="h-full bg-secondary-100 p-4">
                 <h5 className="mb-2.5 font-display text-xs font-semibold uppercase">
-                  {t('canada-retirement-income-system.pillar-2.header')}
+                  {t('overview.canada-retirement-income-system.cpp-qpp.pillar')}
                 </h5>
-                <p className="mb-2.5 font-bold">{t('canada-retirement-income-system.pillar-2.paragraph-1')}</p>
-                <p className="text-sm">{t('canada-retirement-income-system.pillar-2.paragraph-2')}</p>
+                <p className="mb-2.5 font-bold">{t('overview.canada-retirement-income-system.cpp-qpp.header')}</p>
+                <p className="text-sm">{t('overview.canada-retirement-income-system.cpp-qpp.content')}</p>
               </div>
             </div>
           </div>
           <div className="flex h-full flex-col gap-6">
             <h4 className="bg-[#4A0056] p-4 font-display text-xl font-bold text-white">
-              {t('canada-retirement-income-system.private')}
+              {t('overview.canada-retirement-income-system.private')}
             </h4>
             <div className="h-full bg-[#F0D0FF] p-4">
               <h5 className="mb-2.5 font-display text-xs font-semibold uppercase">
-                {t('canada-retirement-income-system.pillar-3.header')}
+                {t('overview.canada-retirement-income-system.workplace.pillar')}
               </h5>
-              <p className="mb-2.5 font-bold">{t('canada-retirement-income-system.pillar-3.paragraph-1')}</p>
-              <p className="text-sm">{t('canada-retirement-income-system.pillar-3.paragraph-2')}</p>
-              <p className="text-sm">{t('canada-retirement-income-system.pillar-3.paragraph-3')}</p>
+              <p className="mb-2.5 font-bold">{t('overview.canada-retirement-income-system.workplace.header')}</p>
+              <p className="text-sm">{t('overview.canada-retirement-income-system.workplace.content')}</p>
             </div>
           </div>
+          <p className='md:col-span-3'>
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="overview.canada-retirement-income-system.read-case-bonnie.content"
+              components={{ a: <MuiLink component={Link} href={t('overview.canada-retirement-income-system.read-case-bonnie.link')} /> }}
+            />
+          </p>
+          <AlertCard className='md:col-span-3' type="important">
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="overview.canada-retirement-income-system.important-notice"
+            />
+          </AlertCard>
         </div>
 
         <h2 id="old-age-security-program" className="h2">
           {t('old-age-security-program.header')}
         </h2>
-        <p>{t('old-age-security-program.overview')}</p>
-
-        <h3 className="h3">{t('old-age-security-program.oas-pension.header')}</h3>
+        <h3 className="h3">{t('old-age-security-program.qualify.header')}</h3>
+        <p>{t('old-age-security-program.qualify.most-people')}</p>
         <p>
-          <Trans
-            ns="learn/main-sources-of-retirement-income"
-            i18nKey="old-age-security-program.oas-pension.paragraph-1.content"
-            components={{
-              a: <MuiLink href={t('old-age-security-program.oas-pension.paragraph-1.link')} />,
-            }}
-          />
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="old-age-security-program.qualify.also-eligible.content"
+              components={{ a: <MuiLink href={t('old-age-security-program.qualify.also-eligible.link')} /> }}
+            />
         </p>
         <p>
-          <Trans
-            ns="learn/main-sources-of-retirement-income"
-            i18nKey="old-age-security-program.oas-pension.paragraph-2.content"
-            components={{
-              a: <MuiLink href={t('old-age-security-program.oas-pension.paragraph-2.link')} />,
-            }}
-          />
-        </p>
-        <div className="mb-4 flex flex-col gap-4 sm:flex-row">
-          <div>
-            <p>
-              <Trans
-                ns="learn/main-sources-of-retirement-income"
-                i18nKey="old-age-security-program.oas-pension.paragraph-3.content"
-                components={{
-                  a: <MuiLink color="secondary" href={t('old-age-security-program.oas-pension.paragraph-3.link')} />,
-                }}
-              />
-            </p>
-            <p className="m-0">{t('old-age-security-program.oas-pension.paragraph-4')}</p>
-          </div>
-          <div>
-            <Paper className="p-4 sm:w-[264px]">
-              <h4 className="mb-4">{t('old-age-security-program.oas-pension.card.header')}</h4>
-              <p className="mb-4.5 text-xs" id="oas-pension-link-label">
-                {t('old-age-security-program.oas-pension.card.content')}
-              </p>
-              <div className="text-right">
-                <MuiLink href="#" className="uppercase" color="primary" aria-labelledby="oas-pension-link-label">
-                  {t('old-age-security-program.oas-pension.card.learn-more')}
-                </MuiLink>
-              </div>
-            </Paper>
-          </div>
-        </div>
-        <p>
-          <Trans
-            ns="learn/main-sources-of-retirement-income"
-            i18nKey="old-age-security-program.oas-pension.paragraph-5.content"
-            components={{
-              a1: <MuiLink href={t('old-age-security-program.oas-pension.paragraph-5.link-1')} />,
-              a2: <MuiLink href={t('old-age-security-program.oas-pension.paragraph-5.link-2')} />,
-            }}
-          />
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="old-age-security-program.qualify.more-details.content"
+              components={{ a: <MuiLink href={t('old-age-security-program.qualify.more-details.link')} /> }}
+            />
         </p>
 
-        <h3 className="h3">{t('old-age-security-program.guaranteed-income-supplement.header')}</h3>
-        <p>{t('old-age-security-program.guaranteed-income-supplement.paragraph-1')}</p>
+        <h3 className="h3">{t('old-age-security-program.how-much.header')}</h3>
+        <p>{t('old-age-security-program.how-much.eligible')}</p>
+        <p>{t('old-age-security-program.how-much.smaller')}</p>
+        <p>
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="old-age-security-program.how-much.start.content"
+              components={{ a: <MuiLink component={Link} href={t('old-age-security-program.how-much.start.link')} /> }}
+            />
+        </p>
+
+        <h4 className='h6'>{t('old-age-security-program.helpful-resources.header')}</h4>
+        <ul  className='mb-5 list-disc space-y-2 pl-7'>
+          {[
+            {
+              href: t('old-age-security-program.helpful-resources.overview.link'),
+              primary: t('old-age-security-program.helpful-resources.overview.content'),
+            },
+            {
+              href: t('old-age-security-program.helpful-resources.oas-how-much.link'),
+              primary: t('old-age-security-program.helpful-resources.oas-how-much.content'),
+            },
+            {
+              href: t('old-age-security-program.helpful-resources.oas-estimator.link'),
+              primary: t('old-age-security-program.helpful-resources.oas-estimator.content'),
+            },
+          ].map(({ href, primary }) => (
+            <li key={primary}><MuiLink href={href}>{primary}</MuiLink></li>
+          ))}
+        </ul>
+
+        <h2 id="guaranteed-income-supplement" className="h2">
+          {t('guaranteed-income-supplement.header')}
+        </h2>
+        <p>{t('guaranteed-income-supplement.overview')}</p>
+        <p>{t('guaranteed-income-supplement.qualify')}</p>
         <ul className="mb-5 list-disc space-y-2 pl-7">
-          <li>{t('old-age-security-program.guaranteed-income-supplement.list.live-canada')}</li>
-          <li>{t('old-age-security-program.guaranteed-income-supplement.list.receive-pension')}</li>
+          <li>{t('guaranteed-income-supplement.list.live-canada')}</li>
+          <li>{t('guaranteed-income-supplement.list.receive-pension')}</li>
           <li>
             <Trans
               ns="learn/main-sources-of-retirement-income"
-              i18nKey="old-age-security-program.guaranteed-income-supplement.list.income-below-maximum.content"
+              i18nKey="guaranteed-income-supplement.list.income-below-maximum.content"
               components={{
                 a: (
                   <MuiLink
-                    href={t('old-age-security-program.guaranteed-income-supplement.list.income-below-maximum.link')}
+                    href={t('guaranteed-income-supplement.list.income-below-maximum.link')}
                   />
                 ),
               }}
             />
           </li>
         </ul>
-        <p>{t('old-age-security-program.guaranteed-income-supplement.paragraph-2')}</p>
-        <p>
-          <Trans
-            ns="learn/main-sources-of-retirement-income"
-            i18nKey="old-age-security-program.guaranteed-income-supplement.paragraph-3.content"
-            components={{
-              a: <MuiLink href={t('old-age-security-program.guaranteed-income-supplement.paragraph-3.link')} />,
-            }}
-          />
-        </p>
-        <p>
-          <Trans
-            ns="learn/main-sources-of-retirement-income"
-            i18nKey="old-age-security-program.guaranteed-income-supplement.paragraph-4.content"
-            components={{
-              a: <MuiLink href={t('old-age-security-program.guaranteed-income-supplement.paragraph-4.link')} />,
-            }}
-          />
-        </p>
+        <p>{t('guaranteed-income-supplement.monthly')}</p>
+        <p>{t('guaranteed-income-supplement.collecting')}</p>
+
+        <h4 className='h6'>{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
+        <ul  className='mb-5 list-disc space-y-2 pl-7'>
+          {[
+            {
+              href: t('guaranteed-income-supplement.helpful-resources.overview.link'),
+              primary: t('guaranteed-income-supplement.helpful-resources.overview.content'),
+            },
+            {
+              href: t('guaranteed-income-supplement.helpful-resources.estimator.link'),
+              primary: t('guaranteed-income-supplement.helpful-resources.estimator.content'),
+            },
+          ].map(({ href, primary }) => (
+            <li key={primary}><MuiLink href={href}>{primary}</MuiLink></li>
+          ))}
+        </ul>
 
         <h2 id="canada-pension-plan-program" className="h2">
           {t('canada-pension-plan-program.header')}
         </h2>
-        <p>{t('canada-pension-plan-program.overview.paragraph-1')}</p>
-        <p>{t('canada-pension-plan-program.overview.paragraph-2')}</p>
+        <p>{t('canada-pension-plan-program.overview')}</p>
+        
+        <h3 className="h3">{t('canada-pension-plan-program.qualify.header')}</h3>
+        <p>{t('canada-pension-plan-program.qualify.worked-in-canada')}</p>
+        <p>
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="canada-pension-plan-program.qualify.pension-credits.content"
+              components={{ a: <MuiLink href={t('canada-pension-plan-program.qualify.pension-credits.link')} /> }}
+            />
+        </p>
+        
+        <h3 className="h3">{t('canada-pension-plan-program.how-much.header')}</h3>
+        <p>{t('canada-pension-plan-program.how-much.amount')}</p>
+        <p>{t('canada-pension-plan-program.how-much.inflation')}</p>
+        <p>
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="canada-pension-plan-program.how-much.learn-more.content"
+              components={{ a: <MuiLink component={Link} href={t('canada-pension-plan-program.how-much.learn-more.link')} /> }}
+            />
+        </p>
 
-        <h3 className="h3">{t('canada-pension-plan-program.cpp-retirement-pension.header')}</h3>
-        <p>{t('canada-pension-plan-program.cpp-retirement-pension.paragraph-1')}</p>
-        <p>{t('canada-pension-plan-program.cpp-retirement-pension.paragraph-2')}</p>
-        <p>{t('canada-pension-plan-program.cpp-retirement-pension.paragraph-3')}</p>
-        <p>{t('canada-pension-plan-program.cpp-retirement-pension.paragraph-4')}</p>
+        <h4 className='h6'>{t('canada-pension-plan-program.helpful-resources.header')}</h4>
+        <ul  className='mb-5 list-disc space-y-2 pl-7'>
+          {[
+            {
+              href: t('canada-pension-plan-program.helpful-resources.overview.link'),
+              primary: t('canada-pension-plan-program.helpful-resources.overview.content'),
+            },
+            {
+              href: t('canada-pension-plan-program.helpful-resources.cpp.link'),
+              primary: t('canada-pension-plan-program.helpful-resources.cpp.content'),
+            },
+            {
+              href: t('canada-pension-plan-program.helpful-resources.monthly.link'),
+              primary: t('canada-pension-plan-program.helpful-resources.monthly.content'),
+            },
+          ].map(({ href, primary }) => (
+            <li key={primary}><MuiLink href={href}>{primary}</MuiLink></li>
+          ))}
+        </ul>
+
+        <h4 className="h6 pb-3">{t('canada-pension-plan-program.cpp-post-retirement-benefit.header')}</h4>
+        <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.overview')}</p>
+        <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.adjustments')}</p>
+        <Image
+          alt={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content')}
+          src={t(`canada-pension-plan-program.cpp-post-retirement-benefit.chart.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.footer')}</p>
+        <AccessibilityGraphContainer
+          tableData={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility', { returnObjects: true })}
+          description={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content')}
+          buttonLabel={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.button-label')}
+          descriptionHeading={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.header')}
+          valuesHeading={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.values-heading')}
+        />
         <p>
           <Trans
             ns="learn/main-sources-of-retirement-income"
-            i18nKey="canada-pension-plan-program.cpp-retirement-pension.paragraph-5.content"
+            i18nKey="canada-pension-plan-program.cpp-post-retirement-benefit.choices.content"
             components={{
-              a: <MuiLink href={t('canada-pension-plan-program.cpp-retirement-pension.paragraph-5.link')} />,
+              a: <MuiLink href={t('canada-pension-plan-program.cpp-post-retirement-benefit.choices.link')} />,
             }}
           />
         </p>
         <p>
           <Trans
             ns="learn/main-sources-of-retirement-income"
-            i18nKey="canada-pension-plan-program.cpp-retirement-pension.paragraph-6"
+            i18nKey="canada-pension-plan-program.cpp-post-retirement-benefit.differences.content"
             components={{
-              Link: <MuiLink component={Link} href="/learn/cpp-retirement-pension" />,
+              Link: <MuiLink component={Link} href={t('canada-pension-plan-program.cpp-post-retirement-benefit.differences.link')} />,
             }}
           />
         </p>
 
-        <h3 className="h3">{t('canada-pension-plan-program.cpp-post-retirement-benefit.header')}</h3>
-        <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.paragraph-1')}</p>
-        <p>
-          <Trans
-            ns="learn/main-sources-of-retirement-income"
-            i18nKey="canada-pension-plan-program.cpp-post-retirement-benefit.paragraph-2"
-            components={{
-              Link: <MuiLink component={Link} href="/learn/cpp-pension" />,
-            }}
-          />
-        </p>
-
-        <AlertCard type="important">
-          <Trans
-            ns="learn/main-sources-of-retirement-income"
-            i18nKey="canada-pension-plan-program.cpp-post-retirement-benefit.important-notice"
-          />
-        </AlertCard>
+        <h4 className='h6'>{t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.header')}</h4>
+        <ul  className='mb-5 list-disc space-y-2 pl-7'>
+          {[
+            {
+              href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.overview.link'),
+              primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.overview.content'),
+            },
+            {
+              href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.cpp.link'),
+              primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.cpp.content'),
+            },
+            {
+              href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.monthly.link'),
+              primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.monthly.content'),
+            },
+          ].map(({ href, primary }) => (
+            <li key={primary}><MuiLink href={href}>{primary}</MuiLink></li>
+          ))}
+        </ul>
 
         <h2 id="ongoing-earnings-from-your-job" className="h2">
           {t('ongoing-earnings-from-your-job.header')}
         </h2>
         <p>{t('ongoing-earnings-from-your-job.overview')}</p>
-        <Paper className="mb-4 p-4">
-          <h3 className="mb-4 font-display font-medium">{t('ongoing-earnings-from-your-job.card.header')}</h3>
-          <p className="mb-4.5 text-sm" id="ongoing-earnings-label">
-            {t('ongoing-earnings-from-your-job.card.content')}
-          </p>
-          <div className="text-right">
-            <MuiLink href="#" className="uppercase" color="primary" aria-labelledby="ongoing-earnings-label">
-              {t('ongoing-earnings-from-your-job.card.learn-more')}
-            </MuiLink>
-          </div>
-        </Paper>
+        <p>
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="ongoing-earnings-from-your-job.work-to-retirement.content"
+              components={{ a: <MuiLink component={Link} href={t('ongoing-earnings-from-your-job.work-to-retirement.link')} /> }}
+            />
+        </p>
 
         <h2 id="workplace-pension-plans" className="h2">
           {t('workplace-pension-plans.header')}
@@ -344,43 +400,40 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <h2 id="personal-retirement-savings" className="h2">
           {t('personal-retirement-savings.header')}
         </h2>
-        <p>{t('personal-retirement-savings.overview')}</p>
-
-        <h3 className="h3">{t('personal-retirement-savings.rrsp.header')}</h3>
-        <p>{t('personal-retirement-savings.rrsp.overview')}</p>
-        <div className="flex flex-col items-center gap-6 xl:flex-row xl:gap-10">
-          <Image
-            alt={t('personal-retirement-savings.rrsp.illustration.alt')}
-            src={t('personal-retirement-savings.rrsp.illustration.img-url')}
-            width={173}
-            height={150}
-            className="w-full max-w-md"
-          />
-          <AlertCard type="important">
+        <p>
             <Trans
               ns="learn/main-sources-of-retirement-income"
-              i18nKey="personal-retirement-savings.rrsp.important-notice"
+              i18nKey="personal-retirement-savings.overview.content"
+              components={{
+                rrsp: <MuiLink href={t('personal-retirement-savings.overview.link.rrsp')} />,
+                tfsa: <MuiLink href={t('personal-retirement-savings.overview.link.tfsa')} />,
+                amount: <MuiLink href={t('personal-retirement-savings.overview.link.gis-amount')} />,
+                gis: <MuiLink href={t('personal-retirement-savings.overview.link.gis')} />
+              }}
+            />
+        </p>
+        <p>
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="personal-retirement-savings.learn-more.content"
+              components={{ a: <MuiLink component={Link} href={t('personal-retirement-savings.learn-more.link')} /> }}
+            />
+        </p>
+        <div className="items-center gap-6 xl:gap-10 space-y-6">
+          <AlertCard  type="important">
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="personal-retirement-savings.important-notice"
+            />
+          </AlertCard>
+          <AlertCard type="disclaimer">
+            <Trans
+              ns="learn/main-sources-of-retirement-income"
+              i18nKey="personal-retirement-savings.disclaimer-notice"
             />
           </AlertCard>
         </div>
 
-        <h3 className="h3">{t('personal-retirement-savings.tfsa.header')}</h3>
-        <p>{t('personal-retirement-savings.tfsa.overview')}</p>
-        <div className="flex flex-col items-center gap-6 xl:flex-row xl:gap-10">
-          <Image
-            alt={t('personal-retirement-savings.tfsa.illustration.alt')}
-            src={t('personal-retirement-savings.tfsa.illustration.img-url')}
-            width={173}
-            height={150}
-            className="w-full max-w-md"
-          />
-          <AlertCard type="important">
-            <Trans
-              ns="learn/main-sources-of-retirement-income"
-              i18nKey="personal-retirement-savings.tfsa.important-notice"
-            />
-          </AlertCard>
-        </div>
         <h2 id="learn-more" className="h2">
           {t('learn-more.header')}
         </h2>

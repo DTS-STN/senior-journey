@@ -2,205 +2,323 @@
   "breadcrumbs": {
     "learn": "Apprendre"
   },
+  "canada-pension-plan-program": {
+    "cpp-post-retirement-benefit": {
+      "adjustments": "(FR) Each new PRB will start the year after the new contributions are made. The PRBs are adjusted based on your age when they begin. If you are younger than 65, the PRB will be reduced. If you are older than 65, the new benefit will be increased.",
+      "chart": {
+        "accessibility": {
+          "button-label": "(FR) Text alternative for How we top up your CPP retirement pension using Post-Retirement Benefits",
+          "caption": "(FR) Values presented on the image",
+          "description": {
+            "content": "(FR) The chart shows changes in monthly payments for people who work for 3 years after starting their CPP retirement pension. It shows that PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
+            "header": "(FR) Description"
+          },
+          "header": [
+            "(FR) Number of years you contribute to CPP after starting your pension",
+            "(FR) CPP retirement",
+            "(FR) PRB 1",
+            "(FR) PRB 2",
+            "(FR) PRB 3",
+            "(FR) Total"
+          ],
+          "rows": [
+            {
+              "data": [
+                "(FR) Year you start your pension",
+                "(FR) $836",
+                "(FR) -",
+                "(FR) -",
+                "(FR) -",
+                "(FR) $836"
+              ]
+            },
+            {
+              "data": [
+                "(FR) 1 year",
+                "(FR) $836",
+                "(FR) $29",
+                "(FR) -",
+                "(FR) -",
+                "(FR) $865"
+              ]
+            },
+            {
+              "data": [
+                "(FR) 2 years",
+                "(FR) $836",
+                "(FR) $29",
+                "(FR) $31",
+                "(FR) -",
+                "(FR) $896"
+              ]
+            },
+            {
+              "data": [
+                "(FR) 3 years",
+                "(FR) $836",
+                "(FR) $29",
+                "(FR) $31",
+                "(FR) $35",
+                "(FR) $931"
+              ]
+            }
+          ],
+          "values-heading": "(FR) Values"
+        },
+        "footer": "(FR) The PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
+        "header": "(FR) How we top up your CPP retirement pension using Post-Retirement Benefits",
+        "img-url": {
+          "desktop": "/assets/cpp-prb-desktop-en.jpg",
+          "mobile": "/assets/cpp-prb-mobile-en.jpg"
+        }
+      },
+      "choices": {
+        "content": "(FR) When you reach age 65, you can choose to stop making post-retirement contributions by filing <a>a form with CRA</a> and giving it to your employer. This will stop you from earning additional PRBs. Together with your retirement pension, PRBs will be adjusted for inflation every year.",
+        "link": "https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/formulaires/cpt30.html"
+      },
+      "differences": {
+        "content": "(FR) To see the difference between delaying your pension or taking PRBs, read <Link>Keith collects his public pensions while working</Link>.",
+        "link": "/learn/case-studies/keith"
+      },
+      "header": "(FR) What is the CPP Post-Retirement Benefit (PRB)?",
+      "helpful-resources": {
+        "cpp": {
+          "content": "(FR) Contributions to the Canada Pension Plan",
+          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/cotisations.html"
+        },
+        "header": "(FR) Helpful resources",
+        "monthly": {
+          "content": "(FR) Canada Pension Plan: Pensions and benefits monthly amounts",
+          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/montants-paiement.html"
+        },
+        "overview": {
+          "content": "(FR) CPP Retirement pension: Overview",
+          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc.html"
+        }
+      },
+      "overview": "(FR) If you continue to work while receiving your Canada Pension Plan (CPP) retirement pension, and under age 70, you can continue to participate in the CPP. Your CPP contributions will create Post-Retirement Benefits (PRBs), which will increase your retirement income."
+    },
+    "header": "(FR) Canada Pension Plan (CPP)",
+    "helpful-resources": {
+      "cpp": {
+        "content": "(FR) Contributions to the Canada Pension Plan",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/cotisations.html"
+      },
+      "header": "(FR) Helpful resources",
+      "monthly": {
+        "content": "(FR) Canada Pension Plan: Pensions and benefits monthly amounts",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/montants-paiement.html"
+      },
+      "overview": {
+        "content": "(FR) CPP Retirement pension: Overview",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc.html"
+      }
+    },
+    "how-much": {
+      "amount": "(FR) Your CPP retirement pension amount depends on how much and for how long you've contributed to the plan. The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.",
+      "header": "(FR) How much could you collect from the CPP retirement pension?",
+      "inflation": "(FR) The amount for CPP retirement pension is increased for inflation every January.",
+      "learn-more": {
+        "content": "(FR) To learn more about early and deferred pensions, visit <a>Deciding when to start your public pensions</a>.",
+        "link": "/learn/deciding-when-to-collect-public-pensions"
+      }
+    },
+    "overview": "(FR) The Canada Pension Plan (CPP) retirement pension provides income replacement for those who have worked or been self-employed in Canada. It is a monthly payment that replaces part of your work earnings in retirement. The amount of your CPP retirement pension is based on your earnings and contributions to the plan.",
+    "qualify": {
+      "header": "(FR) Do you qualify for the CPP retirement pension?",
+      "pension-credits": {
+        "content": "(FR) You may have <a>pension credits</a> from a former partner as part of a divorce or separation.",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-partage-credits.html"
+      },
+      "worked-in-canada": "(FR) If you worked in Canada, and had earnings more than $3,500, you and your employer contributed to the CPP. If you were self-employed, you made contributions for both the employer and employee. Contributions are based on your earnings, up to an annual limit."
+    }
+  },
+  "guaranteed-income-supplement": {
+    "collecting": "(FR) You cannot receive the GIS until you start collecting your OAS pension.",
+    "header": "(FR) Guaranteed Income Supplement (GIS)",
+    "helpful-resources": {
+      "estimator": {
+        "content": "(FR) Old Age Security benefits estimator",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
+      },
+      "header": "(FR) Helpful resources",
+      "overview": {
+        "content": "(FR) Guaranteed Income Supplement: Overview",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html"
+      }
+    },
+    "list": {
+      "income-below-maximum": {
+        "content": "(FR) have an income below a <a>certain amount</a>",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
+      },
+      "live-canada": "(FR) live in Canada",
+      "receive-pension": "(FR) collect the OAS pension"
+    },
+    "monthly": "(FR) The monthly GIS amount depends on your income from the previous year and your marital status. If you are single, you will collect a higher amount.",
+    "overview": "(FR) The GIS is meant to support people who collect the OAS pension and have low income.",
+    "qualify": "(FR) To qualify for the GIS, you must:"
+  },
+  "header": "Principales sources de revenus de retraite",
+  "key-takeaways": {
+    "cpp-oas": {
+      "description": "(FR) Eligibility for the OAS pension is based on how long you've lived in Canada after age 18. Eligibility for the CPP/QPP retirement pension is based on contributions you and your employer made while working in Canada.",
+      "header": "(FR) The Old Age Security (OAS) and the Canada Pension Plan (CPP) are the two federal public pensions in Canada. The province of Québec has its own Québec Pension Plan (QPP)."
+    },
+    "cpp-oas-adjusted-for-inflation": {
+      "description": "(FR) When looking at graphs and tables, remember that you will be taxed based on your total income. The amount you actually receive may be less.",
+      "header": "(FR) Your pensions will change to reflect increases to inflation. These pensions are taxable income."
+    },
+    "cpp-oas-available": {
+      "header": "(FR) No matter when you decide to start your public pensions, they will always be available to you."
+    },
+    "cpp-part-of-plan": {
+      "description": "(FR) You may have other sources like a workplace pension or personal savings.",
+      "header": "(FR) The public pensions are meant to be a part of your retirement income plan."
+    },
+    "header": "(FR) Key Takeaways",
+    "not-need-to-stop-working": {
+      "description": "(FR) You don't have to stop working to collect your public pensions.",
+      "header": "(FR) Retiring from your work and starting to collect your public pensions are two different things."
+    }
+  },
+  "learn-more": {
+    "going-from-work-to-retirement": {
+      "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
+      "header": "Transition du monde du travail à la retraite"
+    },
+    "header": "En savoir plus",
+    "income-calculator": {
+      "description": "(FR) The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits.",
+      "header": "(FR) Canadian Retirement Income Calculator"
+    },
+    "savings-and-pension": {
+      "description": "(FR) Registered pension and savings plans for individuals and plan administrators.",
+      "header": "(FR) Savings and pension plans"
+    },
+    "when-to-start": {
+      "description": "Prendre la décision de quand commencer à recevoir des pensions publiques",
+      "header": "(FR) Deciding when to start your public pensions"
+    }
+  },
   "meta": {
     "description": "Renseignez-vous sur les différentes sources de revenus de retraite dont vous pourriez bénéficier. Examiner vos sources de revenus et identifier les écarts potentiel."
   },
-  "key-takeaways": {
-    "heading": "(FR) Key Takeaways",
-    "cpp-oas": {
-      "header": "(FR) Canada Pension Plan (CPP) and Old Age Security (OAS) are the two public pension programs in Canada.",
-      "description": "(FR) Eligibility for the OAS pension is based on how long you have lived in Canada. Eligibility for the CPP retirement pension is based on contributions you and your employer made while working in Canada."
-    },
-    "cpp-oas-retirement-income-plan": {
-      "header": "(FR) The OAS and CPP pensions are meant to be one part of your retirement income plan.",
-      "description": "(FR) You can add income from many sources like personal savings, or a workplace pension if you have one."
-    },
-    "cpp-oas-adjusted-for-inflation": {
-      "header": "(FR) Both the OAS and CPP pensions are adjusted for inflation.",
-      "description": "(FR) Your public pensions are a secure and inflation-proof retirement income you can rely on."
-    },
-    "cpp-oas-taxable-income": {
-      "header": "(FR) The OAS and CPP are taxable income.",
-      "description": "(FR) When looking at figures and tables keep in mind that you will be taxed based on your total income and the amount you receive may be less."
-    },
-    "not-need-to-stop-working": {
-      "header": "(FR) You do not need to stop working to start receiving your public pension benefits.",
-      "description": "(FR) Retiring from work and claiming your pensions are two different things. You can continue to work and receive your pensions at the same time."
-    }
-  },
-  "canada-pension-plan-program": {
-    "cpp-post-retirement-benefit": {
-      "header": "(FR) CPP Post-Retirement Benefit",
-      "important-notice": "(FR) <strong>Important:</strong> OAS program and the CPP payments are not intended to cover all your needs in retirement. These public pensions provide a base upon which seniors can add income from other sources, such as employer-sponsored pension plans, registered retirement savings plans, tax-free savings accounts and other private savings, to meet their financial needs in retirement.",
-      "paragraph-1": "(FR) If you choose to continue to work while collecting your retirement pension, you can also benefit from the CPP Post-Retirement Benefit. Each year that you work and contribute while collecting your retirement pension, up to age 70, will generate a new benefit that starts the following year and is added to your CPP income, even if you're already receiving the maximum pension. Like the retirement pension, post-retirement benefits are payable for life and indexed to the cost of living once per year. When you reach age 65, you can choose to stop making post-retirement contributions. This won't affect any post-retirement benefits you are already receiving, but will stop you from earning new ones.",
-      "paragraph-2": "(FR) To learn more, visit the <Link>CPP Pension page.</Link>"
-    },
-    "cpp-retirement-pension": {
-      "header": "(FR) CPP retirement pension",
-      "paragraph-1": "(FR) The CPP retirement pension is a monthly payment that partially replaces your work earnings in retirement. The amount of your CPP retirement pension is based on your contributions to the Plan.",
-      "paragraph-2": "(FR) To qualify for the retirement pension, you must have contributions to the Plan for at least one year. Usually, these contributions will be from work you did, however, they may also be the result of a division of pension credits if you were divorced or ended a common-law relationship.",
-      "paragraph-3": "(FR) The standard age for the CPP retirement pension is 65; however, the Plan provides you with flexibility based on your needs and circumstances. You can begin your pension as early as age 60 by accepting a permanent reduction, or, you can permanently increase your monthly amount by delaying the pension up to age 70. To learn more about early and deferred pensions, visit the website [link on this website] There is no need to stop working in order to begin your pension.",
-      "paragraph-4": "(FR) The CPP pension amount you'll receive depends on how much and for how long you have contributed to the Plan, and at what age you decide to take your pension. The amount for CPP is increased for inflation once a year every January.",
-      "paragraph-5": {
-        "content": "(FR) For the most recent amounts paid to pensioners, <a>visit this CPP payment amounts page</a>.",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/montant-prestation.html"
-      },
-      "paragraph-6": "(FR) To learn more, visit the <Link>CPP Retirement Pension page.</Link>"
-    },
-    "header": "(FR) Canada Pension Plan (CPP) program",
-    "overview": {
-      "paragraph-1": "(FR) The Canada Pension Plan (CPP) is a social insurance program that provides partial earnings protection for those who have worked in Canada. The CPP offers benefits when you retire, if you become disabled, and to your estate and family when you die.",
-      "paragraph-2": "(FR) When you work for a Canadian employer, you and your employer contribute to the CPP. If you are self-employed, you make both the employer and employee contributions."
-    }
-  },
-  "canada-retirement-income-system": {
-    "header": "(FR) Canada's retirement income system",
-    "pillar-1": {
-      "header": "(FR) First Pillar",
-      "paragraph-1": "(FR) Old Age Security Program (OAS)",
-      "paragraph-2": "(FR) Financed from taxes"
-    },
-    "pillar-2": {
-      "header": "(FR) Second Pillar",
-      "paragraph-1": "(FR) Canada Pension Plan (CPP)/Québec Pension Plan (QPP)",
-      "paragraph-2": "(FR) Financed through employer/employee contributions and investment returns."
-    },
-    "pillar-3": {
-      "header": "(FR) Third Pillar",
-      "paragraph-1": "(FR) Workplace pension plans and private savings",
-      "paragraph-2": "(FR) Includes Registered Retirement Savings Plans, Tax-Free Saving Accounts and other private savings.",
-      "paragraph-3": "(FR) Financed through employer/employee contributions and private savings"
-    },
-    "private": "(FR) Private",
-    "public": "(FR) Public",
-    "three-pillar-system": "(FR) A three-pillar system"
-  },
-  "header": "Principales sources de revenus de retraite",
-  "learn-more": {
-    "canada-pension-plan-program": {
-      "description": "(FR) The official Canada.ca page of the CPP program with information on the CPP retirement pension, and other CPP related benefits.",
-      "header": "(FR) Canada Pension Plan (CPP) Program"
-    },
-    "header": "En savoir plus",
-    "old-age-security-program": {
-      "description": "(FR) The official Canada.ca page of the OAS program with information on the OAS retirement pension, and other OAS related benefits.",
-      "header": "(FR) Old Age Security Program"
-    },
-    "sources-of-retirement-income": {
-      "description": "(FR) Public pensions, OAS, CPP, employer pensions, RRSPs and other sources of personal savings.= from the Financial Consumer Agency of Canada",
-      "header": "(FR) Sources of retirement income"
-    },
-    "going-from-work-to-retirement": {
-      "description": "(FR) You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
-      "header": "Transition du monde du travail à la retraite"
-    }
-  },
   "old-age-security-program": {
-    "guaranteed-income-supplement": {
-      "header": "(FR) Guaranteed Income Supplement (GIS)",
-      "list": {
-        "income-below-maximum": {
-          "content": "(FR) your income is <a>below the maximum annual income threshold for the GIS based on your marital status</a>.",
-          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
-        },
-        "live-canada": "(FR) live in Canada",
-        "receive-pension": "(FR) receive the OAS pension"
-      },
-      "paragraph-1": "(FR) The GIS will support you, if you receive the OAS pension and have low income. To qualify for the GIS, you must:",
-      "paragraph-2": "(FR) The amount of GIS you can get depends on your income in the previous year and marital status. If you delay the OAS pension, you cannot receive the GIS until you start receiving the OAS pension.",
-      "paragraph-3": {
-        "content": "(FR) To learn more, visit the <a>GIS eligibility page</a>.",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html"
-      },
-      "paragraph-4": {
-        "content": "(FR) To estimate the amount of GIS you may get, visit the <a>Old Age Security benefits estimator</a>",
+    "header": "(FR) Old Age Security (OAS) pension",
+    "helpful-resources": {
+      "header": "(FR) Helpful resources",
+      "oas-estimator": {
+        "content": "(FR) Old Age Security benefits estimator",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
-      }
-    },
-    "header": "(FR) Old Age Security (OAS) program",
-    "oas-pension": {
-      "card": {
-        "content": "(FR) The OAS and CPP provide basic inflation-proof retirement income. Learn how you can increase your monthly and life-time pensions.",
-        "header": "(FR) When to take your government pensions",
-        "learn-more": "En savoir plus"
       },
-      "header": "(FR) OAS pension",
-      "paragraph-1": {
-        "content": "(FR) The OAS pension is a monthly payment paid to eligible seniors.<br />To see if you qualify for the OAS pension, visit <a>this OAS Pension page</a>.",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/admissibilite.html"
-      },
-      "paragraph-2": {
-        "content": "(FR) The amount you will get from the OAS pension depends on how long you have lived in Canada after the age of 18. You will be eligible for the maximum amount if you lived in Canada for 40 years or more after the age of 18. You can qualify for the OAS pension, if you have <a>lived or worked in another country that has a social security agreement with Canada</a>.",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html"
-      },
-      "paragraph-3": {
-        "content": "(FR) The amount for OAS is updated every 3 months. For the most recent amount, visit this <a>OAS payment amounts page</a>.",
+      "oas-how-much": {
+        "content": "(FR) Old Age Security: How much you could receive",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html"
       },
-      "paragraph-4": "(FR) You can begin receiving your OAS pension at age 65, or you may choose to delay it up to 60 months, until age 70, for a higher monthly pension each month you delay. For more information on deciding when to take your government pensions, visit our learning page!",
-      "paragraph-5": {
-        "content": "(FR) To learn more about OAS pension, visit <a1>the OAS Pension page</a1>.<br />To estimate the amount of OAS pension you may get, visit the <a2>Old Age Security benefits estimator</a2>",
-        "link-1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse.html",
-        "link-2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
+      "overview": {
+        "content": "(FR) Old Age Security: Overview",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse.html"
       }
     },
-    "overview": "(FR) The Old Age Security (OAS) program provides benefits including the OAS pension and the Guaranteed Income Supplement (GIS) to seniors. You don't have to contribute to receive benefits from the OAS program. You can receive OAS benefits even if you're working or have never worked in Canada."
-  },
-  "ongoing-earnings-from-your-job": {
-    "card": {
-      "content": "(FR) You can take many different paths transitioning from work to retirement. Learn how you can better combine your income from job and pensions.",
-      "header": "Transition du monde du travail à la retraite",
-      "learn-more": "En savoir plus"
+    "how-much": {
+      "eligible": "(FR) You are eligible for a full OAS pension if you've lived in Canada for 40 years, after the age of 18.",
+      "header": "(FR) How much could you collect from the OAS pension?",
+      "smaller": "(FR) You could collect a smaller, partial pension if you've lived in Canada for at least 10 years after age 18. A partial pension is payable at a rate of 1/40th of the full pension for every year you've resided in Canada after age 18. ",
+      "start": {
+        "content": "(FR) You can start collecting your OAS pension at age 65 but you can also delay up to age 70. After age 70, there is no advantage in delaying your first payment. Learn more by reading <a>Deciding when to start your public pensions</a>.",
+        "link": "/learn/deciding-when-to-collect-public-pensions"
+      }
     },
-    "header": "(FR) Ongoing earnings from your job",
-    "overview": "(FR) Many seniors are deciding to continue working while receiving their retirement benefits. This can mean that they are reducing their work hours from full-time to part-time before retiring completely, starting a new career or a business. If this sounds like something you're interested in, we've created a page that explains how it could impact your retirement benefits and provides some helpful tips to get you started!"
-  },
-  "overview": {
-    "header": "(FR) Overview",
-    "list": {
-      "cpp": "(FR) the Canada Pension Plan (CPP) Retirement Pension",
-      "earnings": "(FR) Earnings, if you continue to work in retirement",
-      "oas-and-gis": "(FR) the Old Age Security (OAS) pension and Guaranteed Income Supplement (GIS)",
-      "savings-and-investments": "(FR) Personal savings and investments",
-      "workplace": "(FR) Workplace pension plans"
-    },
-    "paragraph-1": "(FR) Planning for retirement may seem overwhelming, but it's never too early (or too late) to start thinking about it. Taking the time to plan now can help ensure a comfortable and fulfilling retirement in the future. The first step is knowing where your money during retirement will come from. Your income in retirement will typically come from these sources:",
-    "paragraph-2": "(FR) If you live or have worked in Quebec, you may receive the Québec Pension Plan (QPP) retirement pension instead of the CPP retirement pension. These programs are very similar, but not identical.",
-    "paragraph-3": {
-      "content": "(FR) To learn more visit the <a>QPP website</a>.",
-      "link": "https://www.rrq.gouv.qc.ca/fr/programmes/regime_rentes/Pages/regime_rentes.aspx"
+    "qualify": {
+      "also-eligible": {
+        "content": "(FR) You may also be eligible if you've lived or worked in another country that has <a>a social security agreement with Canada</a>.",
+        "link": "https://www.canada.ca/fr/agence-revenu/services/impot/decisions-concernant-regime-pensions-canada-rpc-assurance-emploi-ae/accords-internationaux-securite-sociale-regime-pensions-canada.html"
+      },
+      "header": "(FR) Do you qualify for the OAS pension?",
+      "more-details": {
+        "content": "(FR) For more details about if you qualify for OAS pension, visit the <a>OAS pension page</a>.",
+        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse.html"
+      },
+      "most-people": "(FR) Most people qualify for the OAS pension if they have lived in Canada for more than 10 years after age 18. You will have to be a Canadian citizen or legal resident beforec you can collect your OAS pension."
     }
   },
-  "personal-retirement-savings": {
-    "header": "(FR) Personal retirement savings",
-    "overview": "(FR) Saving money for retirement is crucial to maintain the lifestyle you want when you retire. If you don't have a pension plan from your employer, you might need to rely even more on your personal savings. There are different ways to save for retirement, but the two most common are Registered Retirement Savings Plans (RRSPs) and Tax-Free Savings Account (TFSA). The government provides assistance through these savings accounts by reducing the amount of tax you pay.",
-    "rrsp": {
-      "header": "(FR) What is a Registered Retirement Savings Plans (RRSPs)",
-      "illustration": {
-        "alt": "(FR) Contributions and investment growth in your RRSP are sheltered from taxes (shown under an umbrella), however you will pay taxes on withdrawals (shown outside the umbrella",
-        "img-url": "/assets/rrsp-fr.svg"
+  "ongoing-earnings-from-your-job": {
+    "header": "(FR) Ongoing earnings from your job",
+    "overview": "(FR) Canadians are living longer and many continue to work in retirement. Some do not stop working at all, but many older workers choose to transition step-by-step into retirement. They may reduce their work hours from full-time to part-time before retiring completely. They can also start a new career or business. If you are interested in these options, we explain how working later in life can impact your retirement benefits.",
+    "work-to-retirement": {
+      "content": "(FR) To learn more about combining income from work and retirement, visit <a>Going from work to retirement</a>",
+      "link": "/learn/going-from-work-to-retirement"
+    }
+  },
+  "overview": {
+    "canada-retirement-income-system": {
+      "cpp-qpp": {
+        "content": "(FR) Financed through employer/employee contributions and investment returns",
+        "header": "(FR) Canada Pension Plan (CPP)/Québec Pension Plan (QPP)",
+        "pillar": "(FR) Second Pillar"
       },
-      "important-notice": "(FR) <strong>Important:</strong> Taking money from a RRSP will count as additional income and may change your eligibility for Guaranteed Income Supplement (GIS) in the next payment cycle that runs from July to June.",
-      "overview": "(FR) A Registered Retirement Savings Plan is a savings account that helps people save money for when they're ready to retire. When you put money into an RRSP, you don't have to pay taxes on it right away. Instead, you pay taxes on the money when you take it out of the account later, usually when you're retired and your income is lower. This way, you can save more money and pay less taxes in the long run."
+      "header": "(FR) Canada's retirement income system",
+      "important-notice": "(FR) <strong>Important</strong>: Public pensions aren’t intended to cover all your financial needs in retirement. Most Canadians will save during their working years or have another source of income to have enough money in retirement. Canada's public pensions offer you flexibility to start collecting them at the best time for your personal circumstances. Canada’s public pensions are financially secure. This means that you can count on them for the rest of your life, no matter when you decide to start collecting them. Public pensions also protect you from inflation. Your pensions will grow to reflect increases to the cost of living.",
+      "oas": {
+        "content": "(FR) Financed through general tax revenues",
+        "header": "(FR) Old Age Security Program (OAS)",
+        "pillar": "(FR) First Pillar"
+      },
+      "private": "(FR) Private",
+      "public": "(FR) Public",
+      "read-case-bonnie": {
+        "content": "(FR) Read <a>Bonnie delays to reduce the savings she needs</a> to see how she uses different sources of income to retire comfortably.",
+        "link": "/learn/case-studies/bonnie"
+      },
+      "three-pillar-system": "(FR) A three-pillar system",
+      "workplace": {
+        "content": "(FR) Financed through employer/employee contributions and private savings",
+        "header": "(FR) Workplace pension plans and private savings (e.g. Registered Retirement Savings Plans, Tax-Free Saving Accounts, etc.)",
+        "pillar": "(FR) Third Pillar"
+      }
     },
-    "tfsa": {
-      "header": "(FR) What is a Tax-Free Savings Account (TFSA)",
-      "illustration": {
-        "alt": "(FR) Contributions to your TFSA are taxed (shown outside an umbrella), however investment growth and withdrawals are sheltered from tax (shown under an umbrella)",
-        "img-url": "/assets/tfsa-fr.svg"
-      },
-      "important-notice": "(FR) <strong>Important:</strong> Taking money from TFSA does not count as additional income and will not change the amount of your GIS in the next payment cycle that runs from July to June.",
-      "overview": "(FR) A Tax-Free Savings Account is another savings account that helps people save money. You have to pay tax when you put money into a TFSA but you don't have to pay taxes on the money when you take it out of the account."
+    "header": "(FR) Overview",
+    "learn-more": {
+      "content": "(FR) To learn more visit the <a>QPP website</a>.",
+      "link": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx"
+    },
+    "list": {
+      "cpp": "(FR) The CPP/QPP retirement pension",
+      "earnings": "(FR) Earnings, if you continue to work in retirement",
+      "oas-and-gis": "(FR) The OAS pension and if you have low income in retirement, the Guaranteed Income Supplement (GIS)",
+      "savings-and-investments": "(FR) Retirement savings and investments",
+      "workplace": "(FR) Workplace pension plans"
+    },
+    "overview": "(FR) Planning for retirement can be overwhelming, but it's never too early or too late to start thinking about it. Taking the time to plan can help you have a comfortable and fulfilling retirement in the future. An important early step in retirement planning is knowing where your money will come from. This can help you set achievable goals. Retirement income will usually come from these sources:",
+    "qpp": "(FR) If you've worked or lived in Quebec, you may qualify for the Québec Pension Plan (QPP) retirement pension instead of the CPP. These programs are very similar, but not the same."
+  },
+  "personal-retirement-savings": {
+    "disclaimer-notice": "(FR) <strong>Disclaimer</strong>: This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
+    "header": "(FR) Personal retirement savings",
+    "important-notice": "(FR) <strong>Important:</strong> Taking money from TFSA does not count as additional income and will not change the amount of your GIS in the next payment cycle that runs from July to June.",
+    "learn-more": {
+      "content": "(FR) To learn more about how much you income you might need in retirement, check out our page on <a>Planning to save for retirement</a>.",
+      "link": "/learn/planning-to-save-for-retirement"
+    },
+    "overview": {
+      "content": "(FR) Saving money is important to many for keeping their current lifestyle in retirement. If you don't have a pension plan from your employer, you might need to rely even more on your personal savings. There are different ways to save for retirement, but the two most common are <rrsp>Registered Retirement Savings Plans (RRSPs)</rrsp> and <tfsa>Tax-Free Savings Accounts (TFSAs)</tfsa>. The government helps you save for retirement through these savings accounts by reducing the amount of tax you pay. If you qualify for the OAS pension and have <amount>low income</amount>, you may also get financial support through the <gis>Guaranteed Income Supplement (GIS)</gis>.",
+      "link": {
+        "gis": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+        "gis-amount": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
+        "rrsp": "https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/reer-regimes-connexes/regime-enregistre-epargne-retraite-reer.html",
+        "tfsa": "https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/publications/rc4466/guide-compte-epargne-libre-impot-celi-particuliers.html"
+      }
     }
   },
   "workplace-pension-plans": {
     "header": "(FR) Workplace pension plans",
     "list": {
-      "group-rrsp": "(FR) a group Registered Retirement Savings Plan (group RRSP)",
-      "group-tfsa": "(FR) a group Tax-Free Savings Account (group TFSA)",
-      "prpp": "(FR) pooled Registered Pension Plan (PRPP)",
-      "rpp": "(FR) an employer registered pension plan (RPP)"
+      "group-rrsp": "(FR) A group Registered Retirement Savings Plan (group RRSP)",
+      "group-tfsa": "(FR) A group Tax-Free Savings Account (group TFSA)",
+      "prpp": "(FR) Pooled Registered Pension Plan (PRPP)",
+      "rpp": "(FR) An employer registered pension plan (RPP)"
     },
-    "overview": "(FR) Workplace pension plans help you maintain your lifestyle in retirement. If your employer offers a pension plan, it's a good idea to learn about the benefits of the plan and get a statement of your contributions. Below are examples of workplace pension plans:"
+    "overview": "(FR) Workplace pension plans are separate from your public pensions. They both try to help you live comfortably in retirement. If your employer offers a pension plan, it's a good idea to learn about the benefits of the plan and get a statement of your contributions. Below are examples of workplace pension plans:"
   }
 }
