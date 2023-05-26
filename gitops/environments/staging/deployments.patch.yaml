@@ -16,7 +16,20 @@ spec:
           image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230519-0187-9c8fa83c
           env:
             - name: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
-              value: "https://assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-cad75bf2f0d2-staging.min.js"
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
+            - name: ADOBE_ANALYTICS_CSP_DOMAINS
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: ADOBE_ANALYTICS_CSP_DOMAINS
+            - name: ADOBE_ANALYTICS_CSP_SCRIPT_HASHES
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: ADOBE_ANALYTICS_CSP_SCRIPT_HASHES
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:
