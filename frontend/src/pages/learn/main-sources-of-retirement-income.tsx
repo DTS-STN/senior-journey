@@ -48,16 +48,6 @@ const MainSourcesOfRetirementIncome: FC = () => {
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
-  const Img = ({ pension, classes }: { pension: string; classes?: string }) => (
-    <Image
-      alt={t(`${pension}.description`)}
-      src={t(`${pension}.img-url.${mobile ? 'mobile' : 'desktop'}`)}
-      width={842}
-      height={519}
-      className={`w-full ${classes}`}
-    />
-  )
-  
   return (
     <>
       <NextSeo
@@ -330,7 +320,13 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <h4 className="h6 pb-3">{t('canada-pension-plan-program.cpp-post-retirement-benefit.header')}</h4>
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.overview')}</p>
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.adjustments')}</p>
-        <Img pension="canada-pension-plan-program.cpp-post-retirement-benefit.chart" />
+        <Image
+          alt={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.description')}
+          src={t(`canada-pension-plan-program.cpp-post-retirement-benefit.chart.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          width={842}
+          height={519}
+          className="w-full"
+        />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.footer')}</p>
         <AccessibilityGraphContainer
           tableData={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility', { returnObjects: true })}
