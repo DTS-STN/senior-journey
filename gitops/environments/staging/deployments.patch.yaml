@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend
-          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230519-0187-9c8fa83c
+          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230525-0209-3f82997a
           env:
             - name: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
               valueFrom:
