@@ -123,6 +123,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           {t('old-age-security.heading')}
         </h2>
         <p>{t('old-age-security.content-one')}</p>
+        <p>{t('old-age-security.content-two')}</p>
 
         <h3 className="h3">{t('old-age-security.table-one.title')}</h3>
 
