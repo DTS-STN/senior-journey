@@ -40,7 +40,15 @@ const theme = createTheme({
         root: {
           fontFamily: 'Lato, sans-serif',
           textTransform: 'none',
-          fontWeight: "bold"
+          fontWeight: 'bold',
+        },
+      },
+    },
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          fontFamily: 'Lato, sans-serif',
+          textTransform: 'none',
         },
       },
     },

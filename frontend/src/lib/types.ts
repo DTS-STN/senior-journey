@@ -51,7 +51,7 @@ export type TasksGroupData =
   | typeof tasksData.beforeRetiring
   | typeof tasksData.receivingBenefits
 
-export interface QuizFormState {
+export interface QuizFormState extends Record<string, string> {
   divorcedOrSeparated: string
   financialPreparedness: string
   hasChildren: string
