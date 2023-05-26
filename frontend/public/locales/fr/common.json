@@ -5,16 +5,13 @@
     "description": "Vous ne pouvez pas demander de services ou de prestations par l'intermédiaire de ce site d'essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées."
   },
   "checklist": "Liste de contrôle",
-  "contact-us": "Nous contacter",
   "date-select-field": {
     "day": "Jour",
     "month": "Mois",
     "year": "Année"
   },
-  "english": "English",
   "footer": {
     "canada-ca-alt-text": "Symbole du gouvernement du Canada",
-    "date-modified-text": "Date de modification\u00a0:",
     "explore-retirement": {
       "going-from-work-to-retirement": "Transition du monde du travail à la retraite",
       "main-sources-of-retirement-income": "Principales sources de revenus de retraite",
@@ -25,14 +22,8 @@
     "explore-retirement-text": "Renseignez-vous sur la retraite",
     "header": "Carrefour retraite",
     "links": {
-      "about-canada-ca": "À propos de Canada.ca",
-      "about-canada-ca-url": "https://www.canada.ca/fr/gouvernement/a-propos.html",
-      "mobile-applications": "Applications mobiles",
-      "mobile-applications-url": "https://www.canada.ca/fr/mobile.html",
       "privacy": "Confidentialité",
       "privacy-url": "https://www.canada.ca/fr/transparence/confidentialite.html",
-      "social-media": "Médias sociaux",
-      "social-media-url": "https://www.canada.ca/fr/sociaux.html",
       "terms-and-condition": "Avis",
       "terms-and-condition-url": "https://www.canada.ca/fr/transparence/avis.html"
     },
@@ -59,42 +50,19 @@
   },
   "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00a0:",
   "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00a0:",
-  "francais": "Français",
   "goc": "Governement du Canada",
   "goc-site": "Canada.ca",
   "header": {
     "goc-link": "https://www.canada.ca/fr.html",
     "skip-to-main": "Passer au contenu principal"
   },
-  "language-selection": "Sélection de la langue",
-  "login": "Connexion",
-  "modal-go-back": {
-    "cancel-button": "Annuler",
-    "description": "Êtes-vous sûr de vouloir revenir en arrière?",
-    "header": "Retournez à la page d'accueil",
-    "no-button": "Non",
-    "yes-button": "Oui"
-  },
-  "modal-idle-timeout": {
-    "continue-session": "Continuer la session",
-    "description": "Vous avez été inactif pendant 10 minutes et votre session doit expirer dans {{timeRemaining}}. Sélectionnez 'Continuer la session' pour continuer votre session.",
-    "end-session": "Terminer la session",
-    "header": "Avertissement d'expiration de la session"
-  },
-  "opens-in-new-tab": "(s'ouvre dans un nouvel onglet)",
   "required": "(obligatoire)",
-  "service-and-benefits": "Service et avantages",
-  "skip-to": {
-    "about-government": "Passer à «\u00a0Au sujet du gouvernement\u00a0»"
-  },
+  "opens-in-new-tab": "(s'ouvre dans un nouvel onglet)",
   "table-of-contents": {
     "aria-label": "Table des matières",
     "dialog": {
       "trigger-aria-label": "Ouvrir la table des matières"
     },
     "header": "Contenu"
-  },
-  "title": "accueil",
-  "tools": "Outils",
-  "top-of-page": "Haut de la page"
+  }
 }

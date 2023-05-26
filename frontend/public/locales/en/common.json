@@ -5,16 +5,13 @@
     "description": "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change."
   },
   "checklist": "Checklist",
-  "contact-us": "Contact us",
   "date-select-field": {
     "day": "Day",
     "month": "Month",
     "year": "Year"
   },
-  "english": "English",
   "footer": {
     "canada-ca-alt-text": "Symbol of the Government of Canada",
-    "date-modified-text": "Date Modified:",
     "explore-retirement": {
       "going-from-work-to-retirement": "Going from work to retirement",
       "main-sources-of-retirement-income": "Main sources of retirement income",
@@ -25,14 +22,8 @@
     "explore-retirement-text": "Explore retirement",
     "header": "Retirement Hub",
     "links": {
-      "about-canada-ca": "About Canada.ca",
-      "about-canada-ca-url": "https://www.canada.ca/en/government/about.html",
-      "mobile-applications": "Mobile applications",
-      "mobile-applications-url": "https://www.canada.ca/en/mobile.html",
       "privacy": "Privacy",
       "privacy-url": "https://www.canada.ca/en/transparency/privacy.html",
-      "social-media": "Social media",
-      "social-media-url": "https://www.canada.ca/en/social.html",
       "terms-and-condition": "Terms and conditions",
       "terms-and-condition-url": "https://www.canada.ca/en/transparency/terms.html"
     },
@@ -59,42 +50,19 @@
   },
   "found-errors_one": "The following error was found in the form:",
   "found-errors_other": "The following {{count}} errors were found in the form:",
-  "francais": "Français",
   "goc": "Government of Canada",
   "goc-site": "Canada.ca",
   "header": {
     "goc-link": "https://www.canada.ca/en.html",
     "skip-to-main": "Skip to main content"
   },
-  "language-selection": "Language selection",
-  "login": "Login",
-  "modal-go-back": {
-    "cancel-button": "Cancel",
-    "description": "Are you sure you want to go back?",
-    "header": "Return to the home page",
-    "no-button": "No",
-    "yes-button": "Yes"
-  },
-  "modal-idle-timeout": {
-    "continue-session": "Continue session",
-    "description": "You have been inactive for 10 minutes and your session is set to expire in {{timeRemaining}}. Select 'Continue Session' to continue your session.",
-    "end-session": "End session",
-    "header": "Session timeout warning"
-  },
   "opens-in-new-tab": "(opens in a new tab)",
   "required": "(required)",
-  "service-and-benefits": "Service and Benefits",
-  "skip-to": {
-    "about-government": "Skip to 'About government'"
-  },
   "table-of-contents": {
     "aria-label": "Table of contents",
     "dialog": {
       "trigger-aria-label": "Open table of contents"
     },
     "header": "Contents"
-  },
-  "title": "home",
-  "tools": "Tools",
-  "top-of-page": "Top of Page"
+  }
 }
