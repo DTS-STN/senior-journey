@@ -185,7 +185,7 @@
   "learn-more": {
     "going-from-work-to-retirement": {
       "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
-      "header": "(FR) Going from work to retirement"
+      "header": "Transition du monde du travail à la retraite"
     },
     "header": "En savoir plus",
     "income-calculator": {
@@ -197,7 +197,7 @@
       "header": "(FR) Savings and pension plans"
     },
     "when-to-start": {
-      "description": "(FR) Deciding when to start your public pensions",
+      "description": "Prendre la décision de quand commencer à recevoir des pensions publiques",
       "header": "(FR) Deciding when to start your public pensions"
     }
   },
