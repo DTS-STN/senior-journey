@@ -56,7 +56,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "To apply for OAS and GIS, you may need to provide certain documents. To prepare, gather the following:\n\n- Documents to prove your legal status: if you were born outside of Canada or entered Canada under a Sponsorship Agreement, you will have to provide proof of your status in Canada, such as a [certified true copy](https://catalogue.servicecanada.gc.ca/apps/EForms/pdf/en/ISP-1730_CPP.pdf) of your permanent residence card.\n- Documents to prove your marital status: you must provide your marriage certificate or a [Statutory Declaration of Common-Law Union](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP3004CPP). If you are divorced or separated, you may need to provide a divorce certificate or a [Statutory Declaration of Separation](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1811OAS).\n- Banking information: you may provide banking information or a void cheque to collect your pension payments by direct deposit.",
-        "descriptionFr": "Pour demander la SV et le SRG, vous devrez peut-être fournir certains documents. Pour vous préparer, rassemblez les éléments suivants\u00a0:\n\n- Documents prouvant votre statut juridique\u00a0: si vous êtes né à l'étranger ou êtes entré au Canada en vertu d'une entente de parrainage, vous devrez fournir une preuve de votre statut au Canada, telle qu'une [Photocopie certifiée](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1730_CPP.pdf) de votre carte de résident permanent.\n- Documents prouvant votre état civil\u00a0: vous devez fournir votre certificat de mariage ou une [Déclaration officielle d'union de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-3004_CPP.pdf). Si vous êtes divorcé ou séparé, vous devrez peut-être fournir un certificat de divorce ou une [Déclaration solennelle – Séparation d'époux légaux ou conjoints de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1811_OAS.pdf).\n- Informations bancaires\u00a0: vous pourriez être amené à fournir des informations bancaires ou un spécimen de chèque pour recevoir le paiement de votre pension par dépôt direct.",
+        "descriptionFr": "Pour demander la SV et le SRG, vous devrez peut-être fournir certains documents. Pour vous préparer, rassemblez les éléments suivants\u00a0:\n\n- Documents prouvant votre statut juridique\u00a0: si vous êtes né à l'étranger ou êtes entré au Canada en vertu d'une entente de parrainage, vous devrez fournir une preuve de votre statut au Canada, telle qu'une [Photocopie certifiée](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1730_CPP.pdf) de votre carte de résident permanent.\n- Documents prouvant votre état civil\u00a0: vous devez fournir votre certificat de mariage ou une [Déclaration officielle d'union de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-3004_CPP.pdf). Si vous êtes divorcé ou séparé, vous devrez peut-être fournir un certificat de divorce ou une [Déclaration solennelle - Séparation d'époux légaux ou conjoints de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1811_OAS.pdf).\n- Informations bancaires\u00a0: vous pourriez être amené à fournir des informations bancaires ou un spécimen de chèque pour recevoir le paiement de votre pension par dépôt direct.",
         "displayOrder": 1021,
         "id": 61,
         "links": [
@@ -124,7 +124,7 @@
             "linkEn": "https://www.canada.ca/en/employment-social-development/services/my-account.html",
             "linkFr": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
             "textEn": "Apply online - sign in to your MSCA account",
-            "textFr": "Faites votre demande en ligne – connectez-vous à votre compte Mon dossier Service Canada (MDSC)"
+            "textFr": "Faites votre demande en ligne - connectez-vous à votre compte Mon dossier Service Canada (MDSC)"
           },
           {
             "linkEn": "https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1901",
@@ -1139,7 +1139,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html",
             "textEn": "Canada Pension Plan Post-Retirement Benefit (PRB): Overview",
-            "textFr": "Régime de pension du Canada – Prestation après-retraite (PAR) Aperçu"
+            "textFr": "Régime de pension du Canada - Prestation après-retraite (PAR) Aperçu"
           }
         ],
         "tags": [
@@ -1283,7 +1283,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/while-receiving.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales/pendant-que-vous-recevez.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits: While on pension and benefits",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations Pendant que vous recevez pensions et prestations"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations Pendant que vous recevez pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/allowance-survivor/while-receiving.html",
@@ -1325,7 +1325,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/while-receiving.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales/pendant-que-vous-recevez.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits: While on pension and benefits",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations Pendant que vous recevez pensions et prestations"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations Pendant que vous recevez pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/allowance-survivor/while-receiving.html",
@@ -1367,7 +1367,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/while-receiving.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales/pendant-que-vous-recevez.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits: While on pension and benefits",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations Pendant que vous recevez pensions et prestations"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations Pendant que vous recevez pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/allowance-survivor/while-receiving.html",
@@ -1522,7 +1522,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/apply.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Countries with social security agreements",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations – Accord de sécurité sociale"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations - Accord de sécurité sociale"
           }
         ],
         "tags": [
@@ -1570,13 +1570,13 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits",
-            "textFr": "(Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations"
+            "textFr": "(Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/apply.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Countries with social security agreements",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations – Accord de sécurité sociale"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations - Accord de sécurité sociale"
           }
         ],
         "tags": [
@@ -1600,13 +1600,13 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits",
-            "textFr": "(Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations"
+            "textFr": "(Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/apply.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Countries with social security agreements",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations – Accord de sécurité sociale"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations - Accord de sécurité sociale"
           }
         ],
         "tags": [
@@ -2341,13 +2341,13 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/apply.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Countries with social security agreements",
-            "textFr": "Personnes ayant vécu ou vivant à l'étranger – Pensions et prestations – Accord de sécurité sociale"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations - Accord de sécurité sociale"
           }
         ],
         "tags": [
