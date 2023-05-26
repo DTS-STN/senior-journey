@@ -321,7 +321,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.overview')}</p>
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.adjustments')}</p>
         <Image
-          alt={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.description')}
+          alt={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content')}
           src={t(`canada-pension-plan-program.cpp-post-retirement-benefit.chart.img-url.${mobile ? 'mobile' : 'desktop'}`)}
           width={842}
           height={519}
