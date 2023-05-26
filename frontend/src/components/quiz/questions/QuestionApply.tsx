@@ -1,20 +1,20 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { Checkbox, FormControlLabel, FormGroup, ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { FormikProps, FormikValues } from 'formik'
 import { useTranslation } from 'react-i18next'
 
-type QuestionProps = {
-  values: { [field: string]: any }
-  setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
+import { QuizFormState } from '../../../lib/types'
+
+export interface QuestionApplyProps extends FormikProps<FormikValues | QuizFormState> {
+  currentStepIndex: number
 }
 
-export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
+export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue }) => {
   const { t } = useTranslation('quiz')
-  const [value, setValue] = React.useState('')
 
-  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
-    setValue(answerId)
-    setFieldValue('hasChildren', values['hasChildren'] === answerId ? '' : answerId ?? '')
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {
+    setFieldValue('hasChildren', answerId ?? '')
   }
 
   function handleCheckbox(e: React.ChangeEvent<HTMLInputElement>) {
@@ -25,11 +25,11 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
 
   return (
     <div>
-      <h5 className="h5">{t('questions.question-apply.question-marital-status.title')}</h5>
-      <FormGroup className="mb-2" data-cy="apply-subquestion-marital-status">
+      <h5 className="h5 mb-4">{t('questions.question-apply.question-marital-status.title')}</h5>
+      <FormGroup className="mb-4" data-cy="apply-subquestion-marital-status">
         <FormControlLabel
           control={
-            <Checkbox name="single" value="single" checked={values['single'] === 'single'} onChange={handleCheckbox} />
+            <Checkbox name="single" value="single" checked={values.single === 'single'} onChange={handleCheckbox} />
           }
           data-cy="single-button"
           label={t('questions.question-apply.question-marital-status.option-single')}
@@ -39,7 +39,7 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
             <Checkbox
               name="marriedOrCommonLaw"
               value="married-or-cl"
-              checked={values['marriedOrCommonLaw'] === 'married-or-cl'}
+              checked={values.marriedOrCommonLaw === 'married-or-cl'}
               onChange={handleCheckbox}
             />
           }
@@ -51,7 +51,7 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
             <Checkbox
               name="divorcedOrSeparated"
               value="divorced-or-separated"
-              checked={values['divorcedOrSeparated'] === 'divorced-or-separated'}
+              checked={values.divorcedOrSeparated === 'divorced-or-separated'}
               onChange={handleCheckbox}
             />
           }
@@ -60,36 +60,36 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
         />
         <FormControlLabel
           control={
-            <Checkbox
-              name="widowed"
-              value="widowed"
-              checked={values['widowed'] === 'widowed'}
-              onChange={handleCheckbox}
-            />
+            <Checkbox name="widowed" value="widowed" checked={values.widowed === 'widowed'} onChange={handleCheckbox} />
           }
           data-cy="widowed-button"
           label={t('questions.question-apply.question-marital-status.option-widowed')}
         />
       </FormGroup>
-      <h5 className="h5 mb-2">{t('questions.question-apply.question-children.title')}</h5>
+      <h5 className="h5 mb-4">{t('questions.question-apply.question-children.title')}</h5>
       <ToggleButtonGroup
         data-cy="apply-subquestion-children"
         orientation="vertical"
         exclusive
         fullWidth={true}
-        className="my-4"
-        value={value}
+        className="gap-4"
+        value={values.hasChildren}
         onChange={handleChange}
+        color="primary"
+        size="large"
         sx={{
-          '& .MuiToggleButton-root:not(:first-of-type)': {
-            borderTop: '1px solid #e1e4e7',
-            borderRadius: '4px',
+          '& .MuiToggleButton-root': {
+            'borderRadius': '4px',
+            '&:not(:first-of-type)': {
+              border: '1px solid rgba(0, 0, 0, 0.12)',
+            },
           },
-          '.MuiToggleButton-root.Mui-selected': {
-            'backgroundColor': '#004f56',
-            'color': '#f1f1f1',
-            '&.Mui-selected:hover': {
-              backgroundColor: '#004f56',
+          '& .MuiToggleButtonGroup-grouped': {
+            '&:not(:last-of-type)': {
+              borderRadius: '4px',
+            },
+            '&:not(:first-of-type)': {
+              borderRadius: '4px',
             },
           },
         }}
@@ -98,8 +98,6 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
           value="yes-kids"
           aria-label={t('questions.question-apply.question-children.option-yes-kids')}
           data-cy="yes-kids-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasChildren'] === 'yes-kids'}
         >
           {t('questions.question-apply.question-children.option-yes-kids')}
         </ToggleButton>
@@ -107,8 +105,6 @@ export const QuestionApply = ({ values, setFieldValue }: QuestionProps) => {
           value="no-kids"
           aria-label={t('questions.question-apply.question-children.option-no-kids')}
           data-cy="no-kids-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['hasChildren'] === 'no-kids'}
         >
           {t('questions.question-apply.question-children.option-no-kids')}
         </ToggleButton>

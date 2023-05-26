@@ -1,44 +1,49 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { FormikProps, FormikValues } from 'formik'
 import { useTranslation } from 'react-i18next'
 
-type QuestionProps = {
-  values: { [field: string]: any }
-  setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
+import { QuizFormState } from '../../../lib/types'
+
+export interface QuestionFeelPreparedProps extends FormikProps<FormikValues | QuizFormState> {
+  currentStepIndex: number
 }
 
-export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) => {
+export const QuestionFeelPrepared: FC<QuestionFeelPreparedProps> = ({ values, setFieldValue }) => {
   const { t } = useTranslation('quiz')
-  const [value, setValue] = React.useState('')
 
-  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
-    setValue(answerId)
-    setFieldValue('financialPreparedness', values['financialPreparedness'] === answerId ? '' : answerId ?? '')
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {
+    setFieldValue('financialPreparedness', answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">{t('questions.question-feel.title')}</h5>
-      <p className="mt-5 font-display text-sm font-light">{t('questions.question-feel.subtitle')}</p>
+      <h5 className="h5 mb-4">{t('questions.question-feel.title')}</h5>
+      <p className="text-sm">{t('questions.question-feel.subtitle')}</p>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
         data-cy="question-feel"
         fullWidth={true}
-        className="my-4"
-        value={value}
+        className="gap-4"
+        value={values.financialPreparedness}
         onChange={handleChange}
+        color="primary"
+        size="large"
         sx={{
-          '& .MuiToggleButton-root:not(:first-of-type)': {
-            borderTop: '1px solid #e1e4e7',
-            borderRadius: '4px',
+          '& .MuiToggleButton-root': {
+            'borderRadius': '4px',
+            '&:not(:first-of-type)': {
+              border: '1px solid rgba(0, 0, 0, 0.12)',
+            },
           },
-          '.MuiToggleButton-root.Mui-selected': {
-            'backgroundColor': '#004f56',
-            'color': '#f1f1f1',
-            '&.Mui-selected:hover': {
-              backgroundColor: '#004f56',
+          '& .MuiToggleButtonGroup-grouped': {
+            '&:not(:last-of-type)': {
+              borderRadius: '4px',
+            },
+            '&:not(:first-of-type)': {
+              borderRadius: '4px',
             },
           },
         }}
@@ -47,8 +52,6 @@ export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) =
           value="very-unprepared"
           aria-label={t('questions.question-feel.option-very-unprepared')}
           data-cy="very-unprepared-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === 'very-unprepared'}
         >
           {t('questions.question-feel.option-very-unprepared')}
         </ToggleButton>
@@ -56,8 +59,6 @@ export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) =
           value="unprepared"
           aria-label={t('questions.question-feel.option-unprepared')}
           data-cy="unprepared-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === 'unprepared'}
         >
           {t('questions.question-feel.option-unprepared')}
         </ToggleButton>
@@ -65,8 +66,6 @@ export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) =
           value="unsure-preparedness"
           aria-label={t('questions.question-feel.option-unsure-preparedness')}
           data-cy="unsure-preparedness-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === 'unsure-preparedness'}
         >
           {t('questions.question-feel.option-unsure-preparedness')}
         </ToggleButton>
@@ -74,8 +73,6 @@ export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) =
           value="prepared"
           aria-label={t('questions.question-feel.option-prepared')}
           data-cy="prepared-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === 'prepared'}
         >
           {t('questions.question-feel.option-prepared')}
         </ToggleButton>
@@ -83,8 +80,6 @@ export const QuestionFeelPrepared = ({ values, setFieldValue }: QuestionProps) =
           value="very-prepared"
           aria-label={t('questions.question-feel.option-very-prepared')}
           data-cy="very-prepared-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['financialPreparedness'] === 'very-prepared'}
         >
           {t('questions.question-feel.option-very-prepared')}
         </ToggleButton>

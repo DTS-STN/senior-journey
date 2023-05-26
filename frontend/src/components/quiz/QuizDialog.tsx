@@ -2,6 +2,9 @@ import { FC, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
+import NavigateNextIcon from '@mui/icons-material/NavigateNext'
+import { LoadingButton } from '@mui/lab'
 import {
   Button,
   Dialog,
@@ -111,6 +114,8 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
   })
 
   const handleOnClose = () => {
+    if (formikWizard.isSubmitting) return
+
     if (showConfirmation) {
       onClose()
       // 1 second timeout otherwise dialog shows quiz content and close
@@ -149,6 +154,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
           <div className="flex min-h-[850px] flex-col" data-cy="navigation-container">
             <DialogTitle className="text-right" id="quiz-modal-header">
               <Button
+                disabled={formikWizard.isSubmitting}
                 data-cy="close-button"
                 variant="text"
                 onClick={handleOnClose}
@@ -177,26 +183,50 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
               </div>
             </DialogContent>
             <DialogActions className="block">
-              <div className="sm:flex sm:flex-row-reverse sm:gap-2">
-                <Button
-                  onClick={formikWizard.handleNext}
-                  disabled={formikWizard.isNextDisabled}
-                  data-cy={formikWizard.isLastStep ? 'submit-button' : 'next-button'}
-                  size="large"
-                  fullWidth
-                  className="mb-2 ml-auto sm:mb-0 sm:w-1/2"
-                >
-                  {formikWizard.isLastStep ? t('navigation.submit') : t('navigation.next')}
-                </Button>
-                {!formikWizard.isPrevDisabled && (
+              <div className="grid gap-2 sm:grid-cols-2">
+                {formikWizard.isLastStep ? (
+                  <LoadingButton
+                    className="sm:order-last"
+                    data-cy="submit-button"
+                    fullWidth
+                    loading={formikWizard.isSubmitting}
+                    loadingPosition="start"
+                    onClick={() => {
+                      formikWizard.handleNext()
+                    }}
+                    size="large"
+                    variant="contained"
+                  >
+                    <span>{t('navigation.submit')}</span>
+                  </LoadingButton>
+                ) : (
                   <Button
-                    onClick={formikWizard.handlePrev}
-                    disabled={formikWizard.isPrevDisabled}
+                    className="sm:order-last"
+                    data-cy="next-button"
+                    disabled={formikWizard.isNextDisabled}
+                    fullWidth
+                    onClick={() => {
+                      formikWizard.handleNext()
+                    }}
+                    size="large"
+                    endIcon={<NavigateNextIcon />}
+                  >
+                    {t('navigation.next')}
+                  </Button>
+                )}
+                {formikWizard.isPrevDisabled ? (
+                  <div></div>
+                ) : (
+                  <Button
+                    onClick={() => {
+                      formikWizard.handlePrev()
+                    }}
+                    disabled={formikWizard.isSubmitting}
                     data-cy="previous-button"
                     size="large"
                     fullWidth
                     variant="outlined"
-                    className="sm:w-1/2"
+                    startIcon={<NavigateBeforeIcon />}
                   >
                     {t('navigation.previous')}
                   </Button>

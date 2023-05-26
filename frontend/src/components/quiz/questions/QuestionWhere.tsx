@@ -1,43 +1,48 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { FormikProps, FormikValues } from 'formik'
 import { useTranslation } from 'react-i18next'
 
-type QuestionProps = {
-  values: { [field: string]: any }
-  setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
+import { QuizFormState } from '../../../lib/types'
+
+export interface QuestionWhereProps extends FormikProps<FormikValues | QuizFormState> {
+  currentStepIndex: number
 }
 
-export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
+export const QuestionWhere: FC<QuestionWhereProps> = ({ values, setFieldValue }) => {
   const { t } = useTranslation('quiz')
-  const [value, setValue] = React.useState('')
 
-  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
-    setValue(answerId)
-    setFieldValue('retirementTimeframe', values['retirementTimeframe'] === answerId ? '' : answerId ?? '')
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {
+    setFieldValue('retirementTimeframe', answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">{t('questions.question-where.title')}</h5>
+      <h5 className="h5 mb-4">{t('questions.question-where.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
-        data-cy='question-where'
+        data-cy="question-where"
         fullWidth={true}
-        className="my-4"
-        value={value}
+        className="gap-4"
+        value={values.retirementTimeframe}
         onChange={handleChange}
+        color="primary"
+        size="large"
         sx={{
-          '& .MuiToggleButton-root:not(:first-of-type)': {
-            borderTop: '1px solid #e1e4e7',
-            borderRadius: '4px',
+          '& .MuiToggleButton-root': {
+            'borderRadius': '4px',
+            '&:not(:first-of-type)': {
+              border: '1px solid rgba(0, 0, 0, 0.12)',
+            },
           },
-          '.MuiToggleButton-root.Mui-selected': {
-            'backgroundColor': '#004f56',
-            'color': '#f1f1f1',
-            '&.Mui-selected:hover': {
-              backgroundColor: '#004f56',
+          '& .MuiToggleButtonGroup-grouped': {
+            '&:not(:last-of-type)': {
+              borderRadius: '4px',
+            },
+            '&:not(:first-of-type)': {
+              borderRadius: '4px',
             },
           },
         }}
@@ -46,8 +51,6 @@ export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
           value="canada-ft"
           aria-label={t('questions.question-where.option-canada-ft')}
           data-cy="canada-ft-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === "canada-ft"}
         >
           {t('questions.question-where.option-canada-ft')}
         </ToggleButton>
@@ -55,8 +58,6 @@ export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
           value="canada-pt-60-or-more"
           aria-label={t('questions.question-where.option-canada-pt-60-or-more')}
           data-cy="canada-pt-60-or-more-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === "canada-pt-60-or-more"}
         >
           {t('questions.question-where.option-canada-pt-60-or-more')}
         </ToggleButton>
@@ -64,8 +65,6 @@ export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
           value="canada-pt-less-than-60"
           aria-label={t('questions.question-where.option-canada-pt-less-than-60')}
           data-cy="canada-pt-less-than-60-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === "canada-pt-less-than-60"}
         >
           {t('questions.question-where.option-canada-pt-less-than-60')}
         </ToggleButton>
@@ -73,8 +72,6 @@ export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
           value="outside-canada"
           aria-label={t('questions.question-where.option-outside-canada')}
           data-cy="outside-canada-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === "outside-canada"}
         >
           {t('questions.question-where.option-outside-canada')}
         </ToggleButton>
@@ -82,8 +79,6 @@ export const QuestionWhere = ({ values, setFieldValue }: QuestionProps) => {
           value="unsure-retirement-living"
           aria-label={t('questions.question-where.option-unsure-retirement-living')}
           data-cy="unsure-retirement-living-button"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['retirementTimeframe'] === "unsure-retirement-living"}
         >
           {t('questions.question-where.option-unsure-retirement-living')}
         </ToggleButton>

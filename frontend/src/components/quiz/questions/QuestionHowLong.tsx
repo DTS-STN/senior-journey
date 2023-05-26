@@ -1,43 +1,48 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { FormikProps, FormikValues } from 'formik'
 import { useTranslation } from 'react-i18next'
 
-type QuestionProps = {
-  values: { [field: string]: any }
-  setFieldValue: (field: string, value: any, shouldValidate?: boolean) => void
+import { QuizFormState } from '../../../lib/types'
+
+export interface QuestionHowLongProps extends FormikProps<FormikValues | QuizFormState> {
+  currentStepIndex: number
 }
 
-export const QuestionHowLong = ({ values, setFieldValue }: QuestionProps) => {
+export const QuestionHowLong: FC<QuestionHowLongProps> = ({ values, setFieldValue }) => {
   const { t } = useTranslation('quiz')
-  const [value, setValue] = React.useState('')
 
-  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string) => {
-    setValue(answerId)
-    setFieldValue('yearsInCanada', values['yearsInCanada'] === answerId ? '' : answerId ?? '')
+  const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {
+    setFieldValue('yearsInCanada', answerId ?? '')
   }
 
   return (
     <div>
-      <h5 className="font-display text-2xl font-light">{t('questions.question-how-long.title')}</h5>
+      <h5 className="h5 mb-4">{t('questions.question-how-long.title')}</h5>
       <ToggleButtonGroup
         orientation="vertical"
         exclusive
         data-cy="question-how-long"
         fullWidth={true}
-        className="my-4"
-        value={value}
+        className="gap-4"
+        value={values.yearsInCanada}
         onChange={handleChange}
+        color="primary"
+        size="large"
         sx={{
-          '& .MuiToggleButton-root:not(:first-of-type)': {
-            borderTop: '1px solid #e1e4e7',
-            borderRadius: '4px',
+          '& .MuiToggleButton-root': {
+            'borderRadius': '4px',
+            '&:not(:first-of-type)': {
+              border: '1px solid rgba(0, 0, 0, 0.12)',
+            },
           },
-          '.MuiToggleButton-root.Mui-selected': {
-            'backgroundColor': '#004f56',
-            'color': '#f1f1f1',
-            '&.Mui-selected:hover': {
-              backgroundColor: '#004f56',
+          '& .MuiToggleButtonGroup-grouped': {
+            '&:not(:last-of-type)': {
+              borderRadius: '4px',
+            },
+            '&:not(:first-of-type)': {
+              borderRadius: '4px',
             },
           },
         }}
@@ -46,8 +51,6 @@ export const QuestionHowLong = ({ values, setFieldValue }: QuestionProps) => {
           value="in-canada-40-plus"
           aria-label={t('questions.question-how-long.option-in-canada-40-plus')}
           data-cy="in-canada-40-plus"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === "in-canada-40-plus"}
         >
           {t('questions.question-how-long.option-in-canada-40-plus')}
         </ToggleButton>
@@ -55,8 +58,6 @@ export const QuestionHowLong = ({ values, setFieldValue }: QuestionProps) => {
           value="in-canada-10-to-39"
           aria-label={t('questions.question-how-long.option-in-canada-10-to-39')}
           data-cy="in-canada-10-to-39"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === "in-canada-10-to-39"}
         >
           {t('questions.question-how-long.option-in-canada-10-to-39')}
         </ToggleButton>
@@ -64,8 +65,6 @@ export const QuestionHowLong = ({ values, setFieldValue }: QuestionProps) => {
           value="in-canada-less-than-10"
           aria-label={t('questions.question-how-long.option-in-canada-less-than-10')}
           data-cy="in-canada-less-than-10"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === "in-canada-less-than-10"}
         >
           {t('questions.question-how-long.option-in-canada-less-than-10')}
         </ToggleButton>
@@ -73,8 +72,6 @@ export const QuestionHowLong = ({ values, setFieldValue }: QuestionProps) => {
           value="unsure-in-canada"
           aria-label={t('questions.question-how-long.option-unsure-in-canada')}
           data-cy="unsure-in-canada"
-          className="my-4 font-display text-base font-bold normal-case"
-          selected={values['yearsInCanada'] === "unsure-in-canada"}
         >
           {t('questions.question-how-long.option-unsure-in-canada')}
         </ToggleButton>
