@@ -35,7 +35,7 @@ const Bonnie: FC = () => {
         secondary: t('learn-more.going-from-work-to-retirement.description'),
       },
       {
-        href: '/learn/deciding-when-to-collect-public-pensions',
+        href: '/learn/deciding-when-to-start-your-public-pensions',
         primary: t('learn-more.deciding-when-to-take-your-pensions.header'),
         secondary: t('learn-more.deciding-when-to-take-your-pensions.description'),
       },

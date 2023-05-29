@@ -101,9 +101,9 @@ const Learn: FC = () => {
       cards: [
         {
           desciption: t(`sections.making-decisions.cards.when-to-collect.body`),
-          href: '/learn/deciding-when-to-collect-public-pensions',
+          href: '/learn/deciding-when-to-start-your-public-pensions',
           id: 'when-to-collect',
-          imageUrl: '/assets/deciding-when-to-collect-public-pensions-sm.jpg',
+          imageUrl: '/assets/deciding-when-to-start-your-public-pensions-sm.jpg',
           minRead: 6,
           title: t(`sections.making-decisions.cards.when-to-collect.title`),
         },

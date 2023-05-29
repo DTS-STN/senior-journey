@@ -25,7 +25,7 @@ const GoingFromWorkToRetirement: FC = () => {
         secondary: t('learn-more.working-while-collecting.description'),
       },
       {
-        href: '/learn/deciding-when-to-collect-public-pensions',
+        href: '/learn/deciding-when-to-start-your-public-pensions',
         primary: t('learn-more.deciding-when-to-collect.header'),
         secondary: t('learn-more.deciding-when-to-collect.description'),
       },

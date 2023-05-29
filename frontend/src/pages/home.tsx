@@ -113,7 +113,7 @@ const Home: FC = () => {
                     </h3>
                     <List disablePadding>
                       <ListItem disablePadding className="border-b">
-                        <ListItemButton href="/learn/deciding-when-to-collect-public-pensions" component={Link}>
+                        <ListItemButton href="/learn/deciding-when-to-start-your-public-pensions" component={Link}>
                           <ListItemText
                             primary={t('tabs.learn.links.when-to-collect.title')}
                             primaryTypographyProps={{
