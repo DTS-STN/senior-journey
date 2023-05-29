@@ -195,6 +195,7 @@
   },
   "oas": {
     "gis-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "heading": "(FR) Keith's OAS pension",
     "low-income-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
     "p1": "(FR) Keith's income would not qualify him for the <a1>Guaranteed Income Supplement (GIS)</a1>, as he will continue to work up until age 70 with good salary. The GIS is for people with <a2>low income</a2>.",
     "p2": "(FR) Keith chooses to delay the Old Age Security (OAS) pension until age 70 to permanently increase it by 36%. This higher pension will help him transition better into retirement when he stops working at age 70.",
