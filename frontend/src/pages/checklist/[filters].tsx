@@ -3,13 +3,12 @@ import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
 import { ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
 import RefreshIcon from '@mui/icons-material/Refresh'
-import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton } from '@mui/material'
+import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton, List, ListItem, ListItemText } from '@mui/material'
 import { isEmpty, sortBy } from 'lodash'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 import Layout from '../../components/Layout'
@@ -21,6 +20,7 @@ import { checklistFiltersSchema } from '../../lib/schemas/checklist-filters-sche
 import { ChecklistFilters, TaskTagDto, TasksGroupDto } from '../../lib/types'
 import { getLogger } from '../../logging/log-util'
 import { getDCTermsTitle } from '../../utils/seo-utils'
+import { HeroBanner } from '../../components/HeroBanner'
 
 const log = getLogger('pages/checklist/[filters].tsx')
 
@@ -44,7 +44,8 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   let router = useRouter()
   const { mutate: removeQuizData } = useRemoveQuizData()
 
-  let [expanded, setExpanded] = useState(true)
+  let [expanded, setExpanded] = useState(false)
+  let [importantExpanded, setImportantExpanded] = useState(false)
 
   function filterTasksByTag({ tags }: { tags: ReadonlyArray<{ code: string }> }, filters: ChecklistFilters) {
     if (isEmpty(filters.tags)) return true
@@ -110,16 +111,23 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
         hideFooter="print"
         hideHeader="print"
       >
-        <section className="mb-10 flex flex-col items-center rounded-3xl bg-gray-surface px-8 py-8 print:hidden md:flex-row-reverse">
-          <div className="sm:3/12 pb-4 md:w-1/12 md:pb-0">
-            <Image src="/assets/checklist.png" width={120} height={75} sizes="100%" alt="" priority />
-          </div>
-          <div className="w-11/12">
-            <h1 className="font-display text-4xl font-bold text-primary-700 md:text-6xl">{t('header')}</h1>
-          </div>
-        </section>
+        <div className='hidden md:block'>
+          <HeroBanner
+            imageProps={{
+              alt: '',
+              className: 'md:object-right-bottom',
+              height: 427,
+              src: '/assets/checklist-banner.jpg',
+              width: 640,
+            }}
+            >
+            <h1 className="mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-6xl">
+              {t('header')}
+            </h1>
+          </HeroBanner>
+        </div>
 
-        <div className="grid gap-6 print:block lg:grid-cols-12">
+        <div className="grid gap-6 print:block lg:grid-cols-12 md:pt-8">
           <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
             <div className="mb-4 text-right">
               <Button
@@ -132,8 +140,52 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                 {t('restart-quiz')}
               </Button>
             </div>
+
             <div className="mb-4">
-              <div className="mb-2 flex items-center justify-between border-b">
+              <div className="mb-2 pb-3 flex items-center justify-between border-b">
+                <div className="text-2xl md:text-xl">{t('important-terms.header')}</div>
+                <IconButton
+                  color="primary"
+                  onClick={() => setImportantExpanded(!importantExpanded)}
+                  aria-expanded={importantExpanded}
+                  aria-label={t('important-terms.show')}
+                >
+                  {importantExpanded ? <ExpandLess className="block" /> : <ExpandMore className="block" />}
+                </IconButton>
+              </div>
+              <Collapse in={importantExpanded}>
+                <List 
+                className='p-0'
+                disablePadding>
+                  {[
+                    {
+                      primary: t('important-terms.cpp.header'),
+                      secondary: t('important-terms.cpp.definition'),
+                    },
+                    {
+                      primary: t('important-terms.oas.header'),
+                      secondary: t('important-terms.oas.definition'),
+                    },
+                    {
+                      primary: t('important-terms.gis.header'),
+                      secondary: t('important-terms.gis.definition'),
+                    },
+                  ].map(({ primary, secondary }) => (
+                    <ListItem key={primary} className="border-b py-2  pl-0">
+                      <ListItemText
+                        primary={primary}
+                        primaryTypographyProps={{ className: 'text-lg mb-2' }}
+                        secondary={secondary}
+                        secondaryTypographyProps={{ className: 'text-base' }}
+                      />
+                    </ListItem>
+                  ))}
+                </List>
+              </Collapse>
+            </div>
+
+            <div className="md:mb-2">
+              <div className="md:mb-2 md:pb-3 flex items-center justify-between md:border-b">
                 <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
                 <div className="text-2xl md:hidden">{t('header')}</div>
                 <IconButton
