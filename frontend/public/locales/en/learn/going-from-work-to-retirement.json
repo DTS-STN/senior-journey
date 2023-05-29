@@ -1,51 +1,9 @@
 {
-  "header": "Going from work to retirement",
   "breadcrumbs": {
     "learn": "Learn"
   },
-  "meta": {
-    "description": "You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things."
-  },
-  "key-takeaways": {
-    "heading": "Key takeaways",
-    "highest-monthly-amount": "For many, retirement isn't a single point in time but a gradual transition.",
-    "start-collecting": "People go in and out of retirement, change careers, start new businesses while being in retirement.",
-    "payment-increase": "Saving enough for retirement can be hard. Canadians are also living longer than before. For this reason, more people continue to work in retirement.",
-    "no-benefit": "Some people might keep working to be active in their community, socialize, or just because they want to. Continuing to work or volunteer is good for many reasons, other than finances.",
-    "people-who-qualify": "Retiring from work and starting your pensions are two different things. Your public pensions can start at different times to compliment your work choices.",
-    "if-you-qualify": "You don't have to stop working to start your public pensions.",
-    "more-than-double": "You might keep working but need more than your salary offers. Think about starting your Canada Pension Plan (CPP) retirement pension early and collecting Post-Retirement Benefits (PRBs).",
-    "pensions-adjusted": "By continuing to work, you are still contributing to the CPP. PRBs are a lifetime benefit that will be added to your monthly CPP amount the next year.",
-    "smart-tip": "<strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the Guaranteed Income Supplement (GIS). People who qualify for the GIS should not wait to apply past age 65. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your CPP pension early too.",
-    "low-income-link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html"
-  },
-  "overview": {
-    "heading": "Overview",
-    "p1": "Over the years the idea of retirement has changed. Today, for many, retirement isn't a single point in time where you stop working, but a gradual transition. People continue to work later in life for many reasons. For some, they simply love their job and don't plan on retiring anytime soon. Others like to socialize during work. For others, they work longer for financial reasons or obligations. One way to think about your potential choices in retirement is to consider the following paths:",
-    "li1": "Phased Retirement: a gradual transition from full-time to part-time employment and then full retirement.",
-    "li2": "A Second Career: when retirees change their jobs, or open a new business to pursue a dream.",
-    "li3": "Full Retirement: when people retire from work for good.",
-    "p2": "These aren't the only possible paths, and some may even mix and match. Some people might change from one path to another over their retirement. For example, someone in full retirement might miss the social engagement and return to part-time work, or start a small side business."
-  },
-  "phased-retirement": {
-    "heading": "Phased Retirement",
-    "transition": "Transition gradually from work to retirement",
-    "p1": "Many workers may not be ready to go from full-time work to completely stopping. Instead, they may prefer to reduce their hours and keep working, slowly stepping away from the workforce over time.",
-    "p2": "If you want to try a phased retirement, you can talk to your employer about working fewer hours or work less days during the week. You could even take a few months off each year. You will need to reach an agreement with your employer to make it work."
-  },
-  "second-career": {
-    "heading": "A Second Career",
-    "new-beginning": "A new beginning",
-    "p1": "Full retirement means you completely stop working. When making that decision, you should have a general idea of the things you’d like to do and how much money you will have during retirement. Sometimes, it may not be your choice. You may need to stop working because of health issues or to care for a family member or friend."
-  },
-  "full-retirement": {
-    "heading": "Full Retirement",
-    "new-beginning": "A new beginning",
-    "p1": "Full retirement means you completely stop working. When making that decision, you should have a general idea of the things you’d like to do and how much money you will have during retirement. Sometimes, it may not be your choice. You may need to stop working because of health issues or to care for a family member or friend."
-  },
   "combine-income": {
     "heading": "How to combine income from jobs and pensions",
-    "p1": "You may be surprised to learn that you don't have to stop working to collect your Old Age Security (OAS) pension or Canada Pension Plan (CPP) retirement pension. Combining income from work with public pensions can be a useful strategy as people move towards retirement.",
     "option-1": {
       "heading": "Option 1: Start collecting your pensions early",
       "p1": "You can start collecting your pensions while you're still working or as soon as you stop working.",
@@ -58,36 +16,77 @@
       "p8": "Learn more about PRBs in our <a3>main sources of retirement income page</a3>",
       "post-retirement-benefits-link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement.html"
     },
-
     "option-2": {
+      "disclaimer": "<strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
       "heading": "Option 2: Delay your pensions",
+      "important": "<strong>Important:</strong> If your annual income is over a certain amount, you must repay part or all your OAS pension. This is called the <a1>Old Age Security pension recovery tax</a1>.",
+      "oas-tax-link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html",
       "p1": "Delaying your OAS pension and CPP retirement pensions will increase your monthly amount until age 70. If you have good earnings from work and other sources of income, you may choose to delay. If you wait longer to start your public pensions, your monthly amount will be higher in retirement.",
       "p2": "While you wait to start collecting your public pensions, you may need to use income from work or some of your retirement savings. You may need to use a bit more of your retirement savings in the short term. Still, you will collect a higher monthly amount for the rest of your life. In fact, waiting might even mean you use less of your retirement savings in the long run. This is especially true because your public pensions adjust for inflation.",
-      "important": "<strong>Important:</strong> If your annual income is over a certain amount, you must repay part or all your OAS pension. This is called the <a1>Old Age Security pension recovery tax</a1>.",
       "p3": "The CPP and OAS are two different pension programs. You can choose to start one but delay the other.",
-      "p4": "Read <a1>Bonnie delays to reduce the savings she needs</a1>. Bonnie has retirement savings and decides to wait longer before taking her public pensions.",
-      "disclaimer": "<strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
-      "oas-tax-link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html"
-    }
+      "p4": "Read <a1>Bonnie delays to reduce the savings she needs</a1>. Bonnie has retirement savings and decides to wait longer before taking her public pensions."
+    },
+    "p1": "You may be surprised to learn that you don't have to stop working to collect your Old Age Security (OAS) pension or Canada Pension Plan (CPP) retirement pension. Combining income from work with public pensions can be a useful strategy as people move towards retirement."
+  },
+  "full-retirement": {
+    "heading": "Full Retirement",
+    "new-beginning": "A new beginning",
+    "p1": "Full retirement means you completely stop working. When making that decision, you should have a general idea of the things you'd like to do and how much money you will have during retirement. Sometimes, it may not be your choice. You may need to stop working because of health issues or to care for a family member or friend."
+  },
+  "header": "Going from work to retirement",
+  "key-takeaways": {
+    "heading": "Key takeaways",
+    "highest-monthly-amount": "For many, retirement isn't a single point in time but a gradual transition.",
+    "if-you-qualify": "You don't have to stop working to start your public pensions.",
+    "low-income-link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
+    "more-than-double": "You might keep working but need more than your salary offers. Think about starting your Canada Pension Plan (CPP) retirement pension early and collecting Post-Retirement Benefits (PRBs).",
+    "no-benefit": "Some people might keep working to be active in their community, socialize, or just because they want to. Continuing to work or volunteer is good for many reasons, other than finances.",
+    "payment-increase": "Saving enough for retirement can be hard. Canadians are also living longer than before. For this reason, more people continue to work in retirement.",
+    "pensions-adjusted": "By continuing to work, you are still contributing to the CPP. PRBs are a lifetime benefit that will be added to your monthly CPP amount the next year.",
+    "people-who-qualify": "Retiring from work and starting your pensions are two different things. Your public pensions can start at different times to compliment your work choices.",
+    "smart-tip": "<strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the Guaranteed Income Supplement (GIS). People who qualify for the GIS should not wait to apply past age 65. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your CPP pension early too.",
+    "start-collecting": "People go in and out of retirement, change careers, start new businesses while being in retirement."
   },
   "learn-more": {
-    "header": "Learn More",
-    "working-while-collecting": {
-      "href": "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning/working-collecting-pension.html",
-      "description": "The impact of working during your retirement on your OAS, CPP or other pension income.",
-      "header": "Working while collecting a pension"
-    },
     "deciding-when-to-collect": {
       "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider.",
       "header": "Deciding when to start your public pensions"
+    },
+    "header": "Learn More",
+    "keith-case-study": {
+      "description": "Keith chooses between delaying his public pensions or taking Post-Retirement Benefits (PRBs) while working.",
+      "header": "Keith collects his public pensions while working"
     },
     "rules-of-thumb": {
       "description": "Check out these tips to help you decide when to start your OAS/CPP pensions. Choose what is right for you.",
       "header": "Rules of thumb for your public pensions"
     },
-    "keith-case-study": {
-      "description": "Keith chooses between delaying his public pensions or taking Post-Retirement Benefits (PRBs) while working.",
-      "header": "Keith collects his public pensions while working"
+    "working-while-collecting": {
+      "description": "The impact of working during your retirement on your OAS, CPP or other pension income.",
+      "header": "Working while collecting a pension",
+      "href": "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning/working-collecting-pension.html"
     }
+  },
+  "meta": {
+    "description": "You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things."
+  },
+  "overview": {
+    "heading": "Overview",
+    "li1": "Phased Retirement: a gradual transition from full-time to part-time employment and then full retirement.",
+    "li2": "A Second Career: when retirees change their jobs, or open a new business to pursue a dream.",
+    "li3": "Full Retirement: when people retire from work for good.",
+    "p1": "Over the years the idea of retirement has changed. Today, for many, retirement isn't a single point in time where you stop working, but a gradual transition. People continue to work later in life for many reasons. For some, they simply love their job and don't plan on retiring anytime soon. Others like to socialize during work. For others, they work longer for financial reasons or obligations. One way to think about your potential choices in retirement is to consider the following paths:",
+    "p2": "These aren't the only possible paths, and some may even mix and match. Some people might change from one path to another over their retirement. For example, someone in full retirement might miss the social engagement and return to part-time work, or start a small side business."
+  },
+  "phased-retirement": {
+    "heading": "Phased Retirement",
+    "p1": "Many workers may not be ready to go from full-time work to completely stopping. Instead, they may prefer to reduce their hours and keep working, slowly stepping away from the workforce over time.",
+    "p2": "If you want to try a phased retirement, you can talk to your employer about working fewer hours or work less days during the week. You could even take a few months off each year. You will need to reach an agreement with your employer to make it work.",
+    "transition": "Transition gradually from work to retirement"
+  },
+  "second-career": {
+    "heading": "A Second Career",
+    "new-beginning": "A new beginning",
+    "p1": "Full retirement means you completely stop working. When making that decision, you should have a general idea of the things you'd like to do and how much money you will have during retirement. Sometimes, it may not be your choice. You may need to stop working because of health issues or to care for a family member or friend."
   }
 }

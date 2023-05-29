@@ -23,44 +23,16 @@
           ],
           "rows": [
             {
-              "data": [
-                "(FR) Year you start your pension",
-                "(FR) $836",
-                "(FR) -",
-                "(FR) -",
-                "(FR) -",
-                "(FR) $836"
-              ]
+              "data": ["(FR) Year you start your pension", "(FR) $836", "(FR) -", "(FR) -", "(FR) -", "(FR) $836"]
             },
             {
-              "data": [
-                "(FR) 1 year",
-                "(FR) $836",
-                "(FR) $29",
-                "(FR) -",
-                "(FR) -",
-                "(FR) $865"
-              ]
+              "data": ["(FR) 1 year", "(FR) $836", "(FR) $29", "(FR) -", "(FR) -", "(FR) $865"]
             },
             {
-              "data": [
-                "(FR) 2 years",
-                "(FR) $836",
-                "(FR) $29",
-                "(FR) $31",
-                "(FR) -",
-                "(FR) $896"
-              ]
+              "data": ["(FR) 2 years", "(FR) $836", "(FR) $29", "(FR) $31", "(FR) -", "(FR) $896"]
             },
             {
-              "data": [
-                "(FR) 3 years",
-                "(FR) $836",
-                "(FR) $29",
-                "(FR) $31",
-                "(FR) $35",
-                "(FR) $931"
-              ]
+              "data": ["(FR) 3 years", "(FR) $836", "(FR) $29", "(FR) $31", "(FR) $35", "(FR) $931"]
             }
           ],
           "values-heading": "(FR) Values"
@@ -259,7 +231,7 @@
         "pillar": "(FR) Second Pillar"
       },
       "header": "(FR) Canada's retirement income system",
-      "important-notice": "(FR) <strong>Important</strong>: Public pensions aren’t intended to cover all your financial needs in retirement. Most Canadians will save during their working years or have another source of income to have enough money in retirement. Canada's public pensions offer you flexibility to start collecting them at the best time for your personal circumstances. Canada’s public pensions are financially secure. This means that you can count on them for the rest of your life, no matter when you decide to start collecting them. Public pensions also protect you from inflation. Your pensions will grow to reflect increases to the cost of living.",
+      "important-notice": "(FR) <strong>Important</strong>: Public pensions aren't intended to cover all your financial needs in retirement. Most Canadians will save during their working years or have another source of income to have enough money in retirement. Canada's public pensions offer you flexibility to start collecting them at the best time for your personal circumstances. Canada's public pensions are financially secure. This means that you can count on them for the rest of your life, no matter when you decide to start collecting them. Public pensions also protect you from inflation. Your pensions will grow to reflect increases to the cost of living.",
       "oas": {
         "content": "(FR) Financed through general tax revenues",
         "header": "(FR) Old Age Security Program (OAS)",

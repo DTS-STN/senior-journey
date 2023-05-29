@@ -1,146 +1,8 @@
 {
-  "breadcrumbs": {
-    "learn": "Apprendre"
-  },
-  "header": "Bonnie retarde la réduction des épargnes dont elle a besoin",
-  "meta": {
-    "description": "Bonnie aurait besoin de moins d'économies si elle retardait ses versements de la SV et du RPC pour prendre sa retraite à l'aise."
-  },
-  "key-takeaways": {
-    "heading": "(FR) Key takeaways",
-    "li1": "(FR) When you start your retirement, you should think about all your income sources and how they will work together.",
-    "li2": "(FR) Many financial planners say that having 60 to 70% of your current income in retirement will allow you to maintain your lifestyle in retirement.",
-    "li3": "(FR) You may need to use a bit more of your retirement savings while waiting to start your public pensions. However, the higher monthly amounts could be worth waiting for.",
-    "li4": "(FR) In fact, if you wait, you might even use less of your personal savings in retirement in the long run.",
-    "li5": "(FR) Think about inflation while you're retirement planning.",
-    "li6": "(FR) Your Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement pension will adjust for inflation, but your retirement savings and investments might not.",
-    "smart-tip": "(FR) <strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have <a2>low income</a2>, you may also get the <a1>Guaranteed Income Supplement (GIS)</a1>. People who qualify for the GIS should not wait to apply past age 65. You cannot receive the GIS if you are delaying your OAS pension.",
-    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
-    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
-  },
-  "overview": {
-    "heading": "(FR) Overview",
-    "p1": "(FR) Bonnie worked in marketing for over 35 years. During that time, she saved for her retirement. When she leaves her job, Bonnie will drive less, need less work clothes and can cook at home more. These changes in lifestyle will lower her monthly cost of living.",
-    "p2": "(FR) Bonnie is now 60 years old, and her full-time salary is $67,000 per year or $5,583 per month before taxes. She would like to go part-time at age 63 and then fully retire at age 65. Bonnie is healthy now and decides to plan for the next 28 years - which is the average lifespan of a Canadian woman who is 60 this year.",
-    "p3": "(FR) Bonnie's goal in retirement is to generally maintain her current lifestyle - and so, she'll be looking at how to do that. As part of this, she'll need to decide when to start her OAS and CPP pensions because it will change how and when she uses her savings.",
-    "smart-tip": "(FR) <strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live up to 86 years for men and 88 years for women</a1>. That's why they need to plan for at least another 20-25 years. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life.",
-    "a1": "https://www.osfi-bsif.gc.ca/Fre/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
-    "a2": "https://www.osfi-bsif.gc.ca/Fre/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32"
-  },
-  "stopping-earnings": {
-    "heading": "(FR) Stopping Earnings from Work",
-    "p": "(FR) To retire comfortably, Bonnie needs about 60-70% of her current work income before taxes. The target monthly income then grows with 2% rate of inflation into future.",
-    "img-url": {
-      "desktop": "/assets/bonnie-stopping-earnings-desktop-en.jpg",
-      "mobile": "/assets/bonnie-stopping-earnings-mobile-en.jpg"
-    },
-    "description": "(FR) This chart shows that Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. Bonnie's target monthly income also reduces to 70% because she might need less income in retirement. There's a gap between Bonnie's monthly income from working part-time and from her target monthly income in retirement. At age 65, Bonnie fully retires and has no money from the job to meet her target monthly income. Bonnie's target monthly income grows slightly as she gets older until age 88 because of inflation.",
-    "accessibility": {
-      "caption": "(FR) Values presented on the image",
-      "button-label": "(FR) Text alternative for Earnings from work",
-      "header": ["(FR) Age", "(FR) Target monthly Income in Retirement", "(FR) Earnings from work"],
-      "rows": [
-        {
-          "data": ["60", "$5,583", "$5,583"]
-        },
-        {
-          "data": ["61", "$5,695", "$5,695"]
-        },
-        {
-          "data": ["62", "$5,809", "$5,809"]
-        },
-        {
-          "data": ["63", "$4,148", "$2,963"]
-        },
-        {
-          "data": ["64", "$4,231", "$3,022"]
-        },
-        {
-          "data": ["65", "$4,315", ""]
-        },
-        {
-          "data": ["66", "$4,339", ""]
-        },
-        {
-          "data": ["67", "$4,361", ""]
-        },
-        {
-          "data": ["68", "$4,383", ""]
-        },
-        {
-          "data": ["69", "$4,404", ""]
-        },
-        {
-          "data": ["70", "$4,424", ""]
-        },
-        {
-          "data": ["71", "$4,512", ""]
-        },
-        {
-          "data": ["72", "$4,603", ""]
-        },
-        {
-          "data": ["73", "$4,695", ""]
-        },
-        {
-          "data": ["74", "$4,789", ""]
-        },
-        {
-          "data": ["75", "$4,809", ""]
-        },
-        {
-          "data": ["76", "$4,905", ""]
-        },
-        {
-          "data": ["77", "$5,004", ""]
-        },
-        {
-          "data": ["78", "$5,104", ""]
-        },
-        {
-          "data": ["79", "$5,124", ""]
-        },
-        {
-          "data": ["80", "$5,144", ""]
-        },
-        {
-          "data": ["81", "$5,247", ""]
-        },
-        {
-          "data": ["82", "$5,265", ""]
-        },
-        {
-          "data": ["83", "$5,283", ""]
-        },
-        {
-          "data": ["84", "$5,298", ""]
-        },
-        {
-          "data": ["85", "$5,404", ""]
-        },
-        {
-          "data": ["86", "$5,419", ""]
-        },
-        {
-          "data": ["87", "$5,527", ""]
-        }
-      ]
-    }
-  },
-
   "adding-oas": {
-    "heading": "(FR) Adding OAS pension to the mix",
-    "p1": "(FR) Bonnie has lived in Canada her entire life, and can receive a full Olf Age Security (OAS) pension at age 65. However, she knows that by waiting she can increase that amount even further. In the end, Bonnie decides to take her OAS pension at age 65, when she fully retires from work. Every three months, her monthly amount will be adjusted for inflation. Bonnie does not qualify for the Guaranteed Income Supplement (GIS). Her target income is around $47,000, which is more than double the threshold to get the GIS.",
-    "p2": "(FR) To learn more about what to consider when choosing the age you want to start your OAS pension, read <a1>Fred decides when to start his public pensions</a1>.",
-    "p3": "(FR) Bonnie started OAS pension at 65 and needs to decide when to start her CPP retirement pension and how to use her retirement savings to reach her target monthly income in retirement.",
-    "img-url": {
-      "desktop": "/assets/bonnie-adding-oas-desktop-en.jpg",
-      "mobile": "/assets/bonnie-adding-oas-mobile-en.jpg"
-    },
-    "description": "(FR) This chart shows two sources of income that Bonnie can use from age 60 to 88 for reaching her target monthly income. One is her earnings from work and the other is her OAS pension. Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. The chart shows Bonnie starting her OAS pension at age 65. From age 65 and on, Bonnie continues to use her OAS monthly pension to help her reach her target monthly income. There's still a large gap between her OAS monthly pension and her target monthly income.",
     "accessibility": {
-      "caption": "vValues presented on the image",
       "button-label": "(FR) Text alternative for Earnings from work and OAS",
+      "caption": "vValues presented on the image",
       "header": [
         "(FR) Age",
         "(FR) Target monthly Income in Retirement",
@@ -233,25 +95,33 @@
           "data": ["87", "$5,527", "", "$1,297"]
         }
       ]
-    }
-  },
-
-  "cpp": {
-    "heading": "(FR) CPP retirement pension may start later",
-    "p1": "(FR) The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount.  The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction. For Bonnie, if she starts collecting her CPP retirement pension:",
-    "li1": "(FR) At 60, she will get $585 per month",
-    "li2": "(FR) At 65, she will receive $914 per month",
-    "li3": "(FR) At 70, she will receive $1,299 per month",
-    "p2": "(FR) The gap in Bonnie's income needs to be filled by her retirement savings and investments.",
-    "p3": "(FR) Bonnie decides to delay her CPP retirement pension and collect it at 70. The CPP retirement pension is adjusted to inflation once a year. After receiving her CPP and Old Age Security (OAS) pensions, Bonnie is still not reaching her target monthly income. The remaining gaps need to come from Bonnie's own retirement savings or investments.",
-    "img-url": {
-      "desktop": "/assets/bonnie-cpp-desktop-en.jpg",
-      "mobile": "/assets/bonnie-cpp-mobile-en.jpg"
     },
-    "description": "(FR) This chart shows three sources of income that Bonnie can use from age 60 to 88 for reaching her target monthly income. One is her earnings from work, another is her OAS pension and the third one is her CPP retirement pension. The chart shows Bonnie starting her OAS pension at age 65 and her CPP at age 70. The public pensions stack together to reach closer to her monthly target income in retirement, but there are still gaps. The gap in income early in retirement needs to be filled by retirement savings and investments.",
+    "description": "(FR) This chart shows two sources of income that Bonnie can use from age 60 to 88 for reaching her target monthly income. One is her earnings from work and the other is her OAS pension. Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. The chart shows Bonnie starting her OAS pension at age 65. From age 65 and on, Bonnie continues to use her OAS monthly pension to help her reach her target monthly income. There's still a large gap between her OAS monthly pension and her target monthly income.",
+    "heading": "(FR) Adding OAS pension to the mix",
+    "img-url": {
+      "desktop": "/assets/bonnie-adding-oas-desktop-en.jpg",
+      "mobile": "/assets/bonnie-adding-oas-mobile-en.jpg"
+    },
+    "p1": "(FR) Bonnie has lived in Canada her entire life, and can receive a full Olf Age Security (OAS) pension at age 65. However, she knows that by waiting she can increase that amount even further. In the end, Bonnie decides to take her OAS pension at age 65, when she fully retires from work. Every three months, her monthly amount will be adjusted for inflation. Bonnie does not qualify for the Guaranteed Income Supplement (GIS). Her target income is around $47,000, which is more than double the threshold to get the GIS.",
+    "p2": "(FR) To learn more about what to consider when choosing the age you want to start your OAS pension, read <a1>Fred decides when to start his public pensions</a1>.",
+    "p3": "(FR) Bonnie started OAS pension at 65 and needs to decide when to start her CPP retirement pension and how to use her retirement savings to reach her target monthly income in retirement."
+  },
+  "breadcrumbs": {
+    "learn": "Apprendre"
+  },
+  "conclusion": {
+    "disclaimer": "(FR) <strong>Disclaimer:</strong> These stories are only simplified examples to illustrate the various factors that should be considered when deciding when to start collecting your public pensions, and potential outcomes. They do not, for example, include the effects of taxation or investment growth, and assume that Bonnie's goal is stable income across her entire life, rather than trying to maximize income to make purchases, pay off debts or travel. These stories are not intended to provide financial advice, and we strongly encourage you to seek help from a financial advisor as you plan your retirement.",
+    "heading": "(FR) Conclusion",
+    "p1": "(FR) If Bonnie chooses to take her Canada Pension Plan (CPP) retirement pension at age 63, she will need $579,000 in her retirement savings. Remember, she needed $528,000 in savings if she chose to take her CPP at age 70. Bonnie will need to save <strong>$51,000</strong> more if she wants to take her CPP retirement pension earlier than if she delays it. As taxes are usually lower in retirement, Bonnie might need less in private savings.",
+    "p2": "(FR) If Bonnie lives a longer life to age 93, she will need <strong>$81,000</strong> more in private pension savings. This is if she takes CPP retirement pension at age 63 instead of age 70.",
+    "p3": "(FR) If inflation is more than 2% per year, her target monthly income will grow higher. Bonnie will need more of her private savings to cover the gap.",
+    "p4": "(FR) Public pension payments grow with inflation, so Bonnie needs to save less for her retirement if she depends on delayed public pensions. Bonnie made the decision to take her OAS pension at age 65 and delay her CPP retirement pension until age 70.",
+    "p5": "(FR) Bonnie did not qualify to receive the Guaranteed Income Supplement (GIS) in the early years of retirement because of her higher income. If Bonnie falls into low income any time during her retirement, the GIS will support her."
+  },
+  "cpp": {
     "accessibility": {
-      "caption": "(FR) Values presented on the image",
       "button-label": "(FR) Text alternative for Earnings from work, OAS and CPP",
+      "caption": "(FR) Values presented on the image",
       "header": [
         "(FR) Age",
         "(FR) Target monthly income in retirement",
@@ -345,130 +215,25 @@
           "data": ["87", "$5,527", "", "$1,297", "$2,216.79"]
         }
       ]
-    }
-  },
-
-  "own-savings": {
-    "heading": "(FR) Using her own retirement savings to cover the gaps",
-    "p1": "(FR) To reach her target monthly income, Bonnie needs to have <strong>$528,000</strong> in her savings before taxes. But taxes may be lower in retirement, so she might need to save less.  Choosing to delay her Canada Pension Plan (CPP) retirement pension means that Old Age Security (OAS) pension and retirement savings will be Bonnie's only sources of income before age 70.",
-    "p2": "(FR) If CPP starts at age 70, Bonnie needs to have <strong>$528,000</strong> in private savings after tax to cover the gap",
-    "img-url": {
-      "desktop": "/assets/bonnie-own-savings-desktop-en.jpg",
-      "mobile": "/assets/bonnie-own-savings-mobile-en.jpg"
     },
-    "description": "(FR) This chart shows all four sources of retirement income for Bonnie. She uses her earnings from work, both her public pensions, and her retirement savings to reach her target monthly income from ages 60 to 88. This chart shows Bonnie works full-time from ages 60 to 62. She then goes part-time from ages 63 to 64 and her earnings are half of what they used to be. Bonnie uses some of her retirement savings to reach her target monthly income. Bonnie fully retires at age 65 and uses her retirement savings and the OAS pension to reach her target monthly income until age 70. From ages 70 to 88, Bonnie uses all her income sources including her CPP retirement pension to reach her target monthly income. The graph shows that from ages 70 to 88 the CPP retirement pension and retirement savings make up the most of her retirement income. If her CPP starts at age 70, Bonnie needs to have <strong>$528,000</strong> in private savings after tax to cover the gap.",
-    "accessibility": {
-      "caption": "(FR) Values presented on the image",
-      "button-label": "(FR) Text alternative for Earnings from work, OAS, CPP and retirement savings",
-      "header": [
-        "(FR) Age",
-        "(FR) Target monthly income in retirement",
-        "(FR) Earnings from work",
-        "(FR) OAS monthly pension",
-        "(FR) CPP monthly pension",
-        "(FR) Retirement savings"
-      ],
-      "rows": [
-        {
-          "data": ["60", "$5,583", "$5,583", "", "", ""]
-        },
-        {
-          "data": ["61", "$5,695", "$5,695", "", "", ""]
-        },
-        {
-          "data": ["62", "$5,809", "$5,809", "", "", ""]
-        },
-        {
-          "data": ["63", "$4,148", "$2,963", "", "", "$1,185"]
-        },
-        {
-          "data": ["64", "$4,231", "$3,022", "", "", "$1,209"]
-        },
-        {
-          "data": ["65", "$4,315", "", "$763", "", "$3,553"]
-        },
-        {
-          "data": ["66", "$4,339", "", "$778", "", "$3,560"]
-        },
-        {
-          "data": ["67", "$4,361", "", "$794", "", "$3,567"]
-        },
-        {
-          "data": ["68", "$4,383", "", "$810", "", "$3,573"]
-        },
-        {
-          "data": ["69", "$4,404", "", "$826", "", "$3,578"]
-        },
-        {
-          "data": ["70", "$4,424", "", "$842", "$1,583.15", "$1,998"]
-        },
-        {
-          "data": ["71", "$4,512", "", "$859", "$1,614.81", "$2,038"]
-        },
-        {
-          "data": ["72", "$4,603", "", "$876", "$1,647.10", "$2,079"]
-        },
-        {
-          "data": ["73", "$4,695", "", "$894", "$1,680.05", "$2,121"]
-        },
-        {
-          "data": ["74", "$4,789", "", "$912", "$1,713.65", "$2,163"]
-        },
-        {
-          "data": ["75", "$4,809", "", "$1,023", "$1,747.92", "$2,038"]
-        },
-        {
-          "data": ["76", "$4,905", "", "$1,043", "$1,782.88", "$2,079"]
-        },
-        {
-          "data": ["77", "$5,004", "", "$1,064", "$1,818.54", "$2,121"]
-        },
-        {
-          "data": ["78", "$5,104", "", "$1,086", "$1,854.91", "$2,163"]
-        },
-        {
-          "data": ["79", "$5,124", "", "$1,107", "$1,892.01", "$2,125"]
-        },
-        {
-          "data": ["80", "$5,144", "", "$1,129", "$1,929.85", "$2,085"]
-        },
-        {
-          "data": ["81", "$5,247", "", "$1,152", "$1,968.44", "$2,126"]
-        },
-        {
-          "data": ["82", "$5,265", "", "$1,175", "$2,007.81", "$2,082"]
-        },
-        {
-          "data": ["83", "$5,283", "", "$1,199", "$2,047.97", "$2,036"]
-        },
-        {
-          "data": ["84", "$5,298", "", "$1,223", "$2,088.93", "$1,987"]
-        },
-        {
-          "data": ["85", "$5,404", "", "$1,247", "$2,130.71", "$2,027"]
-        },
-        {
-          "data": ["86", "$5,419", "", "$1,272", "$2,173.32", "$1,974"]
-        },
-        {
-          "data": ["87", "$5,527", "", "$1,297", "$2,216.79", "$2,013"]
-        }
-      ]
-    }
+    "description": "(FR) This chart shows three sources of income that Bonnie can use from age 60 to 88 for reaching her target monthly income. One is her earnings from work, another is her OAS pension and the third one is her CPP retirement pension. The chart shows Bonnie starting her OAS pension at age 65 and her CPP at age 70. The public pensions stack together to reach closer to her monthly target income in retirement, but there are still gaps. The gap in income early in retirement needs to be filled by retirement savings and investments.",
+    "heading": "(FR) CPP retirement pension may start later",
+    "img-url": {
+      "desktop": "/assets/bonnie-cpp-desktop-en.jpg",
+      "mobile": "/assets/bonnie-cpp-mobile-en.jpg"
+    },
+    "li1": "(FR) At 60, she will get $585 per month",
+    "li2": "(FR) At 65, she will receive $914 per month",
+    "li3": "(FR) At 70, she will receive $1,299 per month",
+    "p1": "(FR) The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction. For Bonnie, if she starts collecting her CPP retirement pension:",
+    "p2": "(FR) The gap in Bonnie's income needs to be filled by her retirement savings and investments.",
+    "p3": "(FR) Bonnie decides to delay her CPP retirement pension and collect it at 70. The CPP retirement pension is adjusted to inflation once a year. After receiving her CPP and Old Age Security (OAS) pensions, Bonnie is still not reaching her target monthly income. The remaining gaps need to come from Bonnie's own retirement savings or investments."
   },
-
+  "description-heading": "(FR) Description",
   "early-pension": {
-    "heading": "(FR) But what if Bonnie starts her public pensions earlier?",
-    "p1": "(FR) As she's making her decision, Bonnie also thinks about starting her Canada Pension Plan (CPP) retirement pension at age 63. This is to make up for less earnings when she works part-time. She also starts her Old Age Security (OAS) pension at age 65 when she retires. In this case, Bonnie will receive $585 in monthly CPP retirement pension and full monthly OAS pension for age 65.",
-    "p2": "(FR) If CPP starts at age 63, Bonnie needs to have <strong>$579,000</strong> in retirement savings after tax to cover the gap. This is $51,000 more than if her CPP retirement pension is taken at age 70.",
-    "img-url": {
-      "desktop": "/assets/bonnie-early-pension-desktop-en.jpg",
-      "mobile": "/assets/bonnie-early-pension-mobile-en.jpg"
-    },
-    "description": "(FR) This chart shows all four sources of retirement income for Bonnie. She uses her earnings from work, both her public pensions, and her retirement savings to reach her target monthly income from ages 60 to 88. This chart shows Bonnie works full-time from ages 60 to 62. She then goes part-time from ages 63 to 64 and her earnings are half of what they used to be. Bonnie starts her CPP retirement pension at age 63, when she switches to part-time work to meet her target monthly income. Bonnie also starts her OAS pension at age 65. The chart shows that most of her retirement income from ages 65 to 88 is from her retirement savings. If CPP starts at age 63, Bonnie needs to have <strong>$579,000</strong> in retirement savings after tax to cover the gap. This is $51,000 more than if her CPP retirement pension is taken at age 70.",
     "accessibility": {
-      "caption": "(FR) Values presented on the image",
       "button-label": "(FR) Text alternative for Earnings from work, OAS, CPP and retirement savings",
+      "caption": "(FR) Values presented on the image",
       "header": [
         "(FR) Age",
         "(FR) Target monthly income in retirement",
@@ -563,40 +328,269 @@
           "data": ["87", "$5,527", "", "$1,297", "$1,336.32", "$2,894"]
         }
       ]
-    }
+    },
+    "description": "(FR) This chart shows all four sources of retirement income for Bonnie. She uses her earnings from work, both her public pensions, and her retirement savings to reach her target monthly income from ages 60 to 88. This chart shows Bonnie works full-time from ages 60 to 62. She then goes part-time from ages 63 to 64 and her earnings are half of what they used to be. Bonnie starts her CPP retirement pension at age 63, when she switches to part-time work to meet her target monthly income. Bonnie also starts her OAS pension at age 65. The chart shows that most of her retirement income from ages 65 to 88 is from her retirement savings. If CPP starts at age 63, Bonnie needs to have <strong>$579,000</strong> in retirement savings after tax to cover the gap. This is $51,000 more than if her CPP retirement pension is taken at age 70.",
+    "heading": "(FR) But what if Bonnie starts her public pensions earlier?",
+    "img-url": {
+      "desktop": "/assets/bonnie-early-pension-desktop-en.jpg",
+      "mobile": "/assets/bonnie-early-pension-mobile-en.jpg"
+    },
+    "p1": "(FR) As she's making her decision, Bonnie also thinks about starting her Canada Pension Plan (CPP) retirement pension at age 63. This is to make up for less earnings when she works part-time. She also starts her Old Age Security (OAS) pension at age 65 when she retires. In this case, Bonnie will receive $585 in monthly CPP retirement pension and full monthly OAS pension for age 65.",
+    "p2": "(FR) If CPP starts at age 63, Bonnie needs to have <strong>$579,000</strong> in retirement savings after tax to cover the gap. This is $51,000 more than if her CPP retirement pension is taken at age 70."
   },
-
-  "conclusion": {
-    "heading": "(FR) Conclusion",
-    "p1": "(FR) If Bonnie chooses to take her Canada Pension Plan (CPP) retirement pension at age 63, she will need $579,000 in her retirement savings. Remember, she needed $528,000 in savings if she chose to take her CPP at age 70. Bonnie will need to save <strong>$51,000</strong> more if she wants to take her CPP retirement pension earlier than if she delays it. As taxes are usually lower in retirement, Bonnie might need less in private savings.",
-    "p2": "(FR) If Bonnie lives a longer life to age 93, she will need <strong>$81,000</strong> more in private pension savings. This is if she takes CPP retirement pension at age 63 instead of age 70.",
-    "p3": "(FR) If inflation is more than 2% per year, her target monthly income will grow higher. Bonnie will need more of her private savings to cover the gap.",
-    "p4": "(FR) Public pension payments grow with inflation, so Bonnie needs to save less for her retirement if she depends on delayed public pensions. Bonnie made the decision to take her OAS pension at age 65 and delay her CPP retirement pension until age 70.",
-    "p5": "(FR) Bonnie did not qualify to receive the Guaranteed Income Supplement (GIS) in the early years of retirement because of her higher income. If Bonnie falls into low income any time during her retirement, the GIS will support her.",
-    "disclaimer": "(FR) <strong>Disclaimer:</strong> These stories are only simplified examples to illustrate the various factors that should be considered when deciding when to start collecting your public pensions, and potential outcomes. They do not, for example, include the effects of taxation or investment growth, and assume that Bonnie's goal is stable income across her entire life, rather than trying to maximize income to make purchases, pay off debts or travel. These stories are not intended to provide financial advice, and we strongly encourage you to seek help from a financial advisor as you plan your retirement."
+  "header": "Bonnie retarde la réduction des épargnes dont elle a besoin",
+  "key-takeaways": {
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
+    "heading": "(FR) Key takeaways",
+    "li1": "(FR) When you start your retirement, you should think about all your income sources and how they will work together.",
+    "li2": "(FR) Many financial planners say that having 60 to 70% of your current income in retirement will allow you to maintain your lifestyle in retirement.",
+    "li3": "(FR) You may spend your retirement savings quickly while you wait to start your public pensions. By delaying, your higher monthly amount could make waiting worth it.",
+    "li4": "(FR) Overall, you could use less of your personal savings in retirement.",
+    "li5": "(FR) Think about inflation while you're retirement planning.",
+    "li6": "(FR) Your Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement pension will adjust for inflation, but your retirement savings and investments might not.",
+    "smart-tip": "(FR) <strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have <a2>low income</a2>, you may also get the <a1>Guaranteed Income Supplement (GIS)</a1>. People who qualify for the GIS should not wait to apply past age 65. You cannot receive the GIS if you are delaying your OAS pension."
   },
-
   "learn-more": {
-    "header": "En savoir pluse",
-    "main-sources-of-retirment-income": {
-      "header": "Principales sources de revenus de retraite",
-      "description": "(FR) Learn about federal benefits, private retirement savings, and how they work together."
+    "deciding-when-to-take-your-pensions": {
+      "description": "(FR) You can choose when to start your old age benefits. Understand what to consider in making that decision.",
+      "header": "(FR) Deciding when to collect public pensions"
     },
     "going-from-work-to-retirement": {
       "description": "(FR) Many Canadians continue to work in retirement. Learn how the money you earn has an impact on your benefits.",
       "header": "Transition du monde du travail à la retraite"
     },
-    "deciding-when-to-take-your-pensions": {
-      "description": "(FR) You can choose when to start your old age benefits. Understand what to consider in making that decision.",
-      "header": "(FR) Deciding when to collect public pensions"
+    "header": "En savoir pluse",
+    "main-sources-of-retirment-income": {
+      "description": "(FR) Learn about federal benefits, private retirement savings, and how they work together.",
+      "header": "Principales sources de revenus de retraite"
     },
     "saving-for-retirement": {
-      "href": "https://www.canada.ca/fr/agence-consommation-matiere-financiere/services/planification-retraite/economiser-pour-retraite.html",
       "description": "(FR) When, why and how to start saving for your retirement and tips to help balance your financial priorities.",
-      "header": "(FR) Saving for retirement"
+      "header": "(FR) Saving for retirement",
+      "href": "https://www.canada.ca/fr/agence-consommation-matiere-financiere/services/planification-retraite/economiser-pour-retraite.html"
     }
   },
+  "meta": {
+    "description": "Bonnie aurait besoin de moins d'économies si elle retardait ses versements de la SV et du RPC pour prendre sa retraite à l'aise."
+  },
+  "overview": {
+    "a1": "https://www.osfi-bsif.gc.ca/Fre/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
+    "a2": "https://www.osfi-bsif.gc.ca/Fre/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
+    "heading": "(FR) Overview",
+    "p1": "(FR) Bonnie worked in marketing for over 35 years. During that time, she saved for her retirement. When she leaves her job, Bonnie will drive less, need less work clothes and can cook at home more. These changes in lifestyle will lower her monthly cost of living.",
+    "p2": "(FR) Bonnie is now 60 years old, and her full-time salary is $67,000 per year or $5,583 per month before taxes. She would like to go part-time at age 63 and then fully retire at age 65. Bonnie is healthy now and decides to plan for the next 28 years - which is the average lifespan of a Canadian woman who is 60 this year.",
+    "p3": "(FR) Bonnie's goal in retirement is to generally maintain her current lifestyle - and so, she'll be looking at how to do that. As part of this, she'll need to decide when to start her OAS and CPP pensions because it will change how and when she uses her savings.",
+    "smart-tip": "(FR) <strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live up to 86 years for men and 88 years for women</a1>. That's why they need to plan for at least another 20-25 years. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
+  },
+  "own-savings": {
+    "accessibility": {
+      "button-label": "(FR) Text alternative for Earnings from work, OAS, CPP and retirement savings",
+      "caption": "(FR) Values presented on the image",
+      "header": [
+        "(FR) Age",
+        "(FR) Target monthly income in retirement",
+        "(FR) Earnings from work",
+        "(FR) OAS monthly pension",
+        "(FR) CPP monthly pension",
+        "(FR) Retirement savings"
+      ],
+      "rows": [
+        {
+          "data": ["60", "$5,583", "$5,583", "", "", ""]
+        },
+        {
+          "data": ["61", "$5,695", "$5,695", "", "", ""]
+        },
+        {
+          "data": ["62", "$5,809", "$5,809", "", "", ""]
+        },
+        {
+          "data": ["63", "$4,148", "$2,963", "", "", "$1,185"]
+        },
+        {
+          "data": ["64", "$4,231", "$3,022", "", "", "$1,209"]
+        },
+        {
+          "data": ["65", "$4,315", "", "$763", "", "$3,553"]
+        },
+        {
+          "data": ["66", "$4,339", "", "$778", "", "$3,560"]
+        },
+        {
+          "data": ["67", "$4,361", "", "$794", "", "$3,567"]
+        },
+        {
+          "data": ["68", "$4,383", "", "$810", "", "$3,573"]
+        },
+        {
+          "data": ["69", "$4,404", "", "$826", "", "$3,578"]
+        },
+        {
+          "data": ["70", "$4,424", "", "$842", "$1,583.15", "$1,998"]
+        },
+        {
+          "data": ["71", "$4,512", "", "$859", "$1,614.81", "$2,038"]
+        },
+        {
+          "data": ["72", "$4,603", "", "$876", "$1,647.10", "$2,079"]
+        },
+        {
+          "data": ["73", "$4,695", "", "$894", "$1,680.05", "$2,121"]
+        },
+        {
+          "data": ["74", "$4,789", "", "$912", "$1,713.65", "$2,163"]
+        },
+        {
+          "data": ["75", "$4,809", "", "$1,023", "$1,747.92", "$2,038"]
+        },
+        {
+          "data": ["76", "$4,905", "", "$1,043", "$1,782.88", "$2,079"]
+        },
+        {
+          "data": ["77", "$5,004", "", "$1,064", "$1,818.54", "$2,121"]
+        },
+        {
+          "data": ["78", "$5,104", "", "$1,086", "$1,854.91", "$2,163"]
+        },
+        {
+          "data": ["79", "$5,124", "", "$1,107", "$1,892.01", "$2,125"]
+        },
+        {
+          "data": ["80", "$5,144", "", "$1,129", "$1,929.85", "$2,085"]
+        },
+        {
+          "data": ["81", "$5,247", "", "$1,152", "$1,968.44", "$2,126"]
+        },
+        {
+          "data": ["82", "$5,265", "", "$1,175", "$2,007.81", "$2,082"]
+        },
+        {
+          "data": ["83", "$5,283", "", "$1,199", "$2,047.97", "$2,036"]
+        },
+        {
+          "data": ["84", "$5,298", "", "$1,223", "$2,088.93", "$1,987"]
+        },
+        {
+          "data": ["85", "$5,404", "", "$1,247", "$2,130.71", "$2,027"]
+        },
+        {
+          "data": ["86", "$5,419", "", "$1,272", "$2,173.32", "$1,974"]
+        },
+        {
+          "data": ["87", "$5,527", "", "$1,297", "$2,216.79", "$2,013"]
+        }
+      ]
+    },
+    "description": "(FR) This chart shows all four sources of retirement income for Bonnie. She uses her earnings from work, both her public pensions, and her retirement savings to reach her target monthly income from ages 60 to 88. This chart shows Bonnie works full-time from ages 60 to 62. She then goes part-time from ages 63 to 64 and her earnings are half of what they used to be. Bonnie uses some of her retirement savings to reach her target monthly income. Bonnie fully retires at age 65 and uses her retirement savings and the OAS pension to reach her target monthly income until age 70. From ages 70 to 88, Bonnie uses all her income sources including her CPP retirement pension to reach her target monthly income. The graph shows that from ages 70 to 88 the CPP retirement pension and retirement savings make up the most of her retirement income. If her CPP starts at age 70, Bonnie needs to have <strong>$528,000</strong> in private savings after tax to cover the gap.",
+    "heading": "(FR) Using her own retirement savings to cover the gaps",
+    "img-url": {
+      "desktop": "/assets/bonnie-own-savings-desktop-en.jpg",
+      "mobile": "/assets/bonnie-own-savings-mobile-en.jpg"
+    },
+    "p1": "(FR) To reach her target monthly income, Bonnie needs to have <strong>$528,000</strong> in her savings before taxes. But taxes may be lower in retirement, so she might need to save less. Choosing to delay her Canada Pension Plan (CPP) retirement pension means that Old Age Security (OAS) pension and retirement savings will be Bonnie's only sources of income before age 70.",
+    "p2": "(FR) If CPP starts at age 70, Bonnie needs to have <strong>$528,000</strong> in private savings after tax to cover the gap"
+  },
   "show-accessible-table": "(FR) Show accessible table format",
-  "description-heading": "(FR) Description",
+  "stopping-earnings": {
+    "accessibility": {
+      "button-label": "(FR) Text alternative for Earnings from work",
+      "caption": "(FR) Values presented on the image",
+      "header": ["(FR) Age", "(FR) Target monthly Income in Retirement", "(FR) Earnings from work"],
+      "rows": [
+        {
+          "data": ["60", "$5,583", "$5,583"]
+        },
+        {
+          "data": ["61", "$5,695", "$5,695"]
+        },
+        {
+          "data": ["62", "$5,809", "$5,809"]
+        },
+        {
+          "data": ["63", "$4,148", "$2,963"]
+        },
+        {
+          "data": ["64", "$4,231", "$3,022"]
+        },
+        {
+          "data": ["65", "$4,315", ""]
+        },
+        {
+          "data": ["66", "$4,339", ""]
+        },
+        {
+          "data": ["67", "$4,361", ""]
+        },
+        {
+          "data": ["68", "$4,383", ""]
+        },
+        {
+          "data": ["69", "$4,404", ""]
+        },
+        {
+          "data": ["70", "$4,424", ""]
+        },
+        {
+          "data": ["71", "$4,512", ""]
+        },
+        {
+          "data": ["72", "$4,603", ""]
+        },
+        {
+          "data": ["73", "$4,695", ""]
+        },
+        {
+          "data": ["74", "$4,789", ""]
+        },
+        {
+          "data": ["75", "$4,809", ""]
+        },
+        {
+          "data": ["76", "$4,905", ""]
+        },
+        {
+          "data": ["77", "$5,004", ""]
+        },
+        {
+          "data": ["78", "$5,104", ""]
+        },
+        {
+          "data": ["79", "$5,124", ""]
+        },
+        {
+          "data": ["80", "$5,144", ""]
+        },
+        {
+          "data": ["81", "$5,247", ""]
+        },
+        {
+          "data": ["82", "$5,265", ""]
+        },
+        {
+          "data": ["83", "$5,283", ""]
+        },
+        {
+          "data": ["84", "$5,298", ""]
+        },
+        {
+          "data": ["85", "$5,404", ""]
+        },
+        {
+          "data": ["86", "$5,419", ""]
+        },
+        {
+          "data": ["87", "$5,527", ""]
+        }
+      ]
+    },
+    "description": "(FR) This chart shows that Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. Bonnie's target monthly income also reduces to 70% because she might need less income in retirement. There's a gap between Bonnie's monthly income from working part-time and from her target monthly income in retirement. At age 65, Bonnie fully retires and has no money from the job to meet her target monthly income. Bonnie's target monthly income grows slightly as she gets older until age 88 because of inflation.",
+    "heading": "(FR) Stopping Earnings from Work",
+    "img-url": {
+      "desktop": "/assets/bonnie-stopping-earnings-desktop-en.jpg",
+      "mobile": "/assets/bonnie-stopping-earnings-mobile-en.jpg"
+    },
+    "p": "(FR) To retire comfortably, Bonnie needs about 60-70% of her current work income before taxes. The target monthly income then grows with 2% rate of inflation into future."
+  },
   "values-heading": "(FR) Values"
 }
