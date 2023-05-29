@@ -1,20 +1,16 @@
 import { FC } from 'react'
 
+import { useTranslation } from 'next-i18next'
+
 export interface InputLabelProps {
   htmlFor: string
   id: string
   label: string
   required?: boolean
-  textRequired?: string
 }
 
-const InputLabel: FC<InputLabelProps> = ({
-  htmlFor,
-  id,
-  label,
-  required,
-  textRequired,
-}) => {
+const InputLabel: FC<InputLabelProps> = ({ htmlFor, id, label, required }) => {
+  const { t } = useTranslation()
   return (
     <label id={id} htmlFor={htmlFor} className="mb-2 block font-bold">
       {required && (
@@ -23,9 +19,7 @@ const InputLabel: FC<InputLabelProps> = ({
         </span>
       )}
       {label}
-      {required && (
-        <strong className="text-accent-error">&nbsp;{textRequired}</strong>
-      )}
+      {required && <strong className="text-accent-error">&nbsp;{t('required')}</strong>}
     </label>
   )
 }

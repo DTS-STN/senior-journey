@@ -3,10 +3,7 @@ import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { getDaysInMonth, isExists } from 'date-fns'
 import { useTranslation } from 'next-i18next'
 
-import DateSelect, {
-  DateSelectOnChangeEvent,
-  DateSelectOption,
-} from './DateSelect'
+import DateSelect, { DateSelectOnChangeEvent, DateSelectOption } from './DateSelect'
 import InputErrorMessage from './InputErrorMessage'
 import InputLabel from './InputLabel'
 
@@ -21,7 +18,6 @@ export interface DateSelectFieldProps {
   lastYear?: number
   onChange: DateSelectFieldOnChangeEvent
   required?: boolean
-  textRequired?: string
   value: string
 }
 
@@ -41,20 +37,17 @@ const DateSelectField: FC<DateSelectFieldProps> = ({
   lastYear,
   onChange,
   required,
-  textRequired,
   value,
 }) => {
   const { t } = useTranslation()
 
-  const [state, setState] = useState<DateSelectState & { changeCount: number }>(
-    {
-      dateString: '',
-      dayValue: '',
-      monthValue: '',
-      yearValue: '',
-      changeCount: 0, // HACK: Use this state as a dependency of the `useEffect` below so that `onChange` is called only when it should be.
-    }
-  )
+  const [state, setState] = useState<DateSelectState & { changeCount: number }>({
+    dateString: '',
+    dayValue: '',
+    monthValue: '',
+    yearValue: '',
+    changeCount: 0, // HACK: Use this state as a dependency of the `useEffect` below so that `onChange` is called only when it should be.
+  })
 
   const dateSelectErrorMessageId = `date-select-${id}-error`
   const dateSelectHelpMessageId = `date-select-${id}-help`
@@ -88,46 +81,39 @@ const DateSelectField: FC<DateSelectFieldProps> = ({
   const dayOptions = useMemo(() => {
     const year = parseInt(state.yearValue)
     const month = parseInt(state.monthValue)
-    const days = isExists(year, month - 1, 1)
-      ? getDaysInMonth(new Date(year, month - 1))
-      : 31
+    const days = isExists(year, month - 1, 1) ? getDaysInMonth(new Date(year, month - 1)) : 31
     return [...Array(days).keys()].map<DateSelectOption>((i) => {
       const value = padZero(i + 1, 2)
       return { label: value, value }
     })
   }, [state.monthValue, state.yearValue])
 
-  const handleOnDateSelectChange: DateSelectOnChangeEvent = useCallback(
-    (event, type) => {
-      const newValue = event.target.value
-      setState((curState) => {
-        const yearValue = type === 'year' ? newValue : curState.yearValue
-        const yearNumber = parseInt(yearValue)
+  const handleOnDateSelectChange: DateSelectOnChangeEvent = useCallback((event, type) => {
+    const newValue = event.target.value
+    setState((curState) => {
+      const yearValue = type === 'year' ? newValue : curState.yearValue
+      const yearNumber = parseInt(yearValue)
 
-        const monthValue = type === 'month' ? newValue : curState.monthValue
-        const monthNumber = parseInt(monthValue)
+      const monthValue = type === 'month' ? newValue : curState.monthValue
+      const monthNumber = parseInt(monthValue)
 
-        // dayValue can be set if year or month is NaN OR if the year-month-day convert to an existing date
-        const day = type === 'day' ? newValue : curState.dayValue
-        const isDayExists =
-          isNaN(yearNumber) || isNaN(monthNumber)
-            ? true
-            : isExists(yearNumber, monthNumber - 1, parseInt(day))
-        const dayValue = isDayExists ? day : ''
+      // dayValue can be set if year or month is NaN OR if the year-month-day convert to an existing date
+      const day = type === 'day' ? newValue : curState.dayValue
+      const isDayExists =
+        isNaN(yearNumber) || isNaN(monthNumber) ? true : isExists(yearNumber, monthNumber - 1, parseInt(day))
+      const dayValue = isDayExists ? day : ''
 
-        const dateString = toDateStringOrEmpty(yearValue, monthValue, dayValue)
-        return {
-          ...curState,
-          yearValue,
-          monthValue,
-          dayValue,
-          dateString,
-          changeCount: curState.changeCount + 1, // `updateDate` changes `state.changeCount` so that `onChange` is triggered.
-        }
-      })
-    },
-    []
-  )
+      const dateString = toDateStringOrEmpty(yearValue, monthValue, dayValue)
+      return {
+        ...curState,
+        yearValue,
+        monthValue,
+        dayValue,
+        dateString,
+        changeCount: curState.changeCount + 1, // `updateDate` changes `state.changeCount` so that `onChange` is triggered.
+      }
+    })
+  }, [])
 
   // Sync from the state to the upper component through onChange when necessary.
   const mountedRef = useRef(false)
@@ -165,19 +151,8 @@ const DateSelectField: FC<DateSelectFieldProps> = ({
 
   return (
     <div className="mb-4" id={dateSelectWrapperId} data-testid={id}>
-      <InputLabel
-        id={dateSelectLabelId}
-        htmlFor={`${id}-year`}
-        required={required}
-        label={label}
-        textRequired={textRequired}
-      />
-      {errorMessage && (
-        <InputErrorMessage
-          id={dateSelectErrorMessageId}
-          message={errorMessage}
-        />
-      )}
+      <InputLabel id={dateSelectLabelId} htmlFor={`${id}-year`} required={required} label={label} />
+      {errorMessage && <InputErrorMessage id={dateSelectErrorMessageId} message={errorMessage} />}
       <fieldset className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
         <DateSelect
           ariaDescribedby={getAriaDescribedby()}
@@ -217,10 +192,7 @@ const DateSelectField: FC<DateSelectFieldProps> = ({
         />
       </fieldset>
       {helpMessage && (
-        <div
-          className="mt-1.5 max-w-prose text-base text-gray-600"
-          id={dateSelectHelpMessageId}
-        >
+        <div className="mt-1.5 max-w-prose text-base text-gray-600" id={dateSelectHelpMessageId}>
           {helpMessage}
         </div>
       )}
