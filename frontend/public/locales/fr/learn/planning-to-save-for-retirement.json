@@ -1,10 +1,23 @@
 {
-  "header": "Planifiez pour épargner en vue de la retraite",
   "breadcrumbs": {
     "learn": "Apprendre"
   },
-  "meta": {
-    "description": "Découvrez comment vos besoins en ce qui concerne vos revenus vont changer. Vos besoins financiers et vos préoccupations vont aussi changer."
+  "changes-with-age": {
+    "disclaimer": "(FR) <strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
+    "heading": "(FR) How your financial needs may change with age",
+    "p1": "(FR) While you're budgeting for retirement, remember that your budget won't always be the same. In early retirement, you may want extra money to travel, or pursue hobbies that you didn't have the time for during your working years. As you get older, you may find your spending habits shift. You may spend less money on shopping or going out, and more on healthcare, medications, and home care.",
+    "p2": "(FR) As you age, you may consider long-term care costs such as assisted living or nursing home care. These choices cost a lot, and you should consider having a plan. You could have savings ahead of time or buy insurance to cover any costs you didn't plan for. These are some options that could work for you, depending on your situation."
+  },
+  "header": "Planifiez pour épargner en vue de la retraite",
+  "how-much": {
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
+    "a3": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
+    "a4": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/planificateur-budgetaire",
+    "heading": "(FR) How much you could need in retirement",
+    "p1": "(FR) When you retire, you may need less money per month than what you need now. You might not need to drive as much, have less work-related spending, reduced child-related and housing costs. With more free time, you might want to travel more, or do some renovations in your house. Everyone's retirement looks different, so it's important to think about what you want and plan for it. Think about things like your health, where you want to live, and how much money you'll have from pensions and savings.  Generally, you won't need as much as you do now to keep your way of living. Many financial planners say that having 60 to 70% of your current income in retirement will allow you to maintain your lifestyle in retirement. But, this rule of thumb doesn't work for everyone. If you have <a1>low income</a1>, you might need the same amount of money when you retire as you do now to cover all your basic needs. The <a2>Guaranteed Income Supplement (GIS)</a2> is an important source of income for low-income retirees. People with higher income may only need have 50 to 60% of their current income in retirement. Think about your personal situation when planning for retirement, so you can save the right amount.",
+    "p2": "(FR) You can model your future retirement income from different sources using the <a3>Canadian Retirement Income Calculator</a3>.",
+    "p3": "(FR) Create a customized budget using the <a4>FCAC Budget planner</a4>."
   },
   "key-takeaways": {
     "heading": "(FR) Key takeaways",
@@ -13,45 +26,32 @@
     "li3": "(FR) Your financial needs and circumstances may change with age.",
     "li4": "(FR) It's important to review your financial plan to change as needed."
   },
-  "overview": {
-    "heading": "(FR) Overview",
-    "p": "(FR) Planning for retirement may feel stressful, but it's needed to make sure you've got a comfortable and secure future that aligns with your goals. With so many choices, it can be hard to know where to start to get the most out of your savings. The sections below are meant to inform you as you go through this important process."
-  },
-  "how-much": {
-    "heading": "(FR) How much you could need in retirement",
-    "p1": "(FR) When you retire, you may need less money per month than what you need now. You might not need to drive as much, have less work-related spending, reduced child-related and housing costs. With more free time, you might want to travel more, or do some renovations in your house. Everyone's retirement looks different, so it's important to think about what you want and plan for it. Think about things like your health, where you want to live, and how much money you'll have from pensions and savings.  Generally, you won't need as much as you do now to keep your way of living. Many financial planners say that having 60 to 70% of your current income in retirement will allow you to maintain your lifestyle in retirement. But, this rule of thumb doesn't work for everyone. If you have <a1>low income</a1>, you might need the same amount of money when you retire as you do now to cover all your basic needs. The <a2>Guaranteed Income Supplement (GIS)</a2> is an important source of income for low-income retirees. People with higher income may only need have 50 to 60% of their current income in retirement. Think about your personal situation when planning for retirement, so you can save the right amount.",
-    "p2": "(FR) You can model your future retirement income from different sources using the <a3>Canadian Retirement Income Calculator</a3>.",
-    "p3": "(FR) Create a customized budget using the <a4>FCAC Budget planner</a4>.",
-    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
-    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
-    "a3": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
-    "a4": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/planificateur-budgetaire"
-  },
-  "changes-with-age": {
-    "heading": "(FR) How your financial needs may change with age",
-    "p1": "(FR) While you're budgeting for retirement, remember that your budget won't always be the same. In early retirement, you may want extra money to travel, or pursue hobbies that you didn't have the time for during your working years. As you get older, you may find your spending habits shift. You may spend less money on shopping or going out, and more on healthcare, medications, and home care.",
-    "p2": "(FR) As you age, you may consider long-term care costs such as assisted living or nursing home care. These choices cost a lot, and you should consider having a plan. You could have savings ahead of time or buy insurance to cover any costs you didn't plan for. These are some options that could work for you, depending on your situation.",
-    "disclaimer": "(FR) <strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor."
-  },
   "learn-more": {
-    "heading": "En savoir plus",
-    "main-sources-of-retirment-income": {
-      "header": "Principales sources de revenus de retraite",
-      "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps."
+    "budget-planner": {
+      "description": "(FR) The Budget Planner helps you create a customized budget in 3 simple steps.",
+      "header": "(FR) Budget Planner Tool - Financial Consumer Agency of Canada",
+      "href": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/planificateur-budgetaire"
     },
     "going-from-work-to-retirement": {
       "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
       "header": "Transition du monde du travail à la retraite"
     },
-    "budget-planner": {
-      "href": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/planificateur-budgetaire",
-      "description": "(FR) The Budget Planner helps you create a customized budget in 3 simple steps.",
-      "header": "(FR) Budget Planner Tool - Financial Consumer Agency of Canada"
+    "heading": "En savoir plus",
+    "main-sources-of-retirment-income": {
+      "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
+      "header": "Principales sources de revenus de retraite"
     },
     "saving-for-retirement": {
-      "href": "https://www.canada.ca/fr/agence-consommation-matiere-financiere/services/planification-retraite/economiser-pour-retraite.html",
       "description": "(FR) When, why and how to start saving for your retirement and tips to help balance your financial priorities.",
-      "header": "(FR) Saving for retirement"
+      "header": "(FR) Saving for retirement",
+      "href": "https://www.canada.ca/fr/agence-consommation-matiere-financiere/services/planification-retraite/economiser-pour-retraite.html"
     }
+  },
+  "meta": {
+    "description": "Découvrez comment vos besoins en ce qui concerne vos revenus vont changer. Vos besoins financiers et vos préoccupations vont aussi changer."
+  },
+  "overview": {
+    "heading": "(FR) Overview",
+    "p": "(FR) Planning for retirement may feel stressful, but it's needed to make sure you've got a comfortable and secure future that aligns with your goals. With so many choices, it can be hard to know where to start to get the most out of your savings. The sections below are meant to inform you as you go through this important process."
   }
 }

@@ -2,125 +2,11 @@
   "breadcrumbs": {
     "learn": "Learn"
   },
-  "header": "Deciding when to start your public pensions",
-  "meta": {
-    "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider."
-  },
-  "key-takeaways": {
-    "heading": "Key takeaways",
-    "highest-monthly-amount": "You can start collecting your Canada Pension Plan (CPP) retirement pension as early as age 60 with a permanent reduction. You can start receiving your Old Age Security (OAS) pension as early as age 65.",
-    "start-collecting": "You can start collecting your Canada Pension Plan (CPP) retirement pension as early as age 60 with permanent reduction. You can start receiving your Old Age Security (OAS) pension as early as age 65.",
-    "payment-increase": "Your monthly payment will increase every month you delay, up to age 70.",
-    "no-benefit": "There's no benefit to wait after age 70 to start collecting both pensions.",
-    "people-who-qualify": "People who qualify for the Guaranteed Income Supplement (GIS) should not wait to apply past age 65.",
-    "if-you-qualify": "If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
-    "more-than-double": "You could more than double your monthly CPP amount if you delay your retirement pension from age 60 to 70.",
-    "pensions-adjusted": "Your pensions will be adjusted for inflation in the future.",
-    "planning-retirement": "When planning your retirement, you should consider a few factors: your health, your lifestyle, your plans in retirement, and your finances.",
-    "common-law": "If you're part of a couple, you should probably make these decisions with your spouse or common-law partner."
-  },
-  "overview": {
-    "heading": "Overview",
-    "p1": "The Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement pensions replace a part of your income in retirement. They contribute to a safe base that can build a secure and comfortable retirement. If you've worked or lived in Quebec, you may qualify for the Québec Pension Plan (QPP) retirement pension instead of the CPP. These programs are very similar, but not the same.",
-    "p2": "To learn more, visit the <a1>QPP website</a1>.",
-    "p3": "The OAS pension and CPP retirement pension give flexibility for when to start collecting. This decision will permanently set your pension amount, which is paid to you for life. Your public pensions change periodically to reflect inflation. Your pension amount will only go up, and never down even if the cost of living goes down.",
-    "p4": "The information below aims to help you decide at what age to start your public pensions.",
-    "a1": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx"
-  },
-  "old-age-security": {
-    "heading": "Old Age Security (OAS) Pension",
-    "content-one": "You can start collecting your Old Age Security (OAS) pension as early as age 65. Each month you delay increases that amount by 0.6%. For every year that you delay your OAS pension, your pension increases by 7.2%. At age 70, your monthly amount will be 36% higher than at age 65. After age 70, there is no advantage in delaying your first payment. In fact, you risk losing payments.",
-    "content-two": "If you delay, think about how you'll support yourself while waiting for your higher OAS pension. ",
-    "table-one": {
-      "title": "Old Age Security (OAS) pension amounts - April to June 2023",
-      "header-one": "Benefit type",
-      "header-two": "Maximum monthly amount (April to June 2023)",
-      "header-three": "To receive the OAS, your total income in 2021 must be",
-      "row-one": {
-        "column-one-value": "Old Age Security pension 65 at 74",
-        "column-two-value": "$691",
-        "column-three-value": "Less than $129,757"
-      },
-      "row-two": {
-        "column-one-value": "Old Age Security pension 75 and over",
-        "column-two-value": "$760",
-        "column-three-value": "Less than $129,757"
-      }
-    },
-    "oas-delay": {
-      "p": "Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023.",
-      "img-url": {
-        "desktop": "/assets/oas-delay-desktop-en.jpg",
-        "mobile": "/assets/oas-delay-mobile-en.jpg"
-      },
-      "description": "The chart shows changes in monthly OAS pension payments depending on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect for life. You can begin your OAS pension at age 65, or delay it until age 70 for the largest amount. Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023.",
-      "accessibility": {
-        "caption": "Values presented on the image",
-        "button-label": "Text alternative for You can collect a higher monthly OAS pension, if you delay",
-        "header": ["Age you start collecting your OAS pension", "Monthly OAS pension"],
-        "rows": [
-          { "data": ["65", "$691"] },
-          { "data": ["66", "$741"] },
-          { "data": ["67", "$791"] },
-          { "data": ["68", "$840"] },
-          { "data": ["69", "$890"] },
-          { "data": ["70", "$940"] }
-        ]
-      }
-    },
-    "auto-increase": {
-      "p1": "Whenever you chose to start your OAS pension, it will automatically increase by 10% when you turn 75.",
-      "p2": "If you choose to delay and collect a higher pension, the 10% automatic increase at age 75 will give you more money.",
-      "img-url": {
-        "desktop": "/assets/oas-auto-increase-desktop-en.jpg",
-        "mobile": "/assets/oas-auto-increase-mobile-en.jpg"
-      },
-      "description": "The chart shows monthly amounts for OAS pension at age 75, based on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect. You can begin your OAS pension at age 65 for the smallest amount or at age 70 for the largest amount. If you choose to delay and collect a higher pension, the 10% automatic increase at age 75 will give you more money.",
-      "accessibility": {
-        "caption": "Values presented on the image",
-        "button-label": "Text alternative for Your OAS pension will automatically increase by 10% at age 75",
-        "header": [
-          "Age you start your OAS pension",
-          "Monthly OAS pension",
-          "10% top-up at age 75",
-          "Monthly OAS total at age 75"
-        ],
-        "rows": [
-          { "data": ["65", "$691", "$69", "$760"] },
-          { "data": ["66", "$741", "$74", "$815"] },
-          { "data": ["67", "$791", "$79", "$870"] },
-          { "data": ["68", "$840", "$84", "$924"] },
-          { "data": ["69", "$890", "$89", "$979"] },
-          { "data": ["70", "$940", "$94", "$1,034"] }
-        ]
-      }
-    },
-    "we-pay": {
-      "heading": "We pay OAS automatically for many, but some clients still need to apply",
-      "p": "In some cases, Service Canada will automatically enrol you to start your Old Age Security (OAS) pension at age 65. The month after turning 64 years old, you may receive a letter from Service Canada. The letter will say that you have been selected for automatic enrolment. If this letter comes to you and you want to start your OAS pension later, you will need to let Service Canada know. Steps on how to delay your pension will be on your letter. There's no automatic enrolment into the OAS pension at age 70."
-    },
-    "high-income": {
-      "heading": "If you have high income in retirement",
-      "p": "If your annual income is over a certain amount after age 65, you must repay part or all your OAS pension. This is called the <a1>Old Age Security (OAS) pension recovery tax</a1>.",
-      "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html"
-    }
-  },
   "cpp-pension": {
-    "heading": "CPP retirement pension",
-    "p1": "No matter how often you changed jobs, by working in Canada, you contributed to the Canada Pension Plan (CPP) or the <a1>Québec Pension Plan (QPP)</a1>. The amount of your CPP retirement pension depends on how much and for how long you have contributed to the plan. The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.",
-    "p2": "Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
-    "p3": "Read <a2>Fred decides when to start his public pensions</a2> to see what guides his choices.",
     "a1": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx",
-    "smart-tip": "<strong>Smart tip:</strong> Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost 100,000 by the end of one's life. Every month you delay your pension, increases your monthly payment. If you delay your CPP retirement pension from age 60 to 70, you could more than double your monthly amount. Your pension will change to reflect future inflation.",
-    "disclaimer": "<strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
-    "img-url": {
-      "desktop": "/assets/cpp-delay-desktop-en.jpg",
-      "mobile": "/assets/cpp-delay-mobile-en.jpg"
-    },
-    "description": "The chart shows changes in monthly amounts for your CPP retirement pension based on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect. Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
     "accessibility": {
-      "caption": "Values presented on the image",
       "button-label": "Text alternative for Your monthly CPP could increase significantly if you delay",
+      "caption": "Values presented on the image",
       "header": ["Age you start your CPP retirement pension", "Monthly CPP retirement pension amount"],
       "rows": [
         {
@@ -157,28 +43,166 @@
           "data": ["70", "$1,775"]
         }
       ]
-    }
+    },
+    "description": "The chart shows changes in monthly amounts for your CPP retirement pension based on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect. Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
+    "disclaimer": "<strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
+    "heading": "CPP retirement pension",
+    "img-url": {
+      "desktop": "/assets/cpp-delay-desktop-en.jpg",
+      "mobile": "/assets/cpp-delay-mobile-en.jpg"
+    },
+    "p1": "No matter how often you changed jobs, by working in Canada, you contributed to the Canada Pension Plan (CPP) or the <a1>Québec Pension Plan (QPP)</a1>. The amount of your CPP retirement pension depends on how much and for how long you have contributed to the plan. The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.",
+    "p2": "Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
+    "p3": "Read <a2>Fred decides when to start his public pensions</a2> to see what guides his choices.",
+    "smart-tip": "<strong>Smart tip:</strong> Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost 100,000 by the end of one's life. Every month you delay your pension, increases your monthly payment. If you delay your CPP retirement pension from age 60 to 70, you could more than double your monthly amount. Your pension will change to reflect future inflation."
+  },
+  "description-heading": "Description",
+  "header": "Deciding when to start your public pensions",
+  "key-takeaways": {
+    "common-law": "If you're part of a couple, you should probably make these decisions with your spouse or common-law partner.",
+    "heading": "Key takeaways",
+    "highest-monthly-amount": "You can start collecting your Canada Pension Plan (CPP) retirement pension as early as age 60 with a permanent reduction. You can start receiving your Old Age Security (OAS) pension as early as age 65.",
+    "if-you-qualify": "If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "more-than-double": "You could more than double your monthly CPP amount if you delay your retirement pension from age 60 to 70.",
+    "no-benefit": "There's no benefit to wait after age 70 to start collecting both pensions.",
+    "payment-increase": "Your monthly payment will increase every month you delay, up to age 70.",
+    "pensions-adjusted": "Your pensions will be adjusted for inflation in the future.",
+    "people-who-qualify": "People who qualify for the Guaranteed Income Supplement (GIS) should not wait to apply past age 65.",
+    "planning-retirement": "When planning your retirement, you should consider a few factors: your health, your lifestyle, your plans in retirement, and your finances.",
+    "start-collecting": "You can start collecting your Canada Pension Plan (CPP) retirement pension as early as age 60 with permanent reduction. You can start receiving your Old Age Security (OAS) pension as early as age 65."
   },
   "learn-more": {
-    "header": "Learn More",
-    "main-sources-of-retirment-income": {
-      "description": "See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
-      "header": "Main sources of retirement income"
-    },
-    "going-from-work-to-retirement": {
-      "description": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
-      "header": "Going from work to retirement"
+    "bonnie-case-study": {
+      "description": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension.",
+      "header": "Bonnie delays to reduce the savings she needs"
     },
     "fred-case-study": {
       "description": "Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him.",
       "header": "Fred decides when to start his public pensions"
     },
-    "bonnie-case-study": {
-      "description": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension.",
-      "header": "Bonnie delays to reduce the savings she needs"
+    "going-from-work-to-retirement": {
+      "description": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
+      "header": "Going from work to retirement"
+    },
+    "header": "Learn More",
+    "main-sources-of-retirment-income": {
+      "description": "See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
+      "header": "Main sources of retirement income"
     }
   },
+  "meta": {
+    "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider."
+  },
+  "old-age-security": {
+    "auto-increase": {
+      "accessibility": {
+        "button-label": "Text alternative for Your OAS pension will automatically increase by 10% at age 75",
+        "caption": "Values presented on the image",
+        "header": [
+          "Age you start your OAS pension",
+          "Monthly OAS pension",
+          "10% top-up at age 75",
+          "Monthly OAS total at age 75"
+        ],
+        "rows": [
+          {
+            "data": ["65", "$691", "$69", "$760"]
+          },
+          {
+            "data": ["66", "$741", "$74", "$815"]
+          },
+          {
+            "data": ["67", "$791", "$79", "$870"]
+          },
+          {
+            "data": ["68", "$840", "$84", "$924"]
+          },
+          {
+            "data": ["69", "$890", "$89", "$979"]
+          },
+          {
+            "data": ["70", "$940", "$94", "$1,034"]
+          }
+        ]
+      },
+      "description": "The chart shows monthly amounts for OAS pension at age 75, based on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect. You can begin your OAS pension at age 65 for the smallest amount or at age 70 for the largest amount. If you choose to delay and collect a higher pension, the 10% automatic increase at age 75 will give you more money.",
+      "img-url": {
+        "desktop": "/assets/oas-auto-increase-desktop-en.jpg",
+        "mobile": "/assets/oas-auto-increase-mobile-en.jpg"
+      },
+      "p1": "Whenever you chose to start your OAS pension, it will automatically increase by 10% when you turn 75.",
+      "p2": "If you choose to delay and collect a higher pension, the 10% automatic increase at age 75 will give you more money."
+    },
+    "content-one": "You can start collecting your Old Age Security (OAS) pension as early as age 65. Each month you delay increases that amount by 0.6%. For every year that you delay your OAS pension, your pension increases by 7.2%. At age 70, your monthly amount will be 36% higher than at age 65. After age 70, there is no advantage in delaying your first payment. In fact, you risk losing payments.",
+    "content-two": "If you delay, think about how you'll support yourself while waiting for your higher OAS pension. ",
+    "heading": "Old Age Security (OAS) Pension",
+    "high-income": {
+      "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html",
+      "heading": "If you have high income in retirement",
+      "p": "If your annual income is over a certain amount after age 65, you must repay part or all your OAS pension. This is called the <a1>Old Age Security (OAS) pension recovery tax</a1>."
+    },
+    "oas-delay": {
+      "accessibility": {
+        "button-label": "Text alternative for You can collect a higher monthly OAS pension, if you delay",
+        "caption": "Values presented on the image",
+        "header": ["Age you start collecting your OAS pension", "Monthly OAS pension"],
+        "rows": [
+          {
+            "data": ["65", "$691"]
+          },
+          {
+            "data": ["66", "$741"]
+          },
+          {
+            "data": ["67", "$791"]
+          },
+          {
+            "data": ["68", "$840"]
+          },
+          {
+            "data": ["69", "$890"]
+          },
+          {
+            "data": ["70", "$940"]
+          }
+        ]
+      },
+      "description": "The chart shows changes in monthly OAS pension payments depending on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect for life. You can begin your OAS pension at age 65, or delay it until age 70 for the largest amount. Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023.",
+      "img-url": {
+        "desktop": "/assets/oas-delay-desktop-en.jpg",
+        "mobile": "/assets/oas-delay-mobile-en.jpg"
+      },
+      "p": "Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023."
+    },
+    "table-one": {
+      "header-one": "Benefit type",
+      "header-three": "To receive the OAS, your total income in 2021 must be",
+      "header-two": "Maximum monthly amount (April to June 2023)",
+      "row-one": {
+        "column-one-value": "Old Age Security pension 65 at 74",
+        "column-three-value": "Less than $129,757",
+        "column-two-value": "$691"
+      },
+      "row-two": {
+        "column-one-value": "Old Age Security pension 75 and over",
+        "column-three-value": "Less than $129,757",
+        "column-two-value": "$760"
+      },
+      "title": "Old Age Security (OAS) pension amounts - April to June 2023"
+    },
+    "we-pay": {
+      "heading": "We pay OAS automatically for many, but some clients still need to apply",
+      "p": "In some cases, Service Canada will automatically enrol you to start your Old Age Security (OAS) pension at age 65. The month after turning 64 years old, you may receive a letter from Service Canada. The letter will say that you have been selected for automatic enrolment. If this letter comes to you and you want to start your OAS pension later, you will need to let Service Canada know. Steps on how to delay your pension will be on your letter. There's no automatic enrolment into the OAS pension at age 70."
+    }
+  },
+  "overview": {
+    "a1": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx",
+    "heading": "Overview",
+    "p1": "The Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement pensions replace a part of your income in retirement. They contribute to a safe base that can build a secure and comfortable retirement. If you've worked or lived in Quebec, you may qualify for the Québec Pension Plan (QPP) retirement pension instead of the CPP. These programs are very similar, but not the same.",
+    "p2": "To learn more, visit the <a1>QPP website</a1>.",
+    "p3": "The OAS pension and CPP retirement pension give flexibility for when to start collecting. This decision will permanently set your pension amount, which is paid to you for life. Your public pensions change periodically to reflect inflation. Your pension amount will only go up, and never down even if the cost of living goes down.",
+    "p4": "The information below aims to help you decide at what age to start your public pensions."
+  },
   "show-accessible-table": "Show accessible table format",
-  "description-heading": "Description",
   "values-heading": "Values"
 }

@@ -56,8 +56,8 @@
     "goc-link": "https://www.canada.ca/fr.html",
     "skip-to-main": "Passer au contenu principal"
   },
-  "required": "(obligatoire)",
   "opens-in-new-tab": "(s'ouvre dans un nouvel onglet)",
+  "required": "(obligatoire)",
   "table-of-contents": {
     "aria-label": "Table des matières",
     "dialog": {
