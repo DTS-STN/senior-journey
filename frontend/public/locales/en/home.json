@@ -86,9 +86,9 @@
       },
       "description": {
         "list": {
-          "Update-mailing-address-and-banking-information": "Update your mailing address and banking information.",
           "check-status-payment-dates-and-amounts": "Check the status, payment dates and amounts for your public pensions.",
-          "create-and-submit-application": "Create and submit your Canada Pension Plan and Old Age Security application(s)."
+          "create-and-submit-application": "Create and submit your Canada Pension Plan and Old Age Security application(s).",
+          "update-mailing-address-and-banking-information": "Update your mailing address and banking information."
         },
         "text": "You can do a lot with your MSCA, including:"
       },

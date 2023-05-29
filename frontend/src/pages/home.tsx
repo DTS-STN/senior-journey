@@ -261,7 +261,7 @@ const Home: FC = () => {
                     <ul className="list-disc space-y-2 pl-7">
                       <li>{t('tabs.manage.description.list.create-and-submit-application')}</li>
                       <li>{t('tabs.manage.description.list.check-status-payment-dates-and-amounts')}</li>
-                      <li>{t('tabs.manage.description.list.Update-mailing-address-and-banking-information')}</li>
+                      <li>{t('tabs.manage.description.list.update-mailing-address-and-banking-information')}</li>
                     </ul>
                     <Divider className="my-8" />
                     <div className="text-right">
