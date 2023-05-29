@@ -56,7 +56,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "To apply for OAS and GIS, you may need to provide certain documents. To prepare, gather the following:\n\n- Documents to prove your legal status: if you were born outside of Canada or entered Canada under a Sponsorship Agreement, you will have to provide proof of your status in Canada, such as a [certified true copy](https://catalogue.servicecanada.gc.ca/apps/EForms/pdf/en/ISP-1730_CPP.pdf) of your permanent residence card.\n- Documents to prove your marital status: you must provide your marriage certificate or a [Statutory Declaration of Common-Law Union](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP3004CPP). If you are divorced or separated, you may need to provide a divorce certificate or a [Statutory Declaration of Separation](https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1811OAS).\n- Banking information: you may provide banking information or a void cheque to collect your pension payments by direct deposit.",
-        "descriptionFr": "Pour demander la SV et le SRG, vous devrez peut-être fournir certains documents. Pour vous préparer, rassemblez les éléments suivants\u00a0:\n\n- Documents prouvant votre statut juridique\u00a0: si vous êtes né à l'étranger ou êtes entré au Canada en vertu d'une entente de parrainage, vous devrez fournir une preuve de votre statut au Canada, telle qu'une [Photocopie certifiée](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1730_CPP.pdf) de votre carte de résident permanent.\n- Documents prouvant votre état civil\u00a0: vous devez fournir votre certificat de mariage ou une [Déclaration officielle d'union de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-3004_CPP.pdf). Si vous êtes divorcé ou séparé, vous devrez peut-être fournir un certificat de divorce ou une [Déclaration solennelle - Séparation d'époux légaux ou conjoints de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1811_OAS.pdf).\n- Informations bancaires\u00a0: vous pourriez être amené à fournir des informations bancaires ou un spécimen de chèque pour recevoir le paiement de votre pension par dépôt direct.",
+        "descriptionFr": "Pour demander la SV et le SRG, vous devrez peut-être fournir certains documents. Pour vous préparer, rassemblez les éléments suivants\u00a0:\n\n- Documents prouvant votre statut juridique\u00a0: si vous êtes né à l'étranger ou êtes entré au Canada en vertu d'une entente de parrainage, vous devrez fournir une preuve de votre statut au Canada, telle qu'une [Photocopie certifiée](https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1730_CPP.pdf) de votre carte de résident permanent.\n- Documents prouvant votre état civil\u00a0: vous devez fournir votre certificat de mariage ou une [Déclaration officielle d'union de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/Detail.html?Form=ISP3004CPP). Si vous êtes divorcé ou séparé, vous devrez peut-être fournir un certificat de divorce ou une [Déclaration solennelle - Séparation d'époux légaux ou conjoints de fait](https://catalogue.servicecanada.gc.ca/content/EForms/fr/Detail.html?Form=ISP1811OAS).\n- Informations bancaires\u00a0: vous pourriez être amené à fournir des informations bancaires ou un spécimen de chèque pour recevoir le paiement de votre pension par dépôt direct.",
         "displayOrder": 1021,
         "id": 61,
         "links": [
@@ -590,7 +590,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "After you apply, Service Canada will contact you by mail once a decision has been made, or to request additional information or documents. If you are approved, the letter will confirm:\n- your OAS payment start date (called the “effective date”)\n- the portion of the full OAS pension you are entitled to ([based on how long you have lived in Canada since age 18](https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/benefit-amount.html#:~:text=If%20you%20have%20lived%20in%20Canada%20less%20than%2040%20years))\n- your monthly OAS payments at your start date\n- your first month's OAS payment amount (this may be different from your future monthly payments if you are receiving a retroactive payment)\n\nIf you qualify for GIS, the letter will also confirm:\n- your GIS payment start date (called the “effective date”)\n- your monthly GIS payments at your start date\n- your first month's GIS payment amount (this may be different from your future monthly payments if you are receiving a retroactive payment)",
-        "descriptionFr": "Une fois que vous aurez présenté votre demande, Service Canada communiquera avec vous par courrier une fois qu'une décision aura été prise, ou pour vous demander des informations ou des documents supplémentaires. Si votre demande est acceptée, la lettre vous confirmera\u00a0:\n- la date de début de votre versement de la SV (appelée «\u00a0date d'effet\u00a0»)\n- la partie de la pension complète de la SV à laquelle vous avez droit ([en fonction de la durée pendant laquelle vous avez vécu au Canada depuis l'âge de 18 ans] [https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html])\n- vos versements mensuels de la SV à la date d'entrée en vigueur\n- le montant de votre premier mois de versement de la SV (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)\n\nSi vous avez droit au SRG, la lettre confirmera également\u00a0:\n- la date de début de votre versement du SRG (appelée «\u00a0date d'effet\u00a0»)\n- vos versements mensuels du SRG à la date d'entrée en vigueur\n- le montant de votre premier mois de versement du SRG (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)",
+        "descriptionFr": "Une fois que vous aurez présenté votre demande, Service Canada communiquera avec vous par courrier une fois qu'une décision aura été prise, ou pour vous demander des informations ou des documents supplémentaires. Si votre demande est acceptée, la lettre vous confirmera\u00a0:\n- la date de début de votre versement de la SV (appelée «\u00a0date d'effet\u00a0»)\n- la partie de la pension complète de la SV à laquelle vous avez droit [en fonction de la durée pendant laquelle vous avez vécu au Canada depuis l'âge de 18 ans](https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html)\n- vos versements mensuels de la SV à la date d'entrée en vigueur\n- le montant de votre premier mois de versement de la SV (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)\n\nSi vous avez droit au SRG, la lettre confirmera également\u00a0:\n- la date de début de votre versement du SRG (appelée «\u00a0date d'effet\u00a0»)\n- vos versements mensuels du SRG à la date d'entrée en vigueur\n- le montant de votre premier mois de versement du SRG (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)",
         "displayOrder": 1221,
         "id": 82,
         "links": [
@@ -609,7 +609,7 @@
           }
         ],
         "titleEn": "Wait for your OAS pension notice of decision",
-        "titleFr": "(Attendre l'avis de décision relative à votre pension de la SV"
+        "titleFr": "Attendre l'avis de décision relative à votre pension de la SV"
       },
       {
         "answerKey": "all",
@@ -622,7 +622,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html#gc-document-nav",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
             "textEn": "Guaranteed Income Supplement: What these benefits offer",
-            "textFr": "(Supplément de revenu garanti Aperçu"
+            "textFr": "Supplément de revenu garanti Aperçu"
           },
           {
             "linkEn": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/reporting-income.html",
@@ -2374,7 +2374,7 @@
         "answerKey": "all",
         "descriptionEn": "When you retire, your income sources will change. You may be eligible for tax credits even if you're getting a public pension.",
         "descriptionFr": "Lorsque vous prendrez votre retraite, vos sources de revenus changeront. Vous pouvez avoir droit à des crédits d'impôt, même si vous percevez une pension publique.",
-        "displayOrder": 1,
+        "displayOrder": 10001,
         "id": 91,
         "links": [
           {
@@ -2398,7 +2398,7 @@
         "answerKey": "all",
         "descriptionEn": "While many costs are covered by your provincial health insurance program, some are not. In some provinces or territories, you may be eligible for enhanced coverage. For uncovered costs such as prescriptions or long-term care, you may want to purchase additional private insurance.",
         "descriptionFr": "Si de nombreux coûts sont couverts par le régime d'assurance maladie de votre province, ils ne le sont pas tous. Dans certaines provinces ou certains territoires, vous pouvez bénéficier d'une couverture améliorée. Pour les frais non couverts tels que les ordonnances ou les soins de longue durée, vous pouvez souscrire une assurance privée supplémentaire.",
-        "displayOrder": null,
+        "displayOrder": 10011,
         "id": 92,
         "links": [
           {
@@ -2422,7 +2422,7 @@
         "answerKey": "all",
         "descriptionEn": "Sadly, there are people and organizations that try and take advantage of others, particularly older people. There are a few simple tips to keep in mind to protect yourself against fraud and abuse. Check out the resources below to learn more about how to stay safe.",
         "descriptionFr": "Malheureusement, certaines personnes et organisations tentent de profiter des autres, en particulier des personnes âgées. Pour vous protéger contre les fraudes et les mauvais traitements, voici des conseils simples à garder en tête. Consultez ces ressources pour savoir comment rester en sécurité.",
-        "displayOrder": null,
+        "displayOrder": 10021,
         "id": 93,
         "links": [
           {
@@ -2452,7 +2452,7 @@
         "answerKey": "very-unprepared",
         "descriptionEn": "Many people find it hard to keep track of their budget when they retire. You may find you are spending more or less than you expected. You may want to track your spending over the first few months of your retirement to make sure your long-term plans are accurate.",
         "descriptionFr": "De nombreuses personnes ont du mal à gérer leur budget lorsqu'elles prennent leur retraite. Vous constaterez peut-être que vous dépensez plus ou moins que prévu. Vous pouvez suivre vos dépenses au cours des premiers mois de votre retraite pour vous assurer que vos plans à long terme tiennent la route.",
-        "displayOrder": null,
+        "displayOrder": 10031,
         "id": 94,
         "links": [
           {
@@ -2476,7 +2476,7 @@
         "answerKey": "unprepared",
         "descriptionEn": "Many people find it hard to keep track of their budget when they retire. You may find you are spending more or less than you expected. You may want to track your spending over the first few months of your retirement to make sure your long-term plans are accurate.",
         "descriptionFr": "De nombreuses personnes ont du mal à gérer leur budget lorsqu'elles prennent leur retraite. Vous constaterez peut-être que vous dépensez plus ou moins que prévu. Vous pouvez suivre vos dépenses au cours des premiers mois de votre retraite pour vous assurer que vos plans à long terme tiennent la route.",
-        "displayOrder": null,
+        "displayOrder": 10041,
         "id": 95,
         "links": [
           {
@@ -2500,7 +2500,7 @@
         "answerKey": "unsure-preparedness",
         "descriptionEn": "Many people find it hard to keep track of their budget when they retire. You may find you are spending more or less than you expected. You may want to track your spending over the first few months of your retirement to make sure your long-term plans are accurate.",
         "descriptionFr": "De nombreuses personnes ont du mal à gérer leur budget lorsqu'elles prennent leur retraite. Vous constaterez peut-être que vous dépensez plus ou moins que prévu. Vous pouvez suivre vos dépenses au cours des premiers mois de votre retraite pour vous assurer que vos plans à long terme tiennent la route.",
-        "displayOrder": null,
+        "displayOrder": 10051,
         "id": 96,
         "links": [
           {
@@ -2524,7 +2524,7 @@
         "answerKey": "all",
         "descriptionEn": "You may find that your income in retirement is different from what you expected. In your first few months of retirement, you might find you spend more or less than you thought you would. Take a moment to revisit your budget and plan.",
         "descriptionFr": "Il se peut que vos revenus de retraite soient différents de ce à quoi vous vous attendiez. Au cours des premiers mois de votre retraite, il se peut que vous dépensiez plus ou moins que vous ne le pensiez. Prenez le temps de revoir votre budget et de faire un plan.",
-        "displayOrder": null,
+        "displayOrder": 10061,
         "id": 97,
         "links": [],
         "tags": [
@@ -2541,7 +2541,7 @@
         "answerKey": "all",
         "descriptionEn": "If you move, make sure to update your mailing address with Service Canada so that important updates can reach you. You can update your address online or in-person.",
         "descriptionFr": "Si vous déménagez, assurez-vous de mettre à jour votre adresse postale auprès de Service Canada afin de recevoir les mises à jour importantes. Vous pouvez le faire en ligne ou en personne.",
-        "displayOrder": null,
+        "displayOrder": 10071,
         "id": 98,
         "links": [
           {
@@ -2571,7 +2571,7 @@
         "answerKey": "outside-canada",
         "descriptionEn": "If you move back to Canada or plan on spending more than 6 months a year in Canada, you may become eligible for additional benefits, including the GIS benefit. You should contact us to start or restart your payments.",
         "descriptionFr": "Si vous revenez au Canada ou si vous prévoyez d'y passer plus de six mois par an, vous pouvez avoir droit à des prestations supplémentaires, y compris le SRG. Vous devez communiquer avec nous pour commencer ou recommencer à recevoir vos paiements.",
-        "displayOrder": null,
+        "displayOrder": 10081,
         "id": 99,
         "links": [
           {
@@ -2595,7 +2595,7 @@
         "answerKey": "canada-pt-less-than-60",
         "descriptionEn": "If you move back to Canada or plan on spending more than 6 months a year in Canada, you may become eligible for additional benefits, including the GIS benefit. You should contact us to start or restart your payments.",
         "descriptionFr": "Si vous revenez au Canada ou si vous prévoyez d'y passer plus de six mois par an, vous pouvez avoir droit à des prestations supplémentaires, y compris le SRG. Vous devez communiquer avec nous pour commencer ou recommencer à recevoir vos paiements.",
-        "displayOrder": null,
+        "displayOrder": 10091,
         "id": 100,
         "links": [
           {
@@ -2619,7 +2619,7 @@
         "answerKey": "canada-pt-60-or-more",
         "descriptionEn": "You cannot collect the Guaranteed Income Supplement if you move outside of Canada for more than 6 months or if you start living outside Canada for more than 6 months a year.\n\nIf you plan to leave Canada for more than 6 months, you must contact us to avoid an overpayment.",
         "descriptionFr": "Vous ne pouvez pas percevoir le Supplément de revenu garanti si vous déménagez à l'étranger pour plus de six mois ou si vous commencez à vivre à l'étranger pour plus de six mois par an.\n\nSi vous prévoyez de quitter le Canada pour plus de six mois, vous devez nous contacter pour éviter un trop-perçu.",
-        "displayOrder": null,
+        "displayOrder": 10101,
         "id": 101,
         "links": [
           {
@@ -2643,7 +2643,7 @@
         "answerKey": "canada-ft",
         "descriptionEn": "You cannot collect the Guaranteed Income Supplement if you move outside of Canada for more than 6 months or if you start living outside Canada for more than 6 months a year.\n\nIf you plan to leave Canada for more than 6 months, you must contact us to avoid an overpayment.",
         "descriptionFr": "Vous ne pouvez pas percevoir le Supplément de revenu garanti si vous déménagez à l'étranger pour plus de six mois ou si vous commencez à vivre à l'étranger pour plus de six mois par an.\n\nSi vous prévoyez de quitter le Canada pour plus de six mois, vous devez nous contacter pour éviter un trop-perçu.",
-        "displayOrder": null,
+        "displayOrder": 10111,
         "id": 102,
         "links": [
           {
@@ -2667,7 +2667,7 @@
         "answerKey": "all",
         "descriptionEn": "Eligibility for GIS is based on your income. You need to file your taxes each year to be able to qualify for it. Even if your only income comes from public pensions, you still need to file your taxes.",
         "descriptionFr": "L'admissibilité au SRG dépend de vos revenus. Vous devez déclarer vos impôts chaque année pour pouvoir en bénéficier. Même si votre seul revenu provient de pensions publiques, vous devez toujours produire une déclaration de revenus.",
-        "displayOrder": null,
+        "displayOrder": 10121,
         "id": 103,
         "links": [
           {
@@ -2691,7 +2691,7 @@
         "answerKey": "married-or-cl",
         "descriptionEn": "You can share your Canada Pension Plan (CPP) retirement pension with your legal spouse or common-law partner. To do so, you must be collecting your pension, or be eligible to collect it, and be living with your legal spouse or common-law partner.\n\nSharing your pension won't change your pension amount, but may result in tax savings.",
         "descriptionFr": "Vous pouvez partager votre pension de retraite du Régime de pensions du Canada (RPC) avec votre conjoint légal ou votre conjoint de fait. Pour ce faire, vous devez percevoir votre pension, ou y avoir droit, et vivre avec votre époux ou votre conjoint de fait légal.\n\nLe partage de votre pension ne modifie pas le montant de celle-ci, mais peut générer des économies d'impôt.",
-        "displayOrder": null,
+        "displayOrder": 10131,
         "id": 104,
         "links": [
           {
