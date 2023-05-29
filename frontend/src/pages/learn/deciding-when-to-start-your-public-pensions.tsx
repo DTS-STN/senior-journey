@@ -8,6 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import AccessibilityGraphContainer from '../../components/AccessibilityGraphContainer'
 import AlertCard from '../../components/AlertCard'
@@ -16,11 +17,16 @@ import theme from '../../theme'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const DecidingWhenToCollectPublicPensions: FC = () => {
+  const { locale } = useRouter()
   const { t, i18n } = useTranslation('learn/deciding-when-to-start-your-public-pensions')
   const en = i18n.getFixedT('en', 'learn/deciding-when-to-start-your-public-pensions')
   const fr = i18n.getFixedT('fr', 'learn/deciding-when-to-start-your-public-pensions')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
+
+  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
+    return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
+  }
 
   const learnMoreLinks = useMemo(
     () => [
@@ -167,7 +173,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
 
         <Image
           alt={t('old-age-security.oas-delay.description')}
-          src={t(`old-age-security.oas-delay.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('oas-delay')}
           width={842}
           height={519}
           className="w-full"
@@ -184,7 +190,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <p>{t('old-age-security.auto-increase.p1')}</p>
         <Image
           alt={t('old-age-security.auto-increase.description')}
-          src={t(`old-age-security.auto-increase.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('oas-auto-increase')}
           width={842}
           height={519}
           className="w-full"
@@ -226,7 +232,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         </AlertCard>
         <Image
           alt={t('cpp-pension.description')}
-          src={t(`cpp-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('cpp-delay')}
           width={842}
           height={519}
           className="mt-2 w-full"

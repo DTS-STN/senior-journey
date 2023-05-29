@@ -8,6 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import AccessibilityGraphContainer from '../../../components/AccessibilityGraphContainer'
 import AlertCard from '../../../components/AlertCard'
@@ -16,11 +17,16 @@ import theme from '../../../theme'
 import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Keith: FC = () => {
+  const { locale } = useRouter()
   const { t, i18n } = useTranslation('learn/case-studies/keith')
   const en = i18n.getFixedT('en', 'learn/case-studies/keith')
   const fr = i18n.getFixedT('fr', 'learn/case-studies/keith')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
+
+  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
+    return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
+  }
 
   const learnMoreLinks = useMemo(
     () => [
@@ -155,7 +161,7 @@ const Keith: FC = () => {
         </h2>
         <Image
           alt={t('cpp.cpp-choices.description')}
-          src={t(`cpp.cpp-choices.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('keith-cpp-70')}
           width={842}
           height={519}
           className="w-full"
@@ -214,7 +220,7 @@ const Keith: FC = () => {
 
         <Image
           alt={t('cpp.keith-pension-87.description')}
-          src={t(`cpp.keith-pension-87.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('keith-cpp-87')}
           width={842}
           height={519}
           className="w-full"
@@ -244,7 +250,7 @@ const Keith: FC = () => {
         <p>{t('cpp.keith-pension-90.p1')}</p>
         <Image
           alt={t('cpp.keith-pension-90.description')}
-          src={t(`cpp.keith-pension-90.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('keith-cpp-90')}
           width={842}
           height={519}
           className="w-full"

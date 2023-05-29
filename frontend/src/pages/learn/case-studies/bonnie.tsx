@@ -8,6 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import AccessibilityGraphContainer from '../../../components/AccessibilityGraphContainer'
 import AlertCard from '../../../components/AlertCard'
@@ -16,11 +17,16 @@ import theme from '../../../theme'
 import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Bonnie: FC = () => {
+  const { locale } = useRouter()
   const { t, i18n } = useTranslation('learn/case-studies/bonnie')
   const en = i18n.getFixedT('en', 'learn/case-studies/bonnie')
   const fr = i18n.getFixedT('fr', 'learn/case-studies/bonnie')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
+
+  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
+    return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
+  }
 
   const learnMoreLinks = useMemo(
     () => [
@@ -129,7 +135,7 @@ const Bonnie: FC = () => {
         </h2>
         <Image
           alt={t('stopping-earnings.description')}
-          src={t(`stopping-earnings.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('bonnie-stopping-earnings')}
           width={842}
           height={519}
           className="w-full"
@@ -160,7 +166,7 @@ const Bonnie: FC = () => {
         </p>
         <Image
           alt={t('adding-oas.description')}
-          src={t(`adding-oas.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('bonnie-adding-oas')}
           width={842}
           height={519}
           className="w-full"
@@ -183,13 +189,7 @@ const Bonnie: FC = () => {
           <li>{t('cpp.li2')}</li>
           <li>{t('cpp.li3')}</li>
         </ul>
-        <Image
-          alt={t('cpp.description')}
-          src={t(`cpp.img-url.${mobile ? 'mobile' : 'desktop'}`)}
-          width={842}
-          height={519}
-          className="w-full"
-        />
+        <Image alt={t('cpp.description')} src={getImageSrc('bonnie-cpp')} width={842} height={519} className="w-full" />
         <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.accessibility', { returnObjects: true })}
@@ -208,7 +208,7 @@ const Bonnie: FC = () => {
         </p>
         <Image
           alt={t('own-savings.description')}
-          src={t(`own-savings.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('bonnie-own-savings')}
           width={842}
           height={519}
           className="w-full"
@@ -230,7 +230,7 @@ const Bonnie: FC = () => {
         <p>{t('early-pension.p1')}</p>
         <Image
           alt={t('early-pension.description')}
-          src={t(`early-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('bonnie-early-pension')}
           width={842}
           height={519}
           className="w-full"

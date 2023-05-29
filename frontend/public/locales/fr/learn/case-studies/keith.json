@@ -43,10 +43,6 @@
       },
       "description": "(FR) This chart shows four choices Keith has for his monthly retirement income. He has two potential sources of income between his CPP retirement pension and his Post-retirement benefits. For all choices, the CPP retirement pension makes up the most of his monthly income. Taking his CPP at age 70 is the largest amount of monthly income. Taking his CPP at age 65 and continuing to work for 5 years to receive 5 Post-retirement benefits is the smallest amount of monthly income.",
       "heading": "(FR) What are the monthly CPP retirement pensions for each choice?",
-      "img-url": {
-        "desktop": "/assets/keith-cpp-70-desktop-en.jpg",
-        "mobile": "/assets/keith-cpp-70-mobile-en.jpg"
-      },
       "p1": "(FR) The monthly Canada Pension Plan (CPP) retirement pension will be paid at the time when Keith applies to collect it. However, the PRBs will accumulate slowly during the years when Keith continues to work and contribute. Each year of additional contributions to the plan will result in an additional small top-up to the existing pension and benefits next year. The graph compares the pension at age 70 for different choice. And the amounts are quite different.",
       "p2": "(FR) Choices 3 and 4 are about Keith taking his CPP retirement pension later in life, at age 65 and 70, and receiving higher monthly pension amounts. Keith would like to choose his strategy between these two options. For both options, Keith knows he will continue paying contributions until age 70."
     },
@@ -78,10 +74,6 @@
       },
       "description": "(FR) This chart shows the lifetime pension amount for 4 choices Keith is thinking about. It shows that by age 87, the choice of starting his CPP pension at age 65 and working until 70 would give Keith the most retirement income.",
       "heading": "(FR) What will be Keith's pension by age 87?",
-      "img-url": {
-        "desktop": "/assets/keith-cpp-87-desktop-en.jpg",
-        "mobile": "/assets/keith-cpp-87-mobile-en.jpg"
-      },
       "li1": "(FR) Choice 3 was about Keith taking his Canada Pension Plan (CPP) retirement pension at age 65 and contributing to the plan until age 70. He will have his pension monthly income earlier in life and a higher lifetime pension.",
       "li2": "(FR) Choice 4 was about Keith delaying his CPP retirement pension until age 70. It is also a good option since it gives the highest monthly pension and a high lifetime pension as well.",
       "p1": "(FR) As Keith is still healthy and working, he should plan on living for another 22-25 years (age 87-90) or longer. He would like to choose between Choices 3 and 4.",
@@ -115,10 +107,6 @@
       },
       "description": "(FR) This chart shows the lifetime CPP retirement pension amount for 4 choices Keith is thinking about. It shows that if Keith lives to age 90, starting his CPP retirement pension at age 65 and working until 70 would give him the most retirement income.",
       "heading": "(FR) What will be Keith's pension by age 90?",
-      "img-url": {
-        "desktop": "/assets/keith-cpp-90-desktop-en.jpg",
-        "mobile": "/assets/keith-cpp-90-mobile-en.jpg"
-      },
       "p1": "(FR) Keith could live a longer life and that would change his lifetime pension.",
       "p4": "(FR) Even at age 90, Choice 3 still has the highest lifetime pension. Keith decides that taking his CPP retirement pension at age 65 and contributing until 70 is his best option."
     },

@@ -38,11 +38,7 @@
           "values-heading": "(FR) Values"
         },
         "footer": "(FR) The PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
-        "header": "(FR) How we top up your CPP retirement pension using Post-Retirement Benefits",
-        "img-url": {
-          "desktop": "/assets/cpp-prb-desktop-en.jpg",
-          "mobile": "/assets/cpp-prb-mobile-en.jpg"
-        }
+        "header": "(FR) How we top up your CPP retirement pension using Post-Retirement Benefits"
       },
       "choices": {
         "content": "(FR) When you reach age 65, you can choose to stop making post-retirement contributions by filing <a>a form with CRA</a> and giving it to your employer. This will stop you from earning additional PRBs. Together with your retirement pension, PRBs will be adjusted for inflation every year.",
