@@ -118,7 +118,7 @@ const Keith: FC = () => {
         <p>
           <Trans
             ns="learn/case-studies/keith"
-            i18nKey="cpp-oas.p3"
+            i18nKey="cpp-oas.p2"
             components={{ a1: <MuiLink href={t('cpp-oas.a1')} /> }}
           />
         </p>

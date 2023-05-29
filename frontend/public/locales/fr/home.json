@@ -86,9 +86,9 @@
       },
       "description": {
         "list": {
-          "Update-mailing-address-and-banking-information": "Mettre à jour votre adresse postale et vos renseignements bancaires.",
           "check-status-payment-dates-and-amounts": "Vérifier l'état, les dates de versement et les montants de vos prestations de vieillesse fédérales.",
-          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse."
+          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse.",
+          "update-mailing-address-and-banking-information": "Mettre à jour votre adresse postale et vos renseignements bancaires."
         },
         "text": "MDSC vous permet de faire beaucoup de choses, notamment\u00a0:"
       },

@@ -138,7 +138,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
                   {t('old-age-security.table-one.header-two')}
                 </th>
                 <th scope="col" className="px-3 py-2.5">
-                  {t('old-age-security.table-one.header-two')}
+                  {t('old-age-security.table-one.header-three')}
                 </th>
               </tr>
             </thead>

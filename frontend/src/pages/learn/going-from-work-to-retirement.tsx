@@ -20,7 +20,7 @@ const GoingFromWorkToRetirement: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
-        href: t('learn-more.working-while-collecting.header'),
+        href: t('learn-more.working-while-collecting.href'),
         primary: t('learn-more.working-while-collecting.header'),
         secondary: t('learn-more.working-while-collecting.description'),
       },
