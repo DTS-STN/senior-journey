@@ -13,17 +13,13 @@ describe('ErrorSummary', () => {
    */
   window.HTMLElement.prototype.scrollIntoView = jest.fn()
 
-  const { container } = render(
-    <ErrorSummary
-      id="id"
-      summary="summary"
-      errors={[{ feildId: 'id', errorMessage: 'error' }]}
-    />
-  )
+  const { container } = render(<ErrorSummary id="id" errors={[{ feildId: 'id', errorMessage: 'invalid input' }]} />)
 
   it('renders', () => {
-    const sut = screen.getByText('summary')
-    expect(sut).toBeInTheDocument()
+    const header = screen.getByText('found-errors')
+    expect(header).toBeInTheDocument()
+    const error = screen.getByText('invalid input')
+    expect(error).toBeInTheDocument()
   })
 
   it('is meets a11y', async () => {

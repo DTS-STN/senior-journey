@@ -8,6 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import AccessibilityGraphContainer from '../../../components/AccessibilityGraphContainer'
 import AlertCard from '../../../components/AlertCard'
@@ -16,11 +17,16 @@ import theme from '../../../theme'
 import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Fred: FC = () => {
+  const { locale } = useRouter()
   const { t, i18n } = useTranslation('learn/case-studies/fred')
   const en = i18n.getFixedT('en', 'learn/case-studies/fred')
   const fr = i18n.getFixedT('fr', 'learn/case-studies/fred')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
+
+  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
+    return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
+  }
 
   const learnMoreLinks = useMemo(
     () => [
@@ -157,7 +163,7 @@ const Fred: FC = () => {
         </h2>
         <Image
           alt={t('cpp.monthly-pension.description')}
-          src={t(`cpp.monthly-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('fred-cpp-monthly')}
           width={842}
           height={519}
           className="w-full"
@@ -177,7 +183,7 @@ const Fred: FC = () => {
         <p>{t('cpp.monthly-pension.p3')}</p>
         <Image
           alt={t('cpp.lifetime-pension.description')}
-          src={t(`cpp.lifetime-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('fred-cpp-lifetime')}
           width={842}
           height={519}
           className="mb-5 mt-10 w-full"
@@ -199,7 +205,7 @@ const Fred: FC = () => {
         </h2>
         <Image
           alt={t('oas.monthly-pension.description')}
-          src={t(`oas.monthly-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('fred-oas-monthly')}
           width={842}
           height={519}
           className="w-full"
@@ -215,7 +221,7 @@ const Fred: FC = () => {
         <p>{t('oas.lifetime-pension.p1')}</p>
         <Image
           alt={t('oas.lifetime-pension.description')}
-          src={t(`oas.lifetime-pension.img-url.${mobile ? 'mobile' : 'desktop'}`)}
+          src={getImageSrc('fred-oas-lifetime')}
           width={842}
           height={519}
           className="mb-5 w-full"
