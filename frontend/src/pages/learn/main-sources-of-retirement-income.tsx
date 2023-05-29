@@ -23,7 +23,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
-        href: '/learn/deciding-when-to-collect-public-pensions',
+        href: '/learn/deciding-when-to-start-your-public-pensions',
         primary: t('learn-more.when-to-start.header'),
         secondary: t('learn-more.when-to-start.description'),
       },

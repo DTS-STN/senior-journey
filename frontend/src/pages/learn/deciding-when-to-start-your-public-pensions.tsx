@@ -16,9 +16,9 @@ import theme from '../../theme'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const DecidingWhenToCollectPublicPensions: FC = () => {
-  const { t, i18n } = useTranslation('learn/deciding-when-to-collect-public-pensions')
-  const en = i18n.getFixedT('en', 'learn/deciding-when-to-collect-public-pensions')
-  const fr = i18n.getFixedT('fr', 'learn/deciding-when-to-collect-public-pensions')
+  const { t, i18n } = useTranslation('learn/deciding-when-to-start-your-public-pensions')
+  const en = i18n.getFixedT('en', 'learn/deciding-when-to-start-your-public-pensions')
+  const fr = i18n.getFixedT('fr', 'learn/deciding-when-to-start-your-public-pensions')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -111,7 +111,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <p>{t('overview.p1')}</p>
         <p>
           <Trans
-            ns="learn/deciding-when-to-collect-public-pensions"
+            ns="learn/deciding-when-to-start-your-public-pensions"
             i18nKey="overview.p2"
             components={{ a1: <MuiLink href={t('overview.a1')} /> }}
           />
@@ -204,7 +204,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <h3 className="h3">{t('old-age-security.high-income.heading')}</h3>
         <p>
           <Trans
-            ns="learn/deciding-when-to-collect-public-pensions"
+            ns="learn/deciding-when-to-start-your-public-pensions"
             i18nKey="old-age-security.high-income.p"
             components={{ a1: <MuiLink href={t('old-age-security.high-income.a1')} /> }}
           />
@@ -215,14 +215,14 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         </h2>
         <p>
           <Trans
-            ns="learn/deciding-when-to-collect-public-pensions"
+            ns="learn/deciding-when-to-start-your-public-pensions"
             i18nKey="cpp-pension.p1"
             components={{ a1: <MuiLink href={t('cpp-pension.a1')} /> }}
           />
         </p>
 
         <AlertCard type="tip">
-          <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.smart-tip" />
+          <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.smart-tip" />
         </AlertCard>
         <Image
           alt={t('cpp-pension.description')}
@@ -241,13 +241,13 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         />
         <p>
           <Trans
-            ns="learn/deciding-when-to-collect-public-pensions"
+            ns="learn/deciding-when-to-start-your-public-pensions"
             i18nKey="cpp-pension.p3"
             components={{ a2: <Link className="underline" href="/learn/case-studies/fred" /> }}
           />
         </p>
         <AlertCard type="disclaimer">
-          <Trans ns="learn/deciding-when-to-collect-public-pensions" i18nKey="cpp-pension.disclaimer" />
+          <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.disclaimer" />
         </AlertCard>
 
         <h2 id="learn-more" className="h2">
@@ -283,7 +283,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     props: {
       ...(await serverSideTranslations(
         locale ?? 'default',
-        ['common', 'learn/deciding-when-to-collect-public-pensions'],
+        ['common', 'learn/deciding-when-to-start-your-public-pensions'],
         null,
         ['en', 'fr']
       )),
