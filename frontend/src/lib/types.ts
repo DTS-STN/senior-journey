@@ -2,6 +2,7 @@ import * as yup from 'yup'
 
 import tasksData from '../data/tasks.json'
 import { checklistFiltersSchema } from './schemas/checklist-filters-schema'
+import { publicRuntimeConfigSchema } from './schemas/public-runtime-config-schema'
 
 export type AdobeDataLayer = { push?: (object: Record<string, string>) => void }
 
@@ -66,4 +67,6 @@ export interface QuizFormState extends Record<string, string> {
   yearsInCanada: string
 }
 
-export interface ChecklistFilters extends yup.InferType<typeof checklistFiltersSchema> {}
+export type ChecklistFilters = yup.InferType<typeof checklistFiltersSchema>
+
+export type PublicRuntimeConfig = yup.InferType<typeof publicRuntimeConfigSchema>

@@ -8,10 +8,10 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import { AppProps, NextWebVitalsMetric } from 'next/app'
-import getConfig from 'next/config'
 import Head from 'next/head'
 
 import createEmotionCache from '../createEmotionCache'
+import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
 import { AppWindow } from '../lib/types'
 import { getNextSEOConfig } from '../next-seo.config'
 import '../styles/globals.css'
@@ -35,9 +35,8 @@ export interface MyAppProps extends AppProps {
 }
 
 const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, router }: MyAppProps) => {
-  const config = getConfig()
-  const appBaseUri = config?.publicRuntimeConfig?.appBaseUri
-  const nextSEOConfig = getNextSEOConfig(appBaseUri, router)
+  const publicRuntimeConfig = usePublicRuntimeConfig()
+  const nextSEOConfig = getNextSEOConfig(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, router)
 
   // XXX :: GjB :: this is just a sample metric!
   requestCounter.add(1)

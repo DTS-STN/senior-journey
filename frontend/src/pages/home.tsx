@@ -19,14 +19,15 @@ import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-import getConfig from 'next/config'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import urlcat from 'urlcat'
 
 import Container from '../components/Container'
 import { HeroBanner } from '../components/HeroBanner'
 import Layout from '../components/Layout'
+import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
 import { getDCTermsTitle } from '../utils/seo-utils'
 
 export interface SupportingSeniorsCardProps {
@@ -42,8 +43,7 @@ const Home: FC = () => {
   const en = i18n.getFixedT('en', 'home')
   const fr = i18n.getFixedT('fr', 'home')
 
-  const config = getConfig()
-  const appBaseUri = config?.publicRuntimeConfig?.appBaseUri
+  const publicRuntimeConfig = usePublicRuntimeConfig()
 
   const theme = useTheme()
   const mobile = useMediaQuery(theme.breakpoints.down('md'))
@@ -60,10 +60,10 @@ const Home: FC = () => {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         'name': t('common:application-name'),
-        'url': `${appBaseUri}/${locale ?? 'en'}`,
+        'url': urlcat(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, `/${locale ?? 'en'}`),
       }),
     }),
-    [appBaseUri, locale, t]
+    [publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, locale, t]
   )
 
   return (

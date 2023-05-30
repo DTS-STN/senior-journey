@@ -1,10 +1,11 @@
 import { FC } from 'react'
 
 import { useTranslation } from 'next-i18next'
-import getConfig from 'next/config'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import urlcat from 'urlcat'
 
+import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
 import { BreadcrumbProps } from './Breadcrumb'
 
 interface ListItem {
@@ -17,8 +18,7 @@ interface ListItem {
 const BreadcrumbStructuredData: FC<BreadcrumbProps> = ({ items }) => {
   const { locale } = useRouter()
   const { t } = useTranslation('common')
-  const config = getConfig()
-  const appBaseUri = config?.publicRuntimeConfig?.appBaseUri
+  const publicRuntimeConfig = usePublicRuntimeConfig()
 
   const itemListElement: Array<ListItem> = [
     {
@@ -31,7 +31,7 @@ const BreadcrumbStructuredData: FC<BreadcrumbProps> = ({ items }) => {
       '@type': 'ListItem',
       'position': index + 2,
       'name': text,
-      'item': `${appBaseUri}/${locale}${link}`,
+      'item': urlcat(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, `/${locale ?? 'en'}${link}`),
     })) ?? []),
   ]
 
