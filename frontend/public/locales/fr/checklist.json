@@ -4,6 +4,22 @@
   },
   "filter-tasks": "(FR) Filter Tasks",
   "header": "Liste de contrôle pour votre retraite",
+  "important-terms": {
+    "header": "(FR) Important terms",
+    "show": "(FR) Show important notes",
+    "cpp": {
+      "header": "(FR) CPP:",
+      "definition": "(FR) Canada Pension Plan"
+    },
+    "oas": {
+      "header": "(FR) OAS:",
+      "definition": "(FR) Old Age Security"
+    },
+    "gis": {
+      "header": "(FR) GIS:",
+      "definition": "(FR) Guaranteed Income Supplement"
+    }
+  },
   "links-header": "(FR) More resources",
   "meta": {
     "description": "Planifiez votre retraite avec une liste de contrôle personnalisée pour mieux vous préparez à la retraite!"

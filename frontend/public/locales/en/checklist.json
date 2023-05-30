@@ -4,6 +4,22 @@
   },
   "filter-tasks": "Filter Tasks",
   "header": "Your retirement checklist",
+  "important-terms": {
+    "header": "Important terms",
+    "show": "Show important notes",
+    "cpp": {
+      "header": "CPP:",
+      "definition": "Canada Pension Plan"
+    },
+    "oas": {
+      "header": "OAS:",
+      "definition": "Old Age Security"
+    },
+    "gis": {
+      "header": "GIS:",
+      "definition": "Guaranteed Income Supplement"
+    }
+  },
   "links-header": "More resources",
   "meta": {
     "description": "Plan for your retirement with a personalized retirement preparedness checklist!"
