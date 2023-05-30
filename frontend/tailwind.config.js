@@ -98,14 +98,14 @@ module.exports = {
       sm: '600px',
       // => @media (min-width: 600px) { ... }
 
-      md: '900px',
-      // => @media (min-width: 900px) { ... }
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
 
-      lg: '1200px',
+      lg: '992px',
+      // => @media (min-width: 992px) { ... }
+
+      xl: '1200px',
       // => @media (min-width: 1200px) { ... }
-
-      xl: '1536px',
-      // => @media (min-width: 1536px) { ... }
     },
   },
   corePlugins: {
