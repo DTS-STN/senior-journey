@@ -2,12 +2,12 @@ import { FC } from 'react'
 
 import { Link as MuiLink } from '@mui/material'
 import { useTranslation } from 'next-i18next'
-import getConfig from 'next/config'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { useChecklistUrl } from '../lib/hooks/useChecklistUrl'
+import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
 import { resolveHref } from '../utils/url-utils'
 import ApplicationNameBar from './ApplicationNameBar'
 import Banner from './Banner'
@@ -22,7 +22,7 @@ export interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist, className }) => {
-  const config = getConfig()
+  const publicRuntimeConfig = usePublicRuntimeConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')
   const checklistUrl = useChecklistUrl()
@@ -30,7 +30,7 @@ const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hid
   const langSelectorLocale = locale === 'en' ? 'fr' : 'en'
   const langSelectorAbbreviation = langSelectorLocale === 'fr' ? 'FR' : 'EN'
   const langSelectorText = langSelectorLocale === 'fr' ? 'Français' : 'English'
-  const showBanner = config?.publicRuntimeConfig?.environment !== 'prod'
+  const showBanner = publicRuntimeConfig.NEXT_PUBLIC_ENVIRONMENT !== 'prod'
 
   return (
     <>

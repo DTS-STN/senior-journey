@@ -31,9 +31,9 @@ const nextConfig = {
   i18n: { ...i18n, localeDetection: false },
   poweredByHeader: false,
   publicRuntimeConfig: {
-    adobeAnalyticsScriptSrc: process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC ?? undefined,
-    appBaseUri: process.env.NEXT_PUBLIC_APP_BASE_URI ?? '',
-    environment: process.env.NEXT_PUBLIC_ENVIRONMENT ?? '',
+    NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC: process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC,
+    NEXT_PUBLIC_APP_BASE_URI: process.env.NEXT_PUBLIC_APP_BASE_URI,
+    NEXT_PUBLIC_ENVIRONMENT: process.env.NEXT_PUBLIC_ENVIRONMENT,
   },
   reactStrictMode: true,
 }
