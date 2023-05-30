@@ -5,6 +5,12 @@ import { createRequest, createResponse } from 'node-mocks-http'
 import type { ReadyzApiResponse } from '../../../src/pages/api/readyz'
 import handler from '../../../src/pages/api/readyz'
 
+jest.mock('../../../src/lib/schemas/public-runtime-config-schema', () => ({
+  publicRuntimeConfigSchema: {
+    validateSync: jest.fn(),
+  },
+}))
+
 /**
  * NextApiRequest, NextApiResponse and node-mocks-http createResponse, createResponse types union
  * @see: https://github.com/howardabrams/node-mocks-http/issues/255#issuecomment-1136674043
