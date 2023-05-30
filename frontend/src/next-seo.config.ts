@@ -1,6 +1,7 @@
 import { DefaultSeoProps } from 'next-seo'
 import { OpenGraphMedia } from 'next-seo/lib/types'
 import { Router } from 'next/router'
+import urlcat from 'urlcat'
 
 export type NextSEORouter = Pick<Router, 'asPath' | 'locale'>
 
@@ -17,11 +18,11 @@ export const getLanguageAlternates = (
   return [
     {
       hrefLang: 'en',
-      href: `${appBaseUri}/en${router.asPath}`,
+      href: urlcat(appBaseUri, `/en${router.asPath}`),
     },
     {
       hrefLang: 'fr',
-      href: `${appBaseUri}/fr${router.asPath}`,
+      href: urlcat(appBaseUri, `/fr${router.asPath}`),
     },
   ]
 }
@@ -30,7 +31,7 @@ export const getOpenGraphImages = (appBaseUri: string): ReadonlyArray<OpenGraphM
   if (!appBaseUri) return
   return [
     {
-      url: `${appBaseUri}/ogp.jpg`,
+      url: urlcat(appBaseUri, '/ogp.jpg'),
       width: 2048,
       height: 1152,
     },

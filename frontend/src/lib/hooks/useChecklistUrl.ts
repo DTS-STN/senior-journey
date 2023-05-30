@@ -4,6 +4,7 @@ import { isEmpty } from 'lodash'
 
 import { toChecklistFilter } from '../mappers/quiz-form-state-mapper'
 import { useQuizData } from './useQuizData'
+import urlcat from 'urlcat'
 
 export const useChecklistUrl = () => {
   const [checklistUrl, setChecklistUrl] = useState('/quiz')
@@ -17,8 +18,7 @@ export const useChecklistUrl = () => {
 
     // Encodes a js object as a url-safe base64 string.
     const checklistFilters = toChecklistFilter(quizData)
-    const encodedChecklistFilters = encodeURIComponent(window.btoa(JSON.stringify(checklistFilters)))
-    setChecklistUrl(`/checklist/${encodedChecklistFilters}`)
+    setChecklistUrl(urlcat("/checklist/:filters", {filters: window.btoa(JSON.stringify(checklistFilters))}))
   }, [quizData])
 
   return checklistUrl

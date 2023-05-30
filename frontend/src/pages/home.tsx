@@ -22,6 +22,7 @@ import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import urlcat from 'urlcat'
 
 import Container from '../components/Container'
 import { HeroBanner } from '../components/HeroBanner'
@@ -59,7 +60,7 @@ const Home: FC = () => {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         'name': t('common:application-name'),
-        'url': `${publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI}/${locale ?? 'en'}`,
+        'url': urlcat(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, `/${locale ?? 'en'}`),
       }),
     }),
     [publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, locale, t]

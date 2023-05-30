@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import urlcat from 'urlcat'
 
 import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
 import { BreadcrumbProps } from './Breadcrumb'
@@ -30,7 +31,7 @@ const BreadcrumbStructuredData: FC<BreadcrumbProps> = ({ items }) => {
       '@type': 'ListItem',
       'position': index + 2,
       'name': text,
-      'item': `${publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI}/${locale}${link}`,
+      'item': urlcat(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, `/${locale ?? 'en'}${link}`),
     })) ?? []),
   ]
 
