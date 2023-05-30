@@ -14,6 +14,8 @@ spec:
       containers:
         - name: seniors-journey-frontend
           env:
+            - name: NEXT_PUBLIC_APP_BASE_URI
+              value: https://seniors-journey-test.dev-dp.dts-stn.com/
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:
