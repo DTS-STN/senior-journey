@@ -20,7 +20,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
   tasks = [],
 }) => {
   return (
-    <Accordion className="mb-4"
+    <Accordion className="mb-4" disableGutters
     sx={{
       "@media print": {
         ".MuiCollapse-root": {
@@ -43,7 +43,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
         </div>
       </AccordionSummary>
       {tasks.map((task) => (
-        <Accordion key={task.id}
+        <Accordion key={task.id} disableGutters
           sx={{
             boxShadow: '0',
             ".MuiAccordionSummary-root.Mui-expanded": {
