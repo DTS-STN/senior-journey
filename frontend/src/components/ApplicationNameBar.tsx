@@ -5,6 +5,7 @@ import { Button, Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
 
 import { Breadcrumb, BreadcrumbItem } from './Breadcrumb'
+import BreadcrumbStructuredData from './BreadcrumbStructuredData'
 
 export interface ApplicationNameBarProps {
   breadcrumbItems?: BreadcrumbItem[]
@@ -40,6 +41,7 @@ const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
               </MuiLink>
             </div>
             <Breadcrumb items={breadcrumbItems} />
+            <BreadcrumbStructuredData items={breadcrumbItems} />
           </div>
           <div>
             {!hideChecklist && (
