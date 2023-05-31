@@ -36,6 +36,33 @@ const theme = createTheme({
         root: {
           fontFamily: 'Lato, sans-serif',
           textTransform: 'none',
+          "&.Mui-focusVisible":{
+            boxShadow: '0 0 0 2px #ffffff, 0 0 3px 5px #004f56',
+          }
+        }
+      },
+    },
+    MuiButtonBase:{
+      defaultProps:{
+        disableRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          "&.Mui-focusVisible":{
+            boxShadow: '0 0 0 2px #ffffff, 0 0 3px 5px #004f56',
+          }
+        }
+      }
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          "&:focus-within": {
+            boxShadow: '0 0 0 2px #ffffff, 0 0 3px 5px #004f56',
+          },
+          "& .MuiCardActionArea-focusHighlight": {
+            backgroundColor: 'transparent',
+          },
         },
       },
     },
@@ -43,6 +70,15 @@ const theme = createTheme({
       defaultProps: {
         color: 'secondary',
       },
+    },
+    MuiListItemButton:{
+      styleOverrides:{
+        root:{
+          "&:focus-within": {
+            backgroundColor: 'transparent',
+          },
+        }
+      }
     },
     MuiTab: {
       styleOverrides: {

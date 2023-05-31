@@ -30,6 +30,9 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
       },
       ".MuiAccordion-root.Mui-expanded":{
         margin: "0"
+      },
+      ".MuiAccordionSummary-root:focus":{
+        backgroundColor:"#00363C"
       }
     }}>
       <AccordionSummary
@@ -48,6 +51,9 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
             boxShadow: '0',
             ".MuiAccordionSummary-root.Mui-expanded": {
               borderTop: "1px solid rgba(0, 0, 0, 0.12)",
+            },
+            ".MuiAccordionSummary-root:focus":{
+              backgroundColor:"transparent"
             }
           }}
         >
