@@ -1175,7 +1175,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
             "textEn": "Canada Retirement Income Calculator (CRIC)",
-            "textFr": "(Calculatrice du revenu de retraite canadienne (CRRC)"
+            "textFr": "Calculatrice du revenu de retraite canadienne (CRRC)"
           }
         ],
         "tags": [
@@ -1211,7 +1211,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
             "textEn": "Canada Retirement Income Calculator (CRIC)",
-            "textFr": "(Calculatrice du revenu de retraite canadienne (CRRC)"
+            "textFr": "Calculatrice du revenu de retraite canadienne (CRRC)"
           }
         ],
         "tags": [
@@ -1562,7 +1562,7 @@
       {
         "answerKey": "in-canada-less-than-10",
         "descriptionEn": "Canada has international social security agreements with many countries. These agreements may help you qualify for pensions or benefits. You must:\n\n- have lived or worked in Canada and in another country; OR\n- be the widow or widower of someone who has lived or worked in Canada and in another country.",
-        "descriptionFr": "(Le Canada a conclu des accords internationaux de sécurité sociale avec de nombreux pays. Ces accords peuvent vous aider à bénéficier de pensions ou de prestations. Vous devez\u00a0:\n\n- avoir vécu ou travaillé au Canada et dans un autre pays OU\n- être veuve ou veuf d'une personne ayant vécu ou travaillé au Canada et dans un autre pays.",
+        "descriptionFr": "Le Canada a conclu des accords internationaux de sécurité sociale avec de nombreux pays. Ces accords peuvent vous aider à bénéficier de pensions ou de prestations. Vous devez\u00a0:\n\n- avoir vécu ou travaillé au Canada et dans un autre pays OU\n- être veuve ou veuf d'une personne ayant vécu ou travaillé au Canada et dans un autre pays.",
         "displayOrder": 241,
         "id": 25,
         "links": [
@@ -1570,7 +1570,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits",
-            "textFr": "(Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/apply.html",
@@ -1600,7 +1600,7 @@
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international.html",
             "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-internationales.html",
             "textEn": "Lived or living outside Canada - Pensions and benefits",
-            "textFr": "(Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations"
+            "textFr": "Personnes ayant vécu ou vivant à l'étranger - Pensions et prestations"
           },
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-international/apply.html",
@@ -2661,7 +2661,7 @@
           }
         ],
         "titleEn": "Let us know if you move away from Canada",
-        "titleFr": "(Faites-nous savoir si vous déménagez à l'étranger"
+        "titleFr": "Faites-nous savoir si vous déménagez à l'étranger"
       },
       {
         "answerKey": "all",
