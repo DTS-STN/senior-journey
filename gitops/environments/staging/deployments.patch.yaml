@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend
-          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230525-0209-3f82997a
+          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230530-0229-768645f2
           env:
             - name: NEXT_PUBLIC_APP_BASE_URI
               value: https://seniors-journey-staging.dev-dp.dts-stn.com/
