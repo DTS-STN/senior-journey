@@ -3,7 +3,17 @@ import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
 import { ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
 import RefreshIcon from '@mui/icons-material/Refresh'
-import { Button, Checkbox, Collapse, FormControlLabel, FormGroup, IconButton, List, ListItem, ListItemText } from '@mui/material'
+import {
+  Button,
+  Checkbox,
+  Collapse,
+  FormControlLabel,
+  FormGroup,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+} from '@mui/material'
 import { isEmpty, sortBy } from 'lodash'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
@@ -11,6 +21,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 
+import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
 import NestedAccordion from '../../components/NestedAccordion'
 import tasksData from '../../data/tasks.json'
@@ -20,7 +31,6 @@ import { checklistFiltersSchema } from '../../lib/schemas/checklist-filters-sche
 import { ChecklistFilters, TaskTagDto, TasksGroupDto } from '../../lib/types'
 import { getLogger } from '../../logging/log-util'
 import { getDCTermsTitle } from '../../utils/seo-utils'
-import { HeroBanner } from '../../components/HeroBanner'
 
 const log = getLogger('pages/checklist/[filters].tsx')
 
@@ -111,7 +121,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
         hideFooter="print"
         hideHeader="print"
       >
-        <div className='hidden md:block'>
+        <div className="hidden md:block">
           <HeroBanner
             imageProps={{
               alt: '',
@@ -120,29 +130,26 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               src: '/assets/checklist-banner.jpg',
               width: 640,
             }}
-            >
-            <h1 className="mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-6xl">
-              {t('header')}
-            </h1>
+          >
+            <h1 className="mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-6xl">{t('header')}</h1>
           </HeroBanner>
         </div>
 
-        <div className="grid gap-6 print:block lg:grid-cols-12 md:pt-8">
+        <div className="grid gap-6 print:block md:pt-8 lg:grid-cols-12">
           <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
-            <div className="mb-4 text-right">
+            <div className="mb-4 hidden lg:block">
               <Button
                 variant="outlined"
                 startIcon={<RefreshIcon />}
                 size="large"
-                className="w-full md:w-auto lg:w-full"
                 onClick={handleOnRestartQuizClick}
+                fullWidth
               >
                 {t('restart-quiz')}
               </Button>
             </div>
-
             <div className="mb-4">
-              <div className="mb-2 pb-3 flex items-center justify-between border-b">
+              <div className="mb-2 flex items-center justify-between border-b pb-3">
                 <div className="text-2xl md:text-xl">{t('important-terms.header')}</div>
                 <IconButton
                   color="primary"
@@ -154,9 +161,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                 </IconButton>
               </div>
               <Collapse in={importantExpanded}>
-                <List 
-                className='p-0'
-                disablePadding>
+                <List className="p-0" disablePadding>
                   {[
                     {
                       primary: t('important-terms.cpp.header'),
@@ -185,7 +190,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
             </div>
 
             <div className="md:mb-2">
-              <div className="md:mb-2 md:pb-3 flex items-center justify-between md:border-b">
+              <div className="flex items-center justify-between md:mb-2 md:border-b md:pb-3">
                 <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
                 <div className="text-2xl md:hidden">{t('header')}</div>
                 <IconButton
@@ -239,6 +244,17 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               subSectionTitle={receivingBenefits.subTitle}
               tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
+            <div className="mt-4 lg:hidden">
+              <Button
+                variant="outlined"
+                startIcon={<RefreshIcon />}
+                size="large"
+                onClick={handleOnRestartQuizClick}
+                fullWidth
+              >
+                {t('restart-quiz')}
+              </Button>
+            </div>
           </section>
         </div>
       </Layout>
