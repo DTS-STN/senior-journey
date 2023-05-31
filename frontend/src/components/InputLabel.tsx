@@ -10,7 +10,7 @@ export interface InputLabelProps {
 }
 
 const InputLabel: FC<InputLabelProps> = ({ htmlFor, id, label, required }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('common')
   return (
     <label id={id} htmlFor={htmlFor} className="mb-2 block font-bold">
       {required && (

@@ -50,7 +50,6 @@
   },
   "found-errors_one": "The following error was found in the form:",
   "found-errors_other": "The following {{count}} errors were found in the form:",
-  "goc": "Government of Canada",
   "goc-site": "Canada.ca",
   "header": {
     "goc-link": "https://www.canada.ca/en.html",

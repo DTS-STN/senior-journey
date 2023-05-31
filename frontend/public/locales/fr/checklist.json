@@ -5,20 +5,20 @@
   "filter-tasks": "(FR) Filter Tasks",
   "header": "Liste de contrôle pour votre retraite",
   "important-terms": {
-    "header": "(FR) Important terms",
-    "show": "(FR) Show important notes",
     "cpp": {
-      "header": "(FR) CPP:",
-      "definition": "(FR) Canada Pension Plan"
-    },
-    "oas": {
-      "header": "(FR) OAS:",
-      "definition": "(FR) Old Age Security"
+      "definition": "(FR) Canada Pension Plan",
+      "header": "(FR) CPP:"
     },
     "gis": {
-      "header": "(FR) GIS:",
-      "definition": "(FR) Guaranteed Income Supplement"
-    }
+      "definition": "(FR) Guaranteed Income Supplement",
+      "header": "(FR) GIS:"
+    },
+    "header": "(FR) Important terms",
+    "oas": {
+      "definition": "(FR) Old Age Security",
+      "header": "(FR) OAS:"
+    },
+    "show": "(FR) Show important notes"
   },
   "links-header": "(FR) More resources",
   "meta": {
