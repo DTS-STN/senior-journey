@@ -1,9 +1,11 @@
 import React, { FC, useMemo, useState } from 'react'
 
+import { ExpandLess, ExpandMore } from '@mui/icons-material'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 import {
   Button,
+  Collapse,
   Divider,
   List,
   ListItem,
@@ -46,9 +48,10 @@ const Home: FC = () => {
   const publicRuntimeConfig = usePublicRuntimeConfig()
 
   const theme = useTheme()
-  const mobile = useMediaQuery(theme.breakpoints.down('md'))
+  const extraSmall = useMediaQuery(theme.breakpoints.down('sm'))
 
   const [value, setValue] = useState('learn')
+  const [open, setOpen] = useState(false)
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue)
@@ -101,17 +104,54 @@ const Home: FC = () => {
         <section>
           <TabContext value={value}>
             <Paper elevation={4} square className="relative">
-              <TabList
-                variant={mobile ? 'scrollable' : 'standard'}
-                onChange={handleChange}
-                scrollButtons="auto"
-                centered={!mobile}
-              >
-                <Tab value="learn" label={t('tabs.learn.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-                <Tab value="plan" label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-                <Tab value="apply" label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-                <Tab value="manage" label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-              </TabList>
+              {!extraSmall && (
+                <TabList onChange={handleChange} scrollButtons="auto" centered>
+                  <Tab value="learn" label={t('tabs.learn.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+                  <Tab value="plan" label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />,
+                  <Tab value="apply" label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />,
+                  <Tab value="manage" label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />,
+                </TabList>
+              )}
+              {extraSmall && (
+                <div className="px-4 py-2">
+                  <div className="flex gap-1">
+                    <Button
+                      variant="outlined"
+                      onClick={() => setValue('learn')}
+                      className="grow underline underline-offset-4"
+                    >
+                      {t('tabs.learn.title')}
+                    </Button>
+                    <Button
+                      onClick={() => setOpen(!open)}
+                      endIcon={open ? <ExpandLess /> : <ExpandMore />}
+                      className="grow"
+                    >
+                      {t('tabs.more')}
+                    </Button>
+                  </div>
+                  <Collapse in={open}>
+                    <TabList
+                      variant="fullWidth"
+                      orientation="vertical"
+                      onChange={handleChange}
+                      className="px-10 pt-4 text-lg md:text-2xl"
+                      TabIndicatorProps={{
+                        style: {
+                          display: 'none',
+                        },
+                      }}
+                    >
+                      <Tab value="learn" label={t('tabs.learn.title')} />
+                      <Tab value="plan" label={t('tabs.plan.title')} />
+                      ,
+                      <Tab value="apply" label={t('tabs.apply.title')} />
+                      ,
+                      <Tab value="manage" label={t('tabs.manage.title')} />,
+                    </TabList>
+                  </Collapse>
+                </div>
+              )}
             </Paper>
 
             <div className="bg-gray-surface">
