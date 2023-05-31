@@ -680,7 +680,7 @@
         "links": [
           {
             "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
-            "linkFr": "https://srv138.services.gc.ca/daf/s/53c2d7b5-4f5e-4d37-b1a2-14b11f9b9f6a?goctemplateculture=fr-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefits Finder",
             "textFr": "Chercheur de prestations"
           }
@@ -844,7 +844,7 @@
           {
             "linkEn": "https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1603OAS",
             "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/Detail.html?Form=ISP1603OAS",
-            "textEn": "Consent to communicate information to an Authorized Person",
+            "textEn": "Consent to communicate Information to an Authorized Person",
             "textFr": "Consentement à communiquer des renseignements à une personne autorisée"
           },
           {
@@ -2004,8 +2004,8 @@
             "textFr": "Prestations d'invalidité du Régime de pensions du Canada\u00a0: Une fois votre demande présentée"
           },
           {
-            "linkEn": "https://benefitsfinder.services.gc.ca/hm",
-            "linkFr": "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+            "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefit finder",
             "textFr": "Chercheur de prestations"
           }
@@ -2267,7 +2267,7 @@
         "links": [
           {
             "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
-            "linkFr": "https://srv138.services.gc.ca/daf/s/53c2d7b5-4f5e-4d37-b1a2-14b11f9b9f6a?goctemplateculture=fr-caa",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefits Finder",
             "textFr": "Chercheur de prestations"
           }
@@ -2290,8 +2290,8 @@
         "id": 56,
         "links": [
           {
-            "linkEn": "https://benefitsfinder.services.gc.ca/hm",
-            "linkFr": "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+            "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefit finder",
             "textFr": "Chercheur de prestations"
           }
@@ -2402,8 +2402,8 @@
         "id": 92,
         "links": [
           {
-            "linkEn": "https://benefitsfinder.services.gc.ca/hm",
-            "linkFr": "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+            "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefit finder",
             "textFr": "Chercheur de prestations"
           }
