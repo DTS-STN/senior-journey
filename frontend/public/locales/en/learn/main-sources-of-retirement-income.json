@@ -51,17 +51,13 @@
       "header": "What is the CPP Post-Retirement Benefit (PRB)?",
       "helpful-resources": {
         "cpp": {
-          "content": "Contributions to the Canada Pension Plan",
-          "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html"
+          "content": "CPP Post-Retirement Benefit: Overview",
+          "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement.html"
         },
         "header": "Helpful resources",
-        "monthly": {
-          "content": "Canada Pension Plan: Pensions and benefits monthly amounts",
-          "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html"
-        },
-        "overview": {
-          "content": "CPP Retirement pension: Overview",
-          "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp.html"
+        "stop-contributing": {
+          "content": "Election to Stop Contributing to the Canada Pension Plan",
+          "link": "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/cpt30.html"
         }
       },
       "overview": "If you continue to work while receiving your Canada Pension Plan (CPP) retirement pension, and under age 70, you can continue to participate in the CPP. Your CPP contributions will create Post-Retirement Benefits (PRBs), which will increase your retirement income."
@@ -152,19 +148,23 @@
   },
   "learn-more": {
     "going-from-work-to-retirement": {
+      "href": "/learn/going-from-work-to-retirement",
       "description": "You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
       "header": "Going from work to retirement"
     },
     "header": "Learn More",
     "income-calculator": {
+      "href": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html",
       "description": "The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits.",
       "header": "Canadian Retirement Income Calculator"
     },
     "savings-and-pension": {
+      "href": "https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html",
       "description": "Registered pension and savings plans for individuals and plan administrators.",
       "header": "Savings and pension plans"
     },
     "when-to-start": {
+      "href": "/learn/deciding-when-to-start-your-public-pensions",
       "description": "Deciding when to start your public pensions",
       "header": "Deciding when to start your public pensions"
     }

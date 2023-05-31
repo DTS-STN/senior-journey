@@ -31,22 +31,22 @@ const MainSourcesOfRetirementIncome: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
-        href: '/learn/deciding-when-to-start-your-public-pensions',
+        href: t('learn-more.when-to-start.href'),
         primary: t('learn-more.when-to-start.header'),
         secondary: t('learn-more.when-to-start.description'),
       },
       {
-        href: '/learn/going-from-work-to-retirement',
+        href: t('learn-more.going-from-work-to-retirement.href'),
         primary: t('learn-more.going-from-work-to-retirement.header'),
         secondary: t('learn-more.going-from-work-to-retirement.description'),
       },
       {
-        href: 'https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html',
+        href: t('learn-more.savings-and-pension.href'),
         primary: t('learn-more.savings-and-pension.header'),
         secondary: t('learn-more.savings-and-pension.description'),
       },
       {
-        href: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html',
+        href: t('learn-more.income-calculator.href'),
         primary: t('learn-more.income-calculator.header'),
         secondary: t('learn-more.income-calculator.description'),
       },
@@ -390,16 +390,12 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <ul className="mb-5 list-disc space-y-2 pl-7">
           {[
             {
-              href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.overview.link'),
-              primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.overview.content'),
-            },
-            {
               href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.cpp.link'),
               primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.cpp.content'),
             },
             {
-              href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.monthly.link'),
-              primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.monthly.content'),
+              href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.link'),
+              primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.content'),
             },
           ].map(({ href, primary }) => (
             <li key={primary}>
