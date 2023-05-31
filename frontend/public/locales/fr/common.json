@@ -50,7 +50,6 @@
   },
   "found-errors_one": "L'erreur suivante a été trouvée dans le formulaire\u00a0:",
   "found-errors_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00a0:",
-  "goc": "Governement du Canada",
   "goc-site": "Canada.ca",
   "header": {
     "goc-link": "https://www.canada.ca/fr.html",

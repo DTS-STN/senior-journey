@@ -5,20 +5,20 @@
   "filter-tasks": "Filter Tasks",
   "header": "Your retirement checklist",
   "important-terms": {
-    "header": "Important terms",
-    "show": "Show important notes",
     "cpp": {
-      "header": "CPP:",
-      "definition": "Canada Pension Plan"
-    },
-    "oas": {
-      "header": "OAS:",
-      "definition": "Old Age Security"
+      "definition": "Canada Pension Plan",
+      "header": "CPP:"
     },
     "gis": {
-      "header": "GIS:",
-      "definition": "Guaranteed Income Supplement"
-    }
+      "definition": "Guaranteed Income Supplement",
+      "header": "GIS:"
+    },
+    "header": "Important terms",
+    "oas": {
+      "definition": "Old Age Security",
+      "header": "OAS:"
+    },
+    "show": "Show important notes"
   },
   "links-header": "More resources",
   "meta": {
