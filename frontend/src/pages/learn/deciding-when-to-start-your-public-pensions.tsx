@@ -36,9 +36,9 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         secondary: t('learn-more.main-sources-of-retirment-income.description'),
       },
       {
-        href: '/learn/going-from-work-to-retirement',
-        primary: t('learn-more.going-from-work-to-retirement.header'),
-        secondary: t('learn-more.going-from-work-to-retirement.description'),
+        href: '/learn/rules-of-thumb-for-public-pensions',
+        primary: t('learn-more.rules-of-thumb-for-public-pensions.header'),
+        secondary: t('learn-more.rules-of-thumb-for-public-pensions.description'),
       },
       {
         href: '/learn/learn/case-studies/fred',
@@ -90,6 +90,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
             {
               primary: t('key-takeaways.people-who-qualify'),
               secondary: t('key-takeaways.if-you-qualify'),
+              a1: t('key-takeaways.if-you-qualify-a1'),
+              a2: t('key-takeaways.if-you-qualify-a2'),
             },
             {
               primary: t('key-takeaways.more-than-double'),
@@ -99,12 +101,20 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
               primary: t('key-takeaways.planning-retirement'),
               secondary: t('key-takeaways.common-law'),
             },
-          ].map(({ primary, secondary }) => (
+          ].map(({ primary, secondary, a1, a2 }) => (
             <ListItem key={primary} className="border-b">
               <ListItemText
                 primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={secondary}
+                secondary={
+                  <Trans
+                    ns="learn/deciding-when-to-start-your-public-pensions"
+                    i18nKey={secondary}
+                    components={{ a1: <MuiLink href={a1} />, a2: <MuiLink href={a2} />}}
+                  >
+                    {secondary}
+                  </Trans>
+                }
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
@@ -226,7 +236,6 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
             components={{ a1: <MuiLink href={t('cpp-pension.a1')} /> }}
           />
         </p>
-
         <AlertCard type="tip">
           <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.smart-tip" />
         </AlertCard>

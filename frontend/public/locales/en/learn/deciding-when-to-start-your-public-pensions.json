@@ -57,8 +57,9 @@
   "key-takeaways": {
     "common-law": "If you're part of a couple, you should probably make these decisions with your spouse or common-law partner.",
     "heading": "Key takeaways",
-    "highest-monthly-amount": "You can start collecting your Canada Pension Plan (CPP) retirement pension as early as age 60 with a permanent reduction. You can start receiving your Old Age Security (OAS) pension as early as age 65.",
-    "if-you-qualify": "If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "highest-monthly-amount": "The highest monthly amount you can start collecting from your public pensions is at age 70.",
+    "if-you-qualify": "If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "if-you-qualify-a1":"https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
     "more-than-double": "You could more than double your monthly CPP amount if you delay your retirement pension from age 60 to 70.",
     "no-benefit": "There's no benefit to wait after age 70 to start collecting both pensions.",
     "payment-increase": "Your monthly payment will increase every month you delay, up to age 70.",
@@ -76,9 +77,9 @@
       "description": "Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him.",
       "header": "Fred decides when to start his public pensions"
     },
-    "going-from-work-to-retirement": {
+    "rules-of-thumb-for-public-pensions": {
       "description": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
-      "header": "Going from work to retirement"
+      "header": "Rules of thumb for your public pensions"
     },
     "header": "Learn More",
     "main-sources-of-retirment-income": {
