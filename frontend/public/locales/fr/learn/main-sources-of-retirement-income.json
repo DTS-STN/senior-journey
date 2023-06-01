@@ -148,7 +148,6 @@
   },
   "learn-more": {
     "going-from-work-to-retirement": {
-      "href": "/learn/going-from-work-to-retirement",
       "description": "Vous pouvez choisir différentes manière d'effectuer une transition du monde du travail à celui de la retraite. Prendre sa retraite du monde du travail et commencer à recevoir ses pensions publiques sont deux choses différentes.",
       "header": "Transition du monde du travail à la retraite"
     },
@@ -164,7 +163,6 @@
       "header": "Régimes d'épargne et de pension"
     },
     "when-to-start": {
-      "href": "/learn/deciding-when-to-start-your-public-pensions",
       "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer.",
       "header": "Décider quand recevoir sa pension publique"
     }

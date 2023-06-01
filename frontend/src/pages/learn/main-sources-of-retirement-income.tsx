@@ -31,12 +31,12 @@ const MainSourcesOfRetirementIncome: FC = () => {
   const learnMoreLinks = useMemo(
     () => [
       {
-        href: t('learn-more.when-to-start.href'),
+        href: '/learn/deciding-when-to-start-your-public-pensions',
         primary: t('learn-more.when-to-start.header'),
         secondary: t('learn-more.when-to-start.description'),
       },
       {
-        href: t('learn-more.going-from-work-to-retirement.href'),
+        href: '/learn/going-from-work-to-retirement',
         primary: t('learn-more.going-from-work-to-retirement.header'),
         secondary: t('learn-more.going-from-work-to-retirement.description'),
       },

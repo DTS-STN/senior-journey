@@ -148,7 +148,6 @@
   },
   "learn-more": {
     "going-from-work-to-retirement": {
-      "href": "/learn/going-from-work-to-retirement",
       "description": "You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
       "header": "Going from work to retirement"
     },
@@ -164,7 +163,6 @@
       "header": "Savings and pension plans"
     },
     "when-to-start": {
-      "href": "/learn/deciding-when-to-start-your-public-pensions",
       "description": "Deciding when to start your public pensions",
       "header": "Deciding when to start your public pensions"
     }
