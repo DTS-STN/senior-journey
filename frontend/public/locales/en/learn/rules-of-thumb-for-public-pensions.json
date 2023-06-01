@@ -35,7 +35,8 @@
     "li3": "If you need the money right away - maybe to deal with your bills or debts, consider taking your public pensions early. If you don't need the money now - because you are still working, have savings or other sources of income, consider delaying your public pensions.",
     "li4": "Each month that you delay increases your monthly payments for life.",
     "li5": "People who qualify for the Guaranteed Income Supplement (GIS) should not wait to apply past age 65.",
-    "li6": "If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "li6": "If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "li6-a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
     "li7": "You don't need to stop working to start collecting your public pensions."
   },
   "learn-more": {
