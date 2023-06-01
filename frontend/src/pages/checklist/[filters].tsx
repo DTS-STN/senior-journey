@@ -217,7 +217,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
 
             <div className="md:mb-2">
               <div className="flex items-center justify-between md:mb-2 md:border-b md:pb-3">
-                <div className="hidden text-xl md:block">{t('filter-tasks')}</div>
+                <div className="hidden text-xl md:block">{t('filter-tasks', { count: filters.tags.length })}</div>
                 <div className="text-2xl md:hidden">{t('header')}</div>
                 <IconButton
                   color="primary"

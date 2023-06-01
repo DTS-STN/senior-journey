@@ -2,29 +2,31 @@
   "breadcrumbs": {
     "learn": "Apprendre"
   },
-  "filter-tasks": "(FR) Filter Tasks",
-  "header": "Liste de contrôle pour votre retraite",
+  "filter-tasks_one": "Sélection des tâches ({{count}} sélectionnée)",
+  "filter-tasks_other": "Sélection des tâches ({{count}} sélectionnées)",
+  "filter-tasks_zero": "Sélection des tâches",
+  "header": "Liste de contrôle pour la retraite",
   "important-terms": {
     "cpp": {
-      "definition": "(FR) Canada Pension Plan",
-      "header": "(FR) CPP:"
+      "definition": "Régime de pensions du Canada",
+      "header": "RPC\u00a0:"
     },
     "gis": {
-      "definition": "(FR) Guaranteed Income Supplement",
-      "header": "(FR) GIS:"
+      "definition": "Supplément de revenu garanti",
+      "header": "SRG\u00a0:"
     },
-    "header": "(FR) Important terms",
+    "header": "Termes importants",
     "oas": {
-      "definition": "(FR) Old Age Security",
-      "header": "(FR) OAS:"
+      "definition": "Sécurité de vieillesse",
+      "header": "SV\u00a0:"
     },
-    "show": "(FR) Show important notes"
+    "show": "Afficher les termes importants"
   },
-  "links-header": "(FR) More resources",
+  "links-header": "Ressources supplémentaires",
   "meta": {
     "description": "Planifiez votre retraite avec une liste de contrôle personnalisée pour mieux vous préparez à la retraite!"
   },
-  "print": "(FR) Print",
-  "restart-quiz": "(FR) Restart quiz",
-  "show-filters": "(FR) show filters"
+  "print": "Imprimer",
+  "restart-quiz": "Relancez ce questionnaire",
+  "show-filters": "Afficher les filtres"
 }

@@ -2,7 +2,9 @@
   "breadcrumbs": {
     "learn": "Learn"
   },
-  "filter-tasks": "Filter Tasks",
+  "filter-tasks_one": "Filter tasks ({{count}} applied)",
+  "filter-tasks_other": "Filter tasks ({{count}} applied)",
+  "filter-tasks_zero": "Filter tasks",
   "header": "Your retirement checklist",
   "important-terms": {
     "cpp": {
@@ -18,7 +20,7 @@
       "definition": "Old Age Security",
       "header": "OAS:"
     },
-    "show": "Show important notes"
+    "show": "Show important terms"
   },
   "links-header": "More resources",
   "meta": {
@@ -26,5 +28,5 @@
   },
   "print": "Print",
   "restart-quiz": "Restart quiz",
-  "show-filters": "show filters"
+  "show-filters": "Show filters"
 }
