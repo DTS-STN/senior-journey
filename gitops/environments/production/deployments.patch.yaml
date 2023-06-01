@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend
-          image: dtsrhpprodscedspokeacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230531-0027-bba6a9ec
+          image: dtsrhpprodscedspokeacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230601-0032-f7bfd6ba
           env:
             - name: NEXT_PUBLIC_APP_BASE_URI
               value: https://retraite-retirement.prod-dp-internal.dts-stn.com/
