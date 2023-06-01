@@ -80,37 +80,39 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <List disablePadding>
           {[
             {
-              primary: 'key-takeaways.highest-monthly-amount',
-              secondary: 'key-takeaways.start-collecting',
+              primary: t('key-takeaways.highest-monthly-amount'),
+              secondary: t('key-takeaways.start-collecting'),
             },
             {
-              primary: 'key-takeaways.payment-increase',
-              secondary: 'key-takeaways.no-benefit',
+              primary: t('key-takeaways.payment-increase'),
+              secondary: t('key-takeaways.no-benefit'),
             },
             {
-              primary: 'key-takeaways.people-who-qualify',
-              secondary: 'key-takeaways.if-you-qualify',
+              primary: t('key-takeaways.people-who-qualify'),
+              secondary: t('key-takeaways.if-you-qualify'),
+              a1: t('key-takeaways.if-you-qualify-a1'),
+              a2: t('key-takeaways.if-you-qualify-a2'),
             },
             {
-              primary: 'key-takeaways.more-than-double',
-              secondary: 'key-takeaways.pensions-adjusted',
+              primary: t('key-takeaways.more-than-double'),
+              secondary: t('key-takeaways.pensions-adjusted'),
             },
             {
-              primary: 'key-takeaways.planning-retirement',
-              secondary: 'key-takeaways.common-law',
+              primary: t('key-takeaways.planning-retirement'),
+              secondary: t('key-takeaways.common-law'),
             },
-          ].map(({ primary, secondary }) => (
+          ].map(({ primary, secondary, a1, a2 }) => (
             <ListItem key={primary} className="border-b">
               <ListItemText
-                primary={t(primary)}
+                primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
                 secondary={
                   <Trans
                     ns="learn/deciding-when-to-start-your-public-pensions"
                     i18nKey={secondary}
-                    components={{ a1: <MuiLink href={t(secondary+'-a1')} />, a2: <MuiLink href={t(secondary+'-a2')} />}}
+                    components={{ a1: <MuiLink href={a1} />, a2: <MuiLink href={a2} />}}
                   >
-                    {t(secondary)}
+                    {secondary}
                   </Trans>
                 }
                 secondaryTypographyProps={{ className: 'text-base' }}
@@ -234,8 +236,6 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
             components={{ a1: <MuiLink href={t('cpp-pension.a1')} /> }}
           />
         </p>
-        <p>{t('cpp-pension.p2')}</p>
-
         <AlertCard type="tip">
           <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.smart-tip" />
         </AlertCard>
@@ -246,7 +246,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           height={519}
           className="mt-2 w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp-pension.p3')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp-pension.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp-pension.accessibility', { returnObjects: true })}
           description={t('cpp-pension.description')}
@@ -257,7 +257,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <p>
           <Trans
             ns="learn/deciding-when-to-start-your-public-pensions"
-            i18nKey="cpp-pension.p4"
+            i18nKey="cpp-pension.p3"
             components={{ a2: <Link className="underline" href="/learn/case-studies/fred" /> }}
           />
         </p>

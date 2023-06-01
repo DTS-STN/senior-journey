@@ -10,37 +10,37 @@
       "header": ["Âge pour commencer à recevoir votre pension de la SV", "Montant mensuel de la pension de retraite du RPC"],
       "rows": [
         {
-          "data": ["60", "800 $"]
+          "data": ["60", "800\u00a0$"]
         },
         {
-          "data": ["61", "890 $"]
+          "data": ["61", "890\u00a0$"]
         },
         {
-          "data": ["62", "980 $"]
+          "data": ["62", "980\u00a0$"]
         },
         {
-          "data": ["63", "1,070 $"]
+          "data": ["63", "1,070\u00a0$"]
         },
         {
-          "data": ["64", "1,160 $"]
+          "data": ["64", "1,160\u00a0$"]
         },
         {
-          "data": ["65", "1,250 $"]
+          "data": ["65", "1,250\u00a0$"]
         },
         {
-          "data": ["66", "1,355 $"]
+          "data": ["66", "1,355\u00a0$"]
         },
         {
-          "data": ["67", "1,460 $"]
+          "data": ["67", "1,460\u00a0$"]
         },
         {
-          "data": ["68", "1,565 $"]
+          "data": ["68", "1,565\u00a0$"]
         },
         {
-          "data": ["69", "1,670 $"]
+          "data": ["69", "1,670\u00a0$"]
         },
         {
-          "data": ["70", "1,775 $"]
+          "data": ["70", "1,775\u00a0$"]
         }
       ]
     },
@@ -48,9 +48,8 @@
     "disclaimer": "<strong>Avertissement\u00a0:</strong> Ce site Web vise à vous donner des conseils sur le bon moment pour recevoir vos pensions publique. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
     "heading": "Pension de retraite du RPC",
     "p1": "Quel que soit le nombre de fois où vous avez changé d'emploi, en travaillant au Canada, vous avez contribuer au Régime de pensions du Canada (RPC) ou au <a1>Régime de rentes du Québec (RRQ).</a1> Le montant de votre pension de retraite du RPC dépend du montant et de la durée de vos contributions. Le RPC vous permet de choisir la date de début de votre pension de retraite, et chaque mois que vous reportez augmente votre montant mensuel. Le montant mensuel le plus élevé que vous puissiez recevoir est atteint à l'âge de 70 ans, après quoi il n'y a plus d'avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.",
-    "p2": "Débuter votre pension à 60 ans pourrait signifier laisser l'argent de la pension publique sur la table. En fait, sur la base des montants moyens des prestations, cette décision pourrait coûter 100 000 $ à la fin de la vie.",
-    "p3": "Votre pension de retraite du RPC pourrait plus que doubler si elle était versée à partir de 70 ans, au lieu de 60 ans. Le tableau illustre l'augmentation de la pension avec l'âge et utilise un montant de pension illustratif.",
-    "p4": "Lisez <a2>Fred décide quand prendre ses pensions publiques</a2> pour savoir ce qui guide ses choix.",
+    "p2": "Votre pension de retraite du RPC pourrait plus que doubler si elle était versée à partir de 70 ans, au lieu de 60 ans. Le tableau illustre l'augmentation de la pension avec l'âge et utilise un montant de pension illustratif.",
+    "p3": "Lisez <a2>Fred décide quand prendre ses pensions publiques</a2> pour savoir ce qui guide ses choix.",
     "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> le Canadien moyen qui prend sa retraite à 60 ans pourrait perdre   100 000 dollars de revenu de retraite. Chaque mois où vous reportez le versement de votre pension, vous augmentez votre versement mensuel. Si vous reportez votre pension de retraite du RPC de 60 à 70 ans, vous pourriez plus que doubler votre montant mensuel. Votre pension sera modifiée pour tenir compte de l'inflation future."
   },
   "description-heading": "Description",
@@ -105,22 +104,22 @@
         ],
         "rows": [
           {
-            "data": ["65", "691 $", "69 $", "760 $"]
+            "data": ["65", "691\u00a0$", "69\u00a0$", "760$"]
           },
           {
-            "data": ["66", "741 $", "74 $", "815 $"]
+            "data": ["66", "741\u00a0$", "74\u00a0$", "815\u00a0$"]
           },
           {
-            "data": ["67", "791 $", "79 $", "870 $"]
+            "data": ["67", "791\u00a0$", "79\u00a0$", "870\u00a0$"]
           },
           {
-            "data": ["68", "840 $", "84 $", "924 $"]
+            "data": ["68", "840\u00a0$", "84\u00a0$", "924\u00a0$"]
           },
           {
-            "data": ["69", "890 $", "89 $", "979 $"]
+            "data": ["69", "890\u00a0$", "89\u00a0$", "979\u00a0$"]
           },
           {
-            "data": ["70", "940 $", "94 $", "1,034 $"]
+            "data": ["70", "940\u00a0$", "94\u00a0$", "1,034\u00a0$"]
           }
         ]
       },
@@ -143,22 +142,22 @@
         "header": ["Âge pour commencer à recevoir votre pension de la SV", "Paiement mensuel de la pension de la SV"],
         "rows": [
           {
-            "data": ["65", "691 $"]
+            "data": ["65", "691\u00a0$"]
           },
           {
-            "data": ["66", "741 $"]
+            "data": ["66", "741\u00a0$"]
           },
           {
-            "data": ["67", "791 $"]
+            "data": ["67", "791\u00a0$"]
           },
           {
-            "data": ["68", "840 $"]
+            "data": ["68", "840\u00a0$"]
           },
           {
-            "data": ["69", "890 $"]
+            "data": ["69", "890\u00a0$"]
           },
           {
-            "data": ["70", "940 $"]
+            "data": ["70", "940\u00a0$"]
           }
         ]
       },
@@ -171,13 +170,13 @@
       "header-two": "Paiement mensuel maximum (avril à juin 2023)",
       "row-one": {
         "column-one-value": "Pension de la Sécurité de la vieillesse 65 à 74 ans",
-        "column-three-value": "Inférieur à 129 757 $",
-        "column-two-value": "691 $"
+        "column-three-value": "Inférieur à 129 757\u00a0$",
+        "column-two-value": "691\u00a0$"
       },
       "row-two": {
         "column-one-value": "Pension de la Sécurité de la vieillesse 75 ans et plus",
-        "column-three-value": "Inférieur à 129 757 $",
-        "column-two-value": "760 $"
+        "column-three-value": "Inférieur à 129 757\u00a0$",
+        "column-two-value": "760\u00a0$"
       },
       "title": "Montants des paiements de la Sécurité de la vieillesse - avril à juin 2023"
     },
