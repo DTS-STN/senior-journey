@@ -29,7 +29,7 @@
               "data": ["1 an,", "836\u00a0$", "29\u00a0$", "-", "-", "865\u00a0$"]
             },
             {
-              "data": [ "2 ans", "836\u00a0$", "29\u00a0$", "31\u00a0$", "-", "896\u00a0$"]
+              "data": ["2 ans", "836\u00a0$", "29\u00a0$", "31\u00a0$", "-", "896\u00a0$"]
             },
             {
               "data": ["3 ans", "836\u00a0$", "29\u00a0$", "31\u00a0$", "35\u00a0$", "931\u00a0$"]
@@ -59,7 +59,7 @@
           "content": "Choix de cesser de verser des cotisations au Régime de pensions du Canada",
           "link": "https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/formulaires/cpt30.html"
         }
-      }, 
+      },
       "overview": "Si vous continuez à travailler tout en recevant votre pension de retraite du Régime de pensions du Canada (RPC), et si vous avez moins de 70 ans, vous pouvez continuer à participer au RPC. Vos cotisations au RPC créeront des prestations après-retraite (PAR), qui augmenteront votre revenu de retraite."
     },
     "header": "Régime de pensions du Canada (RPC)",
@@ -94,7 +94,7 @@
         "content": "Il se peut que vous ayez des <a>crédits de pension</a> de votre ancien partenaire suite à un divorce ou une séparation.",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-partage-credits.html"
       },
-      "worked-in-canada": "Si vous avez travaillé au Canada et que vos revenus autonome supérieurs à 3,500 $, vous et votre employeur avez contribué au RPC. Si vous étiez travailleur indépendant, et que vous avez cotisé à la fois pour l'employeur et pour l'employé. Les cotisations sont basées sur vos revenus, dans la limite d'un plafond annuel."
+      "worked-in-canada": "Si vous avez travaillé au Canada et que vos revenus autonome supérieurs à 3\u00a0500\u00a0$, vous et votre employeur avez contribué au RPC. Si vous étiez travailleur indépendant, et que vous avez cotisé à la fois pour l'employeur et pour l'employé. Les cotisations sont basées sur vos revenus, dans la limite d'un plafond annuel."
     }
   },
   "guaranteed-income-supplement": {
@@ -124,7 +124,7 @@
     "qualify": "Pour bénéficier du SIG, vous devez:"
   },
   "header": "Principales sources de revenus de retraite",
-  "key-takeaways": {    
+  "key-takeaways": {
     "cpp-oas": {
       "description": "L'admissibilité à la pension de la SV dépend de la durée pendant laquelle vous avez vécu au Canada, après l'âge de 18 ans. L'admissibilité à la pension de retraite du RPC/RRQ est basé sur les cotisations que vous et votre employeur avez versées pendant que vous travailliez au Canada.",
       "header": "La Sécurité de la vieillesse (SV) et le Régime de pensions du Canada (RPC) sont les deux pensions publiques fédérales. La province du Québec dispose de son propre Régime des rentes du Québec (RRQ)."
@@ -258,15 +258,6 @@
     },
     "overview": "La planification de la retraite peut être une tâche difficile, mais il n'est jamais trop tôt ni trop tard pour commencer à y penser. Prendre le temps de planifier peut vous aider à vivre une retraite à l'aise et épanouissante. Une première étape importante de la planification de la retraite consiste à savoir d'où proviendra votre argent. Cela peut vous aider à fixer des objectifs réalisables. Les revenus de la retraite proviennent généralement des sources suivantes\u00a0:",
     "qpp": "Si vous avez travaillé ou demeuré au Québec, vous avez peut-être droit à la pension de retraite du Régime de rentes du Québec (RRQ) au lieu du RPC. Ces programmes sont très similaires, mais pas identiques."
-    
-    
-
-
-
-
-
-
-
   },
   "personal-retirement-savings": {
     "disclaimer-notice": "<strong>Avertissement</strong>\u00a0: Ce site Web vise à vous donner des conseils sur le bon moment pour toucher vos pensions de l'État. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
