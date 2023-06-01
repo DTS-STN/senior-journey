@@ -190,7 +190,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                     data-cy="submit-button"
                     fullWidth
                     loading={formikWizard.isSubmitting}
-                    loadingPosition="start"
+                    loadingIndicator={t('navigation.submitting')}
                     onClick={() => {
                       formikWizard.handleNext()
                     }}

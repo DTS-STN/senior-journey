@@ -27,6 +27,7 @@
     "previous": "Previous question",
     "progress": "Question {{currentStep}} of {{totalSteps}}",
     "submit": "Submit",
+    "submitting": "Submitting...",
     "title": "Retirement Ready Quiz"
   },
   "questions": {
