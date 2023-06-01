@@ -113,19 +113,22 @@ const Home: FC = () => {
                 </TabList>
               )}
               {extraSmall && (
-                <div className="px-4 py-2">
+                <div className="">
                   <div className="flex gap-1">
+                    <div className='border-b-2 w-1/2 text-center border-primary-700 p-2'>
+                      <Button
+                        variant="text"
+                        onClick={() => setValue('learn')}
+                        className="grow text-lg font-bold"
+                      >
+                        {t(`tabs.${value}.title`)}
+                      </Button>
+                    </div>
                     <Button
-                      variant="outlined"
-                      onClick={() => setValue('learn')}
-                      className="grow underline underline-offset-4"
-                    >
-                      {t('tabs.learn.title')}
-                    </Button>
-                    <Button
+                      variant="text"
                       onClick={() => setOpen(!open)}
                       endIcon={open ? <ExpandLess /> : <ExpandMore />}
-                      className="grow"
+                      className="grow text-lg font-bold text-basic-gray"
                     >
                       {t('tabs.more')}
                     </Button>
