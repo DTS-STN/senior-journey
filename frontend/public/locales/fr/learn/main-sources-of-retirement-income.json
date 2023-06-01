@@ -4,273 +4,280 @@
   },
   "canada-pension-plan-program": {
     "cpp-post-retirement-benefit": {
-      "adjustments": "(FR) Each new PRB will start the year after the new contributions are made. The PRBs are adjusted based on your age when they begin. If you are younger than 65, the PRB will be reduced. If you are older than 65, the new benefit will be increased.",
+      "adjustments": "Chaque nouveau PAR débutera en janvier de l'année suivante, après le versement des nouvelles cotisations. Les PAR sont ajustés à votre âge. Si vous avez moins de 65 ans, les prestations seront réduites. Si vous avez plus de 65 ans, les nouvelles prestations seront augmentées.",
       "chart": {
         "accessibility": {
-          "button-label": "(FR) Text alternative for How we top up your CPP retirement pension using Post-Retirement Benefits",
-          "caption": "(FR) Values presented on the image",
+          "button-label": "Texte alternatif pour Comment on augmente votre pension de retraite du RPC en utilisant les prestations après-retraite",
+          "caption": "Valeurs présentées sur l'image\u00a0:",
           "description": {
-            "content": "(FR) The chart shows changes in monthly payments for people who work for 3 years after starting their CPP retirement pension. It shows that PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
-            "header": "(FR) Description"
+            "content": "Le tableau montre l'évolution des paiements mensuels pour les personnes qui travaillent pendant trois ans après avoir commencé à recevoir leur pension de retraite du RPC. Il montre que des PAR sont ajoutés chaque année à vos pensions de retraite du RPC après que vous ayez continué à travailler et à cotiser au régime.",
+            "header": "Description"
           },
           "header": [
-            "(FR) Number of years you contribute to CPP after starting your pension",
-            "(FR) CPP retirement",
-            "(FR) PRB 1",
-            "(FR) PRB 2",
-            "(FR) PRB 3",
-            "(FR) Total"
+            "Années de cotisations au RCP et le début de votre pension",
+            "Retraite du RPC",
+            "PAR 1",
+            "PAR 2",
+            "PAR 3",
+            "Total"
           ],
           "rows": [
             {
-              "data": ["(FR) Year you start your pension", "(FR) $836", "(FR) -", "(FR) -", "(FR) -", "(FR) $836"]
+              "data": ["Au début de votre pension", "836\u00a0$", "-", "-", "-", "836\u00a0$"]
             },
             {
-              "data": ["(FR) 1 year", "(FR) $836", "(FR) $29", "(FR) -", "(FR) -", "(FR) $865"]
+              "data": ["1 an,", "836\u00a0$", "29\u00a0$", "-", "-", "865\u00a0$"]
             },
             {
-              "data": ["(FR) 2 years", "(FR) $836", "(FR) $29", "(FR) $31", "(FR) -", "(FR) $896"]
+              "data": [ "2 ans", "836\u00a0$", "29\u00a0$", "31\u00a0$", "-", "896\u00a0$"]
             },
             {
-              "data": ["(FR) 3 years", "(FR) $836", "(FR) $29", "(FR) $31", "(FR) $35", "(FR) $931"]
+              "data": ["3 ans", "836\u00a0$", "29\u00a0$", "31\u00a0$", "35\u00a0$", "931\u00a0$"]
             }
           ],
-          "values-heading": "(FR) Values"
+          "values-heading": "Valeurs"
         },
-        "footer": "(FR) The PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
-        "header": "(FR) How we top up your CPP retirement pension using Post-Retirement Benefits"
+        "footer": "Les PAR sont ajoutés chaque année à vos pensions de retraite du RPC, après que vous ayez continué à travailler et à contribuer au régime.",
+        "header": "Comment on augmente votre pension de retraite du RPC en utilisant les prestations après-retraite"
       },
       "choices": {
-        "content": "(FR) When you reach age 65, you can choose to stop making post-retirement contributions by filing <a>a form with CRA</a> and giving it to your employer. This will stop you from earning additional PRBs. Together with your retirement pension, PRBs will be adjusted for inflation every year.",
+        "content": "Lorsque vous atteignez l'âge de 65 ans, vous pouvez choisir de cesser de verser des cotisations après la retraite en complètant <a>un formulaire auprès de l'ARC</a> et en le remettant à votre employeur. Cela vous empêchera de gagner des PAR supplémentaires. Avec votre pension de retraite, les PAR seront ajustés chaque année pour tenir compte de l'inflation.",
         "link": "https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/formulaires/cpt30.html"
       },
       "differences": {
-        "content": "(FR) To see the difference between delaying your pension or taking PRBs, read <Link>Keith collects his public pensions while working</Link>.",
+        "content": "Pour voir la différence entre reporter sa pension et prendre des PAR, lisez <Link>Keith combine son travail avec ses pensions publiques</Link>.",
         "link": "/learn/case-studies/keith"
       },
-      "header": "(FR) What is the CPP Post-Retirement Benefit (PRB)?",
+      "header": "Qu'est-ce que la Prestation après-retraite (PAR) du RPC\u00a0?",
       "helpful-resources": {
         "cpp": {
-          "content": "(FR) Contributions to the Canada Pension Plan",
-          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/cotisations.html"
+          "content": "RPC Prestation après-retraite\u00a0: Aperçu",
+          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html"
         },
-        "header": "(FR) Helpful resources",
-        "monthly": {
-          "content": "(FR) Canada Pension Plan: Pensions and benefits monthly amounts",
-          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/montants-paiement.html"
-        },
-        "overview": {
-          "content": "(FR) CPP Retirement pension: Overview",
-          "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc.html"
+        "header": "Ressources utiles",
+        "stop-contributing": {
+          "content": "Choix de cesser de verser des cotisations au Régime de pensions du Canada",
+          "link": "https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/formulaires/cpt30.html"
         }
-      },
-      "overview": "(FR) If you continue to work while receiving your Canada Pension Plan (CPP) retirement pension, and under age 70, you can continue to participate in the CPP. Your CPP contributions will create Post-Retirement Benefits (PRBs), which will increase your retirement income."
+      }, 
+      "overview": "Si vous continuez à travailler tout en recevant votre pension de retraite du Régime de pensions du Canada (RPC), et si vous avez moins de 70 ans, vous pouvez continuer à participer au RPC. Vos cotisations au RPC créeront des prestations après-retraite (PAR), qui augmenteront votre revenu de retraite."
     },
-    "header": "(FR) Canada Pension Plan (CPP)",
+    "header": "Régime de pensions du Canada (RPC)",
     "helpful-resources": {
       "cpp": {
-        "content": "(FR) Contributions to the Canada Pension Plan",
+        "content": "Cotisations au régime de pensions du Canada",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/cotisations.html"
       },
-      "header": "(FR) Helpful resources",
+      "header": "Ressources utiles",
       "monthly": {
-        "content": "(FR) Canada Pension Plan: Pensions and benefits monthly amounts",
+        "content": "Régime de pensions du Canada\u00a0: Montants mensuels des pensions et des prestations",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/montants-paiement.html"
       },
       "overview": {
-        "content": "(FR) CPP Retirement pension: Overview",
+        "content": "Pension de retraite du RPC\u00a0: Aperçu",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc.html"
       }
     },
     "how-much": {
-      "amount": "(FR) Your CPP retirement pension amount depends on how much and for how long you've contributed to the plan. The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.",
-      "header": "(FR) How much could you collect from the CPP retirement pension?",
-      "inflation": "(FR) The amount for CPP retirement pension is increased for inflation every January.",
+      "amount": "Le montant de votre pension de retraite du RPC dépend du montant et de la durée de vos cotisations. Le RPC vous permet de choisir le moment où vous souhaitez commencer à recevoir votre pension de retraite, et chaque mois reporter augmente votre montant mensuel. Le montant mensuel le plus élevé que vous puissiez recevoir est atteint à l'âge de 70 ans. Après cet âge, il n'y a plus d'avantage à reporter sa pension. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.",
+      "header": "Quel est le montant de la pension de retraite du RPC que vous pouvez percevoir\u00a0?",
+      "inflation": "Le montant de la pension de retraite du RPC est augmenté chaque année en janvier pour tenir compte de l'inflation.",
       "learn-more": {
-        "content": "(FR) To learn more about early and deferred pensions, visit <a>Deciding when to start your public pensions</a>.",
+        "content": "Pour en savoir plus sur les pensions anticipées et reporter, consultez la page <a>Décider quand recevoir sa pension publique</a>.",
         "link": "/learn/deciding-when-to-start-your-public-pensions"
       }
     },
-    "overview": "(FR) The Canada Pension Plan (CPP) retirement pension provides income replacement for those who have worked or been self-employed in Canada. It is a monthly payment that replaces part of your work earnings in retirement. The amount of your CPP retirement pension is based on your earnings and contributions to the plan.",
+    "overview": "La pension de retraite du Régime de pensions du Canada (RPC) qui assure un remplacement de revenu pour les personnes qui ont travaillé ou étaient travailleurs autonomes au Canada. Il s'agit d'une pension mensuelle qui remplace une partie de vos revenus professionnels à la retraite. Le montant de votre pension de retraite du RPC est fonction de vos revenus et de vos contributions au régime.",
     "qualify": {
-      "header": "(FR) Do you qualify for the CPP retirement pension?",
+      "header": "Ête vous admissible à la pension de retraite du RPC\u00a0?",
       "pension-credits": {
-        "content": "(FR) You may have <a>pension credits</a> from a former partner as part of a divorce or separation.",
+        "content": "Il se peut que vous ayez des <a>crédits de pension</a> de votre ancien partenaire suite à un divorce ou une séparation.",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-partage-credits.html"
       },
-      "worked-in-canada": "(FR) If you worked in Canada, and had earnings more than $3,500, you and your employer contributed to the CPP. If you were self-employed, you made contributions for both the employer and employee. Contributions are based on your earnings, up to an annual limit."
+      "worked-in-canada": "Si vous avez travaillé au Canada et que vos revenus autonome supérieurs à 3,500 $, vous et votre employeur avez contribué au RPC. Si vous étiez travailleur indépendant, et que vous avez cotisé à la fois pour l'employeur et pour l'employé. Les cotisations sont basées sur vos revenus, dans la limite d'un plafond annuel."
     }
   },
   "guaranteed-income-supplement": {
-    "collecting": "(FR) You cannot receive the GIS until you start collecting your OAS pension.",
-    "header": "(FR) Guaranteed Income Supplement (GIS)",
+    "collecting": "Vous ne pouvez pas recevoir le SRG tant que vous n'avez pas commencé à recevoir votre pension de la SV.",
+    "header": "Supplément de revenu garanti (SRG)",
     "helpful-resources": {
       "estimator": {
-        "content": "(FR) Old Age Security benefits estimator",
+        "content": "Estimateur de prestations de la Sécurité de la vieillesse",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
       },
-      "header": "(FR) Helpful resources",
+      "header": "Ressources utiles",
       "overview": {
-        "content": "(FR) Guaranteed Income Supplement: Overview",
+        "content": "Supplément de revenu garanti: Aperçu",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html"
       }
     },
     "list": {
       "income-below-maximum": {
-        "content": "(FR) have an income below a <a>certain amount</a>",
+        "content": "avoir un revenu inférieur à <a>un certain montant</a>",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
       },
-      "live-canada": "(FR) live in Canada",
-      "receive-pension": "(FR) collect the OAS pension"
+      "live-canada": "vivre au Canada",
+      "receive-pension": "recevoir la pension de la SV"
     },
-    "monthly": "(FR) The monthly GIS amount depends on your income from the previous year and your marital status. If you are single, you will collect a higher amount.",
-    "overview": "(FR) The GIS is meant to support people who collect the OAS pension and have low income.",
-    "qualify": "(FR) To qualify for the GIS, you must:"
+    "monthly": "Le montant mensuel du SRG dépend de vos revenus de l'année précédente et de votre situation familiale. Si vous êtes célibataire, vous receverez un montant plus élevé.",
+    "overview": "Le SRG est destiné à aider les personnes qui reçoivent la pension de la SV et qui ont de faibles revenus.",
+    "qualify": "Pour bénéficier du SIG, vous devez:"
   },
   "header": "Principales sources de revenus de retraite",
-  "key-takeaways": {
+  "key-takeaways": {    
     "cpp-oas": {
-      "description": "(FR) Eligibility for the OAS pension is based on how long you've lived in Canada after age 18. Eligibility for the CPP/QPP retirement pension is based on contributions you and your employer made while working in Canada.",
-      "header": "(FR) The Old Age Security (OAS) and the Canada Pension Plan (CPP) are the two federal public pensions in Canada. The province of Québec has its own Québec Pension Plan (QPP)."
+      "description": "L'admissibilité à la pension de la SV dépend de la durée pendant laquelle vous avez vécu au Canada, après l'âge de 18 ans. L'admissibilité à la pension de retraite du RPC/RRQ est basé sur les cotisations que vous et votre employeur avez versées pendant que vous travailliez au Canada.",
+      "header": "La Sécurité de la vieillesse (SV) et le Régime de pensions du Canada (RPC) sont les deux pensions publiques fédérales. La province du Québec dispose de son propre Régime des rentes du Québec (RRQ)."
     },
     "cpp-oas-adjusted-for-inflation": {
-      "description": "(FR) When looking at graphs and tables, remember that you will be taxed based on your total income. The amount you actually receive may be less.",
-      "header": "(FR) Your pensions will change to reflect increases to inflation. These pensions are taxable income."
+      "description": "Lorsque vous consultez les graphiques et les tableaux, n'oubliez pas que vous serez imposé sur la base de votre revenu total. Le montant que vous recevez réellement peut être inférieur.",
+      "header": "Vos pensions seront modifiées pour tenir compte des augmentations de l'inflation. Ces pensions constituent un revenu imposable."
     },
     "cpp-oas-available": {
-      "header": "(FR) No matter when you decide to start your public pensions, they will always be available to you."
+      "header": "Peu importe la date que vous décidez de prendre vos pensions publiques, elles seront toujours à votre disposition."
     },
     "cpp-part-of-plan": {
-      "description": "(FR) You may have other sources like a workplace pension or personal savings.",
-      "header": "(FR) The public pensions are meant to be a part of your retirement income plan."
+      "description": "Vous avez disposez peut-être autres revenu, comme une pension de retraite d'employeur ou une épargne personnelle.",
+      "header": "Les pensions publiques sont destinées à faire partie de votre plan de revenu de retraite."
     },
-    "header": "(FR) Key Takeaways",
+    "header": "Points à retenir",
     "not-need-to-stop-working": {
-      "description": "(FR) You don't have to stop working to collect your public pensions.",
-      "header": "(FR) Retiring from your work and starting to collect your public pensions are two different things."
+      "description": "Il n'est pas nécessaire d'arrêter de travailler pour recevoir ses pensions publiques.",
+      "header": "Prendre sa retraite et commencer à recevoir ses pensions publiques sont deux choses différentes."
     }
   },
   "learn-more": {
     "going-from-work-to-retirement": {
-      "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
+      "description": "Vous pouvez choisir différentes manière d'effectuer une transition du monde du travail à celui de la retraite. Prendre sa retraite du monde du travail et commencer à recevoir ses pensions publiques sont deux choses différentes.",
       "header": "Transition du monde du travail à la retraite"
     },
     "header": "En savoir plus",
     "income-calculator": {
-      "description": "(FR) The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits.",
-      "header": "(FR) Canadian Retirement Income Calculator"
+      "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
+      "description": "Le calculateur du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
+      "header": "La Calculatrice du revenu de retraite canadienne"
     },
     "savings-and-pension": {
-      "description": "(FR) Registered pension and savings plans for individuals and plan administrators.",
-      "header": "(FR) Savings and pension plans"
+      "href": "https://www.canada.ca/fr/services/impots/regimes-depargne-et-de-pension.html",
+      "description": "Régimes enregistrés de retraite et d'épargne pour les particuliers et les administrateurs de régimes",
+      "header": "Régimes d'épargne et de pension"
     },
     "when-to-start": {
-      "description": "Prendre la décision de quand commencer à recevoir des pensions publiques",
-      "header": "(FR) Deciding when to start your public pensions"
+      "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer.",
+      "header": "Décider quand recevoir sa pension publique"
     }
   },
   "meta": {
     "description": "Renseignez-vous sur les différentes sources de revenus de retraite dont vous pourriez bénéficier. Examiner vos sources de revenus et identifier les écarts potentiel."
   },
   "old-age-security-program": {
-    "header": "(FR) Old Age Security (OAS) pension",
+    "header": "Pension de la sécurité de la vieillesse (SV)",
     "helpful-resources": {
-      "header": "(FR) Helpful resources",
+      "header": "Ressources utiles",
       "oas-estimator": {
-        "content": "(FR) Old Age Security benefits estimator",
+        "content": "Montants des paiements de la Sécurité de la vieillesse",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
       },
       "oas-how-much": {
-        "content": "(FR) Old Age Security: How much you could receive",
+        "content": "Sécurité de la vieillesse: Le montant que vous pourriez recevoir",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html"
       },
       "overview": {
-        "content": "(FR) Old Age Security: Overview",
+        "content": "Sécurité de la vieillesse: Aperçu",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse.html"
       }
     },
     "how-much": {
-      "eligible": "(FR) You are eligible for a full OAS pension if you've lived in Canada for 40 years, after the age of 18.",
-      "header": "(FR) How much could you collect from the OAS pension?",
-      "smaller": "(FR) You could collect a smaller, partial pension if you've lived in Canada for at least 10 years after age 18. A partial pension is payable at a rate of 1/40th of the full pension for every year you've resided in Canada after age 18. ",
+      "eligible": "Vous ête admissible à une pension complète de la SV si vous avez vécu au Canada pendant 40 ans, après l'âge de 18 ans.",
+      "header": "Quel montant pouvez-vous recevoir de la pension de la SV\u00a0?",
+      "smaller": "Vous pouvez recevoir une pension partielle plus modeste si vous avez résidé au Canada pendant au moins 10 ans après l'âge de 18 ans. Une pension partielle est payable à 1/40e de la pension complète pour chaque année de résidence au Canada après l'âge de 18 ans.",
       "start": {
-        "content": "(FR) You can start collecting your OAS pension at age 65 but you can also delay up to age 70. After age 70, there is no advantage in delaying your first payment. Learn more by reading <a>Deciding when to start your public pensions</a>.",
+        "content": "Vous pouvez commencer à recevoir votre pension de la SV à l'âge de 65 ans, mais vous pouvez également reporter votre pension de la SV jusqu'à l'âge de 70 ans. Après 70 ans, il n'y a plus d'avantage à reporter le premier versement. Pour en savoir plus, lisez <a>Décider quand recevoir sa pension publique</a>.",
         "link": "/learn/deciding-when-to-start-your-public-pensions"
       }
     },
     "qualify": {
       "also-eligible": {
-        "content": "(FR) You may also be eligible if you've lived or worked in another country that has <a>a social security agreement with Canada</a>.",
+        "content": "Vous pouvez également y avoir droit si vous avez vécu ou travaillé dans un autre pays qui as <a>un accord de sécurité sociale avec le Canada</a>.",
         "link": "https://www.canada.ca/fr/agence-revenu/services/impot/decisions-concernant-regime-pensions-canada-rpc-assurance-emploi-ae/accords-internationaux-securite-sociale-regime-pensions-canada.html"
       },
-      "header": "(FR) Do you qualify for the OAS pension?",
+      "header": "Êtes vous admissible à la pension de la SV\u00a0?",
       "more-details": {
-        "content": "(FR) For more details about if you qualify for OAS pension, visit the <a>OAS pension page</a>.",
+        "content": "Pour savoir si vous ête admissible à la pension de la SV, consultez la page pour la <a>pension de la SV</a>.",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse.html"
       },
-      "most-people": "(FR) Most people qualify for the OAS pension if they have lived in Canada for more than 10 years after age 18. You will have to be a Canadian citizen or legal resident beforec you can collect your OAS pension."
+      "most-people": "La plupart des personnes sont admissible à la pension de la SV si elles ont vécu au Canada pendant plus de 10 ans après l'âge de 18 ans. Vous devez être citoyen canadien ou résident légal pour pouvoir recevoir votre pension de la SV."
     }
   },
   "ongoing-earnings-from-your-job": {
-    "header": "(FR) Ongoing earnings from your job",
-    "overview": "(FR) Canadians are living longer and many continue to work in retirement. Some do not stop working at all, but many older workers choose to transition step-by-step into retirement. They may reduce their work hours from full-time to part-time before retiring completely. They can also start a new career or business. If you are interested in these options, we explain how working later in life can impact your retirement benefits.",
+    "header": "Revenus continus provenant de votre emploi",
+    "overview": "Les Canadiens vivent plus longtemps et beaucoup d'entre eux continuent à travailler pendant leur retraite. Certains ne cessent pas du tout de travailler, mais de nombreux travailleurs âgés choisissent de passer progressivement à la retraite. Ils peuvent réduire leurs heures de travail d'un temps plein à un temps partiel avant de prendre complètement leur retraite. Ils peuvent également commencer une nouvelle carrière ou une nouvelle entreprise. Si ces options vous intéressent, nous vous expliquons comment le fait de travailler plus tard dans la vie peut avoir une incidence sur vos prestations de retraite.",
     "work-to-retirement": {
-      "content": "(FR) To learn more about combining income from work and retirement, visit <a>Going from work to retirement</a>",
+      "content": "Pour en savoir plus sur comment combiner les revenus du travail et de la retraite, consultez la page <a>Transition du monde du travail à la retraite</a>.",
       "link": "/learn/going-from-work-to-retirement"
     }
   },
   "overview": {
     "canada-retirement-income-system": {
       "cpp-qpp": {
-        "content": "(FR) Financed through employer/employee contributions and investment returns",
-        "header": "(FR) Canada Pension Plan (CPP)/Québec Pension Plan (QPP)",
-        "pillar": "(FR) Second Pillar"
+        "content": "Financé par les cotisations employeur/employé et les retours sur investissement",
+        "header": "Régime de pension du Canada (RPC) Régime de rentes du Québec (RRQ)",
+        "pillar": "Deuxième palier"
       },
-      "header": "(FR) Canada's retirement income system",
-      "important-notice": "(FR) <strong>Important</strong>: Public pensions aren't intended to cover all your financial needs in retirement. Most Canadians will save during their working years or have another source of income to have enough money in retirement. Canada's public pensions offer you flexibility to start collecting them at the best time for your personal circumstances. Canada's public pensions are financially secure. This means that you can count on them for the rest of your life, no matter when you decide to start collecting them. Public pensions also protect you from inflation. Your pensions will grow to reflect increases to the cost of living.",
+      "header": "Le système de revenu de retraite du Canada",
+      "important-notice": "<strong>Important</strong>: Les pensions publique ne sont pas destinées à couvrir tous vos besoins financiers à la retraite. La plupart des Canadiens épargneront pendant leurs années de travail ou disposeront d'une autre source de revenus pour avoir suffisamment d'argent à la retraite. Les pensions publiques du Canada vous offrent la souplesse nécessaire pour commencer à les recevoirent au moment qui convient le mieux à votre situation personnelle. Les pensions publiques du Canada sont garantie financièrement. Cela signifie que vous pouvez compter sur elles pour le reste de votre vie, quel que soit le moment où vous décidez de commencer à les recevoirent. Les pensions publiques vous protègent également de l'inflation. Vos pensions augmenteront en fonction de l'augmentation du coût de la vie.",
       "oas": {
-        "content": "(FR) Financed through general tax revenues",
-        "header": "(FR) Old Age Security Program (OAS)",
-        "pillar": "(FR) First Pillar"
+        "content": "Financé par les recettes fiscales générales",
+        "header": "Programme de la Sécurité de vieillesse",
+        "pillar": "Premier palier"
       },
-      "private": "(FR) Private",
-      "public": "(FR) Public",
+      "private": "Privé",
+      "public": "Publique",
       "read-case-bonnie": {
-        "content": "(FR) Read <a>Bonnie delays to reduce the savings she needs</a> to see how she uses different sources of income to retire comfortably.",
+        "content": "Lisez <a>Bonnie reporte sa pension pour réduire les épargnes dont elle a besoin</a> et voyez comment elle utilise différentes sources de revenus pour prendre une retraite à l'aise.",
         "link": "/learn/case-studies/bonnie"
       },
-      "three-pillar-system": "(FR) A three-pillar system",
+      "three-pillar-system": "Système à trois paliers",
       "workplace": {
-        "content": "(FR) Financed through employer/employee contributions and private savings",
-        "header": "(FR) Workplace pension plans and private savings (e.g. Registered Retirement Savings Plans, Tax-Free Saving Accounts, etc.)",
-        "pillar": "(FR) Third Pillar"
+        "content": "(par ex.\u00a0: régime enregistré d'épargne-retraite, compte d'épargne libre d'impôt, etc.) Financé par les cotisations employeur/employé et les épargnes personnelles",
+        "header": "Régimes de retraite d'employeur et épargne-retraite personnelle",
+        "pillar": "Troisième palier"
       }
     },
-    "header": "(FR) Overview",
+    "header": "Aperçu",
     "learn-more": {
-      "content": "(FR) To learn more visit the <a>QPP website</a>.",
+      "content": "Pour en savoir plus, visitez le <a>site web du RRQ</a>.",
       "link": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx"
     },
     "list": {
-      "cpp": "(FR) The CPP/QPP retirement pension",
-      "earnings": "(FR) Earnings, if you continue to work in retirement",
-      "oas-and-gis": "(FR) The OAS pension and if you have low income in retirement, the Guaranteed Income Supplement (GIS)",
-      "savings-and-investments": "(FR) Retirement savings and investments",
-      "workplace": "(FR) Workplace pension plans"
+      "cpp": "La pension de retraite du RPC/RRQ",
+      "earnings": "Revenus, si vous continuez à travailler à la retraite",
+      "oas-and-gis": "La pension de la SV et, si vous avez de faibles revenus à la retraite, le Supplément de revenu garanti (SRG).",
+      "savings-and-investments": "Épargne-retraite et investissements",
+      "workplace": "Régimes de retraite d'employeur"
     },
-    "overview": "(FR) Planning for retirement can be overwhelming, but it's never too early or too late to start thinking about it. Taking the time to plan can help you have a comfortable and fulfilling retirement in the future. An important early step in retirement planning is knowing where your money will come from. This can help you set achievable goals. Retirement income will usually come from these sources:",
-    "qpp": "(FR) If you've worked or lived in Quebec, you may qualify for the Québec Pension Plan (QPP) retirement pension instead of the CPP. These programs are very similar, but not the same."
+    "overview": "La planification de la retraite peut être une tâche difficile, mais il n'est jamais trop tôt ni trop tard pour commencer à y penser. Prendre le temps de planifier peut vous aider à vivre une retraite à l'aise et épanouissante. Une première étape importante de la planification de la retraite consiste à savoir d'où proviendra votre argent. Cela peut vous aider à fixer des objectifs réalisables. Les revenus de la retraite proviennent généralement des sources suivantes\u00a0:",
+    "qpp": "Si vous avez travaillé ou demeuré au Québec, vous avez peut-être droit à la pension de retraite du Régime de rentes du Québec (RRQ) au lieu du RPC. Ces programmes sont très similaires, mais pas identiques."
+    
+    
+
+
+
+
+
+
+
   },
   "personal-retirement-savings": {
-    "disclaimer-notice": "(FR) <strong>Disclaimer</strong>: This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
-    "header": "(FR) Personal retirement savings",
-    "important-notice": "(FR) <strong>Important:</strong> Taking money from TFSA does not count as additional income and will not change the amount of your GIS in the next payment cycle that runs from July to June.",
+    "disclaimer-notice": "<strong>Avertissement</strong>\u00a0: Ce site Web vise à vous donner des conseils sur le bon moment pour toucher vos pensions de l'État. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
+    "header": "Épargne retraite personnelle",
+    "important-notice": "<strong>Important</strong>\u00a0: En retirant de l'argent d'un REER, ceci est considéré comme un revenu qui peut modifier votre admissibilité au Supplément de revenu garanti (SRG). Cela pourrait modifier votre prochain cycle de paiement qui s'étend de juillet à juin. Le fait de retirer de l'argent d'un CELI n'est pas considéré comme un revenu. Cela ne modifiera pas le montant de votre Supplément de revenu garanti (SRG).",
     "learn-more": {
-      "content": "(FR) To learn more about how much you income you might need in retirement, check out our page on <a>Planning to save for retirement</a>.",
+      "content": "Pour en savoir plus sur le montant du revenu dont vous pourriez avoir besoin à la retraite, consultez notre page <a>Planifiez pour épargner en vue de la retraite</a>.",
       "link": "/learn/planning-to-save-for-retirement"
     },
     "overview": {
-      "content": "(FR) Saving money is important to many for keeping their current lifestyle in retirement. If you don't have a pension plan from your employer, you might need to rely even more on your personal savings. There are different ways to save for retirement, but the two most common are <rrsp>Registered Retirement Savings Plans (RRSPs)</rrsp> and <tfsa>Tax-Free Savings Accounts (TFSAs)</tfsa>. The government helps you save for retirement through these savings accounts by reducing the amount of tax you pay. If you qualify for the OAS pension and have <amount>low income</amount>, you may also get financial support through the <gis>Guaranteed Income Supplement (GIS)</gis>.",
+      "content": "Pour de nombreuses personnes, il est important d'épargner de l'argent afin de conserver leur mode de vie actuel à la retraite. Si vous ne bénéficiez pas d'un régime de pension de votre employeur, vous devrez peut-être compter davantage sur vos épargnes personnelles. Il existe différentes façons d'épargner pour la retraite, mais les deux plus courantes <rrsp>sont le régime enregistré d'épargne-retraite (REER)</rrsp> et le <tfsa>compte d'épargne libre d'impôt (CELI)</tfsa>. Le gouvernement vous aide à épargner pour la retraite grâce à ces comptes d'épargne en réduisant le montant de l'impôt que vous payez. Si vous avez droit à la pension de la SV et votre <amount>revenu est faible</amount>, vous pouvez également obtenir une aide financière avec le <gis>Supplément de revenu garanti (SRG)</gis>.",
       "link": {
         "gis": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
         "gis-amount": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
@@ -280,13 +287,13 @@
     }
   },
   "workplace-pension-plans": {
-    "header": "(FR) Workplace pension plans",
+    "header": "Régimes de retraite d'employeur",
     "list": {
-      "group-rrsp": "(FR) A group Registered Retirement Savings Plan (group RRSP)",
-      "group-tfsa": "(FR) A group Tax-Free Savings Account (group TFSA)",
-      "prpp": "(FR) Pooled Registered Pension Plan (PRPP)",
-      "rpp": "(FR) An employer registered pension plan (RPP)"
+      "group-rrsp": "Un régime enregistré d'épargne-retraite collectif (REER collectif)",
+      "group-tfsa": "Un compte d'épargne libre d'impôt collectif (CELI collectif)",
+      "prpp": "Régime de pension agréé commun (RPAC)",
+      "rpp": "Un régime de pension agréé (RPA) de l'employeur"
     },
-    "overview": "(FR) Workplace pension plans are separate from your public pensions. They both try to help you live comfortably in retirement. If your employer offers a pension plan, it's a good idea to learn about the benefits of the plan and get a statement of your contributions. Below are examples of workplace pension plans:"
+    "overview": "Les régimes de retraite d'employeur sont différentes des pensions publiques. Ils visent tous deux à vous aider à vivre confortablement à la retraite. Si votre employeur propose un régime de retraite, il est conseillé de se renseigner sur les avantages du régime et d'obtenir un relevé de vos cotisations. Vous trouverez ci-dessous des exemples de régimes de retraite dans le mileu du travail\u00a0:"
   }
 }
