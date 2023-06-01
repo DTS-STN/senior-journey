@@ -37,6 +37,8 @@ const log = getLogger('pages/checklist/[filters].tsx')
 interface ChecklistResultsProps {
   applyingBenefits: TasksGroupDto
   beforeRetiring: TasksGroupDto
+  initialExpandedGroups: Array<number>
+  initialExpandedTasks: Array<number>
   filters: ChecklistFilters
   receivingBenefits: TasksGroupDto
 }
@@ -44,6 +46,8 @@ interface ChecklistResultsProps {
 const ChecklistResults: FC<ChecklistResultsProps> = ({
   applyingBenefits,
   beforeRetiring,
+  initialExpandedGroups,
+  initialExpandedTasks,
   filters,
   receivingBenefits,
 }) => {
@@ -51,11 +55,13 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   const en = i18n.getFixedT('en', 'checklist')
   const fr = i18n.getFixedT('fr', 'checklist')
 
-  let router = useRouter()
+  const router = useRouter()
   const { mutate: removeQuizData } = useRemoveQuizData()
 
-  let [expanded, setExpanded] = useState(false)
-  let [importantExpanded, setImportantExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false)
+  const [importantExpanded, setImportantExpanded] = useState(false)
+  const [expandedGroups, setExpandedGroups] = useState(initialExpandedGroups)
+  const [expandedTasks, setExpandedTasks] = useState(initialExpandedTasks)
 
   function filterTasksByTag({ tags }: { tags: ReadonlyArray<{ code: string }> }, filters: ChecklistFilters) {
     if (isEmpty(filters.tags)) return true
@@ -97,6 +103,26 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
     e.preventDefault()
     removeQuizData()
     router.push('/quiz')
+  }
+
+  function handleOnTaskGroupAccordionChange(id: number, expanded: boolean) {
+    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+    const group = [...new Set(expanded ? [...expandedGroups, id] : expandedGroups.filter((val) => val !== id))]
+    setExpandedGroups(group)
+    router.replace({ pathname: `/checklist/${encodedFilters}`, query: { group, task: expandedTasks } }, undefined, {
+      scroll: false,
+      shallow: true,
+    })
+  }
+
+  function handleOnTaskAccordionChange(id: number, expanded: boolean) {
+    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
+    const task = [...new Set(expanded ? [...expandedTasks, id] : expandedTasks.filter((val) => val !== id))]
+    setExpandedTasks(task)
+    router.replace({ pathname: `/checklist/${encodedFilters}`, query: { group: expandedGroups, task } }, undefined, {
+      scroll: false,
+      shallow: true,
+    })
   }
 
   return (
@@ -227,19 +253,34 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
           </section>
           <section id="content" className="print-href lg:col-span-8 xl:col-span-9">
             <NestedAccordion
+              expanded={expandedGroups.includes(beforeRetiring.id)}
+              expandedTasks={expandedTasks}
+              id={beforeRetiring.id}
               linksHeader={t('links-header')}
+              onTaskAccordionChange={handleOnTaskAccordionChange}
+              onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
               sectionTitle={beforeRetiring.title}
               subSectionTitle={beforeRetiring.subTitle}
               tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
             <NestedAccordion
+              expanded={expandedGroups.includes(applyingBenefits.id)}
+              expandedTasks={expandedTasks}
+              id={applyingBenefits.id}
               linksHeader={t('links-header')}
+              onTaskAccordionChange={handleOnTaskAccordionChange}
+              onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
               sectionTitle={applyingBenefits.title}
               subSectionTitle={applyingBenefits.subTitle}
               tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
             <NestedAccordion
+              expanded={expandedGroups.includes(receivingBenefits.id)}
+              expandedTasks={expandedTasks}
+              id={receivingBenefits.id}
               linksHeader={t('links-header')}
+              onTaskAccordionChange={handleOnTaskAccordionChange}
+              onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
               sectionTitle={receivingBenefits.title}
               subSectionTitle={receivingBenefits.subTitle}
               tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
@@ -262,7 +303,13 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   )
 }
 
-export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> = async ({ locale, params }) => {
+export const queryVariableToNumberArray = (queryVariable: string | string[] | undefined): Array<number> => {
+  if (typeof queryVariable === 'undefined') return []
+  if (typeof queryVariable === 'string') return isNaN(parseInt(queryVariable)) ? [] : [parseInt(queryVariable)]
+  return [...new Set(queryVariable.filter((value) => !isNaN(parseInt(value))).map((value) => parseInt(value)))]
+}
+
+export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> = async ({ locale, params, query }) => {
   const filters = params?.filters
 
   if (typeof filters !== 'string') {
@@ -277,7 +324,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
     const decodedFilters = Buffer.from(filters, 'base64url')
     const jsonFilters = JSON.parse(decodedFilters.toString())
     const validatedFilters = await checklistFiltersSchema.validate(jsonFilters)
-    log.debug(validatedFilters)
+    log.debug(validatedFilters, 'Validated filters')
 
     const { applyingBenefits, beforeRetiring, receivingBenefits } = tasksData
 
@@ -320,6 +367,8 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
         ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'], null, ['en', 'fr'])),
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
+        initialExpandedGroups: queryVariableToNumberArray(query.group),
+        initialExpandedTasks: queryVariableToNumberArray(query.task),
         filters: validatedFilters,
         receivingBenefits: receivingBenefitsDtos,
       },
