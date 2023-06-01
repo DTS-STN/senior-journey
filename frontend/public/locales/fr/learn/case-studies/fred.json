@@ -3,94 +3,94 @@
     "learn": "Apprendre"
   },
   "conclusion": {
-    "disclaimer": "(FR) <strong>Disclaimer:</strong> These stories are only simplified examples to illustrate the various factors that should be considered when deciding when to start collecting your public pensions, and potential outcomes. They do not, for example, include the effects of taxation or investment growth, and assume that Fred's goal is stable income across his entire life. These stories are not intended to provide financial advice, and we strongly encourage you to seek help from a financial advisor as you plan your retirement.",
-    "heading": "(FR) Conclusion",
-    "p": "(FR) Fred wants to take the largest pensions from the OAS pension and CPP retirement pension available to him. To do this correctly, he evaluated both his monthly and his lifetime pensions. He considered how long he is going to collect his pensions and he looked how much he can collect from the CPP retirement pension and OAS pension by age 86 or 89. Fred can afford to delay his pensions and is planning to work part-time at the start of retirement. He would not be eligible to collect the GIS. Thinking about all these factors, Fred decided to delay his CPP retirement pension until age 70 and OAS pension until age 68. This would provide him with the highest monthly and lifetime pensions."
+    "disclaimer": "<strong>Avertissement\u00a0:</strong> ces histoires ne sont que des exemples simplifiés destinés à illustrer les différents facteurs à prendre en compte pour décider du moment où vous commencerez à recevoir vos pensions publiques, ainsi que les résultats potentiels. Ils n'incluent pas, par exemple, les effets de la fiscalité ou de la croissance des investissements, et supposent que l'objectif de Fred est d'obtenir un revenu stable tout au long de sa vie. Ces récits n'ont pas pour but de fournir des conseils financiers et nous vous encourageons vivement à demander l'aide d'un conseiller financier lorsque vous planifiez votre retraite.",
+    "heading": "Conclusion",
+    "p": "Fred souhaite bénéficier des pensions les plus élevées parmi les pensions de retraite de la SV et du RPC qui lui sont offertes. Pour ce faire, il a évalué ses pensions mensuelles et ses pensions à vie. Il a tenu compte de la durée pendant laquelle il recevera ses pensions et du montant qu'il pourra recevoir de la pension de retraite du RPC et de la pension de la SV à l'âge de 86 ou 89 ans. Fred peut se permettre de reporter le versement de ses pensions et prévoit de travailler à temps partiel au début de sa retraite. Il ne serait pas l'éligible a recevoir le SRG. Compte tenu de tous ces facteurs, Fred a décidé de reporter sa pension de retraite du RPC jusqu'à l'âge de 70 ans et sa pension de la SV jusqu'à l'âge de 68 ans. Il bénéficiera ainsi des pensions mensuelles et a vie les plus élevées."
   },
   "cpp": {
-    "heading": "(FR) Fred's CPP retirement pension",
+    "heading": "Pension de retraite du RPC de Fred",
     "lifetime-pension": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Fred's CPP lifetime pension at age 86",
-        "caption": "(FR) Values presented on the image",
-        "header": ["(FR) Age when Fred starts taking his CPP pension", "(FR) Fred's CPP lifetime pension at age 86"],
+        "button-label": "Texte de remplacement pour Pension de retraite mensuelle du RPC de Fred",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
+        "header": ["Âge auquel Fred commence à toucher sa pension", "Pension de retraite mensuelle"],
         "rows": [
           {
-            "data": ["60", "$259,584"]
+            "data": ["60", "259\u00a0584\u00a0$"]
           },
           {
-            "data": ["65", "$327,600"]
+            "data": ["65", "327\u00a0600\u00a0$"]
           },
           {
-            "data": ["70", "$354,432"]
+            "data": ["70", "354\u00a0432\u00a0$"]
           }
         ]
       },
-      "description": "(FR) The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
-      "p": "(FR) By age 86, Fred could receive $95,000 more, if he delays from 60 to 70. By age 89, this difference will be $130,000."
+      "description": "Le tableau montre l'évolution des versements mensuels de la pension de retraite du RPC de Fred en fonction de l'âge auquel il commence à toucher sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent chaque mois. Il peut commencer à recevoir sa pension de retraite du RPC à 60 ans pour obtenir le montant le plus bas, ou à 70 ans pour obtenir le montant le plus élevé. La pension mensuelle de Fred pourrait augmenter de moitié si elle était versée à l'âge de 65 ans. Elle fera plus que doubler à 70 ans par rapport à la pension versée à 60 ans.",
+      "p": "La pension de retraite mensuelle du RPC de Fred pourrait augmenter si elle était versée dès l'âge de 65 ans. Elle ferait plus que doubler à l'âge de 70 ans, par rapport à commencer à l'âge de 60 ans."
     },
     "monthly-pension": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Fred's CPP monthly pension",
-        "caption": "(FR) Values presented on the image",
-        "header": ["(FR) Age when Fred starts taking his CPP pension", "(FR) Fred's CPP monthly pension"],
+        "button-label": "Texte de remplacement pour Pension de retraite mensuelle du RPC de Fred",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
+        "header": ["Âge auquel Fred commence à toucher sa pension", "Pension de retraite mensuelle"],
         "rows": [
           {
-            "data": ["60", "$832"]
+            "data": ["60", "832\u00a0$"]
           },
           {
-            "data": ["65", "$1,300"]
+            "data": ["65", "1\u00a0300\u00a0$"]
           },
           {
-            "data": ["70", "$1,846"]
+            "data": ["70", "1\u00a0846\u00a0$"]
           }
         ]
       },
-      "description": "(FR) The chart shows changes in Fred's CPP pension monthly payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive every month. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
-      "p1": "(FR) Fred's monthly CPP retirement pension could grow by half, if started at age 65. It would more than double at age 70, compared to starting his pension at age 60.",
-      "p2": "(FR) Fred's monthly CPP retirement pension at age 70 could be over $1,000 per month more than his pension at age 60. Fred wants to take the higher monthly pension at age 70, but he will need some other income at the start of retirement . He has some retirement savings that he can use while waiting to start his CPP retirement pension.",
-      "p3": "(FR) When Fred talks to his friends about his decision. Many of them point out how he's giving up income early in retirement to get that higher monthly payment. And so, Fred decides to look at how much he'll collect in total from the CPP over his lifetime. He sees that, even with a normal life expectancy, he'll get more over time by waiting."
+      "description": "Le tableau montre l'évolution des versements mensuels de la pension de retraite du RPC de Fred en fonction de l'âge auquel il commence à toucher sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent chaque mois. Il peut commencer à recevoir sa pension de retraite du RPC à 60 ans pour obtenir le montant le plus bas, ou à 70 ans pour obtenir le montant le plus élevé. La pension mensuelle de Fred pourrait augmenter de moitié si elle était versée à l'âge de 65 ans. Elle fera plus que doubler à 70 ans par rapport à la pension versée à 60 ans.",
+      "p1": "La pension de retraite mensuelle du RPC de Fred pourrait augmenter si elle était versée dès l'âge de 65 ans. Elle ferait plus que doubler à l'âge de 70 ans, par rapport à commencer à l'âge de 60 ans.",
+      "p2": "La pension de retraite mensuelle du RPC de Fred à l'âge de 70 ans pourrait être supérieure de plus de 1\u00a0000\u00a0$ par mois à sa pension à l'âge de 60 ans. Fred souhaite recevoir la pension mensuelle la plus élevée à 70 ans, mais il aura besoin d'un autre revenu au début de sa retraite. Il dispose d'une épargne-retraite qu'il peut utiliser en attendant le début de sa pension de retraite du RPC.",
+      "p3": "Lorsque Fred parle de sa décision à beaucoup de ses amis, ceux-ci lui font remarquer qu'il renonce à un revenu au début de sa retraite pour obtenir ce versement mensuel plus élevé. Fred décide donc d'examiner le montant total qu'il recevra du RPC au cours de sa vie. Il constate que, même avec une espérance de vie normale, il obtiendra davantage au fil du temps en attendant."
     },
-    "p1": "(FR) Fred could collect $68,000 more from the CPP if he starts his retirement pension at age 65 instead of age 60. He could collect almost $95,000 more if he starts at age 70.",
-    "p2": "(FR) If Fred lives just a little bit longer, the differences grow even more. By age 89, Fred could collect almost $85,000 more in CPP retirement pension income if he starts at 65 instead of 60. If he starts at age 70, it would be over $130,000 more. Based on his needs and wanting to get the most out of the system, Fred decides that waiting to start collecting his CPP retirement pension makes a lot of financial sense.",
-    "p3": "(FR) Fred knows that his CPP will increase each year with inflation, and the pension is guaranteed for his life. Even if his private investments don't do well, the CPP retirement pension will be a good, safe financial support even in his older years. Fred decides to wait and take his CPP retirement pension at age 70. To cover any gaps in income before then, Fred decides to use about $1,500 monthly from his private retirement savings. He might also work part-time as a rideshare driver.",
-    "smart-tip": "(FR) <strong>Smart tip:</strong> It can be helpful to consider not just the monthly amount but also the total amount you'll receive over your lifetime. Fred wants to see how his lifetime pension will change by starting at different ages before making his final decision."
+    "p1": "Fred pourrait toucher 68\u00a0000\u00a0$ de plus du RPC s'il commençait à recevoir sa pension de retraite à 65 ans au lieu de 60 ans. Il pourrait recevoir près de 95\u00a0000\u00a0$ de plus s'il commençait à 70 ans.",
+    "p2": "Si Fred vit un peu plus longtemps, les différences s'accroissent encore. À l'âge de 89 ans, Fred pourrait recevoir près de 85\u00a0000\u00a0$ de plus en revenu de retraite du RPC s'il commençait à 65 ans au lieu de 60. S'il commence à 70 ans, il recevera plus de 130\u00a0000\u00a0$ de plus. Compte tenu de ses besoins et de son désir de tirer le maximum du système, Fred décide qu'il est financièrement très sensé d'attendre avant de commencer à recevoir sa pension de retraite du RPC.",
+    "p3": "Fred sait que sa pension de retraite du RPC augmentera chaque année en fonction de l'inflation et qu'elle est garantie à vie. Même si ses investissements privés ne sont pas très performants, la pension de retraite du RPC constituera un soutien financier sûr et de qualité, même pendant ses vieux jours. Fred décide d'attendre et de recevoir sa pension de retraite du RPC à l'âge de 70 ans. Pour combler toute écarts de revenu d'ici là, Fred décide d'utiliser environ 1\u00a0500\u00a0$ par mois de son épargne-retraite privée. Il pourrait également travailler à temps partiel en tant que conducteur d'un véhicule de covoiturage.",
+    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> Il peut être utile de tenir compte non seulement du montant mensuel, mais également du montant total que vous recevrez au cours de votre vie."
   },
-  "description-heading": "(FR) Description",
-  "header": "Fred décide quand prendre sa pension publique",
+  "description-heading": "Description",
+  "header": "Fred décide quand commencer a recevoir ses pensions publiques",
   "key-takeaways": {
     "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
     "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
-    "heading": "(FR) Key Takeaways",
-    "li1": "(FR) You do not have to start your Canada Pension Plan (CPP) retirement pension and Old Age Security (OAS) pension at the same age.",
-    "li2": "(FR) You can start your public pensions at different times.",
-    "li3": "(FR) While both CPP and OAS provide increases for delaying the start your pension, they don't provide the same rate of increase.",
-    "li4": "(FR) For people aged 65-70, the CPP provides a larger rate of increase to the retirement pension for each month you delay than the OAS pension. If delayed until age 70, the monthly CPP retirement pension could more than double compared to starting it at 60.",
-    "li5": "(FR) There are many things to consider when deciding the age to start collecting your public pensions.",
-    "li6": "(FR) You might make your decision based on the monthly payment amounts, the total amount you'd collect over a lifetime, or your ability to use money to meet immediate needs or wants.",
-    "li7": "(FR) Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost 100,000 by the end of one's life.",
-    "li8": "(FR) Your pension will continue to grow higher to reflect inflation.",
-    "smart-tip": "(FR) <strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the <a2>Guaranteed Income Supplement (GIS)</a2>. People who qualify for the GIS should not wait to apply past age 65. You cannot collect the GIS if you are delaying your OAS pension."
+    "heading": "Points à retenir",
+    "li1": "Vous n'êtes pas obligé de commencer à recevoir vos pensions de retraite du Régime de pensions du Canada (RPC) et de la Sécurité de la vieillesse (SV) au même âge.",
+    "li2": "Vous pouvez commencer à recevoir vos pensions publiques à différents moments.",
+    "li3": "Bien que le RPC et la SV prévoient tous deux des augmentations pour report du début de votre pension, ils n'offrent pas le même taux d'augmentation.",
+    "li4": "Pour les personnes âgées de 65 à 70 ans, le RPC prévoit un taux d'augmentation de la pension de retraite pour chaque mois de report par rapport à la pension de la SV. Si l'on attend jusqu'à l'âge de 70 ans, la pension de retraite mensuelle du RPC peut plus que doubler par rapport à un départ à 60 ans.",
+    "li5": "De nombreux éléments doivent être pris en compte pour déterminer l'âge auquel vous commencerez à recevoir vos pensions publiques.",
+    "li6": "Vous pouvez prendre votre décision en fonction du montant des paiements mensuels, du montant total que vous percevrez au cours de votre vie ou de votre capacité à utiliser l'argent pour répondre à des besoins ou des désirs immédiats.",
+    "li7": "Debuter votre pension à 60 ans pourrait signifier laisser l'argent de la pension publique sur la table. En fait, sur la base des montants moyens des prestations, cette décision pourrait coûter 100.000 à la fin de la vie.",
+    "li8": "Votre pension continuera d'augmenter pour tenir compte de l'inflation.",
+    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> Si vous avez droit à la pension de la Sécurité de la vieillesse (SV) et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Les personnes qui sont eligible au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour en faire la demande. Vous ne pouvez pas recevoir le SRG si vous reportez le versement de votre pension de la SV."
   },
   "learn-more": {
     "cpp": {
-      "description": "(FR) Check here for the most up-to-date details on the maximum monthly payment amounts for CPP and how to find out what your monthly payments might be.",
-      "header": "(FR) CPP Retirement pension: How much you could receive",
+      "description": "Vous trouverez ici les informations les plus récentes sur les montants maximaux des versements mensuels du RPC et sur la façon de connaître le montant de vos versements mensuels.",
+      "header": "Pension de retraite du RPC : Montant que vous pourriez recevoir",
       "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/montant-prestation.html"
     },
     "deciding-when-to-take-your-pensions": {
-      "description": "(FR) You can choose when to start your old age benefits. Understand what to consider in making that decision.",
-      "header": "(FR) Deciding when to collect public pensions"
+      "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer.",
+      "header": "Décider quand recevoir sa pension publique"
     },
     "header": "En savoir plus",
     "oas": {
-      "description": "(FR) Check here for the most up-to-date details on the maximum monthly payment amounts for OAS and how to find out what your monthly payments might be.",
-      "header": "(FR) Old Age Security: How much you could receive",
+      "description": "Vous trouverez ici les informations les plus récentes sur les montants maximaux des paiements mensuels de la SV et sur la manière de connaître le montant de vos paiements mensuels.",
+      "header": "Montant des paiements de la Sécurité de la vieillesse",
       "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html"
     },
     "rules-of-thumb-for-public-pensions": {
-      "description": "(FR) Pension tips based on your personal situation.",
-      "header": "(FR) Rules of thumb for public pensions"
+      "description": "Jetez un coup d'œil sur ces conseils pour vous aider à choisir la date de début de vos pensions. Faites le choix adapté à votre situation particulière.",
+      "header": "Règles générales concernant les pensions publiques"
     }
   },
   "meta": {
@@ -99,72 +99,72 @@
   "monthly-amounts": {
     "a1": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
     "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html",
-    "heading": "(FR) Fred finds his public pension monthly amounts",
-    "p1": "(FR) Fred goes to <a1>My Service Canada Account</a1> to see his personal statement of contributions to the CPP. He gets his estimated CPP retirement pension at age 65.",
-    "p2": "(FR) For his expected OAS pension he goes to <a2>OAS benefits estimator</a2>."
+    "heading": "Fred trouve les montants mensuels de ses pensions publiques",
+    "p1": "Fred se rend sur <a1>Mon dossier Service Canada</a1> pour consulter son relevé personnel de contributions au RPC. Il reçoit sa pension de retraite estimée du RPC à l'âge de 65 ans.",
+    "p2": "Pour connaître le montant prévu de sa pension de la SV, il consulte <a2>l'Estimateur de prestations de la Sécurité de la vieillesse</a2>."
   },
   "oas": {
-    "heading": "(FR) Fred's OAS pension",
+    "heading": "Pension de la SV de Fred",
     "lifetime-pension": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Fred's OAS lifetime pension at age 86",
-        "caption": "(FR) Values presented on the image",
-        "header": ["(FR) Age when Fred starts taking his OAS pension", "(FR) Fred's lifetime OAS pension"],
+        "button-label": "Texte alternatif pour Pension de retraite à vie du RPC de Fred, à 86 ans",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
+        "header": ["Âge auquel Fred commence à toucher sa pension de la SV", "Pension à vie de la SV"],
         "rows": [
           {
-            "data": ["65", "$191,545"]
+            "data": ["65", "191\u00a0545\u00a0$"]
           },
           {
-            "data": ["67", "$198,258"]
+            "data": ["67", "198\u00a0258\u00a0$"]
           },
           {
-            "data": ["68", "$199,645"]
+            "data": ["68", "199\u00a0645\u00a0$"]
           },
           {
-            "data": ["70", "$198,477"]
+            "data": ["70", "198\u00a0477\u00a0$"]
           }
         ]
       },
-      "description": "(FR) The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
-      "p1": "(FR) The difference in monthly benefits from delaying the Old Age Security (OAS) pension is smaller than for the Canada Pension Plan (CPP) retirement pension. If Fred takes his OAS pension later, the difference in monthly payments is a few hundred dollars. Fred wants to explore his lifetime OAS pension to see the full picture.",
-      "p2": "(FR) By age 86, the lifetime OAS pension is higher, if Fred starts his OAS at age 68. Starting to collect it at age 67 is also an option."
+      "description": "Le graphique montre l'évolution des versements de la pension à vie de Fred en fonction de l'âge auquel il commence à bénéficier de la SV. À l'âge de 86 ans, la pension à vie de la SV est plus élevée si Fred commence sa SV à 68 ans. Il est également possible de commencer à toucher la pension à 67 ans.",
+      "p1": "La différence de prestations mensuelles résultant du report de la pension de la Sécurité de la vieillesse (SV) est plus faible que pour la pension de retraite du Régime de pensions du Canada (RPC). Si Fred prend sa pension de la SV plus tard, la différence dans les paiements mensuels est de quelques centaines de dollars. Fred veut explorer sa pension de SV à vie pour avoir une vue d'ensemble de la situation.",
+      "p2": "À l'âge de 86 ans, la pension à vie de la SV est plus élevée si Fred commence à toucher la SV à l'âge de 68 ans. Il est également possible de commencer à recevoir la pension à l'âge de 67 ans."
     },
     "monthly-pension": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Fred's OAS monthly pension",
-        "caption": "(FR) Values presented on the image",
-        "header": ["(FR) Age when Fred starts taking his OAS pension", "(FR) Fred's OAS monthly pension amount"],
+        "button-label": "Texte alternatif pour Pension mensuelle de la SV de Fred",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
+        "header": ["Âge auquel Fred commence à toucher sa pension de la SV", "Montant mensuel de la pension de la SV"],
         "rows": [
           {
-            "data": ["65", "$691"]
+            "data": ["65", "691\u00a0$"]
           },
           {
-            "data": ["67", "$791"]
+            "data": ["67", "791\u00a0$"]
           },
           {
-            "data": ["68", "$840"]
+            "data": ["68", "840\u00a0$"]
           },
           {
-            "data": ["70", "$940"]
+            "data": ["70", "940\u00a0$"]
           }
         ]
       },
-      "description": "(FR) The chart shows changes in Fred's OAS pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount.",
-      "p": "(FR) If OAS pension is delayed from age 65 to 68, the difference is around $150 per month."
+      "description": "Le graphique montre l'évolution des versements de la pension à vie de la SV de Fred en fonction de l'âge auquel il commence à recevoir sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent chaque mois. Il peut commencer à recevoir sa pension de la SV à 65 ans pour le montant le plus faible, ou à 70 ans pour le montant le plus élevé. Si la pension de la SV est reportée de 65 à 68 ans, la différence est d'environ 150 dollars par mois.",
+      "p": "Si la pension de la SV est reportée de 65 à 68 ans, la différence est d'environ 150 dollars par mois."
     },
-    "p1": "(FR) Fred looks at the amount of his lifetime OAS pensions. He decides it's better to start his OAS pension at age 68 to collect the most money. Starting at age 67 is also good since the difference isn't much to him, and he won't need to wait another year to start.",
-    "p2": "(FR) Fred decides to apply for his OAS pension at age 68, and not to wait until age 70. The monthly OAS pension will add to his income and will help him delay CPP until age 70. Adding to this, Fred is planning to use his private retirement savings and work part-time at a rideshare company."
+    "p1": "Fred examine le montant de ses pensions à vie de la SV. Il décide qu'il est préférable de commencer sa SV à 68 ans pour recevoir le plus d'argent possible. Commencer à 67 ans est également une bonne chose car la différence n'est pas très importante pour lui et il n'aura pas besoin d'attendre un an de plus pour commencer.",
+    "p2": "Fred décide de demander sa pension de la SV à l'âge de 68 ans et de ne pas attendre l'âge de 70 ans. La pension mensuelle de la SV augmentera ses revenus et l'aidera à reporter l'entrée en vigueur de sa pension du RPC jusqu'à l'âge de 70 ans. En outre, Fred prévoit d'utiliser son épargne-retraite privée et de travailler à temps partiel dans une entreprise de covoiturage."
   },
   "overview": {
     "a1": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
     "a2": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
-    "heading": "(FR) Overview",
-    "p1": "(FR) Fred has always lived in Canada and has worked for 40 years as a truck driver. He is turning 60 this year and received a letter from Service Canada. This letter says he is now eligible to apply for his CPP retirement pension. Fred must decide if he wants to start collecting his CPP retirement pension early or wait.",
-    "p2": "(FR) Fred knows that his longevity is important to think about for when to start his public pensions. He is in good health and decides to plan his finances until age 86 or older.",
-    "p3": "(FR) At age 65, Fred's CPP retirement pension amount will be $1,300 a month. Since Fred has lived in Canada his whole life, he will be eligible for a full OAS pension. Because of the money he plans to withdraw from his RRSP and income sources, Fred is not considered low income. He would not qualify for the Guaranteed Income Supplement (GIS). Fred also needs to consider when he will start the OAS pension.",
-    "p4": "(FR) He would like to think about his finances first to make sure he will live a comfortable retirement.",
+    "heading": "Aperçu",
+    "p1": "Fred a toujours vécu au Canada et a travaillé pendant 40 ans comme chauffeur de camion. Il va avoir 60 ans cette année et a reçu une lettre de Service Canada. Cette lettre indique qu'il peut désormais demander sa pension de retraite du RPC. Fred doit décider s'il veut commencer à toucher sa pension de retraite du RPC de manière anticipée ou attendre.",
+    "p2": "Fred sait qu'il est important de tenir compte de son espérance de viepour déterminer le moment où il commencera à recevoir ses pensions publiques. Il est en bonne santé et décide de planifier ses finances jusqu'à l'âge de 86 ans ou plus.",
+    "p3": "À l'âge de 65 ans, le montant de la pension de retraite du RPC de Fred sera de 1\u00a0300\u00a0$ par mois. Comme Fred a vécu au Canada toute sa vie, il aura droit à une pension complète de la SV. En raison de l'argent qu'il compte retirer de son REER et d'autres sources de revenu, Fred n'est pas considéré comme ayant un faible revenu. Il ne serait pas éligible au Supplément de revenu garanti (SRG)",
+    "p4": "Fred doit également réfléchir à la date à laquelle il commencera à recevoir la pension de la SV. Il souhaite d'abord réfléchir à sa situation financière afin de s'assurer une retraite à l'aise.",
     "p5": "(FR) After thinking it through, Fred decides to delay his OAS pension until age 68 and delay his CPP retirement pension until age 70. Let's see how he came to this decision!",
-    "smart-tip": "(FR) <strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live until age 86-88 and need to plan for least another 20 years</a1>. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
+    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> l'espérance de vie est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leurs économies. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent s'attendre à <a1>vivre jusqu'à l'âge de 86-88 ans et doivent prévoir au moins 20 ans de plus</a1>. En fait, il y a <a2>environ 50 % de chances que</a2> les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à l'âge de 90 ans. Il est bon d'avoir un plan financier pour ces années de vie."
   },
-  "values-heading": "(FR) Values"
+  "values-heading": "Valeurs"
 }
