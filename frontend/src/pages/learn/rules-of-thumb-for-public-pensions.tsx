@@ -79,16 +79,25 @@ const RulesOfThumbForPublicPensions: FC = () => {
             {
               primary: t('key-takeaways.li5'),
               secondary: t('key-takeaways.li6'),
+              a1: t('key-takeaways.li6-a1'),
             },
             {
               primary: t('key-takeaways.li7'),
             },
-          ].map(({ primary, secondary }) => (
+          ].map(({ primary, secondary, a1 }) => (
             <ListItem key={primary} className="border-b">
               <ListItemText
                 primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={secondary}
+                secondary={
+                  <Trans
+                    ns="learn/deciding-when-to-start-your-public-pensions"
+                    i18nKey={secondary}
+                    components={{ a1: <MuiLink href={a1} />}}
+                  >
+                    {secondary}
+                  </Trans>
+                }
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
