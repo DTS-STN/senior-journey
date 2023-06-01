@@ -17,7 +17,7 @@ const adobeAnalyticsConfigured = process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_
 const devmodeEnabled = process.env.NODE_ENV !== 'production'
 
 // see https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html
-const defaultAdobeAnalyticsDomains = ['*.demdex.net', 'assets.adobedtm.com', 'cm.everesttech.net', 'code.jquery.com']
+const defaultAdobeAnalyticsDomains = ['*.demdex.net', 'assets.adobedtm.com', 'canada.sc.omtrdc.net', 'cm.everesttech.net', 'code.jquery.com']
 
 /**
  * A function that returns a string of Adobe Analytics domains.
