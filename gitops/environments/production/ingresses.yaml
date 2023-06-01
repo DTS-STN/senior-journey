@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: retraite-retirement.prod-dp-internal.dts-stn.com
+    - host: retraite-retirement.service.canada.ca
       http:
         paths:
           - path: /
