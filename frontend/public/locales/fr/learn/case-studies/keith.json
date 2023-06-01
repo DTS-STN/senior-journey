@@ -22,16 +22,36 @@
         ],
         "rows": [
           {
-            "data": ["Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.", "640\u00a0$", "325\u00a0$", "965\u00a0$"]
+            "data": [
+              "Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.",
+              "640\u00a0$",
+              "325\u00a0$",
+              "965\u00a0$"
+            ]
           },
           {
-            "data": ["Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.", "640\u00a0$", "132\u00a0$", "772\u00a0$"]
+            "data": [
+              "Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.",
+              "640\u00a0$",
+              "132\u00a0$",
+              "772\u00a0$"
+            ]
           },
           {
-            "data": ["Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.", "1\u00a0000\u00a0$", "193\u00a0$", "1\u00a0193\u00a0$"]
+            "data": [
+              "Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.",
+              "1\u00a0000\u00a0$",
+              "193\u00a0$",
+              "1\u00a0193\u00a0$"
+            ]
           },
           {
-            "data": ["Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70.", "1\u00a0420\u00a0$", "-", "1\u00a0420\u00a0$"]
+            "data": [
+              "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70.",
+              "1\u00a0420\u00a0$",
+              "-",
+              "1\u00a0420\u00a0$"
+            ]
           }
         ]
       },
@@ -86,7 +106,7 @@
         "header": ["Les choix que Keith envisage", "Montant à vie de la pension de retraite du RPC à l'âge de 90 ans"],
         "rows": [
           {
-            "data": ["Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.", "323\u00a0455\u00a0$"]            
+            "data": ["Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.", "323\u00a0455\u00a0$"]
           },
           {
             "data": ["Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.", "272\u00a0854\u00a0$"]
@@ -185,7 +205,7 @@
     "gis-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
     "heading": "Pension de vieillesse de Keith",
     "low-income-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
-    "p1": "Le revenu de Keith ne lui permettrait pas d' être éligible au <a1>Supplément de revenu garanti</a1> (SRG), car il continuera à travailler jusqu'à l'âge de 70 ans avec un bon salaire. Le SRG est destiné aux personnes à <a2>faible revenu</a2>.",
+    "p1": "Le revenu de Keith ne lui permettrait pas d'être éligible au <a1>Supplément de revenu garanti</a1> (SRG), car il continuera à travailler jusqu'à l'âge de 70 ans avec un bon salaire. Le SRG est destiné aux personnes à <a2>faible revenu</a2>.",
     "p2": "Keith choisit de reporter le versement de la pension de la Sécurité de la vieillesse (SV) jusqu'à l'âge de 70 ans afin de l'augmenter de façon permanente de 36 %. Cette pension plus élevée l'aidera à mieux vivre sa retraite lorsqu'il cessera de travailler à l'âge de 70 ans.",
     "p3": "Pour en savoir plus sur les éléments à prendre en compte lorsque vous choisissez l'âge auquel vous souhaitez faire débuter votre pension de la SV, lisez <a3>Fred décide quand prendre ses pensions publiques</a3>."
   },

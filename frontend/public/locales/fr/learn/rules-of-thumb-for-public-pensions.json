@@ -45,7 +45,7 @@
       "header": "Prendre la décision de quand commencer à recevoir des pensions publiques"
     },
     "going-from-work-to-retirement": {
-      "description": "Vous pouvez choisir différentes manière d' effectuer une transition du monde du travail a celui de la retraite. Prendre sa retraite du monde du travail et commencer a recevoir ses pensions publiques sont deux choses différentes.",
+      "description": "Vous pouvez choisir différentes manière d'effectuer une transition du monde du travail a celui de la retraite. Prendre sa retraite du monde du travail et commencer a recevoir ses pensions publiques sont deux choses différentes.",
       "header": "Transition du monde du travail à la retraite"
     },
     "header": "En savoir plus",
@@ -59,7 +59,7 @@
     }
   },
   "meta": {
-    "description": "Jetez un coup d' œil sur ces conseils pour vous aider a prendre la décision de quand commencer à recevoir vos pensions.  Faite le choix adapter à votre situation."
+    "description": "Jetez un coup d'œil sur ces conseils pour vous aider a prendre la décision de quand commencer à recevoir vos pensions.  Faite le choix adapter à votre situation."
   },
   "oas": {
     "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
@@ -73,8 +73,8 @@
     "li5": "votre revenu à la retraite vous convient;",
     "li6": "vous prévoyez continuer à travailler pendant quelques années;",
     "li7": "vous croyez que vous vivrez plus longtemps que la moyenne de la population canadienne.",
-    "p1": "Vous pouvez commencer a recevoir votre SV a a l' age de 65 ans ou vous pouvez choisir de la reporter a l'âge de 70 ans.",
-    "smart-tip-p1": "<strong>Conseil Judicieux\u00a0:</strong> L' exemption des gains du SRG aide les gens à conserver une plus grande partie de leurs paiements du SRG tout en travaillant. Si vous êtes employé ou travailleur indépendant, il offre une exemption complète jusqu'à concurrence de 5.000 $ de revenus annuels. Il prévoit également une exemption de 50 % sur les prochains 10.000 $ de revenus. Cela signifie que les personnes à faible revenu qui bénéficient du SRG et qui travaillent peuvent conserver une plus grande partie de leurs prestations.",
+    "p1": "Vous pouvez commencer a recevoir votre SV a a l'age de 65 ans ou vous pouvez choisir de la reporter a l'âge de 70 ans.",
+    "smart-tip-p1": "<strong>Conseil Judicieux\u00a0:</strong> L'exemption des gains du SRG aide les gens à conserver une plus grande partie de leurs paiements du SRG tout en travaillant. Si vous êtes employé ou travailleur indépendant, il offre une exemption complète jusqu'à concurrence de 5.000 $ de revenus annuels. Il prévoit également une exemption de 50 % sur les prochains 10.000 $ de revenus. Cela signifie que les personnes à faible revenu qui bénéficient du SRG et qui travaillent peuvent conserver une plus grande partie de leurs prestations.",
     "smart-tip-p2": "En savoir plus sur le <a2>SRG</a2>.",
     "sub-heading-one": "Voici des facteurs à prendre en considération si vous décidez de recevoir une pension anticipée de la SV\u00a0:",
     "sub-heading-two": "Voici des facteurs à prendre en considération si vous décidez de différer votre pension de la SV\u00a0:"
