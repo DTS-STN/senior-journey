@@ -61,10 +61,10 @@
         "id": 61,
         "links": [
           {
-            "linkEn": "https://catalogue.servicecanada.gc.ca/apps/EForms/pdf/en/ISP-3550A.pdf",
-            "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-3550A.pdf",
-            "textEn": "Reference Guide: Application for the Old Age Security Pension and the Guaranteed Income Supplement",
-            "textFr": "Guide de référence\u00a0: Demande de pension de la Sécurité de la vieillesse et de Supplément de revenu garanti"
+            "linkEn": "https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP3550A",
+            "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/Detail.html?Form=ISP3550A",
+            "textEn": "Reference Guide for the Old Age Security Pension and the Guaranteed Income Supplement",
+            "textFr": "Guide de référence pour la pension de la Sécurité de la vieillesse et de Supplément de revenu garanti"
           }
         ],
         "tags": [
@@ -128,7 +128,7 @@
           },
           {
             "linkEn": "https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1901",
-            "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1901.pdf",
+            "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/Detail.html?Form=ISP1901",
             "textEn": "CPP Credit Split form (ISP1901)",
             "textFr": "Formulaire de division des crédits de RPC (ISP1901)"
           }
@@ -404,7 +404,7 @@
           },
           {
             "linkEn": "https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1640",
-            "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/CallForm.html?Lang=fr&PDF=ISP-1640.pdf",
+            "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/Detail.html?Form=ISP1640",
             "textEn": "Child-rearing provision form (ISP1640)",
             "textFr": "Demande concernant la clause pour élever des enfants (ISP1640)"
           }
@@ -680,7 +680,7 @@
         "links": [
           {
             "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
-            "linkFr": "https://srv138.services.gc.ca/daf/s/53c2d7b5-4f5e-4d37-b1a2-14b11f9b9f6a?goctemplateculture=fr-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefits Finder",
             "textFr": "Chercheur de prestations"
           }
@@ -844,7 +844,7 @@
           {
             "linkEn": "https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP1603OAS",
             "linkFr": "https://catalogue.servicecanada.gc.ca/content/EForms/fr/Detail.html?Form=ISP1603OAS",
-            "textEn": "Consent to communicate information to an Authorized Person",
+            "textEn": "Consent to communicate Information to an Authorized Person",
             "textFr": "Consentement à communiquer des renseignements à une personne autorisée"
           },
           {
@@ -1999,13 +1999,13 @@
         "links": [
           {
             "linkEn": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-disability-benefit/after-apply.html",
-            "linkFr": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-disability-benefit/after-apply.html",
+            "linkFr": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-invalidite-rpc/apres-demande.html",
             "textEn": "Canada Pension Plan disability benefits: After you apply",
             "textFr": "Prestations d'invalidité du Régime de pensions du Canada\u00a0: Une fois votre demande présentée"
           },
           {
-            "linkEn": "https://benefitsfinder.services.gc.ca/hm",
-            "linkFr": "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+            "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefit finder",
             "textFr": "Chercheur de prestations"
           }
@@ -2267,7 +2267,7 @@
         "links": [
           {
             "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
-            "linkFr": "https://srv138.services.gc.ca/daf/s/53c2d7b5-4f5e-4d37-b1a2-14b11f9b9f6a?goctemplateculture=fr-caa",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefits Finder",
             "textFr": "Chercheur de prestations"
           }
@@ -2290,8 +2290,8 @@
         "id": 56,
         "links": [
           {
-            "linkEn": "https://benefitsfinder.services.gc.ca/hm",
-            "linkFr": "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+            "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefit finder",
             "textFr": "Chercheur de prestations"
           }
@@ -2402,8 +2402,8 @@
         "id": 92,
         "links": [
           {
-            "linkEn": "https://benefitsfinder.services.gc.ca/hm",
-            "linkFr": "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+            "linkEn": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=en-ca",
+            "linkFr": "https://benefitsfinder.services.gc.ca/hm?goctemplateculture=fr-ca",
             "textEn": "Benefit finder",
             "textFr": "Chercheur de prestations"
           }
