@@ -7,7 +7,10 @@
     "accessibility": {
       "button-label": "Texte alternatif Le montant mensuel de votre pension de retraite du RPC pourrait augmenter énormement, si vous reportez",
       "caption": "Valeurs présentées sur l'image\u00a0:",
-      "header": ["Âge pour commencer à recevoir votre pension de la SV", "Montant mensuel de la pension de retraite du RPC"],
+      "header": [
+        "Âge pour commencer à recevoir votre pension de la SV",
+        "Montant mensuel de la pension de retraite du RPC"
+      ],
       "rows": [
         {
           "data": ["60", "800\u00a0$"]
@@ -19,28 +22,28 @@
           "data": ["62", "980\u00a0$"]
         },
         {
-          "data": ["63", "1,070\u00a0$"]
+          "data": ["63", "1\u00a0070\u00a0$"]
         },
         {
-          "data": ["64", "1,160\u00a0$"]
+          "data": ["64", "1\u00a0160\u00a0$"]
         },
         {
-          "data": ["65", "1,250\u00a0$"]
+          "data": ["65", "1\u00a0250\u00a0$"]
         },
         {
-          "data": ["66", "1,355\u00a0$"]
+          "data": ["66", "1\u00a0355\u00a0$"]
         },
         {
-          "data": ["67", "1,460\u00a0$"]
+          "data": ["67", "1\u00a0460\u00a0$"]
         },
         {
-          "data": ["68", "1,565\u00a0$"]
+          "data": ["68", "1\u00a0565\u00a0$"]
         },
         {
-          "data": ["69", "1,670\u00a0$"]
+          "data": ["69", "1\u00a0670\u00a0$"]
         },
         {
-          "data": ["70", "1,775\u00a0$"]
+          "data": ["70", "1\u00a0775\u00a0$"]
         }
       ]
     },
@@ -59,8 +62,8 @@
     "heading": "Points à retenir",
     "highest-monthly-amount": "Le montant mensuel le plus élevé que vous pouvez commencer à recevoir de vos pensions publiques est à l'âge de 70 ans.",
     "if-you-qualify": "Si vous êtes admissible à la pension de la SV et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Les personnes qui ont droit au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour présenter leur demande. Vous ne pouvez pas toucher le SRG si vous reportez le versement de votre pension de la SV.",
-    "if-you-qualify-a1":"https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
-    "if-you-qualify-a2":"https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "if-you-qualify-a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
+    "if-you-qualify-a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
     "more-than-double": "Vous pourriez plus que doubler le montant mensuel de votre RPC si vous reportiez votre pension de retraite de 60 à 70 ans.",
     "no-benefit": "Il n'y a aucun avantage à attendre l'âge de 70 ans pour commencer à recevoir les deux pensins.",
     "payment-increase": "Votre paiement mensuel augmentera chaque mois que vous reportez, jusqu'à l'âge de 70 ans",
@@ -119,7 +122,7 @@
             "data": ["69", "890\u00a0$", "89\u00a0$", "979\u00a0$"]
           },
           {
-            "data": ["70", "940\u00a0$", "94\u00a0$", "1,034\u00a0$"]
+            "data": ["70", "940\u00a0$", "94\u00a0$", "1\u00a0034\u00a0$"]
           }
         ]
       },
@@ -170,12 +173,12 @@
       "header-two": "Paiement mensuel maximum (avril à juin 2023)",
       "row-one": {
         "column-one-value": "Pension de la Sécurité de la vieillesse 65 à 74 ans",
-        "column-three-value": "Inférieur à 129 757\u00a0$",
+        "column-three-value": "Inférieur à 129\u00a0757\u00a0$",
         "column-two-value": "691\u00a0$"
       },
       "row-two": {
         "column-one-value": "Pension de la Sécurité de la vieillesse 75 ans et plus",
-        "column-three-value": "Inférieur à 129 757\u00a0$",
+        "column-three-value": "Inférieur à 129\u00a0757\u00a0$",
         "column-two-value": "760\u00a0$"
       },
       "title": "Montants des paiements de la Sécurité de la vieillesse - avril à juin 2023"
