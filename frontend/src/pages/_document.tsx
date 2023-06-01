@@ -16,13 +16,8 @@ const log = getLogger('_document.tsx')
 const adobeAnalyticsConfigured = process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC !== undefined
 const devmodeEnabled = process.env.NODE_ENV !== 'production'
 
+// see https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html
 const defaultAdobeAnalyticsDomains = ['*.demdex.net', 'assets.adobedtm.com', 'cm.everesttech.net', 'code.jquery.com']
-
-const defaultAdobeAnalyticsScriptHashes = [
-  `'sha256-SbwS/K+ycdnXmsF91EJ1RaerocvjlmnkzhkrH0lsfmo='`,
-  `'sha256-S5S8B4yXwfmeO1318DmBVjwCSPs19f1v2irN9r+ztfI='`,
-  `'sha256-2Lg07GDbbANg7c3a33S33icql5kUlBCWXV1SKxoE71w='`,
-]
 
 /**
  * A function that returns a string of Adobe Analytics domains.
@@ -38,22 +33,6 @@ function getAdobeAnalyticsDomains() {
     ? JSON.parse(process.env.ADOBE_ANALYTICS_CSP_DOMAINS)
     : defaultAdobeAnalyticsDomains
   return adobeAnalyticsDomains.join(' ')
-}
-
-/**
- * A function that returns a string of Adobe Analytics script hashes.
- *
- * The function checks if the environment variable ADOBE_ANALYTICS_CSP_SCRIPT_HASHES exists and if it does, it parses it
- * as a JSON string and returns a string of Adobe Analytics script hashes. If it doesn’t exist, it returns the default
- * Adobe Analytics script hashes.
- *
- * @returns {string} A string of Adobe Analytics script hashes.
- */
-function getAdobeAnalyticsScriptHashes() {
-  const adobeAnalyticsScriptHashes = process.env.ADOBE_ANALYTICS_CSP_SCRIPT_HASHES
-    ? JSON.parse(process.env.ADOBE_ANALYTICS_CSP_SCRIPT_HASHES)
-    : defaultAdobeAnalyticsScriptHashes
-  return adobeAnalyticsScriptHashes.join(' ')
 }
 
 /**
@@ -96,18 +75,19 @@ function generateCsp(nonce: string): string {
     log.debug('Adobe Analytics configuration detected, adding necessary Content-Security-Policy directives')
 
     const adobeAnalyticsDomains = getAdobeAnalyticsDomains()
-    const adobeAnalyticsSriptHashes = getAdobeAnalyticsScriptHashes()
 
     contentSecurityPolicy['connect-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['frame-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['img-src']?.push(adobeAnalyticsDomains)
     contentSecurityPolicy['script-src']?.push(adobeAnalyticsDomains)
+    contentSecurityPolicy['script-src']?.push("'unsafe-inline'") // 😠💩😠 required by AA 😠💩😠
     contentSecurityPolicy['style-src']?.push(adobeAnalyticsDomains)
-    contentSecurityPolicy['script-src']?.push(adobeAnalyticsSriptHashes)
   }
 
-  log.debug(`Adding 'nonce-${nonce}' directives to Content-Security-Policy`)
-  contentSecurityPolicy['script-src']?.push(`'nonce-${nonce}'`)
+  if (!adobeAnalyticsConfigured) {
+    log.debug(`Adobe Analytics configuration not detected, adding 'nonce-${nonce}' directives to Content-Security-Policy`)
+    contentSecurityPolicy['script-src']?.push(`'nonce-${nonce}'`)
+  }
 
   // transform the contentSecurityPolicy object into a correctly-formatted string
   return Object.entries(contentSecurityPolicy)
@@ -116,36 +96,29 @@ function generateCsp(nonce: string): string {
 }
 
 interface MyDocumentProps extends DocumentProps {
-  emotionStyleTags: JSX.Element[]
+  emotionStyleTags: React.JSX.Element[]
   nonce: string
 }
 
 export default function MyDocument({ emotionStyleTags, locale, nonce }: MyDocumentProps) {
   const lang = (locale?.toLowerCase() ?? 'default') === 'default' ? 'en' : locale
+
   return (
     <Html lang={lang}>
       <Head nonce={nonce}>
         <meta charSet="utf-8" />
         <link rel="icon" href="/assets/favicon.ico" />
-        {/** Google font **/}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap" />
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
       <body>
         <Main />
         <NextScript nonce={nonce} />
-        {adobeAnalyticsConfigured && (
-          <Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />
-        )}
-        {adobeAnalyticsConfigured && (
-          <Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />
-        )}
+        {adobeAnalyticsConfigured && <Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />}
+        {adobeAnalyticsConfigured && <Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />}
       </body>
     </Html>
   )
