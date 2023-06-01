@@ -27,6 +27,7 @@
     "previous": "Question précédente",
     "progress": "Question {{currentStep}} de {{totalSteps}}",
     "submit": "Soumettre",
+    "submitting": "Soumet...",
     "title": "Questionnaire sur la préparation à la retraite"
   },
   "questions": {
