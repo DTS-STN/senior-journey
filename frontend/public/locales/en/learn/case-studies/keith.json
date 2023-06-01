@@ -148,7 +148,8 @@
   "description-heading": "Description",
   "header": "Keith collects his public pensions while working",
   "key-takeaways": {
-    "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html",
+    "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/benefit-amount.html",
+    "a2": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
     "heading": "Key takeaways",
     "li1": "Choosing to start your public pensions and retiring from work are two different things.",
     "li2": "You can delay both the Old Age Security (OAS) and Canada Pension Plan (CPP) and start them at different ages.",
@@ -159,7 +160,7 @@
     "li7": "This means that PRBs earned later in life are worth more.",
     "li8": "You can get more lifetime CPP income by taking CPP retirement pension at age 65 and contributing to PRBs until age 70.",
     "li9": "If you delay your CPP retirement pension until age 70, you will get the largest monthly amount.",
-    "smart-tip": "<strong>Smart tip:</strong>  If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the <a1>Guaranteed Income Supplement (GIS)</a1>. You cannot collect the GIS if you are delaying your OAS pension. People who qualify for the GIS should not wait to apply past age 65."
+    "smart-tip": "<strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the <a2>Guaranteed Income Supplement (GIS)</a2>. You cannot collect the GIS if you are delaying your OAS pension. People who qualify for the GIS should not wait to apply past age 65."
   },
   "learn-more": {
     "cpp-prb": {

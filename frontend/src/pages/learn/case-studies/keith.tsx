@@ -108,7 +108,7 @@ const Keith: FC = () => {
           <Trans
             ns="learn/case-studies/keith"
             i18nKey="key-takeaways.smart-tip"
-            components={{ a1: <MuiLink href={t('key-takeaways.a1')} /> }}
+            components={{ a1: <MuiLink href={t('key-takeaways.a1')} />, a2: <MuiLink href={t('key-takeaways.a2')} /> }}
           />
         </AlertCard>
 
