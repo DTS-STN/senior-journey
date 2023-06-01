@@ -5,84 +5,87 @@
   "cpp-pension": {
     "a1": "https://www.rrq.gouv.qc.ca/fr/programmes/regime_rentes/Pages/regime_rentes.aspx",
     "accessibility": {
-      "button-label": "(FR) Text alternative for Your monthly CPP could increase significantly if you delay",
-      "caption": "(FR) Values presented on the image",
-      "header": ["(FR) Age you start your CPP retirement pension", "(FR) Monthly CPP retirement pension amount"],
+      "button-label": "Texte alternatif Le montant mensuel de votre pension de retraite du RPC pourrait augmenter énormement, si vous reportez",
+      "caption": "Valeurs présentées sur l'image\u00a0:",
+      "header": ["Âge pour commencer à recevoir votre pension de la SV", "Montant mensuel de la pension de retraite du RPC"],
       "rows": [
         {
-          "data": ["60", "$800"]
+          "data": ["60", "800 $"]
         },
         {
-          "data": ["61", "$890"]
+          "data": ["61", "890 $"]
         },
         {
-          "data": ["62", "$980"]
+          "data": ["62", "980 $"]
         },
         {
-          "data": ["63", "$1,070"]
+          "data": ["63", "1,070 $"]
         },
         {
-          "data": ["64", "$1,160"]
+          "data": ["64", "1,160 $"]
         },
         {
-          "data": ["65", "$1,250"]
+          "data": ["65", "1,250 $"]
         },
         {
-          "data": ["66", "$1,355"]
+          "data": ["66", "1,355 $"]
         },
         {
-          "data": ["67", "$1,460"]
+          "data": ["67", "1,460 $"]
         },
         {
-          "data": ["68", "$1,565"]
+          "data": ["68", "1,565 $"]
         },
         {
-          "data": ["69", "$1,670"]
+          "data": ["69", "1,670 $"]
         },
         {
-          "data": ["70", "$1,775"]
+          "data": ["70", "1,775 $"]
         }
       ]
     },
-    "description": "(FR) The chart shows changes in monthly amounts for your CPP retirement pension based on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect. Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
-    "disclaimer": "(FR) <strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
-    "heading": "(FR) CPP retirement pension",
-    "p1": "(FR) No matter how often you changed jobs, by working in Canada, you contributed to the Canada Pension Plan (CPP) or the <a1>Québec Pension Plan (QPP)</a1>. The amount of your CPP retirement pension depends on how much and for how long you have contributed to the plan. The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.",
-    "p2": "(FR) Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
-    "p3": "(FR) Read <a2>Fred decides when to start his public pensions</a2> to see what guides his choices.",
-    "smart-tip": "(FR) <strong>Smart tip:</strong> Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost 100,000 by the end of one's life. Every month you delay your pension, increases your monthly payment. If you delay your CPP retirement pension from age 60 to 70, you could more than double your monthly amount. Your pension will change to reflect future inflation."
+    "description": "Le tableau montre l'évolution des montants mensuels de votre pension de retraite du RPC en fonction de l'âge auquel vous commencez à la recevoir. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous percevrez d'argent. Votre pension de retraite du RPC pourrait plus que doubler si vous commencez à la recevoir à 70 ans plutôt qu'à 60 ans. Le tableau illustre l'augmentation de la pension en fonction de l'âge et utilise un montant de pension illustratif.",
+    "disclaimer": "<strong>Avertissement\u00a0:</strong> Ce site Web vise à vous donner des conseils sur le bon moment pour recevoir vos pensions publique. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
+    "heading": "Pension de retraite du RPC",
+    "p1": "Quel que soit le nombre de fois où vous avez changé d'emploi, en travaillant au Canada, vous avez contribuer au Régime de pensions du Canada (RPC) ou au <a1>Régime de rentes du Québec (RRQ).</a1> Le montant de votre pension de retraite du RPC dépend du montant et de la durée de vos contributions. Le RPC vous permet de choisir la date de début de votre pension de retraite, et chaque mois que vous reportez augmente votre montant mensuel. Le montant mensuel le plus élevé que vous puissiez recevoir est atteint à l'âge de 70 ans, après quoi il n'y a plus d'avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.",
+    "p2": "Débuter votre pension à 60 ans pourrait signifier laisser l'argent de la pension publique sur la table. En fait, sur la base des montants moyens des prestations, cette décision pourrait coûter 100 000 $ à la fin de la vie.",
+    "p3": "Votre pension de retraite du RPC pourrait plus que doubler si elle était versée à partir de 70 ans, au lieu de 60 ans. Le tableau illustre l'augmentation de la pension avec l'âge et utilise un montant de pension illustratif.",
+    "p4": "Lisez <a2>Fred décide quand prendre ses pensions publiques</a2> pour savoir ce qui guide ses choix.",
+    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> le Canadien moyen qui prend sa retraite à 60 ans pourrait perdre   100 000 dollars de revenu de retraite. Chaque mois où vous reportez le versement de votre pension, vous augmentez votre versement mensuel. Si vous reportez votre pension de retraite du RPC de 60 à 70 ans, vous pourriez plus que doubler votre montant mensuel. Votre pension sera modifiée pour tenir compte de l'inflation future."
   },
-  "description-heading": "(FR) Description",
-  "header": "Prendre la décision de quand commencer à recevoir des pensions publiques",
+  "description-heading": "Description",
+  "header": "Decider quand recevoir sa pension publique",
   "key-takeaways": {
-    "common-law": "(FR) If you're part of a couple, you should probably make these decisions with your spouse or common-law partner.",
-    "heading": "(FR) Key takeaways",
-    "highest-monthly-amount": "(FR) The highest monthly amount you can start collecting from your public pensions is at age 70.",
-    "if-you-qualify": "(FR) If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
-    "more-than-double": "(FR) You could more than double your monthly CPP amount if you delay your retirement pension from age 60 to 70.",
-    "no-benefit": "(FR) There's no benefit to wait after age 70 to start collecting both pensions.",
-    "payment-increase": "(FR) Your monthly payment will increase every month you delay, up to age 70.",
-    "pensions-adjusted": "(FR) Your pensions will be adjusted for inflation in the future.",
-    "people-who-qualify": "(FR) People who qualify for the Guaranteed Income Supplement (GIS) should not wait to apply past age 65.",
-    "planning-retirement": "(FR) When planning your retirement, you should consider a few factors: your health, your lifestyle, your plans in retirement, and your finances.",
-    "start-collecting": "(FR) You can start collecting your Canada Pension Plan (CPP) retirement pension as early as age 60 with a permanent reduction. You can start receiving your Old Age Security (OAS) pension as early as age 65."
+    "common-law": "Si vous êtes en couple, vous devriez probablement prendre ces décisions avec votre époux ou votre conjoint de fait.",
+    "heading": "Points à retenir",
+    "highest-monthly-amount": "Le montant mensuel le plus élevé que vous pouvez commencer à recevoir de vos pensions publiques est à l'âge de 70 ans.",
+    "if-you-qualify": "Si vous êtes admissible à la pension de la SV et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Les personnes qui ont droit au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour présenter leur demande. Vous ne pouvez pas toucher le SRG si vous reportez le versement de votre pension de la SV.",
+    "if-you-qualify-a1":"https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
+    "if-you-qualify-a2":"https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "more-than-double": "Vous pourriez plus que doubler le montant mensuel de votre RPC si vous reportiez votre pension de retraite de 60 à 70 ans.",
+    "no-benefit": "Il n'y a aucun avantage à attendre l'âge de 70 ans pour commencer à recevoir les deux pensins.",
+    "payment-increase": "Votre paiement mensuel augmentera chaque mois que vous reportez, jusqu'à l'âge de 70 ans",
+    "pensions-adjusted": "À l'avenir, vos pensions seront ajustées à l'inflation.",
+    "people-who-qualify": "Les personnes qui sont admissible au Supplément de revenu garanti (SRG) ne doivent pas attendre d'avoir atteint l'âge de 65 ans pour présenter leur demande.",
+    "planning-retirement": "Lorsque vous planifiez votre retraite, vous devez tenir compte de plusieurs facteurs\u00a0: votre santé, votre mode de vie, vos projets de retraite et vos finances.",
+    "start-collecting": "Vous pouvez commencer à recevoir votre pension de retraite du Régime de pensions du Canada (RPC) dès l'âge de 60 ans avec une réduction permanente. Vous pouvez commencer à recevoir votre pension de la Sécurité de la vieillesse (SV) dès l'âge de 65 ans."
   },
   "learn-more": {
     "bonnie-case-study": {
-      "description": "(FR) Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension.",
-      "header": "Bonnie retarde la réduction des épargnes dont elle a besoin"
+      "description": "Bonnie reporte le versement de ses pension publiques et aura besoin de moins d'épargnes pour prendre sa retraite.",
+      "header": "Bonnie reporte sa pension pour réduire les épargnes dont elle a besoin"
     },
     "fred-case-study": {
-      "description": "(FR) Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him.",
+      "description": "Fred choisi de prendre ses prestation du régime de pension du Canada et sa sécurité de vieillesse de manière à maximise ses paiements.",
       "header": "Fred décide quand prendre sa pension publique"
     },
-    "going-from-work-to-retirement": {
-      "description": "(FR) Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
-      "header": "Transition du monde du travail à la retraite"
+    "rules-of-thumb-for-public-pensions": {
+      "description": "Jetez un coup d'œil sur ces conseils pour vous aider à choisir la date de début de vos pensions. Faites le choix adapté à votre situation particulière.",
+      "header": "Règles générales concernant les pensions publiques"
     },
     "header": "En savoir plus",
     "main-sources-of-retirment-income": {
-      "description": "(FR) See the different types of retirement income you could have. Look at your current income sources and find potential gaps.",
+      "description": "Renseignez-vous sur les différentes sources de revenus de retraite dont vous pourriez bénéficier. Examiner vos sources de revenus et identifier les écarts potentiel.",
       "header": "Principales sources de revenus de retraite"
     }
   },
@@ -92,104 +95,104 @@
   "old-age-security": {
     "auto-increase": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Your OAS pension will automatically increase by 10% at age 75",
-        "caption": "(FR) Values presented on the image",
+        "button-label": "Texte alternatif pour Votre pension de la SV va automatiquement augmentée de 10 % à l'âge de 75 ans",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
         "header": [
-          "(FR) Age you start your OAS pension",
-          "(FR) Monthly OAS pension",
-          "(FR) 10% top-up at age 75",
-          "(FR) Monthly OAS total at age 75"
+          "Âge pour commencer à recevoir votre pension de la SV",
+          "Paiement mensuel de la pension de la SV",
+          "Augmentation de 10 % à l'âge de 75 ans",
+          "Paiement mensuel à l'âge de 75 ans"
         ],
         "rows": [
           {
-            "data": ["65", "$691", "$69", "$760"]
+            "data": ["65", "691 $", "69 $", "760 $"]
           },
           {
-            "data": ["66", "$741", "$74", "$815"]
+            "data": ["66", "741 $", "74 $", "815 $"]
           },
           {
-            "data": ["67", "$791", "$79", "$870"]
+            "data": ["67", "791 $", "79 $", "870 $"]
           },
           {
-            "data": ["68", "$840", "$84", "$924"]
+            "data": ["68", "840 $", "84 $", "924 $"]
           },
           {
-            "data": ["69", "$890", "$89", "$979"]
+            "data": ["69", "890 $", "89 $", "979 $"]
           },
           {
-            "data": ["70", "$940", "$94", "$1,034"]
+            "data": ["70", "940 $", "94 $", "1,034 $"]
           }
         ]
       },
-      "description": "(FR) The chart shows monthly amounts for OAS pension at age 75, based on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect. You can begin your OAS pension at age 65 for the smallest amount or at age 70 for the largest amount. If you choose to delay and collect a higher pension, the 10% automatic increase at age 75 will give you more money.",
-      "p1": "(FR) Whenever you chose to start your OAS pension, it will automatically increase by 10% when you turn 75.",
-      "p2": "(FR) If you choose to delay and collect a higher pension, the 10% automatic increase at age 75 will give you more money."
+      "description": "Le tableau indique les montants mensuels de la pension de la SV à l'âge de 75 ans, en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous recevrez d'argent. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Si vous choisissez de retarder le versement de votre pension et de recevoir une pension plus élevée, l'augmentation automatique de 10 % à l'âge de 75 ans vous permettra d'obtenir plus d'argent.",
+      "p1": "Quel que soit le moment où vous avez choisi de commencer à recevoir votre pension de la SV, celle-ci augmentera automatiquement de 10 % lorsque vous atteindrez l'âge de 75 ans.",
+      "p2": "Si vous décidez de retarder votre départ et de recevoir une pension plus élevée, l'augmentation automatique de 10 % à l'âge de 75 ans vous permettra d'obtenir plus d'argent."
     },
-    "content-one": "(FR) You can start collecting your Old Age Security (OAS) pension as early as age 65. Each month you delay increases that amount by 0.6%. For every year that you delay your OAS pension, your pension increases by 7.2%. At age 70, your monthly amount will be 36% higher than at age 65. After age 70, there is no advantage in delaying your first payment. In fact, you risk losing payments.",
-    "content-two": "(FR) If you delay, think about how you'll support yourself while waiting for your higher OAS pension. ",
-    "heading": "(FR) Old Age Security (OAS) Pension",
+    "content-one": "Vous pouvez commencer à recevoir votre pension de la Sécurité de la vieillesse (SV) dès l'âge de 65 ans. Chaque mois que vous reportez augmente ce montant de 0,6 %. Pour chaque année reporter, votre pension de la SV augmente de 7,2 %. À l'âge de 70 ans, votre montant mensuel sera 36 % plus élevé qu'à l'âge de 65 ans. Si vous repoussez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée. Après 70 ans, il n'y a aucun avantage à reporter votre premier versement.",
+    "content-two": "Si vous reportez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée.",
+    "heading": "Sécurité de la vieillesse",
     "high-income": {
       "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html",
-      "heading": "(FR) If you have high income in retirement",
-      "p": "(FR) If your annual income is over a certain amount after age 65, you must repay part or all your OAS pension. This is called the <a1>Old Age Security (OAS) pension recovery tax</a1>."
+      "heading": "Si vous disposez d'un revenu élevé à la retraite",
+      "p": "Si votre revenu annuel dépasse un certain montant après l'âge de 65 ans, vous devez rembourser une partie ou la totalité de votre pension de la SV. C'est ce qu'on appelle <a1>l'impôt de récupération de la pension de la Sécurité de la vieillesse (SV).</a1>"
     },
     "oas-delay": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for You can collect a higher monthly OAS pension, if you delay",
-        "caption": "(FR) Values presented on the image",
-        "header": ["(FR) Age you start collecting your OAS pension", "(FR) Monthly OAS pension"],
+        "button-label": "Texte alternatif pour Vous pouvez recevoir un montant plus élevé, si vous reportez votre pension de la SV",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
+        "header": ["Âge pour commencer à recevoir votre pension de la SV", "Paiement mensuel de la pension de la SV"],
         "rows": [
           {
-            "data": ["65", "$691"]
+            "data": ["65", "691 $"]
           },
           {
-            "data": ["66", "$741"]
+            "data": ["66", "741 $"]
           },
           {
-            "data": ["67", "$791"]
+            "data": ["67", "791 $"]
           },
           {
-            "data": ["68", "$840"]
+            "data": ["68", "840 $"]
           },
           {
-            "data": ["69", "$890"]
+            "data": ["69", "890 $"]
           },
           {
-            "data": ["70", "$940"]
+            "data": ["70", "940 $"]
           }
         ]
       },
-      "description": "(FR) The chart shows changes in monthly OAS pension payments depending on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect for life. You can begin your OAS pension at age 65, or delay it until age 70 for the largest amount. Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023.",
-      "p": "(FR) Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023."
+      "description": "Le graphique montre l'évolution des versements mensuels de la pension de la SV en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous percevrez d'argent à vie. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Votre pension de la SV augmentera de 36 % si vous la commencez à 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension avec l'âge et utilise le montant de la pension de la SV pour juin 2023.",
+      "p": "Votre pension de la SV augmentera de 36 % si vous commencez à la recevoir à l'âge de 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension en fonction de l'âge et utilise le montant de la pension de la SV pour juin 2023."
     },
     "table-one": {
-      "header-one": "(FR) Benefit type",
-      "header-three": "(FR) To receive the OAS, your total income in 2021 must be",
-      "header-two": "(FR) Maximum monthly amount (April to June 2023)",
+      "header-one": "Type de prestation",
+      "header-three": "Pour recevoir la SV, votre revenu net en 2021 doit être",
+      "header-two": "Paiement mensuel maximum (avril à juin 2023)",
       "row-one": {
-        "column-one-value": "(FR) Old Age Security pension 65 at 74",
-        "column-three-value": "(FR) Less than $129,757",
-        "column-two-value": "$691"
+        "column-one-value": "Pension de la Sécurité de la vieillesse 65 à 74 ans",
+        "column-three-value": "Inférieur à 129 757 $",
+        "column-two-value": "691 $"
       },
       "row-two": {
-        "column-one-value": "(FR) Old Age Security pension 75 and over",
-        "column-three-value": "(FR) Less than $129,757",
-        "column-two-value": "$760"
+        "column-one-value": "Pension de la Sécurité de la vieillesse 75 ans et plus",
+        "column-three-value": "Inférieur à 129 757 $",
+        "column-two-value": "760 $"
       },
-      "title": "(FR) Old Age Security (OAS) pension amounts - April to June 2023"
+      "title": "Montants des paiements de la Sécurité de la vieillesse - avril à juin 2023"
     },
     "we-pay": {
-      "heading": "(FR) We pay OAS automatically for many, but some clients still need to apply",
-      "p": "(FR) In some cases, Service Canada will automatically enrol you to start your Old Age Security (OAS) pension at age 65. The month after turning 64 years old, you may receive a letter from Service Canada. The letter will say that you have been selected for automatic enrolment. If this letter comes to you and you want to start your OAS pension later, you will need to let Service Canada know. Steps on how to delay your pension will be on your letter. There's no automatic enrolment into the OAS pension at age 70."
+      "heading": "Nous versons automatiquement la SV à de nombreuses personnes, mais certains clients doivent encore faire une demande.",
+      "p": "Dans certains cas, Service Canada vous inscrira automatiquement pour que votre pension de la Sécurité de la vieillesse (SV) prenne effet à l'âge de 65 ans. Le mois suivant votre 64e anniversaire, vous recevrez peut-être une lettre de Service Canada. Cette lettre vous indiquera que vous pourriez avoir droit à la pension de la SV et que vous avez été sélectionné pour l'inscription automatique. Si vous recevez cette lettre et que vous souhaitez commencer à recevoir votre pension de la SV plus tard, vous devrez en informer Service Canada. La démarche à suivre pour reporter le versement de votre pension sera indiquée sur votre lettre. Il n'y a pas d'inscription automatique à la pension de la SV à l'âge de 70 ans."
     }
   },
   "overview": {
     "a1": "https://www.rrq.gouv.qc.ca/fr/programmes/regime_rentes/Pages/regime_rentes.aspx",
-    "heading": "(FR) Overview",
-    "p1": "(FR) The Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement pensions replace a part of your income in retirement. They contribute to a safe base that can build a secure and comfortable retirement. If you've worked or lived in Quebec, you may qualify for the Québec Pension Plan (QPP) retirement pension instead of the CPP. These programs are very similar, but not the same.",
-    "p2": "(FR) To learn more, visit the <a1>QPP website</a1>.",
-    "p3": "(FR) The OAS pension and CPP retirement pension give flexibility for when to start collecting. This decision will permanently set your pension amount, which is paid to you for life. Your public pensions change periodically to reflect inflation. Your pension amount will only go up, and never down even if the cost of living goes down.",
-    "p4": "(FR) The information below aims to help you decide at what age to start your public pensions."
+    "heading": "Aperçu",
+    "p1": "La pension de la Sécurité de la vieillesse (SV) et la pension de retraite du Régime de pensions du Canada (RPC) remplacent une partie de votre revenu à la retraite. Elles contribuent à constituer une base sûre qui vous permettra de vivre une retraite sûre et à l'aise. Si vous avez travaillé ou vécu au Québec, vous pouvez avoir droit à la pension de retraite du Régime de rentes du Québec (RRQ) au lieu du RPC. Ces programmes sont très similaires, mais pas identiques.",
+    "p2": "Pour en savoir plus, visitez le <a1>site web du RRQ</a1>.",
+    "p3": "La pension de la SV et la pension de retraite du RPC offrent une flexibilité quant au moment où commencer à recevoir. Cette décision fixera définitivement le montant de votre rente, qui vous est versée à vie. Vos pensions publiques changent périodiquement pour refléter l'inflation. Le montant de votre pension ne fera qu'augmenter et ne diminuera jamais, même si le coût de la vie diminue.",
+    "p4": "Les informations ci-dessous ont pour but de vous aider à décider à quel âge vous allez commencer à recevoir votre pension publique."
   },
-  "values-heading": "(FR) Values"
+  "values-heading": "Valeurs"
 }

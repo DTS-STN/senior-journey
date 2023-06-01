@@ -36,9 +36,9 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         secondary: t('learn-more.main-sources-of-retirment-income.description'),
       },
       {
-        href: '/learn/going-from-work-to-retirement',
-        primary: t('learn-more.going-from-work-to-retirement.header'),
-        secondary: t('learn-more.going-from-work-to-retirement.description'),
+        href: '/learn/rules-of-thumb-for-public-pensions',
+        primary: t('learn-more.rules-of-thumb-for-public-pensions.header'),
+        secondary: t('learn-more.rules-of-thumb-for-public-pensions.description'),
       },
       {
         href: '/learn/learn/case-studies/fred',
@@ -80,31 +80,39 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <List disablePadding>
           {[
             {
-              primary: t('key-takeaways.highest-monthly-amount'),
-              secondary: t('key-takeaways.start-collecting'),
+              primary: 'key-takeaways.highest-monthly-amount',
+              secondary: 'key-takeaways.start-collecting',
             },
             {
-              primary: t('key-takeaways.payment-increase'),
-              secondary: t('key-takeaways.no-benefit'),
+              primary: 'key-takeaways.payment-increase',
+              secondary: 'key-takeaways.no-benefit',
             },
             {
-              primary: t('key-takeaways.people-who-qualify'),
-              secondary: t('key-takeaways.if-you-qualify'),
+              primary: 'key-takeaways.people-who-qualify',
+              secondary: 'key-takeaways.if-you-qualify',
             },
             {
-              primary: t('key-takeaways.more-than-double'),
-              secondary: t('key-takeaways.pensions-adjusted'),
+              primary: 'key-takeaways.more-than-double',
+              secondary: 'key-takeaways.pensions-adjusted',
             },
             {
-              primary: t('key-takeaways.planning-retirement'),
-              secondary: t('key-takeaways.common-law'),
+              primary: 'key-takeaways.planning-retirement',
+              secondary: 'key-takeaways.common-law',
             },
           ].map(({ primary, secondary }) => (
             <ListItem key={primary} className="border-b">
               <ListItemText
-                primary={primary}
+                primary={t(primary)}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={secondary}
+                secondary={
+                  <Trans
+                    ns="learn/deciding-when-to-start-your-public-pensions"
+                    i18nKey={secondary}
+                    components={{ a1: <MuiLink href={t(secondary+'-a1')} />, a2: <MuiLink href={t(secondary+'-a2')} />}}
+                  >
+                    {t(secondary)}
+                  </Trans>
+                }
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
@@ -226,6 +234,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
             components={{ a1: <MuiLink href={t('cpp-pension.a1')} /> }}
           />
         </p>
+        <p>{t('cpp-pension.p2')}</p>
 
         <AlertCard type="tip">
           <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.smart-tip" />
@@ -237,7 +246,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           height={519}
           className="mt-2 w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp-pension.p2')}</p>
+        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp-pension.p3')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp-pension.accessibility', { returnObjects: true })}
           description={t('cpp-pension.description')}
@@ -248,7 +257,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <p>
           <Trans
             ns="learn/deciding-when-to-start-your-public-pensions"
-            i18nKey="cpp-pension.p3"
+            i18nKey="cpp-pension.p4"
             components={{ a2: <Link className="underline" href="/learn/case-studies/fred" /> }}
           />
         </p>

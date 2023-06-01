@@ -48,8 +48,9 @@
     "disclaimer": "<strong>Disclaimer:</strong> This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
     "heading": "CPP retirement pension",
     "p1": "No matter how often you changed jobs, by working in Canada, you contributed to the Canada Pension Plan (CPP) or the <a1>Québec Pension Plan (QPP)</a1>. The amount of your CPP retirement pension depends on how much and for how long you have contributed to the plan. The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount. The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting. If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.",
-    "p2": "Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
-    "p3": "Read <a2>Fred decides when to start his public pensions</a2> to see what guides his choices.",
+    "p2": "(EN) Débuter votre pension à 60 ans pourrait signifier laisser l'argent de la pension publique sur la table. En fait, sur la base des montants moyens des prestations, cette décision pourrait coûter 100 000 $ à la fin de la vie.",
+    "p3": "Your CPP retirement pension could more than double if started at age 70, instead of 60. The chart is an illustration of the pension increase with age and uses an illustrative pension amount.",
+    "p4": "Read <a2>Fred decides when to start his public pensions</a2> to see what guides his choices.",
     "smart-tip": "<strong>Smart tip:</strong> Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost 100,000 by the end of one's life. Every month you delay your pension, increases your monthly payment. If you delay your CPP retirement pension from age 60 to 70, you could more than double your monthly amount. Your pension will change to reflect future inflation."
   },
   "description-heading": "Description",
@@ -57,8 +58,9 @@
   "key-takeaways": {
     "common-law": "If you're part of a couple, you should probably make these decisions with your spouse or common-law partner.",
     "heading": "Key takeaways",
-    "highest-monthly-amount": "You can start collecting your Canada Pension Plan (CPP) retirement pension as early as age 60 with a permanent reduction. You can start receiving your Old Age Security (OAS) pension as early as age 65.",
-    "if-you-qualify": "If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "highest-monthly-amount": "The highest monthly amount you can start collecting from your public pensions is at age 70.",
+    "if-you-qualify": "If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "if-you-qualify-a1":"https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
     "more-than-double": "You could more than double your monthly CPP amount if you delay your retirement pension from age 60 to 70.",
     "no-benefit": "There's no benefit to wait after age 70 to start collecting both pensions.",
     "payment-increase": "Your monthly payment will increase every month you delay, up to age 70.",
@@ -76,9 +78,9 @@
       "description": "Fred decides when to start his OAS pension and CPP retirement pension to take the largest amount available to him.",
       "header": "Fred decides when to start his public pensions"
     },
-    "going-from-work-to-retirement": {
+    "rules-of-thumb-for-public-pensions": {
       "description": "Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
-      "header": "Going from work to retirement"
+      "header": "Rules of thumb for your public pensions"
     },
     "header": "Learn More",
     "main-sources-of-retirment-income": {
