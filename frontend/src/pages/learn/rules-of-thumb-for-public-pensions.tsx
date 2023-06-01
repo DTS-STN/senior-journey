@@ -78,26 +78,23 @@ const RulesOfThumbForPublicPensions: FC = () => {
             },
             {
               primary: t('key-takeaways.li5'),
-              secondary: t('key-takeaways.li6'),
-              a1: t('key-takeaways.li6-a1'),
+              secondary: (
+                <Trans
+                  ns="learn/rules-of-thumb-for-public-pensions"
+                  i18nKey="key-takeaways.li6"
+                  components={{ a1: <MuiLink href={t('key-takeaways.li6-a1')} /> }}
+                />
+              ),
             },
             {
               primary: t('key-takeaways.li7'),
             },
-          ].map(({ primary, secondary, a1 }) => (
+          ].map(({ primary, secondary }) => (
             <ListItem key={primary} className="border-b">
               <ListItemText
                 primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={
-                  <Trans
-                    ns="learn/deciding-when-to-start-your-public-pensions"
-                    i18nKey={secondary}
-                    components={{ a1: <MuiLink href={a1} />}}
-                  >
-                    {secondary}
-                  </Trans>
-                }
+                secondary={secondary}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
@@ -146,9 +143,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
         <AlertCard type="tip" className="mt-5">
           <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="cpp.smart-tip" />
         </AlertCard>
-        <h3 className="h3">
-          {t('cpp.sub-heading-two')}
-        </h3>
+        <h3 className="h3">{t('cpp.sub-heading-two')}</h3>
         <ul className="ml-7 list-disc">
           <li>{t('cpp.li9')}</li>
           <li>{t('cpp.li10')}</li>
