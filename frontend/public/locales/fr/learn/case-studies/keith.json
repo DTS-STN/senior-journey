@@ -3,177 +3,178 @@
     "learn": "Apprendre"
   },
   "conclusion": {
-    "disclaimer": "(FR) <strong>Disclaimer:</strong> These stories are only simplified examples to illustrate the various factors that should be considered when deciding when to start collecting your public pensions, and potential outcomes. They do not include the effects of taxation or investment growth. These stories are not intended to provide financial advice, and we strongly encourage you to seek help from a financial advisor as you plan your retirement.",
-    "heading": "(FR) Conclusion",
-    "p1": "(FR) Keith is working later in retirement and plans to stay on the job until age 70. He might not need the Canada Pension Plan (CPP) retirement pension income immediately and does not qualify for the Guaranteed Income Supplement (GIS). He wants to take the largest pensions from the Old Age Security (OAS) and CPP retirement pensions available to him. He would like to know how he can use Post-retirement benefits (PRBs), if he chooses to take CPP before he retires from his job.",
-    "p2": "(FR) Keith decided to start CPP at age 65 and continue contributing to age 70, receiving 5 PRBs. This choice will give a high monthly pension that will be topped up annually with five additional PRB. And it will provide the largest lifetime pension by age 87 and 90.",
-    "p3": "(FR) Keith also decides to delay his OAS pension until age 70. The higher monthly benefit will help when he retires from work."
+    "disclaimer": "<strong>Clause de non-responsabilité\u00a0:</strong> Ces histoires ne sont que des exemples simplifiés destinés à illustrer les différents facteurs à prendre en compte pour décider du moment où vous commencerez à percevoir vos pensions publiques, ainsi que les résultats potentiels. Ils ne tiennent pas compte des effets de la fiscalité ou de la croissance des investissements. Ils n'ont pas pour but de fournir des conseils financiers et nous vous encourageons vivement à demander l'aide d'un conseiller financier lorsque vous planifiez votre retraite.",
+    "heading": "Conclusion",
+    "p1": "Keith travaille plus tard à la retraite et prévoit de conserver son emploi jusqu'à l'âge de 70 ans. Il n'aura peut-être pas besoin immédiatement de la pension de retraite du Régime de pensions du Canada (RPC) et n'est pas éligible au Supplément de revenu garanti (SRG). Il souhaite toucher les pensions les plus élevées de la Sécurité de la vieillesse (SV) et du Régime de pensions du Canada (RPC) dont il dispose. Il aimerait savoir comment il peut utiliser les prestations d'après-retraite (PAR), s'il choisit de prendre le RPC avant de prendre sa retraite.",
+    "p2": "Keith a décidé de commencer à contribuer au RPC à l'âge de 65 ans et de continuer à contribuer jusqu'à l'âge de 70 ans, en recevant 5 PAR. Ce choix lui permettra d'obtenir une pension mensuelle élevée qui sera complétée chaque année par cinq PAR supplémentaires. De plus, il permettra de toucher la pension à vie la plus élevée à l'âge de 87 et 90 ans.",
+    "p3": "Keith décide également de reporter le versement de sa pension de la SV jusqu'à l'âge de 70 ans. La prestation mensuelle plus élevée lui sera utile lorsqu'il prendra sa retraite."
   },
   "cpp": {
     "cpp-choices": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Compare Keith's monthly CPP retirement pension at age 70 for different choices",
-        "caption": "(FR) Values presented on the image:",
+        "button-label": "Texte alternatif pour Comparez la pension de retraite mensuelle du RPC de Keith à 70 ans, pour avoir des différents choix",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
         "header": [
-          "(FR) Choices Keith is considering",
-          "(FR) Base CPP retirement pension based on starting age",
-          "(FR) Amount for added PRBs",
-          "(FR) Total monthly amount"
+          "Les choix que Keith envisage",
+          "Pension de retraite du RPC de base en fonction de l'âge de départ",
+          "Montant ajouté pour la PAR",
+          "Total du montant mensuel"
         ],
         "rows": [
           {
-            "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$640", "$325", "$965"]
+            "data": ["Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.", "640\u00a0$", "325\u00a0$", "965\u00a0$"]
           },
           {
-            "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$640", "$132", "$772"]
+            "data": ["Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.", "640\u00a0$", "132\u00a0$", "772\u00a0$"]
           },
           {
-            "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$1,000", "$193", "$1,193"]
+            "data": ["Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.", "1\u00a0000\u00a0$", "193\u00a0$", "1\u00a0193\u00a0$"]
           },
           {
-            "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$1,420", "-", "$1,420"]
+            "data": ["Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70.", "1\u00a0420\u00a0$", "-", "1\u00a0420\u00a0$"]
           }
         ]
       },
       "choices": {
-        "li1": "(FR) Choice 1: Take CPP at 60, contribute to 70.",
-        "li2": "(FR) Choice 2: Take CPP at 60, contribute to 65.",
-        "li3": "(FR) Choice 3: Take CPP at 65, contribute to 70.",
-        "li4": "(FR) Choice 4: Contribute to 70, take CPP at 70."
+        "li1": "Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.",
+        "li2": "Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.",
+        "li3": "Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.",
+        "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
       },
-      "description": "(FR) This chart shows four choices Keith has for his monthly retirement income. He has two potential sources of income between his CPP retirement pension and his Post-retirement benefits. For all choices, the CPP retirement pension makes up the most of his monthly income. Taking his CPP at age 70 is the largest amount of monthly income. Taking his CPP at age 65 and continuing to work for 5 years to receive 5 Post-retirement benefits is the smallest amount of monthly income.",
-      "heading": "(FR) What are the monthly CPP retirement pensions for each choice?",
-      "p1": "(FR) The monthly Canada Pension Plan (CPP) retirement pension will be paid at the time when Keith applies to collect it. However, the PRBs will accumulate slowly during the years when Keith continues to work and contribute. Each year of additional contributions to the plan will result in an additional small top-up to the existing pension and benefits next year. The graph compares the pension at age 70 for different choice. And the amounts are quite different.",
-      "p2": "(FR) Choices 3 and 4 are about Keith taking his CPP retirement pension later in life, at age 65 and 70, and receiving higher monthly pension amounts. Keith would like to choose his strategy between these two options. For both options, Keith knows he will continue paying contributions until age 70."
+      "description": "Ce tableau montre les quatre choix qui s'offrent à Keith pour son revenu mensuel de retraite. Il dispose de deux sources potentielles de revenu, soit sa pension de retraite du RPC et ses Prestations d'après-retraite. Pour tous les choix, la pension de retraite du RPC représente la plus grande partie de son revenu mensuel. Le fait de recevoir la pension du RPC à l'âge de 70 ans représente le revenu mensuel le plus élevé. Le fait de recevoir la pension du RPC à 65 ans et de continuer à travailler pendant 5 ans pour recevoir les prestations de retraite est le revenu mensuel le moins élevé.",
+      "heading": "Pour chaque choix, quelle est la pension de retraite mensuelle du RPC\u00a0?",
+      "p1": "La pension de retraite mensuelle du Régime de pensions du Canada (RPC) sera versée au moment où Keith demandera à la recevoir. Cependant, les PAR s'accumuleront lentement au cours des années où Keith continuera à travailler et à contribuer. Chaque année de contribution supplémentaire au régime se traduira par un petit complément à la pension et aux prestations existantes l'année suivante. Le graphique compare la pension à l'âge de 70 ans pour différents choix. Les montants sont très différents.",
+      "p2": "Les choix 3 et 4 permettent à Keith de recevoir sa pension de retraite du RPC plus tard dans sa vie, à 65 et 70 ans, et de recevoir des montants mensuels plus élevés. Keith aimerait choisir sa stratégie entre ces deux options. Pour les deux options, Keith sait qu'il continuera à cotiser jusqu'à 70 ans."
     },
     "keith-pension-87": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Keith's lifetime CPP retirement pension at age 87",
-        "caption": "(FR) Values presented on the image:",
-        "header": ["(FR) Choices Keith is considering", "(FR) Lifetime CPP retirement pension amount at age 87"],
+        "button-label": "Texte alternatif pour Pension de retraite à vie du RPC de Keith, à 87 ans",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
+        "header": ["Les choix que Keith envisage", "Montant à vie de la pension de retraite du RPC à l'âge de 87 ans"],
         "rows": [
           {
-            "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$288,726"]
+            "data": ["Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.", "288\u00a0726\u00a0$"]
           },
           {
-            "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$245,076"]
+            "data": ["Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.", "245\u00a0076\u00a0$"]
           },
           {
-            "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$307,659"]
+            "data": ["Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.", "307\u00a0659\u00a0$"]
           },
           {
-            "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$289,681"]
+            "data": ["Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70.", "289\u00a0681\u00a0$"]
           }
         ]
       },
       "choices": {
-        "li1": "(FR) Choice 1: Take CPP at 60, contribute to 70.",
-        "li2": "(FR) Choice 2: Take CPP at 60, contribute to 65.",
-        "li3": "(FR) Choice 3: Take CPP at 65, contribute to 70.",
-        "li4": "(FR) Choice 4: Contribute to 70, take CPP at 70."
+        "li1": "Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.",
+        "li2": "Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.",
+        "li3": "Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.",
+        "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
       },
-      "description": "(FR) This chart shows the lifetime pension amount for 4 choices Keith is thinking about. It shows that by age 87, the choice of starting his CPP pension at age 65 and working until 70 would give Keith the most retirement income.",
-      "heading": "(FR) What will be Keith's pension by age 87?",
-      "li1": "(FR) Choice 3 was about Keith taking his Canada Pension Plan (CPP) retirement pension at age 65 and contributing to the plan until age 70. He will have his pension monthly income earlier in life and a higher lifetime pension.",
-      "li2": "(FR) Choice 4 was about Keith delaying his CPP retirement pension until age 70. It is also a good option since it gives the highest monthly pension and a high lifetime pension as well.",
-      "p1": "(FR) As Keith is still healthy and working, he should plan on living for another 22-25 years (age 87-90) or longer. He would like to choose between Choices 3 and 4.",
-      "p2": "(FR) Keith looks at taking his CPP retirement pension at age 60 and stopping his contributions at age 65. This choice has the lowest monthly and lifetime pensions."
+      "description": "Ce tableau montre le montant de la pension de retraite à vie du RPC pour quatre choix auxquels Keith réfléchit. Il montre que si Keith vit jusqu'à l'âge de 90 ans, le fait de commencer à toucher sa pension de retraite du RPC à 65 ans et de travailler jusqu'à 70 ans lui procurerait le revenu de retraite le plus élevé.",
+      "heading": "Quelle sera la pension de Keith à l'âge de 87 ans\u00a0?",
+      "li1": "Le choix 3 concerne Keith qui recevera sa pension de retraite du Régime de pensions du Canada (RPC) à l'âge de 65 ans et qui contribue au régime jusqu'à l'âge de 70 ans. Il recevra son revenu mensuel de retraite plus tôt dans sa vie et sa pension à vie sera plus élevée.",
+      "li2": "Le choix 4 consistait pour Keith à reporter sa pension de retraite du RPC jusqu'à l'âge de 70 ans. Il s'agit également d'une bonne option puisqu'elle permet d'obtenir la pension mensuelle la plus élevée ainsi qu'une pension à vie élevée.",
+      "p1": "Étant donné que Keith est encore en bonne santé et qu'il travaille, il devrait s'attendre à vivre encore 22-25 ans (87-90 ans) ou plus. Il aimerait choisir entre les options 3 et 4.",
+      "p2": "Keith envisage de recevoir sa pension de retraite du RPC à l'âge de 60 ans et de cesser de contribuer à l'âge de 65 ans. Ce choix lui permet de bénéficier des pensions mensuelles et à vie les plus basses."
     },
     "keith-pension-90": {
       "accessibility": {
-        "button-label": "(FR) Text alternative for Keith's lifetime CPP retirement pension at age 90",
-        "caption": "(FR) Values presented on the image:",
-        "header": ["(FR) Choices Keith is considering", "(FR) Lifetime CPP pension amount at age 90"],
+        "button-label": "Texte alternatif pour Pension de retraite à vie du RPC de Keith, à 90 ans",
+        "caption": "Valeurs présentées sur l'image\u00a0:",
+        "header": ["Les choix que Keith envisage", "Montant à vie de la pension de retraite du RPC à l'âge de 90 ans"],
         "rows": [
           {
-            "data": ["Choice 1: Take CPP at 60, contribute to 70.", "$323,455"]
+            "data": ["Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.", "323\u00a0455\u00a0$"]            
           },
           {
-            "data": ["Choice 2: Take CPP at 60, contribute to 65.", "$272,854"]
+            "data": ["Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.", "272\u00a0854\u00a0$"]
           },
           {
-            "data": ["Choice 3: Take CPP at 65, contribute to 70.", "$350,601"]
+            "data": ["Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.", "350\u00a0601\u00a0$"]
           },
           {
-            "data": ["Choice 4: Contribute to 70, take CPP at 70.", "$340,801"]
+            "data": ["Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70.", "340\u00a0801\u00a0$"]
           }
         ]
       },
       "choices": {
-        "li1": "(FR) Choice 1: Take CPP at 60, contribute to 70.",
-        "li2": "(FR) Choice 2: Take CPP at 60, contribute to 65.",
-        "li3": "(FR) Choice 3: Take CPP at 65, contribute to 70.",
-        "li4": "(FR) Choice 4: Contribute to 70, take CPP at 70."
+        "li1": "Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.",
+        "li2": "Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.",
+        "li3": "Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.",
+        "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
       },
-      "description": "(FR) This chart shows the lifetime CPP retirement pension amount for 4 choices Keith is thinking about. It shows that if Keith lives to age 90, starting his CPP retirement pension at age 65 and working until 70 would give him the most retirement income.",
-      "heading": "(FR) What will be Keith's pension by age 90?",
-      "p1": "(FR) Keith could live a longer life and that would change his lifetime pension.",
-      "p4": "(FR) Even at age 90, Choice 3 still has the highest lifetime pension. Keith decides that taking his CPP retirement pension at age 65 and contributing until 70 is his best option."
+      "description": "Ce tableau montre le montant de la pension à vie pour quatre choix auxquels Keith réfléchit. Il montre que si Keith vit jusqu'à 90 ans, c'est en commençant à recevoir sa pension du RPC à 65 ans et en travaillant jusqu'à 70 ans qu'il obtiendra le revenu de retraite le plus élevé.",
+      "heading": "Quelle sera la pension de Keith à l'âge de 90 ans\u00a0?",
+      "p1": "Keith pourrait vivre plus longtemps, ce qui modifierait sa pension à vie.",
+      "p4": "Même à l'âge de 90 ans, le choix 3 offre toujours la pension à vie la plus élevée. Keith décide qu'il est préférable de toucher sa pension du RPC à 65 ans et de contribuer jusqu'à 70 ans."
     },
     "prb": {
-      "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html",
-      "heading": "(FR) What is the PRB?",
-      "p1": "(FR) If you work while collecting your Canada Pension Plan (CPP) retirement pension, you can also collect <a1>CPP Post-Retirement Benefits (PRBs)</a1>. Each year that you work and contribute, you will collect a small top-up from an additional PRB that will be added to your CPP retirement pension and benefits. Each PRB is adjusted based on your age when you start receiving it. If you are younger than 65, that PRB will be reduced. If you're older than 65, a new PRB is worth more."
+      "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite/admissibilite.html",
+      "heading": "Qu'est-ce que le PAR\u00a0?",
+      "p1": "Si vous travaillez tout en recevant votre pension de retraite du Régime de pensions du Canada (RPC), vous pouvez aussi recevoir des <a1>prestations d'après-retraite (PAR) du RPC</a1>. Chaque année où vous travaillez et cotisez, vous toucherez un petit complément d'un PAR supplémentaire qui sera ajouté à votre pension de retraite et à vos prestations du RPC. Chaque PAR est ajusté en fonction de votre âge lorsque vous commencez à le recevoir. Si vous avez moins de 65 ans, ce PAR sera réduit. Si vous avez plus de 65 ans, un nouveau PAR vaut plus."
     },
     "prb-choices": {
-      "heading": "(FR) What are Keith's choices to combine his CPP retirement pension with PRBs?",
+      "heading": "Quels sont les choix qui s'offrent à Keith pour combiner sa pension de retraite du RPC avec des PAR\u00a0?",
       "list": {
-        "li1": "(FR) <strong>Choice 1:</strong> Take Canada Pension Plan (CPP) retirement pension at age 60 for the lowest monthly pension. Keith will continue working and contributing until age 70 and collect 10 Post-Retirement Benefits (PRBs).",
-        "li2": "(FR) <strong>Choice 2:</strong> Take CPP retirement pension at age 60 for the lowest monthly pension. Keith will continue working until age 70 but stops contributing at age 65 and collect just 5 PRBs.",
-        "li3": "(FR) <strong>Choice 3:</strong> Take CPP retirement pension at age 65 and continue contributing to the CPP until age 70. This will give Keith 5 PRBs.",
-        "li4": "(FR) <strong>Choice 4:</strong> Take CPP retirement at age 70 for the highest monthly pension, without PRBs."
+        "li1": "<strong>Choix 1\u00a0:</strong> Recevoir la pension de retraite du Régime de pensions du Canada (RPC) à l'âge de 60 ans obtenir une pension mensuelle moins élevée. Keith continuera à travailler et à contribuer jusqu'à l'âge de 70 ans et touchera 10 prestations Après retraite (PAR).",
+        "li2": "<strong>Choix 2\u00a0:</strong> Recevoir la pension de retraite du RPC à l'âge de 60 ans et obtenir la pension mensuelle moins élevée. Keith continuera à travailler jusqu'à l'âge de 70 ans, mais cessera de contribuer à l'âge de 65 ans et ne recevera que 5 PAR.",
+        "li3": "<strong>Choix 3\u00a0:</strong> Recevoir la pension de retraite du RPC à 65 ans et continuer à contribuer au RPC jusqu'à 70 ans. Keith obtiendra ainsi 5 PAR.",
+        "li4": "<strong>Choix 4\u00a0:</strong> Prendre la retraite du RPC à 70 ans pour bénéficier de la pension mensuelle la plus élevée, sans PAR."
       }
     },
     "what-else": {
-      "heading": "(FR) What else should Keith consider when choosing?",
+      "heading": "Quels sont les autres éléments dont Keith doit tenir compte lors de son choix\u00a0?",
       "list": {
-        "li1": "(FR) his monthly amount",
-        "li2": "(FR) the total amount he will collect over his lifetime"
+        "li1": "son montant mensuel",
+        "li2": "le montant total qu'il percevra au cours de sa vie"
       },
-      "p1": "(FR) When Keith is deciding when to start his public pensions, it is important he thinks about:",
-      "p2": "(FR) Before making his final decision, Keith wants to check one more thing. He wants to see how his lifetime pension will change if he starts at different ages.",
+      "p1": "Lorsque Keith décide quand il commencera à toucher ses pensions publiques, il est important qu'il y réfléchisse\u00a0:",
+      "p2": "Avant de prendre sa décision finale, Keith veut encore vérifier une chose. Il veut voir comment sa pension à vie évoluera s'il commence à la recevoir à des âges différents.",
       "smart-tip": {
-        "content": "(FR) <strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live until age 86-88</a1> and need to plan for at least another 20 years. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life.",
-        "link-one": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
-        "link-two": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32"
+        "content": "<strong>Conseil judicieux\u00a0:</strong> la longévité est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leur épargne. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent s'attendre à <a1>vivre jusqu'à l'âge de 86-88 ans</a1> et doivent prévoir au moins 20 ans de plus. En fait, il y a <a2>environ 50 % de chances</a2> que les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à l'âge de 90 ans. Il est bon d'avoir un plan financier pour ces années de vie.",
+        "link-one": "https://www.osfi-bsif.gc.ca/fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
+        "link-two": "https://www.osfi-bsif.gc.ca/fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32"
       }
     }
   },
   "cpp-oas": {
     "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html",
-    "heading": "(FR) How did Keith find his monthly CPP and OAS amounts?",
-    "p1": "(FR) Keith went to My Service Canada Account to see his personal statement of contributions. He saw what his estimated CPP retirement pension at age 65 would be.",
-    "p2": "(FR) For his expected OAS pension he went to <a1>OAS benefits estimator</a1>."
+    "heading": "Comment Keith a-t-il calculé ses montants mensuels de RPC et de SV\u00a0?",
+    "p1": "Keith s'est rendu dans Mon dossier Service Canada pour consulter son état personnel des cotisations. Il a vu le montant estimatif de sa pension de retraite du RPC à l'âge de 65 ans.",
+    "p2": "Pour connaître le montant prévu de sa pension de la SV, il a consulté <a1>l'Estimateur de prestations de la Sécurité de la vieillesse</a1>."
   },
-  "description-heading": "(FR) Description",
+  "description-heading": "Description",
   "header": "Keith combine son travail avec ses pensions publiques",
   "key-takeaways": {
-    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
-    "heading": "(FR) Key takeaways",
-    "li1": "(FR) Choosing to start your public pensions and retiring from work are two different things.",
-    "li2": "(FR) You can delay both the Old Age Security (OAS) and Canada Pension Plan (CPP) and start them at different ages.",
-    "li3": "(FR) You can start your CPP retirement pension and continue contributing to the plan up to age 70 and earn Post-Retirement Benefits (PRBs).",
-    "li4": "(FR) If you want or need your retirement pension earlier, the PRB could be an excellent way to increase your retirement income.",
-    "li5": "(FR) Each PRB gives a small boost that's payable for life and fully protected against inflation.",
-    "li6": "(FR) Like the retirement pension, PRB amounts increase based on the age you start taking them.",
-    "li7": "(FR) This means that PRBs earned later in life are worth more.",
-    "li8": "(FR) You can get more lifetime CPP income by taking CPP retirement pension at age 65 and contributing to PRBs until age 70.",
-    "li9": "(FR) If you delay your CPP retirement pension until age 70, you will get the largest monthly amount.",
-    "smart-tip": "(FR) <strong>Smart tip:</strong>  If you qualify for the Old Age Security (OAS) pension and have low income, you may also get the <a1>Guaranteed Income Supplement (GIS)</a1>. You cannot collect the GIS if you are delaying your OAS pension. People who qualify for the GIS should not wait to apply past age 65."
+    "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
+    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "heading": "Points à retenir",
+    "li1": "Choisir de percevoir sa pension publique et prendre sa retraite sont deux choses différentes.",
+    "li2": "Vous pouvez reporter le versement des prestations de la Sécurité de la vieillesse (SV) et du Régime de pensions du Canada (RPC) et les faire débuter à des âges différents.",
+    "li3": "Vous pouvez commencer a recevoir votre pension de retraite du RPC et continuer à cotiser au régime jusqu'à l'âge de 70 ans et toucher des prestations après-retraite (PAR).",
+    "li4": "Si vous souhaitez ou avez besoin de votre pension de retraite plus tôt, le PAR peut être un excellent moyen d'augmenter votre revenu de retraite.",
+    "li5": "Ils donnent une petite augmentation qui est payable à vie et entièrement protégé contre l'inflation.",
+    "li6": "Comme pour la pension de retraite, les montants de la PAR augmentent en fonction de l'âge auquel vous commencez à les percevoir.",
+    "li7": "Chaque PAR vous donne une légère augmentation, et les PAR obtenus plus tard dans la vie ont une valeur plus élevée.",
+    "li8": "Vous pouvez obtenir un revenu viager plus élevé du RPC en recevant votre pension de retraite du RPC à l'âge de 65 ans et en contribuant à des PAR jusqu'à l'âge de 70 ans.",
+    "li9": "Si vous reportez votre pension de retraite du RPC à l'âge de 70 ans, vous obtiendrez le montant mensuel le plus élevé.",
+    "smart-tip": "<strong>Conseil judicieux</strong>\u00a0: Si vous êtes éligible à la pension de la Sécurité de la vieillesse (SV) et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Vous ne pouvez pas toucher le SRG si vous reportez le versement de votre pension de la SV. Les personnes qui ont droit au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour en faire la demande."
   },
   "learn-more": {
     "cpp-prb": {
-      "description": "(FR) Check here for details about the CPP Post-Retirement Benefit, who is eligible for it, how much you could receive, and how to apply.",
-      "header": "(FR) Canada Pension Plan Post-Retirement Benefit (PRB): Overview",
+      "description": "Vous trouverez ici des informations sur la prestation post-retraite du RPC, sur les personnes qui y ont droit, sur le montant que vous pourriez recevoir et sur la façon de présenter une demande.",
+      "header": "Prestation après-retraite (PAR)",
       "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html"
     },
     "going-from-work-to-retirement": {
-      "description": "(FR) You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
-      "header": "Transition du monde du travail à la retraite"
+      "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer.",
+      "header": "Décider quand recevoir sa pension publique"
     },
     "header": "En savoir plus",
     "rules-of-thumb-for-public-pensions": {
-      "description": "(FR) Check out these tips to help you decide when to start your public pensions. Choose what is right for you.",
+      "description": "Jetez un coup d'œil sur ces conseils pour vous aider à choisir la date de début de vos pensions. Faites le choix adapté à votre situation particulière.",
       "header": "Règles générales concernant les pensions publiques"
     }
   },
@@ -182,15 +183,15 @@
   },
   "oas": {
     "gis-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
-    "heading": "(FR) Keith's OAS pension",
+    "heading": "Pension de vieillesse de Keith",
     "low-income-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
-    "p1": "(FR) Keith's income would not qualify him for the <a1>Guaranteed Income Supplement (GIS)</a1>, as he will continue to work up until age 70 with good salary. The GIS is for people with <a2>low income</a2>.",
-    "p2": "(FR) Keith chooses to delay the Old Age Security (OAS) pension until age 70 to permanently increase it by 36%. This higher pension will help him transition better into retirement when he stops working at age 70.",
-    "p3": "(FR) To learn more about what to consider when choosing the age you want to start your OAS pension, read <a3>Fred decides when to start his public pensions</a3>."
+    "p1": "Le revenu de Keith ne lui permettrait pas d' être éligible au <a1>Supplément de revenu garanti</a1> (SRG), car il continuera à travailler jusqu'à l'âge de 70 ans avec un bon salaire. Le SRG est destiné aux personnes à <a2>faible revenu</a2>.",
+    "p2": "Keith choisit de reporter le versement de la pension de la Sécurité de la vieillesse (SV) jusqu'à l'âge de 70 ans afin de l'augmenter de façon permanente de 36 %. Cette pension plus élevée l'aidera à mieux vivre sa retraite lorsqu'il cessera de travailler à l'âge de 70 ans.",
+    "p3": "Pour en savoir plus sur les éléments à prendre en compte lorsque vous choisissez l'âge auquel vous souhaitez faire débuter votre pension de la SV, lisez <a3>Fred décide quand prendre ses pensions publiques</a3>."
   },
   "overview": {
-    "heading": "(FR) Overview",
-    "p1": "(FR) Keith worked in construction all his life and just accepted a new site job at 60. Keith has some savings, but still plans to work until at least age 70. Keith wants to know what the best strategy for his Canada Pension Plan (CPP), and Old Age Security (OAS) pensions will be."
+    "heading": "Aperçu",
+    "p1": "Keith a travaillé toute sa vie dans la construction et vient d'accepter un nouvel emploi sur un chantier à 60 ans. Il a quelques épargnes, mais il prévoit de travailler au moins jusqu'à l'âge de 70 ans. Keith veut savoir quelle sera la meilleure stratégie pour sa pension de retraite du Régime de pensions du Canada (RPC) et sa pension de la Sécurité de la vieillesse (SV)."
   },
-  "values-heading": "(FR) Values"
+  "values-heading": "Valeurs"
 }
