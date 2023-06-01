@@ -134,7 +134,7 @@ const Fred: FC = () => {
         <p>{t('overview.p2')}</p>
         <p>{t('overview.p3')}</p>
         <p>{t('overview.p4')}</p>
-        <p>{t('overview.p5')}</p>
+        {locale === 'en' && <p>{t('overview.p5')}</p>}
 
         <h2 id="monthly-amounts" className="h2">
           {t('monthly-amounts.heading')}
