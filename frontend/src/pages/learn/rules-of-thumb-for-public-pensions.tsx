@@ -133,7 +133,6 @@ const RulesOfThumbForPublicPensions: FC = () => {
           <li>{t('cpp.li6')}</li>
           <li>{t('cpp.li7')}</li>
           <li>{t('cpp.li8')}</li>
-          <li>{t('cpp.li9')}</li>
         </ul>
         <AlertCard type="tip" className="mt-5">
           <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="cpp.smart-tip" />
@@ -142,6 +141,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
           {t('cpp.sub-heading-two')}
         </h3>
         <ul className="ml-7 list-disc">
+          <li>{t('cpp.li9')}</li>
           <li>{t('cpp.li10')}</li>
           <li>{t('cpp.li11')}</li>
           <li>{t('cpp.li12')}</li>
@@ -149,7 +149,6 @@ const RulesOfThumbForPublicPensions: FC = () => {
           <li>{t('cpp.li14')}</li>
           <li>{t('cpp.li15')}</li>
           <li>{t('cpp.li16')}</li>
-          <li>{t('cpp.li17')}</li>
         </ul>
 
         <h2 id="oas" className="h2">
