@@ -15,7 +15,10 @@ spec:
         - name: seniors-journey-frontend
           env:
             - name: NEXT_PUBLIC_APP_BASE_URI
-              value: https://seniors-journey-test.dev-dp.dts-stn.com/
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: NEXT_PUBLIC_APP_BASE_URI
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:

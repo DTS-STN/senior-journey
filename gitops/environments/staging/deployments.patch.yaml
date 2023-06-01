@@ -13,25 +13,18 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend
-          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230530-0229-768645f2
+          image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230601-0246-b4a8afb7
           env:
             - name: NEXT_PUBLIC_APP_BASE_URI
-              value: https://seniors-journey-staging.dev-dp.dts-stn.com/
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: NEXT_PUBLIC_APP_BASE_URI
             - name: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
                   key: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
-            - name: ADOBE_ANALYTICS_CSP_DOMAINS
-              valueFrom:
-                configMapKeyRef:
-                  name: seniors-journey-frontend
-                  key: ADOBE_ANALYTICS_CSP_DOMAINS
-            - name: ADOBE_ANALYTICS_CSP_SCRIPT_HASHES
-              valueFrom:
-                configMapKeyRef:
-                  name: seniors-journey-frontend
-                  key: ADOBE_ANALYTICS_CSP_SCRIPT_HASHES
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:

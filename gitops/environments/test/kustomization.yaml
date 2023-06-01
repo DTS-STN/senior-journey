@@ -21,6 +21,7 @@ configMapGenerator:
       labels:
         app.kubernetes.io/name: seniors-journey-frontend
     literals:
+      - NEXT_PUBLIC_APP_BASE_URI=https://seniors-journey-test.dev-dp.dts-stn.com/
       - OTEL_ENVIRONMENT=test
       - OTEL_METRICS_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/metrics
       - OTEL_TRACES_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/traces
