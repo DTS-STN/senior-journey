@@ -5,32 +5,33 @@
   "combine-income": {
     "heading": "Comment combiner le salaire de votre emploi et vos pensions publiques?",
     "option-1": {
-      "heading": "Option 1\u00a0: Commencer à percevoir sa pension plus tôt",
+      "heading": "Option 1\u00a0: Commencer à recevoir sa pension plus tôt",
       "p1": "Vous pouvez commencer à recevoir vos pensions pendant que vous travaillez encore ou dès que vous cessez de travailler. Si vous commencez à recevoir votre pension plus tôt, le montant mensuel sera moins élevé à vie. Mais vous pourrez disposer de plus d'argent plus tôt si vous en avez besoin.",
-      "p2": "Vous ne pouvez pas commencer à recevoir votre SV avant d'avoir atteint l'âge the 65 ans. Vous pouvez commencer à recevoir votre pension du RPC avant d'avoir atteint l'âge de 65, si vous avez besoin d'argent plus tôt. Toutefois avec une réduction permanente des prestations mensuels.",
+      "p2": "Vous ne pouvez pas commencer à recevoir votre SV avant d'avoir atteint l'âge de 65 ans. Vous pouvez commencer à recevoir votre pension du RPC avant d'avoir atteint l'âge de 65, si vous avez besoin d'argent plus tôt. Toutefois avec une réduction permanente des prestations mensuels.",
       "p3": "Certaines personnes peuvent commencer à recevoir une pension plus tôt que l'autre. Par exemple, vous pouvez commencer à recevoir votre pension de la SV lorsque vous commencez à travailler moins d'heures. Vous commencerez ensuite à recevoir votre pension de retraite du RPC plus tard, lorsque vous ne travaillerez plus.",
-      "p4": "Si vous travaillez tout en recevant votre pension de retraite du RPC et que vous n'avez pas encore 70 ans, vous pouvez prétendre à la prestation après-retraite (PAR) du RPC. Pour chaque année pendant laquelle vous travaillez et cotisez au RPC, vous recevrez un petit complément qui s'ajoutera au montant de votre pension mensuelle.",
+      "p4": "Si vous travaillez tout en recevant votre pension de retraite du RPC et que vous n'avez pas encore 70 ans, vous pouvez participer à la prestation après-retraite (PAR) du RPC. Pour chaque année pendant laquelle vous travaillez et cotisez au RPC, vous recevrez un montant supplémentaire qui s'ajoutera au montant de votre pension mensuelle.",
       "p5": "Comme la pension de retraite du RPC, le montant de la PAR est ajusté en fonction de votre âge. Si vous avez moins de 65 ans, le montant de la PAR sera moins élevé. Si vous avez plus de 65 ans, le montant sera plus élevé.",
       "p6": "Lorsque vous atteignez l'âge de 65 ans, vous pouvez choisir de cesser de contribuer au PAR. Pour en savoir plus sur le fonctionnement de ce processus, consultez la page sur <a1>les prestations après retraite (PAR)</a1>.",
-      "p7": "Lisez <a2>Keith combine son travail avec ses pensions publiquest</a2> pour savoir comment il a combiné ses pensions publiques et ses PAR tout en travaillant.",
+      "p7": "Lisez <a2>Keith combine son travail avec ses pensions publiques</a2> et pour savoir comment il a combiné ses pensions publiques et ses PAR tout en travaillant.",
       "p8": "Pour en savoir plus sur les PAR, consultez notre page <a3>Principales sources de revenus de retraite</a3>.",
       "post-retirement-benefits-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html"
     },
     "option-2": {
-      "disclaimer": "<strong>Avertissement\u00a0:</strong> Ce site Web vise à vous donner des conseils sur le bon moment pour recevoir vos pensions publiques. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
+      "disclaimer": "<strong>Avertissement\u00a0:</strong> Ce site Web vise à vous donner des conseils sur le bon moment pour recevoir vos pensions publiques. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander de l'aide d'un conseiller financier.",
       "heading": "Option 2\u00a0: reporter de recevoir toucher les pensions",
       "important": "<strong>Important\u00a0:</strong> Si votre revenue annuel dépasse un certain montant, vous devez rembourser une partie ou la totalité de votre pension de la SV. C'est ce qu'on appelle <a1>l'impôt de récupération de la pension de la Sécurité de la vieillesse</a1>.",
       "oas-tax-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html",
       "p1": "Le report de votre pension de la SV et de votre pension de retraite du RPC augmentera votre montant mensuel jusqu'à l'âge de 70 ans. Si vous avez de bons revenus professionnels et d'autres sources de revenus, vous pouvez choisir de reporter votre pension. Si vous attendez plus longtemps pour commencer à recevoir vos pensions publiques, votre montant mensuel sera plus élevé à la retraite.",
       "p2": "En attendant de commencer à recevoir vos pensions publiques, vous devrez peut-être avoir recours à des revenus du travail ou une partie de votre épargne-retraite. Vous devrez peut-être utiliser un peu plus de votre épargne-retraite à court terme. Pourtant, vous recevrez un montant mensuel plus élevé pour le reste de votre vie. En fait, attendre pourrait même signifier que vous utiliserez moins de votre épargne-retraite à long terme. Cela est particulièrement vrai parce que vos pensions publiques s'ajustent à l'inflation.",
       "p3": "Le RPC et la SV sont deux programmes de pension différents. Vous pouvez choisir de commencer l'un et de reporter l'autre.",
-      "p4": "Lire <a1>Bonnie retarde la réduction des épargnes dont elle a besoin</a1>. Bonnie dispose d'une épargne-retraite et décide d'attendre plus longtemps avant de recevoir ses pensions publiques."
+      "p4": "Lire <a1>Bonnie reporte sa pension pour réduire les épargnes dont elle a besoin</a1>. Bonnie dispose d'une épargne-retraite et décide d'attendre plus longtemps avant de recevoir ses pensions publiques."
     },
     "p1": "Vous serez peut-être surpris d'apprendre qu'il n'est pas nécessaire de cesser de travailler pour recevoir votre pension de la Sécurité de la vieillesse (SV) ou votre pension de retraite du Régime de pensions du Canada (RPC). La combinaison des revenus du travail et des pensions publiques peut s'avérer une stratégie utile à l'approche de la retraite."
   },
   "header": "Transition du monde du travail à la retraite",
   "key-takeaways": {
     "heading": "Points à retenir",
+    "gis-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
     "highest-monthly-amount": "Pour plusieurs, la retraite n'est pas un moment unique, mais une transition progressive.",
     "if-you-qualify": "Il n'est pas nécessaire de cesser de travailler pour bénéficier de la pension publique.",
     "low-income-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
@@ -39,7 +40,7 @@
     "payment-increase": "Il peut être difficile d'épargner suffisamment pour la retraite. En outre, les Canadiens vivent plus longtemps qu'auparavant. C'est pourquoi de plus en plus de personnes continuent à travailler pendant leur retraite.",
     "pensions-adjusted": "En continuant à travailler, vous continuez à contribuer au RPC. Les PAR sont une prestation à vie qui sera ajoutée à votre montant mensuel du CPP l'année suivante.",
     "people-who-qualify": "Le départ à la retraite et le début de la pension sont deux choses différentes. Vos pensions pensions publiques peuvent débuter à des moments différents, en fonction de vos choix professionnels.",
-    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> Si vous êtes éligible à la pension de la Sécurité de la vieillesse (SV) et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du Supplément de revenu garanti (SRG). Les personnes qui sont admissible au SRG ne devraient pas attendre après avoir l'âge de 65 ans pour présenter leur demande. Vous ne pouvez pas recevoir le SRG si vous reporter votre pension de la SV. Vous pouvez également envisager d'anticiper recevoir votre pension du RPC.",
+    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> Si vous êtes éligible à la pension de la Sécurité de la vieillesse (SV) et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Les personnes qui sont admissible au SRG ne devraient pas attendre après avoir l'âge de 65 ans pour présenter leur demande. Vous ne pouvez pas recevoir le SRG si vous reporter votre pension de la SV. Vous pouvez également envisager d'anticiper recevoir votre pension du RPC.",
     "start-collecting": "Les gens prennent et reprennent leur retraite, changent de carrière, créent de nouvelles entreprises pendant qu'ils sont à la retraite."
   },
   "learn-more": {
@@ -67,15 +68,15 @@
   },
   "overview": {
     "heading": "Aperçu",
-    "li1": "Retraite progressive - transition graduelle d'un emploi à temps plein à un emploi à temps partiel, puis à une retraite complète.",
-    "li2": "Une seconde carrière - lorsque les retraités changent d'emploi ou ouvrent une nouvelle entreprise pour poursuivre un rêve.",
+    "li1": "Retraite progressive - transition graduelle d'un emploi à temps plein à un emploi à temps partiel, puis à une retraite complète;",
+    "li2": "Une seconde carrière - lorsque les retraités changent d'emploi ou ouvrent une nouvelle entreprise pour poursuivre un rêve;",
     "li3": "Retraite complète\u00a0: lorsque les personnes se retirent définitivement du travail.",
     "p1": "Au fil des ans, l'idée de la retraite a évolué. Aujourd'hui, pour beaucoup, la retraite n'est pas un moment unique où l'on arrête de travailler, mais une transition progressive. Les gens continuent à travailler plus tard dans leur vie pour de nombreuses raisons. Certains aiment tout simplement leur travail et n'envisagent pas de prendre leur retraite de sitôt. D'autres aiment avoir des relations sociales pendant leur travail. D'autres encore travaillent plus longtemps pour des raisons financières ou par obligation. Une façon de réfléchir aux choix possibles pour la retraite est d'envisager les pistes suivantes\u00a0:",
     "p2": "Ces parcours ne sont pas les seuls possibles, et certains peuvent même se combiner. Certaines personnes peuvent passer d'une voie à l'autre au cours de leur retraite. Par exemple, une personne à la retraite complète peut ne pas s'engager socialement et reprendre un travail à temps partiel ou créer une petite entreprise secondaire."
   },
   "phased-retirement": {
     "heading": "Retraite progressive",
-    "p1": "De nombreux travailleurs ne sont pas prêts à passer d'un travail à temps plein à un arrêt complet. Ils préféreront peut-être réduire leurs heures de travail et continuer à travailler, en se retirant progressivement de la vie active.",
+    "p1": "De nombreux travailleurs ne sont pas prêts à passer d'un travail à temps plein à un arrêt complet. Ils préféreront peut-être réduire leurs heures de travail et continuer à travailler, en se retirant progressivement du milieu du travail.",
     "p2": "Si vous souhaitez prendre une retraite progressive, vous pouvez demander à votre employeur de réduire le nombre d'heures de travail ou de jours de la semaine. Vous pourriez même prendre quelques mois de congé par an. Vous devrez trouver un accord avec votre employeur pour que cela fonctionne.",
     "transition": "Passer progressivement de la vie active à la retraite"
   },
@@ -83,5 +84,10 @@
     "heading": "Une seconde carrière",
     "new-beginning": "Un nouveau départ",
     "p1": "Une fois que vous avez quitté votre ancien emploi, vous pouvez décider de trouver un nouvel emploi ou même de créer votre propre entreprise. Cela peut être l'occasion de faire ce que vous avez toujours voulu faire, tout en gagnant de l'argent supplémentaire. Ce nouvel emploi peut être à temps plein ou à temps partiel, à l'année ou saisonnier."
+  },
+  "full-retirement": {
+    "heading": "Retraite complète",
+    "hanging-you-hat": "Accrocher son chapeau",
+    "p1": "La retraite complète signifie que vous arrêtez complètement de travailler. Lorsque vous prenez cette décision, vous devez avoir une idée générale des choses que vous aimeriez faire et de l'argent dont vous disposerez pendant votre retraite. Parfois, ce n'est pas vous qui décidez. Il se peut que vous deviez arrêter de travailler pour des raisons de santé ou pour vous occuper d'un membre de votre famille ou d'un ami."
   }
 }
