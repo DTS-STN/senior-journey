@@ -110,7 +110,7 @@
     "heading": "Conclusion",
     "p1": "Si Bonnie choisit de recevoir sa pension de retraite du Régime de pensions du Canada (RPC) à l'âge de 63 ans, elle aura besoin de 579\u00a0000\u00a0$ d'épargne-retraite. Rappelez-vous qu'elle avait besoin de 528\u00a0000\u00a0$ d'épargne si elle choisissait de recevoir sa pension de retraite du RPC à 70 ans. Bonnie devra épargner <strong>51\u00a0000\u00a0$ de plus</strong> si elle veut recevoir sa pension de retraite du RPC plus tôt que si elle la reporte. Comme les impôts sont généralement moins élevés à la retraite, Bonnie pourrait avoir besoin de moins d'épargne privée.",
     "p2": "Si Bonnie vit plus longtemps, jusqu'à l'âge de 93 ans, elle aura besoin de <strong>81\u00a0000\u00a0$ de plus</strong> en épargne privée. C'est comme ça si elle commence à recevoir sa pension de retraite du RPC à 63 ans au lieu de 70 ans.",
-    "p3": "Si l'inflation est supérieure à 2 % par an, son revenu mensuel cible augmentera. Bonnie aura besoin d'une plus grande partie de son épargne privée pour combler l'écart.",
+    "p3": "Si l'inflation est supérieure à 2\u00a0% par an, son revenu mensuel cible augmentera. Bonnie aura besoin d'une plus grande partie de son épargne privée pour combler l'écart.",
     "p4": "Les pensions publiques augmentent avec l'inflation. Bonnie doit donc épargner moins pour sa retraite si elle dépend des pensions publiques reporter. Bonnie a décidé de recevoir sa pension de la SV à l'âge de 65 ans et de reporter sa pension de retraite du RPC jusqu'à l'âge de 70 ans.",
     "p5": "Bonnie n'est pas eligible au Supplément de revenu garanti (SRG) au cours des premières années de sa retraite en raison de son revenu plus élevé. Si Bonnie se retrouve dans une situation de faible revenu à un moment ou à un autre de sa retraite, le SRG l'aidera."
   },
@@ -332,7 +332,7 @@
     "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
     "heading": "Points à retenir",
     "li1": "Lorsque vous commencez à prendre votre retraite, vous devez réfléchir à toutes vos sources de revenus et à la manière dont elles interagissent ensemble.",
-    "li2": "De nombreux planificateurs financiers affirment qu'en disposant de 60 à 70 % de votre revenu actuel à la retraite, vous pourrez maintenir votre niveau de vie à la retraite.",
+    "li2": "De nombreux planificateurs financiers affirment qu'en disposant de 60 à 70\u00a0% de votre revenu actuel à la retraite, vous pourrez maintenir votre niveau de vie à la retraite.",
     "li3": "Vous devrez peut-être utiliser un peu plus de votre épargne-retraite en attendant de commencer à recevoir vos pensions publiques. Cependant, les montants mensuels plus élevés pourraient valoir la peine d'attendre.",
     "li4": "En fait, si vous attendez, vous pourriez même utiliser moins de votre épargne personnelle à la retraite à long terme.",
     "li5": "Pensez à l'inflation lorsque vous planifiez votre retraite.",
@@ -369,7 +369,7 @@
     "p1": "Bonnie a travaillé dans le domaine du marketing pendant plus de 35 ans. Pendant cette période, elle a épargné pour sa retraite. Lorsqu'elle quittera son emploi, Bonnie conduira moins, aura besoin de moins de vêtements de travail et pourra davantage cuisiner à la maison. Ces changements dans son mode de vie réduiront son coût de la vie mensuelle.",
     "p2": "Bonnie a maintenant 60 ans. Son salaire à temps plein est de 67\u00a0000\u00a0$ par an, soit 5\u00a0583\u00a0$ par mois. Elle souhaite passer à temps partiel à l'âge de 63 ans et prendre sa retraite complète à l'âge de 65 ans. Bonnie est aujourd'hui en bonne santé et décide de planifier pour les 28 prochaines années, ce qui correspond à l'espérance de vie moyenne d'une femme Canadienne âgée de 60 ans cette année.",
     "p3": "L'objectif de Bonnie à la retraite est de conserver son mode de vie actuel. Pour ce faire, elle devra décider du moment où elle commencera à recevoir ses pensions du Régime de pensions du Canada (RPC) et de la Sécurité de la vieillesse (SV), car cela modifiera la façon dont elle utilisera son épargne et le moment où elle le fera.",
-    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> la longévité est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leur épargne. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent espérer <a1>vivre jusqu'à 86 ans pour les hommes et 88 ans pour les femmes</a1>. C'est pourquoi ils doivent prévoir au moins 20 à 25 ans de plus. En fait, il y a <a2>environ 50 % de chances que</a2> les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à 90 ans. Il est bon d'avoir un plan financier pour ces années de vie."    
+    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> la longévité est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leur épargne. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent espérer <a1>vivre jusqu'à 86 ans pour les hommes et 88 ans pour les femmes</a1>. C'est pourquoi ils doivent prévoir au moins 20 à 25 ans de plus. En fait, il y a <a2>environ 50\u00a0% de chances que</a2> les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à 90 ans. Il est bon d'avoir un plan financier pour ces années de vie."    
   },
   "own-savings": {
     "accessibility": {
@@ -567,9 +567,9 @@
         }
       ]
     },
-    "description": "Ce graphique montre que Bonnie travaille à temps plein jusqu'à l'âge de 62 ans et atteint son objectif de revenu mensuel. À 63 ans, elle passe à temps partiel et son revenu mensuel est inférieur de moitié à ce qu'il était auparavant. Le revenu mensuel cible de Bonnie est également ramené à 70 % car elle pourrait avoir besoin de moins de revenus à la retraite. Il y a un écart entre le revenu mensuel de Bonnie provenant de son travail à temps partiel et son revenu mensuel cible à la retraite. À l'âge de 65 ans, Bonnie prend sa retraite complète et n'a pas d'argent provenant de son emploi pour atteindre son revenu mensuel cible. Le revenu mensuel cible de Bonnie augmente légèrement avec l'âge jusqu'à 88 ans en raison de l'inflation.",
+    "description": "Ce graphique montre que Bonnie travaille à temps plein jusqu'à l'âge de 62 ans et atteint son objectif de revenu mensuel. À 63 ans, elle passe à temps partiel et son revenu mensuel est inférieur de moitié à ce qu'il était auparavant. Le revenu mensuel cible de Bonnie est également ramené à 70\u00a0% car elle pourrait avoir besoin de moins de revenus à la retraite. Il y a un écart entre le revenu mensuel de Bonnie provenant de son travail à temps partiel et son revenu mensuel cible à la retraite. À l'âge de 65 ans, Bonnie prend sa retraite complète et n'a pas d'argent provenant de son emploi pour atteindre son revenu mensuel cible. Le revenu mensuel cible de Bonnie augmente légèrement avec l'âge jusqu'à 88 ans en raison de l'inflation.",
     "heading": "Arrêt de la rémunération du travail",
-    "p": "Pour prendre une retraite à l'aise, Bonnie a besoin d'environ 60 à 70 % de son revenu professionnel actuel avant impôts. Le revenu mensuel cible augmente ensuite avec un taux d'inflation de 2 % à l'avenir."
+    "p": "Pour prendre une retraite à l'aise, Bonnie a besoin d'environ 60 à 70\u00a0% de son revenu professionnel actuel avant impôts. Le revenu mensuel cible augmente ensuite avec un taux d'inflation de 2\u00a0% à l'avenir."
   },
   "values-heading": "Valeurs"
 }
