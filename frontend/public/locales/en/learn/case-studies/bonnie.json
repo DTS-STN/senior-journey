@@ -1,8 +1,8 @@
 {
   "adding-oas": {
     "accessibility": {
-      "button-label": "Text alternative for Earnings from work and OAS",
-      "caption": "Values presented on the image",
+      "button-label": "Text alternative for Earnings from work and OAS pension",
+      "caption": "Values presented on the image:",
       "header": ["Age", "Target monthly Income in Retirement", "Earnings from work", "Monthly OAS pension"],
       "rows": [
         {
@@ -91,9 +91,9 @@
         }
       ]
     },
-    "description": "This chart shows two sources of income that Bonnie can use from age 60 to 88 for reaching her target monthly income. One is her earnings from work and the other is her OAS pension. Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. The chart shows Bonnie starting her OAS pension at age 65. From age 65 and on, Bonnie continues to use her OAS monthly pension to help her reach her target monthly income. There's still a large gap between her OAS monthly pension and her target monthly income.",
+    "description": "This chart shows two sources of income that Bonnie can use from age 60 to 88 for reaching her target monthly income. One is her earnings from work and the other is her OAS pension. Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. The chart shows Bonnie starting her OAS pension at age 65. From age 65 and on, Bonnie continues to use her monthly OAS pension to help her reach her target monthly income. There's still a large gap between her Monthly OAS pension and her target monthly income.",
     "heading": "Adding OAS pension to the mix",
-    "p1": "Bonnie has lived in Canada her entire life, and can receive a full Olf Age Security (OAS) pension at age 65. However, she knows that by waiting she can increase that amount even further. In the end, Bonnie decides to take her OAS pension at age 65, when she fully retires from work. Every three months, her monthly amount will be adjusted for inflation. Bonnie does not qualify for the Guaranteed Income Supplement (GIS). Her target income is around $47,000, which is more than double the threshold to get the GIS.",
+    "p1": "Bonnie has lived in Canada her entire life, and can receive a full Olf Age Security (OAS) pension at age 65. However, she knows that by waiting she can increase that amount even further. In the end, Bonnie decides to take her OAS pension at age 65, when she fully retires from work. Every three months, her monthly amount will be adjusted for inflation. Bonnie <strong>does not</strong> qualify for the Guaranteed Income Supplement (GIS). Her target income is around $47,000, which is more than double the threshold to get the GIS.",
     "p2": "To learn more about what to consider when choosing the age you want to start your OAS pension, read <a1>Fred decides when to start his public pensions</a1>.",
     "p3": "Bonnie started OAS pension at 65 and needs to decide when to start her CPP retirement pension and how to use her retirement savings to reach her target monthly income in retirement."
   },
@@ -112,7 +112,7 @@
   "cpp": {
     "accessibility": {
       "button-label": "Text alternative for Earnings from work, OAS and CPP",
-      "caption": "Values presented on the image",
+      "caption": "Values presented on the image:",
       "header": [
         "Age",
         "Target monthly income in retirement",
@@ -220,7 +220,7 @@
   "early-pension": {
     "accessibility": {
       "button-label": "Text alternative for Earnings from work, OAS, CPP and retirement savings",
-      "caption": "Values presented on the image",
+      "caption": "Values presented on the image:",
       "header": [
         "Age",
         "Target monthly income in retirement",
@@ -328,7 +328,7 @@
     "heading": "Key takeaways",
     "li1": "When you start your retirement, you should think about all your income sources and how they will work together.",
     "li2": "Many financial planners say that having 60 to 70% of your current income in retirement will allow you to maintain your lifestyle in retirement.",
-    "li3": "You may spend your retirement savings quickly while you wait to start your public pensions. By delaying, your higher monthly amount could make waiting worth it.",
+    "li3": "You may need to use a bit more of your retirement savings while waiting to start your public pensions. However, the higher monthly amounts could be worth waiting for.",
     "li4": "Overall, you could use less of your personal savings in retirement.",
     "li5": "Think about inflation while you're retirement planning.",
     "li6": "Your Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement pension will adjust for inflation, but your retirement savings and investments might not.",
@@ -362,14 +362,14 @@
     "a2": "https://www.osfi-bsif.gc.ca/Eng/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
     "heading": "Overview",
     "p1": "Bonnie worked in marketing for over 35 years. During that time, she saved for her retirement. When she leaves her job, Bonnie will drive less, need less work clothes and can cook at home more. These changes in lifestyle will lower her monthly cost of living.",
-    "p2": "Bonnie is now 60 years old, and her full-time salary is $67,000 per year or $5,583 per month before taxes. She would like to go part-time at age 63 and then fully retire at age 65. Bonnie is healthy now and decides to plan for the next 28 years - which is the average lifespan of a Canadian woman who is 60 this year.",
+    "p2": "Bonnie is now 60 years old. Her full-time salary is $67,000 per year or $5,583 per month. She would like to go part-time at age 63 and then fully retire at age 65. Bonnie is healthy now and decides to plan for the next 28 years – which is the average lifespan of a Canadian woman who is 60 this year.",
     "p3": "Bonnie's goal in retirement is to generally maintain her current lifestyle - and so, she'll be looking at how to do that. As part of this, she'll need to decide when to start her OAS and CPP pensions because it will change how and when she uses her savings.",
     "smart-tip": "<strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live up to 86 years for men and 88 years for women</a1>. That's why they need to plan for at least another 20-25 years. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
   },
   "own-savings": {
     "accessibility": {
       "button-label": "Text alternative for Earnings from work, OAS, CPP and retirement savings",
-      "caption": "Values presented on the image",
+      "caption": "Values presented on the image:",
       "header": [
         "Age",
         "Target monthly income in retirement",
@@ -473,7 +473,7 @@
   "stopping-earnings": {
     "accessibility": {
       "button-label": "Text alternative for Earnings from work",
-      "caption": "Values presented on the image",
+      "caption": "Values presented on the image:",
       "header": ["Age", "Target monthly Income in Retirement", "Earnings from work"],
       "rows": [
         {
