@@ -61,7 +61,7 @@
       "option-prepared": "Prepared",
       "option-unprepared": "Unprepared",
       "option-unsure-preparedness": "Not sure",
-      "option-very-prepared": "Very Prepared",
+      "option-very-prepared": "Very prepared",
       "option-very-unprepared": "Very unprepared",
       "subtitle": "Do you feel confident that you have enough money to support your lifestyle and future plans in retirement?",
       "title": "How financially prepared do you feel for retirement?"
@@ -74,10 +74,10 @@
       "title": "From age 18, how many years will you have lived in Canada when you apply for retirement benefits?"
     },
     "question-status": {
-      "option-status-citizen": "Canadian Citizen or Permanent Resident",
-      "option-status-first-nation": "Métis, Inuit, or Member of First Nation",
-      "option-status-other": "Visitor, Student, or Temporary Worker",
-      "option-status-sponsored": "Sponsored Resident (less than 10 years in Canada)",
+      "option-status-citizen": "Canadian citizen or permanent resident",
+      "option-status-first-nation": "Métis, Inuit, or member of First Nation",
+      "option-status-other": "Visitor, student, or temporary worker",
+      "option-status-sponsored": "Sponsored resident (less than 10 years in Canada)",
       "title": "When you retire, what will your legal status be in Canada?"
     },
     "question-when": {
@@ -91,10 +91,10 @@
     },
     "question-where": {
       "option-canada-ft": "In Canada",
-      "option-canada-pt-60-or-more": "In Canada MORE Than 6 Months a Year",
+      "option-canada-pt-60-or-more": "In Canada MORE than 6 months a year",
       "option-canada-pt-less-than-60": "In Canada LESS than 6 months a year",
       "option-outside-canada": "Outside Canada",
-      "option-unsure-retirement-living": "Not Sure",
+      "option-unsure-retirement-living": "Not sure",
       "title": "Where do you plan on living when you retire?"
     }
   }
