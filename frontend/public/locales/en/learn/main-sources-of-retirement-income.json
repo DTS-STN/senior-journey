@@ -10,7 +10,7 @@
           "button-label": "Text alternative for How we top up your CPP retirement pension using Post-Retirement Benefits",
           "caption": "Values presented on the image",
           "description": {
-            "content": "The chart shows changes in monthly payments for people who work for 3 years after starting their CPP retirement pension. It shows that PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
+            "content": "The chart shows changes in monthly payments for people who work for 3 years after starting their CPP retirement pension. It shows that PRBs are added every year to your CPP retirement pension after you continue working and contributing to the plan.",
             "header": "Description"
           },
           "header": [
@@ -37,7 +37,7 @@
           ],
           "values-heading": "Values"
         },
-        "footer": "The PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
+        "footer": "The PRBs are added every year to your CPP retirement pension after you continue working and contributing to the plan.",
         "header": "How we top up your CPP retirement pension using Post-Retirement Benefits"
       },
       "choices": {
@@ -206,7 +206,7 @@
         "content": "For more details about if you qualify for OAS pension, visit the <a>OAS pension page</a>.",
         "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html"
       },
-      "most-people": "Most people qualify for the OAS pension if they have lived in Canada for more than 10 years after age 18. You will have to be a Canadian citizen or legal resident beforec you can collect your OAS pension."
+      "most-people": "Most people qualify for the OAS pension if they have lived in Canada for more than 10 years after age 18. You will have to be a Canadian citizen or legal resident before you can collect your OAS pension."
     }
   },
   "ongoing-earnings-from-your-job": {
