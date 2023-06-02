@@ -62,7 +62,7 @@
         "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
       },
       "description": "Ce tableau montre les quatre choix qui s'offrent à Keith pour son revenu mensuel de retraite. Il dispose de deux sources potentielles de revenu, soit sa pension de retraite du RPC et ses Prestations d'après-retraite. Pour tous les choix, la pension de retraite du RPC représente la plus grande partie de son revenu mensuel. Le fait de recevoir la pension du RPC à l'âge de 70 ans représente le revenu mensuel le plus élevé. Le fait de recevoir la pension du RPC à 65 ans et de continuer à travailler pendant 5 ans pour recevoir les prestations de retraite est le revenu mensuel le moins élevé.",
-      "heading": "Pour chaque choix, quelle est la pension de retraite mensuelle du RPC\u00a0?",
+      "heading": "Pour chaque choix, quelle est la pension de retraite mensuelle du RPC?",
       "p1": "La pension de retraite mensuelle du Régime de pensions du Canada (RPC) sera versée au moment où Keith demandera à la recevoir. Cependant, les PAR s'accumuleront lentement au cours des années où Keith continuera à travailler et à contribuer. Chaque année de contribution supplémentaire au régime se traduira par un petit complément à la pension et aux prestations existantes l'année suivante. Le graphique compare la pension à l'âge de 70 ans pour différents choix. Les montants sont très différents.",
       "p2": "Les choix 3 et 4 permettent à Keith de recevoir sa pension de retraite du RPC plus tard dans sa vie, à 65 et 70 ans, et de recevoir des montants mensuels plus élevés. Keith aimerait choisir sa stratégie entre ces deux options. Pour les deux options, Keith sait qu'il continuera à cotiser jusqu'à 70 ans."
     },
@@ -93,7 +93,7 @@
         "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
       },
       "description": "Ce tableau montre le montant de la pension de retraite à vie du RPC pour quatre choix auxquels Keith réfléchit. Il montre que si Keith vit jusqu'à l'âge de 90 ans, le fait de commencer à toucher sa pension de retraite du RPC à 65 ans et de travailler jusqu'à 70 ans lui procurerait le revenu de retraite le plus élevé.",
-      "heading": "Quelle sera la pension de Keith à l'âge de 87 ans\u00a0?",
+      "heading": "Quelle sera la pension de Keith à l'âge de 87 ans?",
       "li1": "Le choix 3 concerne Keith qui recevera sa pension de retraite du Régime de pensions du Canada (RPC) à l'âge de 65 ans et qui contribue au régime jusqu'à l'âge de 70 ans. Il recevra son revenu mensuel de retraite plus tôt dans sa vie et sa pension à vie sera plus élevée.",
       "li2": "Le choix 4 consistait pour Keith à reporter sa pension de retraite du RPC jusqu'à l'âge de 70 ans. Il s'agit également d'une bonne option puisqu'elle permet d'obtenir la pension mensuelle la plus élevée ainsi qu'une pension à vie élevée.",
       "p1": "Étant donné que Keith est encore en bonne santé et qu'il travaille, il devrait s'attendre à vivre encore 22-25 ans (87-90 ans) ou plus. Il aimerait choisir entre les options 3 et 4.",
@@ -126,17 +126,17 @@
         "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
       },
       "description": "Ce tableau montre le montant de la pension à vie pour quatre choix auxquels Keith réfléchit. Il montre que si Keith vit jusqu'à 90 ans, c'est en commençant à recevoir sa pension du RPC à 65 ans et en travaillant jusqu'à 70 ans qu'il obtiendra le revenu de retraite le plus élevé.",
-      "heading": "Quelle sera la pension de Keith à l'âge de 90 ans\u00a0?",
+      "heading": "Quelle sera la pension de Keith à l'âge de 90 ans?",
       "p1": "Keith pourrait vivre plus longtemps, ce qui modifierait sa pension à vie.",
       "p4": "Même à l'âge de 90 ans, le choix 3 offre toujours la pension à vie la plus élevée. Keith décide qu'il est préférable de toucher sa pension du RPC à 65 ans et de contribuer jusqu'à 70 ans."
     },
     "prb": {
       "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite/admissibilite.html",
-      "heading": "Qu'est-ce que le PAR\u00a0?",
+      "heading": "Qu'est-ce que le PAR?",
       "p1": "Si vous travaillez tout en recevant votre pension de retraite du Régime de pensions du Canada (RPC), vous pouvez aussi recevoir des <a1>prestations d'après-retraite (PAR) du RPC</a1>. Chaque année où vous travaillez et cotisez, vous toucherez un petit complément d'un PAR supplémentaire qui sera ajouté à votre pension de retraite et à vos prestations du RPC. Chaque PAR est ajusté en fonction de votre âge lorsque vous commencez à le recevoir. Si vous avez moins de 65 ans, ce PAR sera réduit. Si vous avez plus de 65 ans, un nouveau PAR vaut plus."
     },
     "prb-choices": {
-      "heading": "Quels sont les choix qui s'offrent à Keith pour combiner sa pension de retraite du RPC avec des PAR\u00a0?",
+      "heading": "Quels sont les choix qui s'offrent à Keith pour combiner sa pension de retraite du RPC avec des PAR?",
       "list": {
         "li1": "<strong>Choix 1\u00a0:</strong> Recevoir la pension de retraite du Régime de pensions du Canada (RPC) à l'âge de 60 ans obtenir une pension mensuelle moins élevée. Keith continuera à travailler et à contribuer jusqu'à l'âge de 70 ans et touchera 10 prestations Après retraite (PAR).",
         "li2": "<strong>Choix 2\u00a0:</strong> Recevoir la pension de retraite du RPC à l'âge de 60 ans et obtenir la pension mensuelle moins élevée. Keith continuera à travailler jusqu'à l'âge de 70 ans, mais cessera de contribuer à l'âge de 65 ans et ne recevera que 5 PAR.",
@@ -145,7 +145,7 @@
       }
     },
     "what-else": {
-      "heading": "Quels sont les autres éléments dont Keith doit tenir compte lors de son choix\u00a0?",
+      "heading": "Quels sont les autres éléments dont Keith doit tenir compte lors de son choix?",
       "list": {
         "li1": "son montant mensuel",
         "li2": "le montant total qu'il percevra au cours de sa vie"
@@ -161,7 +161,7 @@
   },
   "cpp-oas": {
     "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html",
-    "heading": "Comment Keith a-t-il calculé ses montants mensuels de RPC et de SV\u00a0?",
+    "heading": "Comment Keith a-t-il calculé ses montants mensuels de RPC et de SV?",
     "p1": "Keith s'est rendu dans Mon dossier Service Canada pour consulter son état personnel des cotisations. Il a vu le montant estimatif de sa pension de retraite du RPC à l'âge de 65 ans.",
     "p2": "Pour connaître le montant prévu de sa pension de la SV, il a consulté <a1>l'Estimateur de prestations de la Sécurité de la vieillesse</a1>."
   },
