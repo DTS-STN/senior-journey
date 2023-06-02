@@ -72,15 +72,16 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
           }}
           sx={{
             'boxShadow': '0',
-            '.MuiAccordionSummary-root.Mui-expanded': {
-              borderTop: '1px solid rgba(0, 0, 0, 0.12)',
-            },
             '.MuiAccordionSummary-root:focus': {
               backgroundColor: 'transparent',
             },
           }}
         >
-          <AccordionSummary className="py-2 font-display text-lg font-medium" expandIcon={<ExpandMoreIcon />}>
+          <AccordionSummary
+            className="py-2 font-display text-lg font-medium"
+            expandIcon={<ExpandMoreIcon />}
+            sx={{ borderBottom: '1px solid rgba(0, 0, 0, 0.12)' }}
+          >
             <Checkbox className="-mt-2.5 hidden print:inline" />
             {task.title}
           </AccordionSummary>
