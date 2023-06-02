@@ -35,8 +35,9 @@
     "li3": "If you need the money right away - maybe to deal with your bills or debts, consider taking your public pensions early. If you don't need the money now - because you are still working, have savings or other sources of income, consider delaying your public pensions.",
     "li4": "Each month that you delay increases your monthly payments for life.",
     "li5": "People who qualify for the Guaranteed Income Supplement (GIS) should not wait to apply past age 65.",
-    "li6": "If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the GIS. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "li6": "If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the GIS. You cannot receive the <a2>GIS</a2> if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
     "li6-a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
+    "li6-a2": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html",
     "li7": "You don't need to stop working to start collecting your public pensions."
   },
   "learn-more": {
@@ -65,7 +66,7 @@
     "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
     "a2": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html",
     "disclaimer": "<strong>Disclaimer:</strong> This website meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
-    "heading": "Rules of Thumb for the OAS pension",
+    "heading": "Rules of thumb for the OAS pension",
     "li1": "you qualify for the Guaranteed Income Supplement (GIS). If you qualify for the OAS pension and have <a1>low income</a1>, you may also get the GIS. People who qualify for the GIS should not wait to apply past age 65. You cannot receive the GIS if you are delaying your OAS pension",
     "li2": "you believe that you may have a shorter life than the average Canadian",
     "li3": "you're unable to work or choose not to work past age 65",
