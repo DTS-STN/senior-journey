@@ -101,6 +101,7 @@ const GoingFromWorkToRetirement: FC = () => {
             i18nKey="key-takeaways.smart-tip"
             components={{
               a1: <MuiLink component={Link} href={t('key-takeaways.low-income-link')} />,
+              a2: <MuiLink component={Link} href={t('key-takeaways.gis-link')} />,
             }}
           />
         </AlertCard>
@@ -123,17 +124,24 @@ const GoingFromWorkToRetirement: FC = () => {
         <p>{t('phased-retirement.p1')}</p>
         <p>{t('phased-retirement.p2')}</p>
 
+
         <h2 id="second-career" className="h2">
           {t('second-career.heading')}
         </h2>
         <h3 className="h3">{t('second-career.new-beginning')}</h3>
         <p>{t('second-career.p1')}</p>
 
+        <h2 id="full-retirement" className="h2">
+          {t('full-retirement.heading')}
+        </h2>
+        <h3 className="h3">{t('full-retirement.hanging-you-hat')}</h3>
+        <p>{t('full-retirement.p1')}</p>
+
         <h2 id="combine-income" className="h2">
           {t('combine-income.heading')}
         </h2>
         <p>{t('combine-income.p1')}</p>
-        <h3 className="h3">{t('combine-income.option-1.heading')}</h3>
+        <h3 className="h3 py-2">{t('combine-income.option-1.heading')}</h3>
         <p>{t('combine-income.option-1.p1')}</p>
         <p>{t('combine-income.option-1.p2')}</p>
         <p>{t('combine-income.option-1.p3')}</p>
@@ -167,7 +175,7 @@ const GoingFromWorkToRetirement: FC = () => {
           />
         </p>
 
-        <h3 className="h3">{t('combine-income.option-2.heading')}</h3>
+        <h3 className="h3 py-2">{t('combine-income.option-2.heading')}</h3>
         <p>{t('combine-income.option-2.p1')}</p>
         <p>{t('combine-income.option-2.p2')}</p>
         <AlertCard type="important" className="mb-5">
