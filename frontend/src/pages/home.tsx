@@ -107,25 +107,29 @@ const Home: FC = () => {
               {!extraSmall && (
                 <TabList onChange={handleChange} scrollButtons="auto" centered>
                   <Tab value="learn" label={t('tabs.learn.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-                  <Tab value="plan" label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />,
-                  <Tab value="apply" label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />,
-                  <Tab value="manage" label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />,
+                  <Tab value="plan" label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+                  <Tab value="apply" label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+                  <Tab value="manage" label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />
                 </TabList>
               )}
               {extraSmall && (
-                <div className="px-4 py-2">
-                  <div className="flex gap-1">
+                <>
+                  <div className="grid grid-cols-2 gap-1">
+                    <div className="border-b-2 border-primary-700 p-2">
                     <Button
-                      variant="outlined"
-                      onClick={() => setValue('learn')}
-                      className="grow underline underline-offset-4"
-                    >
-                      {t('tabs.learn.title')}
-                    </Button>
+                        variant="text"
+                        className="grow text-lg font-bold"
+                        fullWidth
+                      >
+                        {t(`tabs.${value}.title`)}
+                      </Button>
+                    </div>
                     <Button
+                      variant="text"
                       onClick={() => setOpen(!open)}
                       endIcon={open ? <ExpandLess /> : <ExpandMore />}
-                      className="grow"
+                      className="text-lg font-bold text-black text-opacity-60"
+                      fullWidth
                     >
                       {t('tabs.more')}
                     </Button>
@@ -150,7 +154,7 @@ const Home: FC = () => {
                       <Tab value="manage" label={t('tabs.manage.title')} />,
                     </TabList>
                   </Collapse>
-                </div>
+                </>
               )}
             </Paper>
 
