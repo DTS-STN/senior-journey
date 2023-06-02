@@ -2,7 +2,7 @@
   "banner": {
     "quiz": "Take the quiz now!",
     "text": "Receive a personalized checklist to guide you through retirement.",
-    "title": "Not sure where to begin? Take the quiz!"
+    "title": "Not sure where to start? Take our quiz!"
   },
   "header": "Explore Retirement",
   "meta": {
@@ -43,7 +43,7 @@
       "title": "Making retirement decisions"
     },
     "stories": {
-      "body": "Not sure when to retire? Read the stories that people shared with us. Learn about the different choices and compare them to your personal situation.",
+      "body": "Not sure when to retire? Learn about the different choices people make about their public pensions and how it impacts their lives. These stories give valuable lessons and inspiration for people looking to plan their own retirement.",
       "cards": {
         "bonnie": {
           "body": "Bonnie will need less savings to retire comfortably if she delays her OAS pension and her CPP retirement pension.",
@@ -54,7 +54,7 @@
           "title": "Fred decides when to start his public pensions"
         },
         "keith": {
-          "body": "Keith chooses between delaying his public pensions or taking Post-Retirement Benefits while working.",
+          "body": "Keith chooses between delaying his public pensions or taking post-retirement benefits while working.",
           "title": "Keith collects his public pensions while working"
         }
       },

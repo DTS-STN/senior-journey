@@ -106,7 +106,7 @@
         "oas-eligibility-estimator": {
           "description": "Find out how much money you may get from the Old Age Security program and its benefits.",
           "title": "Old Age Security eligibility estimator",
-          "url": "https://alpha.service.canada.ca/en/projects/oas-benefits-estimator"
+          "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
         },
         "retirement-income-calculator": {
           "description": "The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits.",

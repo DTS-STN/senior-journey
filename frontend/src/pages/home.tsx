@@ -158,7 +158,7 @@ const Home: FC = () => {
               <Container>
                 <TabPanel value="learn" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
-                    <Paper className="p-8 md:w-2/5 md:grow">
+                    <Paper className="p-8 md:w-2/6 md:grow">
                       <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
                         {t('tabs.learn.heading')}
                       </h2>
@@ -172,8 +172,8 @@ const Home: FC = () => {
                         </Button>
                       </div>
                     </Paper>
-                    <Paper className="p-8 md:w-3/5">
-                      <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
+                    <Paper className="p-8 md:w-4/6">
+                      <h3 className="mb-8 font-display text-xl font-light md:mb-8 md:text-3xl">
                         {t('tabs.learn.linksTitle')}
                       </h3>
                       <List disablePadding>
@@ -182,11 +182,11 @@ const Home: FC = () => {
                             <ListItemText
                               primary={t('tabs.learn.links.when-to-collect.title')}
                               primaryTypographyProps={{
-                                className: 'font-display font-medium',
+                                className: 'font-display font-medium text-xl',
                               }}
                               secondary={t('tabs.learn.links.when-to-collect.description')}
                               secondaryTypographyProps={{
-                                className: 'text-sm',
+                                className: 'text-base font-regular',
                               }}
                             />
                             <NavigateNextIcon color="primary" />
@@ -197,11 +197,11 @@ const Home: FC = () => {
                             <ListItemText
                               primary={t('tabs.learn.links.rules-of-thumb.title')}
                               primaryTypographyProps={{
-                                className: 'font-display font-medium',
+                                className: 'font-display font-medium text-xl',
                               }}
                               secondary={t('tabs.learn.links.rules-of-thumb.description')}
                               secondaryTypographyProps={{
-                                className: 'text-sm',
+                                className: 'text-base font-regular',
                               }}
                             />
                             <NavigateNextIcon color="primary" />
@@ -212,11 +212,11 @@ const Home: FC = () => {
                             <ListItemText
                               primary={t('tabs.learn.links.case-study-bonnie.title')}
                               primaryTypographyProps={{
-                                className: 'font-display font-medium',
+                                className: 'font-display font-medium text-xl',
                               }}
                               secondary={t('tabs.learn.links.case-study-bonnie.description')}
                               secondaryTypographyProps={{
-                                className: 'text-sm',
+                                className: 'text-base font-regular',
                               }}
                             />
                             <NavigateNextIcon color="primary" />
@@ -228,7 +228,7 @@ const Home: FC = () => {
                 </TabPanel>
                 <TabPanel value="plan" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
-                    <Paper className="p-8 md:w-2/5 md:grow">
+                    <Paper className="p-8 md:w-2/6 md:grow">
                       <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
                         {t('tabs.plan.heading')}
                       </h2>
@@ -241,7 +241,7 @@ const Home: FC = () => {
                         </Button>
                       </div>
                     </Paper>
-                    <Paper className="p-8 md:w-3/5">
+                    <Paper className="p-8 md:w-4/6">
                       <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
                         {t('tabs.plan.linksTitle')}
                       </h3>
@@ -251,11 +251,11 @@ const Home: FC = () => {
                             <ListItemText
                               primary={t('tabs.plan.links.retirement-income-calculator.title')}
                               primaryTypographyProps={{
-                                className: 'font-display font-medium',
+                                className: 'font-display font-medium text-xl',
                               }}
                               secondary={t('tabs.plan.links.retirement-income-calculator.description')}
                               secondaryTypographyProps={{
-                                className: 'text-sm',
+                                className: 'text-base font-regular',
                               }}
                             />
                             <NavigateNextIcon color="primary" />
@@ -266,11 +266,11 @@ const Home: FC = () => {
                             <ListItemText
                               primary={t('tabs.plan.links.oas-eligibility-estimator.title')}
                               primaryTypographyProps={{
-                                className: 'font-display font-medium',
+                                className: 'font-display font-medium text-xl',
                               }}
                               secondary={t('tabs.plan.links.oas-eligibility-estimator.description')}
                               secondaryTypographyProps={{
-                                className: 'text-sm',
+                                className: 'text-base font-regular',
                               }}
                             />
                             <NavigateNextIcon color="primary" />
@@ -282,7 +282,7 @@ const Home: FC = () => {
                 </TabPanel>
                 <TabPanel value="apply" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
-                    <Paper className="p-8 md:w-2/5 md:grow">
+                    <Paper className="p-8 md:w-2/6 md:grow">
                       <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
                         {t('tabs.apply.heading')}
                       </h2>
@@ -317,7 +317,7 @@ const Home: FC = () => {
                 </TabPanel>
                 <TabPanel value="manage" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
-                    <Paper className="p-8 md:w-2/5 md:grow">
+                    <Paper className="p-8 md:w-2/6 md:grow">
                       <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
                         {t('tabs.manage.heading')}
                       </h2>
@@ -372,7 +372,7 @@ const Home: FC = () => {
           <Paper variant="outlined" className="p-6">
             <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.find-office.title')}</h3>
             <Divider className="my-4" />
-            <Button component={Link} variant="outlined" href={t('contact-us.cards.find-office.href')}>
+            <Button component={Link} variant="outlined" className="text-primary-700 font-bold border-black border-opacity-10" href={t('contact-us.cards.find-office.href')}>
               {t('contact-us.cards.find-office.link-text')}
             </Button>
           </Paper>
