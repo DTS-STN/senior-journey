@@ -128,7 +128,7 @@ const Home: FC = () => {
                       variant="text"
                       onClick={() => setOpen(!open)}
                       endIcon={open ? <ExpandLess /> : <ExpandMore />}
-                      className="grow text-lg font-bold text-black text-opacity-60"
+                      className="text-lg font-bold text-black text-opacity-60"
                       fullWidth
                     >
                       {t('tabs.more')}
