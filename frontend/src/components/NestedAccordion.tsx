@@ -44,9 +44,6 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
             visibility: 'visible !important',
           },
         },
-        '.MuiAccordion-root.Mui-expanded': {
-          margin: '0',
-        },
         '.MuiAccordionSummary-root:focus': {
           backgroundColor: '#00363C',
         },
@@ -66,6 +63,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
         <Accordion
           key={task.id}
           disableGutters
+          className='sm:ml-5'
           expanded={expandedTasks.includes(task.id)}
           onChange={(_, expanded) => {
             onTaskAccordionChange(task.id, expanded)
@@ -78,7 +76,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
           }}
         >
           <AccordionSummary
-            className="py-2 font-display text-lg font-medium"
+            className="sm:pl-0 py-2 font-display text-lg font-medium"
             expandIcon={<ExpandMoreIcon />}
             sx={{ borderBottom: '1px solid rgba(0, 0, 0, 0.12)' }}
           >
