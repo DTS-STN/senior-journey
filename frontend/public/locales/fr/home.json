@@ -58,25 +58,25 @@
     "learn": {
       "button-text": "Renseignez-vous sur la retraite",
       "description": {
-        "options-and-tips": "Il y a de nombreux facteurs à prendre en compte avant de prendre sa retraite.",
-        "stories": "Découvrez les bases des prestations de vieillesse au Canada et les moyens de gérer votre argent à la retraite."
+        "options-and-tips": "Renseignez-vous sur vos options de revenu à la retraite et des conseils pour les pensions de la SV/RPC.",
+        "stories": "Lisez les histoires de retraités et leur choix de pension publique."
       },
       "heading": "Tirez le maximum de vos régimes de pension au Canada",
       "links": {
         "case-study-bonnie": {
-          "description": "Si Bonnie décide d'attendre avant de commencer à recevoir sa pension de la SV et du RPC, elle aura besoin de moins d'épargnes.",
-          "title": "Bonnie décide d'attendre afin de réduire les épargnes dont elle a besoin"
+          "description": "Bonnie reporte le versement de ses pension publiques et aura besoin de moins d'épargnes pour prendre sa retraite.",
+          "title": "Bonnie reporte sa pension pour réduire les épargnes dont elle a besoin"
         },
         "rules-of-thumb": {
-          "description": "Consultez ces conseils pour vous aider à décider quand prendre vos pensions de la SV et du RPC. Choisissez ce qui vous convient.",
-          "title": "Règles générales sur les régimes de pensions publics"
+          "description": "Jetez un coup d'œil sur ces conseils pour vous aider a prendre la décision de quand commencer à recevoir vos pensions. Faite le choix adapter à votre situation.",
+          "title": "Règles générales concernant les pensions publiques"
         },
         "when-to-collect": {
-          "description": "La flexibilité des pensions de la SV et du RPC vous offre des choix pour votre retraite. Apprenez quels sont les aspects à prendre en considération et comment en venir à une décision.",
-          "title": "Choisir quand commencer à recevoir vos pensions publiques"
+          "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer.",
+          "title": "Décider quand recevoir sa pension publique"
         }
       },
-      "linksTitle": "Principaux liens pour l'apprentissage en ce qui concerne la retraite",
+      "linksTitle": "Principaux liens d'apprentissage",
       "title": "Apprendre"
     },
     "manage": {
@@ -106,7 +106,7 @@
         "oas-eligibility-estimator": {
           "description": "Découvrez les montants que vous pourriez recevoir dans le cadre du programme de la Sécurité de la vieillesse et ses prestations.",
           "title": "Estimateur de prestations de la Sécurité de la vieillesse",
-          "url": "https://alpha.service.canada.ca/fr/projets/estimateur-prestations-sv"
+          "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
         },
         "retirement-income-calculator": {
           "description": "Obtenez une estimation de votre revenu de retraite. Cette estimation tient compte de vos prestations de vieillesse fédérales et de votre revenu de retraite d'un régime privé.",

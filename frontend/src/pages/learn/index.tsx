@@ -32,11 +32,13 @@ const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageUrl, minRead
           <Image src="/assets/bottom-top.svg" width={34} height={360} className="absolute bottom-0 w-full" alt="" />
         </div>
         <CardContent>
-          <p className="mb-2 font-display text-sm font-bold">{t('min-read', { minRead })}</p>
-          <h3 className="mb-2 font-display text-xl font-bold" id={`${uniqueId}-card-${id}-title`}>
-            {title}
-          </h3>
-          <p className="m-0 text-black/60">{desciption}</p>
+          <div className='p-4'>
+            <p className="mb-2 mt-2 font-display text-sm font-light">{t('min-read', { minRead })}</p>
+            <h3 className="mb-2 font-display text-xl font-bold" id={`${uniqueId}-card-${id}-title`}>
+              {title}
+            </h3>
+            <p className="m-0 text-black/60">{desciption}</p>
+          </div>
         </CardContent>
       </CardActionArea>
     </Card>
