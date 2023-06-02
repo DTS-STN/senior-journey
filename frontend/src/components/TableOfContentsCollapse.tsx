@@ -1,12 +1,7 @@
 import { FC } from 'react'
 
-import {
-  Divider,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-} from '@mui/material'
+import { ArrowDropUp } from '@mui/icons-material'
+import { Divider, List, ListItem, ListItemButton, ListItemText } from '@mui/material'
 import { useTranslation } from 'next-i18next'
 
 import { TableOfContentItem } from '../lib/types'
@@ -16,9 +11,7 @@ export interface TableOfContentsCollapseProps {
   items: ReadonlyArray<TableOfContentItem>
 }
 
-export const TableOfContentsCollapse: FC<TableOfContentsCollapseProps> = ({
-  items,
-}) => {
+export const TableOfContentsCollapse: FC<TableOfContentsCollapseProps> = ({ items }) => {
   const { t } = useTranslation('common')
 
   return (
@@ -30,13 +23,21 @@ export const TableOfContentsCollapse: FC<TableOfContentsCollapseProps> = ({
             {items.map(({ hash, text }) => (
               <ListItem key={hash} disablePadding>
                 <ListItemButton component="a" href={`#${hash}`}>
-                  <ListItemText
-                    primary={text}
-                    primaryTypographyProps={{ variant: 'body2' }}
-                  />
+                  <ListItemText primary={text} primaryTypographyProps={{ variant: 'body2' }} />
                 </ListItemButton>
               </ListItem>
             ))}
+            <ListItem disablePadding>
+              <ListItemButton
+                onClick={() => {
+                  window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+                  history.pushState({}, document.title, ' ')
+                }}
+              >
+                <ArrowDropUp color="primary" />
+                <ListItemText primary={t('table-of-contents.top')} primaryTypographyProps={{ variant: 'body1' }} />
+              </ListItemButton>
+            </ListItem>
           </List>
         )}
       </nav>

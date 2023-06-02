@@ -1,25 +1,19 @@
 import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
-import {
-  Divider,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Paper,
-} from '@mui/material'
+import { ArrowDropUp } from '@mui/icons-material'
+import { Divider, List, ListItem, ListItemButton, ListItemText, Paper } from '@mui/material'
 import { DebouncedFunc, throttle } from 'lodash'
 import { useTranslation } from 'next-i18next'
 
 import { TableOfContentItem } from '../lib/types'
+import { getLogger } from '../logging/log-util'
+
+const logger = getLogger('tableOfContents')
 
 const noop = () => {}
 
 const useThrottledOnScroll = (callback: any, delay?: number) => {
-  const throttledCallback = useMemo(
-    () => (callback ? throttle(callback, delay) : noop),
-    [callback, delay]
-  )
+  const throttledCallback = useMemo(() => (callback ? throttle(callback, delay) : noop), [callback, delay])
 
   useEffect(() => {
     if (throttledCallback === noop) return
@@ -37,10 +31,7 @@ export interface TableOfContentsProps {
   items: ReadonlyArray<TableOfContentItem>
 }
 
-export const TableOfContents: FC<TableOfContentsProps> = ({
-  header,
-  items,
-}) => {
+export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => {
   const { t } = useTranslation('common')
   const [activeState, setActiveState] = useState<string | null>(null)
 
@@ -66,18 +57,11 @@ export const TableOfContents: FC<TableOfContentsProps> = ({
 
       if (process.env.NODE_ENV !== 'production') {
         if (!node) {
-          console.error(
-            `Missing node on the item ${JSON.stringify(item, null, 2)}`
-          )
+          logger.warn(`Missing node on the item ${JSON.stringify(item, null, 2)}`)
         }
       }
 
-      if (
-        node &&
-        node.offsetTop <
-          document.documentElement.scrollTop +
-            document.documentElement.clientHeight / 20
-      ) {
+      if (node && node.offsetTop < document.documentElement.scrollTop + document.documentElement.clientHeight / 20) {
         active = item
         break
       }
@@ -115,27 +99,42 @@ export const TableOfContents: FC<TableOfContentsProps> = ({
   return (
     <Paper variant="outlined" className="sticky top-2">
       <nav aria-label={t('table-of-contents.aria-label')}>
-        <p className="m-0 p-4 font-display font-bold">
-          {header ?? t('table-of-contents.header')}
-        </p>
+        <p className="m-0 p-4 font-display text-xl font-light">{header ?? t('table-of-contents.header')}</p>
         <Divider />
         {items.length > 0 && (
           <List>
             {items.map(({ hash, text }) => (
-              <ListItem key={hash} disablePadding>
+              <ListItem
+                key={hash}
+                disablePadding
+                sx={{
+                  '.Mui-selected': {
+                    backgroundColor: 'rgba(78, 216, 232, 0.12)',
+                  },
+                }}
+              >
                 <ListItemButton
                   component="a"
                   href={`#${hash}`}
                   selected={activeState === hash}
                   onClick={() => handleClick(hash)}
+                  className="text-primary-700"
                 >
-                  <ListItemText
-                    primary={text}
-                    primaryTypographyProps={{ variant: "body2" }}
-                  />
+                  <ListItemText primary={text} primaryTypographyProps={{ variant: 'body1' }} />
                 </ListItemButton>
               </ListItem>
             ))}
+            <ListItem disablePadding>
+              <ListItemButton
+                onClick={() => {
+                  window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+                  history.pushState({}, document.title, ' ')
+                }}
+              >
+                <ArrowDropUp color="primary" />
+                <ListItemText primary={t('table-of-contents.top')} primaryTypographyProps={{ variant: 'body1' }} />
+              </ListItemButton>
+            </ListItem>
           </List>
         )}
       </nav>
