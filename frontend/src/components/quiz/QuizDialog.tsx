@@ -57,7 +57,7 @@ export interface QuizConfirmationProps {
 export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, onClose, sureText, yesText }) => {
   return (
     <>
-      <DialogContent>
+      <DialogContent className='min-h-[850px]'>
         <div className="mb-10 text-center">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
         </div>
@@ -165,7 +165,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
               </Button>
             </DialogTitle>
             <DialogContent className="flex flex-col">
-              <h2 className="mb-8 font-display text-2xl font-medium md:mb-16 md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
+              <h2 className="mb-8 font-display text-2xl font-medium md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                 {t('navigation.title')}
               </h2>
               <div className="mb-5">{formikWizard.renderComponent()}</div>
@@ -177,7 +177,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                   data-cy="progress-bar"
                   className="my-2"
                 />
-                <p id="progress-label" className="m-0 text-center">
+                <p id="progress-label" className="my-4 text-sm text-black text-center">
                   {t('navigation.progress', { currentStep: (formikWizard.currentStepIndex ?? 0) + 1, totalSteps: 8 })}
                 </p>
               </div>
@@ -209,7 +209,6 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                       formikWizard.handleNext()
                     }}
                     size="large"
-                    endIcon={<NavigateNextIcon />}
                   >
                     {t('navigation.next')}
                   </Button>
@@ -225,8 +224,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                     data-cy="previous-button"
                     size="large"
                     fullWidth
-                    variant="outlined"
-                    startIcon={<NavigateBeforeIcon />}
+                    variant="text"
                   >
                     {t('navigation.previous')}
                   </Button>

@@ -33,6 +33,8 @@ export const QuestionHowLong: FC<QuestionHowLongProps> = ({ values, setFieldValu
         sx={{
           '& .MuiToggleButton-root': {
             'borderRadius': '4px',
+            'fontWeight': 'bold',
+            'fontSize': '16px',
             '&:not(:first-of-type)': {
               border: '1px solid rgba(0, 0, 0, 0.12)',
             },

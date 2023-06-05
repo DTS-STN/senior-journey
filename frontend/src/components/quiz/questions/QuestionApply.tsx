@@ -26,7 +26,7 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
   return (
     <div>
       <h5 className="h5 mb-4">{t('questions.question-apply.question-marital-status.title')}</h5>
-      <FormGroup className="mb-4" data-cy="apply-subquestion-marital-status">
+      <FormGroup className="mb-4 text-black" data-cy="apply-subquestion-marital-status">
         <FormControlLabel
           control={
             <Checkbox name="single" value="single" checked={values.single === 'single'} onChange={handleCheckbox} />
@@ -80,6 +80,8 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
         sx={{
           '& .MuiToggleButton-root': {
             'borderRadius': '4px',
+            'fontWeight': 'bold',
+            'fontSize': '16px',
             '&:not(:first-of-type)': {
               border: '1px solid rgba(0, 0, 0, 0.12)',
             },
@@ -94,19 +96,19 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
           },
         }}
       >
+         <ToggleButton
+          value="no-kids"
+          aria-label={t('questions.question-apply.question-children.option-no-kids')}
+          data-cy="no-kids-button"
+        >
+          {t('questions.question-apply.question-children.option-no-kids')}
+        </ToggleButton>
         <ToggleButton
           value="yes-kids"
           aria-label={t('questions.question-apply.question-children.option-yes-kids')}
           data-cy="yes-kids-button"
         >
           {t('questions.question-apply.question-children.option-yes-kids')}
-        </ToggleButton>
-        <ToggleButton
-          value="no-kids"
-          aria-label={t('questions.question-apply.question-children.option-no-kids')}
-          data-cy="no-kids-button"
-        >
-          {t('questions.question-apply.question-children.option-no-kids')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

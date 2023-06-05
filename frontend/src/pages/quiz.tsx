@@ -46,15 +46,15 @@ const Quiz: FC = () => {
         <h1 className="mb-8 font-display text-2xl font-medium md:mb-12 md:rounded-3xl md:bg-gray-surface md:p-6 md:text-4xl md:text-primary-700">
           {t('landing.header')}
         </h1>
-        <h2 id="take-this-quiz" className="my-4 font-display text-xl font-medium">
+        <h2 id="take-this-quiz" className="font-display text-xl font-bold">
           {t('landing.p1')}
         </h2>
-        <p>{t('landing.p2')}</p>
-        <h2 id="what-you-ll-need" className="my-4 font-display text-xl font-medium">
+        <p className='my-8'>{t('landing.p2')}</p>
+        <h2 id="what-you-ll-need" className="my-4 font-display text-xl font-bold">
           {t('landing.whatyouneed')}
         </h2>
-        <p>{t('landing.p3')}</p>
-        <ul className="list-disc space-y-2 pl-10">
+        <p className='mb-0'>{t('landing.p3')}</p>
+        <ul className="list-disc pl-10">
           <li>
             <Trans ns="quiz" i18nKey="landing.legal" />
           </li>
@@ -68,10 +68,10 @@ const Quiz: FC = () => {
             <Trans ns="quiz" i18nKey="landing.retirement" />
           </li>
         </ul>
-        <h2 id="time-to-complete-survey" className="my-4 font-display text-xl font-medium">
+        <h2 id="time-to-complete-survey" className="my-4 font-display text-xl font-bold">
           {t('landing.timetocomplete')}
         </h2>
-        <p>
+        <p className='mb-12'>
           <WatchLaterIcon className="mr-4 inline text-2xl" />
           {t('landing.minutes')}
         </p>
