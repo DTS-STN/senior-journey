@@ -116,11 +116,7 @@ const Home: FC = () => {
                 <>
                   <div className="grid grid-cols-2 gap-1">
                     <div className="border-b-2 border-primary-700 p-2">
-                    <Button
-                        variant="text"
-                        className="grow text-lg font-bold"
-                        fullWidth
-                      >
+                      <Button variant="text" className="grow text-lg font-bold" fullWidth>
                         {t(`tabs.${value}.title`)}
                       </Button>
                     </div>
@@ -184,11 +180,11 @@ const Home: FC = () => {
                         <ListItem disablePadding className="border-b">
                           <ListItemButton href="/learn/deciding-when-to-start-your-public-pensions" component={Link}>
                             <ListItemText
-                              primary={t('tabs.learn.links.when-to-collect.title')}
+                              primary={t('tabs.learn.links.when-to-start.title')}
                               primaryTypographyProps={{
                                 className: 'font-display font-medium text-xl',
                               }}
-                              secondary={t('tabs.learn.links.when-to-collect.description')}
+                              secondary={t('tabs.learn.links.when-to-start.description')}
                               secondaryTypographyProps={{
                                 className: 'text-base font-regular',
                               }}
@@ -376,7 +372,12 @@ const Home: FC = () => {
           <Paper variant="outlined" className="p-6">
             <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.find-office.title')}</h3>
             <Divider className="my-4" />
-            <Button component={Link} variant="outlined" className="text-primary-700 font-bold border-black border-opacity-10" href={t('contact-us.cards.find-office.href')}>
+            <Button
+              component={Link}
+              variant="outlined"
+              className="border-black border-opacity-10 font-bold text-primary-700"
+              href={t('contact-us.cards.find-office.href')}
+            >
               {t('contact-us.cards.find-office.link-text')}
             </Button>
           </Paper>

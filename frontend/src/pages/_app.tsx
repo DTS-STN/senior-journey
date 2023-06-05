@@ -10,6 +10,7 @@ import { DefaultSeo } from 'next-seo'
 import { AppProps, NextWebVitalsMetric } from 'next/app'
 import Head from 'next/head'
 
+import nextI18NextConfig from '../../next-i18next.config.js'
 import createEmotionCache from '../createEmotionCache'
 import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
 import { AppWindow } from '../lib/types'
@@ -91,4 +92,4 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
   webVitalHistogram.record(metric.value, attributes)
 }
 
-export default appWithTranslation(MyApp)
+export default appWithTranslation(MyApp, nextI18NextConfig)

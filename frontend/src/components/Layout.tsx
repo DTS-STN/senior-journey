@@ -69,7 +69,7 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
             },
             {
               link: '/learn/deciding-when-to-start-your-public-pensions',
-              linkText: t('footer.explore-retirement.when-to-collect-public-pensions'),
+              linkText: t('footer.explore-retirement.when-to-start-public-pensions'),
             },
             {
               link: '/learn/going-from-work-to-retirement',
