@@ -24,7 +24,7 @@ const Fred: FC = () => {
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
-  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
+  function getImageSrc(imagePrefix: string, extension: string = 'png') {
     return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
   }
 
@@ -132,9 +132,18 @@ const Fred: FC = () => {
           />
         </AlertCard>
         <p>{t('overview.p2')}</p>
-        <p>{t('overview.p3')}</p>
+        <p>
+        <Trans
+            ns="learn/case-studies/fred"
+            i18nKey="overview.p3"
+            components={{
+              a3: <MuiLink href={t('overview.a3')} />,
+              a4: <MuiLink href={t('overview.a4')} />,
+            }}
+          />
+        </p>
         <p>{t('overview.p4')}</p>
-        {locale === 'en' && <p>{t('overview.p5')}</p>}
+        <p>{t('overview.p5')}</p>
 
         <h2 id="monthly-amounts" className="h2">
           {t('monthly-amounts.heading')}
