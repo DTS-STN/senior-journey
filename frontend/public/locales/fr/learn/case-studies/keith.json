@@ -153,7 +153,7 @@
       "p1": "Lorsque Keith décide quand il commencera à toucher ses pensions publiques, il est important qu'il y réfléchisse\u00a0:",
       "p2": "Avant de prendre sa décision finale, Keith veut encore vérifier une chose. Il veut voir comment sa pension à vie évoluera s'il commence à la recevoir à des âges différents.",
       "smart-tip": {
-        "content": "<strong>Conseil judicieux\u00a0:</strong> la longévité est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leur épargne. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent s'attendre à <a1>vivre jusqu'à l'âge de 86-88 ans</a1> et doivent prévoir au moins 20 ans de plus. En fait, il y a <a2>environ 50 % de chances</a2> que les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à l'âge de 90 ans. Il est bon d'avoir un plan financier pour ces années de vie.",
+        "content": "<strong>Conseil judicieux\u00a0:</strong> la longévité est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leur épargne. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent s'attendre à <a1>vivre jusqu'à l'âge de 86-88 ans</a1> et doivent prévoir au moins 20 ans de plus. En fait, il y a <a2>environ 50\u00a0% de chances</a2> que les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à l'âge de 90 ans. Il est bon d'avoir un plan financier pour ces années de vie.",
         "link-one": "https://www.osfi-bsif.gc.ca/fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
         "link-two": "https://www.osfi-bsif.gc.ca/fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32"
       }
@@ -206,7 +206,7 @@
     "heading": "Pension de vieillesse de Keith",
     "low-income-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
     "p1": "Le revenu de Keith ne lui permettrait pas d'être éligible au <a1>Supplément de revenu garanti</a1> (SRG), car il continuera à travailler jusqu'à l'âge de 70 ans avec un bon salaire. Le SRG est destiné aux personnes à <a2>faible revenu</a2>.",
-    "p2": "Keith choisit de reporter le versement de la pension de la Sécurité de la vieillesse (SV) jusqu'à l'âge de 70 ans afin de l'augmenter de façon permanente de 36 %. Cette pension plus élevée l'aidera à mieux vivre sa retraite lorsqu'il cessera de travailler à l'âge de 70 ans.",
+    "p2": "Keith choisit de reporter le versement de la pension de la Sécurité de la vieillesse (SV) jusqu'à l'âge de 70 ans afin de l'augmenter de façon permanente de 36\u00a0%. Cette pension plus élevée l'aidera à mieux vivre sa retraite lorsqu'il cessera de travailler à l'âge de 70 ans.",
     "p3": "Pour en savoir plus sur les éléments à prendre en compte lorsque vous choisissez l'âge auquel vous souhaitez faire débuter votre pension de la SV, lisez <a3>Fred décide quand prendre ses pensions publiques</a3>."
   },
   "overview": {

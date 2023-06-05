@@ -97,12 +97,12 @@
   "old-age-security": {
     "auto-increase": {
       "accessibility": {
-        "button-label": "Texte alternatif pour Votre pension de la SV va automatiquement augmentée de 10 % à l'âge de 75 ans",
+        "button-label": "Texte alternatif pour Votre pension de la SV va automatiquement augmentée de 10\u00a0% à l'âge de 75 ans",
         "caption": "Valeurs présentées sur l'image\u00a0:",
         "header": [
           "Âge pour commencer à recevoir votre pension de la SV",
           "Paiement mensuel de la pension de la SV",
-          "Augmentation de 10 % à l'âge de 75 ans",
+          "Augmentation de 10\u00a0% à l'âge de 75 ans",
           "Paiement mensuel à l'âge de 75 ans"
         ],
         "rows": [
@@ -126,11 +126,11 @@
           }
         ]
       },
-      "description": "Le tableau indique les montants mensuels de la pension de la SV à l'âge de 75 ans, en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous recevrez d'argent. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Si vous choisissez de retarder le versement de votre pension et de recevoir une pension plus élevée, l'augmentation automatique de 10 % à l'âge de 75 ans vous permettra d'obtenir plus d'argent.",
-      "p1": "Quel que soit le moment où vous avez choisi de commencer à recevoir votre pension de la SV, celle-ci augmentera automatiquement de 10 % lorsque vous atteindrez l'âge de 75 ans.",
-      "p2": "Si vous décidez de retarder votre départ et de recevoir une pension plus élevée, l'augmentation automatique de 10 % à l'âge de 75 ans vous permettra d'obtenir plus d'argent."
+      "description": "Le tableau indique les montants mensuels de la pension de la SV à l'âge de 75 ans, en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous recevrez d'argent. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Si vous choisissez de retarder le versement de votre pension et de recevoir une pension plus élevée, l'augmentation automatique de 10\u00a0% à l'âge de 75 ans vous permettra d'obtenir plus d'argent.",
+      "p1": "Quel que soit le moment où vous avez choisi de commencer à recevoir votre pension de la SV, celle-ci augmentera automatiquement de 10\u00a0% lorsque vous atteindrez l'âge de 75 ans.",
+      "p2": "Si vous décidez de retarder votre départ et de recevoir une pension plus élevée, l'augmentation automatique de 10\u00a0% à l'âge de 75 ans vous permettra d'obtenir plus d'argent."
     },
-    "content-one": "Vous pouvez commencer à recevoir votre pension de la Sécurité de la vieillesse (SV) dès l'âge de 65 ans. Chaque mois que vous reportez augmente ce montant de 0,6 %. Pour chaque année reporter, votre pension de la SV augmente de 7,2 %. À l'âge de 70 ans, votre montant mensuel sera 36 % plus élevé qu'à l'âge de 65 ans. Si vous repoussez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée. Après 70 ans, il n'y a aucun avantage à reporter votre premier versement.",
+    "content-one": "Vous pouvez commencer à recevoir votre pension de la Sécurité de la vieillesse (SV) dès l'âge de 65 ans. Chaque mois que vous reportez augmente ce montant de 0,6\u00a0%. Pour chaque année reporter, votre pension de la SV augmente de 7,2\u00a0%. À l'âge de 70 ans, votre montant mensuel sera 36\u00a0% plus élevé qu'à l'âge de 65 ans. Si vous repoussez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée. Après 70 ans, il n'y a aucun avantage à reporter votre premier versement.",
     "content-two": "Si vous reportez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée.",
     "heading": "Sécurité de la vieillesse",
     "high-income": {
@@ -164,8 +164,8 @@
           }
         ]
       },
-      "description": "Le graphique montre l'évolution des versements mensuels de la pension de la SV en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous percevrez d'argent à vie. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Votre pension de la SV augmentera de 36 % si vous la commencez à 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension avec l'âge et utilise le montant de la pension de la SV pour juin 2023.",
-      "p": "Votre pension de la SV augmentera de 36 % si vous commencez à la recevoir à l'âge de 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension en fonction de l'âge et utilise le montant de la pension de la SV pour juin 2023."
+      "description": "Le graphique montre l'évolution des versements mensuels de la pension de la SV en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous percevrez d'argent à vie. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Votre pension de la SV augmentera de 36\u00a0% si vous la commencez à 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension avec l'âge et utilise le montant de la pension de la SV pour juin 2023.",
+      "p": "Votre pension de la SV augmentera de 36\u00a0% si vous commencez à la recevoir à l'âge de 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension en fonction de l'âge et utilise le montant de la pension de la SV pour juin 2023."
     },
     "table-one": {
       "header-one": "Type de prestation",
