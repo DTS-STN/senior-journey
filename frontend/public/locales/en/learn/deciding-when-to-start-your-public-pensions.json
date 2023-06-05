@@ -6,7 +6,7 @@
     "a1": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx",
     "accessibility": {
       "button-label": "Text alternative for Your monthly CPP could increase significantly if you delay",
-      "caption": "Values presented on the image",
+      "caption": "Values presented on the image:",
       "header": ["Age you start your CPP retirement pension", "Monthly CPP retirement pension amount"],
       "rows": [
         {
@@ -94,7 +94,7 @@
     "auto-increase": {
       "accessibility": {
         "button-label": "Text alternative for Your OAS pension will automatically increase by 10% at age 75",
-        "caption": "Values presented on the image",
+        "caption": "Values presented on the image:",
         "header": [
           "Age you start your OAS pension",
           "Monthly OAS pension",
@@ -137,7 +137,7 @@
     "oas-delay": {
       "accessibility": {
         "button-label": "Text alternative for You can collect a higher monthly OAS pension, if you delay",
-        "caption": "Values presented on the image",
+        "caption": "Values presented on the image:",
         "header": ["Age you start collecting your OAS pension", "Monthly OAS pension"],
         "rows": [
           {
