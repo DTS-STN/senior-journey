@@ -158,12 +158,14 @@
   "overview": {
     "a1": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
     "a2": "https://www.osfi-bsif.gc.ca/Fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
+    "a3": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
+    "a4": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
     "heading": "Aperçu",
     "p1": "Fred a toujours vécu au Canada et a travaillé pendant 40 ans comme chauffeur de camion. Il va avoir 60 ans cette année et a reçu une lettre de Service Canada. Cette lettre indique qu'il peut désormais demander sa pension de retraite du RPC. Fred doit décider s'il veut commencer à toucher sa pension de retraite du RPC de manière anticipée ou attendre.",
     "p2": "Fred sait qu'il est important de tenir compte de son espérance de viepour déterminer le moment où il commencera à recevoir ses pensions publiques. Il est en bonne santé et décide de planifier ses finances jusqu'à l'âge de 86 ans ou plus.",
-    "p3": "À l'âge de 65 ans, le montant de la pension de retraite du RPC de Fred sera de 1\u00a0300\u00a0$ par mois. Comme Fred a vécu au Canada toute sa vie, il aura droit à une pension complète de la SV. En raison de l'argent qu'il compte retirer de son REER et d'autres sources de revenu, Fred n'est pas considéré comme ayant un faible revenu. Il ne serait pas éligible au Supplément de revenu garanti (SRG)",
+    "p3": "À l'âge de 65 ans, le montant de la pension de retraite du RPC de Fred sera de 1\u00a0300\u00a0$ par mois. Comme Fred a vécu au Canada toute sa vie, il aura droit à une pension complète de la SV. En raison de l'argent qu'il compte retirer de son REER et d'autres sources de revenu, Fred n'est pas considéré comme ayant un <a3>faible revenu</a3>. Il ne serait pas éligible au <a4>Supplément de revenu garanti (SRG)</a4>.",
     "p4": "Fred doit également réfléchir à la date à laquelle il commencera à recevoir la pension de la SV. Il souhaite d'abord réfléchir à sa situation financière afin de s'assurer une retraite à l'aise.",
-    "p5": "(FR) After thinking it through, Fred decides to delay his OAS pension until age 68 and delay his CPP retirement pension until age 70. Let's see how he came to this decision!",
+    "p5": "Après avoir bien réfléchi, Fred décide de reporter sa SV jusqu'a 68 ans ainsi que de reporter sa pension de retraite du RPC a 70 ans. Voyons comment Fred en est arrivé à cette décision.",
     "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> l'espérance de vie est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leurs économies. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent s'attendre à <a1>vivre jusqu'à l'âge de 86-88 ans et doivent prévoir au moins 20 ans de plus</a1>. En fait, il y a <a2>environ 50 % de chances que</a2> les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à l'âge de 90 ans. Il est bon d'avoir un plan financier pour ces années de vie."
   },
   "values-heading": "Valeurs"
