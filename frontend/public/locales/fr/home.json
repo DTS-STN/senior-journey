@@ -30,7 +30,7 @@
         "title": "Trouver un bureau"
       }
     },
-    "description": "Il y a plusieurs façons dont vous pouvez communiquer avec nous pour obtenir des renseignements au sujet de vos prestations de vieillesse fédérales",
+    "description": "Il y a plusieurs façons que vous pouvez communiquer avec nous pour obtenir des renseignements au sujet de vos pensions publiques",
     "title": "Communiquez avec nous"
   },
   "header": "Informez-vous sur votre retraite et planifiez en conséquence",
@@ -53,7 +53,7 @@
         "text": "Pour présenter une demande en ligne, vous pouvez ouvrir une session dans Mon dossier Service Canada (MDSC) ou vous inscrire pour ouvrir un compte MDSC. Pour présenter une demande en personne ou par la poste, vous pouvez remplir une demande papier."
       },
       "heading": "Vous êtes prêt à présenter une demande pour vos pensions publiques? Commencez maintenant",
-      "title": "Presenter une demande"
+      "title": "Présenter une demande"
     },
     "learn": {
       "button-text": "Renseignez-vous sur la retraite",
@@ -86,8 +86,8 @@
       },
       "description": {
         "list": {
-          "check-status-payment-dates-and-amounts": "Vérifier l'état, les dates de versement et les montants de vos prestations de vieillesse fédérales.",
-          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse.",
+          "check-status-payment-dates-and-amounts": "Vérifier l'état, les dates de versement et les montants de vos pensions publiques;",
+          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse;",
           "update-mailing-address-and-banking-information": "Mettre à jour votre adresse postale et vos renseignements bancaires."
         },
         "text": "MDSC vous permet de faire beaucoup de choses, notamment\u00a0:"
@@ -100,7 +100,7 @@
       "button": {
         "text": "Répondez au questionnaire"
       },
-      "description": "Recevez une liste personnalisée pour vous guider à travers la retraite.",
+      "description": "Recevez une liste de contrôle personnalisée pour vous guider tout au long de votre retraite.",
       "heading": "Vous ne savez pas par où commencer? Répondez à notre questionnaire!",
       "links": {
         "oas-eligibility-estimator": {
@@ -109,8 +109,8 @@
           "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
         },
         "retirement-income-calculator": {
-          "description": "Obtenez une estimation de votre revenu de retraite. Cette estimation tient compte de vos prestations de vieillesse fédérales et de votre revenu de retraite d'un régime privé.",
-          "title": "Calculatrice du revenu de retraite Canadienne (CRRC)",
+          "description": "La Calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
+          "title": "La Calculatrice du revenu de retraite canadienne (CRRC)",
           "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html"
         }
       },
