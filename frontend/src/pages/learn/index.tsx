@@ -32,7 +32,7 @@ const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageUrl, minRead
           <Image src="/assets/bottom-top.svg" width={34} height={360} className="absolute bottom-0 w-full" alt="" />
         </div>
         <CardContent>
-          <div className='p-4'>
+          <div className="p-4">
             <p className="mb-2 mt-2 font-display text-sm font-light">{t('min-read', { minRead })}</p>
             <h3 className="mb-2 font-display text-xl font-bold" id={`${uniqueId}-card-${id}-title`}>
               {title}
@@ -102,12 +102,12 @@ const Learn: FC = () => {
       desciption: t('sections.making-decisions.body'),
       cards: [
         {
-          desciption: t(`sections.making-decisions.cards.when-to-collect.body`),
+          desciption: t(`sections.making-decisions.cards.when-to-start.body`),
           href: '/learn/deciding-when-to-start-your-public-pensions',
-          id: 'when-to-collect',
+          id: 'when-to-start',
           imageUrl: '/assets/deciding-when-to-start-your-public-pensions-sm.jpg',
           minRead: 15,
-          title: t(`sections.making-decisions.cards.when-to-collect.title`),
+          title: t(`sections.making-decisions.cards.when-to-start.title`),
         },
         {
           desciption: t(`sections.making-decisions.cards.from-work-to-retirement.body`),

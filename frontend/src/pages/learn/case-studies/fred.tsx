@@ -177,7 +177,7 @@ const Fred: FC = () => {
           height={519}
           className="w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.monthly-pension.p1')}</p>
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('cpp.monthly-pension.p1')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.monthly-pension.accessibility', { returnObjects: true })}
           description={t('cpp.monthly-pension.description')}
@@ -197,7 +197,7 @@ const Fred: FC = () => {
           height={519}
           className="mb-5 mt-10 w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.lifetime-pension.p')}</p>
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('cpp.lifetime-pension.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.lifetime-pension.accessibility', { returnObjects: true })}
           description={t('cpp.lifetime-pension.description')}
@@ -219,7 +219,7 @@ const Fred: FC = () => {
           height={519}
           className="w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('oas.monthly-pension.p')}</p>
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('oas.monthly-pension.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('oas.monthly-pension.accessibility', { returnObjects: true })}
           description={t('oas.monthly-pension.description')}
@@ -235,7 +235,7 @@ const Fred: FC = () => {
           height={519}
           className="mb-5 w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('oas.lifetime-pension.p2')}</p>
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('oas.lifetime-pension.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('oas.lifetime-pension.accessibility', { returnObjects: true })}
           description={t('oas.lifetime-pension.description')}

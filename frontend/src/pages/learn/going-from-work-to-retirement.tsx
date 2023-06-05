@@ -26,8 +26,8 @@ const GoingFromWorkToRetirement: FC = () => {
       },
       {
         href: '/learn/deciding-when-to-start-your-public-pensions',
-        primary: t('learn-more.deciding-when-to-collect.header'),
-        secondary: t('learn-more.deciding-when-to-collect.description'),
+        primary: t('learn-more.deciding-when-to-start.header'),
+        secondary: t('learn-more.deciding-when-to-start.description'),
       },
       {
         href: '/learn/rules-of-thumb-for-public-pensions',
@@ -123,7 +123,6 @@ const GoingFromWorkToRetirement: FC = () => {
         <h3 className="h3">{t('phased-retirement.transition')}</h3>
         <p>{t('phased-retirement.p1')}</p>
         <p>{t('phased-retirement.p2')}</p>
-
 
         <h2 id="second-career" className="h2">
           {t('second-career.heading')}

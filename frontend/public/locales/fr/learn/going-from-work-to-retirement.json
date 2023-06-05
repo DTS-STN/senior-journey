@@ -17,7 +17,7 @@
       "post-retirement-benefits-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html"
     },
     "option-2": {
-      "disclaimer": "<strong>Avertissement\u00a0:</strong> Ce site Web vise à vous donner des conseils sur le bon moment pour recevoir vos pensions publiques. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander de l'aide d'un conseiller financier.",
+      "disclaimer": "<strong>Clause de non-responsabilité\u00a0:</strong> Ce site Web vise à vous donner des conseils sur le bon moment pour recevoir vos pensions publiques. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander de l'aide d'un conseiller financier.",
       "heading": "Option 2\u00a0: reporter de recevoir toucher les pensions",
       "important": "<strong>Important\u00a0:</strong> Si votre revenue annuel dépasse un certain montant, vous devez rembourser une partie ou la totalité de votre pension de la SV. C'est ce qu'on appelle <a1>l'impôt de récupération de la pension de la Sécurité de la vieillesse</a1>.",
       "oas-tax-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html",
@@ -44,7 +44,7 @@
     "start-collecting": "Les gens prennent et reprennent leur retraite, changent de carrière, créent de nouvelles entreprises pendant qu'ils sont à la retraite."
   },
   "learn-more": {
-    "deciding-when-to-collect": {
+    "deciding-when-to-start": {
       "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer.",
       "header": "Décider quand recevoir sa pension publique"
     },
