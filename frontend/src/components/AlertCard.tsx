@@ -38,7 +38,7 @@ const AlertCard: FC<AlertCardProps> = ({ className, type, children }) => {
         <div className={`${iconBgColor} p-4 text-white md:flex md:flex-col md:justify-center`}>
           <Icon fontSize="large" />
         </div>
-        <div className={`${textBgColor} p-6 md:p-8`}>{children}</div>
+        <div className={`${textBgColor} p-6`}>{children}</div>
       </div>
     </div>
   )

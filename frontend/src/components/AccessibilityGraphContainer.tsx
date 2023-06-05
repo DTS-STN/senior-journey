@@ -7,7 +7,7 @@ import AccessibilityTable, { TableData } from './AccessibilityTable'
 
 export interface AccessibilityGraphContainerProps {
   tableData: TableData
-  description:  React.ReactNode
+  description: React.ReactNode
   descriptionHeading: string
   valuesHeading: string
   buttonLabel: string
@@ -27,19 +27,19 @@ const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = 
   }
 
   return (
-    <div className="border-t border-t-primary-500 border-b border-b-primary-500 mb-5">
+    <div className="mb-5 border-b border-t border-b-primary-500 border-t-primary-500">
       <div>
-        <IconButton onClick={handleClick} aria-label={buttonLabel} className='text-primary-500'>
+        <IconButton onClick={handleClick} aria-label={buttonLabel} className="text-primary-500">
           {open ? <ExpandLess /> : <ExpandMore />}
         </IconButton>
         <span>{buttonLabel}</span>
       </div>
       <Collapse in={open}>
-        <div className='py-6'>
-        <h3 className="font-bold pb-4">{descriptionHeading}</h3>
-        <p>{description}</p>
-        <h3 className="font-bold pb-4">{valuesHeading}</h3>
-        <AccessibilityTable tableData={tableData} />
+        <div className="py-6">
+          <h3 className="pb-4 font-bold">{descriptionHeading}</h3>
+          <p>{description}</p>
+          <h3 className="pb-4 font-bold">{valuesHeading}</h3>
+          <AccessibilityTable tableData={tableData} />
         </div>
       </Collapse>
     </div>

@@ -110,7 +110,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
                   <Trans
                     ns="learn/deciding-when-to-start-your-public-pensions"
                     i18nKey={secondary}
-                    components={{ a1: <MuiLink href={a1} />, a2: <MuiLink href={a2} />}}
+                    components={{ a1: <MuiLink href={a1} />, a2: <MuiLink href={a2} /> }}
                   >
                     {secondary}
                   </Trans>

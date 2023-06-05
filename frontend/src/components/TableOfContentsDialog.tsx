@@ -1,5 +1,6 @@
 import { FC, useState } from 'react'
 
+import { ArrowDropUp } from '@mui/icons-material'
 import TocIcon from '@mui/icons-material/Toc'
 import {
   Button,
@@ -25,10 +26,7 @@ export interface TableOfContentsDialogProps {
   items: ReadonlyArray<TableOfContentItem>
 }
 
-export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({
-  header,
-  items,
-}) => {
+export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({ header, items }) => {
   const { t } = useTranslation('common')
   const [open, setOpen] = useState(false)
   const theme = useTheme()
@@ -52,10 +50,7 @@ export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({
 
   return (
     <>
-      <Fab
-        aria-label={t('table-of-contents.dialog.trigger-aria-label')}
-        onClick={handleOnTriggerClick}
-      >
+      <Fab aria-label={t('table-of-contents.dialog.trigger-aria-label')} onClick={handleOnTriggerClick}>
         <TocIcon />
       </Fab>
       <Dialog open={open} onClose={handleOnDialogClose} fullScreen={fullScreen}>
@@ -67,18 +62,23 @@ export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({
               <List>
                 {items.map(({ hash, text }) => (
                   <ListItem key={hash} disablePadding>
-                    <ListItemButton
-                      component="a"
-                      href={`#${hash}`}
-                      onClick={handleListItemClick}
-                    >
-                      <ListItemText
-                        primary={text}
-                        primaryTypographyProps={{ variant: 'body2' }}
-                      />
+                    <ListItemButton component="a" href={`#${hash}`} onClick={handleListItemClick}>
+                      <ListItemText primary={text} primaryTypographyProps={{ variant: 'body2' }} />
                     </ListItemButton>
                   </ListItem>
                 ))}
+                <ListItem disablePadding>
+                  <ListItemButton
+                    onClick={() => {
+                      window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+                      history.pushState({}, document.title, ' ')
+                      handleListItemClick()
+                    }}
+                  >
+                    <ArrowDropUp color="primary" />
+                    <ListItemText primary={t('table-of-contents.top')} primaryTypographyProps={{ variant: 'body1' }} />
+                  </ListItemButton>
+                </ListItem>
               </List>
             )}
           </nav>

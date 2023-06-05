@@ -68,7 +68,7 @@
     "li4": "For people aged 65-70, the CPP provides a larger rate of increase to the retirement pension for each month you delay than the OAS pension. If delayed until age 70, the monthly CPP retirement pension could more than double compared to starting it at 60.",
     "li5": "There are many things to consider when deciding the age to start collecting your public pensions.",
     "li6": "You might make your decision based on the monthly payment amounts, the total amount you'd collect over a lifetime, or your ability to use money to meet immediate needs or wants.",
-    "li7": "Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost 100,000 by the end of one's life.",
+    "li7": "Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost $100,000 by the end of one's life.",
     "li8": "Your pension will continue to grow higher to reflect inflation.",
     "smart-tip": "<strong>Smart tip:</strong> If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the <a2>Guaranteed Income Supplement (GIS)</a2>. People who qualify for the GIS should not wait to apply past age 65. You cannot collect the GIS if you are delaying your OAS pension."
   },
@@ -158,10 +158,12 @@
   "overview": {
     "a1": "https://www.osfi-bsif.gc.ca/Eng/oca-bac/ar-ra/cpp-rpc/Pages/cpp31.aspx#tbl44",
     "a2": "https://www.osfi-bsif.gc.ca/Eng/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
+    "a3": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
+    "a4": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html",
     "heading": "Overview",
     "p1": "Fred has always lived in Canada and has worked for 40 years as a truck driver. He is turning 60 this year and received a letter from Service Canada. This letter says he is now eligible to apply for his CPP retirement pension. Fred must decide if he wants to start collecting his CPP retirement pension early or wait.",
     "p2": "Fred knows that his longevity is important to think about for when to start his public pensions. He is in good health and decides to plan his finances until age 86 or older.",
-    "p3": "At age 65, Fred's CPP retirement pension amount will be $1,300 a month. Since Fred has lived in Canada his whole life, he will be eligible for a full OAS pension. Because of the money he plans to withdraw from his RRSP and income sources, Fred is not considered low income. He would not qualify for the Guaranteed Income Supplement (GIS). Fred also needs to consider when he will start the OAS pension.",
+    "p3": "At age 65, Fred's CPP retirement pension amount will be $1,300 a month. Since Fred has lived in Canada his whole life, he will be eligible for a full OAS pension. Because of the money he plans to withdraw from his RRSP and income sources, Fred is not considered <a3>low income</a3>. He would not qualify for the <a4>Guaranteed Income Supplement (GIS)</a4>. Fred also needs to consider when he will start the OAS pension.",
     "p4": "He would like to think about his finances first to make sure he will live a comfortable retirement.",
     "p5": "After thinking it through, Fred decides to delay his OAS pension until age 68 and delay his CPP retirement pension until age 70. Let's see how he came to this decision!",
     "smart-tip": "<strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live until age 86-88 and need to plan for least another 20 years</a1>. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
