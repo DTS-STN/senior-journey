@@ -62,6 +62,7 @@
     "dialog": {
       "trigger-aria-label": "Ouvrir la table des matières"
     },
-    "header": "Contenu"
+    "header": "Contenu",
+    "top": "Retour au haut de la page"
   }
 }

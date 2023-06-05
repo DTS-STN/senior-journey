@@ -62,6 +62,7 @@
     "dialog": {
       "trigger-aria-label": "Open table of contents"
     },
-    "header": "Contents"
+    "header": "Contents",
+    "top": "Back to Top"
   }
 }
