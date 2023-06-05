@@ -245,7 +245,12 @@ const Home: FC = () => {
                       <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
                         {t('tabs.plan.linksTitle')}
                       </h3>
-                      <List disablePadding>
+                      <List disablePadding className='ml-4'
+                      sx={{
+                        '.MuiButtonBase-root.MuiListItemButton-root': {
+                          paddingLeft: '0px',
+                        },
+                      }}>
                         <ListItem disablePadding className="border-b">
                           <ListItemButton href={t('tabs.plan.links.retirement-income-calculator.url')} component={Link}>
                             <ListItemText
@@ -287,14 +292,19 @@ const Home: FC = () => {
                         {t('tabs.apply.heading')}
                       </h2>
                       <Divider className="mb-8" />
-                      <p>{t('tabs.apply.description.text')}</p>
-                      <List disablePadding>
+                      <p className='mb-8'>{t('tabs.apply.description.text')}</p>
+                      <List disablePadding className='ml-4'
+                      sx={{
+                        '.MuiButtonBase-root.MuiListItemButton-root': {
+                          paddingLeft: '0px',
+                        },
+                      }}>
                         <ListItem disablePadding className="border-b">
                           <ListItemButton href={t('tabs.apply.description.links.how-to-apply.url')} component={Link}>
                             <ListItemText
                               primary={t('tabs.apply.description.links.how-to-apply.title')}
                               primaryTypographyProps={{
-                                className: 'font-display font-medium',
+                                className: 'font-display font-medium text-xl',
                               }}
                             />
                             <NavigateNextIcon color="primary" />
@@ -305,7 +315,7 @@ const Home: FC = () => {
                             <ListItemText
                               primary={t('tabs.apply.description.links.oas-apply.title')}
                               primaryTypographyProps={{
-                                className: 'font-display font-medium',
+                                className: 'font-display font-medium text-xl',
                               }}
                             />
                             <NavigateNextIcon color="primary" />
