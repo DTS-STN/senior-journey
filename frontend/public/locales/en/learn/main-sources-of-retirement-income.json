@@ -153,14 +153,14 @@
     },
     "header": "Learn More",
     "income-calculator": {
-      "href": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html",
       "description": "The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits.",
-      "header": "Canadian Retirement Income Calculator"
+      "header": "Canadian Retirement Income Calculator",
+      "href": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html"
     },
     "savings-and-pension": {
-      "href": "https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html",
       "description": "Registered pension and savings plans for individuals and plan administrators.",
-      "header": "Savings and pension plans"
+      "header": "Savings and pension plans",
+      "href": "https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html"
     },
     "when-to-start": {
       "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider.",
