@@ -223,7 +223,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h6 mb-4">{t('old-age-security-program.helpful-resources.header')}</h4>
+        <h4 className="h4 text-xl mb-4">{t('old-age-security-program.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -266,7 +266,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <p>{t('guaranteed-income-supplement.monthly')}</p>
         <p>{t('guaranteed-income-supplement.collecting')}</p>
 
-        <h4 className="h6 mb-4">{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
+        <h4 className="h4 text-xl mb-4">{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -312,7 +312,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h6 mb-4">{t('canada-pension-plan-program.helpful-resources.header')}</h4>
+        <h4 className="h4 text-xl mb-4">{t('canada-pension-plan-program.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -334,7 +334,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           ))}
         </ul>
 
-        <h4 className="h3 py-3">{t('canada-pension-plan-program.cpp-post-retirement-benefit.header')}</h4>
+        <h3 className="h3 py-3">{t('canada-pension-plan-program.cpp-post-retirement-benefit.header')}</h3>
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.overview')}</p>
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.adjustments')}</p>
         <Image
@@ -386,7 +386,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h6 mb-4">{t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.header')}</h4>
+        <h4 className="h4 text-xl mb-4">{t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
