@@ -113,11 +113,11 @@
     },
     "list": {
       "income-below-maximum": {
-        "content": "avoir un revenu inférieur à <a>un certain montant</a>",
+        "content": "avoir un revenu inférieur à <a>un certain montant</a>.",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html"
       },
-      "live-canada": "vivre au Canada",
-      "receive-pension": "recevoir la pension de la SV"
+      "live-canada": "vivre au Canada;",
+      "receive-pension": "recevoir la pension de la SV;"
     },
     "monthly": "Le montant mensuel du SRG dépend de vos revenus de l'année précédente et de votre situation familiale. Si vous êtes célibataire, vous receverez un montant plus élevé.",
     "overview": "Le SRG est destiné à aider les personnes qui reçoivent la pension de la SV et qui ont de faibles revenus.",
@@ -154,7 +154,7 @@
     "header": "En savoir plus",
     "income-calculator": {
       "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
-      "description": "Le calculateur du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
+      "description": "Le calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
       "header": "La Calculatrice du revenu de retraite canadienne"
     },
     "savings-and-pension": {
@@ -250,17 +250,17 @@
       "link": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx"
     },
     "list": {
-      "cpp": "La pension de retraite du RPC/RRQ",
-      "earnings": "Revenus, si vous continuez à travailler à la retraite",
-      "oas-and-gis": "La pension de la SV et, si vous avez de faibles revenus à la retraite, le Supplément de revenu garanti (SRG).",
-      "savings-and-investments": "Épargne-retraite et investissements",
-      "workplace": "Régimes de retraite d'employeur"
+      "cpp": "La pension de retraite du RPC/RRQ;",
+      "earnings": "Revenus, si vous continuez à travailler à la retraite;",
+      "oas-and-gis": "La pension de la SV et, si vous avez de faibles revenus à la retraite, le Supplément de revenu garanti (SRG);",
+      "savings-and-investments": "Épargne-retraite et investissements.",
+      "workplace": "Régimes de retraite d'employeur;"
     },
     "overview": "La planification de la retraite peut être une tâche difficile, mais il n'est jamais trop tôt ni trop tard pour commencer à y penser. Prendre le temps de planifier peut vous aider à vivre une retraite à l'aise et épanouissante. Une première étape importante de la planification de la retraite consiste à savoir d'où proviendra votre argent. Cela peut vous aider à fixer des objectifs réalisables. Les revenus de la retraite proviennent généralement des sources suivantes\u00a0:",
     "qpp": "Si vous avez travaillé ou demeuré au Québec, vous avez peut-être droit à la pension de retraite du Régime de rentes du Québec (RRQ) au lieu du RPC. Ces programmes sont très similaires, mais pas identiques."
   },
   "personal-retirement-savings": {
-    "disclaimer-notice": "<strong>Avertissement</strong>\u00a0: Ce site Web vise à vous donner des conseils sur le bon moment pour toucher vos pensions de l'État. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
+    "disclaimer-notice": "<strong>Clause de non-responsabilité</strong>\u00a0: Ce site Web vise à vous donner des conseils sur le bon moment pour toucher vos pensions de l'État. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
     "header": "Épargne retraite personnelle",
     "important-notice": "<strong>Important</strong>\u00a0: En retirant de l'argent d'un REER, ceci est considéré comme un revenu qui peut modifier votre admissibilité au Supplément de revenu garanti (SRG). Cela pourrait modifier votre prochain cycle de paiement qui s'étend de juillet à juin. Le fait de retirer de l'argent d'un CELI n'est pas considéré comme un revenu. Cela ne modifiera pas le montant de votre Supplément de revenu garanti (SRG).",
     "learn-more": {
@@ -280,10 +280,10 @@
   "workplace-pension-plans": {
     "header": "Régimes de retraite d'employeur",
     "list": {
-      "group-rrsp": "Un régime enregistré d'épargne-retraite collectif (REER collectif)",
-      "group-tfsa": "Un compte d'épargne libre d'impôt collectif (CELI collectif)",
-      "prpp": "Régime de pension agréé commun (RPAC)",
-      "rpp": "Un régime de pension agréé (RPA) de l'employeur"
+      "group-rrsp": "Un régime enregistré d'épargne-retraite collectif (REER collectif);",
+      "group-tfsa": "Un compte d'épargne libre d'impôt collectif (CELI collectif);",
+      "prpp": "Régime de pension agréé commun (RPAC).",
+      "rpp": "Un régime de pension agréé (RPA) de l'employeur;"
     },
     "overview": "Les régimes de retraite d'employeur sont différentes des pensions publiques. Ils visent tous deux à vous aider à vivre confortablement à la retraite. Si votre employeur propose un régime de retraite, il est conseillé de se renseigner sur les avantages du régime et d'obtenir un relevé de vos cotisations. Vous trouverez ci-dessous des exemples de régimes de retraite dans le mileu du travail\u00a0:"
   }
