@@ -28,10 +28,15 @@
     },
     "p1": "Vous serez peut-être surpris d'apprendre qu'il n'est pas nécessaire de cesser de travailler pour recevoir votre pension de la Sécurité de la vieillesse (SV) ou votre pension de retraite du Régime de pensions du Canada (RPC). La combinaison des revenus du travail et des pensions publiques peut s'avérer une stratégie utile à l'approche de la retraite."
   },
+  "full-retirement": {
+    "hanging-you-hat": "Accrocher son chapeau",
+    "heading": "Retraite complète",
+    "p1": "La retraite complète signifie que vous arrêtez complètement de travailler. Lorsque vous prenez cette décision, vous devez avoir une idée générale des choses que vous aimeriez faire et de l'argent dont vous disposerez pendant votre retraite. Parfois, ce n'est pas vous qui décidez. Il se peut que vous deviez arrêter de travailler pour des raisons de santé ou pour vous occuper d'un membre de votre famille ou d'un ami."
+  },
   "header": "Transition du monde du travail à la retraite",
   "key-takeaways": {
-    "heading": "Points à retenir",
     "gis-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
+    "heading": "Points à retenir",
     "highest-monthly-amount": "Pour plusieurs, la retraite n'est pas un moment unique, mais une transition progressive.",
     "if-you-qualify": "Il n'est pas nécessaire de cesser de travailler pour bénéficier de la pension publique.",
     "low-income-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
@@ -84,10 +89,5 @@
     "heading": "Une seconde carrière",
     "new-beginning": "Un nouveau départ",
     "p1": "Une fois que vous avez quitté votre ancien emploi, vous pouvez décider de trouver un nouvel emploi ou même de créer votre propre entreprise. Cela peut être l'occasion de faire ce que vous avez toujours voulu faire, tout en gagnant de l'argent supplémentaire. Ce nouvel emploi peut être à temps plein ou à temps partiel, à l'année ou saisonnier."
-  },
-  "full-retirement": {
-    "heading": "Retraite complète",
-    "hanging-you-hat": "Accrocher son chapeau",
-    "p1": "La retraite complète signifie que vous arrêtez complètement de travailler. Lorsque vous prenez cette décision, vous devez avoir une idée générale des choses que vous aimeriez faire et de l'argent dont vous disposerez pendant votre retraite. Parfois, ce n'est pas vous qui décidez. Il se peut que vous deviez arrêter de travailler pour des raisons de santé ou pour vous occuper d'un membre de votre famille ou d'un ami."
   }
 }

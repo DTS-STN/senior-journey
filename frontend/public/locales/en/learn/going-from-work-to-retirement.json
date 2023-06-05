@@ -28,10 +28,15 @@
     },
     "p1": "You may be surprised to learn that you don't have to stop working to collect your Old Age Security (OAS) pension or Canada Pension Plan (CPP) retirement pension. Combining income from work with public pensions can be a useful strategy as people move towards retirement."
   },
+  "full-retirement": {
+    "hanging-you-hat": "Hanging your hat",
+    "heading": "Full retirement",
+    "p1": "Full retirement means you completely stop working. When making that decision, you should have a general idea of the things you'd like to do and how much money you will have during retirement. Sometimes, it may not be your choice. You may need to stop working because of health issues or to care for a family member or friend."
+  },
   "header": "Going from work to retirement",
   "key-takeaways": {
-    "heading": "Key takeaways",
     "gis-link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html",
+    "heading": "Key takeaways",
     "highest-monthly-amount": "For many, retirement isn't a single point in time but a gradual transition.",
     "if-you-qualify": "You don't have to stop working to start your public pensions.",
     "low-income-link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
@@ -84,10 +89,5 @@
     "heading": "A second career",
     "new-beginning": "A new beginning",
     "p1": "Full retirement means you completely stop working. When making that decision, you should have a general idea of the things you'd like to do and how much money you will have during retirement. Sometimes, it may not be your choice. You may need to stop working because of health issues or to care for a family member or friend."
-  },
-  "full-retirement": {
-    "heading": "Full retirement",
-    "hanging-you-hat": "Hanging your hat",
-    "p1": "Full retirement means you completely stop working. When making that decision, you should have a general idea of the things you’d like to do and how much money you will have during retirement. Sometimes, it may not be your choice. You may need to stop working because of health issues or to care for a family member or friend."
   }
 }

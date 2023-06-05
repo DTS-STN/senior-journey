@@ -153,14 +153,14 @@
     },
     "header": "En savoir plus",
     "income-calculator": {
-      "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html",
       "description": "Le calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
-      "header": "La Calculatrice du revenu de retraite canadienne"
+      "header": "La Calculatrice du revenu de retraite canadienne",
+      "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html"
     },
     "savings-and-pension": {
-      "href": "https://www.canada.ca/fr/services/impots/regimes-depargne-et-de-pension.html",
       "description": "Régimes enregistrés de retraite et d'épargne pour les particuliers et les administrateurs de régimes",
-      "header": "Régimes d'épargne et de pension"
+      "header": "Régimes d'épargne et de pension",
+      "href": "https://www.canada.ca/fr/services/impots/regimes-depargne-et-de-pension.html"
     },
     "when-to-start": {
       "description": "La souplesse des pensions publiques vous offre des options de retraite. Découvrez quoi choisir et les éléments à considérer.",
