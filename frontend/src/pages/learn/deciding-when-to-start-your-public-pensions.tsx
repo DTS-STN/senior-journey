@@ -24,7 +24,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
-  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
+  function getImageSrc(imagePrefix: string, extension: string = 'png') {
     return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
   }
 
@@ -41,7 +41,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         secondary: t('learn-more.rules-of-thumb-for-public-pensions.description'),
       },
       {
-        href: '/learn/learn/case-studies/fred',
+        href: '/learn/case-studies/fred',
         primary: t('learn-more.fred-case-study.header'),
         secondary: t('learn-more.fred-case-study.description'),
       },
@@ -258,7 +258,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           <Trans
             ns="learn/deciding-when-to-start-your-public-pensions"
             i18nKey="cpp-pension.p3"
-            components={{ a2: <Link className="underline" href="/learn/case-studies/fred" /> }}
+            components={{ a2: <Link className="underline text-secondary-700" href="/learn/case-studies/fred" /> }}
           />
         </p>
         <AlertCard type="disclaimer">
