@@ -72,7 +72,7 @@
         "li3": "Choice 3: Take CPP at 65, contribute to 70.",
         "li4": "Choice 4: Contribute to 70, take CPP at 70."
       },
-      "description": "This chart shows the lifetime pension amount for 4 choices Keith is thinking about. It shows that by age 87, the choice of starting his CPP pension at age 65 and working until 70 would give Keith the most retirement income.",
+      "description": "This chart shows the lifetime CPP retirement pension amount for 4 choices Keith is thinking about. It shows that by age 87, the choice of starting his CPP retirement pension at age 65 and working until 70 would give Keith the most retirement income.",
       "heading": "What will be Keith's pension by age 87?",
       "li1": "Choice 3 was about Keith taking his Canada Pension Plan (CPP) retirement pension at age 65 and contributing to the plan until age 70. He will have his pension monthly income earlier in life and a higher lifetime pension.",
       "li2": "Choice 4 was about Keith delaying his CPP retirement pension until age 70. It is also a good option since it gives the highest monthly pension and a high lifetime pension as well.",
@@ -191,7 +191,7 @@
   },
   "overview": {
     "heading": "Overview",
-    "p1": "Keith worked in construction all his life and just accepted a new site job at 60. Keith has some savings, but still plans to work until at least age 70. Keith wants to know what the best strategy for his Canada Pension Plan (CPP), and Old Age Security (OAS) pensions will be."
+    "p1": "Keith worked in construction all his life and just accepted a new site job at 60. Keith has some savings, but still plans to work until at least age 70. Keith wants to know what the best strategy for his Canada Pension Plan (CPP) retirement pension and Old Age Security (OAS) pension will be."
   },
   "values-heading": "Values"
 }

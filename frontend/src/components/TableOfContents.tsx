@@ -113,7 +113,7 @@ export const TableOfContents: FC<TableOfContentsProps> = ({
   )
 
   return (
-    <Paper variant="outlined" className="sticky top-2">
+    <Paper variant="outlined" className="sticky top-2 max-h-screen overflow-auto">
       <nav aria-label={t('table-of-contents.aria-label')}>
         <p className="m-0 p-4 font-display font-bold">
           {header ?? t('table-of-contents.header')}
