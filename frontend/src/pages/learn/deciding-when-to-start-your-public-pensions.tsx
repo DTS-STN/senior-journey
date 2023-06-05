@@ -24,7 +24,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
-  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
+  function getImageSrc(imagePrefix: string, extension: string = 'png') {
     return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
   }
 
@@ -258,7 +258,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           <Trans
             ns="learn/deciding-when-to-start-your-public-pensions"
             i18nKey="cpp-pension.p3"
-            components={{ a2: <Link className="underline" href="/learn/case-studies/fred" /> }}
+            components={{ a2: <Link className="underline text-secondary-700" href="/learn/case-studies/fred" /> }}
           />
         </p>
         <AlertCard type="disclaimer">

@@ -8,9 +8,9 @@
       "chart": {
         "accessibility": {
           "button-label": "Text alternative for How we top up your CPP retirement pension using Post-Retirement Benefits",
-          "caption": "Values presented on the image",
+          "caption": "Values presented on the image:",
           "description": {
-            "content": "The chart shows changes in monthly payments for people who work for 3 years after starting their CPP retirement pension. It shows that PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
+            "content": "The chart shows changes in monthly payments for people who work for 3 years after starting their CPP retirement pension. It shows that PRBs are added every year to your CPP retirement pension after you continue working and contributing to the plan.",
             "header": "Description"
           },
           "header": [
@@ -37,11 +37,11 @@
           ],
           "values-heading": "Values"
         },
-        "footer": "The PRBs are added every year to your CPP retirement pensions after you continue working and contributing to the plan.",
+        "footer": "The PRBs are added every year to your CPP retirement pension after you continue working and contributing to the plan.",
         "header": "How we top up your CPP retirement pension using Post-Retirement Benefits"
       },
       "choices": {
-        "content": "When you reach age 65, you can choose to stop making post-retirement contributions by filing <a>a form with CRA</a> and giving it to your employer. This will stop you from earning additional PRBs. Together with your retirement pension, PRBs will be adjusted for inflation every year.",
+        "content": "When you reach age 65, you can choose to stop making post-retirement contributions by filing <a>a form with Canada Revenue Agency (CRA)</a> and giving it to your employer. This will stop you from earning additional PRBs. Together with your retirement pension, PRBs will be adjusted for inflation every year.",
         "link": "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/cpt30.html"
       },
       "differences": {
@@ -163,7 +163,7 @@
       "header": "Savings and pension plans"
     },
     "when-to-start": {
-      "description": "Deciding when to start your public pensions",
+      "description": "Flexible public pensions offer choices for retirement. Learn how to choose and what to consider.",
       "header": "Deciding when to start your public pensions"
     }
   },
@@ -206,7 +206,7 @@
         "content": "For more details about if you qualify for OAS pension, visit the <a>OAS pension page</a>.",
         "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html"
       },
-      "most-people": "Most people qualify for the OAS pension if they have lived in Canada for more than 10 years after age 18. You will have to be a Canadian citizen or legal resident beforec you can collect your OAS pension."
+      "most-people": "Most people qualify for the OAS pension if they have lived in Canada for more than 10 years after age 18. You will have to be a Canadian citizen or legal resident before you can collect your OAS pension."
     }
   },
   "ongoing-earnings-from-your-job": {
@@ -262,9 +262,9 @@
   "personal-retirement-savings": {
     "disclaimer-notice": "<strong>Disclaimer</strong>: This website is meant to give you tips on when to take your public pensions. We do not provide financial advice. Once you have all the information you need, we encourage you to seek help from a financial advisor.",
     "header": "Personal retirement savings",
-    "important-notice": "<strong>Important:</strong> Taking money from TFSA does not count as additional income and will not change the amount of your GIS in the next payment cycle that runs from July to June.",
+    "important-notice": "<strong>Important:</strong> Taking money from an RRSP counts as income that may change your eligibility for Guaranteed Income Supplement (GIS). This could change your next payment cycle that runs from July to June. Taking money from TFSA does not count as income. It will not change the amount of your Guaranteed Income Supplement (GIS).",
     "learn-more": {
-      "content": "To learn more about how much you income you might need in retirement, check out our page on <a>Planning to save for retirement</a>.",
+      "content": "To learn more about how much income you might need in retirement, check out our page on <a>Planning to save for retirement</a>.",
       "link": "/learn/planning-to-save-for-retirement"
     },
     "overview": {

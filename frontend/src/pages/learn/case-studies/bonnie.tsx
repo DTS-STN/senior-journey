@@ -140,7 +140,7 @@ const Bonnie: FC = () => {
           height={519}
           className="w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('stopping-earnings.p')}</p>
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('stopping-earnings.p')}</p>
         <AccessibilityGraphContainer
           tableData={t('stopping-earnings.accessibility', { returnObjects: true })}
           description={t('stopping-earnings.description')}
@@ -171,7 +171,7 @@ const Bonnie: FC = () => {
           height={519}
           className="w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('adding-oas.p3')}</p>
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('adding-oas.p3')}</p>
         <AccessibilityGraphContainer
           tableData={t('adding-oas.accessibility', { returnObjects: true })}
           description={t('adding-oas.description')}
@@ -190,7 +190,7 @@ const Bonnie: FC = () => {
           <li>{t('cpp.li3')}</li>
         </ul>
         <Image alt={t('cpp.description')} src={getImageSrc('bonnie-cpp')} width={842} height={519} className="w-full" />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">{t('cpp.p2')}</p>
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('cpp.p2')}</p>
         <AccessibilityGraphContainer
           tableData={t('cpp.accessibility', { returnObjects: true })}
           description={t('cpp.description')}
@@ -213,7 +213,7 @@ const Bonnie: FC = () => {
           height={519}
           className="w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">
           <Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.p2" />
         </p>
         <AccessibilityGraphContainer
@@ -236,7 +236,7 @@ const Bonnie: FC = () => {
           className="w-full"
         />
 
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">
           <Trans ns="learn/case-studies/bonnie" i18nKey="early-pension.p2" />
         </p>
         <AccessibilityGraphContainer
