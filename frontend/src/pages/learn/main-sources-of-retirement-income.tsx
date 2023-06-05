@@ -344,7 +344,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           height={519}
           className="w-full"
         />
-        <p className="mt-2 rounded-lg bg-gray-surface p-4">
+        <p className="mt-4 rounded-lg bg-gray-surface p-4">
           {t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.footer')}
         </p>
         <AccessibilityGraphContainer
