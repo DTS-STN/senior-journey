@@ -41,7 +41,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         secondary: t('learn-more.rules-of-thumb-for-public-pensions.description'),
       },
       {
-        href: '/learn/learn/case-studies/fred',
+        href: '/learn/case-studies/fred',
         primary: t('learn-more.fred-case-study.header'),
         secondary: t('learn-more.fred-case-study.description'),
       },
@@ -110,7 +110,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
                   <Trans
                     ns="learn/deciding-when-to-start-your-public-pensions"
                     i18nKey={secondary}
-                    components={{ a1: <MuiLink href={a1} />, a2: <MuiLink href={a2} />}}
+                    components={{ a1: <MuiLink href={a1} />, a2: <MuiLink href={a2} /> }}
                   >
                     {secondary}
                   </Trans>
