@@ -245,14 +245,9 @@ const Home: FC = () => {
                       <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
                         {t('tabs.plan.linksTitle')}
                       </h3>
-                      <List disablePadding className='ml-4'
-                      sx={{
-                        '.MuiButtonBase-root.MuiListItemButton-root': {
-                          paddingLeft: '0px',
-                        },
-                      }}>
+                      <List disablePadding className='ml-4'>
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton href={t('tabs.plan.links.retirement-income-calculator.url')} component={Link}>
+                          <ListItemButton className='pl-0' href={t('tabs.plan.links.retirement-income-calculator.url')} component={Link}>
                             <ListItemText
                               primary={t('tabs.plan.links.retirement-income-calculator.title')}
                               primaryTypographyProps={{
@@ -267,7 +262,7 @@ const Home: FC = () => {
                           </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton href={t('tabs.plan.links.oas-eligibility-estimator.url')} component={Link}>
+                          <ListItemButton className='pl-0' href={t('tabs.plan.links.oas-eligibility-estimator.url')} component={Link}>
                             <ListItemText
                               primary={t('tabs.plan.links.oas-eligibility-estimator.title')}
                               primaryTypographyProps={{
@@ -293,14 +288,9 @@ const Home: FC = () => {
                       </h2>
                       <Divider className="mb-8" />
                       <p className='mb-8'>{t('tabs.apply.description.text')}</p>
-                      <List disablePadding className='ml-4'
-                      sx={{
-                        '.MuiButtonBase-root.MuiListItemButton-root': {
-                          paddingLeft: '0px',
-                        },
-                      }}>
+                      <List disablePadding className='ml-4'>
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton href={t('tabs.apply.description.links.how-to-apply.url')} component={Link}>
+                          <ListItemButton className='pl-0' href={t('tabs.apply.description.links.how-to-apply.url')} component={Link}>
                             <ListItemText
                               primary={t('tabs.apply.description.links.how-to-apply.title')}
                               primaryTypographyProps={{
@@ -311,7 +301,7 @@ const Home: FC = () => {
                           </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton href={t('tabs.apply.description.links.oas-apply.url')} component={Link}>
+                          <ListItemButton className='pl-0' href={t('tabs.apply.description.links.oas-apply.url')} component={Link}>
                             <ListItemText
                               primary={t('tabs.apply.description.links.oas-apply.title')}
                               primaryTypographyProps={{
