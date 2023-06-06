@@ -31,8 +31,8 @@ const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = 
       <div>
         <IconButton onClick={handleClick} aria-label={buttonLabel} className="text-primary-500">
           {open ? <ExpandLess /> : <ExpandMore />}
+        <span className='text-base font-body text-black'>{buttonLabel}</span>
         </IconButton>
-        <span>{buttonLabel}</span>
       </div>
       <Collapse in={open}>
         <div className="py-6">
