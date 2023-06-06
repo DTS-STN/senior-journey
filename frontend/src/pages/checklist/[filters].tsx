@@ -12,6 +12,7 @@ import {
   List,
   ListItem,
   ListItemText,
+  useMediaQuery,
 } from '@mui/material'
 import { isEmpty, sortBy } from 'lodash'
 import { GetServerSideProps } from 'next'
@@ -29,6 +30,7 @@ import * as tasksGroupDtoMapper from '../../lib/mappers/tasks-group-dto-mapper'
 import { checklistFiltersSchema } from '../../lib/schemas/checklist-filters-schema'
 import { ChecklistFilters, TaskTagDto, TasksGroupDto } from '../../lib/types'
 import { getLogger } from '../../logging/log-util'
+import theme from '../../theme'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const log = getLogger('pages/checklist/[filters].tsx')
@@ -61,6 +63,8 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   const [importantExpanded, setImportantExpanded] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState(initialExpandedGroups)
   const [expandedTasks, setExpandedTasks] = useState(initialExpandedTasks)
+
+  const desktop = useMediaQuery(theme.breakpoints.up('md'))
 
   function filterTasksByTag({ tags }: { tags: ReadonlyArray<{ code: string }> }, filters: ChecklistFilters) {
     if (isEmpty(filters.tags)) return true
@@ -168,15 +172,20 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
             </div>
             <div className="mb-4">
               <div className="mb-2 flex items-center justify-between border-b pb-3">
-                <div className="text-2xl md:text-xl">{t('important-terms.header')}</div>
-                <IconButton
+                <Button
+                  variant="text"
                   color="primary"
+                  className="font-display text-xl"
                   onClick={() => setImportantExpanded(!importantExpanded)}
                   aria-expanded={importantExpanded}
                   aria-label={t('important-terms.show')}
+                  endIcon={importantExpanded ? <ExpandLess /> : <ExpandMore />}
+                  sx={{ justifyContent: 'space-between' }}
+                  fullWidth
+                  size="large"
                 >
-                  {importantExpanded ? <ExpandLess className="block" /> : <ExpandMore className="block" />}
-                </IconButton>
+                  {t('important-terms.header')}
+                </Button>
               </div>
               <Collapse in={importantExpanded}>
                 <List className="p-0" disablePadding>
@@ -209,17 +218,33 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
 
             <div className="md:mb-2">
               <div className="flex items-center justify-between md:mb-2 md:border-b md:pb-3">
-                <div className="hidden text-xl md:block">{t('filter-tasks', { count: filters.tags.length })}</div>
                 <div className="text-2xl md:hidden">{t('header')}</div>
-                <IconButton
-                  color="primary"
-                  onClick={() => setExpanded(!expanded)}
-                  aria-expanded={expanded}
-                  aria-label={t('show-filters')}
-                >
-                  {expanded ? <ExpandLess className="hidden md:block" /> : <ExpandMore className="hidden md:block" />}
-                  <FilterList className="hover:bg-[#00545f] h-10 w-10 rounded-full bg-[#008490] p-1 text-white md:hidden" />
-                </IconButton>
+                {!desktop && (
+                  <IconButton
+                    color="primary"
+                    onClick={() => setExpanded(!expanded)}
+                    aria-expanded={expanded}
+                    aria-label={t('show-filters')}
+                  >
+                    <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f]" />
+                  </IconButton>
+                )}
+                {desktop && (
+                  <Button
+                    variant="text"
+                    color="primary"
+                    className="font-display text-xl"
+                    onClick={() => setExpanded(!expanded)}
+                    aria-expanded={expanded}
+                    aria-label={t('show-filters')}
+                    endIcon={expanded ? <ExpandLess /> : <ExpandMore />}
+                    sx={{ justifyContent: 'space-between' }}
+                    fullWidth
+                    size="large"
+                  >
+                    {t('filter-tasks', { count: filters.tags.length })}
+                  </Button>
+                )}
               </div>
               <Collapse in={expanded}>
                 <FormGroup onChange={handleChange} data-cy="form-group-filter-tasks">
