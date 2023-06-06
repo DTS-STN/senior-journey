@@ -127,7 +127,7 @@
       },
       "description": "The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
       "p1": "The difference in monthly benefits from delaying the Old Age Security (OAS) pension is smaller than for the Canada Pension Plan (CPP) retirement pension. If Fred takes his OAS pension later, the difference in monthly payments is a few hundred dollars. Fred wants to explore his lifetime OAS pension to see the full picture.",
-      "p2": "By age 86, the lifetime OAS pension is higher, if Fred starts his OAS at age 68. Starting to collect it at age 67 is also an option."
+      "p2": "By age 86, the lifetime OAS pension is higher, if Fred starts his OAS at age 68."
     },
     "monthly-pension": {
       "accessibility": {
@@ -152,7 +152,7 @@
       "description": "The chart shows changes in Fred's OAS pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount.",
       "p": "If OAS pension is delayed from age 65 to 68, the difference is around $150 per month."
     },
-    "p1": "Fred looks at the amount of his lifetime OAS pensions. He decides it's better to start his OAS pension at age 68 to collect the most money. Starting at age 67 is also good since the difference isn't much to him, and he won't need to wait another year to start.",
+    "p1": "Fred looks at the amount of his lifetime OAS pensions. He decides it's better to start his OAS pension at age 68 to collect the most money.",
     "p2": "Fred decides to apply for his OAS pension at age 68, and not to wait until age 70. The monthly OAS pension will add to his income and will help him delay CPP until age 70. Adding to this, Fred is planning to use his private retirement savings and work part-time at a rideshare company."
   },
   "overview": {

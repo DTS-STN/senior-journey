@@ -3,7 +3,7 @@
     "learn": "Apprendre"
   },
   "conclusion": {
-    "disclaimer": "<strong>Clause de non-responsabilité\u00a0:</strong> ces histoires ne sont que des exemples simplifiés destinés à illustrer les différents facteurs à prendre en compte pour décider du moment où vous commencerez à recevoir vos pensions publiques, ainsi que les résultats potentiels. Ils n'incluent pas, par exemple, les effets de la fiscalité ou de la croissance des investissements, et supposent que l'objectif de Fred est d'obtenir un revenu stable tout au long de sa vie. Ces récits n'ont pas pour but de fournir des conseils financiers et nous vous encourageons vivement à demander l'aide d'un conseiller financier lorsque vous planifiez votre retraite.",
+    "disclaimer": "<strong>Clause de non-responsabilité\u00a0:</strong> Ces histoires ne sont que des exemples simplifiés destinés à illustrer les différents facteurs à prendre en compte pour décider du moment où vous commencerez à recevoir vos pensions publiques, ainsi que les résultats potentiels. Ils n'incluent pas, par exemple, les effets de la fiscalité ou de la croissance des investissements, supposent que l'objectif de Fred est d'obtenir un revenu stable tout au long de sa vie. Ces histoires n'ont pas pour but de fournir des conseils financiers. Nous vous encourageons vivement à demander l'aide d'un conseiller financier lorsque vous planifiez votre retraite.",
     "heading": "Conclusion",
     "p": "Fred souhaite bénéficier des pensions les plus élevées parmi les pensions de retraite de la SV et du RPC qui lui sont offertes. Pour ce faire, il a évalué ses pensions mensuelles et ses pensions à vie. Il a tenu compte de la durée pendant laquelle il recevera ses pensions et du montant qu'il pourra recevoir de la pension de retraite du RPC et de la pension de la SV à l'âge de 86 ou 89 ans. Fred peut se permettre de reporter le versement de ses pensions et prévoit de travailler à temps partiel au début de sa retraite. Il ne serait pas l'éligible a recevoir le SRG. Compte tenu de tous ces facteurs, Fred a décidé de reporter sa pension de retraite du RPC jusqu'à l'âge de 70 ans et sa pension de la SV jusqu'à l'âge de 68 ans. Il bénéficiera ainsi des pensions mensuelles et a vie les plus élevées."
   },
@@ -46,7 +46,7 @@
           }
         ]
       },
-      "description": "Le tableau montre l'évolution des versements mensuels de la pension de retraite du RPC de Fred en fonction de l'âge auquel il commence à toucher sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent chaque mois. Il peut commencer à recevoir sa pension de retraite du RPC à 60 ans pour obtenir le montant le plus bas, ou à 70 ans pour obtenir le montant le plus élevé. La pension mensuelle de Fred pourrait augmenter de moitié si elle était versée à l'âge de 65 ans. Elle fera plus que doubler à 70 ans par rapport à la pension versée à 60 ans.",
+      "description": "Le tableau montre l'évolution des versements mensuels de la pension de retraite du RPC de Fred en fonction de l'âge auquel il commence à recevoir sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent chaque mois. Il peut commencer à recevoir sa pension de retraite du RPC à 60 ans pour obtenir le montant le plus bas, ou à 70 ans pour obtenir le montant le plus élevé. La pension mensuelle de Fred pourrait augmenter de moitié si elle était versée à l'âge de 65 ans. Elle fera plus que doubler à 70 ans par rapport à la pension versée à 60 ans.",
       "p1": "La pension de retraite mensuelle du RPC de Fred pourrait augmenter si elle était versée dès l'âge de 65 ans. Elle ferait plus que doubler à l'âge de 70 ans, par rapport à commencer à l'âge de 60 ans.",
       "p2": "La pension de retraite mensuelle du RPC de Fred à l'âge de 70 ans pourrait être supérieure de plus de 1\u00a0000\u00a0$ par mois à sa pension à l'âge de 60 ans. Fred souhaite recevoir la pension mensuelle la plus élevée à 70 ans, mais il aura besoin d'un autre revenu au début de sa retraite. Il dispose d'une épargne-retraite qu'il peut utiliser en attendant le début de sa pension de retraite du RPC.",
       "p3": "Lorsque Fred parle de sa décision à beaucoup de ses amis, ceux-ci lui font remarquer qu'il renonce à un revenu au début de sa retraite pour obtenir ce versement mensuel plus élevé. Fred décide donc d'examiner le montant total qu'il recevra du RPC au cours de sa vie. Il constate que, même avec une espérance de vie normale, il obtiendra davantage au fil du temps en attendant."
@@ -67,8 +67,8 @@
     "li3": "Bien que le RPC et la SV prévoient tous deux des augmentations pour report du début de votre pension, ils n'offrent pas le même taux d'augmentation.",
     "li4": "Pour les personnes âgées de 65 à 70 ans, le RPC prévoit un taux d'augmentation de la pension de retraite pour chaque mois de report par rapport à la pension de la SV. Si l'on attend jusqu'à l'âge de 70 ans, la pension de retraite mensuelle du RPC peut plus que doubler par rapport à un départ à 60 ans.",
     "li5": "De nombreux éléments doivent être pris en compte pour déterminer l'âge auquel vous commencerez à recevoir vos pensions publiques.",
-    "li6": "Vous pouvez prendre votre décision en fonction du montant des paiements mensuels, du montant total que vous percevrez au cours de votre vie ou de votre capacité à utiliser l'argent pour répondre à des besoins ou des désirs immédiats.",
-    "li7": "Debuter votre pension à 60 ans pourrait signifier laisser l'argent de la pension publique sur la table. En fait, sur la base des montants moyens des prestations, cette décision pourrait coûter 100.000 à la fin de la vie.",
+    "li6": "Vous pouvez prendre votre décision en fonction du montant des paiements mensuels, du montant total que vous receverez au cours de votre vie ou de votre capacité à utiliser l'argent pour répondre à des besoins ou des désirs immédiats.",
+    "li7": "Debuter votre pension à 60 ans pourrait signifier laisser l'argent de la pension publique sur la table. En fait, sur la base des montants moyens des prestations, cette décision pourrait coûter 100\u00a0000\u00a0$ à la fin de la vie.",
     "li8": "Votre pension continuera d'augmenter pour tenir compte de l'inflation.",
     "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> Si vous avez droit à la pension de la Sécurité de la vieillesse (SV) et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Les personnes qui sont eligible au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour en faire la demande. Vous ne pouvez pas recevoir le SRG si vous reportez le versement de votre pension de la SV."
   },
@@ -100,7 +100,7 @@
     "a1": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
     "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html",
     "heading": "Fred trouve les montants mensuels de ses pensions publiques",
-    "p1": "Fred se rend sur <a1>Mon dossier Service Canada</a1> pour consulter son relevé personnel de contributions au RPC. Il reçoit sa pension de retraite estimée du RPC à l'âge de 65 ans.",
+    "p1": "Fred se rend sur <a1>Mon dossier Service Canada</a1> pour consulter son relevé personnel de cotisations au RPC. Il reçoit sa pension de retraite estimée du RPC à l'âge de 65 ans.",
     "p2": "Pour connaître le montant prévu de sa pension de la SV, il consulte <a2>l'Estimateur de prestations de la Sécurité de la vieillesse</a2>."
   },
   "oas": {
@@ -109,7 +109,7 @@
       "accessibility": {
         "button-label": "Texte alternatif pour Pension de retraite à vie du RPC de Fred, à 86 ans",
         "caption": "Valeurs présentées sur l'image\u00a0:",
-        "header": ["Âge auquel Fred commence à toucher sa pension de la SV", "Pension à vie de la SV"],
+        "header": ["Âge auquel Fred commence à recevoir sa pension de la SV", "Pension à vie de la SV"],
         "rows": [
           {
             "data": ["65", "191\u00a0545\u00a0$"]
@@ -125,7 +125,7 @@
           }
         ]
       },
-      "description": "Le graphique montre l'évolution des versements de la pension à vie de Fred en fonction de l'âge auquel il commence à bénéficier de la SV. À l'âge de 86 ans, la pension à vie de la SV est plus élevée si Fred commence sa SV à 68 ans. Il est également possible de commencer à toucher la pension à 67 ans.",
+      "description": "Le graphique montre l'évolution des versements de la pension à vie de Fred en fonction de l'âge auquel il commence à recevoir de la SV. À l'âge de 86 ans, la pension à vie de la SV est plus élevée si Fred commence sa SV à 68 ans. Il est également possible de commencer à recevoir la pension à 67 ans.",
       "p1": "La différence de prestations mensuelles résultant du report de la pension de la Sécurité de la vieillesse (SV) est plus faible que pour la pension de retraite du Régime de pensions du Canada (RPC). Si Fred prend sa pension de la SV plus tard, la différence dans les paiements mensuels est de quelques centaines de dollars. Fred veut explorer sa pension de SV à vie pour avoir une vue d'ensemble de la situation.",
       "p2": "À l'âge de 86 ans, la pension à vie de la SV est plus élevée si Fred commence à toucher la SV à l'âge de 68 ans. Il est également possible de commencer à recevoir la pension à l'âge de 67 ans."
     },
@@ -161,12 +161,12 @@
     "a3": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
     "a4": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti.html",
     "heading": "Aperçu",
-    "p1": "Fred a toujours vécu au Canada et a travaillé pendant 40 ans comme chauffeur de camion. Il va avoir 60 ans cette année et a reçu une lettre de Service Canada. Cette lettre indique qu'il peut désormais demander sa pension de retraite du RPC. Fred doit décider s'il veut commencer à toucher sa pension de retraite du RPC de manière anticipée ou attendre.",
-    "p2": "Fred sait qu'il est important de tenir compte de son espérance de viepour déterminer le moment où il commencera à recevoir ses pensions publiques. Il est en bonne santé et décide de planifier ses finances jusqu'à l'âge de 86 ans ou plus.",
+    "p1": "Fred a toujours vécu au Canada et a travaillé pendant 40 ans comme chauffeur de camion. Il va avoir 60 ans cette année et a reçu une lettre de Service Canada. Cette lettre indique qu'il peut désormais demander sa pension de retraite du RPC. Fred doit décider s'il veut commencer à recevoir sa pension de retraite du RPC de manière anticipée ou attendre.",
+    "p2": "Fred sait qu'il est important de tenir compte de son espérance de vie pour déterminer le moment où il commencera à recevoir ses pensions publiques. Il est en bonne santé et décide de planifier ses finances jusqu'à l'âge de 86 ans ou plus.",
     "p3": "À l'âge de 65 ans, le montant de la pension de retraite du RPC de Fred sera de 1\u00a0300\u00a0$ par mois. Comme Fred a vécu au Canada toute sa vie, il aura droit à une pension complète de la SV. En raison de l'argent qu'il compte retirer de son REER et d'autres sources de revenu, Fred n'est pas considéré comme ayant un <a3>faible revenu</a3>. Il ne serait pas éligible au <a4>Supplément de revenu garanti (SRG)</a4>.",
     "p4": "Fred doit également réfléchir à la date à laquelle il commencera à recevoir la pension de la SV. Il souhaite d'abord réfléchir à sa situation financière afin de s'assurer une retraite à l'aise.",
     "p5": "Après avoir bien réfléchi, Fred décide de reporter sa SV jusqu'a 68 ans ainsi que de reporter sa pension de retraite du RPC a 70 ans. Voyons comment Fred en est arrivé à cette décision.",
-    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> l'espérance de vie est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leurs économies. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent s'attendre à <a1>vivre jusqu'à l'âge de 86-88 ans et doivent prévoir au moins 20 ans de plus</a1>. En fait, il y a <a2>environ 50\u00a0% de chances que</a2> les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à l'âge de 90 ans. Il est bon d'avoir un plan financier pour ces années de vie."
+    "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> l'espérance de vie est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leurs épargnes. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent s'attendre à <a1>vivre jusqu'à l'âge de 86-88 ans et doivent prévoir au moins 20 ans de plus</a1>. En fait, il y a <a2>environ 50\u00a0% de chances que</a2> les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à l'âge de 90 ans. Il est bon d'avoir un plan financier pour ces années de vie."
   },
   "values-heading": "Valeurs"
 }
