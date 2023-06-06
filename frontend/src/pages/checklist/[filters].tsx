@@ -80,11 +80,10 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
       })
     })
 
-    return sortBy(tags, [
-      function (o) {
-        return o.code
-      },
-    ])
+    return [
+      ...tags.filter((tag) => tag.code !== 'other-benefits').sort((a, b) => a.code.localeCompare(b.code)),
+      ...tags.filter((tag) => tag.code === 'other-benefits'),
+    ]
   }, [applyingBenefits.tasks, beforeRetiring.tasks, receivingBenefits.tasks])
 
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
