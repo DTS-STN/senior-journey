@@ -1,8 +1,7 @@
 import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
 
-import { ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
+import { Cached, ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
-import RefreshIcon from '@mui/icons-material/Refresh'
 import {
   Button,
   Checkbox,
@@ -164,13 +163,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
         <div className="grid gap-6 print:block md:pt-8 lg:grid-cols-12">
           <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
             <div className="mb-4 hidden lg:block">
-              <Button
-                variant="outlined"
-                startIcon={<RefreshIcon />}
-                size="large"
-                onClick={handleOnRestartQuizClick}
-                fullWidth
-              >
+              <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
                 {t('restart-quiz')}
               </Button>
             </div>
@@ -241,15 +234,11 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                 </FormGroup>
               </Collapse>
             </div>
-            <Button
-              onClick={handlePrint}
-              variant="outlined"
-              startIcon={<Print />}
-              size="large"
-              className="hidden md:inline-block lg:w-full"
-            >
-              {t('print')}
-            </Button>
+            <div className="hidden lg:block">
+              <Button onClick={handlePrint} variant="outlined" startIcon={<Print />}>
+                {t('print')}
+              </Button>
+            </div>
           </section>
           <section id="content" className="print-href lg:col-span-8 xl:col-span-9">
             <NestedAccordion
@@ -286,13 +275,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
             <div className="mt-4 lg:hidden">
-              <Button
-                variant="outlined"
-                startIcon={<RefreshIcon />}
-                size="large"
-                onClick={handleOnRestartQuizClick}
-                fullWidth
-              >
+              <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
                 {t('restart-quiz')}
               </Button>
             </div>
