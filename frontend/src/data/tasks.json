@@ -8,7 +8,7 @@
       {
         "answerKey": "yes-income",
         "descriptionEn": "If you earn money while collecting your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while collecting benefits, your income might be lower than you planned.",
-        "descriptionFr": "Si vous gagnez de l’argent, tout en recevant vos pensions publiques, votre revenu peut être plus élevé que prévu et vous pourriez être davantage imposé. Vous devrez peut-être mettre de côté ou conserver plus d’argent pour les impôts. Si vous ne travaillez pas ou ne gagnez pas d’argent pendant que vous recevez des prestations, votre revenu peut être inférieur à ce que vous aviez prévu.",
+        "descriptionFr": "Si vous gagnez de l'argent, tout en recevant vos pensions publiques, votre revenu peut être plus élevé que prévu et vous pourriez être davantage imposé. Vous devrez peut-être mettre de côté ou conserver plus d'argent pour les impôts. Si vous ne travaillez pas ou ne gagnez pas d'argent pendant que vous recevez des prestations, votre revenu peut être inférieur à ce que vous aviez prévu.",
         "displayOrder": 1001,
         "id": 59,
         "links": [
@@ -32,7 +32,7 @@
       {
         "answerKey": "unsure-income",
         "descriptionEn": "If you earn money while collecting your public pensions, your income may be higher than you expect and you could be taxed more. You may need to set aside or withhold more money for taxes. If you do not end up working or earning money while collecting benefits, your income might be lower than you planned.",
-        "descriptionFr": "Si vous gagnez de l’argent, tout en recevant vos pensions publiques, votre revenu peut être plus élevé que prévu et vous pourriez être davantage imposé. Vous devrez peut-être mettre de côté ou épargner plus d’argent pour les impôts. Si vous ne travaillez pas ou ne gagnez pas d’argent pendant que vous recevez des prestations, votre revenu peut être inférieur à ce que vous aviez prévu.",
+        "descriptionFr": "Si vous gagnez de l'argent, tout en recevant vos pensions publiques, votre revenu peut être plus élevé que prévu et vous pourriez être davantage imposé. Vous devrez peut-être mettre de côté ou épargner plus d'argent pour les impôts. Si vous ne travaillez pas ou ne gagnez pas d'argent pendant que vous recevez des prestations, votre revenu peut être inférieur à ce que vous aviez prévu.",
         "displayOrder": 1011,
         "id": 60,
         "links": [
@@ -51,7 +51,7 @@
           }
         ],
         "titleEn": "Consider how much you may be taxed if you're earning other income",
-        "titleFr": "Prenez en consideration combien vous pourriez être imposé si vous gagnez d'autres revenus"
+        "titleFr": "Prenez en considération combien vous pourriez être imposé si vous gagnez d'autres revenus"
       },
       {
         "answerKey": "all",
@@ -146,7 +146,7 @@
       {
         "answerKey": "canada-ft",
         "descriptionEn": "Both the CPP retirement pension and OAS pensions are taxable income. You are not required to have income tax deducted from your monthly payments, but you may choose to have an amount withheld to reduce your tax payable when you file your annual income tax return. Think about your expected income in retirement and decide if you want to withhold that tax upfront.",
-        "descriptionFr": "Les pensions du RPC et de la SV sont des revenus imposables. Vous n’êtes pas tenu de faire déduire l’impôt sur le revenu de vos paiements mensuels. Vous pouvez choisir de faire retenir un montant pour réduire l’impôt à payer lorsque vous produirez votre déclaration de revenus annuelle. Réfléchissez au revenu que vous pensez percevoir à la retraite et décidez si vous souhaitez prélever cet impôt à l’avance.",
+        "descriptionFr": "Les pensions du RPC et de la SV sont des revenus imposables. Vous n'êtes pas tenu de faire déduire l'impôt sur le revenu de vos paiements mensuels. Vous pouvez choisir de faire retenir un montant pour réduire l'impôt à payer lorsque vous produirez votre déclaration de revenus annuelle. Réfléchissez au revenu que vous pensez percevoir à la retraite et décidez si vous souhaitez prélever cet impôt à l'avance.",
         "displayOrder": 1051,
         "id": 64,
         "links": [
@@ -170,7 +170,7 @@
       {
         "answerKey": "canada-pt-60-or-more",
         "descriptionEn": "Both the CPP and OAS pensions are taxable income. You are not required to have income tax deducted from your monthly payments, but you may choose to have an amount withheld to reduce your tax payable when you file your annual income tax return. Think about your expected income in retirement and decide if you want to withhold that tax upfront.",
-        "descriptionFr": "Les pensions du RPC et de la SV sont des revenus imposables. Vous n’êtes pas tenu de faire déduire l’impôt sur le revenu de vos paiements mensuels. Vous pouvez choisir de faire retenir un montant pour réduire l’impôt à payer lorsque vous produirez votre déclaration de revenus annuelle. Réfléchissez au revenu que vous pensez percevoir à la retraite et décidez si vous souhaitez prélever cet impôt à l’avance.",
+        "descriptionFr": "Les pensions du RPC et de la SV sont des revenus imposables. Vous n'êtes pas tenu de faire déduire l'impôt sur le revenu de vos paiements mensuels. Vous pouvez choisir de faire retenir un montant pour réduire l'impôt à payer lorsque vous produirez votre déclaration de revenus annuelle. Réfléchissez au revenu que vous pensez percevoir à la retraite et décidez si vous souhaitez prélever cet impôt à l'avance.",
         "displayOrder": 1061,
         "id": 65,
         "links": [
@@ -272,7 +272,7 @@
       {
         "answerKey": "between-60-and-65",
         "descriptionEn": "The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount.  The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting.  If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 60)\n- At a specific date that you choose (after age 60)\n\nYou can apply on paper in-person or by mail. For a faster reply, apply online. For more details, see the links below.",
-        "descriptionFr": "Le RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l’âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
+        "descriptionFr": "Le RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l'âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
         "displayOrder": 1101,
         "id": 69,
         "links": [
@@ -296,7 +296,7 @@
       {
         "answerKey": "at-65",
         "descriptionEn": "The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount.  The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting.  If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 60)\n- At a specific date that you choose (after age 60)\n\nYou can apply on paper in-person or by mail. For a faster reply, apply online. For more details, see the links below.",
-        "descriptionFr": "Le RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l’âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
+        "descriptionFr": "Le RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l'âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
         "displayOrder": 1111,
         "id": 70,
         "links": [
@@ -320,7 +320,7 @@
       {
         "answerKey": "between-65-and-70",
         "descriptionEn": "The CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount.  The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting.  If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 60)\n- At a specific date that you choose (after age 60)\n\nYou can apply on paper in-person or by mail. For a faster reply, apply online. For more details, see the links below.",
-        "descriptionFr": "Le RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l’âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
+        "descriptionFr": "Le RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l'âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
         "displayOrder": 1121,
         "id": 71,
         "links": [
@@ -344,7 +344,7 @@
       {
         "answerKey": "after-70",
         "descriptionEn": "You do not need to stop working to take your CPP retirement pension. You can start taking your CPP pension between age 60 and age 70. You can apply as early as age 59, no matter what age you want to start taking your pension. You should apply when you are confident about when you want to start.\n\nThe CPP lets you choose when to start your retirement pension, and each month you delay increases your monthly amount.  The highest monthly amount you can receive happens at age 70, after which there is no benefit to waiting.  If you need money sooner, you can start collecting your pension as early as age 60, but with a permanent reduction.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 60)\n- At a specific date that you choose (after age 60)\n\nYou can apply on paper in-person or by mail. For a faster reply, apply online. For more details, see the links below.",
-        "descriptionFr": "Vous n’avez pas besoin d’arrêter de travailler pour recevoir votre pension du RPC. Vous pouvez commencer à recevoir votre pension du RPC entre 60 et 70 ans. Vous pouvez déposer votre demande dès l’âge de 59 ans, quel que soit l’âge auquel vous souhaitez commencer à recevoir votre pension. Vous devez présenter une demande lorsque vous êtes certain(e) de la date à laquelle vous souhaitez commencer.\n\nLe RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l’âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
+        "descriptionFr": "Vous n'avez pas besoin d'arrêter de travailler pour recevoir votre pension du RPC. Vous pouvez commencer à recevoir votre pension du RPC entre 60 et 70 ans. Vous pouvez déposer votre demande dès l'âge de 59 ans, quel que soit l'âge auquel vous souhaitez commencer à recevoir votre pension. Vous devez présenter une demande lorsque vous êtes certain(e) de la date à laquelle vous souhaitez commencer.\n\nLe RPC vous permet de choisir quand commencer votre pension de retraite, et chaque mois que vous reportez, le montant mensuel augmente. Le montant le plus élevé à recevoir est à l'âge de 70 ans. Après cet âge, il n'y a aucun avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 60 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 60 ans)\n\nVous pouvez présenter votre demande en format papier, en personne ou par la poste. Pour une réponse plus rapide, faites votre demande en ligne. Pour plus de détails, consultez ces liens.",
         "displayOrder": 1131,
         "id": 72,
         "links": [
@@ -392,7 +392,7 @@
       {
         "answerKey": "yes-kids",
         "descriptionEn": "If you are eligible for the child-rearing provision, make sure to fill out that section on your CPP application. You will need to provide the information you gathered, so make sure you have it handy. If you have already applied for your CPP retirement pension, you can apply for the child-rearing provision separately. See the links below for more details.",
-        "descriptionFr": "Si vous êtes admissible à la clause pour élever des enfants, assurez-vous de remplir cette section dans votre demande de prestations du RPC. Vous devrez fournir les informations que vous avez recueillies; assurez-vous donc de les avoir à portée de main. Si vous avez déjà demandé votre pension du RPC, vous pouvez demander la clause pour élever des enfants séparément. Consultez ces liens pour plus d’informations.",
+        "descriptionFr": "Si vous êtes admissible à la clause pour élever des enfants, assurez-vous de remplir cette section dans votre demande de prestations du RPC. Vous devrez fournir les informations que vous avez recueillies; assurez-vous donc de les avoir à portée de main. Si vous avez déjà demandé votre pension du RPC, vous pouvez demander la clause pour élever des enfants séparément. Consultez ces liens pour plus d'informations.",
         "displayOrder": 1151,
         "id": 74,
         "links": [
@@ -422,7 +422,7 @@
       {
         "answerKey": "pre-60",
         "descriptionEn": "You will need to wait until at least age 64 to apply for your OAS pension. You can start collecting your OAS pension at age 65 but you can also delay up to age 70.  If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. After age 70, there is no benefit in delaying your first payment.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
-        "descriptionFr": "Vous devrez attendre au moins jusqu’à l’âge de 64 ans pour présenter une demande de votre pension de la SV. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN’oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. Vos montants mensuels n’augmenteront plus si vous reportez jusqu’à 70 ans.\n\nSi vous êtes admissible à l’inscription automatique, vous recevrez une lettre vous informant de votre inscription à l’âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez postuler sur papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
+        "descriptionFr": "Vous devrez attendre au moins jusqu'à l'âge de 64 ans pour présenter une demande de votre pension de la SV. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN'oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Vos montants mensuels n'augmenteront plus si vous reportez jusqu'à 70 ans.\n\nSi vous êtes admissible à l'inscription automatique, vous recevrez une lettre vous informant de votre inscription à l'âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez postuler sur papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
         "displayOrder": 1161,
         "id": 75,
         "links": [
@@ -446,7 +446,7 @@
       {
         "answerKey": "between-60-and-65",
         "descriptionEn": "You will need to wait until at least age 64 to apply for your OAS pension. You can start collecting your OAS pension at age 65 but you can also delay up to age 70.  If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. After age 70, there is no benefit in delaying your first payment.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
-        "descriptionFr": "Vous devrez attendre au moins jusqu’à l’âge de 64 ans pour demander votre pension de la SV. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN’oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. Vos montants mensuels n’augmenteront plus si vous reportez jusqu’à 70 ans.\n\nSi vous êtes admissible à l’inscription automatique, vous recevrez une lettre vous informant de votre inscription à l’âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins 2 mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
+        "descriptionFr": "Vous devrez attendre au moins jusqu'à l'âge de 64 ans pour demander votre pension de la SV. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN'oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Vos montants mensuels n'augmenteront plus si vous reportez jusqu'à 70 ans.\n\nSi vous êtes admissible à l'inscription automatique, vous recevrez une lettre vous informant de votre inscription à l'âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins 2 mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
         "displayOrder": 1171,
         "id": 76,
         "links": [
@@ -470,7 +470,7 @@
       {
         "answerKey": "unsure-retirement-age",
         "descriptionEn": "You do not need to stop working in order to collect your OAS pension.\n\nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay receiving your OAS pension, the longer you wait, the higher your monthly amounts will be for life. After age 70, there is no benefit in delaying your first payment.\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can start collecting your OAS pension at age 65 but you can also delay up to age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
-        "descriptionFr": "Vous ne devez pas cesser de travailler pour recevoir votre pension de la SV.\n\nSi vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nSi vous pouvez vous le permettre, il est préférable de reportez le paiement de votre pension de la SV; plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. Vos montants mensuels n’augmenteront plus si vous reportez jusqu’à 70 ans.\n\nVous pouvez demander votre pension de la SV à tout moment, au moins un mois après votre 64e anniversaire. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans.\n\nSi vous êtes admissible à l’inscription automatique, vous recevrez une lettre vous informant de votre inscription à l’âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65e anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
+        "descriptionFr": "Vous ne devez pas cesser de travailler pour recevoir votre pension de la SV.\n\nSi vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nSi vous pouvez vous le permettre, il est préférable de reportez le paiement de votre pension de la SV; plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Vos montants mensuels n'augmenteront plus si vous reportez jusqu'à 70 ans.\n\nVous pouvez demander votre pension de la SV à tout moment, au moins un mois après votre 64e anniversaire. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans.\n\nSi vous êtes admissible à l'inscription automatique, vous recevrez une lettre vous informant de votre inscription à l'âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65e anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
         "displayOrder": 1181,
         "id": 77,
         "links": [
@@ -494,7 +494,7 @@
       {
         "answerKey": "at-65",
         "descriptionEn": "You can apply at age 64 for your OAS pension. You can start collecting your OAS pension at age 65 but you can also delay up to age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life. After age 70, there is no benefit in delaying your first payment.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
-        "descriptionFr": "Vous pouvez demander votre pension de la SV à l’âge de 64 ans. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN’oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. Vos montants mensuels n’augmenteront plus si vous reportez jusqu’à 70 ans.\n\nSi vous êtes admissible à l’inscription automatique, vous recevrez une lettre vous informant de votre inscription à l’âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
+        "descriptionFr": "Vous pouvez demander votre pension de la SV à lâge de 64 ans. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN'oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Vos montants mensuels n'augmenteront plus si vous reportez jusqu'à 70 ans.\n\nSi vous êtes admissible à l'inscription automatique, vous recevrez une lettre vous informant de votre inscription à l'âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
         "displayOrder": 1191,
         "id": 78,
         "links": [
@@ -518,7 +518,7 @@
       {
         "answerKey": "between-65-and-70",
         "descriptionEn": "You can apply at age 64 for your OAS pension. You can start collecting your OAS pension at age 65 but you can also delay up to age 70. If you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nKeep in mind, the longer you wait, the higher your monthly amounts will be for life.  After age 70, there is no benefit in delaying your first payment.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
-        "descriptionFr": "Vous pouvez demander votre pension de la SV à l’âge de 64 ans. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN’oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. Vos montants mensuels n’augmenteront plus si vous reportez jusqu’à 70 ans.\n\nSi vous êtes admissible à l’inscription automatique, vous recevrez une lettre vous informant de votre inscription à l’âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
+        "descriptionFr": "Vous pouvez demander votre pension de la SV à l'âge de 64 ans. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans. Si vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nN'oubliez pas que plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Vos montants mensuels n'augmenteront plus si vous reportez jusqu'à 70 ans.\n\nSi vous êtes admissible à l'inscription automatique, vous recevrez une lettre vous informant de votre inscription à l'âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
         "displayOrder": 1201,
         "id": 79,
         "links": [
@@ -542,7 +542,7 @@
       {
         "answerKey": "after-70",
         "descriptionEn": "You do not need to stop working in order to collect your OAS pension.\n\nIf you are low income or in poor health, you should consider starting when you are eligible. You may qualify for the GIS benefit.\n\nIf you can afford to delay collecting your OAS pension, the longer you wait, the higher your monthly amounts will be for life. **After age 70, there is no benefit in delaying your first payment.**\n\nYou can apply any time at least 1 month past your 64th birthday for your OAS pension. You can start collecting your OAS pension at age 65 but you can also delay up to age 70.\n\nIf you are eligible for auto-enrolment, you will receive a letter notifying you of your enrolment at age 64. If you want to delay taking your pension, you must contact Service Canada.\n\nWhen you apply, you will need to choose when you want your pension to start.\n- As soon as you qualify (the month after you turn 65)\n- At a specific date that you choose (after age 65)\n\nYou can apply on paper or online. **Apply at least 2 months before you want to start receiving your OAS pension.** Check the links below to apply.",
-        "descriptionFr": "Vous ne devez pas cesser de travailler pour recevoir votre pension de la SV.\n\nSi vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nSi vous pouvez vous le permettre, il est préférable de retarder le paiement de votre pension de la SV; plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. **Vos montants mensuels n’augmenteront plus si vous attendez après 70 ans.**\n\nVous pouvez demander votre pension de la SV à tout moment, au moins un mois après votre 64e anniversaire. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans.\n\nSi vous êtes admissible à l’inscription automatique, vous recevrez une lettre vous informant de votre inscription à l’âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
+        "descriptionFr": "Vous ne devez pas cesser de travailler pour recevoir votre pension de la SV.\n\nSi vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez envisager de commencer dès que vous y avez droit. Vous avez peut-être droit à la prestation du SRG.\n\nSi vous pouvez vous le permettre, il est préférable de retarder le paiement de votre pension de la SV; plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. **Vos montants mensuels n'augmenteront plus si vous attendez après 70 ans.**\n\nVous pouvez demander votre pension de la SV à tout moment, au moins un mois après votre 64e anniversaire. Vous pouvez choisir de recevoir votre pension de la SV entre 65 et 70 ans.\n\nSi vous êtes admissible à l'inscription automatique, vous recevrez une lettre vous informant de votre inscription à l'âge de 64 ans. Si vous souhaitez reportez le versement de votre pension, vous devez contacter Service Canada.\n\nLors de votre demande, vous devrez choisir la date à laquelle vous souhaitez commencer à recevoir votre pension.\n- Dès que vous remplissez les conditions requises (le mois suivant votre 65 anniversaire)\n- À une date précise que vous choisissez (après l'âge de 65 ans)\n\nVous pouvez faire votre demande en format papier ou en ligne. **Faites votre demande au moins deux mois avant le premier paiement de votre pension de la SV.** Consultez ces liens pour faire votre demande.",
         "displayOrder": 1211,
         "id": 80,
         "links": [
@@ -590,7 +590,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "After you apply, Service Canada will contact you by mail once a decision has been made, or to request additional information or documents. If you are approved, the letter will confirm:\n- your OAS payment start date (called the “effective date”)\n- the portion of the full OAS pension you are entitled to ([based on how long you have lived in Canada since age 18](https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/benefit-amount.html#:~:text=If%20you%20have%20lived%20in%20Canada%20less%20than%2040%20years))\n- your monthly OAS payments at your start date\n- your first month's OAS payment amount (this may be different from your future monthly payments if you are receiving a retroactive payment)\n\nIf you qualify for GIS, the letter will also confirm:\n- your GIS payment start date (called the “effective date”)\n- your monthly GIS payments at your start date\n- your first month's GIS payment amount (this may be different from your future monthly payments if you are receiving a retroactive payment)",
-        "descriptionFr": "UUne fois que vous aurez présenté votre demande, Service Canada communiquera avec vous par courrier une fois qu’une décision aura été prise, ou pour vous demander des informations ou des documents supplémentaires. Si votre demande est acceptée, la lettre vous confirmera :\u00a0:\n- la date de début de votre versement de la SV (appelée «\u00a0date d'effet\u00a0»)\n- la partie de la pension complète de la SV à laquelle vous avez droit [en fonction de la durée pendant laquelle vous avez vécu au Canada depuis l'âge de 18 ans](https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html)\n- vos versements mensuels de la SV à la date d'entrée en vigueur\n- le montant de votre premier mois de versement de la SV (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)\n\nSi vous avez droit au SRG, la lettre confirmera également\u00a0:\n- la date de début de votre versement du SRG (appelée «\u00a0date d'effet\u00a0»)\n- vos versements mensuels du SRG à la date d'entrée en vigueur\n- le montant de votre premier mois de paiement du SRG (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)",
+        "descriptionFr": "Une fois que vous aurez présenté votre demande, Service Canada communiquera avec vous par courrier une fois qu'une décision aura été prise, ou pour vous demander des informations ou des documents supplémentaires. Si votre demande est acceptée, la lettre vous confirmera :\u00a0:\n- la date de début de votre versement de la SV (appelée «\u00a0date d'effet\u00a0»)\n- la partie de la pension complète de la SV à laquelle vous avez droit [en fonction de la durée pendant laquelle vous avez vécu au Canada depuis l'âge de 18 ans](https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/montant-prestation.html)\n- vos versements mensuels de la SV à la date d'entrée en vigueur\n- le montant de votre premier mois de versement de la SV (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)\n\nSi vous avez droit au SRG, la lettre confirmera également\u00a0:\n- la date de début de votre versement du SRG (appelée «\u00a0date d'effet\u00a0»)\n- vos versements mensuels du SRG à la date d'entrée en vigueur\n- le montant de votre premier mois de paiement du SRG (ce montant peut être différent de vos futurs versements mensuels si vous bénéficiez d'un versement rétroactif)",
         "displayOrder": 1221,
         "id": 82,
         "links": [
@@ -614,7 +614,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "Your public pensions are designed to cover some but not all of your retirement income. You will need to decide how much you will take from your private pension(s) or other savings each month. For a Registered Retirement Income Fund, there is a minimum monthly amount you must take. Keep in mind, withdrawals from private pensions are taxable. You may want to speak with a financial professional to understand your options.",
-        "descriptionFr": "Vos pensions publiques sont conçues pour couvrir une partie, mais pas la totalité, de vos revenus de retraite. Vous devrez décider du montant que vous recevrez chaque mois sur votre ou vos pensions privées ou sur d’autres formes d’épargne. Pour un fonds enregistré de revenu de retraite, il y a un montant mensuel minimum que vous devez prendre. N’oubliez pas que les retraits d’une pension privée sont imposables. Vous pouvez consulter un expert financier pour comprendre les options qui s’offrent à vous.",
+        "descriptionFr": "Vos pensions publiques sont conçues pour couvrir une partie, mais pas la totalité, de vos revenus de retraite. Vous devrez décider du montant que vous recevrez chaque mois sur votre ou vos pensions privées ou sur d'autres formes d'épargne. Pour un fonds enregistré de revenu de retraite, il y a un montant mensuel minimum que vous devez prendre. N'oubliez pas que les retraits d'une pension privée sont imposables. Vous pouvez consulter un expert financier pour comprendre les options qui s'offrent à vous.",
         "displayOrder": 1231,
         "id": 83,
         "links": [
@@ -644,7 +644,7 @@
       {
         "answerKey": "married-or-cl",
         "descriptionEn": "If you want to split your eligible pension income with your spouse or partner, you will both need to complete and submit a joint election to split private pension income when you file your taxes. **This does not apply to your OAS and CPP pensions**.\n\nYou will need to gather the following information in order to apply for pension splitting:\n- The transferring spouse's or partner's T4A slips\n- The transferring spouse's or partner's T4A-RCA slips (if applicable)\n- The transferring spouse's or partner's veterans benefits amounts (if applicable)\n\nYou may want to talk with a financial professional about the impact of pension splitting before applying.",
-        "descriptionFr": "Si vous souhaitez partager votre revenu de pension admissible avec votre conjoint ou partenaire, vous devrez tous deux remplir et soumettre un choix conjoint de fractionnement du revenu de pension privée au moment de remplir votre déclaration de revenus. **Cela ne s’applique pas à vos pensions de la SV et du RPC**.\n\nVous devrez recueillir les renseignements suivants pour demander le fractionnement du revenu de pension :\u00a0:\n- les feuillets T4A du conjoint ou partenaire qui effectue le transfert;\n- Les feuillets T4A\u2011RCA du conjoint ou partenaire qui effectue le transfert (le cas échéant);\n- Montant des prestations d'ancien combattant du conjoint ou partenaire qui effectue le transfert (le cas échéant).\n\nVous pouvez discuter avec un expert financier des conséquences du fractionnement du revenu de pension avant de déposer votre demande.",
+        "descriptionFr": "Si vous souhaitez partager votre revenu de pension admissible avec votre conjoint ou partenaire, vous devrez tous deux remplir et soumettre un choix conjoint de fractionnement du revenu de pension privée au moment de remplir votre déclaration de revenus. **Cela ne s'applique pas à vos pensions de la SV et du RPC**.\n\nVous devrez recueillir les renseignements suivants pour demander le fractionnement du revenu de pension\u00a0:\n- les feuillets T4A du conjoint ou partenaire qui effectue le transfert;\n- Les feuillets T4A\u2011RCA du conjoint ou partenaire qui effectue le transfert (le cas échéant);\n- Montant des prestations d'ancien combattant du conjoint ou partenaire qui effectue le transfert (le cas échéant).\n\nVous pouvez discuter avec un expert financier des conséquences du fractionnement du revenu de pension avant de déposer votre demande.",
         "displayOrder": 1241,
         "id": 84,
         "links": [
@@ -756,7 +756,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "It is important to keep your mind active and engaged in retirement. You can do this by reading, playing brain teasers, solving puzzles, or enjoying a wide range of other hobbies.",
-        "descriptionFr": "Il est important de garder l’esprit alerte et actif pendant la retraite. Vous pouvez le faire en lisant, en jouant à des jeux de réflexion, en trouvant des énigmes ou en réjouissant de plusieurs passe-temps.",
+        "descriptionFr": "Il est important de garder l'esprit alerte et actif pendant la retraite. Vous pouvez le faire en lisant, en jouant à des jeux de réflexion, en trouvant des énigmes ou en réjouissant de plusieurs passe-temps.",
         "displayOrder": 1291,
         "id": 89,
         "links": [],
@@ -773,7 +773,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "Some life changes in retirement can be stressful. By staying socially connected, you can make adjustments with the help of others and reduce feelings of loneliness and depression.",
-        "descriptionFr": "Certains changements de vie à la retraite peuvent être stressants. En restant en contact avec le monde extérieur, vous pouvez vous adapter avec l’aide de vos proches et réduire les sentiments de solitude et de dépression.",
+        "descriptionFr": "Certains changements de vie à la retraite peuvent être stressants. En restant en contact avec le monde extérieur, vous pouvez vous adapter avec l'aide de vos proches et réduire les sentiments de solitude et de dépression.",
         "displayOrder": 1301,
         "id": 90,
         "links": [
@@ -807,7 +807,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "Your will is the easiest and most effective way to tell others how you want to distribute your property and possessions - called your estate. Make or update your will to give yourself and your loved ones peace of mind. If you don't have a will, your loved ones may have to wait longer to benefit from your estate.",
-        "descriptionFr": "Votre testament est le moyen le plus simple et le plus efficace d’indiquer aux autres comment vous souhaitez répartir vos biens et vos possessions. C'est ce que l’on appelle votre patrimoine. Rédigez ou mettez à jour votre testament pour vous assurer, à vous et à vos proches, la tranquillité d’esprit. Si vous n’avez pas de testament, vos proches risquent de devoir attendre plus longtemps pour bénéficier de votre succession.",
+        "descriptionFr": "Votre testament est le moyen le plus simple et le plus efficace d'indiquer aux autres comment vous souhaitez répartir vos biens et vos possessions. C'est ce que l'on appelle votre patrimoine. Rédigez ou mettez à jour votre testament pour vous assurer, à vous et à vos proches, la tranquillité d'esprit. Si vous n'avez pas de testament, vos proches risquent de devoir attendre plus longtemps pour bénéficier de votre succession.",
         "displayOrder": 1,
         "id": 1,
         "links": [
@@ -831,7 +831,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "No one wants to think about losing independence, but needing help making legal and financial decisions can happen at any time and for a wide range of reasons. If you get ill, have an accident or even if you are just away for a period of time, having someone you trust who is ready and authorized to help you can save time and trouble.\n\nThere are many ways someone can support you to apply for or manage your public pensions. To learn more, see the links below.",
-        "descriptionFr": "Personne ne veut penser à perdre son autonomie, mais avoir besoin d’aide pour prendre des décisions juridiques et financières peut survenir à tout moment et pour plusieurs raisons. Si vous tombez malade, si vous avez un accident ou même si vous vous absentez pendant un certain temps, le fait d’avoir une personne de confiance qui est prête et autorisée à vous aider peut vous faire gagner du temps et vous éviter des ennuis.\n\nIl existe de nombreuses façons de vous aider à demander ou à gérer vos pensions publiques. Pour en apprendre davantage, suivez les liens ci-dessous.",
+        "descriptionFr": "Personne ne veut penser à perdre son autonomie, mais avoir besoin d'aide pour prendre des décisions juridiques et financières peut survenir à tout moment et pour plusieurs raisons. Si vous tombez malade, si vous avez un accident ou même si vous vous absentez pendant un certain temps, le fait d'avoir une personne de confiance qui est prête et autorisée à vous aider peut vous faire gagner du temps et vous éviter des ennuis.\n\nIl existe de nombreuses façons de vous aider à demander ou à gérer vos pensions publiques. Pour en apprendre davantage, suivez les liens ci-dessous.",
         "displayOrder": 11,
         "id": 2,
         "links": [
@@ -873,7 +873,7 @@
       {
         "answerKey": "very-unprepared",
         "descriptionEn": "A budget can give you a basic idea of your spending. This helps you decide how much money you will need in order to live comfortably and how much of your savings you might need in addition to your other retirement income.\n\nKeep track of your spending by taking notes of what you do or buy. For example, how much you spend on groceries, restaurants, clothes, activities and more. You should try and do this for at least 2 months.",
-        "descriptionFr": "Un budget peut vous donner une idée générale de vos dépenses. Il vous aide à déterminer le montant dont vous aurez besoin pour vivre confortablement. Ceci inclu les épargnes dont vous pourriez avoir besoin, en plus de vos autres revenus de retraite.\n\nSurveillez vos dépenses en prenant note de ce que vous faites ou achetez. Par exemple, combien vous dépensez pour l’épicerie, les restaurants, les vêtements, les activités, etc. Vous devriez essayer de le faire pendant au moins deux mois.",
+        "descriptionFr": "Un budget peut vous donner une idée générale de vos dépenses. Il vous aide à déterminer le montant dont vous aurez besoin pour vivre confortablement. Ceci inclu les épargnes dont vous pourriez avoir besoin, en plus de vos autres revenus de retraite.\n\nSurveillez vos dépenses en prenant note de ce que vous faites ou achetez. Par exemple, combien vous dépensez pour l'épicerie, les restaurants, les vêtements, les activités, etc. Vous devriez essayer de le faire pendant au moins deux mois.",
         "displayOrder": 21,
         "id": 3,
         "links": [
@@ -963,7 +963,7 @@
       {
         "answerKey": "very-unprepared",
         "descriptionEn": "If you are feeling unprepared for retirement, it might be good to speak with a financial advisor. They will help you understand your options and make you feel more confident about your retirement plan.\n\nWhen speaking with a financial advisor, you may want to ask them these questions:\n\n- Are you a fiduciary ([fi] + [dyoo] + [shee] + [uh] + [ree])? *This is asking whether the advisor has a legal obligation to work in your best interests.*\n- What are your qualifications and credentials? *Listen for up-to-date ongoing training and education.*",
-        "descriptionFr": "Si vous ne vous sentez pas prêt ou prête pour la retraite, il peut être utile de consulter un conseiller financier. Il vous aidera à comprendre les options qui s’offrent à vous et vous permettra d’avoir confiance en votre plan de retraite.\n\nLorsque vous vous adressez à un conseiller financier, vous pouvez lui poser les questions suivantes\u00a0:\n\n- Êtes-vous un fiduciaire? *Il s'agit de savoir si le conseiller a l'obligation légale de travailler dans votre intérêt.*\n- Quelles sont vos qualifications et quels compétences avez-vous? *Vous voulez savoir s'il a une formation à jour et continue.*",
+        "descriptionFr": "Si vous ne vous sentez pas prêt ou prête pour la retraite, il peut être utile de consulter un conseiller financier. Il vous aidera à comprendre les options qui s'offrent à vous et vous permettra d'avoir confiance en votre plan de retraite.\n\nLorsque vous vous adressez à un conseiller financier, vous pouvez lui poser les questions suivantes\u00a0:\n\n- Êtes-vous un fiduciaire? *Il s'agit de savoir si le conseiller a l'obligation légale de travailler dans votre intérêt.*\n- Quelles sont vos qualifications et quels compétences avez-vous? *Vous voulez savoir s'il a une formation à jour et continue.*",
         "displayOrder": 51,
         "id": 6,
         "links": [
@@ -1035,7 +1035,7 @@
       {
         "answerKey": "very-unprepared",
         "descriptionEn": "It's never too late to start saving. Knowing you have money set aside might help you feel more prepared.\n\nStart by setting a small, achievable goal. Celebrate when you meet that goal - every bit helps!\n\nIf you struggle to save, some financial institutions and community resources offer saving tools and tips to help.",
-        "descriptionFr": "Il n’est jamais trop tard pour commencer à épargner. Le fait de savoir que vous avez mis de l’argent de côté peut vous aider à vous sentir mieux préparé.\n\nCommencez par vous fixer un petit objectif réalisable. Célébrez l'atteinte de cet objectif. Chaque dollar économisé compte!\n\nSi vous avez du mal à épargner de l'argent, certaines institutions financières et ressources communautaires offrent des outils et des conseils qui pourront vous aider.",
+        "descriptionFr": "Il n'est jamais trop tard pour commencer à épargner. Le fait de savoir que vous avez mis de l'argent de côté peut vous aider à vous sentir mieux préparé.\n\nCommencez par vous fixer un petit objectif réalisable. Célébrez l'atteinte de cet objectif. Chaque dollar économisé compte!\n\nSi vous avez du mal à épargner de l'argent, certaines institutions financières et ressources communautaires offrent des outils et des conseils qui pourront vous aider.",
         "displayOrder": 81,
         "id": 9,
         "links": [
@@ -1065,7 +1065,7 @@
       {
         "answerKey": "unprepared",
         "descriptionEn": "It's never too late to start saving. Knowing you have money set aside might help you feel more prepared.\n\nStart by setting a small, achievable goal. Celebrate when you meet that goal - every bit helps!\n\nIf you struggle to save, some financial institutions and community resources offer saving tools and tips to help.",
-        "descriptionFr": "Il n’est jamais trop tard pour commencer à épargner. Le fait de savoir que vous avez mis de l’argent de côté peut vous aider à vous sentir mieux préparé.\n\nCommencez par vous fixer un petit objectif réalisable. Célébrez l'atteinte de cet objectif. Chaque dollar économisé compte!\n\nSi vous avez du mal à épargner de l'argent, certaines institutions financières et ressources communautaires offrent des outils et des conseils qui pourront vous aider.",
+        "descriptionFr": "Il n'est jamais trop tard pour commencer à épargner. Le fait de savoir que vous avez mis de l'argent de côté peut vous aider à vous sentir mieux préparé.\n\nCommencez par vous fixer un petit objectif réalisable. Célébrez l'atteinte de cet objectif. Chaque dollar économisé compte!\n\nSi vous avez du mal à épargner de l'argent, certaines institutions financières et ressources communautaires offrent des outils et des conseils qui pourront vous aider.",
         "displayOrder": 91,
         "id": 10,
         "links": [
@@ -1095,7 +1095,7 @@
       {
         "answerKey": "unsure-preparedness",
         "descriptionEn": "It's never too late to start saving. Knowing you have money set aside might help you feel more prepared.\n\nStart by setting a small, achievable goal. Celebrate when you meet that goal - every bit helps!\n\nIf you struggle to save, some financial institutions and community resources offer saving tools and tips to help.",
-        "descriptionFr": "Il n’est jamais trop tard pour commencer à épargner. Le fait de savoir que vous avez mis de l'argent de côté peut vous aider à vous sentir mieux préparé.\n\nCommencez par vous fixer un petit objectif réalisable. Célébrez l'atteinte de cet objectif. Chaque dollar économisé compte!\n\nSi vous avez du mal à épargner de l'argent, certaines institutions financières et ressources communautaires offrent des outils et des conseils qui pourront vous aider.",
+        "descriptionFr": "Il n'est jamais trop tard pour commencer à épargner. Le fait de savoir que vous avez mis de l'argent de côté peut vous aider à vous sentir mieux préparé.\n\nCommencez par vous fixer un petit objectif réalisable. Célébrez l'atteinte de cet objectif. Chaque dollar économisé compte!\n\nSi vous avez du mal à épargner de l'argent, certaines institutions financières et ressources communautaires offrent des outils et des conseils qui pourront vous aider.",
         "displayOrder": 101,
         "id": 11,
         "links": [
@@ -1150,7 +1150,7 @@
           }
         ],
         "titleEn": "Consider impact of your work income as you collect your public pensions",
-        "titleFr": "Prenez en consideration l'impact de vos revenus sur vos pensions publiques"
+        "titleFr": "Prenez en considération l'impact de vos revenus sur vos pensions publiques"
       },
       {
         "answerKey": "unsure-income",
@@ -1186,7 +1186,7 @@
           }
         ],
         "titleEn": "Consider impact of your income on your public pensions",
-        "titleFr": "Prenez en consideration l'impact de vos revenus sur vos pensions publiques"
+        "titleFr": "Prenez en considération l'impact de vos revenus sur vos pensions publiques"
       },
       {
         "answerKey": "income-skip",
@@ -1353,7 +1353,7 @@
       {
         "answerKey": "retirement-living-skip",
         "descriptionEn": "Spending time outside Canada may change the way you collect your Old Age Security and Canada Pension Plan (CPP) payments.\n\nYou can continue to collect your government pensions abroad, but the Government of Canada may withhold taxes that could be up to 25%.\n\nIf you are living outside Canada for more than 6 months and collecting Guaranteed Income Supplement (GIS), you will stop collecting your benefit until you return.\n\nYou cannot collect the Allowance for the Survivor benefit if you are outside of Canada for more than 6 months.\n\nIf you plan to leave Canada for more than 6 months, you must [contact Service Canada](https://www.canada.ca/en/contact/contact-1-800-o-canada.html) to avoid an overpayment.",
-        "descriptionFr": "Le fait de passer du temps à l’étranger peut avoir des conséquences sur les prestations que vous recevez de la Sécurité de la vieillesse et du Régime de pensions du Canada (RPC).\n\nVous pouvez continuer à recevoir vos pensions publiques à l’étranger, mais le gouvernement du Canada peut retenir des impôts pouvant aller jusqu'à 25\u00a0%.\n\nSi vous vivez à l'extérieur du Canada pendant plus de six mois et que vous recevez le Supplément de revenu garanti (SRG), vous cesserez de recevoir cette prestation jusqu'à votre retour.\n\nVous ne pouvez pas percevoir l'allocation au survivant si vous êtes à l'étranger pendant plus de six mois.\n\nSi vous prévoyez de quitter le Canada pour une période de plus de six mois, vous devez [communiquer avec Service Canada](https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html) pour éviter un plus-payé.",
+        "descriptionFr": "Le fait de passer du temps à l'étranger peut avoir des conséquences sur les prestations que vous recevez de la Sécurité de la vieillesse et du Régime de pensions du Canada (RPC).\n\nVous pouvez continuer à recevoir vos pensions publiques à l'étranger, mais le gouvernement du Canada peut retenir des impôts pouvant aller jusqu'à 25\u00a0%.\n\nSi vous vivez à l'extérieur du Canada pendant plus de six mois et que vous recevez le Supplément de revenu garanti (SRG), vous cesserez de recevoir cette prestation jusqu'à votre retour.\n\nVous ne pouvez pas percevoir l'allocation au survivant si vous êtes à l'étranger pendant plus de six mois.\n\nSi vous prévoyez de quitter le Canada pour une période de plus de six mois, vous devez [communiquer avec Service Canada](https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html) pour éviter un plus-payé.",
         "displayOrder": 171,
         "id": 18,
         "links": [
@@ -1390,7 +1390,7 @@
           }
         ],
         "titleEn": "Consider impacts of where you live on your public pensions and benefits",
-        "titleFr": "Prenez en consideration l'impact de vos revenus sur vos pensions publiques et prestations"
+        "titleFr": "Prenez en considération l'impact de vos revenus sur vos pensions publiques et prestations"
       },
       {
         "answerKey": "divorced-or-separated",
@@ -1587,7 +1587,7 @@
           }
         ],
         "titleEn": "Determine if your time in other countries counts towards your public pension eligibility",
-        "titleFr": "Déterminez si le temps passé dans d’autres pays peut être pris en considération dans le calcul de votre pension publique"
+        "titleFr": "Déterminez si le temps passé dans d'autres pays peut être pris en considération dans le calcul de votre pension publique"
       },
       {
         "answerKey": "in-canada-10-to-39",
@@ -1617,7 +1617,7 @@
           }
         ],
         "titleEn": "Determine if your time in other countries counts towards your public pension eligibility",
-        "titleFr": "Déterminez si le temps passé dans d’autres pays peut être pris en considération dans le calcul de votre pension publique"
+        "titleFr": "Déterminez si le temps passé dans d'autres pays peut être pris en considération dans le calcul de votre pension publique"
       },
       {
         "answerKey": "status-skip",
@@ -1754,7 +1754,7 @@
       {
         "answerKey": "in-canada-10-to-39",
         "descriptionEn": "Make a list of all the places you have lived since age 18. Include the following:\n\n- The dates you lived there\n- The country\n- If you worked in that country\n- If you applied for a benefit from that country\n- Your insurance or identification number in this country\n\nThis is known as your residence history. After you apply for your public pensions, you may be asked to provide proof of this information.",
-        "descriptionFr": "Faites une liste de tous les endroits où vous avez vécu depuis l'âge de 18 ans. Inclure ce qui suit\u00a0:\n\n- Les dates pendant lesquelles vous avez vécu à cet endroit;\n- Le pays;\n- Si vous avez travaillé dans ce pays;\n- Si vous avez demandé des prestations dans ce pays;\n- Votre numéro d'assurance ou d'identification dans ce pays.\n\nC'est ce que l'on appelle les antécédents de résidence. Après avoir présenté votre demande de pension publique, il se peut que l’on vous demande de fournir la preuve de ces informations.",
+        "descriptionFr": "Faites une liste de tous les endroits où vous avez vécu depuis l'âge de 18 ans. Inclure ce qui suit\u00a0:\n\n- Les dates pendant lesquelles vous avez vécu à cet endroit;\n- Le pays;\n- Si vous avez travaillé dans ce pays;\n- Si vous avez demandé des prestations dans ce pays;\n- Votre numéro d'assurance ou d'identification dans ce pays.\n\nC'est ce que l'on appelle les antécédents de résidence. Après avoir présenté votre demande de pension publique, il se peut que l'on vous demande de fournir la preuve de ces informations.",
         "displayOrder": 301,
         "id": 32,
         "links": [
@@ -1778,7 +1778,7 @@
       {
         "answerKey": "unsure-in-canada",
         "descriptionEn": "Make a list of all the places you have lived since age 18. Include the following:\n\n- The dates you lived there\n- The country\n- If you worked in that country\n- If you applied for a benefit from that country\n- Your insurance or identification number in this country\n\nThis is known as your residence history. After you apply for your public pensions, you may be asked to provide proof of this information.",
-        "descriptionFr": "Faites une liste de tous les endroits où vous avez vécu depuis l'âge de 18 ans. Inclure ce qui suit\u00a0:\n\n- Les dates pendant lesquelles vous avez vécu à cet endroit;\n- Le pays;\n- Si vous avez travaillé dans ce pays;\n- Si vous avez demandé des prestations dans ce pays;\n- Votre numéro d'assurance ou d'identification dans ce pays.\n\nC'est ce que l'on appelle les antécédents de résidence. Après avoir présenté votre demande de pension publique, il se peut que l’on vous demande de fournir la preuve de ces informations.",
+        "descriptionFr": "Faites une liste de tous les endroits où vous avez vécu depuis l'âge de 18 ans. Inclure ce qui suit\u00a0:\n\n- Les dates pendant lesquelles vous avez vécu à cet endroit;\n- Le pays;\n- Si vous avez travaillé dans ce pays;\n- Si vous avez demandé des prestations dans ce pays;\n- Votre numéro d'assurance ou d'identification dans ce pays.\n\nC'est ce que l'on appelle les antécédents de résidence. Après avoir présenté votre demande de pension publique, il se peut que l'on vous demande de fournir la preuve de ces informations.",
         "displayOrder": 311,
         "id": 33,
         "links": [
@@ -1802,7 +1802,7 @@
       {
         "answerKey": "in-canada-skip",
         "descriptionEn": "Make a list of all the places you have lived since age 18. Include the following:\n\n- The dates you lived there\n- The country\n- If you worked in that country\n- If you applied for a benefit from that country\n- Your insurance or identification number in this country\n\nThis is known as your residence history. After you apply for your public pensions, you may be asked to provide proof of this information.",
-        "descriptionFr": "Faites une liste de tous les endroits où vous avez vécu depuis l'âge de 18 ans. Inclure ce qui suit\u00a0:\n\n- Les dates pendant lesquelles vous avez vécu à cet endroit;\n- Le pays;\n- Si vous avez travaillé dans ce pays;\n- Si vous avez demandé des prestations dans ce pays;\n- Votre numéro d'assurance ou d'identification dans ce pays.\n\nC'est ce que l'on appelle les antécédents de résidence. Après avoir présenté votre demande de pension publique, il se peut que l’on vous demande de fournir la preuve de ces informations.",
+        "descriptionFr": "Faites une liste de tous les endroits où vous avez vécu depuis l'âge de 18 ans. Inclure ce qui suit\u00a0:\n\n- Les dates pendant lesquelles vous avez vécu à cet endroit;\n- Le pays;\n- Si vous avez travaillé dans ce pays;\n- Si vous avez demandé des prestations dans ce pays;\n- Votre numéro d'assurance ou d'identification dans ce pays.\n\nC'est ce que l'on appelle les antécédents de résidence. Après avoir présenté votre demande de pension publique, il se peut que l'on vous demande de fournir la preuve de ces informations.",
         "displayOrder": 321,
         "id": 34,
         "links": [
@@ -1874,7 +1874,7 @@
       {
         "answerKey": "pre-60",
         "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to receive your public pensions.\n\nYou are not eligible for public pensions until after age 60. If you choose to take your CPP retirement pension early at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
-        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant de prendre sa retraite peut vous apporter une certaine tranquillité d’esprit. Il n’est pas nécessaire de prendre sa retraite pour recevoir les pensions publiques.\n\nVVous ne pouvez pas recevoir une pension publique avant l’âge de 60 ans. Si vous décidez de recevoir votre pension de retraite du RPC dès l'âge de 60 ans, celle-ci sera nettement moins élevée chaque mois jusqu'à la fin de votre vie. Vous ne pouvez bénéficier de la Sécurité de la vieillesse (SV) qu'à partir de 65 ans. Si vous pouvez vous le permettre, il est préférable de retarder le paiement de votre pension; plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Si vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez commencer à la recevoir dès que vous y avez droit.",
+        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant de prendre sa retraite peut vous apporter une certaine tranquillité d'esprit. Il n'est pas nécessaire de prendre sa retraite pour recevoir les pensions publiques.\n\nVous ne pouvez pas recevoir une pension publique avant l'âge de 60 ans. Si vous décidez de recevoir votre pension de retraite du RPC dès l'âge de 60 ans, celle-ci sera nettement moins élevée chaque mois jusqu'à la fin de votre vie. Vous ne pouvez bénéficier de la Sécurité de la vieillesse (SV) qu'à partir de 65 ans. Si vous pouvez vous le permettre, il est préférable de retarder le paiement de votre pension; plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Si vous vivez avec de faibles revenus ou si votre état de santé est précaire, vous devriez commencer à la recevoir dès que vous y avez droit.",
         "displayOrder": 361,
         "id": 37,
         "links": [],
@@ -1886,12 +1886,12 @@
           }
         ],
         "titleEn": "Since you plan on retiring before age 60, decide when to apply for public pensions",
-        "titleFr": "Étant donné que vous prévoyez prendre votre retraite avant 60 ans, décidez quand présenter un demande pour les pensions publiques"
+        "titleFr": "Étant donné que vous prévoyez prendre votre retraite avant 60 ans, décidez quand présenter une demande pour les pensions publiques"
       },
       {
         "answerKey": "between-60-and-65",
         "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. You do not need to retire from work to collect your public pensions.\n\nWhile you can choose to  take your CPP retirement pension at age 60, it will be significantly less each month for the rest of your life. You can only start OAS at 65. If you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible.",
-        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant votre départ à la retraite peut vous apporter une certaine tranquillité d'esprit. Il n'est pas nécessaire de prendre sa retraite pour recevoir les pensions publiques.\n\nBien que vous puissiez choisir de percevoir votre pension du RPC dès l’âge de 60 ans, celle-ci sera nettement moins élevée chaque mois jusqu’à la fin de votre vie. Vous ne pouvez pas bénéficier de la Sécurité de la vieillesse (SV) avant l'âge de 65 ans. Si vous pouvez vous le permettre, il est préférable de reporter le paiement de votre pension; plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez commencer à la recevoir dès que vous y avez droit.",
+        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant votre départ à la retraite peut vous apporter une certaine tranquillité d'esprit. Il n'est pas nécessaire de prendre sa retraite pour recevoir les pensions publiques.\n\nBien que vous puissiez choisir de percevoir votre pension du RPC dès l'âge de 60 ans, celle-ci sera nettement moins élevée chaque mois jusqu'à la fin de votre vie. Vous ne pouvez pas bénéficier de la Sécurité de la vieillesse (SV) avant l'âge de 65 ans. Si vous pouvez vous le permettre, il est préférable de reporter le paiement de votre pension; plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez commencer à la recevoir dès que vous y avez droit.",
         "displayOrder": 371,
         "id": 38,
         "links": [],
@@ -1903,12 +1903,12 @@
           }
         ],
         "titleEn": "Since you plan on retiring between ages 60 and 65, decide when to apply for public pensions",
-        "titleFr": "Étant donné que vous prévoyez prendre votre retraite entre 60 et 65 ans, décidez quand présenter un demande pour les pensions publiques"
+        "titleFr": "Étant donné que vous prévoyez prendre votre retraite entre 60 et 65 ans, décidez quand présenter une demande pour les pensions publiques"
       },
       {
         "answerKey": "at-65",
         "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to collect your public pensions.\n\nYou can take both your OAS and CPP pensions at age 65. If you can afford to delay collecting your public pensions, the longer you wait, the higher your monthly amounts will be for life. If you are low income or in poor health, you should start when you are eligible. You may also qualify for other benefits.",
-        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant votre départ à la retraite peut vous apporter une certaine tranquillité d'esprit.  Il n'est pas nécessaire de prendre sa retraite pour recevoir les pensions de l'État.\n\nVous pouvez toucher votre pension de la SV et celle du RPC à l’âge de 65 ans. Si vous pouvez vous le permettre, il est préférable de retarder le paiement de votre pension; plus vous attendez, plus vos montants mensuels seront élevés jusqu’à la fin de votre vie. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez commencer à la recevoir dès que vous y avez droit. Vous pouvez également bénéficier d’autres prestations.",
+        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant votre départ à la retraite peut vous apporter une certaine tranquillité d'esprit.  Il n'est pas nécessaire de prendre sa retraite pour recevoir les pensions de l'État.\n\nVous pouvez toucher votre pension de la SV et celle du RPC à l'âge de 65 ans. Si vous pouvez vous le permettre, il est préférable de retarder le paiement de votre pension; plus vous attendez, plus vos montants mensuels seront élevés jusqu'à la fin de votre vie. Si vous vivez avec de faibles revenus ou si votre état de santé est délicate, vous devriez commencer à la recevoir dès que vous y avez droit. Vous pouvez également bénéficier d'autres prestations.",
         "displayOrder": 381,
         "id": 39,
         "links": [],
@@ -1920,12 +1920,12 @@
           }
         ],
         "titleEn": "Since you plan on retiring at age 65, decide when to apply for public pensions",
-        "titleFr": "Puisque vous prévoyez prendre votre retraite à 65 ans, décidez quand présenter un demande pour les pensions publiques"
+        "titleFr": "Puisque vous prévoyez prendre votre retraite à 65 ans, décidez quand présenter une demande pour les pensions publiques"
       },
       {
         "answerKey": "between-65-and-70",
         "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind.  You do not need to retire from work to collect your public pensions.\n\nYou can start both OAS and CPP pensions at age 65. If you don't need the additional money, you should not take your pensions before you retire from work. Each month that you delay increases your monthly payments. After age 70, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
-        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions de l'État. Une planification avant votre départ à la retraite peut vous apporter une certaine tranquillité d'esprit.  Il n'est pas nécessaire de prendre sa retraite pour recevoir les pensions publiques.\n\nVous pouvez commencer à percevoir les pensions de la SV et du RPC à l’âge de 65 ans. Si vous n’avez pas besoin de cet argent supplémentaire, vous ne devriez pas recevoir votre pension avant de prendre votre retraite. Chaque mois de report augmente vos paiements mensuels. Après 70 ans, il n’y a aucun avantage à retarder le premier versement. Au contraire, vous risquez de perdre des prestations.",
+        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions de l'État. Une planification avant votre départ à la retraite peut vous apporter une certaine tranquillité d'esprit.  Il n'est pas nécessaire de prendre sa retraite pour recevoir les pensions publiques.\n\nVous pouvez commencer à percevoir les pensions de la SV et du RPC à l'âge de 65 ans. Si vous n'avez pas besoin de cet argent supplémentaire, vous ne devriez pas recevoir votre pension avant de prendre votre retraite. Chaque mois de report augmente vos paiements mensuels. Après 70 ans, il n'y a aucun avantage à retarder le premier versement. Au contraire, vous risquez de perdre des prestations.",
         "displayOrder": 391,
         "id": 40,
         "links": [],
@@ -1937,12 +1937,12 @@
           }
         ],
         "titleEn": "Since you plan on retiring between age 65 and 70, decide when to apply for public pensions",
-        "titleFr": "Étant donné que vous prévoyez prendre votre retraite entre 65 et 70 ans, décidez quand présenter un demande pour les pensions publiques"
+        "titleFr": "Étant donné que vous prévoyez prendre votre retraite entre 65 et 70 ans, décidez quand présenter une demande pour les pensions publiques"
       },
       {
         "answerKey": "after-70",
         "descriptionEn": "One of the most important decisions for retirement is knowing when to take your public pensions. Having a plan before you retire can give you peace of mind. Retiring from work and collecting your pensions are two different things.\n\nStarting OAS and CPP at age 70 means you are maximizing your monthly payments. After that age, there is no advantage in delaying your first payment. In fact, you risk losing benefits.",
-        "descriptionFr": "L’une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant de commencer la retraite peut vous apporter une certaine tranquillité d’esprit. Prendre sa retraite et demander à recevoir ses pensions sont deux choses différentes.\n\nEn commençant à recevoir les prestations de la SV et du RPC à l’âge de 70 ans, vous maximisez vos versements mensuels. Après cet âge, il n’y a aucun avantage à reporter le premier paiement. Au contraire, vous risquez de perdre des prestations.",
+        "descriptionFr": "L'une des décisions les plus importantes en vue de la retraite est de savoir quand commencer à recevoir les pensions publiques. Une planification avant de commencer la retraite peut vous apporter une certaine tranquillité d'esprit. Prendre sa retraite et demander à recevoir ses pensions sont deux choses différentes.\n\nEn commençant à recevoir les prestations de la SV et du RPC à l'âge de 70 ans, vous maximisez vos versements mensuels. Après cet âge, il n'y a aucun avantage à reporter le premier paiement. Au contraire, vous risquez de perdre des prestations.",
         "displayOrder": 401,
         "id": 41,
         "links": [],
@@ -1954,7 +1954,7 @@
           }
         ],
         "titleEn": "Since you plan on retiring after age 70, decide when to apply for public pensions",
-        "titleFr": "Étant donné que vous prévoyez prendre votre retraite après 70 ans, décidez quand présenter un demande pour les pensions publiques"
+        "titleFr": "Étant donné que vous prévoyez prendre votre retraite après 70 ans, décidez quand présenter une demande pour les pensions publiques"
       },
       {
         "answerKey": "unsure-retirement-age",
@@ -1971,7 +1971,7 @@
           }
         ],
         "titleEn": "Decide when to apply for public pensions",
-        "titleFr": "Décidez quand présenter un demande pour votre pension publique"
+        "titleFr": "Décidez quand présenter une demande pour votre pension publique"
       },
       {
         "answerKey": "retirement-age-skip",
@@ -1988,7 +1988,7 @@
           }
         ],
         "titleEn": "Decide when to apply for public pensions",
-        "titleFr": "Décidez quand présenter un demande pour votre pension publique"
+        "titleFr": "Décidez quand présenter une demande pour votre pension publique"
       },
       {
         "answerKey": "cppd-yes",
@@ -2256,7 +2256,7 @@
           }
         ],
         "titleEn": "Plan for changes in your survivor's benefits or Allowance for the Survivor at age 65",
-        "titleFr": "Prévoyez des modifications de vos prestations de survivant ou de l’allocation au survivant à l’âge de 65 ans"
+        "titleFr": "Prévoyez des modifications de vos prestations de survivant ou de l'allocation au survivant à l'âge de 65 ans"
       },
       {
         "answerKey": "all",
@@ -2373,7 +2373,7 @@
       {
         "answerKey": "all",
         "descriptionEn": "When you retire, your income sources will change. You may be eligible for tax credits even if you're getting a public pension.",
-        "descriptionFr": "Lorsque vous prendrez votre retraite, vos sources de revenus changeront. Vous pouvez avoir droit à des crédits d’impôt, même si vous recevez une pension publique.",
+        "descriptionFr": "Lorsque vous prendrez votre retraite, vos sources de revenus changeront. Vous pouvez avoir droit à des crédits d'impôt, même si vous recevez une pension publique.",
         "displayOrder": 10001,
         "id": 91,
         "links": [
@@ -2392,7 +2392,7 @@
           }
         ],
         "titleEn": "Consider the tax credits you may be eligible for",
-        "titleFr": "Pensez aux crédits d’impôt auxquels vous pouvez être admissible"
+        "titleFr": "Pensez aux crédits d'impôt auxquels vous pouvez être admissible"
       },
       {
         "answerKey": "all",
@@ -2570,7 +2570,7 @@
       {
         "answerKey": "outside-canada",
         "descriptionEn": "If you move back to Canada or plan on spending more than 6 months a year in Canada, you may become eligible for additional benefits, including the GIS benefit. You should contact us to start or restart your payments.",
-        "descriptionFr": "Si vous revenez au Canada ou si vous prévoyez d’y passer plus de six mois par année, vous pouvez avoir droit à des prestations supplémentaires, y compris le SRG. Vous devez communiquer avec nous pour commencer ou recommencer à recevoir vos paiements.",
+        "descriptionFr": "Si vous revenez au Canada ou si vous prévoyez d'y passer plus de six mois par année, vous pouvez avoir droit à des prestations supplémentaires, y compris le SRG. Vous devez communiquer avec nous pour commencer ou recommencer à recevoir vos paiements.",
         "displayOrder": 10081,
         "id": 99,
         "links": [
