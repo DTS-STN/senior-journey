@@ -65,7 +65,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
         <Accordion
           key={task.id}
           disableGutters
-          className='sm:ml-5'
+          className="sm:ml-4"
           expanded={expandedTasks.includes(task.id)}
           onChange={(_, expanded) => {
             onTaskAccordionChange(task.id, expanded)
@@ -78,14 +78,17 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
           }}
         >
           <AccordionSummary
-            className="sm:pl-0 py-2 font-display text-lg font-medium"
+            className="py-2 font-display text-lg font-medium sm:pl-0"
             expandIcon={<ExpandMoreIcon />}
-            sx={{ borderBottom: '1px solid rgba(0, 0, 0, 0.12)' }}
+            sx={{
+              borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
+              borderTop: '1px solid rgba(0, 0, 0, 0.12)',
+            }}
           >
             <Checkbox className="-mt-2.5 hidden print:inline" />
             {task.title}
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="py-4 sm:pl-14">
             <TaskCard linksHeader={linksHeader} showCheckbox={false} srTag={srTag} task={task} />
           </AccordionDetails>
         </Accordion>
