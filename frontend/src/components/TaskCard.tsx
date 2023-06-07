@@ -2,14 +2,16 @@ import { Chip, Link } from '@mui/material'
 
 import { TaskDto } from '../lib/types'
 import Markdown from './Markdown'
+import React from 'react'
 
 interface TaskCardProps {
   linksHeader: string
   showCheckbox?: boolean
+  srTag: string
   task: TaskDto
 }
 
-const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, task }) => {
+const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, srTag, task }) => {
   return (
     <>
       {showCheckbox && <input type="checkbox" className="relative top-2 mb-4 h-6 w-6" />}
@@ -30,7 +32,10 @@ const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, task }) 
       {task.tags.length > 0 && (
         <div className="flex gap-2">
           {task.tags.map((tag) => (
-            <Chip key={tag.code} label={tag.title} />
+            <React.Fragment key={tag.code}>
+              <span className="sr-only">{srTag}:</span>
+              <Chip key={tag.code} label={tag.title} />
+            </React.Fragment>
           ))}
         </div>
       )}

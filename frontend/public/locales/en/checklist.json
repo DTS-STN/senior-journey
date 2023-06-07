@@ -28,5 +28,6 @@
   },
   "print": "Print",
   "restart-quiz": "Restart quiz",
-  "show-filters": "Show filters"
+  "show-filters": "Show filters",
+  "sr-tag": "Task tag"
 }
