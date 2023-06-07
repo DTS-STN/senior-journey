@@ -24,7 +24,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
-  function getImageSrc(imagePrefix: string, extension: string = "jpg") {
+  function getImageSrc(imagePrefix: string, extension: string = 'png') {
     return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
   }
 
