@@ -10,7 +10,7 @@
     "test:unit": "jest",
     "test:coverage": "jest --coverage --forceExit",
     "typecheck": "tsc",
-    "ajv:validate": "ts-node --compilerOptions \"{\\\"module\\\":\\\"CommonJS\\\"}\" ./src/data/tasks-validation.ts | pino-pretty"
+    "ajv:validate": "ts-node --compilerOptions \"{\\\"module\\\":\\\"CommonJS\\\"}\" ./src/data/tasks-validation.ts"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
