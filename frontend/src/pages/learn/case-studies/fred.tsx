@@ -254,7 +254,7 @@ const Fred: FC = () => {
           <Trans ns="learn/case-studies/fred" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.header')}
         </h2>
         <List disablePadding>

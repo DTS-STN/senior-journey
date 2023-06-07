@@ -18,7 +18,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, task }) 
       {task.links.length > 0 && (
         <>
           <h5 className="mb-4 text-sm font-light tracking-wider">{linksHeader}</h5>
-          <ul className="mb-4 list-disc space-y-2 pl-7">
+          <ul className="mb-4 list-disc space-y-1 pl-7">
             {task.links.map((link) => (
               <li key={link.link}>
                 <Link href={link.link}>{link.text}</Link>

@@ -26,11 +26,10 @@ const Error404Page: FC = () => {
           <h2 className="h1">We couldn&#39;t find that Web page</h2>
           <p className="h2">Error 404</p>
           <p>
-            We&#39;re sorry you ended up here. Sometimes a page gets moved or
-            deleted, but hopefully we can help you find what you&#39;re looking
-            for. What next?
+            We&#39;re sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you
+            find what you&#39;re looking for. What next?
           </p>
-          <ul className="list-disc space-y-2 pl-10">
+          <ul className="list-disc space-y-1 pl-7">
             <li>
               Return to the{' '}
               <MuiLink component={Link} href="/" locale="default">
@@ -39,10 +38,7 @@ const Error404Page: FC = () => {
               ;
             </li>
             <li>
-              <MuiLink href="https://www.canada.ca/en/contact.html">
-                Contact us
-              </MuiLink>{' '}
-              and we&#39;ll help you out.
+              <MuiLink href="https://www.canada.ca/en/contact.html">Contact us</MuiLink> and we&#39;ll help you out.
             </li>
           </ul>
         </div>
@@ -50,11 +46,10 @@ const Error404Page: FC = () => {
           <h2 className="h1">Nous ne pouvons trouver cette page Web</h2>
           <p className="h2">Erreur 404</p>
           <p>
-            Nous sommes désolés que vous ayez abouti ici. Il arrive parfois
-            qu&#39;une page ait été déplacée ou supprimée. Heureusement, nous
-            pouvons vous aider à trouver ce que vous cherchez. Que faire?
+            Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu&#39;une page ait été déplacée ou
+            supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez. Que faire?
           </p>
-          <ul className="list-disc space-y-2 pl-10">
+          <ul className="list-disc space-y-1 pl-7">
             <li>
               Retournez à la{' '}
               <MuiLink component={Link} href="/" locale="default">
@@ -63,10 +58,8 @@ const Error404Page: FC = () => {
               ;
             </li>
             <li>
-              <MuiLink href="https://www.canada.ca/fr/contact.html">
-                Communiquez avec nous
-              </MuiLink>{' '}
-              pour obtenir de l&#39;aide.
+              <MuiLink href="https://www.canada.ca/fr/contact.html">Communiquez avec nous</MuiLink> pour obtenir de
+              l&#39;aide.
             </li>
           </ul>
         </div>

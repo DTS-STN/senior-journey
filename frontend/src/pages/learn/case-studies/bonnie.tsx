@@ -184,7 +184,7 @@ const Bonnie: FC = () => {
           {t('cpp.heading')}
         </h2>
         <p>{t('cpp.p1')}</p>
-        <ul className="mb-2 ml-5 list-inside list-disc">
+        <ul className="mb-2 list-disc space-y-1 pl-7">
           <li>{t('cpp.li1')}</li>
           <li>{t('cpp.li2')}</li>
           <li>{t('cpp.li3')}</li>
@@ -263,7 +263,7 @@ const Bonnie: FC = () => {
           <Trans ns="learn/case-studies/bonnie" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.header')}
         </h2>
         <List disablePadding>

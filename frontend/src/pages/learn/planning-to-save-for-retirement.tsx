@@ -135,7 +135,7 @@ const PlanningToSaveForRetirement: FC = () => {
           <Trans ns="learn/planning-to-save-for-retirement" i18nKey="changes-with-age.disclaimer" />
         </AlertCard>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.heading')}
         </h2>
         <List disablePadding>

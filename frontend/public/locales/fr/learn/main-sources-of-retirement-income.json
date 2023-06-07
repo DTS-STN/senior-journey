@@ -89,12 +89,12 @@
     },
     "overview": "La pension de retraite du Régime de pensions du Canada (RPC) qui assure un remplacement de revenu pour les personnes qui ont travaillé ou étaient travailleurs autonomes au Canada. Il s'agit d'une pension mensuelle qui remplace une partie de vos revenus professionnels à la retraite. Le montant de votre pension de retraite du RPC est fonction de vos revenus et de vos contributions au régime.",
     "qualify": {
-      "header": "Ête vous admissible à la pension de retraite du RPC?",
+      "header": "Ête-vous admissible à la pension de retraite du RPC?",
       "pension-credits": {
         "content": "Il se peut que vous ayez des <a>crédits de pension</a> de votre ancien partenaire suite à un divorce ou une séparation.",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-partage-credits.html"
       },
-      "worked-in-canada": "Si vous avez travaillé au Canada et que vos revenus autonome supérieurs à 3\u00a0500\u00a0$, vous et votre employeur avez contribué au RPC. Si vous étiez travailleur indépendant, et que vous avez cotisé à la fois pour l'employeur et pour l'employé. Les cotisations sont basées sur vos revenus, dans la limite d'un plafond annuel."
+      "worked-in-canada": "Si vous avez travaillé au Canada et que vos revenus autonome sont supérieurs à 3\u00a0500\u00a0$, vous et votre employeur avez cotisé au RPC. Si vous étiez travailleur indépendant, et que vous avez cotisé à la fois pour l'employeur et pour l'employé. Les cotisations sont basées sur vos revenus, dans la limite d'un plafond annuel."
     }
   },
   "guaranteed-income-supplement": {
@@ -154,7 +154,7 @@
     "header": "En savoir plus",
     "income-calculator": {
       "description": "Le calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
-      "header": "La Calculatrice du revenu de retraite canadienne",
+      "header": "La calculatrice du revenu de retraite canadienne",
       "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html"
     },
     "savings-and-pension": {
@@ -201,7 +201,7 @@
         "content": "Vous pouvez également y avoir droit si vous avez vécu ou travaillé dans un autre pays qui as <a>un accord de sécurité sociale avec le Canada</a>.",
         "link": "https://www.canada.ca/fr/agence-revenu/services/impot/decisions-concernant-regime-pensions-canada-rpc-assurance-emploi-ae/accords-internationaux-securite-sociale-regime-pensions-canada.html"
       },
-      "header": "Êtes vous admissible à la pension de la SV?",
+      "header": "Êtes-vous admissible à la pension de la SV?",
       "more-details": {
         "content": "Pour savoir si vous ête admissible à la pension de la SV, consultez la page pour la <a>pension de la SV</a>.",
         "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse.html"
@@ -221,7 +221,7 @@
     "canada-retirement-income-system": {
       "cpp-qpp": {
         "content": "Financé par les cotisations employeur/employé et les retours sur investissement",
-        "header": "Régime de pension du Canada (RPC) Régime de rentes du Québec (RRQ)",
+        "header": "Régime de pension du Canada (RPC) et Régime de rentes du Québec (RRQ)",
         "pillar": "Deuxième palier"
       },
       "header": "Le système de revenu de retraite du Canada",
