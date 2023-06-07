@@ -110,7 +110,7 @@ const GoingFromWorkToRetirement: FC = () => {
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p1')}</p>
-        <ul className="mb-5 ml-7 list-disc">
+        <ul className="mb-5 list-disc space-y-1 pl-7">
           <li>{t('overview.li1')}</li>
           <li>{t('overview.li2')}</li>
           <li>{t('overview.li3')}</li>

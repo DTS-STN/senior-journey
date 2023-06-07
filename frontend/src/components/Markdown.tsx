@@ -12,7 +12,7 @@ const OrderedList: FC<PropsWithChildren> = ({ children, ...props }) => (
 const Paragraph: FC<PropsWithChildren> = ({ children, ...props }) => <p {...props}>{children}</p>
 
 const UnorderedList: FC<PropsWithChildren> = ({ children, ...props }) => (
-  <ul {...props} className="mb-4 list-disc space-y-2 pl-7">
+  <ul {...props} className="mb-4 list-disc space-y-1 pl-7">
     {children}
   </ul>
 )

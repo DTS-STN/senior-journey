@@ -184,7 +184,7 @@ const Bonnie: FC = () => {
           {t('cpp.heading')}
         </h2>
         <p>{t('cpp.p1')}</p>
-        <ul className="mb-2 ml-5 list-inside list-disc">
+        <ul className="mb-2 list-disc space-y-1 pl-7">
           <li>{t('cpp.li1')}</li>
           <li>{t('cpp.li2')}</li>
           <li>{t('cpp.li3')}</li>
