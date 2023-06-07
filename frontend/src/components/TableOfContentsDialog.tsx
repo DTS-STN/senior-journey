@@ -67,6 +67,7 @@ export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({ header, 
                     </ListItemButton>
                   </ListItem>
                 ))}
+                <Divider />
                 <ListItem disablePadding>
                   <ListItemButton
                     onClick={() => {

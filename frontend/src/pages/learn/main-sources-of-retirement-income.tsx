@@ -472,7 +472,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           </AlertCard>
         </div>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.header')}
         </h2>
         <List disablePadding>

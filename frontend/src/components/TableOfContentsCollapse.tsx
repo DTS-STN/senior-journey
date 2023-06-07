@@ -27,6 +27,7 @@ export const TableOfContentsCollapse: FC<TableOfContentsCollapseProps> = ({ item
                 </ListItemButton>
               </ListItem>
             ))}
+            <Divider />
             <ListItem disablePadding>
               <ListItemButton
                 onClick={() => {
