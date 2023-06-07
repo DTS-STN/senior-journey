@@ -61,38 +61,33 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
           <div className="text-sm opacity-70">{subSectionTitle}</div>
         </div>
       </AccordionSummary>
-      {tasks.map((task) => (
-        <Accordion
-          key={task.id}
-          disableGutters
-          className="sm:ml-4"
-          expanded={expandedTasks.includes(task.id)}
-          onChange={(_, expanded) => {
-            onTaskAccordionChange(task.id, expanded)
-          }}
-          sx={{
-            'boxShadow': '0',
-            '.MuiAccordionSummary-root:focus': {
-              backgroundColor: 'transparent',
-            },
-          }}
-        >
-          <AccordionSummary
-            className="py-2 font-display text-lg font-medium sm:pl-0"
-            expandIcon={<ExpandMoreIcon />}
+      <div className="divide-y">
+        {tasks.map((task) => (
+          <Accordion
+            key={task.id}
+            disableGutters
+            className="divide-y before:hidden sm:ml-4"
+            expanded={expandedTasks.includes(task.id)}
+            onChange={(_, expanded) => {
+              onTaskAccordionChange(task.id, expanded)
+            }}
             sx={{
-              borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
-              borderTop: '1px solid rgba(0, 0, 0, 0.12)',
+              'boxShadow': '0',
+              '.MuiAccordionSummary-root:focus': {
+                backgroundColor: 'transparent',
+              },
             }}
           >
-            <Checkbox className="-mt-2.5 hidden print:inline" />
-            {task.title}
-          </AccordionSummary>
-          <AccordionDetails className="py-4 sm:pl-14">
-            <TaskCard linksHeader={linksHeader} showCheckbox={false} srTag={srTag} task={task} />
-          </AccordionDetails>
-        </Accordion>
-      ))}
+            <AccordionSummary className="py-2 font-display text-lg font-medium sm:pl-0" expandIcon={<ExpandMoreIcon />}>
+              <Checkbox className="-mt-2.5 hidden print:inline" />
+              {task.title}
+            </AccordionSummary>
+            <AccordionDetails className="py-4 sm:pl-14">
+              <TaskCard linksHeader={linksHeader} showCheckbox={false} srTag={srTag} task={task} />
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </div>
     </Accordion>
   )
 }
