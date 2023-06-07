@@ -76,10 +76,11 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
         value={values.hasChildren}
         onChange={handleChange}
         color="primary"
-        size="large"
         sx={{
           '& .MuiToggleButton-root': {
             'borderRadius': '4px',
+            'fontWeight': '700',
+            'fontSize': '1rem',
             '&:not(:first-of-type)': {
               border: '1px solid rgba(0, 0, 0, 0.12)',
             },
@@ -94,19 +95,19 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
           },
         }}
       >
+         <ToggleButton
+          value="no-kids"
+          aria-label={t('questions.question-apply.question-children.option-no-kids')}
+          data-cy="no-kids-button"
+        >
+          {t('questions.question-apply.question-children.option-no-kids')}
+        </ToggleButton>
         <ToggleButton
           value="yes-kids"
           aria-label={t('questions.question-apply.question-children.option-yes-kids')}
           data-cy="yes-kids-button"
         >
           {t('questions.question-apply.question-children.option-yes-kids')}
-        </ToggleButton>
-        <ToggleButton
-          value="no-kids"
-          aria-label={t('questions.question-apply.question-children.option-no-kids')}
-          data-cy="no-kids-button"
-        >
-          {t('questions.question-apply.question-children.option-no-kids')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

@@ -35,10 +35,11 @@ export const QuestionDisabilityBenefits: FC<QuestionDisabilityBenefitsProps> = (
         value={values.hasCppDisabilityBenefits}
         onChange={handleChange}
         color="primary"
-        size="large"
         sx={{
           '& .MuiToggleButton-root': {
             'borderRadius': '4px',
+            'fontWeight': '700',
+            'fontSize': '1rem',
             '&:not(:first-of-type)': {
               border: '1px solid rgba(0, 0, 0, 0.12)',
             },
@@ -54,18 +55,18 @@ export const QuestionDisabilityBenefits: FC<QuestionDisabilityBenefitsProps> = (
         }}
       >
         <ToggleButton
-          value="cppd-yes"
-          aria-label={t('questions.question-disability-benefits.option-cppd-yes')}
-          data-cy="cppd-yes-button"
-        >
-          {t('questions.question-disability-benefits.option-cppd-yes')}
-        </ToggleButton>
-        <ToggleButton
           value="cppd-no"
           aria-label={t('questions.question-disability-benefits.option-cppd-no')}
           data-cy="cppd-no-button"
         >
           {t('questions.question-disability-benefits.option-cppd-no')}
+        </ToggleButton>
+        <ToggleButton
+          value="cppd-yes"
+          aria-label={t('questions.question-disability-benefits.option-cppd-yes')}
+          data-cy="cppd-yes-button"
+        >
+          {t('questions.question-disability-benefits.option-cppd-yes')}
         </ToggleButton>
       </ToggleButtonGroup>
     </div>

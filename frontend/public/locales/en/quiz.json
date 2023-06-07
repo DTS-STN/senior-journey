@@ -5,7 +5,7 @@
     "yes": "Yes, close"
   },
   "landing": {
-    "header": "Retirement Ready Quiz",
+    "header": "Retirement ready quiz",
     "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
     "marital": "<strong>marital status</strong>",
     "meta": {
@@ -25,10 +25,10 @@
     "close": "Close",
     "next": "Next question",
     "previous": "Previous question",
-    "progress": "Question {{currentStep}} of {{totalSteps}}",
+    "progress": "{{currentStep}} of {{totalSteps}}",
     "submit": "Submit",
     "submitting": "Submitting...",
-    "title": "Retirement Ready Quiz"
+    "title": "Retirement ready quiz"
   },
   "questions": {
     "question-apply": {
@@ -55,7 +55,7 @@
       "option-unsure-income": "Not sure",
       "option-yes-income": "Yes",
       "subtitle": "Some people choose to work or earn money in retirement. This can affect your monthly pension amounts.",
-      "title": "Do you plan to earn money while receiving retirement benefits"
+      "title": "Do you plan to earn money while collecting public pensions?"
     },
     "question-feel": {
       "option-prepared": "Prepared",
@@ -71,7 +71,7 @@
       "option-in-canada-40-plus": "40 years or more",
       "option-in-canada-less-than-10": "Less than 10 years",
       "option-unsure-in-canada": "Not sure",
-      "title": "From age 18, how many years will you have lived in Canada when you apply for retirement benefits?"
+      "title": "From age 18, how many years will you have lived in Canada when you apply for public pensions?"
     },
     "question-status": {
       "option-status-citizen": "Canadian citizen or permanent resident",
@@ -91,8 +91,8 @@
     },
     "question-where": {
       "option-canada-ft": "In Canada",
-      "option-canada-pt-60-or-more": "In Canada MORE than 6 months a year",
-      "option-canada-pt-less-than-60": "In Canada LESS than 6 months a year",
+      "option-canada-pt-60-or-more": "In Canada <span>more</span> than 6 months a year",
+      "option-canada-pt-less-than-60": "In Canada <span>less</span> than 6 months a year",
       "option-outside-canada": "Outside Canada",
       "option-unsure-retirement-living": "Not sure",
       "title": "Where do you plan on living when you retire?"

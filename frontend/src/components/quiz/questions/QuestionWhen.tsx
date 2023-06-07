@@ -29,10 +29,11 @@ export const QuestionWhen: FC<QuestionWhenProps> = ({ values, setFieldValue }) =
         value={values.retirementAge}
         onChange={handleChange}
         color="primary"
-        size="large"
         sx={{
           '& .MuiToggleButton-root': {
             'borderRadius': '4px',
+            'fontWeight': '700',
+            'fontSize': '1rem',
             '&:not(:first-of-type)': {
               border: '1px solid rgba(0, 0, 0, 0.12)',
             },
