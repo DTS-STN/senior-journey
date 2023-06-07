@@ -29,12 +29,11 @@ export const QuestionWhere: FC<QuestionWhereProps> = ({ values, setFieldValue })
         value={values.retirementTimeframe}
         onChange={handleChange}
         color="primary"
-        size="large"
         sx={{
           '& .MuiToggleButton-root': {
             'borderRadius': '4px',
-            'fontWeight': 'bold',
-            'fontSize': '16px',
+            'fontWeight': '700',
+            'fontSize': '1rem',
             '&:not(:first-of-type)': {
               border: '1px solid rgba(0, 0, 0, 0.12)',
             },
@@ -65,7 +64,7 @@ export const QuestionWhere: FC<QuestionWhereProps> = ({ values, setFieldValue })
             i18nKey="questions.question-where.option-canada-pt-60-or-more"
             ns="quiz"
             components={{
-              span: <span className="underline-offset-2 underline"/>,
+              span: <span className="underline-offset-2 px-1 underline"/>,
             }}
         />
         </ToggleButton>
@@ -78,7 +77,7 @@ export const QuestionWhere: FC<QuestionWhereProps> = ({ values, setFieldValue })
             i18nKey="questions.question-where.option-canada-pt-less-than-60"
             ns="quiz"
             components={{
-              span: <span className="underline-offset-2 underline" />,
+              span: <span className="underline-offset-2 px-1 underline" />,
             }}
           />
         </ToggleButton>

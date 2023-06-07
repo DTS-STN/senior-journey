@@ -91,8 +91,8 @@
     },
     "question-where": {
       "option-canada-ft": "In Canada",
-      "option-canada-pt-60-or-more": "In Canada\u00a0<span>more</span>\u00a0than 6 months a year",
-      "option-canada-pt-less-than-60": "In Canada\u00a0<span>less</span>\u00a0than 6 months a year",
+      "option-canada-pt-60-or-more": "In Canada <span>more</span> than 6 months a year",
+      "option-canada-pt-less-than-60": "In Canada <span>less</span> than 6 months a year",
       "option-outside-canada": "Outside Canada",
       "option-unsure-retirement-living": "Not sure",
       "title": "Where do you plan on living when you retire?"

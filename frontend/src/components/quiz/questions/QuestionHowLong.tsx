@@ -29,12 +29,11 @@ export const QuestionHowLong: FC<QuestionHowLongProps> = ({ values, setFieldValu
         value={values.yearsInCanada}
         onChange={handleChange}
         color="primary"
-        size="large"
         sx={{
           '& .MuiToggleButton-root': {
             'borderRadius': '4px',
-            'fontWeight': 'bold',
-            'fontSize': '16px',
+            'fontWeight': '700',
+            'fontSize': '1rem',
             '&:not(:first-of-type)': {
               border: '1px solid rgba(0, 0, 0, 0.12)',
             },
