@@ -175,7 +175,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                   data-cy="progress-bar"
                   className="my-2"
                 />
-                <p id="progress-label" className="my-4 text-sm text-center">
+                <p id="progress-label" className="mb-1 mt-4 text-center text-sm">
                   {t('navigation.progress', { currentStep: (formikWizard.currentStepIndex ?? 0) + 1, totalSteps: 8 })}
                 </p>
               </div>
