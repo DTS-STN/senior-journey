@@ -1,0 +1,196 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Checklist tasks schema",
+  "type": "object",
+  "properties": {
+    "applyingBenefits": {
+      "$ref": "#/definitions/taskGroup"
+    },
+    "beforeRetiring": {
+      "$ref": "#/definitions/taskGroup"
+    },
+    "receivingBenefits": {
+      "$ref": "#/definitions/taskGroup"
+    }
+  },
+  "required": ["applyingBenefits", "beforeRetiring", "receivingBenefits"],
+  "definitions": {
+    "taskGroup": {
+      "type": "object",
+      "properties": {
+        "displayOrder": {
+          "type": "number",
+          "title": "TaskGroup's display order"
+        },
+        "id": {
+          "type": "number",
+          "title": "TaskGroup's identifer"
+        },
+        "subTitleEn": {
+          "type": "string",
+          "title": "TaskGroup's English sub-title"
+        },
+        "subTitleFr": {
+          "type": "string",
+          "title": "TaskGroup's French sub-title"
+        },
+        "tasks": {
+          "type": "array",
+          "title": "TaskGroup's tasks",
+          "items": {
+            "$ref": "#/definitions/task"
+          }
+        },
+        "titleEn": {
+          "type": "string",
+          "title": "TaskGroup's English title"
+        },
+        "titleFr": {
+          "type": "string",
+          "title": "TaskGroup's French title"
+        }
+      },
+      "required": ["displayOrder", "id", "subTitleEn", "subTitleFr", "tasks", "titleEn", "titleFr"],
+      "additionalProperties": false
+    },
+    "task": {
+      "type": "object",
+      "properties": {
+        "answerKey": {
+          "title": "Task's answer key",
+          "enum": [
+            "after-70",
+            "all",
+            "at-65",
+            "between-60-and-65",
+            "between-65-and-70",
+            "canada-ft",
+            "canada-pt-60-or-more",
+            "canada-pt-less-than-60",
+            "cppd-yes",
+            "divorced-or-separated",
+            "in-canada-10-to-39",
+            "in-canada-40-plus",
+            "in-canada-less-than-10",
+            "in-canada-skip",
+            "income-skip",
+            "kids-skip",
+            "marital-status-skip",
+            "married-or-cl",
+            "outside-canada",
+            "pre-60",
+            "retirement-age-skip",
+            "retirement-living-skip",
+            "status-first-nation",
+            "status-skip",
+            "status-sponsored",
+            "unprepared",
+            "unsure-in-canada",
+            "unsure-income",
+            "unsure-preparedness",
+            "unsure-retirement-age",
+            "unsure-retirement-living",
+            "very-unprepared",
+            "widowed",
+            "yes-income",
+            "yes-kids"
+          ]
+        },
+        "descriptionEn": {
+          "type": "string",
+          "title": "Task's English description"
+        },
+        "descriptionFr": {
+          "type": "string",
+          "title": "Task's French description"
+        },
+        "displayOrder": {
+          "type": "number",
+          "title": "Task's display order"
+        },
+        "id": {
+          "type": "number",
+          "title": "Task's identifier"
+        },
+        "links": {
+          "type": "array",
+          "title": "Task's links",
+          "items": {
+            "$ref": "#/definitions/link"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "title": "Task's tags",
+          "items": {
+            "$ref": "#/definitions/tag"
+          }
+        },
+        "titleEn": {
+          "type": "string",
+          "title": "Task's English title"
+        },
+        "titleFr": {
+          "type": "string",
+          "title": "Task's French title"
+        }
+      },
+      "required": [
+        "answerKey",
+        "descriptionEn",
+        "descriptionFr",
+        "displayOrder",
+        "id",
+        "links",
+        "tags",
+        "titleEn",
+        "titleFr"
+      ],
+      "additionalProperties": false
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "linkEn": {
+          "type": "string",
+          "format": "uri",
+          "title": "Task's English link uri"
+        },
+        "linkFr": {
+          "type": "string",
+          "format": "uri",
+          "title": "Task's French link uri"
+        },
+        "textEn": {
+          "type": "string",
+          "title": "Task's English link text"
+        },
+        "textFr": {
+          "type": "string",
+          "title": "Task's French link text"
+        }
+      },
+      "required": ["linkEn", "linkFr", "textEn", "textFr"],
+      "additionalProperties": false
+    },
+    "tag": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "title": "Task's tag code"
+        },
+        "titleEn": {
+          "type": "string",
+          "title": "Task's English tag title"
+        },
+        "titleFr": {
+          "type": "string",
+          "title": "Task's French tag title"
+        }
+      },
+      "required": ["code", "titleEn", "titleFr"],
+      "additionalProperties": false
+    }
+  }
+}
