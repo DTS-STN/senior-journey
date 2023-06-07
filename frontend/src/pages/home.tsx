@@ -323,7 +323,7 @@ const Home: FC = () => {
                       </h2>
                       <Divider className="mb-8" />
                       <p>{t('tabs.manage.description.text')}</p>
-                      <ul className="list-disc space-y-2 pl-7">
+                      <ul className="list-disc space-y-1 pl-7">
                         <li>{t('tabs.manage.description.list.create-and-submit-application')}</li>
                         <li>{t('tabs.manage.description.list.check-status-payment-dates-and-amounts')}</li>
                         <li>{t('tabs.manage.description.list.update-mailing-address-and-banking-information')}</li>

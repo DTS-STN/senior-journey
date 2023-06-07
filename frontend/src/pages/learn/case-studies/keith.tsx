@@ -190,7 +190,7 @@ const Keith: FC = () => {
           {t('cpp.what-else.heading')}
         </h2>
         <p>{t('cpp.what-else.p1')}</p>
-        <ul className="mb-5 list-disc space-y-2 pl-10">
+        <ul className="mb-5 list-disc space-y-1 pl-7">
           {[t('cpp.what-else.list.li1'), t('cpp.what-else.list.li2')].map((value) => (
             <li key={value}>{value}</li>
           ))}
@@ -212,7 +212,7 @@ const Keith: FC = () => {
           {t('cpp.keith-pension-87.heading')}
         </h2>
         <p>{t('cpp.keith-pension-87.p1')}</p>
-        <ul className="mb-5 list-disc space-y-2 pl-10">
+        <ul className="mb-5 list-disc space-y-1 pl-7">
           {[t('cpp.keith-pension-87.li1'), t('cpp.keith-pension-87.li2')].map((value) => (
             <li key={value}>{value}</li>
           ))}

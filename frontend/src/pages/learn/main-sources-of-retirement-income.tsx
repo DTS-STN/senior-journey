@@ -24,7 +24,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
-  function getImageSrc(imagePrefix: string, extension: string = "jpg") {
+  function getImageSrc(imagePrefix: string, extension: string = 'jpg') {
     return `/assets/${imagePrefix}-${mobile ? 'mobile' : 'desktop'}-${locale ?? 'en'}.${extension}`
   }
 
@@ -114,7 +114,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           {t('overview.header')}
         </h2>
         <p>{t('overview.overview')}</p>
-        <ul className="mb-5 list-disc space-y-2 pl-7">
+        <ul className="mb-5 list-disc space-y-1 pl-7">
           <li>{t('overview.list.oas-and-gis')}</li>
           <li>{t('overview.list.cpp')}</li>
           <li>{t('overview.list.earnings')}</li>
@@ -223,7 +223,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 text-xl mb-4">{t('old-age-security-program.helpful-resources.header')}</h4>
+        <h4 className="h4 mb-4 text-xl">{t('old-age-security-program.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -250,7 +250,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         </h2>
         <p>{t('guaranteed-income-supplement.overview')}</p>
         <p>{t('guaranteed-income-supplement.qualify')}</p>
-        <ul className="mb-5 list-disc space-y-2 pl-7">
+        <ul className="mb-5 list-disc space-y-1 pl-7">
           <li>{t('guaranteed-income-supplement.list.live-canada')}</li>
           <li>{t('guaranteed-income-supplement.list.receive-pension')}</li>
           <li>
@@ -266,7 +266,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <p>{t('guaranteed-income-supplement.monthly')}</p>
         <p>{t('guaranteed-income-supplement.collecting')}</p>
 
-        <h4 className="h4 text-xl mb-4">{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
+        <h4 className="h4 mb-4 text-xl">{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -312,7 +312,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 text-xl mb-4">{t('canada-pension-plan-program.helpful-resources.header')}</h4>
+        <h4 className="h4 mb-4 text-xl">{t('canada-pension-plan-program.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -386,7 +386,9 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 text-xl mb-4">{t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.header')}</h4>
+        <h4 className="h4 mb-4 text-xl">
+          {t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.header')}
+        </h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -394,8 +396,12 @@ const MainSourcesOfRetirementIncome: FC = () => {
               primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.cpp.content'),
             },
             {
-              href: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.link'),
-              primary: t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.content'),
+              href: t(
+                'canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.link'
+              ),
+              primary: t(
+                'canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.content'
+              ),
             },
           ].map(({ href, primary }) => (
             <li key={primary}>
@@ -422,7 +428,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           {t('workplace-pension-plans.header')}
         </h2>
         <p>{t('workplace-pension-plans.overview')}</p>
-        <ul className="mb-5 list-disc space-y-2 pl-7">
+        <ul className="mb-5 list-disc space-y-1 pl-7">
           <li>{t('workplace-pension-plans.list.rpp')}</li>
           <li>{t('workplace-pension-plans.list.group-rrsp')}</li>
           <li>{t('workplace-pension-plans.list.group-tfsa')}</li>
