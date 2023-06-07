@@ -29,10 +29,10 @@ const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = 
   return (
     <div className="my-8 border-b border-t border-b-primary-500 border-t-primary-500">
       <div>
-        <IconButton onClick={handleClick} aria-label={buttonLabel} className="text-primary-500">
+        <IconButton onClick={handleClick} aria-label={buttonLabel} className="text-primary-500 w-full justify-start rounded-none">
           {open ? <ExpandLess /> : <ExpandMore />}
+        <span className='text-base font-body text-black'>{buttonLabel}</span>
         </IconButton>
-        <span>{buttonLabel}</span>
       </div>
       <Collapse in={open}>
         <div className="py-6">
