@@ -263,7 +263,7 @@ const Bonnie: FC = () => {
           <Trans ns="learn/case-studies/bonnie" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.header')}
         </h2>
         <List disablePadding>

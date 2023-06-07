@@ -200,7 +200,7 @@ const GoingFromWorkToRetirement: FC = () => {
           <Trans ns="learn/going-from-work-to-retirement" i18nKey="combine-income.option-2.disclaimer" />
         </AlertCard>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.header')}
         </h2>
         <List disablePadding>

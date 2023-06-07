@@ -198,7 +198,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
           <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="oas.disclaimer" />
         </AlertCard>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.header')}
         </h2>
         <List disablePadding>

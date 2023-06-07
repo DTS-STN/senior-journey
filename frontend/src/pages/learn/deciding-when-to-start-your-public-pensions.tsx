@@ -265,7 +265,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.disclaimer" />
         </AlertCard>
 
-        <h2 id="learn-more" className="h2">
+        <h2 className="h2">
           {t('learn-more.header')}
         </h2>
         <List disablePadding>

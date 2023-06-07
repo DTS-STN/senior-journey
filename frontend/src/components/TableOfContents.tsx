@@ -124,6 +124,7 @@ export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => 
                 </ListItemButton>
               </ListItem>
             ))}
+            <Divider />
             <ListItem disablePadding>
               <ListItemButton
                 onClick={() => {
