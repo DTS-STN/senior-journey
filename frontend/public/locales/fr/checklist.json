@@ -28,5 +28,6 @@
   },
   "print": "Imprimer",
   "restart-quiz": "Relancez ce questionnaire",
-  "show-filters": "Afficher les filtres"
+  "show-filters": "Afficher les filtres",
+  "sr-tag": "L'étiquette de tâche"
 }

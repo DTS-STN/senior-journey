@@ -218,7 +218,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                   aria-label={t('show-filters')}
                 >
                   {expanded ? <ExpandLess className="hidden md:block" /> : <ExpandMore className="hidden md:block" />}
-                  <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f] md:hidden" />
+                  <FilterList className="hover:bg-[#00545f] h-10 w-10 rounded-full bg-[#008490] p-1 text-white md:hidden" />
                 </IconButton>
               </div>
               <Collapse in={expanded}>
@@ -249,6 +249,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
               sectionTitle={beforeRetiring.title}
               subSectionTitle={beforeRetiring.subTitle}
+              srTag={t('sr-tag')}
               tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
             <NestedAccordion
@@ -260,6 +261,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
               sectionTitle={applyingBenefits.title}
               subSectionTitle={applyingBenefits.subTitle}
+              srTag={t('sr-tag')}
               tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
             <NestedAccordion
@@ -271,6 +273,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
               sectionTitle={receivingBenefits.title}
               subSectionTitle={receivingBenefits.subTitle}
+              srTag={t('sr-tag')}
               tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
             <div className="mt-4 lg:hidden">

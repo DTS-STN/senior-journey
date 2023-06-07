@@ -15,6 +15,7 @@ interface NestedAccordionProps {
   onTaskGroupAccordionChange: (id: number, expanded: boolean) => void
   sectionTitle: string
   subSectionTitle: string
+  srTag: string
   tasks: ReadonlyArray<TaskDto>
 }
 
@@ -27,6 +28,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
   onTaskGroupAccordionChange,
   sectionTitle,
   subSectionTitle,
+  srTag,
   tasks = [],
 }) => {
   return (
@@ -84,7 +86,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({
             {task.title}
           </AccordionSummary>
           <AccordionDetails>
-            <TaskCard linksHeader={linksHeader} showCheckbox={false} task={task} />
+            <TaskCard linksHeader={linksHeader} showCheckbox={false} srTag={srTag} task={task} />
           </AccordionDetails>
         </Accordion>
       ))}
