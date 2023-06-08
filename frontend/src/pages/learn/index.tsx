@@ -31,20 +31,12 @@ const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageUrl, minRead
           <CardMedia component="img" alt="" image={imageUrl} className="h-64 w-full object-cover" />
           <Image src="/assets/bottom-top.svg" width={34} height={360} className="absolute bottom-0 w-full" alt="" />
         </div>
-        <CardContent
-        sx={{
-          '&.MuiCardContent-root':{
-            padding:'0'
-          }
-        }
-        }>
-          <div className="p-8 mt-4">
-            <p className="font-display text-sm font-light">{t('min-read', { minRead })}</p>
-            <h3 className="my-4 font-display text-2xl font-bold" id={`${uniqueId}-card-${id}-title`}>
-              {title}
-            </h3>
-            <p className="m-0 text-black/60">{desciption}</p>
-          </div>
+        <CardContent className="mt-4 p-8">
+          <p className="mb-4 font-display text-sm font-light tracking-widest">{t('min-read', { minRead })}</p>
+          <h3 className="my-4 font-display text-lg font-bold md:text-2xl" id={`${uniqueId}-card-${id}-title`}>
+            {title}
+          </h3>
+          <p className="m-0 text-black/60">{desciption}</p>
         </CardContent>
       </CardActionArea>
     </Card>
