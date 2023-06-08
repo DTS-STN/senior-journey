@@ -348,9 +348,21 @@ const MainSourcesOfRetirementIncome: FC = () => {
           {t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.footer')}
         </p>
         <AccessibilityGraphContainer
-          tableData={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility', {
-            returnObjects: true,
-          })}
+          tableData={{
+            caption: t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.caption'),
+            header: t<string, Array<string>>(
+              'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.header',
+              {
+                returnObjects: true,
+              }
+            ),
+            rows: t<string, Array<{ data: Array<string> }>>(
+              'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.rows',
+              {
+                returnObjects: true,
+              }
+            ),
+          }}
           description={t(
             'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content'
           )}
@@ -472,9 +484,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           </AlertCard>
         </div>
 
-        <h2 className="h2">
-          {t('learn-more.header')}
-        </h2>
+        <h2 className="h2">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

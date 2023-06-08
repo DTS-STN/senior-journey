@@ -142,7 +142,15 @@ const Bonnie: FC = () => {
         />
         <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('stopping-earnings.p')}</p>
         <AccessibilityGraphContainer
-          tableData={t('stopping-earnings.accessibility', { returnObjects: true })}
+          tableData={{
+            caption: t('stopping-earnings.accessibility.caption'),
+            header: t<string, Array<string>>('stopping-earnings.accessibility.header', {
+              returnObjects: true,
+            }),
+            rows: t<string, Array<{ data: Array<string> }>>('stopping-earnings.accessibility.rows', {
+              returnObjects: true,
+            }),
+          }}
           description={t('stopping-earnings.description')}
           buttonLabel={t('stopping-earnings.accessibility.button-label')}
           descriptionHeading={t('description-heading')}
@@ -173,7 +181,15 @@ const Bonnie: FC = () => {
         />
         <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('adding-oas.p3')}</p>
         <AccessibilityGraphContainer
-          tableData={t('adding-oas.accessibility', { returnObjects: true })}
+          tableData={{
+            caption: t('adding-oas.accessibility.caption'),
+            header: t<string, Array<string>>('adding-oas.accessibility.header', {
+              returnObjects: true,
+            }),
+            rows: t<string, Array<{ data: Array<string> }>>('adding-oas.accessibility.rows', {
+              returnObjects: true,
+            }),
+          }}
           description={t('adding-oas.description')}
           buttonLabel={t('adding-oas.accessibility.button-label')}
           descriptionHeading={t('description-heading')}
@@ -192,7 +208,15 @@ const Bonnie: FC = () => {
         <Image alt={t('cpp.description')} src={getImageSrc('bonnie-cpp')} width={842} height={519} className="w-full" />
         <p className="mt-4 rounded-lg bg-gray-surface p-4">{t('cpp.p2')}</p>
         <AccessibilityGraphContainer
-          tableData={t('cpp.accessibility', { returnObjects: true })}
+          tableData={{
+            caption: t('cpp.accessibility.caption'),
+            header: t<string, Array<string>>('cpp.accessibility.header', {
+              returnObjects: true,
+            }),
+            rows: t<string, Array<{ data: Array<string> }>>('cpp.accessibility.rows', {
+              returnObjects: true,
+            }),
+          }}
           description={t('cpp.description')}
           buttonLabel={t('cpp.accessibility.button-label')}
           descriptionHeading={t('description-heading')}
@@ -217,7 +241,15 @@ const Bonnie: FC = () => {
           <Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.p2" />
         </p>
         <AccessibilityGraphContainer
-          tableData={t('own-savings.accessibility', { returnObjects: true })}
+          tableData={{
+            caption: t('own-savings.accessibility.caption'),
+            header: t<string, Array<string>>('own-savings.accessibility.header', {
+              returnObjects: true,
+            }),
+            rows: t<string, Array<{ data: Array<string> }>>('own-savings.accessibility.rows', {
+              returnObjects: true,
+            }),
+          }}
           description={<Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.description" />}
           buttonLabel={t('own-savings.accessibility.button-label')}
           descriptionHeading={t('description-heading')}
@@ -240,7 +272,15 @@ const Bonnie: FC = () => {
           <Trans ns="learn/case-studies/bonnie" i18nKey="early-pension.p2" />
         </p>
         <AccessibilityGraphContainer
-          tableData={t('early-pension.accessibility', { returnObjects: true })}
+          tableData={{
+            caption: t('early-pension.accessibility.caption'),
+            header: t<string, Array<string>>('early-pension.accessibility.header', {
+              returnObjects: true,
+            }),
+            rows: t<string, Array<{ data: Array<string> }>>('early-pension.accessibility.rows', {
+              returnObjects: true,
+            }),
+          }}
           description={<Trans ns="learn/case-studies/bonnie" i18nKey="early-pension.description" />}
           buttonLabel={t('early-pension.accessibility.button-label')}
           descriptionHeading={t('description-heading')}
@@ -263,9 +303,7 @@ const Bonnie: FC = () => {
           <Trans ns="learn/case-studies/bonnie" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">
-          {t('learn-more.header')}
-        </h2>
+        <h2 className="h2">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>
