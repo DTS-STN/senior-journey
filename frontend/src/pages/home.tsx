@@ -375,7 +375,7 @@ const Home: FC = () => {
             <Button
               component={Link}
               variant="outlined"
-              className="border-black border-opacity-10 font-bold text-primary-700"
+              className="border-black tracking-wider text-base border-opacity-10 font-bold text-primary-700"
               href={t('contact-us.cards.find-office.href')}
             >
               {t('contact-us.cards.find-office.link-text')}
