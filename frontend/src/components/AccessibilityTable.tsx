@@ -17,7 +17,7 @@ const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
     <div className="w-full overflow-x-scroll">
       <table className="min-w-full table-fixed border-collapse divide-y border text-left">
         <caption className="pb-4 text-left">{tableData.caption}</caption>
-        <thead className="bg-gray-surface">
+        <thead className="bg-gray-surface font-display text-xl">
           <tr className="divide-x">
             {tableData.header.map((headerItem, index) => (
               <th scope="col" key={`${index}-${headerItem}`} className="w-[150px] px-3 py-2.5">

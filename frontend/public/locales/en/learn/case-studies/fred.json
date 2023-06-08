@@ -13,7 +13,7 @@
       "accessibility": {
         "button-label": "Text alternative for Fred's CPP lifetime pension at age 86",
         "caption": "Values presented on the image:",
-        "header": ["Age when Fred starts taking his CPP pension", "Fred's CPP lifetime pension at age 86"],
+        "header": ["Age when Fred starts collecting his CPP retirement pension", "Lifetime CPP retirement pension"],
         "rows": [
           {
             "data": ["60", "$259,584"]
@@ -33,7 +33,7 @@
       "accessibility": {
         "button-label": "Text alternative for Fred's CPP monthly pension",
         "caption": "Values presented on the image:",
-        "header": ["Age when Fred starts taking his CPP pension", "Fred's CPP monthly pension"],
+        "header": ["Age when Fred starts collecting his CPP retirement pension", "Monthly CPP retirement pension"],
         "rows": [
           {
             "data": ["60", "$832"]
@@ -109,7 +109,7 @@
       "accessibility": {
         "button-label": "Text alternative for Fred's OAS lifetime pension at age 86",
         "caption": "Values presented on the image:",
-        "header": ["Age when Fred starts taking his OAS pension", "Fred's lifetime OAS pension"],
+        "header": ["Age when Fred starts collecting his OAS pension", "Lifetime OAS pension"],
         "rows": [
           {
             "data": ["65", "$191,545"]
@@ -133,7 +133,7 @@
       "accessibility": {
         "button-label": "Text alternative for Fred's OAS monthly pension",
         "caption": "Values presented on the image:",
-        "header": ["Age when Fred starts taking his OAS pension", "Fred's OAS monthly pension amount"],
+        "header": ["Age when Fred starts collecting his OAS pension", "Monthly OAS pension amount"],
         "rows": [
           {
             "data": ["65", "$691"]
