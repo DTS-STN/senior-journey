@@ -89,9 +89,16 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
             },
             {
               primary: t('key-takeaways.people-who-qualify'),
-              secondary: t('key-takeaways.if-you-qualify'),
-              a1: t('key-takeaways.if-you-qualify-a1'),
-              a2: t('key-takeaways.if-you-qualify-a2'),
+              secondary: (
+                <Trans
+                  ns="learn/deciding-when-to-start-your-public-pensions"
+                  i18nKey="key-takeaways.if-you-qualify"
+                  components={{
+                    a1: <MuiLink href={t('key-takeaways.if-you-qualify-a1')} />,
+                    a2: <MuiLink href={t('key-takeaways.if-you-qualify-a2')} />,
+                  }}
+                />
+              ),
             },
             {
               primary: t('key-takeaways.more-than-double'),
@@ -101,20 +108,12 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
               primary: t('key-takeaways.planning-retirement'),
               secondary: t('key-takeaways.common-law'),
             },
-          ].map(({ primary, secondary, a1, a2 }) => (
+          ].map(({ primary, secondary }) => (
             <ListItem key={primary} className="border-b">
               <ListItemText
                 primary={primary}
                 primaryTypographyProps={{ className: 'font-medium text-xl font-display my-2' }}
-                secondary={
-                  <Trans
-                    ns="learn/deciding-when-to-start-your-public-pensions"
-                    i18nKey={secondary}
-                    components={{ a1: <MuiLink href={a1} />, a2: <MuiLink href={a2} /> }}
-                  >
-                    {secondary}
-                  </Trans>
-                }
+                secondary={secondary}
                 secondaryTypographyProps={{ className: 'text-base' }}
               />
             </ListItem>
@@ -258,16 +257,14 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           <Trans
             ns="learn/deciding-when-to-start-your-public-pensions"
             i18nKey="cpp-pension.p3"
-            components={{ a2: <Link className="underline text-secondary-700" href="/learn/case-studies/fred" /> }}
+            components={{ a2: <Link className="text-secondary-700 underline" href="/learn/case-studies/fred" /> }}
           />
         </p>
         <AlertCard type="disclaimer">
           <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">
-          {t('learn-more.header')}
-        </h2>
+        <h2 className="h2">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>
