@@ -70,6 +70,13 @@ describe('Footer', () => {
             linkText: 'some-link-1',
           },
         ]}
+        contactUsText="footer.contact-us-text"
+        contactUsLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
       />
     )
     const footerLink = screen.getByText('some-link-4')
@@ -109,6 +116,13 @@ describe('Footer', () => {
         ]}
         retirementStoriesText="retirement stories text"
         retirementStoriesLinks={[
+          {
+            link: 'https://some-link-1.com',
+            linkText: 'some-link-1',
+          },
+        ]}
+        contactUsText="footer.contact-us-text"
+        contactUsLinks={[
           {
             link: 'https://some-link-1.com',
             linkText: 'some-link-1',
