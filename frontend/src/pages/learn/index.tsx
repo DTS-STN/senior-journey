@@ -56,7 +56,7 @@ const LearnSection: FC<LearnSectionProps> = ({ cards, desciption, id, title }) =
     <section id={`${uniqueId}-section-${id}`}>
       <h2 className="h2 text-primary-700">{title}</h2>
       <p className="mb-8">{desciption}</p>
-      <div className="grid gap-6 md:grid-cols-2 xl:md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {cards.map((cardProps) => (
           <LearnCard key={cardProps.id} {...cardProps} />
         ))}

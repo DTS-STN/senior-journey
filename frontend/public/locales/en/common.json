@@ -12,6 +12,7 @@
   },
   "footer": {
     "canada-ca-alt-text": "Symbol of the Government of Canada",
+    "contact-us-text": "Contact us",
     "explore-retirement": {
       "going-from-work-to-retirement": "Going from work to retirement",
       "main-sources-of-retirement-income": "Main sources of retirement income",
@@ -29,11 +30,13 @@
     },
     "menu": {
       "checklist": "Checklist",
-      "contact-us": "Contact us",
-      "contact-us-url": "https://www.canada.ca/en/contact/contact-1-800-o-canada.html",
       "cpp": "CPP: How to apply",
       "cpp-url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/apply.html",
       "explore-retirement": "Explore retirement",
+      "find-service-canada-office": "Find a Service Canada office",
+      "find-service-canada-office-url": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng",
+      "general-information-by-telephone": "General information by telephone",
+      "general-information-by-telephone-url": "https://www.canada.ca/en/contact/contact-1-800-o-canada.html",
       "msca": "My Service Canada Account",
       "msca-url": "https://www.canada.ca/en/employment-social-development/services/my-account.html",
       "oas": "OAS: How to apply",

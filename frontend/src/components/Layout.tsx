@@ -102,10 +102,6 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
               link: t('footer.menu.msca-url'),
               linkText: t('footer.menu.msca'),
             },
-            {
-              link: t('footer.menu.contact-us-url'),
-              linkText: t('footer.menu.contact-us'),
-            },
           ]}
           retirementStoriesText={t('footer.retirement-stories-text')}
           retirementStoriesLinks={[
@@ -120,6 +116,17 @@ const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFoo
             {
               link: '/learn/case-studies/keith',
               linkText: t('footer.retirement-stories.keith'),
+            },
+          ]}
+          contactUsText={t('footer.contact-us-text')}
+          contactUsLinks={[
+            {
+              link: t('footer.menu.general-information-by-telephone-url'),
+              linkText: t('footer.menu.general-information-by-telephone'),
+            },
+            {
+              link: t('footer.menu.find-service-canada-office-url'),
+              linkText: t('footer.menu.find-service-canada-office'),
             },
           ]}
         />

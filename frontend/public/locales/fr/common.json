@@ -12,6 +12,7 @@
   },
   "footer": {
     "canada-ca-alt-text": "Symbole du gouvernement du Canada",
+    "contact-us-text": "Communiquez avec nous",
     "explore-retirement": {
       "going-from-work-to-retirement": "Transition du monde du travail à la retraite",
       "main-sources-of-retirement-income": "Principales sources de revenus de retraite",
@@ -29,11 +30,13 @@
     },
     "menu": {
       "checklist": "Liste de contrôle",
-      "contact-us": "Communiquez avec nous",
-      "contact-us-url": "https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html",
       "cpp": "RPC\u00a0: Comment présenter une demande",
       "cpp-url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/prestation-rpc/demande.html",
       "explore-retirement": "Renseignez-vous sur la retraite",
+      "find-service-canada-office": "Trouver un bureau de Service Canada",
+      "find-service-canada-office-url": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=fra",
+      "general-information-by-telephone": "Renseignements généraux par téléphone",
+      "general-information-by-telephone-url": "https://www.canada.ca/fr/contact/communiquez-avec-1-800-o-canada.html",
       "msca": "Mon dossier Service Canada",
       "msca-url": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
       "oas": "SV\u00a0: Comment présenter une demande",
