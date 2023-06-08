@@ -2,9 +2,9 @@
   "breadcrumbs": {
     "learn": "Apprendre"
   },
+  "filter-tasks_zero": "Sélection des tâches",
   "filter-tasks_one": "Sélection des tâches ({{count}} sélectionnée)",
   "filter-tasks_other": "Sélection des tâches ({{count}} sélectionnées)",
-  "filter-tasks_zero": "Sélection des tâches",
   "header": "Liste de contrôle pour la retraite",
   "important-terms": {
     "cpp": {

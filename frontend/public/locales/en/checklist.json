@@ -2,9 +2,9 @@
   "breadcrumbs": {
     "learn": "Learn"
   },
+  "filter-tasks_zero": "Filter tasks",
   "filter-tasks_one": "Filter tasks ({{count}} applied)",
   "filter-tasks_other": "Filter tasks ({{count}} applied)",
-  "filter-tasks_zero": "Filter tasks",
   "header": "Your retirement checklist",
   "important-terms": {
     "cpp": {
