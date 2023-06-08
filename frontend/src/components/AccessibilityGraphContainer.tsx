@@ -40,9 +40,9 @@ const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = 
       </div>
       <Collapse in={open}>
         <div className="pb-8 pt-4">
-          <h3 className="pb-4 font-bold">{descriptionHeading}</h3>
+          <h3 className="pb-4 font-bold font-display text-lg">{descriptionHeading}</h3>
           <p>{description}</p>
-          <h3 className="pb-4 pt-8 font-bold">{valuesHeading}</h3>
+          <h3 className="pb-4 pt-8 font-bold font-display text-lg">{valuesHeading}</h3>
           <AccessibilityTable tableData={tableData} />
         </div>
       </Collapse>

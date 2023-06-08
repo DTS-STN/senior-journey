@@ -3,7 +3,7 @@
     "accessibility": {
       "button-label": "Text alternative for Earnings from work and OAS pension",
       "caption": "Values presented on the image:",
-      "header": ["Age", "Target monthly Income in Retirement", "Earnings from work", "Monthly OAS pension"],
+      "header": ["Age", "Target monthly income in retirement", "Earnings from work", "Monthly OAS pension"],
       "rows": [
         {
           "data": ["60", "$5,583", "$5,583", "-"]
@@ -225,8 +225,8 @@
         "Age",
         "Target monthly income in retirement",
         "Earnings from work",
-        "OAS monthly pension",
-        "CPP monthly pension",
+        "Monthly OAS pension",
+        "Monthly CPP pension",
         "Retirement savings"
       ],
       "rows": [
@@ -474,7 +474,7 @@
     "accessibility": {
       "button-label": "Text alternative for Earnings from work",
       "caption": "Values presented on the image:",
-      "header": ["Age", "Target monthly Income in Retirement", "Earnings from work"],
+      "header": ["Age", "Target monthly income in Retirement", "Earnings from work"],
       "rows": [
         {
           "data": ["60", "$5,583", "$5,583"]
