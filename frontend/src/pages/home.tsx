@@ -11,7 +11,6 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  Link as MuiLink,
   Paper,
   Tab,
   useMediaQuery,
@@ -245,9 +244,13 @@ const Home: FC = () => {
                       <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
                         {t('tabs.plan.linksTitle')}
                       </h3>
-                      <List disablePadding className='ml-4'>
+                      <List disablePadding className="ml-4">
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton className='pl-0' href={t('tabs.plan.links.retirement-income-calculator.url')} component={Link}>
+                          <ListItemButton
+                            className="pl-0"
+                            href={t('tabs.plan.links.retirement-income-calculator.url')}
+                            component={Link}
+                          >
                             <ListItemText
                               primary={t('tabs.plan.links.retirement-income-calculator.title')}
                               primaryTypographyProps={{
@@ -262,7 +265,11 @@ const Home: FC = () => {
                           </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton className='pl-0' href={t('tabs.plan.links.oas-eligibility-estimator.url')} component={Link}>
+                          <ListItemButton
+                            className="pl-0"
+                            href={t('tabs.plan.links.oas-eligibility-estimator.url')}
+                            component={Link}
+                          >
                             <ListItemText
                               primary={t('tabs.plan.links.oas-eligibility-estimator.title')}
                               primaryTypographyProps={{
@@ -287,10 +294,14 @@ const Home: FC = () => {
                         {t('tabs.apply.heading')}
                       </h2>
                       <Divider className="mb-8" />
-                      <p className='mb-8'>{t('tabs.apply.description.text')}</p>
-                      <List disablePadding className='ml-4'>
+                      <p className="mb-8">{t('tabs.apply.description.text')}</p>
+                      <List disablePadding className="ml-4">
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton className='pl-0' href={t('tabs.apply.description.links.how-to-apply.url')} component={Link}>
+                          <ListItemButton
+                            className="pl-0"
+                            href={t('tabs.apply.description.links.how-to-apply.url')}
+                            component={Link}
+                          >
                             <ListItemText
                               primary={t('tabs.apply.description.links.how-to-apply.title')}
                               primaryTypographyProps={{
@@ -301,7 +312,11 @@ const Home: FC = () => {
                           </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding className="border-b">
-                          <ListItemButton className='pl-0' href={t('tabs.apply.description.links.oas-apply.url')} component={Link}>
+                          <ListItemButton
+                            className="pl-0"
+                            href={t('tabs.apply.description.links.oas-apply.url')}
+                            component={Link}
+                          >
                             <ListItemText
                               primary={t('tabs.apply.description.links.oas-apply.title')}
                               primaryTypographyProps={{
@@ -341,47 +356,6 @@ const Home: FC = () => {
             </div>
           </TabContext>
         </section>
-
-        <Container>
-          <h2 className="h2 text-primary-700">{t('contact-us.title')}</h2>
-          <p className="mb-8">{t('contact-us.description')}</p>
-          <Paper variant="outlined" className="mb-6 p-6">
-            <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.call-us.title')}</h3>
-            <Divider className="my-4" />
-            <p>{t('contact-us.cards.call-us.description')}</p>
-            <div className="grid lg:grid-cols-2">
-              <p>
-                <strong>{t('contact-us.cards.call-us.toll-free.title')}</strong>
-                {' ' + t('contact-us.cards.call-us.toll-free.number')}
-              </p>
-              <p>
-                <strong>{t('contact-us.cards.call-us.tty.title')}</strong>
-                {' ' + t('contact-us.cards.call-us.tty.number')}
-              </p>
-            </div>
-            <p>{t('contact-us.cards.call-us.toll-free.description')}</p>
-            <Divider className="my-4" />
-            <p>
-              <strong>{t('contact-us.cards.call-us.outside.title')}</strong>{' '}
-              <MuiLink component={Link} href={t('contact-us.cards.call-us.outside.href')}>
-                {t('contact-us.cards.call-us.outside.number')}
-              </MuiLink>
-            </p>
-            <p className="m-0">{t('contact-us.cards.call-us.outside.description')}</p>
-          </Paper>
-          <Paper variant="outlined" className="p-6">
-            <h3 className="mb-4 font-display font-medium md:text-xl">{t('contact-us.cards.find-office.title')}</h3>
-            <Divider className="my-4" />
-            <Button
-              component={Link}
-              variant="outlined"
-              className="border-black tracking-wider text-base border-opacity-10 font-bold text-primary-700"
-              href={t('contact-us.cards.find-office.href')}
-            >
-              {t('contact-us.cards.find-office.link-text')}
-            </Button>
-          </Paper>
-        </Container>
       </Layout>
     </>
   )

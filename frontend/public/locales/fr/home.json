@@ -3,36 +3,6 @@
     "text": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite.",
     "title": "Informez-vous sur votre retraite et planifiez en conséquence"
   },
-  "contact-us": {
-    "cards": {
-      "call-us": {
-        "description": "Vous pouvez nous joindre aux numéros suivants\u00a0:",
-        "outside": {
-          "description": "Les heures d'ouverture sont de de 8 h à 17 h, heure locale, du lundi au vendredi.",
-          "href": "https://www.canada.ca/fr/contact/international.html",
-          "number": "Composer le 1\u00a0800\u00a0O\u2011Canada à l'étranger",
-          "title": "À l'extérieur du Canada\u00a0:"
-        },
-        "title": "Appelez-nous",
-        "toll-free": {
-          "description": "Les heures d'ouverture sont de 8 h à 17 h, heure locale, du lundi au vendredi.",
-          "number": "1\u00a0800\u00a0O\u2011Canada (1\u2011800\u2011622\u20116232)",
-          "title": "Téléphone\u00a0:"
-        },
-        "tty": {
-          "number": "1\u2011800\u2011926\u20119105",
-          "title": "ATS\u00a0:"
-        }
-      },
-      "find-office": {
-        "href": "https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=fra",
-        "link-text": "Trouver un Centre Service Canada près de chez vous",
-        "title": "Trouver un bureau"
-      }
-    },
-    "description": "Il y a plusieurs façons que vous pouvez communiquer avec nous pour obtenir des renseignements au sujet de vos pensions publiques",
-    "title": "Communiquez avec nous"
-  },
   "header": "Informez-vous sur votre retraite et planifiez en conséquence",
   "meta": {
     "description": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite."
