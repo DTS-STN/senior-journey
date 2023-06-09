@@ -23,7 +23,7 @@ import { useRouter } from 'next/router'
 
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
-import NestedAccordion from '../../components/NestedAccordion'
+import { TaskGroupAccordion } from '../../components/TaskGroupAccordion'
 import tasksData from '../../data/tasks.json'
 import { useRemoveQuizData } from '../../lib/hooks/useRemoveQuizData'
 import * as tasksGroupDtoMapper from '../../lib/mappers/tasks-group-dto-mapper'
@@ -264,8 +264,8 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </Button>
             </div>
           </section>
-          <section id="content" className="print-href lg:col-span-8 xl:col-span-9">
-            <NestedAccordion
+          <section id="content" className="print-href grid gap-4 lg:col-span-8 xl:col-span-9">
+            <TaskGroupAccordion
               expanded={expandedGroups.includes(beforeRetiring.id)}
               expandedTasks={expandedTasks}
               id={beforeRetiring.id}
@@ -277,7 +277,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               srTag={t('sr-tag')}
               tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
-            <NestedAccordion
+            <TaskGroupAccordion
               expanded={expandedGroups.includes(applyingBenefits.id)}
               expandedTasks={expandedTasks}
               id={applyingBenefits.id}
@@ -289,7 +289,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               srTag={t('sr-tag')}
               tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
-            <NestedAccordion
+            <TaskGroupAccordion
               expanded={expandedGroups.includes(receivingBenefits.id)}
               expandedTasks={expandedTasks}
               id={receivingBenefits.id}
