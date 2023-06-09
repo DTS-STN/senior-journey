@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import { FC } from 'react'
 
-import { ExpandLess, ExpandMore } from '@mui/icons-material'
-import { Collapse, IconButton } from '@mui/material'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 import AccessibilityTable, { TableData } from './AccessibilityTable'
 
@@ -13,40 +12,26 @@ export interface AccessibilityGraphContainerProps {
   buttonLabel: string
 }
 
-const AccessibilityGraphContainer: React.FC<AccessibilityGraphContainerProps> = ({
+const AccessibilityGraphContainer: FC<AccessibilityGraphContainerProps> = ({
   description,
   tableData,
   descriptionHeading,
   valuesHeading,
   buttonLabel,
 }) => {
-  const [open, setOpen] = useState(false)
-
-  const handleClick = () => {
-    setOpen(!open)
-  }
-
   return (
-    <div className="my-8 border-b border-t border-b-primary-500 border-t-primary-500">
-      <div>
-        <IconButton
-          onClick={handleClick}
-          aria-label={buttonLabel}
-          className="w-full justify-start rounded-none text-primary-500"
-        >
-          {open ? <ExpandLess /> : <ExpandMore />}
-          <span className="font-body text-base text-black/[0.87]">{buttonLabel}</span>
-        </IconButton>
-      </div>
-      <Collapse in={open}>
-        <div className="pb-8 pt-4">
-          <h3 className="pb-4 font-bold font-display text-lg">{descriptionHeading}</h3>
-          <p>{description}</p>
-          <h3 className="pb-4 pt-8 font-bold font-display text-lg">{valuesHeading}</h3>
-          <AccessibilityTable tableData={tableData} />
-        </div>
-      </Collapse>
-    </div>
+    <details className="group my-8 border-y border-y-primary-500">
+      <summary className="flex cursor-pointer items-center gap-2 p-2 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700">
+        <ExpandMoreIcon color="primary" className="transition-transform group-open:rotate-180" />
+        <div>{buttonLabel}</div>
+      </summary>
+      <section className="p-2">
+        <h3 className="mb-4 font-display text-lg font-bold">{descriptionHeading}</h3>
+        <p>{description}</p>
+        <h3 className="my-4 font-display text-lg font-bold">{valuesHeading}</h3>
+        <AccessibilityTable tableData={tableData} />
+      </section>
+    </details>
   )
 }
 
