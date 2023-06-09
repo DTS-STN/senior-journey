@@ -1,8 +1,9 @@
+import React from 'react'
+
 import { Chip, Link } from '@mui/material'
 
 import { TaskDto } from '../lib/types'
 import Markdown from './Markdown'
-import React from 'react'
 
 interface TaskCardProps {
   linksHeader: string
@@ -19,7 +20,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, srTag, t
       <Markdown>{task.description}</Markdown>
       {task.links.length > 0 && (
         <>
-          <h5 className="mb-4 text-sm font-light tracking-wider">{linksHeader}</h5>
+          <h4 className="mb-4 font-bold">{linksHeader}</h4>
           <ul className="mb-4 list-disc space-y-1 pl-7">
             {task.links.map((link) => (
               <li key={link.link}>
