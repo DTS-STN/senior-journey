@@ -118,9 +118,18 @@ export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => 
                   href={`#${hash}`}
                   selected={activeState === hash}
                   onClick={() => handleClick(hash)}
-                  className="text-primary-700"
                 >
-                  <ListItemText primary={text} primaryTypographyProps={{ variant: 'body1' }} />
+                  <ListItemText
+                    primary={text}
+                    primaryTypographyProps={{ variant: 'body1' }}
+                    sx={{
+                      '.MuiTypography-root': {
+                        fontWeight: 700,
+                        color: activeState === hash ? '#004f56' : 'rgba(0,0,0,0.6)',
+                        fontSize: '18px',
+                      },
+                    }}
+                  />
                 </ListItemButton>
               </ListItem>
             ))}
@@ -132,8 +141,13 @@ export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => 
                   history.pushState({}, document.title, ' ')
                 }}
               >
-                <ArrowDropUp color="primary" />
-                <ListItemText primary={t('table-of-contents.top')} primaryTypographyProps={{ variant: 'body1' }} />
+                <ArrowDropUp color="primary" className='mr-2' />
+                <ListItemText
+                  primary={t('table-of-contents.top')}
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  className="text-primary-700"
+                  sx={{ '.MuiTypography-root': { fontWeight: 700 } }}
+                />
               </ListItemButton>
             </ListItem>
           </List>
