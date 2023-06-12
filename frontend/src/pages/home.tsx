@@ -105,10 +105,30 @@ const Home: FC = () => {
             <Paper elevation={4} square className="relative">
               {!extraSmall && (
                 <TabList onChange={handleChange} scrollButtons="auto" centered>
-                  <Tab value="learn" label={t('tabs.learn.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-                  <Tab value="plan" label={t('tabs.plan.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-                  <Tab value="apply" label={t('tabs.apply.title')} className="px-10 pt-4 text-lg md:text-2xl" />
-                  <Tab value="manage" label={t('tabs.manage.title')} className="px-10 pt-4 text-lg md:text-2xl" />
+                  <Tab
+                    value="learn"
+                    label={t('tabs.learn.title')}
+                    data-gc-analytics-tabopen={t('tabs.learn.title')}
+                    className="px-10 pt-4 text-lg md:text-2xl"
+                  />
+                  <Tab
+                    value="plan"
+                    label={t('tabs.plan.title')}
+                    data-gc-analytics-tabopen={t('tabs.plan.title')}
+                    className="px-10 pt-4 text-lg md:text-2xl"
+                  />
+                  <Tab
+                    value="apply"
+                    label={t('tabs.apply.title')}
+                    data-gc-analytics-tabopen={t('tabs.apply.title')}
+                    className="px-10 pt-4 text-lg md:text-2xl"
+                  />
+                  <Tab
+                    value="manage"
+                    label={t('tabs.manage.title')}
+                    data-gc-analytics-tabopen={t('tabs.manage.title')}
+                    className="px-10 pt-4 text-lg md:text-2xl"
+                  />
                 </TabList>
               )}
               {extraSmall && (
@@ -141,12 +161,25 @@ const Home: FC = () => {
                         },
                       }}
                     >
-                      <Tab value="learn" label={t('tabs.learn.title')} />
-                      <Tab value="plan" label={t('tabs.plan.title')} />
+                      <Tab
+                        value="learn"
+                        label={t('tabs.learn.title')}
+                        data-gc-analytics-tabopen={t('tabs.learn.title')}
+                      />
+                      <Tab value="plan" label={t('tabs.plan.title')} data-gc-analytics-tabopen={t('tabs.plan.title')} />
                       ,
-                      <Tab value="apply" label={t('tabs.apply.title')} />
+                      <Tab
+                        value="apply"
+                        label={t('tabs.apply.title')}
+                        data-gc-analytics-tabopen={t('tabs.apply.title')}
+                      />
                       ,
-                      <Tab value="manage" label={t('tabs.manage.title')} />,
+                      <Tab
+                        value="manage"
+                        label={t('tabs.manage.title')}
+                        data-gc-analytics-tabopen={t('tabs.manage.title')}
+                      />
+                      ,
                     </TabList>
                   </Collapse>
                 </>
