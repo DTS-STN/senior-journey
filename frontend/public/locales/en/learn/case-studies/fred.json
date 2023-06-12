@@ -125,7 +125,7 @@
           }
         ]
       },
-      "description": "The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
+      "description": "The chart shows changes in Fred's lifetime OAS pension payments depending on what age he starts. By age 86, the lifetime OAS pension is higher, if Fred starts his OAS at age 68.",
       "p1": "The difference in monthly benefits from delaying the Old Age Security (OAS) pension is smaller than for the Canada Pension Plan (CPP) retirement pension. If Fred takes his OAS pension later, the difference in monthly payments is a few hundred dollars. Fred wants to explore his lifetime OAS pension to see the full picture.",
       "p2": "By age 86, the lifetime OAS pension is higher, if Fred starts his OAS at age 68."
     },

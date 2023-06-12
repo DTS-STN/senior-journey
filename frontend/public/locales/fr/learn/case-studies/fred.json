@@ -27,7 +27,7 @@
         ]
       },
       "description": "Le tableau montre l'évolution des versements mensuels de la pension de retraite du RPC de Fred en fonction de l'âge auquel il commence à toucher sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent chaque mois. Il peut commencer à recevoir sa pension de retraite du RPC à 60 ans pour obtenir le montant le plus bas, ou à 70 ans pour obtenir le montant le plus élevé. La pension mensuelle de Fred pourrait augmenter de moitié si elle était versée à l'âge de 65 ans. Elle fera plus que doubler à 70 ans par rapport à la pension versée à 60 ans.",
-      "p": "La pension de retraite mensuelle du RPC de Fred pourrait augmenter si elle était versée dès l'âge de 65 ans. Elle ferait plus que doubler à l'âge de 70 ans, par rapport à commencer à l'âge de 60 ans."
+      "p": "À l'âge de 86 ans, Fred pourrait recevoir 95\u00a0000\u00a0$ de plus s'il reporte son départ de 60 à 70 ans. À l'âge de 89 ans, cette différence sera de\u00a0130 000\u00a0$."
     },
     "monthly-pension": {
       "accessibility": {
