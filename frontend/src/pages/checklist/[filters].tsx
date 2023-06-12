@@ -151,10 +151,9 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
       >
         <div className="hidden md:block">
           <HeroBanner
-            className='h-[240px] md:min-h-[240px] grid-rows-1'
+            className='h-[215px] grid-rows-1'
             imageProps={{
               alt: '',
-              className: 'md:object-right-bottom',
               height: 427,
               src: '/assets/checklist-banner.jpg',
               width: 640,

@@ -10,7 +10,7 @@ export interface HeroBannerProps extends PropsWithChildren {
 export const HeroBanner: FC<HeroBannerProps> = ({ children, imageProps, className }) => {
   return (
     <section className="overflow-hidden rounded-3xl bg-gray-surface">
-      <div className={`grid md:min-h-[300px] md:grid-cols-12 md:items-center ${className}`}>
+      <div className={`grid md:grid-cols-12 md:items-center ${className}`}>
         <div className="flex h-full flex-col md:order-last md:col-span-6 md:flex-row lg:col-span-4">
           <Image
             alt=""
