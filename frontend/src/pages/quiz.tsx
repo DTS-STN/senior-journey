@@ -80,6 +80,7 @@ const Quiz: FC = () => {
           data-cy="button-start-the-quiz"
           size="large"
           className="w-full"
+          data-gc-analytics-customclick={`ESDC-EDSC:${t('landing.header')}:${t('landing.start-the-quiz')}`}
         >
           {t('landing.start-the-quiz')}
         </Button>

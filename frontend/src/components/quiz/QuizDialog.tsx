@@ -49,10 +49,11 @@ export interface QuizConfirmationProps {
   onCancel: () => void
   onClose: () => void
   sureText: string
-  yesText: string
+  yesText: string,
+  aaTitle: string
 }
 
-export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, onClose, sureText, yesText }) => {
+export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, onClose, sureText, yesText, aaTitle }) => {
   return (
     <div className='min-h-[850px] flex flex-col mx-6 my-8'>
       <DialogContent>
@@ -63,7 +64,14 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, 
       </DialogContent>
       <DialogActions className="block p-0">
         <div className="sm:flex sm:flex-row-reverse sm:gap-2">
-          <Button data-cy="yes-button" onClick={onClose} size="large" fullWidth className="mb-2 sm:mb-0 font-bold">
+          <Button
+            data-cy="yes-button"
+            onClick={onClose}
+            size="large"
+            fullWidth
+            className="mb-2 sm:mb-0 font-bold"
+            data-gc-analytics-customclick={`ESDC-EDSC:${aaTitle}:${yesText}`}
+          >
             {yesText}
           </Button>
           <Button data-cy="no-button" onClick={onCancel} variant="outlined" size="large" fullWidth className='font-bold border-gray-light'>
@@ -146,6 +154,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
           sureText={t('confirmation.sure')}
           yesText={t('confirmation.yes')}
           noText={t('confirmation.no')}
+          aaTitle={t('landing.header')}
         />
       ) : (
         <>
@@ -195,6 +204,9 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                     }}
                     size="large"
                     variant="contained"
+                    data-gc-analytics-customclick={`ESDC-EDSC:${t('landing.header')}:Question ${
+                      (formikWizard.currentStepIndex ?? 0) + 1
+                    }`}
                   >
                     <span>{t('navigation.submit')}</span>
                   </LoadingButton>
@@ -208,6 +220,9 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                       formikWizard.handleNext()
                     }}
                     size="large"
+                    data-gc-analytics-customclick={`ESDC-EDSC:${t('landing.header')}:Question ${
+                      (formikWizard.currentStepIndex ?? 0) + 1
+                    }`}
                   >
                     {t('navigation.next')}
                   </Button>
