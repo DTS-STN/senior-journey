@@ -54,24 +54,24 @@ export interface QuizConfirmationProps {
 
 export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, onClose, sureText, yesText }) => {
   return (
-    <>
-      <DialogContent className='min-h-[790px]'>
-        <div className="mb-10 text-center">
+    <div className='min-h-[850px] flex flex-col mx-6 my-8'>
+      <DialogContent>
+        <div className="mb-10 text-center mt-16">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
         </div>
-        <p id="quiz-modal-close-confirmation">{sureText}</p>
+        <p id="quiz-modal-close-confirmation" className='text-center'>{sureText}</p>
       </DialogContent>
-      <DialogActions className="block">
+      <DialogActions className="block p-0">
         <div className="sm:flex sm:flex-row-reverse sm:gap-2">
-          <Button data-cy="yes-button" onClick={onClose} size="large" fullWidth className="mb-2 sm:mb-0">
+          <Button data-cy="yes-button" onClick={onClose} size="large" fullWidth className="mb-2 sm:mb-0 font-bold">
             {yesText}
           </Button>
-          <Button data-cy="no-button" onClick={onCancel} variant="outlined" size="large" fullWidth>
+          <Button data-cy="no-button" onClick={onCancel} variant="outlined" size="large" fullWidth className='font-bold border-gray-light'>
             {noText}
           </Button>
         </div>
       </DialogActions>
-    </>
+    </div>
   )
 }
 
@@ -149,8 +149,8 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
         />
       ) : (
         <>
-          <div className="flex min-h-[850px] flex-col" data-cy="navigation-container">
-            <DialogTitle className="text-right" id="quiz-modal-header">
+          <div className="flex min-h-[850px] flex-col mx-6 my-8" data-cy="navigation-container">
+            <DialogTitle className="text-right px-0 pt-0" id="quiz-modal-header">
               <Button
                 disabled={formikWizard.isSubmitting}
                 data-cy="close-button"
@@ -158,15 +158,16 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 onClick={handleOnClose}
                 startIcon={<CloseIcon />}
                 size="large"
+                className='font-bold'
               >
                 {t('navigation.close')}
               </Button>
             </DialogTitle>
-            <DialogContent className="flex flex-col">
+            <DialogContent className="flex flex-col p-0">
               <h2 className="mb-8 font-display text-2xl font-medium md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                 {t('navigation.title')}
               </h2>
-              <div className="mb-5">{formikWizard.renderComponent()}</div>
+              <div>{formikWizard.renderComponent()}</div>
               <div className="mt-auto">
                 <LinearProgress
                   variant="determinate"
@@ -180,7 +181,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 </p>
               </div>
             </DialogContent>
-            <DialogActions className="block">
+            <DialogActions className="block mt-6 p-0">
               <div className="grid gap-2 sm:grid-cols-2">
                 {formikWizard.isLastStep ? (
                   <LoadingButton
@@ -199,7 +200,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                   </LoadingButton>
                 ) : (
                   <Button
-                    className="sm:order-last"
+                    className="sm:order-last font-bold"
                     data-cy="next-button"
                     disabled={formikWizard.isNextDisabled}
                     fullWidth
@@ -222,6 +223,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                     data-cy="previous-button"
                     size="large"
                     fullWidth
+                    className='font-bold'
                     variant="text"
                   >
                     {t('navigation.previous')}
