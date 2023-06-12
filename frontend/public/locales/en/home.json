@@ -75,7 +75,7 @@
       "links": {
         "oas-eligibility-estimator": {
           "description": "Find out how much money you may get from the Old Age Security program and its benefits.",
-          "title": "Old Age Security eligibility estimator",
+          "title": "Old Age Security benefits estimator",
           "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
         },
         "retirement-income-calculator": {
