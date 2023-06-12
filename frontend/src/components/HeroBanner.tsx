@@ -4,7 +4,7 @@ import Image, { ImageProps } from 'next/image'
 
 export interface HeroBannerProps extends PropsWithChildren {
   imageProps: ImageProps
-  className: string
+  className?: string
 }
 
 export const HeroBanner: FC<HeroBannerProps> = ({ children, imageProps, className }) => {
