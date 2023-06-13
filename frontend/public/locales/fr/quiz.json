@@ -1,7 +1,7 @@
 {
   "confirmation": {
     "no": "Non, retournez au questionnaire",
-    "sure": "Vous êtes sûr que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu'à maintenant.",
+    "sure": "Vous êtes certain que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu'à maintenant.",
     "yes": "Oui, annulé"
   },
   "landing": {
@@ -55,7 +55,7 @@
       "option-unsure-income": "Je ne sais pas",
       "option-yes-income": "Oui",
       "subtitle": "Certaines personnes choisissent de travailler ou de gagner de l'argent à la retraite. Cela peut affecter vos montants de pension mensuels.",
-      "title": "Prévoyez-vous de gagner de l'argent tout en percevant des prestations de retraite?"
+      "title": "Prévoyez-vous gagner de l'argent tout en recevant vos pensions publiques?"
     },
     "question-feel": {
       "option-prepared": "Préparé(e)",
@@ -63,7 +63,7 @@
       "option-unsure-preparedness": "Je ne sais pas",
       "option-very-prepared": "Très bien préparé(e)",
       "option-very-unprepared": "Très peu préparé(e)",
-      "subtitle": "Êtes-vous sûr d'avoir suffisamment d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
+      "subtitle": "Êtes-vous confiant d'avoir suffisamment d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
       "title": "Dans quelle mesure vous sentez-vous prêt(e) financièrement à prendre votre retraite?"
     },
     "question-how-long": {
@@ -71,7 +71,7 @@
       "option-in-canada-40-plus": "40 ans ou plus",
       "option-in-canada-less-than-10": "Moins de 10 ans",
       "option-unsure-in-canada": "Je ne sais pas",
-      "title": "À partir de l'âge de 18 ans, pendant combien d'années aurez-vous vécu au Canada lorsque vous demanderez des prestations de retraite?"
+      "title": "À partir de l'âge de 18 ans, pendant combien d'années aurez-vous vécu au Canada lorsque vous présenterez une demande pour vos pensions publiques?"
     },
     "question-status": {
       "option-status-citizen": "Citoyen Canadien ou résident permanent",
@@ -91,11 +91,11 @@
     },
     "question-where": {
       "option-canada-ft": "Au Canada",
-      "option-canada-pt-60-or-more": "Au Canada <span>plus</span> de 6 mois par an",
-      "option-canada-pt-less-than-60": "Au Canada <span>moins</span> de 6 mois par an",
+      "option-canada-pt-60-or-more": "Au Canada <span>plus</span> de 6 mois par année",
+      "option-canada-pt-less-than-60": "Au Canada <span>moins</span> de 6 mois par année",
       "option-outside-canada": "À l'extérieur du Canada",
       "option-unsure-retirement-living": "Je ne sais pas",
-      "title": "Où prévoyez-vous de vivre lorsque vous prendrez votre retraite?"
+      "title": "Où prévoyez-vous demeurer lorsque vous prendrez votre retraite?"
     }
   }
 }
