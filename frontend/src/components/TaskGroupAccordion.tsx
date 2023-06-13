@@ -57,6 +57,7 @@ export const TaskGroupAccordion: React.FC<TaskGroupAccordionProps> = ({
         className="group/task-group aria-disabled:opacity-[0.54]"
         aria-disabled={disabled}
         open={disabled ? false : expanded}
+        data-gc-analytics-expand={sectionTitle}
       >
         <summary className="flex cursor-pointer  gap-2 bg-primary-800 px-4 py-5 text-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700 group-aria-disabled/task-group:pointer-events-none group-aria-disabled/task-group:select-none">
           <div className="grow">
