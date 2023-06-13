@@ -141,9 +141,9 @@ const Footer: FC<FooterProps> = ({
               {footerNavHeader}
             </h3>
             <div className="flex items-end justify-between sm:items-center">
-              <ul className="flex flex-col gap-3 marker:text-xs sm:list-inside sm:list-disc sm:flex-row">
+              <ul className="flex flex-col gap-3 marker:text-xs sm:list-disc sm:flex-row">
                 {links.map(({ link, linkText }) => (
-                  <li key={link} className="sm:first:list-none">
+                  <li key={link} className="sm:first:pr-3 sm:pl-2 sm:first:list-none sm:first:pl-0">
                     <MuiLink
                       color="primary"
                       underline="hover"
