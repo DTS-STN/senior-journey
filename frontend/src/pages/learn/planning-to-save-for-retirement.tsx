@@ -147,7 +147,7 @@ const PlanningToSaveForRetirement: FC = () => {
                     primary={primary}
                     primaryTypographyProps={{
                       variant: 'subtitle1',
-                      className: 'font-display font-medium',
+                      className: 'font-display font-medium underline underline-offset-4',
                       component: 'h3',
                     }}
                     secondary={secondary}
