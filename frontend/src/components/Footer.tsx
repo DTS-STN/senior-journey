@@ -141,18 +141,25 @@ const Footer: FC<FooterProps> = ({
               {footerNavHeader}
             </h3>
             <div className="flex items-end justify-between sm:items-center">
-              <ul className="flex flex-col gap-3 marker:text-xs sm:list-disc sm:flex-row">
-                {links.map(({ link, linkText }) => (
-                  <li key={link} className="sm:first:pr-3 sm:pl-2 sm:first:list-none sm:first:pl-0">
-                    <MuiLink
-                      color="primary"
-                      underline="hover"
-                      className="text-sm"
-                      data-cy="social-media-link"
-                      href={link}
-                    >
-                      {linkText}
-                    </MuiLink>
+              <ul className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                {links.map(({ link, linkText }, index) => (
+                  <li key={link}>
+                    <div className="flex items-center">
+                      {index > 0 && (
+                        <span aria-hidden={true} className="mr-3 hidden sm:block">
+                          •
+                        </span>
+                      )}
+                      <MuiLink
+                        color="primary"
+                        underline="hover"
+                        className="text-sm"
+                        data-cy="social-media-link"
+                        href={link}
+                      >
+                        {linkText}
+                      </MuiLink>
+                    </div>
                   </li>
                 ))}
               </ul>
