@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { Collapse, Paper } from '@mui/material'
+import { Paper } from '@mui/material'
 
 import { TaskDto } from '../lib/types'
 import { TaskAccordion } from './TaskAccordion'
