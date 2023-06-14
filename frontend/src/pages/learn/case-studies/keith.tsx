@@ -18,9 +18,7 @@ import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Keith: FC = () => {
   const { locale } = useRouter()
-  const { t, i18n } = useTranslation('learn/case-studies/keith')
-  const en = i18n.getFixedT('en', 'learn/case-studies/keith')
-  const fr = i18n.getFixedT('fr', 'learn/case-studies/keith')
+  const { t } = useTranslation('learn/case-studies/keith')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -54,7 +52,7 @@ const Keith: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <LearnPageLayout
         header={t('header')}
@@ -334,9 +332,7 @@ const Keith: FC = () => {
           <Trans ns="learn/case-studies/keith" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">
-          {t('learn-more.header')}
-        </h2>
+        <h2 className="h2">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>
@@ -365,10 +361,7 @@ const Keith: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'], null, [
-        'en',
-        'fr',
-      ])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'])),
     },
   }
 }

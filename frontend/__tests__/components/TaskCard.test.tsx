@@ -26,7 +26,7 @@ describe('TaskCard', () => {
   }
 
   it('renders the TaskCard component', () => {
-    const { container } = render(<TaskCard linksHeader="link header" task={task} />)
+    const { container } = render(<TaskCard linksHeader="link header" task={task} srTag="tag:" />)
 
     expect(container.textContent).toContain('link header')
     expect(container.textContent).toContain('task description')

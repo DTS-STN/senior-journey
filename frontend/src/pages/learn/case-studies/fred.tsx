@@ -18,9 +18,7 @@ import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Fred: FC = () => {
   const { locale } = useRouter()
-  const { t, i18n } = useTranslation('learn/case-studies/fred')
-  const en = i18n.getFixedT('en', 'learn/case-studies/fred')
-  const fr = i18n.getFixedT('fr', 'learn/case-studies/fred')
+  const { t } = useTranslation('learn/case-studies/fred')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -59,7 +57,7 @@ const Fred: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <LearnPageLayout
         header={t('header')}
@@ -315,7 +313,7 @@ const Fred: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/fred'], null, ['en', 'fr'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/fred'])),
     },
   }
 }

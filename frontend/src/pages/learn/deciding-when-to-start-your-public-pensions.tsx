@@ -18,9 +18,7 @@ import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const DecidingWhenToCollectPublicPensions: FC = () => {
   const { locale } = useRouter()
-  const { t, i18n } = useTranslation('learn/deciding-when-to-start-your-public-pensions')
-  const en = i18n.getFixedT('en', 'learn/deciding-when-to-start-your-public-pensions')
-  const fr = i18n.getFixedT('fr', 'learn/deciding-when-to-start-your-public-pensions')
+  const { t } = useTranslation('learn/deciding-when-to-start-your-public-pensions')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -59,7 +57,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <LearnPageLayout
         header={t('header')}
@@ -317,12 +315,10 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(
-        locale ?? 'default',
-        ['common', 'learn/deciding-when-to-start-your-public-pensions'],
-        null,
-        ['en', 'fr']
-      )),
+      ...(await serverSideTranslations(locale ?? 'default', [
+        'common',
+        'learn/deciding-when-to-start-your-public-pensions',
+      ])),
     },
   }
 }

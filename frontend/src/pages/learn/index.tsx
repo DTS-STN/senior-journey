@@ -66,9 +66,7 @@ const LearnSection: FC<LearnSectionProps> = ({ cards, desciption, id, title }) =
 }
 
 const Learn: FC = () => {
-  const { t, i18n } = useTranslation('learn')
-  const en = i18n.getFixedT('en', 'learn')
-  const fr = i18n.getFixedT('fr', 'learn')
+  const { t } = useTranslation('learn')
 
   const sections: ReadonlyArray<LearnSectionProps> = [
     {
@@ -163,7 +161,7 @@ const Learn: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <Layout
         breadcrumbItems={[
@@ -201,7 +199,7 @@ const Learn: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'], null, ['en', 'fr'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'])),
     },
   }
 }
