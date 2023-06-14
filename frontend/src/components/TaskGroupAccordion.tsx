@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { Paper } from '@mui/material'
+import { Collapse, Paper } from '@mui/material'
 
 import { TaskDto } from '../lib/types'
 import { TaskAccordion } from './TaskAccordion'
@@ -59,25 +59,27 @@ export const TaskGroupAccordion: React.FC<TaskGroupAccordionProps> = ({
         open={disabled ? false : expanded}
         data-gc-analytics-expand={sectionTitle}
       >
-        <summary className="flex cursor-pointer  gap-2 bg-primary-800 px-4 py-5 text-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700 group-aria-disabled/task-group:pointer-events-none group-aria-disabled/task-group:select-none">
+        <summary className="focus:outline-0 flex cursor-pointer  gap-2 bg-primary-800 px-4 py-5 text-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700 group-aria-disabled/task-group:pointer-events-none group-aria-disabled/task-group:select-none">
           <div className="grow">
             <h2 className="mb-2 font-display text-xl font-bold">{sectionTitle}</h2>
             <p className="m-0 text-sm text-white/70">{subSectionTitle}</p>
           </div>
           <ExpandMoreIcon className="self-center text-white/70 transition-transform group-open/task-group:rotate-180 group-aria-disabled/task-group:hidden" />
         </summary>
-        <section className="divide-y">
-          {tasks.map((task) => (
-            <TaskAccordion
-              key={task.id}
-              expanded={expandedTasks.includes(task.id)}
-              onTaskAccordionChange={onTaskAccordionChange}
-              linksHeader={linksHeader}
-              srTag={srTag}
-              {...task}
-            />
-          ))}
-        </section>
+        <Collapse in={expanded} mountOnEnter unmountOnExit>
+          <section className="divide-y">
+            {tasks.map((task) => (
+              <TaskAccordion
+                key={task.id}
+                expanded={expandedTasks.includes(task.id)}
+                onTaskAccordionChange={onTaskAccordionChange}
+                linksHeader={linksHeader}
+                srTag={srTag}
+                {...task}
+              />
+            ))}
+          </section>
+        </Collapse>
       </details>
     </Paper>
   )
