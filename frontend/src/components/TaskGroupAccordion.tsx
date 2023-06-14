@@ -59,7 +59,7 @@ export const TaskGroupAccordion: React.FC<TaskGroupAccordionProps> = ({
         open={disabled ? false : expanded}
         data-gc-analytics-expand={sectionTitle}
       >
-        <summary className="flex cursor-pointer  gap-2 bg-primary-800 px-4 py-5 text-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700 group-aria-disabled/task-group:pointer-events-none group-aria-disabled/task-group:select-none">
+        <summary className="flex cursor-pointer gap-2 bg-primary-800 px-4 py-5 text-white outline-none focus-visible:ring-2 focus-visible:ring-primary-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white group-aria-disabled/task-group:pointer-events-none group-aria-disabled/task-group:select-none">
           <div className="grow">
             <h2 className="mb-2 font-display text-xl font-bold">{sectionTitle}</h2>
             <p className="m-0 text-sm text-white/70">{subSectionTitle}</p>
