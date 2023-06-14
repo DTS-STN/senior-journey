@@ -157,7 +157,13 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
         <div className="grid gap-6 print:block md:pt-8 lg:grid-cols-12">
           <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
             <div className="mb-4 hidden lg:block">
-              <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
+              <Button
+                variant="text"
+                startIcon={<Cached />}
+                size="large"
+                onClick={handleOnRestartQuizClick}
+                className="font-bold"
+              >
                 {t('restart-quiz')}
               </Button>
             </div>
@@ -250,7 +256,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </Collapse>
             </div>
             <div className="hidden lg:block">
-              <Button onClick={handlePrint} variant="outlined" startIcon={<Print />}>
+              <Button onClick={handlePrint} variant="outlined" startIcon={<Print />} className="font-bold">
                 {t('print')}
               </Button>
             </div>
@@ -293,7 +299,13 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
             <div className="mt-4 lg:hidden">
-              <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
+              <Button
+                variant="text"
+                startIcon={<Cached />}
+                size="large"
+                onClick={handleOnRestartQuizClick}
+                className="font-bold"
+              >
                 {t('restart-quiz')}
               </Button>
             </div>
