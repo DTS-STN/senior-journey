@@ -9,7 +9,7 @@ import { getLogger } from './logging/log-util'
  * @returns {boolean} - true if the pathname is excluded, false otherwise.
  */
 function isExcluded(pathname: string) {
-  const excludedPaths = ['/_next/', '/api/', '/assets/']
+  const excludedPaths = ['/_next/', '/api/', '/assets/', '/robots.txt']
   return excludedPaths.some((excludedPath) => pathname.includes(excludedPath))
 }
 
