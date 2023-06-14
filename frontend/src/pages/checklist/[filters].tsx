@@ -52,9 +52,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   filters,
   receivingBenefits,
 }) => {
-  const { t, i18n } = useTranslation('checklist')
-  const en = i18n.getFixedT('en', 'checklist')
-  const fr = i18n.getFixedT('fr', 'checklist')
+  const { t } = useTranslation('checklist')
 
   const router = useRouter()
   const { mutate: removeQuizData } = useRemoveQuizData()
@@ -132,7 +130,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <Layout
         hideChecklist={true}
@@ -151,7 +149,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
       >
         <div className="hidden md:block">
           <HeroBanner
-            className='h-[215px] grid-rows-1'
+            className="h-[215px] grid-rows-1"
             imageProps={{
               alt: '',
               height: 427,
@@ -374,7 +372,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
 
     return {
       props: {
-        ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'], null, ['en', 'fr'])),
+        ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'])),
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
         initialExpandedGroups: queryVariableToNumberArray(query.group),

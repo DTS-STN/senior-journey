@@ -12,9 +12,7 @@ import { QuizDialog } from '../components/quiz/QuizDialog'
 import { getDCTermsTitle } from '../utils/seo-utils'
 
 const Quiz: FC = () => {
-  const { t, i18n } = useTranslation('quiz')
-  const en = i18n.getFixedT('en', 'quiz')
-  const fr = i18n.getFixedT('fr', 'quiz')
+  const { t } = useTranslation('quiz')
   const [quizDialogOpen, setQuizDialogOpen] = useState(false)
 
   const handleOnQuizDialogTriggerClick = () => {
@@ -30,7 +28,7 @@ const Quiz: FC = () => {
       <NextSeo
         title={t('landing.header')}
         description={t('landing.meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('landing.header'), fr('landing.header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('landing.header'))]}
       />
       <Layout
         hideChecklist={true}
@@ -71,7 +69,7 @@ const Quiz: FC = () => {
         <h2 id="time-to-complete-survey" className="mb-4 mt-8 font-display text-xl font-bold">
           {t('landing.timetocomplete')}
         </h2>
-        <p className='mb-12'>
+        <p className="mb-12">
           <WatchLaterIcon className="mr-4 inline text-2xl" />
           {t('landing.minutes')}
         </p>
@@ -93,7 +91,7 @@ const Quiz: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'quiz'], null, ['en', 'fr'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'quiz'])),
     },
   }
 }

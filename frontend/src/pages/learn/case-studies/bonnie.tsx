@@ -18,9 +18,7 @@ import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Bonnie: FC = () => {
   const { locale } = useRouter()
-  const { t, i18n } = useTranslation('learn/case-studies/bonnie')
-  const en = i18n.getFixedT('en', 'learn/case-studies/bonnie')
-  const fr = i18n.getFixedT('fr', 'learn/case-studies/bonnie')
+  const { t } = useTranslation('learn/case-studies/bonnie')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -59,7 +57,7 @@ const Bonnie: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <LearnPageLayout
         header={t('header')}
@@ -332,10 +330,7 @@ const Bonnie: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/bonnie'], null, [
-        'en',
-        'fr',
-      ])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/bonnie'])),
     },
   }
 }

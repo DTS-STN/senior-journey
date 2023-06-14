@@ -13,9 +13,7 @@ import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const PlanningToSaveForRetirement: FC = () => {
-  const { t, i18n } = useTranslation('learn/planning-to-save-for-retirement')
-  const en = i18n.getFixedT('en', 'learn/planning-to-save-for-retirement')
-  const fr = i18n.getFixedT('fr', 'learn/planning-to-save-for-retirement')
+  const { t } = useTranslation('learn/planning-to-save-for-retirement')
 
   const learnMoreLinks = useMemo(
     () => [
@@ -48,7 +46,7 @@ const PlanningToSaveForRetirement: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <LearnPageLayout
         header={t('header')}
@@ -135,9 +133,7 @@ const PlanningToSaveForRetirement: FC = () => {
           <Trans ns="learn/planning-to-save-for-retirement" i18nKey="changes-with-age.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">
-          {t('learn-more.heading')}
-        </h2>
+        <h2 className="h2">{t('learn-more.heading')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>
@@ -166,10 +162,7 @@ const PlanningToSaveForRetirement: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/planning-to-save-for-retirement'], null, [
-        'en',
-        'fr',
-      ])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/planning-to-save-for-retirement'])),
     },
   }
 }

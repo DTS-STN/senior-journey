@@ -13,9 +13,7 @@ import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const RulesOfThumbForPublicPensions: FC = () => {
-  const { t, i18n } = useTranslation('learn/rules-of-thumb-for-public-pensions')
-  const en = i18n.getFixedT('en', 'learn/rules-of-thumb-for-public-pensions')
-  const fr = i18n.getFixedT('fr', 'learn/rules-of-thumb-for-public-pensions')
+  const { t } = useTranslation('learn/rules-of-thumb-for-public-pensions')
 
   const learnMoreLinks = useMemo(
     () => [
@@ -48,7 +46,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <LearnPageLayout
         header={t('header')}
@@ -198,9 +196,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
           <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="oas.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">
-          {t('learn-more.header')}
-        </h2>
+        <h2 className="h2">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>
@@ -229,12 +225,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(
-        locale ?? 'default',
-        ['common', 'learn/rules-of-thumb-for-public-pensions'],
-        null,
-        ['en', 'fr']
-      )),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/rules-of-thumb-for-public-pensions'])),
     },
   }
 }

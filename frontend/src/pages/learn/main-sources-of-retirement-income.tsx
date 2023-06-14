@@ -18,9 +18,7 @@ import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const MainSourcesOfRetirementIncome: FC = () => {
   const { locale } = useRouter()
-  const { t, i18n } = useTranslation('learn/main-sources-of-retirement-income')
-  const en = i18n.getFixedT('en', 'learn/main-sources-of-retirement-income')
-  const fr = i18n.getFixedT('fr', 'learn/main-sources-of-retirement-income')
+  const { t } = useTranslation('learn/main-sources-of-retirement-income')
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -59,7 +57,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <LearnPageLayout
         header={t('header')}
@@ -512,10 +510,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/main-sources-of-retirement-income'], null, [
-      'en',
-      'fr',
-    ])),
+    ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/main-sources-of-retirement-income'])),
   },
 })
 

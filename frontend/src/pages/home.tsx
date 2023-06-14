@@ -40,9 +40,7 @@ export interface SupportingSeniorsCardProps {
 
 const Home: FC = () => {
   const { locale } = useRouter()
-  const { t, i18n } = useTranslation('home')
-  const en = i18n.getFixedT('en', 'home')
-  const fr = i18n.getFixedT('fr', 'home')
+  const { t } = useTranslation('home')
 
   const publicRuntimeConfig = usePublicRuntimeConfig()
 
@@ -80,7 +78,7 @@ const Home: FC = () => {
       <NextSeo
         title={t('header')}
         description={t('meta.description')}
-        additionalMetaTags={[getDCTermsTitle(en('header'), fr('header'))]}
+        additionalMetaTags={[getDCTermsTitle(t('header'))]}
       />
       <Layout contained={false}>
         <Container className="mb-8 md:mb-12">
@@ -396,7 +394,7 @@ const Home: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home'], null, ['en', 'fr'])),
+    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home'])),
   },
 })
 
