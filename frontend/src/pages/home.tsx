@@ -25,6 +25,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import urlcat from 'urlcat'
 
+import landingPageImage from '../../public/assets/landing-page.jpg'
 import Container from '../components/Container'
 import { HeroBanner } from '../components/HeroBanner'
 import Layout from '../components/Layout'
@@ -82,15 +83,7 @@ const Home: FC = () => {
       />
       <Layout contained={false}>
         <Container className="mb-8 md:mb-12">
-          <HeroBanner
-            imageProps={{
-              alt: '',
-              className: 'md:object-right-bottom',
-              height: 427,
-              src: '/assets/landing-page.jpg',
-              width: 640,
-            }}
-          >
+          <HeroBanner imageProps={{ className: 'md:object-right-bottom', src: landingPageImage }}>
             <h1 className="mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-6xl">
               {t('banner.title')}
             </h1>

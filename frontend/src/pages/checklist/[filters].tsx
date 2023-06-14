@@ -21,6 +21,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 
+import checklistBannerImage from '../../../public/assets/checklist-banner.jpg'
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
 import { TaskGroupAccordion } from '../../components/TaskGroupAccordion'
@@ -148,15 +149,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
         hideHeader="print"
       >
         <div className="hidden md:block">
-          <HeroBanner
-            className="h-[215px] grid-rows-1"
-            imageProps={{
-              alt: '',
-              height: 427,
-              src: '/assets/checklist-banner.jpg',
-              width: 640,
-            }}
-          >
+          <HeroBanner className="h-[215px] grid-rows-1" imageProps={{ src: checklistBannerImage }}>
             <h1 className="font-display text-4xl font-bold text-primary-700 md:text-6xl">{t('header')}</h1>
           </HeroBanner>
         </div>
