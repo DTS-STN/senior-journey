@@ -1,0 +1,5 @@
+# Allow all crawlers
+# note: robots meta tag is being used in pages
+# see: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#combining
+User-agent: *
+Allow: /
