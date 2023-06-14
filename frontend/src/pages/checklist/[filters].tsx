@@ -5,7 +5,6 @@ import Print from '@mui/icons-material/Print'
 import {
   Button,
   Checkbox,
-  Collapse,
   FormControlLabel,
   FormGroup,
   IconButton,
@@ -169,7 +168,8 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </Button>
             </div>
             <div className="mb-4">
-              <div className="mb-2 flex items-center justify-between border-b pb-3">
+            <details open={importantExpanded}>
+              <summary tabIndex={-1} className="mb-2 flex items-center justify-between border-b pb-3">
                 <Button
                   variant="text"
                   color="primary"
@@ -184,8 +184,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                 >
                   {t('important-terms.header')}
                 </Button>
-              </div>
-              <Collapse in={importantExpanded}>
+              </summary>
                 <List className="p-0" disablePadding>
                   {[
                     {
@@ -211,11 +210,12 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                     </ListItem>
                   ))}
                 </List>
-              </Collapse>
+              </details>
             </div>
 
             <div className="md:mb-2">
-              <div className="flex items-center justify-between md:mb-2 md:border-b md:pb-3">
+              <details open={expanded}>
+              <summary tabIndex={-1} className="flex items-center justify-between md:mb-2 md:border-b md:pb-3 font-display text-xl">
                 <div className="text-2xl md:hidden">{t('header')}</div>
                 {!desktop && (
                   <IconButton
@@ -243,8 +243,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                     {t('filter-tasks', { count: filters.tags.length })}
                   </Button>
                 )}
-              </div>
-              <Collapse in={expanded}>
+              </summary>
                 <FormGroup onChange={handleChange} data-cy="form-group-filter-tasks">
                   {tagsFilter.map(({ code, title }) => (
                     <FormControlLabel
@@ -254,7 +253,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                     />
                   ))}
                 </FormGroup>
-              </Collapse>
+              </details>
             </div>
             <div className="hidden lg:block">
               <Button onClick={handlePrint} variant="outlined" startIcon={<Print />}>
@@ -262,50 +261,50 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </Button>
             </div>
           </section>
-          <section id="content" className="print-href grid gap-4 lg:col-span-8 xl:col-span-9">
-            <TaskGroupAccordion
-              expanded={expandedGroups.includes(beforeRetiring.id)}
-              expandedTasks={expandedTasks}
-              id={beforeRetiring.id}
-              linksHeader={t('links-header')}
-              onTaskAccordionChange={handleOnTaskAccordionChange}
-              onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
-              sectionTitle={beforeRetiring.title}
-              subSectionTitle={beforeRetiring.subTitle}
-              srTag={t('sr-tag')}
-              tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, filters))}
-            />
-            <TaskGroupAccordion
-              expanded={expandedGroups.includes(applyingBenefits.id)}
-              expandedTasks={expandedTasks}
-              id={applyingBenefits.id}
-              linksHeader={t('links-header')}
-              onTaskAccordionChange={handleOnTaskAccordionChange}
-              onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
-              sectionTitle={applyingBenefits.title}
-              subSectionTitle={applyingBenefits.subTitle}
-              srTag={t('sr-tag')}
-              tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
-            />
-            <TaskGroupAccordion
-              expanded={expandedGroups.includes(receivingBenefits.id)}
-              expandedTasks={expandedTasks}
-              id={receivingBenefits.id}
-              linksHeader={t('links-header')}
-              onTaskAccordionChange={handleOnTaskAccordionChange}
-              onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
-              sectionTitle={receivingBenefits.title}
-              subSectionTitle={receivingBenefits.subTitle}
-              srTag={t('sr-tag')}
-              tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
-            />
-            <div className="mt-4 lg:hidden">
-              <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
-                {t('restart-quiz')}
-              </Button>
-            </div>
-          </section>
-        </div>
+          <section id="content" className="print-href flex flex-col gap-4 lg:col-span-8 xl:col-span-9">
+              <TaskGroupAccordion
+                expanded={expandedGroups.includes(beforeRetiring.id)}
+                expandedTasks={expandedTasks}
+                id={beforeRetiring.id}
+                linksHeader={t('links-header')}
+                onTaskAccordionChange={handleOnTaskAccordionChange}
+                onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
+                sectionTitle={beforeRetiring.title}
+                subSectionTitle={beforeRetiring.subTitle}
+                srTag={t('sr-tag')}
+                tasks={beforeRetiring.tasks.filter((task) => filterTasksByTag(task, filters))}
+              />
+              <TaskGroupAccordion
+                expanded={expandedGroups.includes(applyingBenefits.id)}
+                expandedTasks={expandedTasks}
+                id={applyingBenefits.id}
+                linksHeader={t('links-header')}
+                onTaskAccordionChange={handleOnTaskAccordionChange}
+                onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
+                sectionTitle={applyingBenefits.title}
+                subSectionTitle={applyingBenefits.subTitle}
+                srTag={t('sr-tag')}
+                tasks={applyingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
+              />
+              <TaskGroupAccordion
+                expanded={expandedGroups.includes(receivingBenefits.id)}
+                expandedTasks={expandedTasks}
+                id={receivingBenefits.id}
+                linksHeader={t('links-header')}
+                onTaskAccordionChange={handleOnTaskAccordionChange}
+                onTaskGroupAccordionChange={handleOnTaskGroupAccordionChange}
+                sectionTitle={receivingBenefits.title}
+                subSectionTitle={receivingBenefits.subTitle}
+                srTag={t('sr-tag')}
+                tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
+              />
+              <div className="mt-4 lg:hidden">
+                <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
+                  {t('restart-quiz')}
+                </Button>
+              </div>
+            </section>
+          </div>
       </Layout>
     </>
   )
