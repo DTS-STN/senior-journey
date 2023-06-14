@@ -329,7 +329,7 @@ const Home: FC = () => {
                       <List disablePadding className="ml-4">
                         <ListItem disablePadding className="border-b">
                           <ListItemButton
-                            className="pl-0"
+                            className="pl-0 underline underline-offset-4"
                             href={t('tabs.apply.description.links.how-to-apply.url')}
                             component={Link}
                           >
@@ -344,7 +344,7 @@ const Home: FC = () => {
                         </ListItem>
                         <ListItem disablePadding className="border-b">
                           <ListItemButton
-                            className="pl-0"
+                            className="pl-0 underline underline-offset-4"
                             href={t('tabs.apply.description.links.oas-apply.url')}
                             component={Link}
                           >
