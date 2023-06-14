@@ -17,7 +17,13 @@ const adobeAnalyticsConfigured = process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_
 const devmodeEnabled = process.env.NODE_ENV !== 'production'
 
 // see https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html
-const defaultAdobeAnalyticsDomains = ['*.demdex.net', 'assets.adobedtm.com', 'canada.sc.omtrdc.net', 'cm.everesttech.net', 'code.jquery.com']
+const defaultAdobeAnalyticsDomains = [
+  '*.demdex.net',
+  'assets.adobedtm.com',
+  'canada.sc.omtrdc.net',
+  'cm.everesttech.net',
+  'code.jquery.com',
+]
 
 /**
  * A function that returns a string of Adobe Analytics domains.
@@ -58,6 +64,9 @@ function generateCsp(nonce: string): string {
     'style-src': ["'self'"],
   }
 
+  // required by Next.js Image with placeholder="blur"
+  contentSecurityPolicy['img-src']?.push('data:')
+
   // required by MUI; TODO: figure out how to tighten this up
   // see: https://mui.com/material-ui/guides/content-security-policy/
   contentSecurityPolicy['style-src']?.push("'unsafe-eval'", "'unsafe-inline'")
@@ -85,7 +94,9 @@ function generateCsp(nonce: string): string {
   }
 
   if (!adobeAnalyticsConfigured) {
-    log.debug(`Adobe Analytics configuration not detected, adding 'nonce-${nonce}' directives to Content-Security-Policy`)
+    log.debug(
+      `Adobe Analytics configuration not detected, adding 'nonce-${nonce}' directives to Content-Security-Policy`
+    )
     contentSecurityPolicy['script-src']?.push(`'nonce-${nonce}'`)
   }
 
@@ -110,15 +121,22 @@ export default function MyDocument({ emotionStyleTags, locale, nonce }: MyDocume
         <link rel="icon" href="/assets/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap"
+        />
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
       <body>
         <Main />
         <NextScript nonce={nonce} />
-        {adobeAnalyticsConfigured && <Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />}
-        {adobeAnalyticsConfigured && <Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />}
+        {adobeAnalyticsConfigured && (
+          <Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />
+        )}
+        {adobeAnalyticsConfigured && (
+          <Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />
+        )}
       </body>
     </Html>
   )
