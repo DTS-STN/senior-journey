@@ -262,8 +262,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </Button>
             </div>
           </section>
-          <div className='lg:col-span-8 xl:col-span-9'>
-            <section id="content" className="print-href grid gap-4">
+          <section id="content" className="print-href flex flex-col gap-4 lg:col-span-8 xl:col-span-9">
               <TaskGroupAccordion
                 expanded={expandedGroups.includes(beforeRetiring.id)}
                 expandedTasks={expandedTasks}
@@ -307,7 +306,6 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </div>
             </section>
           </div>
-        </div>
       </Layout>
     </>
   )

@@ -66,7 +66,6 @@ export const TaskGroupAccordion: React.FC<TaskGroupAccordionProps> = ({
           </div>
           <ExpandMoreIcon className="self-center text-white/70 transition-transform group-open/task-group:rotate-180 group-aria-disabled/task-group:hidden" />
         </summary>
-        <Collapse in={expanded} mountOnEnter unmountOnExit>
           <section className="divide-y">
             {tasks.map((task) => (
               <TaskAccordion
@@ -79,7 +78,6 @@ export const TaskGroupAccordion: React.FC<TaskGroupAccordionProps> = ({
               />
             ))}
           </section>
-        </Collapse>
       </details>
     </Paper>
   )

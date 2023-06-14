@@ -35,16 +35,14 @@ export const TaskAccordion: FC<TaskAccordionProps> = (props) => {
 
   return (
     <details ref={detailsRef} className="group/task divide-y transition-transform sm:ml-4" open={expanded}>
-      <summary className="focus:outline-0 flex cursor-pointer gap-2 px-4 py-5 font-display text-lg font-medium focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700 sm:pl-0">
+      <summary className=" flex cursor-pointer gap-2 px-4 py-5 font-display text-lg font-medium focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700 sm:pl-0">
         <Checkbox className="-mt-2.5 hidden print:inline" />
         <h3 className="grow">{title}</h3>
         <ExpandMoreIcon className="self-center text-black/50 transition-transform group-open/task:rotate-180" />
       </summary>
-      <Collapse in={expanded} mountOnEnter unmountOnExit>
         <section className="p-4 sm:pl-14">
           <TaskCard linksHeader={linksHeader} showCheckbox={false} srTag={srTag} task={props} />
         </section>
-      </Collapse>
     </details>
   )
 }
