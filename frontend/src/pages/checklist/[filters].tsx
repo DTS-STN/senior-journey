@@ -5,7 +5,6 @@ import Print from '@mui/icons-material/Print'
 import {
   Button,
   Checkbox,
-  Collapse,
   FormControlLabel,
   FormGroup,
   IconButton,
@@ -170,7 +169,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
             </div>
             <div className="mb-4">
             <details open={importantExpanded}>
-              <summary className="mb-2 flex items-center justify-between border-b pb-3">
+              <summary tabIndex={-1} className="mb-2 flex items-center justify-between border-b pb-3">
                 <Button
                   variant="text"
                   color="primary"
@@ -216,7 +215,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
 
             <div className="md:mb-2">
               <details open={expanded}>
-              <summary className="flex items-center justify-between md:mb-2 md:border-b md:pb-3">
+              <summary tabIndex={-1} className="flex items-center justify-between md:mb-2 md:border-b md:pb-3 font-display text-xl">
                 <div className="text-2xl md:hidden">{t('header')}</div>
                 {!desktop && (
                   <IconButton
