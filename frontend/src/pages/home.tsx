@@ -25,6 +25,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import urlcat from 'urlcat'
 
+import landingPageImage from '../../public/assets/landing-page.jpg'
 import Container from '../components/Container'
 import { HeroBanner } from '../components/HeroBanner'
 import Layout from '../components/Layout'
@@ -82,15 +83,7 @@ const Home: FC = () => {
       />
       <Layout contained={false}>
         <Container className="mb-8 md:mb-12">
-          <HeroBanner
-            imageProps={{
-              alt: '',
-              className: 'md:object-right-bottom',
-              height: 427,
-              src: '/assets/landing-page.jpg',
-              width: 640,
-            }}
-          >
+          <HeroBanner imageProps={{ className: 'md:object-right-bottom', src: landingPageImage }}>
             <h1 className="mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-6xl">
               {t('banner.title')}
             </h1>
@@ -329,7 +322,7 @@ const Home: FC = () => {
                       <List disablePadding className="ml-4">
                         <ListItem disablePadding className="border-b">
                           <ListItemButton
-                            className="pl-0"
+                            className="pl-0 underline underline-offset-4"
                             href={t('tabs.apply.description.links.how-to-apply.url')}
                             component={Link}
                           >
@@ -344,7 +337,7 @@ const Home: FC = () => {
                         </ListItem>
                         <ListItem disablePadding className="border-b">
                           <ListItemButton
-                            className="pl-0"
+                            className="pl-0 underline underline-offset-4"
                             href={t('tabs.apply.description.links.oas-apply.url')}
                             component={Link}
                           >

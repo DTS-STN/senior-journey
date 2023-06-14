@@ -1,13 +1,22 @@
 import { FC, useId } from 'react'
 
-import { Button, Card, CardActionArea, CardContent, CardMedia } from '@mui/material'
+import { Button, Card, CardActionArea, CardContent } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
+import bonnieDelaysToReduceTheSavingsSheNeedsSmImage from '../../../public/assets/bonnie-delays-to-reduce-the-savings-she-needs-sm.jpg'
+import decidingWhenToStartYourPublicPensionsSmImage from '../../../public/assets/deciding-when-to-start-your-public-pensions-sm.jpg'
+import fredDecidesWhenToTakeHisPensionsSmImage from '../../../public/assets/fred-decides-when-to-take-his-pensions-sm.jpg'
+import goingFromWorkToRetirementSmImage from '../../../public/assets/going-from-work-to-retirement-sm.jpg'
+import keithCombinesHisWorkWithHisPublicPensionsSmImage from '../../../public/assets/keith-combines-his-work-with-his-public-pensions-sm.jpg'
+import learnBannerImage from '../../../public/assets/learn-banner.jpg'
+import mainSourcesOfRetirementIncomeSmImage from '../../../public/assets/main-sources-of-retirement-income-sm.jpg'
+import planningToSaveForRetirementSmImage from '../../../public/assets/planning-to-save-for-retirement-sm.jpg'
+import rulesOfThumbForPublicPensionsSmImage from '../../../public/assets/rules-of-thumb-for-public-pensions-sm.jpg'
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
@@ -16,19 +25,19 @@ interface LearnCardProps {
   desciption: string
   href: string
   id: string
-  imageUrl: string
+  imageSrc: StaticImageData
   minRead: number
   title: string
 }
 
-const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageUrl, minRead, title }) => {
+const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageSrc, minRead, title }) => {
   const { t } = useTranslation('learn')
   const uniqueId = useId()
   return (
     <Card id={`${uniqueId}-card-${id}`} className="h-full">
       <CardActionArea component={Link} href={href} className="h-full" aria-describedby={`${uniqueId}-card-${id}-title`}>
-        <div className="relative">
-          <CardMedia component="img" alt="" image={imageUrl} className="h-64 w-full object-cover" />
+        <div className="relative h-64 ">
+          <Image fill alt="" src={imageSrc} className="object-cover" placeholder="blur" />
           <Image src="/assets/bottom-top.svg" width={34} height={360} className="absolute bottom-0 w-full" alt="" />
         </div>
         <CardContent className="mt-4 p-8">
@@ -78,7 +87,7 @@ const Learn: FC = () => {
           desciption: t(`sections.learn-about.cards.sources-of-income.body`),
           href: '/learn/main-sources-of-retirement-income',
           id: 'sources-of-income',
-          imageUrl: '/assets/main-sources-of-retirement-income-sm.jpg',
+          imageSrc: mainSourcesOfRetirementIncomeSmImage,
           minRead: 15,
           title: t(`sections.learn-about.cards.sources-of-income.title`),
         },
@@ -86,7 +95,7 @@ const Learn: FC = () => {
           desciption: t(`sections.learn-about.cards.planning-to-save.body`),
           href: '/learn/planning-to-save-for-retirement',
           id: 'planning-to-save',
-          imageUrl: '/assets/planning-to-save-for-retirement-sm.jpg',
+          imageSrc: planningToSaveForRetirementSmImage,
           minRead: 5,
           title: t(`sections.learn-about.cards.planning-to-save.title`),
         },
@@ -101,7 +110,7 @@ const Learn: FC = () => {
           desciption: t(`sections.making-decisions.cards.when-to-start.body`),
           href: '/learn/deciding-when-to-start-your-public-pensions',
           id: 'when-to-start',
-          imageUrl: '/assets/deciding-when-to-start-your-public-pensions-sm.jpg',
+          imageSrc: decidingWhenToStartYourPublicPensionsSmImage,
           minRead: 15,
           title: t(`sections.making-decisions.cards.when-to-start.title`),
         },
@@ -109,7 +118,7 @@ const Learn: FC = () => {
           desciption: t(`sections.making-decisions.cards.from-work-to-retirement.body`),
           href: '/learn/going-from-work-to-retirement',
           id: 'from-work-to-retirement',
-          imageUrl: '/assets/going-from-work-to-retirement-sm.jpg',
+          imageSrc: goingFromWorkToRetirementSmImage,
           minRead: 10,
           title: t(`sections.making-decisions.cards.from-work-to-retirement.title`),
         },
@@ -117,7 +126,7 @@ const Learn: FC = () => {
           desciption: t(`sections.making-decisions.cards.rules-of-thumb.body`),
           href: '/learn/rules-of-thumb-for-public-pensions',
           id: 'rules-of-thumb',
-          imageUrl: '/assets/rules-of-thumb-for-public-pensions-sm.jpg',
+          imageSrc: rulesOfThumbForPublicPensionsSmImage,
           minRead: 9,
           title: t(`sections.making-decisions.cards.rules-of-thumb.title`),
         },
@@ -132,7 +141,7 @@ const Learn: FC = () => {
           desciption: t(`sections.stories.cards.fred.body`),
           href: '/learn/case-studies/fred',
           id: 'fred',
-          imageUrl: '/assets/fred-decides-when-to-take-his-pensions-sm.jpg',
+          imageSrc: fredDecidesWhenToTakeHisPensionsSmImage,
           minRead: 17,
           title: t(`sections.stories.cards.fred.title`),
         },
@@ -140,7 +149,7 @@ const Learn: FC = () => {
           desciption: t(`sections.stories.cards.bonnie.body`),
           href: '/learn/case-studies/bonnie',
           id: 'bonnie',
-          imageUrl: '/assets/bonnie-delays-to-reduce-the-savings-she-needs-sm.jpg',
+          imageSrc: bonnieDelaysToReduceTheSavingsSheNeedsSmImage,
           minRead: 20,
           title: t(`sections.stories.cards.bonnie.title`),
         },
@@ -148,7 +157,7 @@ const Learn: FC = () => {
           desciption: t(`sections.stories.cards.keith.body`),
           href: '/learn/case-studies/keith',
           id: 'keith',
-          imageUrl: '/assets/keith-combines-his-work-with-his-public-pensions-sm.jpg',
+          imageSrc: keithCombinesHisWorkWithHisPublicPensionsSmImage,
           minRead: 17,
           title: t(`sections.stories.cards.keith.title`),
         },
@@ -171,15 +180,7 @@ const Learn: FC = () => {
           },
         ]}
       >
-        <HeroBanner
-          imageProps={{
-            alt: '',
-            className: 'md:object-right-bottom',
-            height: 427,
-            src: '/assets/learn-banner.jpg',
-            width: 640,
-          }}
-        >
+        <HeroBanner imageProps={{ className: 'md:object-right-bottom', src: learnBannerImage }}>
           <h1 className="mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-6xl">
             {t('banner.title')}
           </h1>

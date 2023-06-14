@@ -94,7 +94,7 @@
       },
       "description": "Ce tableau montre le montant de la pension de retraite à vie du RPC pour quatre choix auxquels Keith réfléchit. Il montre que si Keith vit jusqu'à l'âge de 90 ans, le fait de commencer à recevoir sa pension de retraite du RPC à 65 ans et de travailler jusqu'à 70 ans lui procurerait le revenu de retraite le plus élevé.",
       "heading": "Quelle sera la pension de Keith à l'âge de 87 ans?",
-      "li1": "Le choix 3 concerne Keith qui recevera sa pension de retraite du Régime de pensions du Canada (RPC) à l'âge de 65 ans et qui contribue au régime jusqu'à l'âge de 70 ans. Il recevra son revenu mensuel de retraite plus tôt dans sa vie et sa pension à vie sera plus élevée.",
+      "li1": "Le choix 3 concerne Keith qui recevera sa pension de retraite du Régime de pensions du Canada (RPC) à l'âge de 65 ans et qui contribue au régime jusqu'à l'âge de 70 ans. Il recevra son revenu mensuel de retraite plus tôt dans sa vie et sa pension à vie sera plus élevée;",
       "li2": "Le choix 4 consistait pour Keith à reporter sa pension de retraite du RPC jusqu'à l'âge de 70 ans. Il s'agit également d'une bonne option puisqu'elle permet d'obtenir la pension mensuelle la plus élevée ainsi qu'une pension à vie élevée.",
       "p1": "Étant donné que Keith est encore en bonne santé et qu'il travaille, il devrait s'attendre à vivre encore 22-25 ans (87-90 ans) ou plus. Il aimerait choisir entre les options 3 et 4.",
       "p2": "Keith veut commencer à recevoir sa pension de retraite du RPC à l'âge de 60 ans et de cesser de cotiser à l'âge de 65 ans. Ce choix lui offre les montants mensuelles les moins élevé, mais à vie."
@@ -147,8 +147,8 @@
     "what-else": {
       "heading": "Quels sont les autres éléments dont Keith doit prendre ne considération lors de son choix?",
       "list": {
-        "li1": "son montant mensuel",
-        "li2": "le montant total qu'il percevra au cours de sa vie"
+        "li1": "son montant mensuel;",
+        "li2": "le montant total qu'il percevra au cours de sa vie."
       },
       "p1": "Lorsque Keith décide quand il commencera à toucher ses pensions publiques, il est important qu'il y réfléchisse\u00a0:",
       "p2": "Avant de prendre sa décision finale, Keith veut encore vérifier une chose. Il veut voir comment sa pension à vie évoluera s'il commence à la recevoir à des âges différents.",

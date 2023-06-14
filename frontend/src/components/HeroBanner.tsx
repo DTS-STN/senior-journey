@@ -1,9 +1,13 @@
 import { FC, PropsWithChildren } from 'react'
 
-import Image, { ImageProps } from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 export interface HeroBannerProps extends PropsWithChildren {
-  imageProps: ImageProps
+  imageProps: {
+    alt?: string
+    className?: string
+    src: StaticImageData
+  }
   className?: string
 }
 
@@ -30,12 +34,11 @@ export const HeroBanner: FC<HeroBannerProps> = ({ children, imageProps, classNam
               width={17}
             />
             <Image
-              {...{
-                ...imageProps,
-                alt: imageProps.alt ?? '',
-                className: `h-full w-full object-cover ${imageProps.className ?? ''}`,
-                priority: imageProps.priority ?? true,
-              }}
+              alt={imageProps.alt ?? ''}
+              className={`object-cover ${imageProps.className ?? ''}`}
+              fill
+              placeholder="blur"
+              src={imageProps.src}
             />
             <Image
               alt=""

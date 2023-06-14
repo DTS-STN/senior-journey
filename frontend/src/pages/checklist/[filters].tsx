@@ -20,6 +20,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 
+import checklistBannerImage from '../../../public/assets/checklist-banner.jpg'
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
 import { TaskGroupAccordion } from '../../components/TaskGroupAccordion'
@@ -147,15 +148,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
         hideHeader="print"
       >
         <div className="hidden md:block">
-          <HeroBanner
-            className="h-[215px] grid-rows-1"
-            imageProps={{
-              alt: '',
-              height: 427,
-              src: '/assets/checklist-banner.jpg',
-              width: 640,
-            }}
-          >
+          <HeroBanner className="h-[215px] grid-rows-1" imageProps={{ src: checklistBannerImage }}>
             <h1 className="font-display text-4xl font-bold text-primary-700 md:text-6xl">{t('header')}</h1>
           </HeroBanner>
         </div>
@@ -163,7 +156,13 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
         <div className="grid gap-6 print:block md:pt-8 lg:grid-cols-12">
           <section className="print:hidden lg:col-span-4 lg:block xl:col-span-3">
             <div className="mb-4 hidden lg:block">
-              <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
+              <Button
+                variant="text"
+                startIcon={<Cached />}
+                size="large"
+                onClick={handleOnRestartQuizClick}
+                className="font-bold"
+              >
                 {t('restart-quiz')}
               </Button>
             </div>
@@ -256,7 +255,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </details>
             </div>
             <div className="hidden lg:block">
-              <Button onClick={handlePrint} variant="outlined" startIcon={<Print />}>
+              <Button onClick={handlePrint} variant="outlined" startIcon={<Print />} className="font-bold">
                 {t('print')}
               </Button>
             </div>
@@ -299,7 +298,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                 tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
               />
               <div className="mt-4 lg:hidden">
-                <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick}>
+                <Button variant="text" startIcon={<Cached />} size="large" onClick={handleOnRestartQuizClick} className="font-bold">
                   {t('restart-quiz')}
                 </Button>
               </div>
