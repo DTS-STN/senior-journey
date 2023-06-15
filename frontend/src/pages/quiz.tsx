@@ -52,7 +52,7 @@ const Quiz: FC = () => {
           {t('landing.whatyouneed')}
         </h2>
         <p>{t('landing.p3')}</p>
-        <ul className="list-disc space-y-1 pl-10">
+        <ul className="list-disc list-inside space-y-1 pl-1">
           <li>
             <Trans ns="quiz" i18nKey="landing.legal" />
           </li>
