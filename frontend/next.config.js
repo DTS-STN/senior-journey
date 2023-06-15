@@ -1,7 +1,5 @@
 // @ts-check
 
-require('./open-telemetry.config')
-
 const { i18n } = require('./next-i18next.config')
 const { statSync } = require('fs')
 
@@ -25,6 +23,9 @@ const nextConfig = {
     NEXT_PUBLIC_BUILD_TIMESTAMP: new Date(process.env.BUILD_DATE ?? statSync('package.json').mtime).toISOString(),
     NEXT_PUBLIC_BUILD_VERSION: process.env.BUILD_VERSION ?? '00000000-0000-00000000',
     LOGGING_LEVEL: process.env.LOGGING_LEVEL ?? 'info',
+  },
+  experimental: {
+    instrumentationHook: true
   },
   generateBuildId: async () => (process.env.BUILD_ID ?? '0000'),
   headers: async () => ([{ source: '/:path*', headers: securityHeaders }]),
