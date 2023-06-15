@@ -52,7 +52,7 @@ function getAdobeAnalyticsDomains() {
  */
 function generateCsp(nonce: string): string {
   const contentSecurityPolicy = {
-    'default-src': ["'none'"],
+    'default-src': ["'self'"],
     'base-uri': ["'self'"],
     'connect-src': ["'self'"],
     'img-src': ["'self'"],
