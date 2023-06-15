@@ -55,7 +55,7 @@ export interface QuizConfirmationProps {
 
 export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, onClose, sureText, yesText, aaTitle }) => {
   return (
-    <div className='min-h-[850px] flex flex-col mx-6 my-8'>
+    <div className='min-h-[600px] flex flex-col mx-6 my-8'>
       <DialogContent>
         <div className="mb-10 text-center mt-16">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
