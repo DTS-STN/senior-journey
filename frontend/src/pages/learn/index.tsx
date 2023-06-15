@@ -37,7 +37,14 @@ const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageSrc, minRead
     <Card id={`${uniqueId}-card-${id}`} className="h-full">
       <CardActionArea component={Link} href={href} className="h-full" aria-describedby={`${uniqueId}-card-${id}-title`}>
         <div className="relative h-64 ">
-          <Image fill alt="" src={imageSrc} className="object-cover" placeholder="blur" />
+          <Image
+            alt=""
+            className="object-cover"
+            fill
+            placeholder="blur"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src={imageSrc}
+          />
           <Image src="/assets/bottom-top.svg" width={34} height={360} className="absolute bottom-0 w-full" alt="" />
         </div>
         <CardContent className="mt-4 p-8">

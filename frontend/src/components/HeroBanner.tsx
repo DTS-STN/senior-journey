@@ -38,6 +38,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({ children, imageProps, classNam
               className={`object-cover ${imageProps.className ?? ''}`}
               fill
               placeholder="blur"
+              sizes="(max-width: 768px) 100vw, 33vw"
               src={imageProps.src}
             />
             <Image
