@@ -189,12 +189,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('old-age-security.oas-delay.accessibility.caption'),
-            header: t<string, Array<string>>('old-age-security.oas-delay.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('old-age-security.oas-delay.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('old-age-security.oas-delay.accessibility.header', { returnObjects: true }),
+            rows: t('old-age-security.oas-delay.accessibility.rows', { returnObjects: true }),
           }}
           description={t('old-age-security.oas-delay.description')}
           buttonLabel={t('old-age-security.oas-delay.accessibility.button-label')}
@@ -214,12 +210,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('old-age-security.auto-increase.accessibility.caption'),
-            header: t<string, Array<string>>('old-age-security.auto-increase.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('old-age-security.auto-increase.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('old-age-security.auto-increase.accessibility.header', { returnObjects: true }),
+            rows: t('old-age-security.auto-increase.accessibility.rows', { returnObjects: true }),
           }}
           description={t('old-age-security.auto-increase.description')}
           buttonLabel={t('old-age-security.auto-increase.accessibility.button-label')}
@@ -263,12 +255,8 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('cpp-pension.accessibility.caption'),
-            header: t<string, Array<string>>('cpp-pension.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('cpp-pension.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('cpp-pension.accessibility.header', { returnObjects: true }),
+            rows: t('cpp-pension.accessibility.rows', { returnObjects: true }),
           }}
           description={t('cpp-pension.description')}
           buttonLabel={t('cpp-pension.accessibility.button-label')}
