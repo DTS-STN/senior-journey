@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useRef, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
@@ -49,18 +49,27 @@ export interface QuizConfirmationProps {
   onCancel: () => void
   onClose: () => void
   sureText: string
-  yesText: string,
+  yesText: string
   aaTitle: string
 }
 
-export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, onClose, sureText, yesText, aaTitle }) => {
+export const QuizConfirmation: FC<QuizConfirmationProps> = ({
+  noText,
+  onCancel,
+  onClose,
+  sureText,
+  yesText,
+  aaTitle,
+}) => {
   return (
     <div className='min-h-[600px] flex flex-col mx-6 my-8'>
       <DialogContent>
-        <div className="mb-10 text-center mt-16">
+        <div className="mb-10 mt-16 text-center">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
         </div>
-        <p id="quiz-modal-close-confirmation" className='text-center'>{sureText}</p>
+        <p id="quiz-modal-close-confirmation" className="text-center">
+          {sureText}
+        </p>
       </DialogContent>
       <DialogActions className="block p-0">
         <div className="sm:flex sm:flex-row-reverse sm:gap-2">
@@ -69,12 +78,19 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({ noText, onCancel, 
             onClick={onClose}
             size="large"
             fullWidth
-            className="mb-2 sm:mb-0 font-bold"
+            className="mb-2 font-bold sm:mb-0"
             data-gc-analytics-customclick={`ESDC-EDSC:${aaTitle}:${yesText}`}
           >
             {yesText}
           </Button>
-          <Button data-cy="no-button" onClick={onCancel} variant="outlined" size="large" fullWidth className='font-bold border-gray-light'>
+          <Button
+            data-cy="no-button"
+            onClick={onCancel}
+            variant="outlined"
+            size="large"
+            fullWidth
+            className="border-gray-light font-bold"
+          >
             {noText}
           </Button>
         </div>
@@ -94,7 +110,8 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
   const [showConfirmation, setShowConfirmation] = useState(false)
   const { mutate: setQuizData } = useSetQuizData()
-
+  const closeBtn = useRef<HTMLButtonElement | null>(null)
+  
   const formikWizard = useFormikWizard({
     initialValues: defaultFormValues,
     onSubmit: async (values) => {
@@ -158,8 +175,8 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
         />
       ) : (
         <>
-          <div className="flex min-h-[850px] flex-col mx-6 my-8" data-cy="navigation-container">
-            <DialogTitle className="text-right px-0 pt-0" id="quiz-modal-header">
+          <div className="mx-6 my-8 flex min-h-[850px] flex-col" data-cy="navigation-container">
+            <DialogTitle className="px-0 pt-0 text-right" id="quiz-modal-header">
               <Button
                 disabled={formikWizard.isSubmitting}
                 data-cy="close-button"
@@ -167,7 +184,8 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 onClick={handleOnClose}
                 startIcon={<CloseIcon />}
                 size="large"
-                className='font-bold'
+                className="font-bold"
+                ref={closeBtn}
               >
                 {t('navigation.close')}
               </Button>
@@ -190,7 +208,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 </p>
               </div>
             </DialogContent>
-            <DialogActions className="block mt-6 p-0">
+            <DialogActions className="mt-6 block p-0">
               <div className="grid gap-2 sm:grid-cols-2">
                 {formikWizard.isLastStep ? (
                   <LoadingButton
@@ -212,11 +230,12 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                   </LoadingButton>
                 ) : (
                   <Button
-                    className="sm:order-last font-bold"
+                    className="font-bold sm:order-last"
                     data-cy="next-button"
                     disabled={formikWizard.isNextDisabled}
                     fullWidth
                     onClick={() => {
+                      closeBtn?.current?.focus()
                       formikWizard.handleNext()
                     }}
                     size="large"
@@ -232,13 +251,14 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 ) : (
                   <Button
                     onClick={() => {
+                      closeBtn?.current?.focus()
                       formikWizard.handlePrev()
                     }}
                     disabled={formikWizard.isSubmitting}
                     data-cy="previous-button"
                     size="large"
                     fullWidth
-                    className='font-bold'
+                    className="font-bold"
                     variant="text"
                   >
                     {t('navigation.previous')}
