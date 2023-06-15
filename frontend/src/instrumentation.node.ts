@@ -32,21 +32,21 @@
  *   <li>https://nextjs.org/docs/api-reference/edge-runtime</li>
  * </ul>
  */
+import { ExportResultCode } from '@opentelemetry/core'
+import { OTLPMetricExporter } from '@opentelemetry/exporter-metrics-otlp-proto'
+import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-proto'
+import { CompressionAlgorithm } from '@opentelemetry/otlp-exporter-base'
+import { Resource, envDetector, hostDetector, osDetector, processDetector } from '@opentelemetry/resources'
+import { AggregationTemporality, PeriodicExportingMetricReader, PushMetricExporter } from '@opentelemetry/sdk-metrics'
+import { NodeSDK } from '@opentelemetry/sdk-node'
+import { SpanExporter } from '@opentelemetry/sdk-trace-base'
+import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions'
 
-const log = require('next/dist/build/output/log')
+import { getLogger } from './logging/log-util'
 
-const { ExportResultCode } = require('@opentelemetry/core')
-const { OTLPMetricExporter } = require('@opentelemetry/exporter-metrics-otlp-proto')
-const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-proto')
-const { CompressionAlgorithm } = require('@opentelemetry/otlp-exporter-base')
-const { envDetector, hostDetector, osDetector, processDetector, Resource } = require('@opentelemetry/resources')
-const { AggregationTemporality, MeterProvider, PeriodicExportingMetricReader, PushMetricExporter } = require('@opentelemetry/sdk-metrics')
-const { SpanExporter } = require('@opentelemetry/sdk-trace-base')
-const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions')
-const { NodeSDK } = require('@opentelemetry/sdk-node')
+const logger = getLogger('instrumentation.node')
 
-/** @returns {PushMetricExporter} */
-function getMetricExporter() {
+const getMetricExporter = (): PushMetricExporter => {
   const exportMetrics = process.env.OTEL_METRICS_ENDPOINT
 
   if (exportMetrics) {
@@ -54,38 +54,35 @@ function getMetricExporter() {
       throw new Error('OTEL_API_KEY must be configured when OTEL_METRICS_ENDPOINT is set')
     }
 
-    log.info(`Exporting metrics to ${process.env.OTEL_METRICS_ENDPOINT} every ${getMetricExportInterval()} ms`)
+    logger.info(`Exporting metrics to ${process.env.OTEL_METRICS_ENDPOINT} every ${getMetricExportInterval()} ms`)
 
     return new OTLPMetricExporter({
       compression: CompressionAlgorithm.GZIP,
-      headers: { 'Authorization': `Api-Token ${process.env.OTEL_API_KEY}` },
+      headers: { Authorization: `Api-Token ${process.env.OTEL_API_KEY}` },
       temporalityPreference: AggregationTemporality.DELTA,
-      url: process.env.OTEL_METRICS_ENDPOINT
+      url: process.env.OTEL_METRICS_ENDPOINT,
     })
   }
 
-  log.info('Metrics exporting is disabled; set OTEL_METRICS_ENDPOINT to enable.')
+  logger.info('Metrics exporting is disabled; set OTEL_METRICS_ENDPOINT to enable.')
 
   return {
     // a no-op PushMetricExporter implementation
     export: (metrics, resultCallback) => resultCallback({ code: ExportResultCode.SUCCESS }),
     forceFlush: async () => {},
-    shutdown: async () => {}
+    shutdown: async () => {},
   }
 }
 
-/** @returns {number} */
-function getMetricExportInterval() {
+const getMetricExportInterval = () => {
   return parseInt(process.env.OTEL_METRICS_EXPORT_INTERVAL_MILLIS ?? '60000')
 }
 
-/** @returns {number} */
-function getMetricTimeout() {
+const getMetricTimeout = () => {
   return parseInt(process.env.OTEL_METRICS_EXPORT_TIMEOUT_MILLIS ?? '30000')
 }
 
-/** @returns {SpanExporter} */
-function getTraceExporter() {
+const getTraceExporter = (): SpanExporter => {
   const exportTraces = process.env.OTEL_TRACES_ENDPOINT
 
   if (exportTraces) {
@@ -93,31 +90,31 @@ function getTraceExporter() {
       throw new Error('OTEL_API_KEY must be configured when OTEL_TRACES_ENDPOINT is set')
     }
 
-    log.info(`Exporting traces to ${process.env.OTEL_TRACES_ENDPOINT} every 30000 ms`)
+    logger.info(`Exporting traces to ${process.env.OTEL_TRACES_ENDPOINT} every 30000 ms`)
 
     return new OTLPTraceExporter({
       compression: CompressionAlgorithm.GZIP,
-      headers: { 'Authorization': `Api-Token ${process.env.OTEL_API_KEY}` },
+      headers: { Authorization: `Api-Token ${process.env.OTEL_API_KEY}` },
       url: process.env.OTEL_TRACES_ENDPOINT,
     })
   }
 
-  log.info('Traces exporting is disabled; set OTEL_TRACES_ENDPOINT to enable.')
+  logger.info('Traces exporting is disabled; set OTEL_TRACES_ENDPOINT to enable.')
 
   return {
     // a no-op SpanExporter implementation
     export: (spans, resultCallback) => resultCallback({ code: ExportResultCode.SUCCESS }),
-    shutdown: async () => {}
+    shutdown: async () => {},
   }
 }
 
-log.info(`Initializing OpenTelemetry SDK...`)
+logger.info(`Initializing OpenTelemetry SDK...`)
 
-new NodeSDK({
+const sdk = new NodeSDK({
   metricReader: new PeriodicExportingMetricReader({
     exporter: getMetricExporter(),
     exportIntervalMillis: getMetricExportInterval(),
-    exportTimeoutMillis: getMetricTimeout()
+    exportTimeoutMillis: getMetricTimeout(),
   }),
   resource: new Resource({
     // Note: any attributes added here must be configured in Dynatrace under
@@ -127,8 +124,9 @@ new NodeSDK({
     // see: node_modules/@opentelemetry/semantic-conventions/build/src/trace/SemanticResourceAttributes.js
     [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: process.env.OTEL_ENVIRONMENT ?? 'local',
     [SemanticResourceAttributes.SERVICE_NAME]: process.env.OTEL_SERVICE_NAME ?? 'seniors-journey',
-    [SemanticResourceAttributes.SERVICE_VERSION]: process.env.BUILD_VERSION ?? '00000000-0000-00000000'
+    [SemanticResourceAttributes.SERVICE_VERSION]: process.env.BUILD_VERSION ?? '00000000-0000-00000000',
   }),
   resourceDetectors: [envDetector, hostDetector, osDetector, processDetector],
   traceExporter: getTraceExporter(),
-}).start()
+})
+sdk.start()
