@@ -5,7 +5,6 @@ import Print from '@mui/icons-material/Print'
 import {
   Button,
   Checkbox,
-  Collapse,
   FormControlLabel,
   FormGroup,
   IconButton,
@@ -168,23 +167,23 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </Button>
             </div>
             <div className="mb-4">
-              <div className="mb-2 flex items-center justify-between border-b pb-3">
-                <Button
-                  variant="text"
-                  color="primary"
-                  className="font-display text-xl"
-                  onClick={() => setImportantExpanded(!importantExpanded)}
-                  aria-expanded={importantExpanded}
-                  aria-label={t('important-terms.show')}
-                  endIcon={importantExpanded ? <ExpandLess /> : <ExpandMore />}
-                  sx={{ justifyContent: 'space-between' }}
-                  fullWidth
-                  size="large"
-                >
-                  {t('important-terms.header')}
-                </Button>
-              </div>
-              <Collapse in={importantExpanded}>
+              <details open={importantExpanded}>
+                <summary tabIndex={-1} className="mb-2 flex items-center justify-between border-b pb-3">
+                  <Button
+                    variant="text"
+                    color="primary"
+                    className="font-display text-xl"
+                    onClick={() => setImportantExpanded(!importantExpanded)}
+                    aria-expanded={importantExpanded}
+                    aria-label={t('important-terms.show')}
+                    endIcon={importantExpanded ? <ExpandLess /> : <ExpandMore />}
+                    sx={{ justifyContent: 'space-between' }}
+                    fullWidth
+                    size="large"
+                  >
+                    {t('important-terms.header')}
+                  </Button>
+                </summary>
                 <List className="p-0" disablePadding>
                   {[
                     {
@@ -210,40 +209,43 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                     </ListItem>
                   ))}
                 </List>
-              </Collapse>
+              </details>
             </div>
 
             <div className="md:mb-2">
-              <div className="flex items-center justify-between md:mb-2 md:border-b md:pb-3">
-                <div className="text-2xl md:hidden">{t('header')}</div>
-                {!desktop && (
-                  <IconButton
-                    color="primary"
-                    onClick={() => setExpanded(!expanded)}
-                    aria-expanded={expanded}
-                    aria-label={t('show-filters')}
-                  >
-                    <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f]" />
-                  </IconButton>
-                )}
-                {desktop && (
-                  <Button
-                    variant="text"
-                    color="primary"
-                    className="font-display text-xl"
-                    onClick={() => setExpanded(!expanded)}
-                    aria-expanded={expanded}
-                    aria-label={t('show-filters')}
-                    endIcon={expanded ? <ExpandLess /> : <ExpandMore />}
-                    sx={{ justifyContent: 'space-between' }}
-                    fullWidth
-                    size="large"
-                  >
-                    {t('filter-tasks', { count: filters.tags.length })}
-                  </Button>
-                )}
-              </div>
-              <Collapse in={expanded}>
+              <details open={expanded}>
+                <summary
+                  tabIndex={-1}
+                  className="flex items-center justify-between font-display text-xl md:mb-2 md:border-b md:pb-3"
+                >
+                  <div className="text-2xl md:hidden">{t('header')}</div>
+                  {!desktop && (
+                    <IconButton
+                      color="primary"
+                      onClick={() => setExpanded(!expanded)}
+                      aria-expanded={expanded}
+                      aria-label={t('show-filters')}
+                    >
+                      <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f]" />
+                    </IconButton>
+                  )}
+                  {desktop && (
+                    <Button
+                      variant="text"
+                      color="primary"
+                      className="font-display text-xl"
+                      onClick={() => setExpanded(!expanded)}
+                      aria-expanded={expanded}
+                      aria-label={t('show-filters')}
+                      endIcon={expanded ? <ExpandLess /> : <ExpandMore />}
+                      sx={{ justifyContent: 'space-between' }}
+                      fullWidth
+                      size="large"
+                    >
+                      {t('filter-tasks', { count: filters.tags.length })}
+                    </Button>
+                  )}
+                </summary>
                 <FormGroup onChange={handleChange} data-cy="form-group-filter-tasks">
                   {tagsFilter.map(({ code, title }) => (
                     <FormControlLabel
@@ -253,7 +255,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                     />
                   ))}
                 </FormGroup>
-              </Collapse>
+              </details>
             </div>
             <div className="hidden lg:block">
               <Button onClick={handlePrint} variant="outlined" startIcon={<Print />} className="font-bold">
@@ -261,7 +263,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               </Button>
             </div>
           </section>
-          <section id="content" className="print-href grid gap-4 lg:col-span-8 xl:col-span-9">
+          <section id="content" className="print-href flex flex-col gap-4 lg:col-span-8 xl:col-span-9">
             <TaskGroupAccordion
               expanded={expandedGroups.includes(beforeRetiring.id)}
               expandedTasks={expandedTasks}
