@@ -113,9 +113,10 @@ describe('getOpenGraphImages', () => {
     expect(act).not.toBeUndefined()
     expect(act).toStrictEqual([
       {
-        url: 'https://example.com/ogp.jpg',
-        width: 2048,
-        height: 1152,
+        url: 'https://example.com/assets/ogp.jpg',
+        type: 'image/jpeg',
+        width: 1200,
+        height: 630,
       },
     ] as ReadonlyArray<OpenGraphMedia>)
   })

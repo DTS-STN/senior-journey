@@ -31,9 +31,10 @@ export const getOpenGraphImages = (appBaseUri: string): ReadonlyArray<OpenGraphM
   if (!appBaseUri) return
   return [
     {
-      url: urlcat(appBaseUri, '/ogp.jpg'),
-      width: 2048,
-      height: 1152,
+      url: urlcat(appBaseUri, '/assets/ogp.jpg'),
+      width: 1200,
+      height: 630,
+      type: 'image/jpeg',
     },
   ]
 }
