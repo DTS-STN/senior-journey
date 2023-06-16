@@ -142,12 +142,8 @@ const Bonnie: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('stopping-earnings.accessibility.caption'),
-            header: t<string, Array<string>>('stopping-earnings.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('stopping-earnings.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('stopping-earnings.accessibility.header', { returnObjects: true }),
+            rows: t('stopping-earnings.accessibility.rows', { returnObjects: true }),
           }}
           description={t('stopping-earnings.description')}
           buttonLabel={t('stopping-earnings.accessibility.button-label')}
@@ -181,12 +177,8 @@ const Bonnie: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('adding-oas.accessibility.caption'),
-            header: t<string, Array<string>>('adding-oas.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('adding-oas.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('adding-oas.accessibility.header', { returnObjects: true }),
+            rows: t('adding-oas.accessibility.rows', { returnObjects: true }),
           }}
           description={t('adding-oas.description')}
           buttonLabel={t('adding-oas.accessibility.button-label')}
@@ -208,12 +200,8 @@ const Bonnie: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('cpp.accessibility.caption'),
-            header: t<string, Array<string>>('cpp.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('cpp.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('cpp.accessibility.header', { returnObjects: true }),
+            rows: t('cpp.accessibility.rows', { returnObjects: true }),
           }}
           description={t('cpp.description')}
           buttonLabel={t('cpp.accessibility.button-label')}
@@ -241,12 +229,8 @@ const Bonnie: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('own-savings.accessibility.caption'),
-            header: t<string, Array<string>>('own-savings.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('own-savings.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('own-savings.accessibility.header', { returnObjects: true }),
+            rows: t('own-savings.accessibility.rows', { returnObjects: true }),
           }}
           description={<Trans ns="learn/case-studies/bonnie" i18nKey="own-savings.description" />}
           buttonLabel={t('own-savings.accessibility.button-label')}
@@ -272,12 +256,8 @@ const Bonnie: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('early-pension.accessibility.caption'),
-            header: t<string, Array<string>>('early-pension.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('early-pension.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('early-pension.accessibility.header', { returnObjects: true }),
+            rows: t('early-pension.accessibility.rows', { returnObjects: true }),
           }}
           description={<Trans ns="learn/case-studies/bonnie" i18nKey="early-pension.description" />}
           buttonLabel={t('early-pension.accessibility.button-label')}

@@ -179,12 +179,8 @@ const Fred: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('cpp.monthly-pension.accessibility.caption'),
-            header: t<string, Array<string>>('cpp.monthly-pension.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('cpp.monthly-pension.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('cpp.monthly-pension.accessibility.header', { returnObjects: true }),
+            rows: t('cpp.monthly-pension.accessibility.rows', { returnObjects: true }),
           }}
           description={t('cpp.monthly-pension.description')}
           buttonLabel={t('cpp.monthly-pension.accessibility.button-label')}
@@ -207,12 +203,8 @@ const Fred: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('cpp.lifetime-pension.accessibility.caption'),
-            header: t<string, Array<string>>('cpp.lifetime-pension.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('cpp.lifetime-pension.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('cpp.lifetime-pension.accessibility.header', { returnObjects: true }),
+            rows: t('cpp.lifetime-pension.accessibility.rows', { returnObjects: true }),
           }}
           description={t('cpp.lifetime-pension.description')}
           buttonLabel={t('cpp.lifetime-pension.accessibility.button-label')}
@@ -237,12 +229,8 @@ const Fred: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('oas.monthly-pension.accessibility.caption'),
-            header: t<string, Array<string>>('oas.monthly-pension.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('oas.monthly-pension.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('oas.monthly-pension.accessibility.header', { returnObjects: true }),
+            rows: t('oas.monthly-pension.accessibility.rows', { returnObjects: true }),
           }}
           description={t('oas.monthly-pension.description')}
           buttonLabel={t('oas.monthly-pension.accessibility.button-label')}
@@ -261,12 +249,8 @@ const Fred: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('oas.lifetime-pension.accessibility.caption'),
-            header: t<string, Array<string>>('oas.lifetime-pension.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('oas.lifetime-pension.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('oas.lifetime-pension.accessibility.header', { returnObjects: true }),
+            rows: t('oas.lifetime-pension.accessibility.rows', { returnObjects: true }),
           }}
           description={t('oas.lifetime-pension.description')}
           buttonLabel={t('oas.lifetime-pension.accessibility.button-label')}

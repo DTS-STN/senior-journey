@@ -348,18 +348,12 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.caption'),
-            header: t<string, Array<string>>(
-              'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.header',
-              {
-                returnObjects: true,
-              }
-            ),
-            rows: t<string, Array<{ data: Array<string> }>>(
-              'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.rows',
-              {
-                returnObjects: true,
-              }
-            ),
+            header: t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.header', {
+              returnObjects: true,
+            }),
+            rows: t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.rows', {
+              returnObjects: true,
+            }),
           }}
           description={t(
             'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content'

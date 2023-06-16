@@ -177,12 +177,8 @@ const Keith: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('cpp.cpp-choices.accessibility.caption'),
-            header: t<string, Array<string>>('cpp.cpp-choices.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('cpp.cpp-choices.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('cpp.cpp-choices.accessibility.header', { returnObjects: true }),
+            rows: t('cpp.cpp-choices.accessibility.rows', { returnObjects: true }),
           }}
           description={t('cpp.cpp-choices.description')}
           buttonLabel={t('cpp.cpp-choices.accessibility.button-label')}
@@ -244,12 +240,8 @@ const Keith: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('cpp.keith-pension-87.accessibility.caption'),
-            header: t<string, Array<string>>('cpp.keith-pension-87.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('cpp.keith-pension-87.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('cpp.keith-pension-87.accessibility.header', { returnObjects: true }),
+            rows: t('cpp.keith-pension-87.accessibility.rows', { returnObjects: true }),
           }}
           description={t('cpp.keith-pension-87.description')}
           buttonLabel={t('cpp.keith-pension-87.accessibility.button-label')}
@@ -282,12 +274,8 @@ const Keith: FC = () => {
         <AccessibilityGraphContainer
           tableData={{
             caption: t('cpp.keith-pension-90.accessibility.caption'),
-            header: t<string, Array<string>>('cpp.keith-pension-90.accessibility.header', {
-              returnObjects: true,
-            }),
-            rows: t<string, Array<{ data: Array<string> }>>('cpp.keith-pension-90.accessibility.rows', {
-              returnObjects: true,
-            }),
+            header: t('cpp.keith-pension-90.accessibility.header', { returnObjects: true }),
+            rows: t('cpp.keith-pension-90.accessibility.rows', { returnObjects: true }),
           }}
           description={t('cpp.keith-pension-90.description')}
           buttonLabel={t('cpp.keith-pension-90.accessibility.button-label')}
