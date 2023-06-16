@@ -175,8 +175,8 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
         />
       ) : (
         <>
-          <div className="mx-6 my-8 flex min-h-[850px] flex-col" data-cy="navigation-container">
-            <DialogTitle className="px-0 pt-0 text-right" id="quiz-modal-header">
+          <div className="mx-0 my-8 flex min-h-[850px] flex-col" data-cy="navigation-container">
+            <DialogTitle className="px-6 pt-0 text-right" id="quiz-modal-header">
               <Button
                 disabled={formikWizard.isSubmitting}
                 data-cy="close-button"
@@ -190,7 +190,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 {t('navigation.close')}
               </Button>
             </DialogTitle>
-            <DialogContent className="flex flex-col p-0">
+            <DialogContent className="flex flex-col py-0 px-6">
               <h2 className="mb-8 font-display text-2xl font-medium md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                 {t('navigation.title')}
               </h2>
@@ -208,7 +208,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 </p>
               </div>
             </DialogContent>
-            <DialogActions className="mt-6 block p-0">
+            <DialogActions className="mt-6 block py-0 px-6">
               <div className="grid gap-2 sm:grid-cols-2">
                 {formikWizard.isLastStep ? (
                   <LoadingButton
