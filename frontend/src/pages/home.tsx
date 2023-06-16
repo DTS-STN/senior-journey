@@ -39,20 +39,22 @@ export interface SupportingSeniorsCardProps {
   text: string
 }
 
+type TabValue = 'learn' | 'plan' | 'apply' | 'manage'
+
 const Home: FC = () => {
   const { locale } = useRouter()
-  const { t } = useTranslation('home')
+  const { t } = useTranslation(['home', 'common'])
 
   const publicRuntimeConfig = usePublicRuntimeConfig()
 
   const theme = useTheme()
   const extraSmall = useMediaQuery(theme.breakpoints.down('sm'))
 
-  const [value, setValue] = useState('learn')
+  const [tabValue, setTabValue] = useState<TabValue>('learn')
   const [open, setOpen] = useState(false)
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue)
+  const handleChange = (event: React.SyntheticEvent, newValue: TabValue) => {
+    setTabValue(newValue)
   }
 
   const schemaOrgWebSite = useMemo(
@@ -90,7 +92,7 @@ const Home: FC = () => {
         </Container>
 
         <section>
-          <TabContext value={value}>
+          <TabContext value={tabValue}>
             <Paper elevation={4} square className="relative">
               {!extraSmall && (
                 <TabList onChange={handleChange} scrollButtons="auto" centered>
@@ -105,7 +107,7 @@ const Home: FC = () => {
                   <div className="grid grid-cols-2 gap-1">
                     <div className="border-b-2 border-primary-700 p-2">
                       <Button variant="text" className="grow text-lg font-bold" fullWidth>
-                        {t(`tabs.${value}.title`)}
+                        {t(`tabs.${tabValue}.title`)}
                       </Button>
                     </div>
                     <Button

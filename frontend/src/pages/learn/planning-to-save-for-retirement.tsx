@@ -13,7 +13,7 @@ import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const PlanningToSaveForRetirement: FC = () => {
-  const { t } = useTranslation('learn/planning-to-save-for-retirement')
+  const { t } = useTranslation(['learn/planning-to-save-for-retirement', 'common'])
 
   const learnMoreLinks = useMemo(
     () => [
