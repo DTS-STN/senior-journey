@@ -142,16 +142,16 @@ const Keith: FC = () => {
           {t('cpp.prb-choices.heading')}
         </h2>
         <p>
-          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li1`)} />
+          <Trans ns="learn/case-studies/keith" i18nKey="cpp.prb-choices.list.li1" />
         </p>
         <p>
-          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li2`)} />
+          <Trans ns="learn/case-studies/keith" i18nKey="cpp.prb-choices.list.li2" />
         </p>
         <p>
-          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li3`)} />
+          <Trans ns="learn/case-studies/keith" i18nKey="cpp.prb-choices.list.li3" />
         </p>
         <p>
-          <Trans ns="learn/case-studies/fred" i18nKey={t(`cpp.prb-choices.list.li4`)} />
+          <Trans ns="learn/case-studies/keith" i18nKey="cpp.prb-choices.list.li4" />
         </p>
 
         <h2 id="cpp-choices" className="h2">
