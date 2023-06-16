@@ -87,10 +87,10 @@
         ]
       },
       "choices": {
-        "li1": "Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.",
-        "li2": "Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.",
-        "li3": "Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.",
-        "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
+        "li1": "Choix 1\u00a0: Recevoir le RPC à 60 ans, cotiser jusqu'à 70.",
+        "li2": "Choix 2\u00a0: Recevoir le RPC à 60 ans, cotiser jusqu'à 65.",
+        "li3": "Choix 3\u00a0: Recevoir le RPC à 65 ans, cotiser jusqu'à 70.",
+        "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, recevoir le RPC à 70."
       },
       "description": "Ce tableau montre le montant de la pension de retraite à vie du RPC pour quatre choix auxquels Keith réfléchit. Il montre que si Keith vit jusqu'à l'âge de 90 ans, le fait de commencer à recevoir sa pension de retraite du RPC à 65 ans et de travailler jusqu'à 70 ans lui procurerait le revenu de retraite le plus élevé.",
       "heading": "Quelle sera la pension de Keith à l'âge de 87 ans?",
@@ -120,10 +120,10 @@
         ]
       },
       "choices": {
-        "li1": "Choix 1\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 70.",
-        "li2": "Choix 2\u00a0: Prendre le RPC à 60 ans, cotiser jusqu'à 65.",
-        "li3": "Choix 3\u00a0: Prendre le RPC à 65 ans, cotiser jusqu'à 70.",
-        "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, prendre le RPC à 70."
+        "li1": "Choix 1\u00a0: Recevoir le RPC à 60 ans, cotiser jusqu'à 70.",
+        "li2": "Choix 2\u00a0: Recevoir le RPC à 60 ans, cotiser jusqu'à 65.",
+        "li3": "Choix 3\u00a0: Recevoir le RPC à 65 ans, cotiser jusqu'à 70.",
+        "li4": "Choix 4\u00a0: Cotiser jusqu'à 70 ans, recevoir le RPC à 70."
       },
       "description": "Ce tableau montre le montant de la pension à vie pour quatre choix auxquels Keith réfléchit. Il montre que si Keith vit jusqu'à 90 ans, c'est en commençant à recevoir sa pension du RPC à 65 ans et en travaillant jusqu'à 70 ans qu'il obtiendra le revenu de retraite le plus élevé.",
       "heading": "Quelle sera la pension de Keith à l'âge de 90 ans?",
