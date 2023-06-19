@@ -6,6 +6,7 @@ export interface TableData {
   rows: {
     data: string[]
   }[]
+  autoWidthColumns?: boolean
 }
 
 interface TableProps {
@@ -20,7 +21,11 @@ const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
         <thead className="bg-gray-surface font-display text-xl">
           <tr className="divide-x">
             {tableData.header.map((headerItem, index) => (
-              <th scope="col" key={`${index}-${headerItem}`} className="w-[150px] px-3 py-2.5">
+              <th
+                scope="col"
+                key={`${index}-${headerItem}`}
+                className={`${tableData.autoWidthColumns ? 'w-full' : 'w-[150px]'} px-3 py-2.5`}
+              >
                 {headerItem}
               </th>
             ))}

@@ -354,6 +354,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
             rows: t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.rows', {
               returnObjects: true,
             }),
+            autoWidthColumns: true,
           }}
           description={t(
             'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content'

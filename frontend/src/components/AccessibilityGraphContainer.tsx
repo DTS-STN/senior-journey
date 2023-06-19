@@ -10,6 +10,7 @@ export interface AccessibilityGraphContainerProps {
   descriptionHeading: string
   valuesHeading: string
   buttonLabel: string
+  autoWidthColumns?: boolean
 }
 
 const AccessibilityGraphContainer: FC<AccessibilityGraphContainerProps> = ({
