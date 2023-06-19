@@ -83,7 +83,6 @@ const LearnSection: FC<LearnSectionProps> = ({ cards, desciption, id, title }) =
 
 const Learn: FC = () => {
   const { t } = useTranslation('learn')
-  const { locale } = useRouter()
 
   const sections: ReadonlyArray<LearnSectionProps> = [
     {
