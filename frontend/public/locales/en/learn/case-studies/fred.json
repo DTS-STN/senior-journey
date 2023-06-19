@@ -149,7 +149,7 @@
           }
         ]
       },
-      "description": "The chart shows changes in Fred's OAS pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount.",
+      "description": "The chart shows changes in Fred's lifetime OAS pension payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll collect every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount. If OAS pension is delayed from age 65 to 68, the difference is around $150 per month.",
       "p": "If OAS pension is delayed from age 65 to 68, the difference is around $150 per month."
     },
     "p1": "Fred looks at the amount of his lifetime OAS pensions. He decides it's better to start his OAS pension at age 68 to collect the most money.",

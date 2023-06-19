@@ -11,7 +11,7 @@
     "heading": "Pension de retraite du RPC de Fred",
     "lifetime-pension": {
       "accessibility": {
-        "button-label": "Texte de remplacement pour Pension de retraite mensuelle du RPC de Fred",
+        "button-label": "Texte alternatif pour Pension de retraite à vie du RPC de Fred, à 86 ans",
         "caption": "Valeurs présentées sur l'image\u00a0:",
         "header": ["Âge auquel Fred commence à toucher sa pension", "Pension de retraite mensuelle"],
         "rows": [
@@ -26,7 +26,7 @@
           }
         ]
       },
-      "description": "Le tableau montre l'évolution des versements mensuels de la pension de retraite du RPC de Fred en fonction de l'âge auquel il commence à toucher sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent chaque mois. Il peut commencer à recevoir sa pension de retraite du RPC à 60 ans pour obtenir le montant le plus bas, ou à 70 ans pour obtenir le montant le plus élevé. La pension mensuelle de Fred pourrait augmenter de moitié si elle était versée à l'âge de 65 ans. Elle fera plus que doubler à 70 ans par rapport à la pension versée à 60 ans.",
+      "description": "Le graphique montre l'évolution des prestations de retraite du RPC à vie de Fred, en fonction de l'âge auquel il commence à recevoir sa pension. Il montre que plus il attend pour commencer à recevoir sa pension, plus il recevra d'argent au cours de sa vie. Il peut commencer à recevoir sa pension de retraite du RPC à 60 ans pour obtenir le montant le plus bas, ou à 70 ans pour obtenir le montant le plus élevé. À l'âge de 86 ans, Fred pourrait recevoir 95\u00a0000\u00a0$ de plus s'il retarde le début de sa pension de 60 à 70 ans. À 89 ans, cette différence sera de 130\u00a0000\u00a0$.",
       "p": "À l'âge de 86 ans, Fred pourrait recevoir 95\u00a0000\u00a0$ de plus s'il reporte son départ de 60 à 70 ans. À l'âge de 89 ans, cette différence sera de\u00a0130 000\u00a0$."
     },
     "monthly-pension": {
