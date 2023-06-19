@@ -84,7 +84,7 @@ const Home: FC = () => {
       <Layout contained={false}>
         <Container className="mb-8 md:mb-12">
           <HeroBanner imageProps={{ className: 'md:object-right-bottom', src: landingPageImage }}>
-            <h1 className={`mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 ${locale === 'en' ? 'md:text-6xl' : 'md:text-4xl lg:text-6xl'}`}>
+            <h1 className='mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-4xl lg:text-6xl'>
               {t('banner.title')}
             </h1>
             <p className="m-0">{t('banner.text')}</p>

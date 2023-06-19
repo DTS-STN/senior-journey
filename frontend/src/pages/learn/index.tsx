@@ -190,7 +190,7 @@ const Learn: FC = () => {
         ]}
       >
         <HeroBanner imageProps={{ className: 'md:object-right-bottom', src: learnBannerImage }}>
-        <h1 className={`mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 ${locale === 'en' ? 'md:text-6xl' : 'md:text-4xl lg:text-6xl'}`}>
+        <h1 className='mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-4xl lg:text-6xl'>
             {t('banner.title')}
           </h1>
           <p>{t('banner.text')}</p>
