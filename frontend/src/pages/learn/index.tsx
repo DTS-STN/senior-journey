@@ -20,7 +20,6 @@ import rulesOfThumbForPublicPensionsSmImage from '../../../public/assets/rules-o
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
-import { useRouter } from 'next/router'
 
 interface LearnCardProps {
   desciption: string
