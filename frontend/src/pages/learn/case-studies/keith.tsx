@@ -164,15 +164,11 @@ const Keith: FC = () => {
           height={519}
           className="w-full"
         />
-        <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
-          <div>
+        <div className={`grid grid-cols-1 py-4 ${locale == 'en' ? 'md:grid-cols-2 md:grid-rows-2 md:grid-flow-col md:text-center' : 'md:pl-36'} `}>
             <p>{t('cpp.cpp-choices.choices.li1')}</p>
             <p>{t('cpp.cpp-choices.choices.li2')}</p>
-          </div>
-          <div>
             <p>{t('cpp.cpp-choices.choices.li3')}</p>
             <p>{t('cpp.cpp-choices.choices.li4')}</p>
-          </div>
         </div>
         <AccessibilityGraphContainer
           tableData={{
@@ -227,15 +223,11 @@ const Keith: FC = () => {
           height={519}
           className="w-full"
         />
-        <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
-          <div>
+        <div className={`grid grid-cols-1 py-4 ${locale == 'en' ? 'md:grid-cols-2 md:grid-rows-2 md:grid-flow-col' : ''} md:text-center`}>
             <p>{t('cpp.keith-pension-87.choices.li1')}</p>
             <p>{t('cpp.keith-pension-87.choices.li2')}</p>
-          </div>
-          <div>
             <p>{t('cpp.keith-pension-87.choices.li3')}</p>
             <p>{t('cpp.keith-pension-87.choices.li4')}</p>
-          </div>
         </div>
         <AccessibilityGraphContainer
           tableData={{
@@ -261,15 +253,11 @@ const Keith: FC = () => {
           height={519}
           className="w-full"
         />
-        <div className="grid grid-cols-1 py-4 md:grid-cols-2 md:text-center">
-          <div>
+        <div className={`grid grid-cols-1 py-4 ${locale == 'en' ? 'md:grid-cols-2 md:grid-rows-2 md:grid-flow-col' : ''} md:text-center`}>
             <p>{t('cpp.keith-pension-90.choices.li1')}</p>
             <p>{t('cpp.keith-pension-90.choices.li2')}</p>
-          </div>
-          <div>
             <p>{t('cpp.keith-pension-90.choices.li3')}</p>
             <p>{t('cpp.keith-pension-90.choices.li4')}</p>
-          </div>
         </div>
         <AccessibilityGraphContainer
           tableData={{
