@@ -121,13 +121,10 @@ export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => 
                 >
                   <ListItemText
                     primary={text}
-                    primaryTypographyProps={{ variant: 'body1' }}
-                    sx={{
-                      '.MuiTypography-root': {
-                        fontWeight: 700,
-                        color: activeState === hash ? '#004f56' : 'rgba(0,0,0,0.6)',
-                        fontSize: '18px',
-                      },
+                    primaryTypographyProps={{
+                      className: `font-bold font-display text-lg ${
+                        activeState === hash ? 'text-primary-700' : 'text-black/60'
+                      }`,
                     }}
                   />
                 </ListItemButton>
@@ -141,7 +138,7 @@ export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => 
                   history.pushState({}, document.title, ' ')
                 }}
               >
-                <ArrowDropUp color="primary" className='mr-2' />
+                <ArrowDropUp color="primary" className="mr-2" />
                 <ListItemText
                   primary={t('table-of-contents.top')}
                   primaryTypographyProps={{ variant: 'body1' }}
