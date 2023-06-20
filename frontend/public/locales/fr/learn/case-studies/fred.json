@@ -98,7 +98,7 @@
   },
   "monthly-amounts": {
     "a1": "https://www.canada.ca/fr/emploi-developpement-social/services/mon-dossier.html",
-    "a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html",
+    "a2": "https://estimateursv-oasestimator.service.canada.ca/fr",
     "heading": "Fred trouve les montants mensuels de ses pensions publiques",
     "p1": "Fred se rend sur <a1>Mon dossier Service Canada</a1> pour consulter son relevé personnel de cotisations au RPC. Il reçoit sa pension de retraite estimée du RPC à l'âge de 65 ans.",
     "p2": "Pour connaître le montant prévu de sa pension de la SV, il consulte <a2>l'Estimateur de prestations de la Sécurité de la vieillesse</a2>."

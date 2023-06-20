@@ -102,7 +102,7 @@
     "helpful-resources": {
       "estimator": {
         "content": "Estimateur de prestations de la Sécurité de la vieillesse",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
+        "link": "https://estimateursv-oasestimator.service.canada.ca/fr"
       },
       "header": "Ressources utiles",
       "overview": {
@@ -174,8 +174,8 @@
     "helpful-resources": {
       "header": "Ressources utiles",
       "oas-estimator": {
-        "content": "Montants des paiements de la Sécurité de la vieillesse",
-        "link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
+        "content": "Estimateur de prestations de la Sécurité de la vieillesse",
+        "link": "https://estimateursv-oasestimator.service.canada.ca/fr"
       },
       "oas-how-much": {
         "content": "Sécurité de la vieillesse: Le montant que vous pourriez recevoir",
