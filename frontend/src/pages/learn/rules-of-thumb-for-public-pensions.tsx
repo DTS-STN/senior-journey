@@ -61,7 +61,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.heading')}
         </h2>
         <List disablePadding>
@@ -102,7 +102,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
           ))}
         </List>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.heading')}
         </h2>
         <AlertCard type="tip" className="mb-5">
@@ -119,12 +119,12 @@ const RulesOfThumbForPublicPensions: FC = () => {
         <p>{t('overview.p2')}</p>
         <p>{t('overview.p3')}</p>
 
-        <h2 id="cpp" className="h2">
+        <h2 id="cpp" className="h2 h2-gutter">
           {t('cpp.heading')}
         </h2>
         <p>{t('cpp.p1')}</p>
         <p>{t('cpp.p2')}</p>
-        <h3 className="h3">{t('cpp.sub-heading-one')}</h3>
+        <h3 className="h3 h3-gutter">{t('cpp.sub-heading-one')}</h3>
         <ul className="list-disc space-y-1 pl-7">
           <li>
             <Trans
@@ -144,7 +144,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
         <AlertCard type="tip" className="mt-5">
           <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="cpp.smart-tip" />
         </AlertCard>
-        <h3 className="h3">{t('cpp.sub-heading-two')}</h3>
+        <h3 className="h3 h3-gutter">{t('cpp.sub-heading-two')}</h3>
         <ul className="list-disc space-y-1 pl-7">
           <li>{t('cpp.li9')}</li>
           <li>{t('cpp.li10')}</li>
@@ -156,11 +156,11 @@ const RulesOfThumbForPublicPensions: FC = () => {
           <li>{t('cpp.li16')}</li>
         </ul>
 
-        <h2 id="oas" className="h2">
+        <h2 id="oas" className="h2 h2-gutter">
           {t('oas.heading')}
         </h2>
         <p>{t('oas.p1')}</p>
-        <h3 className="h3">{t('oas.sub-heading-one')}</h3>
+        <h3 className="h3 h3-gutter">{t('oas.sub-heading-one')}</h3>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           <li>
             <Trans
@@ -184,7 +184,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
             />
           </p>
         </AlertCard>
-        <h3 className="h3">{t('oas.sub-heading-two')}</h3>
+        <h3 className="h3 h3-gutter">{t('oas.sub-heading-two')}</h3>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           <li>{t('oas.li4')}</li>
           <li>{t('oas.li5')}</li>
@@ -196,7 +196,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
           <Trans ns="learn/rules-of-thumb-for-public-pensions" i18nKey="oas.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">{t('learn-more.header')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

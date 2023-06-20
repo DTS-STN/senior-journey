@@ -61,7 +61,7 @@ const PlanningToSaveForRetirement: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.heading')}
         </h2>
         <List disablePadding>
@@ -86,12 +86,12 @@ const PlanningToSaveForRetirement: FC = () => {
           ))}
         </List>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p')}</p>
 
-        <h2 id="how-much" className="h2">
+        <h2 id="how-much" className="h2 h2-gutter">
           {t('how-much.heading')}
         </h2>
         <p>
@@ -124,7 +124,7 @@ const PlanningToSaveForRetirement: FC = () => {
           />
         </p>
 
-        <h2 id="changes-with-age" className="h2">
+        <h2 id="changes-with-age" className="h2 h2-gutter">
           {t('changes-with-age.heading')}
         </h2>
         <p>{t('changes-with-age.p1')}</p>
@@ -133,7 +133,7 @@ const PlanningToSaveForRetirement: FC = () => {
           <Trans ns="learn/planning-to-save-for-retirement" i18nKey="changes-with-age.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">{t('learn-more.heading')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.heading')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

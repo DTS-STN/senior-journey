@@ -72,7 +72,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.header')}
         </h2>
         <List disablePadding>
@@ -108,7 +108,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           ))}
         </List>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.header')}
         </h2>
         <p>{t('overview.overview')}</p>
@@ -128,46 +128,44 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h3 id="canada-retirement-income-system" className="h3">
+        <h3 id="canada-retirement-income-system" className="h3 h3-gutter">
           {t('overview.canada-retirement-income-system.header')}
         </h3>
-        <h3 className="mb-6 bg-primary-600 p-4 font-display text-2xl font-bold text-white">
+        <h4 className="h4 mb-6 bg-primary-600 p-4 text-white">
           {t('overview.canada-retirement-income-system.three-pillar-system')}
-        </h3>
+        </h4>
         <div className="grid gap-6 md:grid-cols-3">
-          <div className="flex h-full flex-col gap-6 md:col-span-2">
-            <h4 className="bg-secondary-700 p-4 font-display text-xl font-light text-white">
+          <section className="flex h-full flex-col gap-6 md:col-span-2">
+            <h5 className="h5 bg-secondary-700 p-4 text-white">
               {t('overview.canada-retirement-income-system.public')}
-            </h4>
+            </h5>
             <div className="grid h-full gap-6 md:grid-cols-2">
               <div className="h-full bg-secondary-100 p-4">
-                <h5 className="mb-2.5 font-display text-sm font-light tracking-widest">
+                <h6 className="mb-2.5 font-display text-sm font-light tracking-widest">
                   {t('overview.canada-retirement-income-system.oas.pillar')}
-                </h5>
+                </h6>
                 <p className="mb-2.5 font-bold">{t('overview.canada-retirement-income-system.oas.header')}</p>
                 <p className="text-sm">{t('overview.canada-retirement-income-system.oas.content')}</p>
               </div>
               <div className="h-full bg-secondary-100 p-4">
-                <h5 className="mb-2.5 font-display text-sm font-light tracking-widest">
+                <h6 className="mb-2.5 font-display text-sm font-light tracking-widest">
                   {t('overview.canada-retirement-income-system.cpp-qpp.pillar')}
-                </h5>
+                </h6>
                 <p className="mb-2.5 font-bold">{t('overview.canada-retirement-income-system.cpp-qpp.header')}</p>
                 <p className="text-sm">{t('overview.canada-retirement-income-system.cpp-qpp.content')}</p>
               </div>
             </div>
-          </div>
-          <div className="flex h-full flex-col gap-6">
-            <h4 className="bg-[#4A0056] p-4 font-display text-xl font-light text-white">
-              {t('overview.canada-retirement-income-system.private')}
-            </h4>
+          </section>
+          <section className="flex h-full flex-col gap-6">
+            <h5 className="h5 bg-[#4A0056] p-4 text-white">{t('overview.canada-retirement-income-system.private')}</h5>
             <div className="h-full bg-[#F0D0FF] p-4">
-              <h5 className="mb-2.5 font-display text-sm font-light tracking-widest">
+              <h6 className="mb-2.5 font-display text-sm font-light tracking-widest">
                 {t('overview.canada-retirement-income-system.workplace.pillar')}
-              </h5>
+              </h6>
               <p className="mb-2.5 font-bold">{t('overview.canada-retirement-income-system.workplace.header')}</p>
               <p className="text-sm">{t('overview.canada-retirement-income-system.workplace.content')}</p>
             </div>
-          </div>
+          </section>
           <p className="md:col-span-3">
             <Trans
               ns="learn/main-sources-of-retirement-income"
@@ -190,10 +188,10 @@ const MainSourcesOfRetirementIncome: FC = () => {
           </AlertCard>
         </div>
 
-        <h2 id="old-age-security-program" className="h2">
+        <h2 id="old-age-security-program" className="h2 h2-gutter">
           {t('old-age-security-program.header')}
         </h2>
-        <h3 className="h3">{t('old-age-security-program.qualify.header')}</h3>
+        <h3 className="h3 h3-gutter">{t('old-age-security-program.qualify.header')}</h3>
         <p>{t('old-age-security-program.qualify.most-people')}</p>
         <p>
           <Trans
@@ -210,7 +208,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h3 className="h3">{t('old-age-security-program.how-much.header')}</h3>
+        <h3 className="h3 h3-gutter">{t('old-age-security-program.how-much.header')}</h3>
         <p>{t('old-age-security-program.how-much.eligible')}</p>
         <p>{t('old-age-security-program.how-much.smaller')}</p>
         <p>
@@ -221,7 +219,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 mb-4 text-xl">{t('old-age-security-program.helpful-resources.header')}</h4>
+        <h4 className="h4 mb-4">{t('old-age-security-program.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -243,7 +241,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           ))}
         </ul>
 
-        <h2 id="guaranteed-income-supplement" className="h2">
+        <h2 id="guaranteed-income-supplement" className="h2 h2-gutter">
           {t('guaranteed-income-supplement.header')}
         </h2>
         <p>{t('guaranteed-income-supplement.overview')}</p>
@@ -264,7 +262,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <p>{t('guaranteed-income-supplement.monthly')}</p>
         <p>{t('guaranteed-income-supplement.collecting')}</p>
 
-        <h4 className="h4 mb-4 text-xl">{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
+        <h4 className="h4 mb-4">{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -282,12 +280,12 @@ const MainSourcesOfRetirementIncome: FC = () => {
           ))}
         </ul>
 
-        <h2 id="canada-pension-plan-program" className="h2">
+        <h2 id="canada-pension-plan-program" className="h2 h2-gutter">
           {t('canada-pension-plan-program.header')}
         </h2>
         <p>{t('canada-pension-plan-program.overview')}</p>
 
-        <h3 className="h3">{t('canada-pension-plan-program.qualify.header')}</h3>
+        <h3 className="h3 h3-gutter">{t('canada-pension-plan-program.qualify.header')}</h3>
         <p>{t('canada-pension-plan-program.qualify.worked-in-canada')}</p>
         <p>
           <Trans
@@ -297,7 +295,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h3 className="h3">{t('canada-pension-plan-program.how-much.header')}</h3>
+        <h3 className="h3 h3-gutter">{t('canada-pension-plan-program.how-much.header')}</h3>
         <p>{t('canada-pension-plan-program.how-much.amount')}</p>
         <p>{t('canada-pension-plan-program.how-much.inflation')}</p>
         <p>
@@ -310,7 +308,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 mb-4 text-xl">{t('canada-pension-plan-program.helpful-resources.header')}</h4>
+        <h4 className="h4 mb-4">{t('canada-pension-plan-program.helpful-resources.header')}</h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -332,7 +330,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           ))}
         </ul>
 
-        <h3 className="h3 py-3">{t('canada-pension-plan-program.cpp-post-retirement-benefit.header')}</h3>
+        <h3 className="h3 h3-gutter">{t('canada-pension-plan-program.cpp-post-retirement-benefit.header')}</h3>
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.overview')}</p>
         <p>{t('canada-pension-plan-program.cpp-post-retirement-benefit.adjustments')}</p>
         <Image
@@ -391,7 +389,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 mb-4 text-xl">
+        <h4 className="h4 mb-4">
           {t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.header')}
         </h4>
         <ul className="mb-5 list-disc space-y-1 pl-7">
@@ -415,7 +413,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           ))}
         </ul>
 
-        <h2 id="ongoing-earnings-from-your-job" className="h2">
+        <h2 id="ongoing-earnings-from-your-job" className="h2 h2-gutter">
           {t('ongoing-earnings-from-your-job.header')}
         </h2>
         <p>{t('ongoing-earnings-from-your-job.overview')}</p>
@@ -429,7 +427,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h2 id="workplace-pension-plans" className="h2">
+        <h2 id="workplace-pension-plans" className="h2 h2-gutter">
           {t('workplace-pension-plans.header')}
         </h2>
         <p>{t('workplace-pension-plans.overview')}</p>
@@ -440,7 +438,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           <li>{t('workplace-pension-plans.list.prpp')}</li>
         </ul>
 
-        <h2 id="personal-retirement-savings" className="h2">
+        <h2 id="personal-retirement-savings" className="h2 h2-gutter">
           {t('personal-retirement-savings.header')}
         </h2>
         <p>
@@ -477,7 +475,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           </AlertCard>
         </div>
 
-        <h2 className="h2">{t('learn-more.header')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

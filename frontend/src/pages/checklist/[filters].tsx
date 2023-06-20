@@ -149,7 +149,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
       >
         <div className="hidden md:block">
           <HeroBanner className="h-[215px] grid-rows-1" imageProps={{ src: checklistBannerImage }}>
-            <h1 className="font-display text-4xl font-bold text-primary-700 md:text-6xl">{t('header')}</h1>
+            <h1 className="h1 text-primary-700">{t('header')}</h1>
           </HeroBanner>
         </div>
 

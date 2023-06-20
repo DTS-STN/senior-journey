@@ -72,7 +72,7 @@ const Bonnie: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.heading')}
         </h2>
         <List disablePadding>
@@ -111,7 +111,7 @@ const Bonnie: FC = () => {
           />
         </AlertCard>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p1')}</p>
@@ -128,7 +128,7 @@ const Bonnie: FC = () => {
           />
         </AlertCard>
 
-        <h2 id="stopping-earnings" className="h2">
+        <h2 id="stopping-earnings" className="h2 h2-gutter">
           {t('stopping-earnings.heading')}
         </h2>
         <Image
@@ -151,7 +151,7 @@ const Bonnie: FC = () => {
           valuesHeading={t('values-heading')}
         />
 
-        <h2 id="adding-oas" className="h2">
+        <h2 id="adding-oas" className="h2 h2-gutter">
           {t('adding-oas.heading')}
         </h2>
         <p>
@@ -186,7 +186,7 @@ const Bonnie: FC = () => {
           valuesHeading={t('values-heading')}
         />
 
-        <h2 id="cpp" className="h2">
+        <h2 id="cpp" className="h2 h2-gutter">
           {t('cpp.heading')}
         </h2>
         <p>{t('cpp.p1')}</p>
@@ -210,7 +210,7 @@ const Bonnie: FC = () => {
         />
         <p>{t('cpp.p3')}</p>
 
-        <h2 id="own-savings" className="h2">
+        <h2 id="own-savings" className="h2 h2-gutter">
           {t('own-savings.heading')}
         </h2>
         <p>
@@ -238,7 +238,7 @@ const Bonnie: FC = () => {
           valuesHeading={t('values-heading')}
         />
 
-        <h2 id="early-pension" className="h2">
+        <h2 id="early-pension" className="h2 h2-gutter">
           {t('early-pension.heading')}
         </h2>
         <p>{t('early-pension.p1')}</p>
@@ -265,7 +265,7 @@ const Bonnie: FC = () => {
           valuesHeading={t('values-heading')}
         />
 
-        <h2 id="conclusion" className="h2">
+        <h2 id="conclusion" className="h2 h2-gutter">
           {t('conclusion.heading')}
         </h2>
         <p>
@@ -281,7 +281,7 @@ const Bonnie: FC = () => {
           <Trans ns="learn/case-studies/bonnie" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">{t('learn-more.header')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

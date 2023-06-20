@@ -49,7 +49,7 @@ const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageSrc, minRead
         </div>
         <CardContent className="mt-4 p-8">
           <p className="mb-4 font-display text-sm font-light tracking-widest">{t('min-read', { minRead })}</p>
-          <h3 className="my-4 font-display text-lg font-bold md:text-2xl" id={`${uniqueId}-card-${id}-title`}>
+          <h3 className="h4 my-4" id={`${uniqueId}-card-${id}-title`}>
             {title}
           </h3>
           <p className="m-0 text-black/60">{desciption}</p>
@@ -70,7 +70,7 @@ const LearnSection: FC<LearnSectionProps> = ({ cards, desciption, id, title }) =
   const uniqueId = useId()
   return (
     <section id={`${uniqueId}-section-${id}`}>
-      <h2 className="h2 text-primary-700">{title}</h2>
+      <h2 className="h2 h2-gutter text-primary-700">{title}</h2>
       <p className="mb-8">{desciption}</p>
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {cards.map((cardProps) => (
@@ -188,11 +188,9 @@ const Learn: FC = () => {
         ]}
       >
         <HeroBanner imageProps={{ className: 'md:object-right-bottom', src: learnBannerImage }}>
-        <h1 className='mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-4xl lg:text-6xl'>
-            {t('banner.title')}
-          </h1>
+          <h1 className="h1 mb-2 text-primary-700 md:mb-4">{t('banner.title')}</h1>
           <p>{t('banner.text')}</p>
-          <Button component={Link} id="quiz-dialog-link" size="large" href="/quiz" className='text-center'>
+          <Button component={Link} id="quiz-dialog-link" size="large" href="/quiz" className="text-center">
             {t('banner.quiz')}
           </Button>
         </HeroBanner>
