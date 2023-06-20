@@ -67,7 +67,7 @@ const Keith: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.heading')}
         </h2>
         <List disablePadding>
@@ -110,12 +110,12 @@ const Keith: FC = () => {
           />
         </AlertCard>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p1')}</p>
 
-        <h2 id="how-did-keith" className="h2">
+        <h2 id="how-did-keith" className="h2 h2-gutter">
           {t('cpp-oas.heading')}
         </h2>
         <p>{t('cpp-oas.p1')}</p>
@@ -127,7 +127,7 @@ const Keith: FC = () => {
           />
         </p>
 
-        <h2 id="prb" className="h2">
+        <h2 id="prb" className="h2 h2-gutter">
           {t('cpp.prb.heading')}
         </h2>
         <p>
@@ -138,7 +138,7 @@ const Keith: FC = () => {
           />
         </p>
 
-        <h2 id="prb-choices" className="h2">
+        <h2 id="prb-choices" className="h2 h2-gutter">
           {t('cpp.prb-choices.heading')}
         </h2>
         <p>
@@ -154,7 +154,7 @@ const Keith: FC = () => {
           <Trans ns="learn/case-studies/keith" i18nKey="cpp.prb-choices.list.li4" />
         </p>
 
-        <h2 id="cpp-choices" className="h2">
+        <h2 id="cpp-choices" className="h2 h2-gutter">
           {t('cpp.cpp-choices.heading')}
         </h2>
         <Image
@@ -164,11 +164,15 @@ const Keith: FC = () => {
           height={519}
           className="w-full"
         />
-        <div className={`grid grid-cols-1 py-4 ${locale == 'en' ? 'md:grid-cols-2 md:grid-rows-2 md:grid-flow-col md:text-center' : 'md:pl-36'} `}>
-            <p>{t('cpp.cpp-choices.choices.li1')}</p>
-            <p>{t('cpp.cpp-choices.choices.li2')}</p>
-            <p>{t('cpp.cpp-choices.choices.li3')}</p>
-            <p>{t('cpp.cpp-choices.choices.li4')}</p>
+        <div
+          className={`grid grid-cols-1 py-4 ${
+            locale == 'en' ? 'md:grid-flow-col md:grid-cols-2 md:grid-rows-2 md:text-center' : 'md:pl-36'
+          } `}
+        >
+          <p>{t('cpp.cpp-choices.choices.li1')}</p>
+          <p>{t('cpp.cpp-choices.choices.li2')}</p>
+          <p>{t('cpp.cpp-choices.choices.li3')}</p>
+          <p>{t('cpp.cpp-choices.choices.li4')}</p>
         </div>
         <AccessibilityGraphContainer
           tableData={{
@@ -184,7 +188,7 @@ const Keith: FC = () => {
         <p>{t('cpp.cpp-choices.p1')}</p>
         <p>{t('cpp.cpp-choices.p2')}</p>
 
-        <h2 id="what-else" className="h2">
+        <h2 id="what-else" className="h2 h2-gutter">
           {t('cpp.what-else.heading')}
         </h2>
         <p>{t('cpp.what-else.p1')}</p>
@@ -206,7 +210,7 @@ const Keith: FC = () => {
           />
         </AlertCard>
 
-        <h2 id="keith-pension-87" className="h2">
+        <h2 id="keith-pension-87" className="h2 h2-gutter">
           {t('cpp.keith-pension-87.heading')}
         </h2>
         <p>{t('cpp.keith-pension-87.p1')}</p>
@@ -223,11 +227,15 @@ const Keith: FC = () => {
           height={519}
           className="w-full"
         />
-        <div className={`grid grid-cols-1 py-4 ${locale == 'en' ? 'md:grid-cols-2 md:grid-rows-2 md:grid-flow-col' : ''} md:text-center`}>
-            <p>{t('cpp.keith-pension-87.choices.li1')}</p>
-            <p>{t('cpp.keith-pension-87.choices.li2')}</p>
-            <p>{t('cpp.keith-pension-87.choices.li3')}</p>
-            <p>{t('cpp.keith-pension-87.choices.li4')}</p>
+        <div
+          className={`grid grid-cols-1 py-4 ${
+            locale == 'en' ? 'md:grid-flow-col md:grid-cols-2 md:grid-rows-2' : ''
+          } md:text-center`}
+        >
+          <p>{t('cpp.keith-pension-87.choices.li1')}</p>
+          <p>{t('cpp.keith-pension-87.choices.li2')}</p>
+          <p>{t('cpp.keith-pension-87.choices.li3')}</p>
+          <p>{t('cpp.keith-pension-87.choices.li4')}</p>
         </div>
         <AccessibilityGraphContainer
           tableData={{
@@ -242,7 +250,7 @@ const Keith: FC = () => {
         />
         <p>{t('cpp.keith-pension-87.p2')}</p>
 
-        <h2 id="keith-pension-90" className="h2">
+        <h2 id="keith-pension-90" className="h2 h2-gutter">
           {t('cpp.keith-pension-90.heading')}
         </h2>
         <p>{t('cpp.keith-pension-90.p1')}</p>
@@ -253,11 +261,15 @@ const Keith: FC = () => {
           height={519}
           className="w-full"
         />
-        <div className={`grid grid-cols-1 py-4 ${locale == 'en' ? 'md:grid-cols-2 md:grid-rows-2 md:grid-flow-col' : ''} md:text-center`}>
-            <p>{t('cpp.keith-pension-90.choices.li1')}</p>
-            <p>{t('cpp.keith-pension-90.choices.li2')}</p>
-            <p>{t('cpp.keith-pension-90.choices.li3')}</p>
-            <p>{t('cpp.keith-pension-90.choices.li4')}</p>
+        <div
+          className={`grid grid-cols-1 py-4 ${
+            locale == 'en' ? 'md:grid-flow-col md:grid-cols-2 md:grid-rows-2' : ''
+          } md:text-center`}
+        >
+          <p>{t('cpp.keith-pension-90.choices.li1')}</p>
+          <p>{t('cpp.keith-pension-90.choices.li2')}</p>
+          <p>{t('cpp.keith-pension-90.choices.li3')}</p>
+          <p>{t('cpp.keith-pension-90.choices.li4')}</p>
         </div>
         <AccessibilityGraphContainer
           tableData={{
@@ -272,7 +284,7 @@ const Keith: FC = () => {
         />
         <p>{t('cpp.keith-pension-90.p4')}</p>
 
-        <h2 id="oas" className="h2">
+        <h2 id="oas" className="h2 h2-gutter">
           {t('oas.heading')}
         </h2>
         <p>
@@ -298,7 +310,7 @@ const Keith: FC = () => {
           />
         </p>
 
-        <h2 id="conclusion" className="h2">
+        <h2 id="conclusion" className="h2 h2-gutter">
           {t('conclusion.heading')}
         </h2>
         <p>{t('conclusion.p1')}</p>
@@ -308,7 +320,7 @@ const Keith: FC = () => {
           <Trans ns="learn/case-studies/keith" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">{t('learn-more.header')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

@@ -41,18 +41,18 @@ const Quiz: FC = () => {
         hideFooter="print"
         hideHeader="print"
       >
-        <h1 className="mb-8 font-display text-2xl font-medium md:mb-12 md:rounded-3xl md:bg-gray-surface md:p-6 md:text-4xl md:text-primary-700">
+        <h1 className="h1 mb-8 text-primary-700 md:mb-12 md:rounded-3xl md:bg-gray-surface md:p-6">
           {t('landing.header')}
         </h1>
-        <h2 id="take-this-quiz" className="mb-4 mt-8 font-display text-xl font-bold">
+        <h2 id="take-this-quiz" className="h4 mb-4 mt-8">
           {t('landing.p1')}
         </h2>
         <p>{t('landing.p2')}</p>
-        <h2 id="what-you-ll-need" className="mb-4 mt-8 font-display text-xl font-bold">
+        <h2 id="what-you-ll-need" className="h4 mb-4 mt-8">
           {t('landing.whatyouneed')}
         </h2>
         <p>{t('landing.p3')}</p>
-        <ul className="list-disc list-inside space-y-1 pl-1">
+        <ul className="list-inside list-disc space-y-1 pl-1">
           <li>
             <Trans ns="quiz" i18nKey="landing.legal" />
           </li>
@@ -66,7 +66,7 @@ const Quiz: FC = () => {
             <Trans ns="quiz" i18nKey="landing.retirement" />
           </li>
         </ul>
-        <h2 id="time-to-complete-survey" className="mb-4 mt-8 font-display text-xl font-bold">
+        <h2 id="time-to-complete-survey" className="h4 mb-4 mt-8">
           {t('landing.timetocomplete')}
         </h2>
         <p className="mb-12">

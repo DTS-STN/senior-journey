@@ -84,9 +84,7 @@ const Home: FC = () => {
       <Layout contained={false}>
         <Container className="mb-8 md:mb-12">
           <HeroBanner imageProps={{ className: 'md:object-right-bottom', src: landingPageImage }}>
-            <h1 className='mb-2 font-display text-4xl font-bold text-primary-700 md:mb-4 md:text-4xl lg:text-6xl'>
-              {t('banner.title')}
-            </h1>
+            <h1 className="h1 mb-2 text-primary-700 md:mb-4">{t('banner.title')}</h1>
             <p className="m-0">{t('banner.text')}</p>
           </HeroBanner>
         </Container>
@@ -182,21 +180,19 @@ const Home: FC = () => {
                 <TabPanel value="learn" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
                     <Paper className="p-8 md:w-2/6 md:grow">
-                      <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
-                        {t('tabs.learn.heading')}
-                      </h2>
+                      <h2 className="h2 mb-8 text-primary-700">{t('tabs.learn.heading')}</h2>
                       <Divider className="mb-8" />
                       <p>{t('tabs.learn.description.options-and-tips')}</p>
                       <p>{t('tabs.learn.description.stories')}</p>
                       <Divider className="my-8" />
                       <div className="text-right">
-                        <Button component={Link} href="/learn" size="large" className='text-center'>
+                        <Button component={Link} href="/learn" size="large" className="text-center">
                           {t('tabs.learn.button-text')}
                         </Button>
                       </div>
                     </Paper>
                     <Paper className="p-8 md:w-4/6">
-                      <h3 className="mb-8 font-display text-xl font-light md:mb-8 md:text-3xl">
+                      <h3 className="h3 h3-gutter-bottom">
                         {t('tabs.learn.linksTitle')}
                       </h3>
                       <List disablePadding>
@@ -252,9 +248,7 @@ const Home: FC = () => {
                 <TabPanel value="plan" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
                     <Paper className="p-8 md:w-2/6 md:grow">
-                      <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
-                        {t('tabs.plan.heading')}
-                      </h2>
+                      <h2 className="h2 mb-8 text-primary-700">{t('tabs.plan.heading')}</h2>
                       <Divider className="mb-8" />
                       <p>{t('tabs.plan.description')}</p>
                       <Divider className="my-8" />
@@ -265,7 +259,7 @@ const Home: FC = () => {
                       </div>
                     </Paper>
                     <Paper className="p-8 md:w-4/6">
-                      <h3 className="mb-8 font-display text-xl font-light md:mb-11 md:text-3xl">
+                      <h3 className="h3 h3-gutter-bottom">
                         {t('tabs.plan.linksTitle')}
                       </h3>
                       <List disablePadding className="ml-4">
@@ -314,9 +308,7 @@ const Home: FC = () => {
                 <TabPanel value="apply" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
                     <Paper className="p-8 md:w-2/6 md:grow">
-                      <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
-                        {t('tabs.apply.heading')}
-                      </h2>
+                      <h2 className="h2 mb-8 text-primary-700">{t('tabs.apply.heading')}</h2>
                       <Divider className="mb-8" />
                       <p className="mb-8">{t('tabs.apply.description.text')}</p>
                       <List disablePadding className="ml-4">
@@ -357,9 +349,7 @@ const Home: FC = () => {
                 <TabPanel value="manage" className="px-0 py-8">
                   <div className="flex flex-col gap-6 md:flex-row">
                     <Paper className="p-8 md:w-2/6 md:grow">
-                      <h2 className="mb-8 font-display text-2xl font-medium text-primary-700 md:text-4xl">
-                        {t('tabs.manage.heading')}
-                      </h2>
+                      <h2 className="h2 mb-8 text-primary-700">{t('tabs.manage.heading')}</h2>
                       <Divider className="mb-8" />
                       <p>{t('tabs.manage.description.text')}</p>
                       <ul className="list-disc space-y-1 pl-7">

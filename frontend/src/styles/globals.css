@@ -98,43 +98,156 @@ video {
   Senior Journey - Custom css
 */
 
-.h6 {
+.h1 {
   @apply font-bold;
   @apply font-display;
+  @apply text-4xl;
+}
+
+.h2 {
+  @apply font-display;
+  @apply font-medium;
+  @apply text-2xl;
+}
+
+.h2-gutter,
+.h2-gutter-bottom {
+  @apply mb-6;
+}
+
+.h2-gutter,
+.h2-gutter-top {
+  @apply mt-8;
+}
+
+.h3 {
+  @apply font-display;
+  @apply font-light;
   @apply text-xl;
 }
 
-.h5 {
-  @apply font-display;
-  @apply font-light;
-  @apply text-2xl;
+.h3-gutter,
+.h3-gutter-bottom {
+  @apply mb-6;
+}
+
+.h3-gutter,
+.h3-gutter-top {
+  @apply mt-6;
 }
 
 .h4 {
   @apply font-bold;
   @apply font-display;
+  @apply text-lg;
 }
 
-.h3 {
+.h5 {
+  @apply font-display;
   @apply font-light;
-  @apply font-display;
-  @apply text-2xl;
-  @apply my-4;
+  @apply text-lg;
 }
 
-.h2 {
-  @apply font-medium;
-  @apply font-display;
-  @apply text-4xl;
-  @apply mt-12;
-  @apply mb-8;
-}
-
-.h1 {
+.h6 {
   @apply font-bold;
   @apply font-display;
-  @apply text-4xl;
-  @apply mb-8;
+  @apply text-base;
+}
+
+@media screen(md) {
+  .h1 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-5xl;
+  }
+
+  .h2 {
+    @apply font-display;
+    @apply font-medium;
+    @apply text-3xl;
+  }
+
+  .h2-gutter,
+  .h2-gutter-bottom {
+    @apply mb-8;
+  }
+
+  .h2-gutter,
+  .h2-gutter-top {
+    @apply mt-12;
+  }
+
+  .h3 {
+    @apply font-display;
+    @apply font-light;
+    @apply text-2xl;
+  }
+
+  .h3-gutter,
+  .h3-gutter-bottom {
+    @apply mb-8;
+  }
+
+  .h3-gutter,
+  .h3-gutter-top {
+    @apply mt-8;
+  }
+
+  .h4 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-xl;
+  }
+
+  .h5 {
+    @apply font-display;
+    @apply font-light;
+    @apply text-lg;
+  }
+
+  .h6 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-base;
+  }
+}
+
+@media screen(lg) {
+  .h1 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-6xl;
+  }
+
+  .h2 {
+    @apply font-display;
+    @apply font-medium;
+    @apply text-4xl;
+  }
+
+  .h3 {
+    @apply font-display;
+    @apply font-light;
+    @apply text-3xl;
+  }
+
+  .h4 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-2xl;
+  }
+
+  .h5 {
+    @apply font-display;
+    @apply font-light;
+    @apply text-xl;
+  }
+
+  .h6 {
+    @apply font-bold;
+    @apply font-display;
+    @apply text-lg;
+  }
 }
 
 p {

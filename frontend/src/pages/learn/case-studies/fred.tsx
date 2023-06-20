@@ -72,7 +72,7 @@ const Fred: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.heading')}
         </h2>
         <List disablePadding>
@@ -115,7 +115,7 @@ const Fred: FC = () => {
           />
         </AlertCard>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p1')}</p>
@@ -143,7 +143,7 @@ const Fred: FC = () => {
         <p>{t('overview.p4')}</p>
         <p>{t('overview.p5')}</p>
 
-        <h2 id="monthly-amounts" className="h2">
+        <h2 id="monthly-amounts" className="h2 h2-gutter">
           {t('monthly-amounts.heading')}
         </h2>
         <p>
@@ -165,7 +165,7 @@ const Fred: FC = () => {
           />
         </p>
 
-        <h2 id="fred-cpp" className="h2">
+        <h2 id="fred-cpp" className="h2 h2-gutter">
           {t('cpp.heading')}
         </h2>
         <Image
@@ -215,7 +215,7 @@ const Fred: FC = () => {
         <p>{t('cpp.p2')}</p>
         <p>{t('cpp.p3')}</p>
 
-        <h2 id="fred-oas" className="h2">
+        <h2 id="fred-oas" className="h2 h2-gutter">
           {t('oas.heading')}
         </h2>
         <Image
@@ -260,7 +260,7 @@ const Fred: FC = () => {
         <p>{t('oas.p1')}</p>
         <p>{t('oas.p2')}</p>
 
-        <h2 id="fred-conclusion" className="h2">
+        <h2 id="fred-conclusion" className="h2 h2-gutter">
           {t('conclusion.heading')}
         </h2>
         <p>{t('conclusion.p')}</p>
@@ -268,7 +268,7 @@ const Fred: FC = () => {
           <Trans ns="learn/case-studies/fred" i18nKey="conclusion.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">{t('learn-more.header')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

@@ -72,7 +72,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.heading')}
         </h2>
         <List disablePadding>
@@ -118,7 +118,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           ))}
         </List>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p1')}</p>
@@ -132,13 +132,13 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         <p>{t('overview.p3')}</p>
         <p>{t('overview.p4')}</p>
 
-        <h2 id="old-age-security" className="h2">
+        <h2 id="old-age-security" className="h2 h2-gutter">
           {t('old-age-security.heading')}
         </h2>
         <p>{t('old-age-security.content-one')}</p>
         <p>{t('old-age-security.content-two')}</p>
 
-        <h3 className="h3">{t('old-age-security.table-one.title')}</h3>
+        <h3 className="h3 h3-gutter">{t('old-age-security.table-one.title')}</h3>
 
         <Paper variant="outlined" className="mb-6 overflow-x-auto">
           <table className="min-w-full border-collapse divide-y text-left">
@@ -219,10 +219,10 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           valuesHeading={t('values-heading')}
         />
 
-        <h3 className="h3">{t('old-age-security.we-pay.heading')}</h3>
+        <h3 className="h3 h3-gutter">{t('old-age-security.we-pay.heading')}</h3>
         <p>{t('old-age-security.we-pay.p')}</p>
 
-        <h3 className="h3">{t('old-age-security.high-income.heading')}</h3>
+        <h3 className="h3 h3-gutter">{t('old-age-security.high-income.heading')}</h3>
         <p>
           <Trans
             ns="learn/deciding-when-to-start-your-public-pensions"
@@ -231,7 +231,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           />
         </p>
 
-        <h2 id="cpp-pension" className="h2">
+        <h2 id="cpp-pension" className="h2 h2-gutter">
           {t('cpp-pension.heading')}
         </h2>
         <p>
@@ -274,7 +274,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
           <Trans ns="learn/deciding-when-to-start-your-public-pensions" i18nKey="cpp-pension.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">{t('learn-more.header')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

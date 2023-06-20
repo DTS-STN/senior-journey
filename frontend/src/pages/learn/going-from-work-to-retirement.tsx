@@ -61,7 +61,7 @@ const GoingFromWorkToRetirement: FC = () => {
           },
         ]}
       >
-        <h2 id="key-takeaways" className="h2 !mt-0">
+        <h2 id="key-takeaways" className="h2 h2-gutter-bottom">
           {t('key-takeaways.heading')}
         </h2>
         <List disablePadding>
@@ -104,7 +104,7 @@ const GoingFromWorkToRetirement: FC = () => {
           />
         </AlertCard>
 
-        <h2 id="overview" className="h2">
+        <h2 id="overview" className="h2 h2-gutter">
           {t('overview.heading')}
         </h2>
         <p>{t('overview.p1')}</p>
@@ -115,30 +115,30 @@ const GoingFromWorkToRetirement: FC = () => {
         </ul>
         <p>{t('overview.p2')}</p>
 
-        <h2 id="phased-retirement" className="h2">
+        <h2 id="phased-retirement" className="h2 h2-gutter">
           {t('phased-retirement.heading')}
         </h2>
-        <h3 className="h3">{t('phased-retirement.transition')}</h3>
+        <h3 className="h3 h3-gutter">{t('phased-retirement.transition')}</h3>
         <p>{t('phased-retirement.p1')}</p>
         <p>{t('phased-retirement.p2')}</p>
 
-        <h2 id="second-career" className="h2">
+        <h2 id="second-career" className="h2 h2-gutter">
           {t('second-career.heading')}
         </h2>
-        <h3 className="h3">{t('second-career.new-beginning')}</h3>
+        <h3 className="h3 h3-gutter">{t('second-career.new-beginning')}</h3>
         <p>{t('second-career.p1')}</p>
 
-        <h2 id="full-retirement" className="h2">
+        <h2 id="full-retirement" className="h2 h2-gutter">
           {t('full-retirement.heading')}
         </h2>
-        <h3 className="h3">{t('full-retirement.hanging-you-hat')}</h3>
+        <h3 className="h3 h3-gutter">{t('full-retirement.hanging-you-hat')}</h3>
         <p>{t('full-retirement.p1')}</p>
 
-        <h2 id="combine-income" className="h2">
+        <h2 id="combine-income" className="h2 h2-gutter">
           {t('combine-income.heading')}
         </h2>
         <p>{t('combine-income.p1')}</p>
-        <h3 className="h3 py-2">{t('combine-income.option-1.heading')}</h3>
+        <h3 className="h3 h3-gutter">{t('combine-income.option-1.heading')}</h3>
         <p>{t('combine-income.option-1.p1')}</p>
         <p>{t('combine-income.option-1.p2')}</p>
         <p>{t('combine-income.option-1.p3')}</p>
@@ -172,7 +172,7 @@ const GoingFromWorkToRetirement: FC = () => {
           />
         </p>
 
-        <h3 className="h3 py-2">{t('combine-income.option-2.heading')}</h3>
+        <h3 className="h3 h3-gutter">{t('combine-income.option-2.heading')}</h3>
         <p>{t('combine-income.option-2.p1')}</p>
         <p>{t('combine-income.option-2.p2')}</p>
         <AlertCard type="important" className="mb-5">
@@ -198,7 +198,7 @@ const GoingFromWorkToRetirement: FC = () => {
           <Trans ns="learn/going-from-work-to-retirement" i18nKey="combine-income.option-2.disclaimer" />
         </AlertCard>
 
-        <h2 className="h2">{t('learn-more.header')}</h2>
+        <h2 className="h2 h2-gutter">{t('learn-more.header')}</h2>
         <List disablePadding>
           {learnMoreLinks.map(({ href, primary, secondary }) => (
             <Fragment key={primary}>

@@ -27,9 +27,9 @@ const AccessibilityGraphContainer: FC<AccessibilityGraphContainerProps> = ({
         <div>{buttonLabel}</div>
       </summary>
       <section className="p-2">
-        <h3 className="mb-4 font-display text-lg font-bold">{descriptionHeading}</h3>
+        <h3 className="h6 my-4">{descriptionHeading}</h3>
         <p>{description}</p>
-        <h3 className="my-4 font-display text-lg font-bold">{valuesHeading}</h3>
+        <h3 className="h6 my-4">{valuesHeading}</h3>
         <AccessibilityTable tableData={tableData} />
       </section>
     </details>
