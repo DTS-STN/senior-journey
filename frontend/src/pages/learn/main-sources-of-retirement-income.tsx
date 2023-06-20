@@ -219,7 +219,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 mb-4">{t('old-age-security-program.helpful-resources.header')}</h4>
+        <h3 className="h4 mb-4">{t('old-age-security-program.helpful-resources.header')}</h3>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -262,7 +262,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         <p>{t('guaranteed-income-supplement.monthly')}</p>
         <p>{t('guaranteed-income-supplement.collecting')}</p>
 
-        <h4 className="h4 mb-4">{t('guaranteed-income-supplement.helpful-resources.header')}</h4>
+        <h3 className="h4 mb-4">{t('guaranteed-income-supplement.helpful-resources.header')}</h3>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -308,7 +308,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 mb-4">{t('canada-pension-plan-program.helpful-resources.header')}</h4>
+        <h3 className="h4 mb-4">{t('canada-pension-plan-program.helpful-resources.header')}</h3>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
@@ -389,9 +389,9 @@ const MainSourcesOfRetirementIncome: FC = () => {
           />
         </p>
 
-        <h4 className="h4 mb-4">
+        <h3 className="h4 mb-4">
           {t('canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.header')}
-        </h4>
+        </h3>
         <ul className="mb-5 list-disc space-y-1 pl-7">
           {[
             {
