@@ -34,7 +34,7 @@ const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageSrc, minRead
   const { t } = useTranslation('learn')
   const uniqueId = useId()
   return (
-    <Card id={`${uniqueId}-card-${id}`} className="h-full">
+    <Card id={`${uniqueId}-card-${id}`} className="h-full hover:shadow-md hover:shadow-gray-400 duration-100">
       <CardActionArea component={Link} href={href} className="h-full" aria-describedby={`${uniqueId}-card-${id}-title`}>
         <div className="relative h-64 ">
           <Image
