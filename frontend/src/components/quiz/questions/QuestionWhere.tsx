@@ -60,26 +60,30 @@ export const QuestionWhere: FC<QuestionWhereProps> = ({ values, setFieldValue })
           aria-label={t('questions.question-where.option-canada-pt-60-or-more')}
           data-cy="canada-pt-60-or-more-button"
         >
-          <Trans
-            i18nKey="questions.question-where.option-canada-pt-60-or-more"
-            ns="quiz"
-            components={{
-              span: <span className="underline-offset-2 px-1 underline"/>,
-            }}
-        />
+          <div>
+            <Trans
+              i18nKey="questions.question-where.option-canada-pt-60-or-more"
+              ns="quiz"
+              components={{
+                span: <span className="px-1 underline underline-offset-2" />,
+              }}
+            />
+          </div>
         </ToggleButton>
         <ToggleButton
           value="canada-pt-less-than-60"
           aria-label={t('questions.question-where.option-canada-pt-less-than-60')}
           data-cy="canada-pt-less-than-60-button"
         >
-          <Trans
-            i18nKey="questions.question-where.option-canada-pt-less-than-60"
-            ns="quiz"
-            components={{
-              span: <span className="underline-offset-2 px-1 underline" />,
-            }}
-          />
+          <div>
+            <Trans
+              i18nKey="questions.question-where.option-canada-pt-less-than-60"
+              ns="quiz"
+              components={{
+                span: <span className="px-1 underline underline-offset-2" />,
+              }}
+            />
+          </div>
         </ToggleButton>
         <ToggleButton
           value="outside-canada"
