@@ -20,7 +20,7 @@
             "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/apply.html"
           }
         },
-        "text": "To apply online you can sign in or register for a My Service Canada Account (MSCA). To apply in-person or by mail, you can complete a paper application."
+        "text": "To apply online you can sign in or register for a My Service Canada Account (MSCA). To apply in person or by mail, you can complete a paper application."
       },
       "heading": "Ready to apply for your public pensions? Get started now",
       "title": "Apply"
@@ -51,14 +51,14 @@
     },
     "manage": {
       "button": {
-        "text": "Sign into MSCA",
+        "text": "Sign in to MSCA",
         "url": "https://www.canada.ca/en/employment-social-development/services/my-account.html"
       },
       "description": {
         "list": {
-          "check-status-payment-dates-and-amounts": "Check the status, payment dates and amounts for your public pensions.",
-          "create-and-submit-application": "Create and submit your Canada Pension Plan and Old Age Security application(s).",
-          "update-mailing-address-and-banking-information": "Update your mailing address and banking information."
+          "check-status-payment-dates-and-amounts": "check the status, payment dates and amounts for your public pensions",
+          "create-and-submit-application": "create and submit your Canada Pension Plan and Old Age Security application(s)",
+          "update-mailing-address-and-banking-information": "update your mailing address and banking information"
         },
         "text": "You can do a lot with your MSCA, including:"
       },
@@ -75,8 +75,8 @@
       "links": {
         "oas-eligibility-estimator": {
           "description": "Find out how much money you may get from the Old Age Security program and its benefits.",
-          "title": "Old Age Security benefits estimator",
-          "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
+          "title": "Old Age Security Benefits Estimator",
+          "url": "https://estimateursv-oasestimator.service.canada.ca/en"
         },
         "retirement-income-calculator": {
           "description": "The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits.",

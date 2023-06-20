@@ -86,7 +86,7 @@
         "link": "/learn/deciding-when-to-start-your-public-pensions"
       }
     },
-    "overview": "The Canada Pension Plan (CPP) retirement pension provides income replacement for those who have worked or been self-employed in Canada. It is a monthly payment that replaces part of your work earnings in retirement. The amount of your CPP retirement pension is based on your earnings and contributions to the plan.",
+    "overview": "The Canada Pension Plan (CPP) retirement pension provides income replacement for those who have worked or been self-employed in Canada. It is a monthly payment that replaces part of your work earnings in retirement. The amount of your CPP is based on your earnings, contributions to the plan and your age when you decide to start your CPP retirement pension.",
     "qualify": {
       "header": "Do you qualify for the CPP retirement pension?",
       "pension-credits": {
@@ -101,8 +101,8 @@
     "header": "Guaranteed Income Supplement (GIS)",
     "helpful-resources": {
       "estimator": {
-        "content": "Old Age Security benefits estimator",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
+        "content": "Old Age Security Benefits Estimator",
+        "link": "https://estimateursv-oasestimator.service.canada.ca/en"
       },
       "header": "Helpful resources",
       "overview": {
@@ -150,7 +150,7 @@
       "description": "You can choose different ways to go from work to retirement. Retiring from work and starting your public pensions are two different things.",
       "header": "Going from work to retirement"
     },
-    "header": "Learn More",
+    "header": "Learn more",
     "income-calculator": {
       "description": "The Canadian Retirement Income Calculator will provide you with retirement income information. This includes the Old Age Security (OAS) pension and Canada Pension Plan (CPP) retirement benefits.",
       "header": "Canadian Retirement Income Calculator",
@@ -174,8 +174,8 @@
     "helpful-resources": {
       "header": "Helpful resources",
       "oas-estimator": {
-        "content": "Old Age Security benefits estimator",
-        "link": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/payments.html"
+        "content": "Old Age Security Benefits Estimator",
+        "link": "https://estimateursv-oasestimator.service.canada.ca/en"
       },
       "oas-how-much": {
         "content": "Old Age Security: How much you could receive",
@@ -245,8 +245,8 @@
     },
     "header": "Overview",
     "learn-more": {
-      "content": "To learn more visit the <a>QPP website</a>.",
-      "link": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/regime_rentes.aspx"
+      "content": "To learn more visit the <a>QPP retirement pension website</a>.",
+      "link": "https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/rente_retraite/Pages/rente_retraite.aspx"
     },
     "list": {
       "cpp": "The CPP/QPP retirement pension",
