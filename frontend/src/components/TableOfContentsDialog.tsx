@@ -50,7 +50,11 @@ export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({ header, 
 
   return (
     <>
-      <Fab aria-label={t('table-of-contents.dialog.trigger-aria-label')} onClick={handleOnTriggerClick} className='focus-visible:ring-4 focus-visible:ring-primary-500'>
+      <Fab
+        aria-label={t('table-of-contents.dialog.trigger-aria-label')}
+        onClick={handleOnTriggerClick}
+        className="focus-visible:ring-4 focus-visible:ring-primary-500"
+      >
         <TocIcon />
       </Fab>
       <Dialog open={open} onClose={handleOnDialogClose} fullScreen={fullScreen}>
@@ -67,7 +71,7 @@ export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({ header, 
                     </ListItemButton>
                   </ListItem>
                 ))}
-                <Divider />
+                <Divider component="li" />
                 <ListItem disablePadding>
                   <ListItemButton
                     onClick={() => {

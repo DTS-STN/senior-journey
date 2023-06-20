@@ -130,7 +130,7 @@ export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => 
                 </ListItemButton>
               </ListItem>
             ))}
-            <Divider />
+            <Divider component="li" />
             <ListItem disablePadding>
               <ListItemButton
                 onClick={() => {
