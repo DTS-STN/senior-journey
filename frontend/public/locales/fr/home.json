@@ -80,7 +80,7 @@
         },
         "retirement-income-calculator": {
           "description": "La Calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
-          "title": "La Calculatrice du revenu de retraite canadienne (CRRC)",
+          "title": "La Calculatrice du revenu de retraite canadienne",
           "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html"
         }
       },
