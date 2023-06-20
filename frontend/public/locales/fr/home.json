@@ -76,7 +76,7 @@
         "oas-eligibility-estimator": {
           "description": "Découvrez les montants que vous pourriez recevoir dans le cadre du programme de la Sécurité de la vieillesse et ses prestations.",
           "title": "Estimateur de prestations de la Sécurité de la vieillesse",
-          "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/paiements.html"
+          "url": "https://estimateursv-oasestimator.service.canada.ca/fr"
         },
         "retirement-income-calculator": {
           "description": "La Calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
