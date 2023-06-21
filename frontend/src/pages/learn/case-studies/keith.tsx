@@ -118,12 +118,18 @@ const Keith: FC = () => {
         <h2 id="how-did-keith" className="h2 h2-gutter">
           {t('cpp-oas.heading')}
         </h2>
-        <p>{t('cpp-oas.p1')}</p>
+        <p>
+          <Trans
+            ns="learn/case-studies/keith"
+            i18nKey="cpp-oas.p1"
+            components={{ a1: <MuiLink href={t('cpp-oas.a1')} /> }}
+          />
+        </p>
         <p>
           <Trans
             ns="learn/case-studies/keith"
             i18nKey="cpp-oas.p2"
-            components={{ a1: <MuiLink href={t('cpp-oas.a1')} /> }}
+            components={{ a2: <MuiLink href={t('cpp-oas.a2')} /> }}
           />
         </p>
 
