@@ -6,7 +6,7 @@
   },
   "landing": {
     "header": "Retirement ready quiz",
-    "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian Status, or permanent resident)",
+    "legal": "<strong>legal status</strong> (such as Canadian citizen, Indian status, or permanent resident)",
     "marital": "<strong>marital status</strong>",
     "meta": {
       "description": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist."
@@ -14,7 +14,7 @@
     "minutes": "3 minutes",
     "p1": "Not sure you've checked all the boxes to retire? Take this quiz as a first step towards your retirement checklist.",
     "p2": "Your answers will help identify government pensions and benefits you could receive. They will also guide you on what to consider to better prepare for retirement.",
-    "p3": "You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you will need to provide information on the following:",
+    "p3": "You don't need any special information to take this quiz. To create the most appropriate retirement checklist, you'll need to provide information on the following:",
     "residence": "<strong>residence history</strong> (number of years lived in Canada)",
     "retirement": "<strong>retirement plan</strong> (when you plan on retiring, where you plan on living in retirement, etc.)",
     "start-the-quiz": "Start the quiz",
@@ -42,13 +42,13 @@
         "option-married-or-cl": "Married or common-law",
         "option-single": "Single",
         "option-widowed": "Widowed",
-        "title": "Select all that apply to you. You are..."
+        "title": "Select all that apply to you."
       }
     },
     "question-disability-benefits": {
       "option-cppd-no": "No",
       "option-cppd-yes": "Yes",
-      "title": "Are you receiving CPP-Disability benefits?"
+      "title": "Are you receiving CPP disability benefits?"
     },
     "question-earn": {
       "option-no-income": "No",
@@ -75,8 +75,8 @@
     },
     "question-status": {
       "option-status-citizen": "Canadian citizen or permanent resident",
-      "option-status-first-nation": "Métis, Inuit, or member of First Nation",
-      "option-status-other": "Visitor, student, or temporary worker",
+      "option-status-first-nation": "Métis, Inuit or member of First Nation",
+      "option-status-other": "Visitor, student or temporary worker",
       "option-status-sponsored": "Sponsored resident (less than 10 years in Canada)",
       "title": "When you retire, what will your legal status be in Canada?"
     },
@@ -91,8 +91,8 @@
     },
     "question-where": {
       "option-canada-ft": "In Canada",
-      "option-canada-pt-60-or-more": "In Canada <span>more</span> than 6 months a year",
-      "option-canada-pt-less-than-60": "In Canada <span>less</span> than 6 months a year",
+      "option-canada-pt-60-or-more": "In Canada more than 6 months a year",
+      "option-canada-pt-less-than-60": "In Canada less than 6 months a year",
       "option-outside-canada": "Outside Canada",
       "option-unsure-retirement-living": "Not sure",
       "title": "Where do you plan on living when you retire?"
