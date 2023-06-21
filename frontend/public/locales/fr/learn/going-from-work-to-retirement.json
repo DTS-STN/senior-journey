@@ -11,7 +11,7 @@
       "p3": "Certaines personnes peuvent commencer à recevoir une pension plus tôt que l'autre. Par exemple, vous pouvez commencer à recevoir votre pension de la SV lorsque vous commencez à travailler moins d'heures. Vous commencerez ensuite à recevoir votre pension de retraite du RPC plus tard, lorsque vous ne travaillerez plus.",
       "p4": "Si vous travaillez tout en recevant votre pension de retraite du RPC et que vous n'avez pas encore 70 ans, vous pouvez participer à la prestation après-retraite (PAR) du RPC. Pour chaque année pendant laquelle vous travaillez et cotisez au RPC, vous recevrez un montant supplémentaire qui s'ajoutera au montant de votre pension mensuelle.",
       "p5": "Comme la pension de retraite du RPC, le montant de la PAR est ajusté en fonction de votre âge. Si vous avez moins de 65 ans, le montant de la PAR sera moins élevé. Si vous avez plus de 65 ans, le montant sera plus élevé.",
-      "p6": "Lorsque vous atteignez l'âge de 65 ans, vous pouvez choisir de cesser de contribuer au PAR. Pour en savoir plus sur le fonctionnement de ce processus, consultez la page sur <a1>les prestations après retraite (PAR)</a1>.",
+      "p6": "Lorsque vous atteignez l'âge de 65 ans, vous pouvez choisir de cesser de cotiser au PAR. Pour en savoir plus sur le fonctionnement de ce processus, consultez la page sur <a1>les prestations après retraite (PAR)</a1>.",
       "p7": "Lisez <a2>Keith combine son travail avec ses pensions publiques</a2> et pour savoir comment il a combiné ses pensions publiques et ses PAR tout en travaillant.",
       "p8": "Pour en savoir plus sur les PAR, consultez notre page <a3>Principales sources de revenus de retraite</a3>.",
       "post-retirement-benefits-link": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/rpc-apres-retraite.html"
@@ -43,8 +43,8 @@
     "more-than-double": "Vous pouvez continuer à travailler mais avoir besoin de plus que votre salaire. Pensez à prendre votre pension de retraite du Régime de pensions du Canada (RPC) plus tôt, et commencer à recevoir la prestation après-retraite (PAR).",
     "no-benefit": "Certaines personnes peuvent continuer à travailler pour être actives dans leur communauté, pour se socialiser ou simplement parce qu'elles en ont envie. Continuer à travailler ou à faire du bénévolat est une bonne chose pour de nombreuses raisons, autres que financières.",
     "payment-increase": "Il peut être difficile d'épargner suffisamment pour la retraite. En outre, les Canadiens vivent plus longtemps qu'auparavant. C'est pourquoi de plus en plus de personnes continuent à travailler pendant leur retraite.",
-    "pensions-adjusted": "En continuant à travailler, vous continuez à contribuer au RPC. Les PAR sont une prestation à vie qui sera ajoutée à votre montant mensuel du CPP l'année suivante.",
-    "people-who-qualify": "Le départ à la retraite et le début de la pension sont deux choses différentes. Vos pensions pensions publiques peuvent débuter à des moments différents, en fonction de vos choix professionnels.",
+    "pensions-adjusted": "En continuant à travailler, vous continuez à cotiser au RPC. Les PAR sont une prestation à vie qui sera ajoutée à votre montant mensuel du RPC l'année suivante.",
+    "people-who-qualify": "Le départ à la retraite et le début de la pension sont deux choses différentes. Vos pensions publiques peuvent débuter à des moments différents, en fonction de vos choix professionnels.",
     "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> Si vous êtes admissible à la pension de la Sécurité de la vieillesse (SV) et que votre <a1>revenu est faible</a1>, vous pouvez également recevoir le <a2>Supplément de revenu garanti (SRG)</a2>. Vous ne pouvez pas recevoir le SRG si vous reportez le versement de votre pension de la SV. Les personnes qui ont droit au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour en faire la demande.",
     "start-collecting": "Les gens prennent et reprennent leur retraite, changent de carrière, créent de nouvelles entreprises pendant qu'ils sont à la retraite."
   },
@@ -59,7 +59,7 @@
       "header": "Keith combine son travail avec ses pensions publiques"
     },
     "rules-of-thumb": {
-      "description": "Jetez un coup d'œil sur ces conseils pour vous aider à choisir la date de début de vos pensions. Faites le choix adapté à votre situation particulière.",
+      "description": "Jetez un coup d'œil à ces conseils pour vous aider à choisir quand commencer à recevoir vos pensions publiques. Faites le choix adapté à votre situation.",
       "header": "Règles générales concernant les pensions publiques"
     },
     "working-while-collecting": {

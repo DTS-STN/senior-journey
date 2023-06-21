@@ -50,26 +50,26 @@
     "description": "Le tableau montre l'évolution des montants mensuels de votre pension de retraite du RPC en fonction de l'âge auquel vous commencez à la recevoir. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous percevrez d'argent. Votre pension de retraite du RPC pourrait plus que doubler si vous commencez à la recevoir à 70 ans plutôt qu'à 60 ans. Le tableau illustre l'augmentation de la pension en fonction de l'âge et utilise un montant de pension illustratif.",
     "disclaimer": "<strong>Clause de non-responsabilité\u00a0:</strong> Ce site Web vise à vous donner des conseils sur le bon moment pour recevoir vos pensions publique. Nous ne fournissons pas de conseils financiers. Une fois que vous aurez toute l'information dont vous avez besoin, nous vous encourageons à demander l'aide d'un conseiller financier.",
     "heading": "Pension de retraite du RPC",
-    "p1": "Quel que soit le nombre de fois où vous avez changé d'emploi, en travaillant au Canada, vous avez cotisé au Régime de pensions du Canada (RPC) ou au <a1>Régime de rentes du Québec (RRQ)</a1>. Le montant de votre pension de retraite du RPC dépend du montant et de la durée de vos contributions. Le RPC vous cotisations de choisir la date de début de votre pension de retraite, et chaque mois que vous reportez augmente votre montant mensuel. Le montant mensuel le plus élevé que vous puissiez recevoir est atteint à l'âge de 70 ans, après quoi il n'y a plus d'avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.",
+    "p1": "Quel que soit le nombre de fois où vous avez changé d'emploi, en travaillant au Canada, vous avez cotisé au Régime de pensions du Canada (RPC) ou au <a1>Régime de rentes du Québec (RRQ)</a1>. Le montant de votre pension de retraite du RPC dépend du montant et de la durée de vos cotisations. Le RPC offre la possibilité de choisir la date de début de votre pension de retraite, et chaque mois que vous reportez augmente votre montant mensuel. Le montant mensuel le plus élevé que vous puissiez recevoir est atteint à l'âge de 70 ans, après quoi il n'y a plus d'avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.",
     "p2": "Votre pension de retraite du RPC pourrait plus que doubler si elle était versée à partir de 70 ans, au lieu de 60 ans. Le tableau illustre l'augmentation de la pension avec l'âge et utilise un montant de pension illustratif.",
     "p3": "Lisez <a2>Fred décide quand commencer à recevoir ses pensions publiques</a2> pour savoir ce qui guide ses choix.",
     "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> Le Canadien moyen qui prend sa retraite à 60 ans, pourrait perdre 100\u00a0000\u00a0$ de revenu de retraite. Chaque mois où vous reportez le versement de votre pension, vous augmentez votre versement mensuel. Si vous reportez votre pension de retraite du RPC de 60 à 70 ans, vous pourriez plus que doubler votre montant mensuel. Votre pension sera modifiée pour tenir compte de l'inflation future."
   },
   "description-heading": "Description",
-  "header": "Decider quand recevoir sa pension publique",
+  "header": "Décider quand recevoir sa pension publique",
   "key-takeaways": {
     "common-law": "Si vous êtes en couple, vous devriez probablement prendre ces décisions avec votre époux ou votre conjoint de fait.",
     "heading": "Points à retenir",
     "highest-monthly-amount": "Le montant mensuel le plus élevé que vous pouvez commencer à recevoir de vos pensions publiques est à l'âge de 70 ans.",
-    "if-you-qualify": "Si vous êtes admissible à la pension de la SV et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Les personnes qui ont droit au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour présenter leur demande. Vous ne pouvez pas toucher le SRG si vous reportez le versement de votre pension de la SV.",
+    "if-you-qualify": "Si vous êtes admissible à la pension de la SV et que votre <a1>revenu est faible</a1>, vous pouvez également bénéficier du <a2>Supplément de revenu garanti (SRG)</a2>. Les personnes qui ont droit au SRG ne devraient pas attendre d'avoir atteint l'âge de 65 ans pour présenter leur demande. Vous ne pouvez pas recevoir le SRG si vous reportez le versement de votre pension de la SV.",
     "if-you-qualify-a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/montant-prestation.html",
     "if-you-qualify-a2": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/supplement-revenu-garanti/admissibilite.html",
     "more-than-double": "Vous pourriez plus que doubler le montant mensuel de votre RPC si vous reportiez votre pension de retraite de 60 à 70 ans.",
-    "no-benefit": "Il n'y a aucun avantage à attendre l'âge de 70 ans pour commencer à recevoir les deux pensions.",
+    "no-benefit": "Il n'y a aucun avantage à attendre après l'âge de 70 ans pour commencer à recevoir les deux pensions.",
     "payment-increase": "Votre paiement mensuel augmentera chaque mois que vous reportez, jusqu'à l'âge de 70 ans",
     "pensions-adjusted": "À l'avenir, vos pensions seront ajustées à l'inflation.",
-    "people-who-qualify": "Les personnes qui sont admissible au Supplément de revenu garanti (SRG) ne doivent pas attendre d'avoir atteint l'âge de 65 ans pour présenter leur demande.",
-    "planning-retirement": "Lorsque vous planifiez votre retraite, vous devez tenir compte de plusieurs facteurs\u00a0: votre santé, votre mode de vie, vos projets de retraite et vos finances.",
+    "people-who-qualify": "Les personnes admissible au Supplément de revenu garanti (SRG) ne devraient pas attendre d'avoir l'âge de 65 ans pour présenter leur demande.",
+    "planning-retirement": "Lorsque vous planifiez votre retraite, vous devez prendre en considération de plusieurs facteurs\u00a0: votre santé, votre mode de vie, vos projets de retraite et vos finances.",
     "start-collecting": "Vous pouvez commencer à recevoir votre pension de retraite du Régime de pensions du Canada (RPC) dès l'âge de 60 ans, avec une réduction permanente. Vous pouvez commencer à recevoir votre pension de la Sécurité de la vieillesse (SV) dès l'âge de 65 ans."
   },
   "learn-more": {
@@ -126,13 +126,13 @@
           }
         ]
       },
-      "description": "Le tableau indique les montants mensuels de la pension de la SV à l'âge de 75 ans, en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous recevrez d'argent. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Si vous choisissez de retarder le versement de votre pension et de recevoir une pension plus élevée, l'augmentation automatique de 10\u00a0% à l'âge de 75 ans vous permettra d'obtenir plus d'argent.",
+      "description": "Le tableau indique les montants mensuels de la pension de la SV à l'âge de 75 ans, en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous recevrez d'argent. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Si vous choisissez de reporter le versement de votre pension et de recevoir une pension plus élevée, l'augmentation automatique de 10\u00a0% à l'âge de 75 ans vous permettra d'obtenir plus d'argent.",
       "p1": "Quel que soit le moment où vous avez choisi de commencer à recevoir votre pension de la SV, celle-ci augmentera automatiquement de 10\u00a0% lorsque vous atteindrez l'âge de 75 ans.",
       "p2": "Si vous décidez de reporter votre pension et de recevoir un montant plus élevé, l'augmentation automatique de 10\u00a0% à l'âge de 75 ans vous permettra d'obtenir plus d'argent."
     },
-    "content-one": "Vous pouvez commencer à recevoir votre pension de la Sécurité de la vieillesse (SV) dès l'âge de 65 ans. Chaque mois que vous reportez augmente ce montant de 0,6\u00a0%. Pour chaque année reporter, votre pension de la SV augmente de 7,2\u00a0%. À l'âge de 70 ans, votre montant mensuel sera 36\u00a0% plus élevé qu'à l'âge de 65 ans. Si vous repoussez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée. Après 70 ans, il n'y a aucun avantage à reporter votre premier versement.",
+    "content-one": "Vous pouvez commencer à recevoir votre pension de la Sécurité de la vieillesse (SV) dès l'âge de 65 ans. Chaque mois que vous reportez augmente ce montant de 0,6\u00a0%. Pour chaque année reporter, votre pension de la SV augmente de 7,2\u00a0%. À l'âge de 70 ans, votre montant mensuel sera 36\u00a0% plus élevé qu'à l'âge de 65 ans. Si vous reportez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée. Après 70 ans, il n'y a aucun avantage à reporter votre premier versement.",
     "content-two": "Si vous reportez l'âge de votre pension, réfléchissez à la manière dont vous subviendrez à vos besoins en attendant de recevoir votre pension de la SV plus élevée.",
-    "heading": "Sécurité de la vieillesse",
+    "heading": "Pension de la Sécurité de la vieillesse",
     "high-income": {
       "a1": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/securite-vieillesse/impot-recuperation.html",
       "heading": "Si vous disposez d'un revenu élevé à la retraite",
@@ -164,7 +164,7 @@
           }
         ]
       },
-      "description": "Le graphique montre l'évolution des versements mensuels de la pension de la SV en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous percevrez d'argent à vie. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Votre pension de la SV augmentera de 36\u00a0% si vous la commencez à 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension avec l'âge et utilise le montant de la pension de la SV pour juin 2023.",
+      "description": "Le graphique montre l'évolution des versements mensuels de la pension de la SV en fonction de l'âge auquel vous commencez à recevoir votre pension. Il montre que plus vous attendez pour commencer à recevoir votre pension, plus vous recevrez d'argent à vie. Vous pouvez commencer à recevoir votre pension de la SV à 65 ans pour le montant le plus faible ou à 70 ans pour le montant le plus élevé. Votre pension de la SV augmentera de 36\u00a0% si vous la commencez à 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension avec l'âge et utilise le montant mensuel de la pension de la SV pour juin 2023.",
       "p": "Votre pension de la SV augmentera de 36\u00a0% si vous commencez à la recevoir à l'âge de 70 ans au lieu de 65 ans. Ce tableau illustre l'augmentation de la pension en fonction de l'âge et utilise le montant de la pension de la SV pour juin 2023."
     },
     "table-one": {
@@ -193,7 +193,7 @@
     "heading": "Aperçu",
     "p1": "La pension de la Sécurité de la vieillesse (SV) et la pension de retraite du Régime de pensions du Canada (RPC) remplacent une partie de votre revenu à la retraite. Elles contribuent à offrir une base sécuritaire qui vous permettra de vivre une retraite sûre et à l'aise. Si vous avez travaillé ou vécu au Québec, vous pouvez avoir droit à la pension de retraite du Régime de rentes du Québec (RRQ) au lieu du RPC. Ces programmes sont très similaires, mais pas identiques.",
     "p2": "Pour en savoir plus, visitez le <a1>site web du RRQ</a1>.",
-    "p3": "La pension de la SV et la pension de retraite du RPC offrent une flexibilité quant au moment où commencer les recevoirent. Cette décision fixera définitivement le montant de votre pension, qui vous est versée à vie. Vos pensions publiques changent périodiquement pour refléter l'inflation. Le montant de votre pension ne fera qu'augmenter et ne diminuera jamais, même si le coût de la vie diminue.",
+    "p3": "La pension de la SV et la pension de retraite du RPC offrent une flexibilité quant au moment où commencer les recevoir. Cette décision fixera définitivement le montant de votre pension, qui vous est versée à vie. Vos pensions publiques changent périodiquement pour refléter l'inflation. Le montant de votre pension ne fera qu'augmenter et ne diminuera jamais, même si le coût de la vie diminue.",
     "p4": "Les informations ci-dessous ont pour but de vous aider à décider à quel âge vous allez commencer à recevoir votre pension publique."
   },
   "values-heading": "Valeurs"
