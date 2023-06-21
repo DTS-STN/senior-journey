@@ -58,7 +58,7 @@
     "common-law": "If you're part of a couple, you should probably make these decisions with your spouse or common-law partner.",
     "heading": "Key takeaways",
     "highest-monthly-amount": "The highest monthly amount you can start collecting from your public pensions is at age 70.",
-    "if-you-qualify": "If you qualify for the Old Age Security (OAS) pension and have <a1>low income</a1>, you may also get the <a2>GIS</a2>. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your Canada Pension Plan (CPP) retirement pension early.",
+    "if-you-qualify": "If you qualify for the OAS pension and have <a1>low income</a1>, you may also get the <a2>GIS</a2>. You cannot receive the GIS if you are delaying your OAS pension. You may also consider taking your CPP retirement pension early.",
     "if-you-qualify-a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/benefit-amount.html",
     "if-you-qualify-a2": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement.html",
     "more-than-double": "You could more than double your monthly CPP amount if you delay your retirement pension from age 60 to 70.",
@@ -139,7 +139,7 @@
       "accessibility": {
         "button-label": "Text alternative for You can collect a higher monthly OAS pension, if you delay",
         "caption": "Values presented on the image:",
-        "header": ["Age you start collecting your OAS pension", "Monthly OAS pension"],
+        "header": ["Age you start your OAS pension", "Monthly OAS pension"],
         "rows": [
           {
             "data": ["65", "$691"]
@@ -161,7 +161,7 @@
           }
         ]
       },
-      "description": "The chart shows changes in monthly OAS pension payments depending on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect for life. You can begin your OAS pension at age 65, or delay it until age 70 for the largest amount. Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023.",
+      "description": "The chart shows changes in monthly OAS pension payments depending on what age you start. It shows that the longer you wait to start your pension, the more money you'll collect. You can begin your OAS pension at age 65, or delay it until age 70 for the largest amount. Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the monthly OAS pension amount for June 2023.",
       "p": "Your OAS pension will increase by 36%, if started at age 70 instead of 65. This chart is an illustration of the pension increase with age and uses the OAS pension amount for June 2023."
     },
     "table-one": {
