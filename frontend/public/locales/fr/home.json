@@ -1,9 +1,9 @@
 {
   "banner": {
     "text": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite.",
-    "title": "Informez-vous sur votre retraite et planifiez en conséquence"
+    "title": "Apprendre et planifier pour votre retraite"
   },
-  "header": "Informez-vous sur votre retraite et planifiez en conséquence",
+  "header": "Apprendre et planifier pour votre retraite",
   "meta": {
     "description": "Il n'est jamais trop tôt ni trop tard pour s'informer sur les options de retraite qui s'offrent à vous et planifier votre avenir. Renseignez-vous sur les pensions publiques, le meilleur moment pour commencer à les recevoir et les conseils pour maximiser votre revenu de retraite."
   },
@@ -56,9 +56,9 @@
       },
       "description": {
         "list": {
-          "check-status-payment-dates-and-amounts": "Vérifier l'état, les dates de versement et les montants de vos pensions publiques;",
-          "create-and-submit-application": "Créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse;",
-          "update-mailing-address-and-banking-information": "Mettre à jour votre adresse postale et vos renseignements bancaires."
+          "check-status-payment-dates-and-amounts": "vérifier l'état, les dates de versement et les montants de vos pensions publiques;",
+          "create-and-submit-application": "créer et présenter une ou plusieurs demandes de prestations du Régime de pensions du Canada et de la Sécurité de la vieillesse;",
+          "update-mailing-address-and-banking-information": "mettre à jour votre adresse postale et vos renseignements bancaires."
         },
         "text": "MDSC vous permet de faire beaucoup de choses, notamment\u00a0:"
       },
@@ -80,7 +80,7 @@
         },
         "retirement-income-calculator": {
           "description": "La Calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
-          "title": "La Calculatrice du revenu de retraite canadienne",
+          "title": "Calculatrice du revenu de retraite canadienne",
           "url": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html"
         }
       },

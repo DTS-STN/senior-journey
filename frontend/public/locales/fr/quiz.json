@@ -1,25 +1,25 @@
 {
   "confirmation": {
-    "no": "Non, retournez au questionnaire",
-    "sure": "Vous êtes certain que vous désirez quitter le questionnaire? Vous allez perdre votre progrès effectuer jusqu'à maintenant.",
-    "yes": "Oui, annulé"
+    "no": "Non, retourner au questionnaire",
+    "sure": "Voulez-vous vraiment quitter le questionnaire? Vous allez perdre votre progrès.",
+    "yes": "Oui, annuler"
   },
   "landing": {
     "header": "Questionnaire sur la préparation à la retraite",
-    "legal": "<strong>Votre statut légal</strong> (tel que citoyen canadien, statut d'Indien ou résident permanent)",
-    "marital": "<strong>État civil</strong>",
+    "legal": "<strong>statut légal</strong> (tel que citoyen canadien, statut d'Indien ou résident permanent);",
+    "marital": "<strong>état civil;</strong>",
     "meta": {
       "description": "Vous n'être pas sûr d'avoir tout fait pour prendre votre retraite? Répondez à ce questionnaire comme première étape sur votre liste de contrôle pour la retraite."
     },
     "minutes": "3 minutes",
     "p1": "Vous n'êtes pas certain d'avoir tout fait pour prendre votre retraite? Répondez à ce questionnaire comme première étape sur votre liste de contrôle pour la retraite.",
     "p2": "Vos réponses aideront à identifier les pensions et prestations publiques dont vous pourriez bénéficier. Ils vous guideront également sur ce qu'il faut prendre en considération pour mieux préparer votre retraite.",
-    "p3": "Vous n'avez pas besoin d'une information particulière pour répondre à ce questionnaire. Pour créer la liste de contrôle de retraite la plus appropriée à votre situation, vous devrez fournir des informations sur les éléments suivants\u00a0:",
-    "residence": "<strong>Votre historique de résidence</strong> (nombre d'années vécues au Canada)",
-    "retirement": "<strong>Plan de retraite</strong> (quand vous prévoyez prendre votre retraite, où vous prévoyez vivre à la retraite, etc.)",
+    "p3": "Vous n'avez pas besoin d'informations particulières pour répondre à ce questionnaire. Pour créer une liste de contrôle pour la retraite la plus appropriée à votre situation, vous devrez fournir des informations sur votre\u00a0:",
+    "residence": "<strong>historique de résidence</strong> (nombre d'années vécues au Canada);",
+    "retirement": "<strong>plan de retraite</strong> (par ex. quand vous prévoyez prendre votre retraite, où vous allez demeurer).",
     "start-the-quiz": "Commencez le questionnaire",
     "timetocomplete": "Temps nécessaire pour répondre au questionnaire",
-    "whatyouneed": "De quoi aurez-vous besoin"
+    "whatyouneed": "Ce dont vous aurez besoin"
   },
   "navigation": {
     "close": "Quitter",
@@ -63,7 +63,7 @@
       "option-unsure-preparedness": "Je ne sais pas",
       "option-very-prepared": "Très bien préparé(e)",
       "option-very-unprepared": "Très peu préparé(e)",
-      "subtitle": "Êtes-vous confiant d'avoir suffisamment d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
+      "subtitle": "Êtes-vous confiant d'avoir assez d'argent pour soutenir votre style de vie et vos projets futurs à la retraite?",
       "title": "Dans quelle mesure vous sentez-vous prêt(e) financièrement à prendre votre retraite?"
     },
     "question-how-long": {
@@ -74,7 +74,7 @@
       "title": "À partir de l'âge de 18 ans, pendant combien d'années aurez-vous vécu au Canada lorsque vous présenterez une demande pour vos pensions publiques?"
     },
     "question-status": {
-      "option-status-citizen": "Citoyen Canadien ou résident permanent",
+      "option-status-citizen": "Citoyen canadien ou résident permanent",
       "option-status-first-nation": "Métis, Inuit ou membre d'une Première Nation",
       "option-status-other": "Visiteur, étudiant ou travailleur temporaire",
       "option-status-sponsored": "Résident parrainé (moins de 10 ans au Canada)",
