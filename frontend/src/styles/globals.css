@@ -268,7 +268,3 @@ main .external-link[target='_blank']::after {
   width: 1em;
   text-align: center;
 }
-
-.page-nav-active {
-  @apply bg-[#4ED8E8] bg-opacity-[12%] text-[#008490];
-}

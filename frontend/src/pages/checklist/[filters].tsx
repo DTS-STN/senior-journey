@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
+import { ChangeEvent, FC, MouseEvent, useEffect, useMemo, useState } from 'react'
 
 import { Cached, ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
@@ -98,6 +98,33 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   const handlePrint = () => {
     window.print()
   }
+
+  // handle expanding all task details on print and closing tasks that weren't previously open after print
+  useEffect(() => {
+    const beforePrint = (event: Event) => {
+      let details = [...document.querySelectorAll<HTMLDetailsElement>('details:not([open])')]
+      for (let e of details) {
+        e.setAttribute('open', '')
+        e.dataset.wasclosed = ''
+      }
+    }
+
+    const afterPrint = (event: Event) => {
+      let details = [...document.querySelectorAll<HTMLDetailsElement>('details[data-wasclosed]')]
+      for (let e of details) {
+        e.removeAttribute('open')
+        delete e.dataset.wasclosed
+      }
+    }
+
+    window.addEventListener('beforeprint', beforePrint)
+    window.addEventListener('afterprint', afterPrint)
+
+    return () => {
+      window.removeEventListener('beforeprint', beforePrint)
+      window.removeEventListener('afterprint', afterPrint)
+    }
+  }, [])
 
   function handleOnRestartQuizClick(e: MouseEvent) {
     e.preventDefault()
@@ -300,7 +327,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               srTag={t('sr-tag')}
               tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
-            <div className="mt-4 lg:hidden">
+            <div className="mt-4 print:hidden lg:hidden">
               <Button
                 variant="text"
                 startIcon={<Cached />}
