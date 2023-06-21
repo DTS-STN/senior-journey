@@ -166,7 +166,10 @@ const RulesOfThumbForPublicPensions: FC = () => {
             <Trans
               ns="learn/rules-of-thumb-for-public-pensions"
               i18nKey="oas.li1"
-              components={{ a1: <MuiLink href={t('oas.a1')} /> }}
+              components={{
+                a1: <MuiLink href={t('oas.a1')} />,
+                a2: <MuiLink href={t('oas.a2')} />,
+              }}
             />
           </li>
           <li>{t('oas.li2')}</li>
