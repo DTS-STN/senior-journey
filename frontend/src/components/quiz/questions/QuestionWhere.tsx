@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 import { FormikProps, FormikValues } from 'formik'
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 import { QuizFormState } from '../../../lib/types'
 
@@ -60,30 +60,14 @@ export const QuestionWhere: FC<QuestionWhereProps> = ({ values, setFieldValue })
           aria-label={t('questions.question-where.option-canada-pt-60-or-more')}
           data-cy="canada-pt-60-or-more-button"
         >
-          <div>
-            <Trans
-              i18nKey="questions.question-where.option-canada-pt-60-or-more"
-              ns="quiz"
-              components={{
-                span: <span className="px-1 underline underline-offset-2" />,
-              }}
-            />
-          </div>
+          {t('questions.question-where.option-canada-pt-60-or-more')}
         </ToggleButton>
         <ToggleButton
           value="canada-pt-less-than-60"
           aria-label={t('questions.question-where.option-canada-pt-less-than-60')}
           data-cy="canada-pt-less-than-60-button"
         >
-          <div>
-            <Trans
-              i18nKey="questions.question-where.option-canada-pt-less-than-60"
-              ns="quiz"
-              components={{
-                span: <span className="px-1 underline underline-offset-2" />,
-              }}
-            />
-          </div>
+          {t('questions.question-where.option-canada-pt-less-than-60')}
         </ToggleButton>
         <ToggleButton
           value="outside-canada"
