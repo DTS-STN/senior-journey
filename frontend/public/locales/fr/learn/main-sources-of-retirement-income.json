@@ -14,7 +14,7 @@
             "header": "Description"
           },
           "header": [
-            "Années de cotisations au RCP et le début de votre pension",
+            "Années de cotisations au RPC et le début de votre pension",
             "Retraite du RPC",
             "PAR 1",
             "PAR 2",
@@ -79,14 +79,14 @@
     },
     "how-much": {
       "amount": "Le montant de votre pension de retraite du RPC dépend du montant et de la durée de vos cotisations. Le RPC vous permet de choisir le moment où vous souhaitez commencer à recevoir votre pension de retraite, et chaque mois reporter augmente votre montant mensuel. Le montant mensuel le plus élevé que vous puissiez recevoir est atteint à l'âge de 70 ans. Après cet âge, il n'y a plus d'avantage à reporter sa pension. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente.",
-      "header": "Quel est le montant de la pension de retraite du RPC que vous pouvez percevoir?",
+      "header": "Quel est le montant de la pension de retraite du RPC que vous pouvez recevoir?",
       "inflation": "Le montant de la pension de retraite du RPC est augmenté chaque année en janvier pour tenir compte de l'inflation.",
       "learn-more": {
         "content": "Pour en savoir plus sur les pensions anticipées et reporter, consultez la page <a>Décider quand recevoir sa pension publique</a>.",
         "link": "/learn/deciding-when-to-start-your-public-pensions"
       }
     },
-    "overview": "La pension de retraite du Régime de pensions du Canada (RPC) qui assure un remplacement de revenu pour les personnes qui ont travaillé ou étaient travailleurs autonomes au Canada. Il s'agit d'une pension mensuelle qui remplace une partie de vos revenus professionnels à la retraite. Le montant de votre pension de retraite du RPC est fonction de vos revenus et de vos contributions au régime.",
+    "overview": "La pension de retraite du Régime de pensions du Canada (RPC) qui assure un remplacement de revenu pour les personnes qui ont travaillé ou étaient travailleurs autonomes au Canada. Il s'agit d'une pension mensuelle qui remplace une partie de vos revenus professionnels à la retraite. Le montant de votre pension de retraite du RPC est fonction de vos revenus et de vos cotisations au régime et l'âge à laquelle vous décidez de commencer de la recevoir.",
     "qualify": {
       "header": "Ête-vous admissible à la pension de retraite du RPC?",
       "pension-credits": {
@@ -120,7 +120,7 @@
     },
     "monthly": "Le montant mensuel du SRG dépend de vos revenus de l'année précédente et de votre situation familiale. Si vous êtes célibataire, vous receverez un montant plus élevé.",
     "overview": "Le SRG est destiné à aider les personnes qui reçoivent la pension de la SV et qui ont de faibles revenus.",
-    "qualify": "Pour bénéficier du SIG, vous devez:"
+    "qualify": "Pour bénéficier du SRG, vous devez:"
   },
   "header": "Principales sources de revenus de retraite",
   "key-takeaways": {
@@ -133,7 +133,7 @@
       "header": "Vos pensions seront modifiées pour tenir compte des augmentations de l'inflation. Ces pensions constituent un revenu imposable."
     },
     "cpp-oas-available": {
-      "header": "Peu importe la date que vous décidez de prendre vos pensions publiques, elles seront toujours à votre disposition."
+      "header": "Peu importe la date que vous décidez de recevoir vos pensions publiques, elles seront toujours à votre disposition."
     },
     "cpp-part-of-plan": {
       "description": "Vous avez disposez peut-être autres revenu, comme une pension de retraite d'employeur ou une épargne personnelle.",
@@ -147,13 +147,13 @@
   },
   "learn-more": {
     "going-from-work-to-retirement": {
-      "description": "Vous pouvez choisir différentes manière d'effectuer une transition du monde du travail à celui de la retraite. Prendre sa retraite du monde du travail et commencer à recevoir ses pensions publiques sont deux choses différentes.",
+      "description": "Vous pouvez choisir différentes manières d'effectuer une transition du monde du travail à celui de la retraite. Prendre sa retraite du monde du travail et commencer à recevoir ses pensions publiques sont deux choses différentes.",
       "header": "Transition du monde du travail à la retraite"
     },
     "header": "En savoir plus",
     "income-calculator": {
       "description": "Le Calculatrice du revenu de retraite canadienne vous fournira des informations sur le revenu de retraite. Cela comprend la pension de la Sécurité de la vieillesse (SV) et les prestations de retraite du Régime de pensions du Canada (RPC).",
-      "header": "La Calculatrice du revenu de retraite canadienne",
+      "header": "Calculatrice du revenu de retraite canadienne",
       "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html"
     },
     "savings-and-pension": {
@@ -224,7 +224,7 @@
         "pillar": "Deuxième palier"
       },
       "header": "Le système de revenu de retraite du Canada",
-      "important-notice": "<strong>Important</strong>: Les pensions publique ne sont pas destinées à couvrir tous vos besoins financiers à la retraite. La plupart des Canadiens épargneront pendant leurs années de travail ou disposeront d'une autre source de revenus pour avoir suffisamment d'argent à la retraite. Les pensions publiques du Canada vous offrent la souplesse nécessaire pour commencer à les recevoirent au moment qui convient le mieux à votre situation personnelle. Les pensions publiques du Canada sont garantie financièrement. Cela signifie que vous pouvez compter sur elles pour le reste de votre vie, quel que soit le moment où vous décidez de commencer à les recevoirent. Les pensions publiques vous protègent également de l'inflation. Vos pensions augmenteront en fonction de l'augmentation du coût de la vie.",
+      "important-notice": "<strong>Important</strong>: Les pensions publique ne sont pas destinées à couvrir tous vos besoins financiers à la retraite. La plupart des Canadiens épargneront pendant leurs années de travail ou disposeront d'une autre source de revenus pour avoir suffisamment d'argent à la retraite. Les pensions publiques du Canada vous offrent la souplesse nécessaire pour commencer à les recevoir au moment qui convient le mieux à votre situation personnelle. Les pensions publiques du Canada sont garantie financièrement. Cela signifie que vous pouvez compter sur elles pour le reste de votre vie, quel que soit le moment où vous décidez de commencer à les recevoir. Les pensions publiques vous protègent également de l'inflation. Vos pensions augmenteront en fonction de l'augmentation du coût de la vie.",
       "oas": {
         "content": "Financé par les recettes fiscales générales",
         "header": "Programme de la Sécurité de vieillesse",
