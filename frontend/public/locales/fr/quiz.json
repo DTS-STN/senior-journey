@@ -91,8 +91,8 @@
     },
     "question-where": {
       "option-canada-ft": "Au Canada",
-      "option-canada-pt-60-or-more": "Au Canada plus de 6 mois par année",
-      "option-canada-pt-less-than-60": "Au Canada moins de 6 mois par année",
+      "option-canada-pt-60-or-more": "Au Canada <span>plus</span> de 6 mois par année",
+      "option-canada-pt-less-than-60": "Au Canada <span>moins</span> de 6 mois par année",
       "option-outside-canada": "À l'extérieur du Canada",
       "option-unsure-retirement-living": "Je ne sais pas",
       "title": "Où prévoyez-vous demeurer lorsque vous prendrez votre retraite?"
