@@ -62,7 +62,7 @@ export const QuizConfirmation: FC<QuizConfirmationProps> = ({
   aaTitle,
 }) => {
   return (
-    <div className='min-h-[600px] flex flex-col mx-6 my-8'>
+    <div className="mx-6 my-8 flex min-h-[600px] flex-col">
       <DialogContent>
         <div className="mb-10 mt-16 text-center">
           <ErrorOutlineIcon className="text-9xl text-red-dark" />
@@ -111,7 +111,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
   const [showConfirmation, setShowConfirmation] = useState(false)
   const { mutate: setQuizData } = useSetQuizData()
   const closeBtn = useRef<HTMLButtonElement | null>(null)
-  
+
   const formikWizard = useFormikWizard({
     initialValues: defaultFormValues,
     onSubmit: async (values) => {
@@ -119,8 +119,8 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
 
       // Encodes a js object as a url-safe base64 string.
       const checklistFilters = toChecklistFilter(values as QuizFormState)
-      const encodedChecklistFilters = encodeURIComponent(window.btoa(JSON.stringify(checklistFilters)))
-      await router.push(`/checklist/${encodedChecklistFilters}`)
+      const filters = window.btoa(JSON.stringify(checklistFilters))
+      await router.push({ pathname: '/checklist/[filters]', query: { filters } })
     },
     validateOnNext: true,
     activeStepIndex: 0,
@@ -190,7 +190,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 {t('navigation.close')}
               </Button>
             </DialogTitle>
-            <DialogContent className="flex flex-col py-0 px-6">
+            <DialogContent className="flex flex-col px-6 py-0">
               <h2 className="mb-8 font-display text-2xl font-medium md:rounded-3xl md:bg-[#f5f5f5] md:p-6 md:text-4xl md:text-primary-700">
                 {t('navigation.title')}
               </h2>
@@ -208,7 +208,7 @@ const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
                 </p>
               </div>
             </DialogContent>
-            <DialogActions className="mt-6 block py-0 px-6">
+            <DialogActions className="mt-6 block px-6 py-0">
               <div className="grid gap-2 sm:grid-cols-2">
                 {formikWizard.isLastStep ? (
                   <LoadingButton
