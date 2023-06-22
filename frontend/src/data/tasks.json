@@ -1677,7 +1677,7 @@
       {
         "answerKey": "status-first-nation",
         "descriptionEn": "As an Indigenous person, if you have worked off Reserve, you are eligible to collect a Canada Pension Plan (CPP) retirement pension.\n\nIf you have worked only on a Reserve, it's possible that you have not contributed to CPP. If you're not sure, you can request a copy of your CPP Statement of Contributions from MSCA.",
-        "descriptionFr": "Si vous êtes membre d'une Première Nation, Métis ou Inuit, et que vous avez travaillé à l'extérieur de la réserve, vous avez le droit de recevoir une pension de retraite du Régime de pensions du Canada (RPC).\n\nSi vous n'avez travaillé que dans une réserve, il est possible que vous n'ayez pas cotisé au RPC. Si vous ne le savez pas, vous pouvez demander une copie de votre état de compte du cotisant au RPC à Service Canada (MDSC).",
+        "descriptionFr": "Si vous êtes Autochtone, et que vous avez travaillé à l'extérieur de la réserve, vous avez le droit de recevoir une pension de retraite du Régime de pensions du Canada (RPC).\n\nSi vous n'avez travaillé que dans une réserve, il est possible que vous n'ayez pas cotisé au RPC. Si vous ne le savez pas, vous pouvez demander une copie de votre état de compte du cotisant au RPC à Service Canada (MDSC).",
         "displayOrder": 271,
         "id": 29,
         "links": [
@@ -1702,7 +1702,7 @@
           }
         ],
         "titleEn": "As an Indigenous person, you may not have contributed to CPP. Check if you contributed to CPP",
-        "titleFr": "En tant que membre d'une Première Nation, d'une Métis ou d'une Inuit, vous n'avez peut-être pas cotisé au RPC. Vérifiez si vous avez cotisé au RPC"
+        "titleFr": "En tant qu'Autochtone, vous n'avez peut-être pas cotisé au RPC. Vérifiez si vous avez cotisé au RPC"
       },
       {
         "answerKey": "yes-kids",
@@ -2310,7 +2310,7 @@
       {
         "answerKey": "status-first-nation",
         "descriptionEn": "As an Indigenous person, you may have access to additional programs and benefits. Check with your Band Council for more details.",
-        "descriptionFr": "En tant que membre d'une Première Nation, Métis ou Inuit, vous pouvez avoir accès à des programmes et prestations supplémentaires. Renseignez-vous auprès de votre conseil de bande pour plus de détails.",
+        "descriptionFr": "En tant qu'Autochtone, vous pouvez avoir accès à des programmes et prestations supplémentaires. Renseignez-vous auprès de votre conseil de bande pour plus de détails.",
         "displayOrder": 561,
         "id": 57,
         "links": [
