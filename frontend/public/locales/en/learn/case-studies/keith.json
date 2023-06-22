@@ -113,7 +113,8 @@
     "prb": {
       "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-post-retirement.html",
       "heading": "What is the PRB?",
-      "p1": "If you work while collecting your Canada Pension Plan (CPP) retirement pension, you can also collect <a1>CPP Post-Retirement Benefits (PRBs)</a1>. Each year that you work and contribute, you will collect a small top-up from an additional PRB that will be added to your CPP retirement pension and benefits. Each PRB is adjusted based on your age when you start receiving it. If you are younger than 65, that PRB will be reduced. If you're older than 65, a new PRB is worth more."
+      "p1": "If you work while collecting your Canada Pension Plan (CPP) retirement pension, you can also collect <a1>CPP Post-Retirement Benefits (PRBs)</a1>. Each year that you work and contribute, you will collect a small top-up from an additional PRB that will be added to your CPP retirement pension and benefits. Each PRB is adjusted based on your age when you start receiving it. If you are younger than 65, that PRB will be reduced. If you're older than 65, a new PRB is worth more.",
+      "p2": "To learn more how we top-up your CPP retirement pension using PRBs, visit our <a>Main sources of retirement income</a> page."
     },
     "prb-choices": {
       "heading": "What are Keith's choices to combine his CPP retirement pension with PRBs?",
