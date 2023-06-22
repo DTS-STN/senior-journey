@@ -98,9 +98,9 @@
     },
     "description": "Ce tableau montre deux sources de revenus que Bonnie peut utiliser de 60 à 88 ans pour atteindre son objectif de revenu mensuel. L'une est son salaire et l'autre sa pension de la SV. Bonnie travaille à temps plein jusqu'à 62 ans et atteint son objectif de revenu mensuel. À 63 ans, elle passe à temps partiel et son revenu mensuel est inférieur de moitié à ce qu'il était auparavant. Le tableau montre que Bonnie commence à recevoir sa pension de la SV à l'âge de 65 ans. À partir de 65 ans, Bonnie continue d'utiliser sa pension mensuelle de la SV pour l'aider à atteindre son objectif. L'écart entre sa pension mensuelle de la SV et son objectif mensuel demeure important.",
     "heading": "Ajouter la pension de la SV à l'ensemble",
-    "p1": "Bonnie a vécu toute sa vie au Canada, et est admissible à une pleine pension de la Sécurité de Vieillesse (SV) à l'âge de 65 ans. Toutefois, elle sait qu'en admissible, elle peut encore augmenter ce montant. Finalement, Bonnie décide de recevoir sa pension de la SV à l'âge de 65 ans, lorsqu'elle prendra sa retraite complète. Tous les trois mois, son montant mensuel sera ajusté en fonction de l'inflation. Bonnie <strong>n'est pas</strong> admissible au Supplément de revenu garanti (SRG). Son objectif de revenu mensuel est d'environ 47\u00a0000\u00a0$, soit le double du seuil d'attribution du SRG.",
-    "p2": "Pour en savoir plus sur les éléments à prendre en considération lorsque vous choisissez l'âge auquel vous souhaitez commencer à recevoir votre pension de la SV, lisez <a1>Fred décide quand prendre ses pensions publiques</a1>.",
-    "p3": "Bonnie a commencé à recevoir la pension de la SV à 65 ans et doit décider quand commencer à recevoir sa pension de retraite du RPC et comment utiliser son épargne-retraite pour atteindre son objectif du revenu mensuel à la retraite."
+    "p1": "Bonnie a vécu toute sa vie au Canada, et est reportant à une pleine pension de la Sécurité de Vieillesse (SV) à l'âge de 65 ans. Toutefois, elle sait qu'en admissible, elle peut encore augmenter ce montant. Finalement, Bonnie décide de recevoir sa pension de la SV à l'âge de 65 ans, lorsqu'elle prendra sa retraite complète. Tous les trois mois, son montant mensuel sera ajusté en fonction de l'inflation. Bonnie <strong>n'est pas</strong> admissible au Supplément de revenu garanti (SRG). Son objectif de revenu mensuel est d'environ 47\u00a0000\u00a0$, soit le double du seuil d'attribution du SRG.",
+    "p2": "Pour en savoir plus sur les éléments à considérer pour choisir l'âge à commencer à recevoir votre pension de la SV, lisez <a1>Fred décide quand prendre ses pensions publiques</a1>.",
+    "p3": "Bonnie a commencé à recevoir la pension de la SV à 65 ans. Elle doit maintenant décider quand commencer à recevoir sa pension de retraite du RPC et comment utiliser son épargne-retraite pour atteindre son objectif du revenu mensuel à la retraite."
   },
   "breadcrumbs": {
     "learn": "Apprendre"
@@ -219,7 +219,7 @@
     "li3": "À 70 ans, elle recevra 1\u00a0299\u00a0$ par mois.",
     "p1": "Le RPC vous permet de choisir le moment où vous souhaitez commencer à recevoir votre pension de retraite, et chaque mois que vous reportez augmente votre montant mensuel. Le montant mensuel le plus élevé que vous puissiez recevoir est atteint à l'âge de 70 ans, après quoi il n'y a plus d'avantage à attendre. Si vous avez besoin d'argent plus tôt, vous pouvez commencer à recevoir votre pension dès l'âge de 60 ans, mais avec une réduction permanente. Dans le cas de Bonnie, si elle commence à recevoir sa pension de retraite du RPC\u00a0:",
     "p2": "L'écart de revenu de Bonnie doit être comblé par son épargne-retraite et ses investissements.",
-    "p3": "Bonnie prend la décision de reporter sa pension de retraite du Régime de pension du Canada (RPC), et de la recevoir à l'âge de 70 ans. La pension de retraite du Régime de pension du Canada est ajustée une fois par année pour tenir compte de l'inflation. Après avoir reçu sa pension du RPC et sa Sécurité de Vieillesse (SV), Bonnie n'atteint toujours pas son objectif de revenu mensuel. Les écarts demeurants doivent être combler par son épargne-retraite ou ses placements."
+    "p3": "Bonnie prend la décision de reporter sa pension de retraite du Régime de pension du Canada (RPC), et de la recevoir à l'âge de 70 ans. La pension de retraite du Régime de pension du Canada est ajustée une fois par année pour tenir compte de l'inflation. Après avoir reçu sa pension du RPC et sa Sécurité de Vieillesse (SV), Bonnie n'atteint toujours pas son objectif de revenu mensuel. Les écarts demeurants doivent être combler par son épargne-retraite ou ses investissements."
   },
   "description-heading": "Description",
   "early-pension": {
@@ -345,12 +345,12 @@
       "header": "Décider quand recevoir sa pension publique"
     },
     "going-from-work-to-retirement": {
-      "description": "Vous pouvez choisir différentes manière d'effectuer une transition du monde du travail a celui de la retraite. Prendre sa retraite du monde du travail et commencer a recevoir ses pensions publiques sont deux choses différentes.",
+      "description": "Vous pouvez choisir différentes manières d'effectuer une transition du monde du travail à celui de la retraite. Prendre sa retraite du monde du travail et commencer à recevoir ses pensions publiques sont deux choses différentes.",
       "header": "Transition du monde du travail à la retraite"
     },
     "header": "En savoir plus",
     "main-sources-of-retirment-income": {
-      "description": "Renseignez-vous sur les différentes sources de revenus de retraite dont vous pourriez bénéficier. Examiner vos sources de revenus et identifier les écarts potentiel.",
+      "description": "Renseignez-vous sur les différentes sources de revenus de retraite dont vous pourriez bénéficier. Examiner vos sources de revenus et identifier les écarts potentiels.",
       "header": "Principales sources de revenus de retraite"
     },
     "saving-for-retirement": {
@@ -367,7 +367,7 @@
     "a2": "https://www.osfi-bsif.gc.ca/fra/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
     "heading": "Aperçu",
     "p1": "Bonnie a travaillé dans le domaine du marketing pendant plus de 35 ans. Pendant cette période, elle a épargné pour sa retraite. Lorsqu'elle quittera son emploi, Bonnie conduira moins, aura besoin de moins de vêtements de travail et pourra davantage cuisiner à la maison. Ces changements dans son mode de vie réduiront son coût de la vie mensuelle.",
-    "p2": "Bonnie a maintenant 60 ans. Son salaire à temps plein est de 67\u00a0000\u00a0$ par an, soit 5\u00a0583\u00a0$ par mois. Elle souhaite passer à temps partiel à l'âge de 63 ans et prendre sa retraite complète à l'âge de 65 ans. Bonnie est aujourd'hui en bonne santé et décide de planifier pour les 28 prochaines années, ce qui correspond à l'espérance de vie moyenne d'une femme Canadienne âgée de 60 ans cette année.",
+    "p2": "Bonnie a maintenant 60 ans. Son salaire à temps plein est de 67\u00a0000\u00a0$ par année, soit 5\u00a0583\u00a0$ par mois. Elle souhaite passer à temps partiel à l'âge de 63 ans et prendre sa retraite complète à l'âge de 65 ans. Bonnie est aujourd'hui en bonne santé et décide de planifier pour les 28 prochaines années, ce qui correspond à l'espérance de vie moyenne d'une femme Canadienne âgée de 60 ans cette année.",
     "p3": "L'objectif de Bonnie à la retraite est de conserver son mode de vie actuel. Pour ce faire, elle devra décider du moment où elle commencera à recevoir ses pensions du Régime de pensions du Canada (RPC) et de la Sécurité de la vieillesse (SV), car cela modifiera la façon dont elle utilisera son épargne et le moment où elle le fera.",
     "smart-tip": "<strong>Conseil judicieux\u00a0:</strong> La longévité est un facteur important pour le calcul de la pension. La plupart des Canadiens sous-estiment leur espérance de vie et nombre d'entre eux risquent d'épuiser leur épargne. En moyenne, les Canadiens âgés de 65 ans aujourd'hui peuvent espérer <a1>vivre jusqu'à 86 ans pour les hommes et 88 ans pour les femmes</a1>. C'est pourquoi ils doivent prévoir au moins 20 à 25 ans de plus. En fait, il y a <a2>environ 50\u00a0% de chances que</a2> les personnes qui prennent leur retraite aujourd'hui vivent jusqu'à 90 ans. Il est bon d'avoir un plan financier pour ces années de vie."
   },

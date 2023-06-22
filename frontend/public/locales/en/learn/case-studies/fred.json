@@ -27,7 +27,7 @@
         ]
       },
       "description": "The chart shows changes in Fred's CPP pension lifetime payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll receive for life. He could start his CPP pension at age 60 for the smallest amount, or at age 70 for the largest amount.",
-      "p": "By age 86, Fred could receive $95,000 more, if he delays from 60 to 70. By age 89, this difference will be $130,000."
+      "p": "Fred is thinking about starting his CPP retirement pension at age 70. By age 86, Fred could receive $95,000 more, if he delays from 60 to 70. By age 89, this difference will be $130,000."
     },
     "monthly-pension": {
       "accessibility": {
@@ -61,11 +61,11 @@
   "key-takeaways": {
     "a1": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/benefit-amount.html",
     "a2": "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/guaranteed-income-supplement/eligibility.html",
-    "heading": "Key Takeaways",
+    "heading": "Key takeaways",
     "li1": "You do not have to start your Canada Pension Plan (CPP) retirement pension and Old Age Security (OAS) pension at the same age.",
     "li2": "You can start your public pensions at different times.",
     "li3": "While both CPP and OAS provide increases for delaying the start your pension, they don't provide the same rate of increase.",
-    "li4": "For people aged 65-70, the CPP provides a larger rate of increase to the retirement pension for each month you delay than the OAS pension. If delayed until age 70, the monthly CPP retirement pension could more than double compared to starting it at 60.",
+    "li4": "For people aged 65 to 70, the CPP provides a larger rate of increase to the retirement pension for each month you delay than the OAS pension. If delayed until age 70, the monthly CPP retirement pension could more than double compared to starting it at 60.",
     "li5": "There are many things to consider when deciding the age to start collecting your public pensions.",
     "li6": "You might make your decision based on the monthly payment amounts, the total amount you'd collect over a lifetime, or your ability to use money to meet immediate needs or wants.",
     "li7": "Starting your pension at 60 might mean leaving public pension money on the table. In fact, based on average benefit amounts, that decision could cost $100,000 by the end of one's life.",
@@ -149,7 +149,7 @@
           }
         ]
       },
-      "description": "The chart shows changes in Fred's lifetime OAS pension payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll collect every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount. If OAS pension is delayed from age 65 to 68, the difference is around $150 per month.",
+      "description": "The chart shows changes in Fred's monthly OAS pension payments depending on what age he starts. It shows that the longer he waits to start his pension, the more money he'll collect every month. He could start his OAS pension at age 65 for the smallest amount, or at age 70 for the largest amount. If OAS pension is delayed from age 65 to 68, the difference is around $150 per month.",
       "p": "If OAS pension is delayed from age 65 to 68, the difference is around $150 per month."
     },
     "p1": "Fred looks at the amount of his lifetime OAS pensions. He decides it's better to start his OAS pension at age 68 to collect the most money.",
@@ -166,7 +166,7 @@
     "p3": "At age 65, Fred's CPP retirement pension amount will be $1,300 a month. Since Fred has lived in Canada his whole life, he will be eligible for a full OAS pension. Because of the money he plans to withdraw from his RRSP and income sources, Fred is not considered <a3>low income</a3>. He would not qualify for the <a4>Guaranteed Income Supplement (GIS)</a4>. Fred also needs to consider when he will start the OAS pension.",
     "p4": "He would like to think about his finances first to make sure he will live a comfortable retirement.",
     "p5": "After thinking it through, Fred decides to delay his OAS pension until age 68 and delay his CPP retirement pension until age 70. Let's see how he came to this decision!",
-    "smart-tip": "<strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live until age 86-88 and need to plan for least another 20 years</a1>. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
+    "smart-tip": "<strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live up to 86 years for men and 88 years for women</a1>. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
   },
   "values-heading": "Values"
 }
