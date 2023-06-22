@@ -26,7 +26,8 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
   return (
     <div>
       <h5 className="h5 mb-4">{t('questions.question-apply.question-marital-status.title')}</h5>
-      <FormGroup className="mb-4" data-cy="apply-subquestion-marital-status">
+      <FormGroup className="mb-4" data-cy="apply-subquestion-marital-status"
+      >
         <FormControlLabel
           control={
             <Checkbox name="single" value="single" checked={values.single === 'single'} onChange={handleCheckbox} />
