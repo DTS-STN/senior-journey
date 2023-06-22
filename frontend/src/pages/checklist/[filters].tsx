@@ -130,7 +130,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
 
   useEffect(() => {
     setAllTasksExpanded(allTaskIds.length === expandedTasks.length)
-  }, [expandedTasks, allTasksExpanded])
+  }, [expandedTasks, allTasksExpanded, allTaskIds.length])
 
   function handleAllTasksExpandedToggle() {
     setExpandedTasks(allTasksExpanded ? [] : allTaskIds)
