@@ -10,7 +10,7 @@ import { DefaultSeo } from 'next-seo'
 import { AppProps, NextWebVitalsMetric } from 'next/app'
 import Head from 'next/head'
 
-import nextI18NextConfig from '../../next-i18next.config.js'
+import nextI18NextConfig from '../../next-i18next.config'
 import createEmotionCache from '../createEmotionCache'
 import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
 import type { AppWindow } from '../lib/types'

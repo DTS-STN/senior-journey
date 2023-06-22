@@ -25,6 +25,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import urlcat from 'urlcat'
 
+import nextI18NextConfig from '../../next-i18next.config'
 import landingPageImage from '../../public/assets/landing-page.jpg'
 import Container from '../components/Container'
 import { HeroBanner } from '../components/HeroBanner'
@@ -342,7 +343,7 @@ const Home: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home'])),
+    ...(await serverSideTranslations(locale ?? 'default', ['common', 'home'], nextI18NextConfig)),
   },
 })
 

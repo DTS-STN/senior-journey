@@ -8,6 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 
+import nextI18NextConfig from '../../../next-i18next.config'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
@@ -162,7 +163,11 @@ const PlanningToSaveForRetirement: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/planning-to-save-for-retirement'])),
+      ...(await serverSideTranslations(
+        locale ?? 'default',
+        ['common', 'learn/planning-to-save-for-retirement'],
+        nextI18NextConfig
+      )),
     },
   }
 }

@@ -20,6 +20,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Router from 'next/router'
 
+import nextI18NextConfig from '../../../next-i18next.config'
 import checklistBannerImage from '../../../public/assets/checklist-banner.jpg'
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
@@ -404,7 +405,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
 
     return {
       props: {
-        ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'])),
+        ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'], nextI18NextConfig)),
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
         initialExpandedGroups: queryVariableToNumberArray(

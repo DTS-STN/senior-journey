@@ -8,6 +8,7 @@ import { NextSeo } from 'next-seo'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
+import nextI18NextConfig from '../../../next-i18next.config'
 import bonnieDelaysToReduceTheSavingsSheNeedsSmImage from '../../../public/assets/bonnie-delays-to-reduce-the-savings-she-needs-sm.jpg'
 import decidingWhenToStartYourPublicPensionsSmImage from '../../../public/assets/deciding-when-to-start-your-public-pensions-sm.jpg'
 import fredDecidesWhenToTakeHisPensionsSmImage from '../../../public/assets/fred-decides-when-to-take-his-pensions-sm.jpg'
@@ -34,7 +35,7 @@ const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageSrc, minRead
   const { t } = useTranslation('learn')
   const uniqueId = useId()
   return (
-    <Card id={`${uniqueId}-card-${id}`} className="h-full hover:shadow-md hover:shadow-gray-400 duration-100">
+    <Card id={`${uniqueId}-card-${id}`} className="h-full duration-100 hover:shadow-md hover:shadow-gray-400">
       <CardActionArea component={Link} href={href} className="h-full" aria-describedby={`${uniqueId}-card-${id}-title`}>
         <div className="relative h-64 ">
           <Image
@@ -205,7 +206,7 @@ const Learn: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'], nextI18NextConfig)),
     },
   }
 }

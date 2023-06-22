@@ -10,6 +10,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import nextI18NextConfig from '../../../../next-i18next.config'
 import AccessibilityGraphContainer from '../../../components/AccessibilityGraphContainer'
 import AlertCard from '../../../components/AlertCard'
 import { LearnPageLayout } from '../../../components/LearnPageLayout'
@@ -364,7 +365,7 @@ const Keith: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'])),
+      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'], nextI18NextConfig)),
     },
   }
 }
