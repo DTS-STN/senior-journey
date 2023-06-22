@@ -143,6 +143,15 @@ const Keith: FC = () => {
             components={{ a1: <MuiLink href={t('cpp.prb.a1')} /> }}
           />
         </p>
+        {locale === 'en' && (
+          <p>
+            <Trans
+              ns="learn/case-studies/keith"
+              i18nKey="cpp.prb.p2"
+              components={{ a: <MuiLink component={Link} href="/learn/main-sources-of-retirement-income" /> }}
+            />
+          </p>
+        )}
 
         <h2 id="prb-choices" className="h2 h2-gutter">
           {t('cpp.prb-choices.heading')}
