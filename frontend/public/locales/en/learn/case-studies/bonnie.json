@@ -103,7 +103,7 @@
   "conclusion": {
     "disclaimer": "<strong>Disclaimer:</strong> These stories are only simplified examples to illustrate the various factors that should be considered when deciding when to start collecting your public pensions, and potential outcomes. They do not, for example, include the effects of taxation or investment growth, and assume that Bonnie's goal is stable income across her entire life, rather than trying to maximize income to make purchases, pay off debts or travel. These stories are not intended to provide financial advice, and we strongly encourage you to seek help from a financial advisor as you plan your retirement.",
     "heading": "Conclusion",
-    "p1": "If Bonnie chooses to take her Canada Pension Plan (CPP) retirement pension at age 63, she will need $579,000 in her retirement savings. Remember, she needed $528,000 in savings if she chose to take her CPP at age 70. Bonnie will need to save <strong>$51,000</strong> more if she wants to take her CPP retirement pension earlier than if she delays it. As taxes are usually lower in retirement, Bonnie might need less in private savings.",
+    "p1": "If Bonnie chooses to take her Canada Pension Plan (CPP) retirement pension at age 63, she will need $579,000 in retirement savings. Remember, she needed $528,000 in savings if she chose to take her CPP at age 70. Bonnie will need to save <strong>$51,000</strong> more if she wants to take her CPP retirement pension earlier than if she delays it. As taxes are usually lower in retirement, Bonnie might need less in private savings.",
     "p2": "If Bonnie lives a longer life to age 93, she will need <strong>$81,000</strong> more in private pension savings. This is if she takes CPP retirement pension at age 63 instead of age 70.",
     "p3": "If inflation is more than 2% per year, her target monthly income will grow higher. Bonnie will need more of her private savings to cover the gap.",
     "p4": "Public pension payments grow with inflation, so Bonnie needs to save less for her retirement if she depends on delayed public pensions. Bonnie made the decision to take her OAS pension at age 65 and delay her CPP retirement pension until age 70.",
@@ -362,9 +362,9 @@
     "a2": "https://www.osfi-bsif.gc.ca/Eng/oca-bac/as-ea/Pages/CPP_Mortality_Study_2021.aspx#tbl32",
     "heading": "Overview",
     "p1": "Bonnie worked in marketing for over 35 years. During that time, she saved for her retirement. When she leaves her job, Bonnie will drive less, need less work clothes and can cook at home more. These changes in lifestyle will lower her monthly cost of living.",
-    "p2": "Bonnie is now 60 years old. Her full-time salary is $67,000 per year or $5,583 per month. She would like to go part-time at age 63 and then fully retire at age 65. Bonnie is healthy now and decides to plan for the next 28 years – which is the average lifespan of a Canadian woman who is 60 this year.",
+    "p2": "Bonnie is now 60 years old. Her full-time salary is $67,000 per year or $5,583 per month. She would like to go part-time at age 63 and then fully retire at age 65. Bonnie is healthy now and decides to plan for the next 28 years, which is the average lifespan of a Canadian woman who is 60 this year.",
     "p3": "Bonnie's goal in retirement is to generally maintain her current lifestyle - and so, she'll be looking at how to do that. As part of this, she'll need to decide when to start her OAS and CPP pensions because it will change how and when she uses her savings.",
-    "smart-tip": "<strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live up to 86 years for men and 88 years for women</a1>. That's why they need to plan for at least another 20-25 years. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
+    "smart-tip": "<strong>Smart tip:</strong> Longevity is an important factor when taking your pensions. Most Canadians underestimate how long they'll live, and many are at risk of outliving their savings. On average, Canadians who are age 65 today can expect to <a1>live up to 86 years for men and 88 years for women</a1>. That's why they need to plan for at least another 20 to 25 years. In fact, there is <a2>about 50% chance</a2> that those who go into retirement today will live up to age 90. It's good to have a financial plan for these years of life."
   },
   "own-savings": {
     "accessibility": {
@@ -563,7 +563,7 @@
       ]
     },
     "description": "This chart shows that Bonnie works full time until age 62 and meets her target monthly income. At age 63 she goes part-time, and her monthly income is half of what it used to be. Bonnie's target monthly income also reduces to 70% because she might need less income in retirement. There's a gap between Bonnie's monthly income from working part-time and from her target monthly income in retirement. At age 65, Bonnie fully retires and has no money from the job to meet her target monthly income. Bonnie's target monthly income grows slightly as she gets older until age 88 because of inflation.",
-    "heading": "Stopping Earnings from Work",
+    "heading": "Stopping earnings from work",
     "p": "To retire comfortably, Bonnie needs about 60-70% of her current work income before taxes. The target monthly income then grows with 2% rate of inflation into future."
   },
   "values-heading": "Values"
