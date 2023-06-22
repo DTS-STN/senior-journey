@@ -52,7 +52,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   filters,
   receivingBenefits,
 }) => {
-  const { t } = useTranslation('checklist')
+  const { t } = useTranslation(['checklist', 'common'])
 
   const router = useRouter()
   const { mutate: removeQuizData } = useRemoveQuizData()

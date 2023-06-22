@@ -18,7 +18,7 @@ import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const DecidingWhenToCollectPublicPensions: FC = () => {
   const { locale } = useRouter()
-  const { t } = useTranslation('learn/deciding-when-to-start-your-public-pensions')
+  const { t } = useTranslation(['learn/deciding-when-to-start-your-public-pensions', 'common'])
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 

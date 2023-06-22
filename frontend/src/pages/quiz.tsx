@@ -12,7 +12,7 @@ import { QuizDialog } from '../components/quiz/QuizDialog'
 import { getDCTermsTitle } from '../utils/seo-utils'
 
 const Quiz: FC = () => {
-  const { t } = useTranslation('quiz')
+  const { t } = useTranslation(['quiz', 'common'])
   const [quizDialogOpen, setQuizDialogOpen] = useState(false)
 
   const handleOnQuizDialogTriggerClick = () => {

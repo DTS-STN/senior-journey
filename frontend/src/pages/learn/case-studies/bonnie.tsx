@@ -18,7 +18,7 @@ import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Bonnie: FC = () => {
   const { locale } = useRouter()
-  const { t } = useTranslation('learn/case-studies/bonnie')
+  const { t } = useTranslation(['learn/case-studies/bonnie', 'common'])
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 

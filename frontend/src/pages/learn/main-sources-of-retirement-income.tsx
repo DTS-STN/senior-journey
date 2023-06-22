@@ -18,7 +18,7 @@ import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const MainSourcesOfRetirementIncome: FC = () => {
   const { locale } = useRouter()
-  const { t } = useTranslation('learn/main-sources-of-retirement-income')
+  const { t } = useTranslation(['learn/main-sources-of-retirement-income', 'common'])
 
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 

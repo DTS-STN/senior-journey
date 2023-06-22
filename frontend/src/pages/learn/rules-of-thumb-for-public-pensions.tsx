@@ -13,7 +13,7 @@ import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const RulesOfThumbForPublicPensions: FC = () => {
-  const { t } = useTranslation('learn/rules-of-thumb-for-public-pensions')
+  const { t } = useTranslation(['learn/rules-of-thumb-for-public-pensions', 'common'])
 
   const learnMoreLinks = useMemo(
     () => [
