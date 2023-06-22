@@ -37,7 +37,8 @@ const theme = createTheme({
           fontFamily: 'Lato, sans-serif',
           textTransform: 'none',
           "&.Mui-focusVisible":{
-            boxShadow: '0 0 0 2px #ffffff, 0 0 3px 5px #004f56',
+            outline: '3px solid #004f56',
+            outlineOffset: '2px'
           }
         }
       },
@@ -49,7 +50,8 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "&.Mui-focusVisible":{
-            boxShadow: '0 0 0 2px #ffffff, 0 0 3px 5px #004f56',
+            outline: '3px solid #004f56',
+            outlineOffset: '2px'
           }
         }
       }
@@ -58,13 +60,23 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "&:focus-within": {
-            boxShadow: '0 0 0 2px #ffffff, 0 0 3px 5px #004f56',
+            outline: '3px solid #004f56',
+            outlineOffset: '2px'
           },
           "& .MuiCardActionArea-focusHighlight": {
             backgroundColor: 'transparent',
           },
         },
       },
+    },
+    MuiCheckbox:{
+      styleOverrides: {
+        root: {
+          "&.Mui-focusVisible":{
+            outlineOffset: '-5px'
+          }
+        }
+      }
     },
     MuiLink: {
       defaultProps: {
@@ -76,6 +88,7 @@ const theme = createTheme({
         root:{
           "&:focus-within": {
             backgroundColor: 'transparent',
+            outlineOffset: '-3px'
           },
         }
       }
@@ -86,6 +99,9 @@ const theme = createTheme({
           fontFamily: 'Lato, sans-serif',
           textTransform: 'none',
           fontWeight: 'bold',
+          "&.Mui-focusVisible":{
+            outlineOffset: '-3px'
+          }
         },
       },
     },
