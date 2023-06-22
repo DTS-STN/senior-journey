@@ -2,6 +2,8 @@
   "breadcrumbs": {
     "learn": "Learn"
   },
+  "open-all": "Open all tasks",
+  "close-all": "Close all tasks",
   "filter-tasks_zero": "Filter tasks",
   "filter-tasks_one": "Filter tasks ({{count}} applied)",
   "filter-tasks_other": "Filter tasks ({{count}} applied)",
