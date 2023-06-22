@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { ValidationError } from 'yup'
 
 import { publicRuntimeConfigSchema } from '../../lib/schemas/public-runtime-config-schema'
+import { PublicRuntimeConfig } from '../../lib/types'
 import { getLogger } from '../../logging/log-util'
 
 const logger = getLogger('api/readyz')
@@ -9,6 +10,7 @@ const logger = getLogger('api/readyz')
 export interface ReadyzApiResponse {
   errors?: Array<string>
   message?: string
+  publicRuntimeConfig?: PublicRuntimeConfig
   status: 'UNHANDLED ERROR' | 'INVALID CONFIGURATION' | 'UP'
   uptime?: string
 }
@@ -19,9 +21,10 @@ export interface ReadyzApiResponse {
 export default function handler(_req: NextApiRequest, res: NextApiResponse<ReadyzApiResponse>) {
   try {
     // validate public runtime configuration
-    publicRuntimeConfigSchema.validateSync(process.env)
+    const publicRuntimeConfig = publicRuntimeConfigSchema.validateSync(process.env, { stripUnknown: true })
 
     res.status(200).json({
+      publicRuntimeConfig,
       status: 'UP',
       uptime: `${process.uptime()}s`,
     })

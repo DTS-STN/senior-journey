@@ -13,12 +13,15 @@ import Head from 'next/head'
 import nextI18NextConfig from '../../next-i18next.config.js'
 import createEmotionCache from '../createEmotionCache'
 import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
-import { AppWindow } from '../lib/types'
+import type { AppWindow } from '../lib/types'
+import { getLogger } from '../logging/log-util'
 import { getNextSEOConfig } from '../next-seo.config'
 import '../styles/globals.css'
 import '../styles/latofonts.css'
 import theme from '../theme'
 import { createCounter, createHistogram } from '../utils/metrics'
+
+const logger = getLogger('_app')
 
 // Create a react-query client
 const queryClient = new QueryClient()
@@ -47,20 +50,39 @@ const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, ro
   useEffect(() => {
     const handleRouteChange = () => {
       // only push event if pathname is different
-      if (window.location.pathname !== appPreviousLocationPathname) {
-        ;(window as AppWindow).adobeDataLayer?.push?.({ event: 'pageLoad' })
+
+      if (appPreviousLocationPathname !== window.location.pathname) {
         appPreviousLocationPathname = window.location.pathname
+
+        /**
+         * The analytics beacon execution is scheduled to initiate a one-time callback after a configurable
+         * delay in milliseconds. This ensures that the rendering process of i18next is completed before
+         * capturing metrics, preventing them from containing previous page content.
+         */
+        setTimeout(() => {
+          logger.debug(
+            {
+              appPreviousLocationPathname,
+              beaconDelay: publicRuntimeConfig.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY,
+              documentTitle: document.title,
+              windowLocationPathname: window.location.pathname,
+            },
+            'Analytics beacon execution'
+          )
+          ;(window as AppWindow).adobeDataLayer?.push?.({ event: 'pageLoad' })
+        }, publicRuntimeConfig.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY)
       }
     }
 
     handleRouteChange()
+
     router.events.on('routeChangeComplete', handleRouteChange)
     router.events.on('hashChangeComplete', handleRouteChange)
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
       router.events.off('hashChangeComplete', handleRouteChange)
     }
-  }, [router.events])
+  }, [publicRuntimeConfig.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY, router.events])
 
   return (
     <CacheProvider value={emotionCache}>
