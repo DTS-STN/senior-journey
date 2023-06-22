@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, MouseEvent, useEffect, useMemo, useState } from 'react'
+import { ChangeEvent, FC, MouseEvent, useDeferredValue, useEffect, useMemo, useState } from 'react'
 
 import { Cached, ExpandLess, ExpandMore, FilterList, UnfoldMore } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
@@ -18,7 +18,7 @@ import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
-import { useRouter } from 'next/router'
+import Router from 'next/router'
 
 import checklistBannerImage from '../../../public/assets/checklist-banner.jpg'
 import { HeroBanner } from '../../components/HeroBanner'
@@ -54,16 +54,18 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
 }) => {
   const { t } = useTranslation(['checklist', 'common'])
 
-  const router = useRouter()
   const { mutate: removeQuizData } = useRemoveQuizData()
 
-  const [expanded, setExpanded] = useState(false)
-  const [importantExpanded, setImportantExpanded] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState(initialExpandedGroups)
   const [expandedTasks, setExpandedTasks] = useState(initialExpandedTasks)
-  const [allTasksExpanded, setAllTasksExpanded] = useState(false)
+  const deferredExpandedGroups = useDeferredValue(expandedGroups)
+  const deferredExpandedTasks = useDeferredValue(expandedTasks)
+
+  const [tagsFilterExpanded, setTagsFilterExpanded] = useState(false)
+  const [importantExpanded, setImportantExpanded] = useState(false)
 
   const allTaskIds = [...beforeRetiring.tasks, ...applyingBenefits.tasks, ...receivingBenefits.tasks].map((t) => t.id)
+  const allTasksExpanded = allTaskIds.length === expandedTasks.length
 
   const desktop = useMediaQuery(theme.breakpoints.up('md'))
 
@@ -90,12 +92,13 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
     ]
   }, [applyingBenefits.tasks, beforeRetiring.tasks, receivingBenefits.tasks])
 
-  function handleChange(e: ChangeEvent<HTMLInputElement>) {
+  function handleTagsFilterChange(e: ChangeEvent<HTMLInputElement>) {
     const newFilters = { ...filters }
     if (e.target.checked) newFilters.tags = [...newFilters.tags, e.target.value]
     else newFilters.tags = newFilters.tags.filter((tag) => tag !== e.target.value)
-    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(newFilters)))
-    router.push(`/checklist/${encodedFilters}`, undefined, { scroll: false })
+    Router.push({ pathname: Router.pathname, query: { filters: window.btoa(JSON.stringify(newFilters)) } }, undefined, {
+      scroll: false,
+    })
   }
 
   const handlePrint = () => {
@@ -105,41 +108,39 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   function handleOnRestartQuizClick(e: MouseEvent) {
     e.preventDefault()
     removeQuizData()
-    router.push('/quiz')
+    Router.push('/quiz')
   }
 
   function handleOnTaskGroupAccordionChange(id: number, expanded: boolean) {
-    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
-    const group = [...new Set(expanded ? [...expandedGroups, id] : expandedGroups.filter((val) => val !== id))]
-    setExpandedGroups(group)
-    router.replace({ pathname: `/checklist/${encodedFilters}`, query: { group, task: expandedTasks } }, undefined, {
-      scroll: false,
-      shallow: true,
-    })
+    setExpandedGroups((prev) => [...new Set(expanded ? [...prev, id] : prev.filter((val) => val !== id))])
   }
 
   function handleOnTaskAccordionChange(id: number, expanded: boolean) {
-    const encodedFilters = encodeURIComponent(window.btoa(JSON.stringify(filters)))
-    const task = [...new Set(expanded ? [...expandedTasks, id] : expandedTasks.filter((val) => val !== id))]
-    setExpandedTasks(task)
-    router.replace({ pathname: `/checklist/${encodedFilters}`, query: { group: expandedGroups, task } }, undefined, {
-      scroll: false,
-      shallow: true,
-    })
+    setExpandedTasks((prev) => [...new Set(expanded ? [...prev, id] : prev.filter((val) => val !== id))])
   }
-
-  useEffect(() => {
-    setAllTasksExpanded(allTaskIds.length === expandedTasks.length)
-  }, [expandedTasks, allTasksExpanded])
 
   function handleAllTasksExpandedToggle() {
     setExpandedTasks(allTasksExpanded ? [] : allTaskIds)
-    setAllTasksExpanded(allTaskIds.length === expandedTasks.length ? false : true)
-    router.replace({ pathname: router.pathname, query: { ...router.query, task: expandedTasks } }, undefined, {
+  }
+
+  useEffect(() => {
+    Router.pathname
+    const url = {
+      pathname: Router.pathname,
+      query: {
+        ...Router.query,
+        group: deferredExpandedGroups,
+        task: deferredExpandedTasks,
+      },
+    }
+
+    log.debug(url, 'Router replace - useEffect')
+
+    Router.replace(url, undefined, {
       scroll: false,
       shallow: true,
     })
-  }
+  }, [deferredExpandedGroups, deferredExpandedTasks])
 
   return (
     <>
@@ -189,7 +190,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                     variant="text"
                     color="primary"
                     className="font-display text-xl"
-                    onClick={() => setImportantExpanded(!importantExpanded)}
+                    onClick={() => setImportantExpanded((prev) => !prev)}
                     aria-expanded={importantExpanded}
                     aria-label={t('important-terms.show')}
                     endIcon={importantExpanded ? <ExpandLess /> : <ExpandMore />}
@@ -229,7 +230,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
             </div>
 
             <div className="md:mb-2">
-              <details open={expanded}>
+              <details open={tagsFilterExpanded}>
                 <summary
                   tabIndex={-1}
                   className="flex items-center justify-between font-display text-xl md:mb-2 md:border-b md:pb-3"
@@ -238,8 +239,8 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                   {!desktop && (
                     <IconButton
                       color="primary"
-                      onClick={() => setExpanded(!expanded)}
-                      aria-expanded={expanded}
+                      onClick={() => setTagsFilterExpanded((prev) => !prev)}
+                      aria-expanded={tagsFilterExpanded}
                       aria-label={t('show-filters')}
                     >
                       <FilterList className="h-10 w-10 rounded-full bg-[#008490] p-1 text-white hover:bg-[#00545f]" />
@@ -250,10 +251,10 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                       variant="text"
                       color="primary"
                       className="font-display text-xl"
-                      onClick={() => setExpanded(!expanded)}
-                      aria-expanded={expanded}
+                      onClick={() => setTagsFilterExpanded((prev) => !prev)}
+                      aria-expanded={tagsFilterExpanded}
                       aria-label={t('show-filters')}
-                      endIcon={expanded ? <ExpandLess /> : <ExpandMore />}
+                      endIcon={tagsFilterExpanded ? <ExpandLess /> : <ExpandMore />}
                       sx={{ justifyContent: 'space-between' }}
                       fullWidth
                       size="large"
@@ -262,7 +263,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                     </Button>
                   )}
                 </summary>
-                <FormGroup onChange={handleChange} data-cy="form-group-filter-tasks">
+                <FormGroup onChange={handleTagsFilterChange} data-cy="form-group-filter-tasks">
                   {tagsFilter.map(({ code, title }) => (
                     <FormControlLabel
                       key={code}
@@ -406,7 +407,9 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
         ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'])),
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
-        initialExpandedGroups: queryVariableToNumberArray(query.group ?? ['1', '2', '3']),
+        initialExpandedGroups: queryVariableToNumberArray(
+          query.group ?? [applyingBenefitsDtos.id, beforeRetiringDtos.id, receivingBenefitsDtos.id].map(String)
+        ),
         initialExpandedTasks: queryVariableToNumberArray(query.task),
         filters: validatedFilters,
         receivingBenefits: receivingBenefitsDtos,
