@@ -2,6 +2,8 @@
   "breadcrumbs": {
     "learn": "Apprendre"
   },
+  "open-all": "Ouvrir toutes les tâches",
+  "close-all": "Fermer toutes les tâches",
   "filter-tasks_zero": "Sélection des tâches",
   "filter-tasks_one": "Sélection des tâches ({{count}} sélectionnée)",
   "filter-tasks_other": "Sélection des tâches ({{count}} sélectionnées)",

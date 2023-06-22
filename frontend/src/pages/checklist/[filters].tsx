@@ -1,6 +1,6 @@
 import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
 
-import { Cached, ExpandLess, ExpandMore, FilterList } from '@mui/icons-material'
+import { Cached, ExpandLess, ExpandMore, FilterList, UnfoldMore } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
 import {
   Button,
@@ -61,6 +61,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   const [importantExpanded, setImportantExpanded] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState(initialExpandedGroups)
   const [expandedTasks, setExpandedTasks] = useState(initialExpandedTasks)
+  const [allExpanded, setAllExpanded] = useState(false)
 
   const desktop = useMediaQuery(theme.breakpoints.up('md'))
 
@@ -123,6 +124,27 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
       scroll: false,
       shallow: true,
     })
+  }
+
+  function handleAllExpandedToggle() {
+    if (allExpanded) {
+      setExpandedGroups([])
+      setExpandedTasks([])
+    } else {
+      setExpandedGroups([beforeRetiring.id, applyingBenefits.id, receivingBenefits.id])
+      setExpandedTasks(
+        [...beforeRetiring.tasks, ...applyingBenefits.tasks, ...receivingBenefits.tasks].map((t) => t.id)
+      )
+    }
+    setAllExpanded((prev) => !prev)
+    router.replace(
+      { pathname: router.pathname, query: { ...router.query, group: expandedGroups, task: expandedTasks } },
+      undefined,
+      {
+        scroll: false,
+        shallow: true,
+      }
+    )
   }
 
   return (
@@ -257,9 +279,17 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                 </FormGroup>
               </details>
             </div>
-            <div className="hidden lg:block">
+            <div className="hidden lg:flex lg:flex-wrap lg:gap-6">
               <Button onClick={handlePrint} variant="outlined" startIcon={<Print />} className="font-bold">
                 {t('print')}
+              </Button>
+              <Button
+                onClick={handleAllExpandedToggle}
+                variant="outlined"
+                startIcon={<UnfoldMore />}
+                className="font-bold"
+              >
+                {t(allExpanded ? 'close-all' : 'open-all')}
               </Button>
             </div>
           </section>
@@ -300,7 +330,7 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
               srTag={t('sr-tag')}
               tasks={receivingBenefits.tasks.filter((task) => filterTasksByTag(task, filters))}
             />
-            <div className="mt-4 lg:hidden">
+            <div className="mt-4 print:hidden lg:hidden">
               <Button
                 variant="text"
                 startIcon={<Cached />}
