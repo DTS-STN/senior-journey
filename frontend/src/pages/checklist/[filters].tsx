@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, MouseEvent, useMemo, useState } from 'react'
+import { ChangeEvent, FC, MouseEvent, useEffect, useMemo, useState } from 'react'
 
 import { Cached, ExpandLess, ExpandMore, FilterList, UnfoldMore } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
@@ -61,7 +61,9 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
   const [importantExpanded, setImportantExpanded] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState(initialExpandedGroups)
   const [expandedTasks, setExpandedTasks] = useState(initialExpandedTasks)
-  const [allExpanded, setAllExpanded] = useState(false)
+  const [allTasksExpanded, setAllTasksExpanded] = useState(false)
+
+  const allTaskIds = [...beforeRetiring.tasks, ...applyingBenefits.tasks, ...receivingBenefits.tasks].map((t) => t.id)
 
   const desktop = useMediaQuery(theme.breakpoints.up('md'))
 
@@ -126,25 +128,17 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
     })
   }
 
-  function handleAllExpandedToggle() {
-    if (allExpanded) {
-      setExpandedGroups([])
-      setExpandedTasks([])
-    } else {
-      setExpandedGroups([beforeRetiring.id, applyingBenefits.id, receivingBenefits.id])
-      setExpandedTasks(
-        [...beforeRetiring.tasks, ...applyingBenefits.tasks, ...receivingBenefits.tasks].map((t) => t.id)
-      )
-    }
-    setAllExpanded((prev) => !prev)
-    router.replace(
-      { pathname: router.pathname, query: { ...router.query, group: expandedGroups, task: expandedTasks } },
-      undefined,
-      {
-        scroll: false,
-        shallow: true,
-      }
-    )
+  useEffect(() => {
+    setAllTasksExpanded(allTaskIds.length === expandedTasks.length)
+  }, [expandedTasks, allTasksExpanded])
+
+  function handleAllTasksExpandedToggle() {
+    setExpandedTasks(allTasksExpanded ? [] : allTaskIds)
+    setAllTasksExpanded(allTaskIds.length === expandedTasks.length ? false : true)
+    router.replace({ pathname: router.pathname, query: { ...router.query, task: expandedTasks } }, undefined, {
+      scroll: false,
+      shallow: true,
+    })
   }
 
   return (
@@ -284,12 +278,12 @@ const ChecklistResults: FC<ChecklistResultsProps> = ({
                 {t('print')}
               </Button>
               <Button
-                onClick={handleAllExpandedToggle}
+                onClick={handleAllTasksExpandedToggle}
                 variant="outlined"
                 startIcon={<UnfoldMore />}
                 className="font-bold"
               >
-                {t(allExpanded ? 'close-all' : 'open-all')}
+                {t(allTasksExpanded ? 'close-all' : 'open-all')}
               </Button>
             </div>
           </section>
@@ -412,7 +406,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
         ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'])),
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
-        initialExpandedGroups: queryVariableToNumberArray(query.group),
+        initialExpandedGroups: queryVariableToNumberArray(query.group ?? ['1', '2', '3']),
         initialExpandedTasks: queryVariableToNumberArray(query.task),
         filters: validatedFilters,
         receivingBenefits: receivingBenefitsDtos,
