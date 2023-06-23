@@ -32,7 +32,7 @@ const Error404Page: FC = () => {
           <ul className="list-disc space-y-1 pl-7">
             <li>
               Return to the{' '}
-              <MuiLink component={Link} href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="en">
                 home page
               </MuiLink>
               ;
@@ -52,7 +52,7 @@ const Error404Page: FC = () => {
           <ul className="list-disc space-y-1 pl-7">
             <li>
               Retournez à la{' '}
-              <MuiLink component={Link} href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="fr">
                 page d&#39;accueil
               </MuiLink>
               ;

@@ -41,7 +41,7 @@ const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
             <li>Try refreshing the page or try again later;</li>
             <li>
               Return to the{' '}
-              <MuiLink component={Link} href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="en">
                 home page
               </MuiLink>
               ;
@@ -64,7 +64,7 @@ const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
             <li>Actualisez la page ou réessayez plus tard;</li>
             <li>
               Retournez à la{' '}
-              <MuiLink component={Link} href="/" locale="default">
+              <MuiLink component={Link} href="/" locale="fr">
                 page d&#39;accueil
               </MuiLink>
               ;
