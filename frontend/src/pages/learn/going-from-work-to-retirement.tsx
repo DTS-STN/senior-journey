@@ -4,13 +4,12 @@ import { NavigateNext } from '@mui/icons-material'
 import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 
-import nextI18NextConfig from '../../../next-i18next.config'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
+import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const GoingFromWorkToRetirement: FC = () => {
@@ -228,11 +227,7 @@ const GoingFromWorkToRetirement: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(
-        locale ?? 'default',
-        ['common', 'learn/going-from-work-to-retirement'],
-        nextI18NextConfig
-      )),
+      ...(await pageWithServerSideTranslations(locale, 'learn/going-from-work-to-retirement')),
     },
   }
 }

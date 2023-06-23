@@ -3,12 +3,10 @@ import { FC, useId } from 'react'
 import { Button, Card, CardActionArea, CardContent } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
-import nextI18NextConfig from '../../../next-i18next.config'
 import bonnieDelaysToReduceTheSavingsSheNeedsSmImage from '../../../public/assets/bonnie-delays-to-reduce-the-savings-she-needs-sm.jpg'
 import decidingWhenToStartYourPublicPensionsSmImage from '../../../public/assets/deciding-when-to-start-your-public-pensions-sm.jpg'
 import fredDecidesWhenToTakeHisPensionsSmImage from '../../../public/assets/fred-decides-when-to-take-his-pensions-sm.jpg'
@@ -20,6 +18,7 @@ import planningToSaveForRetirementSmImage from '../../../public/assets/planning-
 import rulesOfThumbForPublicPensionsSmImage from '../../../public/assets/rules-of-thumb-for-public-pensions-sm.jpg'
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
+import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 interface LearnCardProps {
@@ -206,7 +205,7 @@ const Learn: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn'], nextI18NextConfig)),
+      ...(await pageWithServerSideTranslations(locale, 'learn')),
     },
   }
 }

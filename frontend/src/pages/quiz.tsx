@@ -4,12 +4,11 @@ import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import { Button } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 
-import nextI18NextConfig from '../../next-i18next.config'
 import Layout from '../components/Layout'
 import { QuizDialog } from '../components/quiz/QuizDialog'
+import { pageWithServerSideTranslations } from '../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../utils/seo-utils'
 
 const Quiz: FC = () => {
@@ -92,7 +91,7 @@ const Quiz: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'quiz'], nextI18NextConfig)),
+      ...(await pageWithServerSideTranslations(locale, 'quiz')),
     },
   }
 }
