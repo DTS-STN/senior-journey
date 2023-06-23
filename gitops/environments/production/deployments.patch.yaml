@@ -13,18 +13,28 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend
-          image: dtsrhpprodscedspokeacr.azurecr.io/seniors-journey/seniors-journey-frontend:20230615-0130-d8425d4c
+          image: dtsrhpprodscedspokeacr.azurecr.io/seniors-journey/seniors-journey-frontend:1.0.0
           env:
             - name: NEXT_PUBLIC_APP_BASE_URI
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
                   key: NEXT_PUBLIC_APP_BASE_URI
+            - name: NEXT_PUBLIC_ANALYTICS_BEACON_DELAY
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: NEXT_PUBLIC_ANALYTICS_BEACON_DELAY
             - name: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
                   key: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
+            - name: NEXT_PUBLIC_ENVIRONMENT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: NEXT_PUBLIC_ENVIRONMENT
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:
