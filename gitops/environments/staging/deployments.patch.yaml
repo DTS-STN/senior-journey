@@ -25,6 +25,11 @@ spec:
                 configMapKeyRef:
                   name: seniors-journey-frontend
                   key: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
+            - name: NEXT_PUBLIC_ANALYTICS_BEACON_DELAY
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: NEXT_PUBLIC_ANALYTICS_BEACON_DELAY
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:
