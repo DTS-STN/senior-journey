@@ -4,17 +4,16 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, useMediaQuery } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import nextI18NextConfig from '../../../next-i18next.config'
 import AccessibilityGraphContainer from '../../components/AccessibilityGraphContainer'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 import theme from '../../theme'
+import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const MainSourcesOfRetirementIncome: FC = () => {
@@ -504,11 +503,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(
-      locale ?? 'default',
-      ['common', 'learn/main-sources-of-retirement-income'],
-      nextI18NextConfig
-    )),
+    ...(await pageWithServerSideTranslations(locale, 'learn/main-sources-of-retirement-income')),
   },
 })
 

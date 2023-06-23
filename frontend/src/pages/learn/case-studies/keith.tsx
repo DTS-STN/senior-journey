@@ -4,17 +4,16 @@ import { NavigateNext } from '@mui/icons-material'
 import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, useMediaQuery } from '@mui/material'
 import { GetServerSideProps } from 'next'
 import { Trans, useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import nextI18NextConfig from '../../../../next-i18next.config'
 import AccessibilityGraphContainer from '../../../components/AccessibilityGraphContainer'
 import AlertCard from '../../../components/AlertCard'
 import { LearnPageLayout } from '../../../components/LearnPageLayout'
 import theme from '../../../theme'
+import { pageWithServerSideTranslations } from '../../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../../utils/seo-utils'
 
 const Keith: FC = () => {
@@ -365,7 +364,7 @@ const Keith: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/case-studies/keith'], nextI18NextConfig)),
+      ...(await pageWithServerSideTranslations(locale, 'learn/case-studies/keith')),
     },
   }
 }

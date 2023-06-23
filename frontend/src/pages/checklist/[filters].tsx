@@ -16,11 +16,9 @@ import {
 import { isEmpty, sortBy } from 'lodash'
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Router from 'next/router'
 
-import nextI18NextConfig from '../../../next-i18next.config'
 import checklistBannerImage from '../../../public/assets/checklist-banner.jpg'
 import { HeroBanner } from '../../components/HeroBanner'
 import Layout from '../../components/Layout'
@@ -32,6 +30,7 @@ import { checklistFiltersSchema } from '../../lib/schemas/checklist-filters-sche
 import { ChecklistFilters, TaskTagDto, TasksGroupDto } from '../../lib/types'
 import { getLogger } from '../../logging/log-util'
 import theme from '../../theme'
+import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
 const log = getLogger('pages/checklist/[filters].tsx')
@@ -405,7 +404,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
 
     return {
       props: {
-        ...(await serverSideTranslations(locale ?? 'default', ['common', 'checklist'], nextI18NextConfig)),
+        ...(await pageWithServerSideTranslations(locale, 'checklist')),
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
         initialExpandedGroups: queryVariableToNumberArray(
