@@ -21,7 +21,9 @@ configMapGenerator:
         app.kubernetes.io/name: seniors-journey-frontend
     literals:
       - NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC=https://assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-59d77766b86a.min.js
+      - NEXT_PUBLIC_ANALYTICS_BEACON_DELAY=500
       - NEXT_PUBLIC_APP_BASE_URI=https://retraite-retirement.service.canada.ca/
+      - NEXT_PUBLIC_ENVIRONMENT=prod
       - OTEL_ENVIRONMENT=production
       - OTEL_METRICS_ENDPOINT=https://dynatrace.prod-dp.admin.dts-stn.com/e/676a0299-9802-4933-99d4-481318a557db/api/v2/otlp/v1/metrics
       - OTEL_TRACES_ENDPOINT=https://dynatrace.prod-dp.admin.dts-stn.com/e/676a0299-9802-4933-99d4-481318a557db/api/v2/otlp/v1/traces
