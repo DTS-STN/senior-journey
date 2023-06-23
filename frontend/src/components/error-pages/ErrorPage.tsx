@@ -31,8 +31,8 @@ const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
       </span>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
         <div lang="en">
-          <h2 className="h1">We&#39;re having a problem with that page</h2>
-          <p className="h2">{statusCode ? `Error ${statusCode}` : 'An error occurred on client'}</p>
+          <h2 className="h2">We&#39;re having a problem with that page</h2>
+          <p className="h4">{statusCode ? `Error ${statusCode}` : 'An error occurred on client'}</p>
           <p>
             We expect the problem to be fixed shortly. It&#39;s not your computer or Internet connection but a problem
             with our website&#39;s server. What next?
@@ -54,8 +54,8 @@ const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
           <p>Thank you for your patience.</p>
         </div>
         <div lang="fr">
-          <h2 className="h1">Nous éprouvons des difficultés avec cette page</h2>
-          <p className="h2">{statusCode ? `Erreur ${statusCode}` : 'Erreur produite sur le client'}</p>
+          <h2 className="h2">Nous éprouvons des difficultés avec cette page</h2>
+          <p className="h4">{statusCode ? `Erreur ${statusCode}` : 'Erreur produite sur le client'}</p>
           <p>
             Nous espérons résoudre le problème sous peu. Il ne s&#39;agit pas d&#39;un problème avec votre ordinateur ou
             Internet, mais plutôt avec le serveur de notre site Web. Que faire?
