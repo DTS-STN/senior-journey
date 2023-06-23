@@ -23,8 +23,8 @@ const Error404Page: FC = () => {
       </span>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
         <div lang="en">
-          <h2 className="h1">We couldn&#39;t find that Web page</h2>
-          <p className="h2">Error 404</p>
+          <h2 className="h2">We couldn&#39;t find that Web page</h2>
+          <p className="h4">Error 404</p>
           <p>
             We&#39;re sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you
             find what you&#39;re looking for. What next?
@@ -43,8 +43,8 @@ const Error404Page: FC = () => {
           </ul>
         </div>
         <div lang="fr">
-          <h2 className="h1">Nous ne pouvons trouver cette page Web</h2>
-          <p className="h2">Erreur 404</p>
+          <h2 className="h2">Nous ne pouvons trouver cette page Web</h2>
+          <p className="h4">Erreur 404</p>
           <p>
             Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu&#39;une page ait été déplacée ou
             supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez. Que faire?
