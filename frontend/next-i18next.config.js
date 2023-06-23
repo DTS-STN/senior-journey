@@ -10,13 +10,10 @@ module.exports = {
     defaultLocale: 'default',
   },
   /** To avoid issues when deploying to some paas (vercel...) */
-  localePath:
-    typeof window === 'undefined'
-      ? require('path').resolve('./public/locales')
-      : '/locales',
-  returnNull: false,
+  localePath: typeof window === 'undefined' ? require('path').resolve('./public/locales') : '/locales',
   react: {
     transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p', 'b', 'em'],
   },
   reloadOnPrerender: process.env.NODE_ENV === 'development',
+  serializeConfig: false,
 }

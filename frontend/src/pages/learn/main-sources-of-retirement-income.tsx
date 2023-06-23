@@ -10,6 +10,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import nextI18NextConfig from '../../../next-i18next.config'
 import AccessibilityGraphContainer from '../../components/AccessibilityGraphContainer'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
@@ -503,7 +504,11 @@ const MainSourcesOfRetirementIncome: FC = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/main-sources-of-retirement-income'])),
+    ...(await serverSideTranslations(
+      locale ?? 'default',
+      ['common', 'learn/main-sources-of-retirement-income'],
+      nextI18NextConfig
+    )),
   },
 })
 

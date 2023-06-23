@@ -8,6 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 
+import nextI18NextConfig from '../../../next-i18next.config'
 import AlertCard from '../../components/AlertCard'
 import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { getDCTermsTitle } from '../../utils/seo-utils'
@@ -228,7 +229,11 @@ const RulesOfThumbForPublicPensions: FC = () => {
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'default', ['common', 'learn/rules-of-thumb-for-public-pensions'])),
+      ...(await serverSideTranslations(
+        locale ?? 'default',
+        ['common', 'learn/rules-of-thumb-for-public-pensions'],
+        nextI18NextConfig
+      )),
     },
   }
 }
