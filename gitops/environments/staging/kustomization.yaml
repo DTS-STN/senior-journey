@@ -23,6 +23,7 @@ configMapGenerator:
     literals:
       - NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC=https://assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-cad75bf2f0d2-staging.min.js
       - NEXT_PUBLIC_APP_BASE_URI=https://seniors-journey-staging.dev-dp.dts-stn.com/
+      - NEXT_PUBLIC_ANALYTICS_BEACON_DELAY=500
       - OTEL_ENVIRONMENT=staging
       - OTEL_METRICS_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/metrics
       - OTEL_TRACES_ENDPOINT=https://dynatrace.dev-dp.admin.dts-stn.com/e/21a07aef-852b-4d9b-aa87-ee5f8b79f8c9/api/v2/otlp/v1/traces
