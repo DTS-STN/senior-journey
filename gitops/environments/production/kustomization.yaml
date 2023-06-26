@@ -13,7 +13,6 @@ resources:
   - ./ingresses.yaml
 patchesStrategicMerge:
   - ./deployments.patch.yaml
-  - ./services.patch.yaml
 configMapGenerator:
   - name: seniors-journey-frontend
     options:
@@ -27,12 +26,6 @@ configMapGenerator:
       - OTEL_ENVIRONMENT=production
       - OTEL_METRICS_ENDPOINT=https://dynatrace.prod-dp.admin.dts-stn.com/e/676a0299-9802-4933-99d4-481318a557db/api/v2/otlp/v1/metrics
       - OTEL_TRACES_ENDPOINT=https://dynatrace.prod-dp.admin.dts-stn.com/e/676a0299-9802-4933-99d4-481318a557db/api/v2/otlp/v1/traces
-  - name: seniors-journey-frontend-auth
-    options:
-      labels:
-        app.kubernetes.io/name: seniors-journey-frontend-auth
-    files:
-      - oauth-proxy.cfg
 secretGenerator:
   - name: seniors-journey-frontend
     options:
@@ -40,9 +33,3 @@ secretGenerator:
         app.kubernetes.io/name: seniors-journey-frontend
     envs:
       - .env.seniors-journey-frontend
-  - name: seniors-journey-frontend-auth
-    options:
-      labels:
-        app.kubernetes.io/name: seniors-journey-frontend-auth
-    envs:
-      - .env.seniors-journey-frontend-auth
