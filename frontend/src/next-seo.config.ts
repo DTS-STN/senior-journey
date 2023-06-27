@@ -96,7 +96,7 @@ export const getDefaultConfig: GetNextSEOConfig = (appBaseUri, router) => ({
     type: 'website',
   },
   twitter: {
-    site: '@CitImmCanada',
+    site: '@ESDC_GC',
     cardType: 'summary_large_image',
   },
 })
@@ -132,7 +132,7 @@ export const getEnglishConfig: GetNextSEOConfig = (appBaseUri, router) => ({
     type: 'website',
   },
   twitter: {
-    site: '@CitImmCanada',
+    site: '@ESDC_GC',
     cardType: 'summary_large_image',
   },
 })
@@ -168,7 +168,7 @@ export const getFrenchConfig: GetNextSEOConfig = (appBaseUri, router) => ({
     type: 'website',
   },
   twitter: {
-    site: '@citimmcanfr',
+    site: '@EDSC_GC',
     cardType: 'summary_large_image',
   },
 })
