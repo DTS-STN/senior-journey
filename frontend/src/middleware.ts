@@ -13,6 +13,20 @@ function isExcluded(pathname: string) {
   return excludedPaths.some((excludedPath) => pathname.includes(excludedPath))
 }
 
+function isRootAssetForward(pathname: string) {
+  const forwardedPaths = [
+    '/apple-touch-icon-120x120-precomposed.png',
+    '/apple-touch-icon-120x120.png',
+    '/apple-touch-icon-152x152-precomposed.png',
+    '/apple-touch-icon-152x152.png',
+    '/apple-touch-icon-precomposed.png',
+    '/apple-touch-icon.png',
+    '/favicon.ico'
+  ]
+  
+  return forwardedPaths.some((forwardedPath) => pathname.includes(forwardedPath))
+}
+
 /**
  * Middleware function that processes incoming requests and returns the appropriate response.
  *
@@ -32,6 +46,13 @@ export function middleware(req: NextRequest) {
   }
 
   logger.trace(`Processing request for [${pathname}]`)
+
+  if (isRootAssetForward(pathname)) {
+    if (RegExp('/apple-touch-icon(.*).png').test(pathname)) {
+      return NextResponse.rewrite(new URL('/assets/favicon-mobile.png', req.url))
+    }
+    return NextResponse.rewrite(new URL('/assets' + pathname, req.url))
+  }
 
   if (locale === 'default' && pathname !== '/') {
     logger.trace(`Requested path [${pathname}] does not include required locale of [en|fr]`)
