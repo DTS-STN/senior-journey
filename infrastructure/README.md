@@ -48,7 +48,7 @@ Before you begin, make sure that you have logged in to Azure CLI by running the 
 ## Getting the Azure AD App Registration ID (also known as OAuth client ID)
 
 The App Registration ID is configured a Terraform an output variable, so it will always be printed whenever you perform
-a `terragrunt apply`. However, if you need to get the client id **without running** `terragrunt apply`, you canter use
+a `terragrunt apply`. However, if you need to get the client id **without running** `terragrunt apply`, you can use
 the following command:
 
 ``` shell
