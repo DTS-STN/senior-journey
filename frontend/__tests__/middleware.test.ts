@@ -5,7 +5,7 @@ import { middleware } from '../src/middleware'
 
 describe('middleware', () => {
   const nextConfig = {
-    i18n: { defaultLocale: 'default', locales: ['default', 'en', 'fr'] }
+    i18n: { defaultLocale: 'default', locales: ['default', 'en', 'fr'] },
   }
 
   const mockedStaticNext = jest.fn()
@@ -22,14 +22,17 @@ describe('middleware', () => {
     mockedStaticRedirect.mockClear()
   })
 
-  it.each(['/_next/_buildManifest.js', '/api/livez', '/assets/favicon.ico'])('correctly detects non-page requests: %s', (pathname) => {
-    const request = new NextRequest(new URL(`https://example.com${pathname}`), { nextConfig })
+  it.each(['/_next/_buildManifest.js', '/api/livez', '/assets/favicon.ico'])(
+    'correctly detects non-page requests: %s',
+    (pathname) => {
+      const request = new NextRequest(new URL(`https://example.com${pathname}`), { nextConfig })
 
-    middleware(request)
+      middleware(request)
 
-    expect(mockedStaticNext).toBeCalled()
-    expect(mockedStaticRedirect).not.toBeCalled()
-  })
+      expect(mockedStaticNext).toBeCalled()
+      expect(mockedStaticRedirect).not.toBeCalled()
+    }
+  )
 
   it('correctly detects root route requests: /', () => {
     const request = new NextRequest(new URL('https://example.com/'), { nextConfig })
@@ -40,14 +43,14 @@ describe('middleware', () => {
     expect(mockedStaticRedirect).not.toBeCalled()
   })
 
-  it.each(['en', 'fr'])('correctly detects root locale route requests: / → /%s/home', (locale) => {
-    const request = new NextRequest(new URL('https://example.com/'), { nextConfig })
+  it.each(['en', 'fr'])('correctly redirects home locale route requests: /%s/home → /%s', (locale) => {
+    const request = new NextRequest(new URL('https://example.com/home'), { nextConfig })
     request.nextUrl.locale = locale
 
     middleware(request)
 
     expect(mockedStaticNext).not.toBeCalled()
-    expect(mockedStaticRedirect).toBeCalledWith(new URL(`/${locale}/home`, 'https://example.com/'))
+    expect(mockedStaticRedirect).toBeCalledWith(new URL(`/${locale}`, 'https://example.com/home'))
   })
 
   it.each(['en', 'fr'])('correctly detects non-root locale requests: /%s/*', (locale) => {

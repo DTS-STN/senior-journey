@@ -14,8 +14,8 @@ jest.mock('next/router', () => ({
 // Apply useRouter mock to all tests
 const useRouterMock = useRouter as jest.Mock<any>
 useRouterMock.mockReturnValue({
-  pathname: '/home',
-  asPath: '/home',
+  pathname: '/test',
+  asPath: '/test',
 })
 
 expect.extend(toHaveNoViolations)

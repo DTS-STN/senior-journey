@@ -14,11 +14,8 @@ function isExcluded(pathname: string) {
 }
 
 function isRootAssetForward(pathname: string) {
-  const forwardedPaths = [
-    '/apple-touch-icon',
-    '/favicon.ico'
-  ]
-  
+  const forwardedPaths = ['/apple-touch-icon', '/favicon.ico']
+
   return forwardedPaths.some((forwardedPath) => pathname.includes(forwardedPath))
 }
 
@@ -56,9 +53,9 @@ export function middleware(req: NextRequest) {
     return NextResponse.rewrite(req.nextUrl, { status: 404 })
   }
 
-  if ((locale === 'en' || locale === 'fr') && pathname === '/') {
-    logger.debug(`Requested path /${locale}/ will be redirected to /${locale}/home`)
-    return NextResponse.redirect(new URL(`/${locale}/home`, url))
+  if (pathname === '/home') {
+    logger.debug(`Requested path /${locale}/home will be redirected to /${locale}`)
+    return NextResponse.redirect(new URL(`/${locale}`, url))
   }
 
   logger.trace(`Processing completed for request [${pathname}]`)
