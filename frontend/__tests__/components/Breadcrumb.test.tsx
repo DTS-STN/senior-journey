@@ -8,16 +8,15 @@ import Breadcrumb from '../../src/components/Breadcrumb'
 expect.extend(toHaveNoViolations)
 
 describe('Breadcrumb', () => {
-
-const sampleItems = [
+  const sampleItems = [
     {
       text: 'Home',
-      link: '/home'
+      link: '/',
     },
     {
       text: 'Learn',
-      link: '/learn'
-    }
+      link: '/learn',
+    },
   ]
   const sut = <Breadcrumb items={sampleItems} />
 

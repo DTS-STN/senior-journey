@@ -70,7 +70,7 @@ describe('getLanguageAlternates', () => {
   it('should return language alternate links when appBaseUri is not empty', () => {
     // arrange
     const appBaseUri = 'https://example.com'
-    const router: NextSEORouter = { asPath: '/home', locale: '' }
+    const router: NextSEORouter = { asPath: '/test', locale: '' }
 
     // act
     const act = getLanguageAlternates(appBaseUri, router)
@@ -79,11 +79,11 @@ describe('getLanguageAlternates', () => {
     expect(act).not.toBeUndefined()
     expect(act).toStrictEqual([
       {
-        href: 'https://example.com/en/home',
+        href: 'https://example.com/en/test',
         hrefLang: 'en',
       },
       {
-        href: 'https://example.com/fr/home',
+        href: 'https://example.com/fr/test',
         hrefLang: 'fr',
       },
     ] as ReadonlyArray<LanguageAlternate>)

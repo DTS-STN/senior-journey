@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 
-import Error404Page from '../components/error-pages/Error404Page'
-import ErrorPage from '../components/error-pages/ErrorPage'
+import Error404Page from '../components/pages/Error404Page'
+import ErrorPage from '../components/pages/ErrorPage'
 import { getLogger } from '../logging/log-util'
 
 const logger = getLogger('pages/_error.tsx')

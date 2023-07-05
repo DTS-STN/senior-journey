@@ -16,7 +16,6 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material'
-import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { NextSeo } from 'next-seo'
 import Head from 'next/head'
@@ -24,13 +23,12 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import urlcat from 'urlcat'
 
-import landingPageImage from '../../public/assets/landing-page.jpg'
-import Container from '../components/Container'
-import { HeroBanner } from '../components/HeroBanner'
-import Layout from '../components/Layout'
-import { usePublicRuntimeConfig } from '../lib/hooks/usePublicRuntimeConfig'
-import { pageWithServerSideTranslations } from '../utils/next-i18next-utils'
-import { getDCTermsTitle } from '../utils/seo-utils'
+import landingPageImage from '../../../public/assets/landing-page.jpg'
+import { usePublicRuntimeConfig } from '../../lib/hooks/usePublicRuntimeConfig'
+import { getDCTermsTitle } from '../../utils/seo-utils'
+import Container from '../Container'
+import { HeroBanner } from '../HeroBanner'
+import Layout from '../Layout'
 
 export interface SupportingSeniorsCardProps {
   src: string
@@ -41,7 +39,7 @@ export interface SupportingSeniorsCardProps {
 
 type TabValue = 'learn' | 'plan' | 'apply' | 'manage'
 
-const Home: FC = () => {
+export const HomePage: FC = () => {
   const { locale } = useRouter()
   const { t } = useTranslation(['home', 'common'])
 
@@ -339,11 +337,3 @@ const Home: FC = () => {
     </>
   )
 }
-
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
-  props: {
-    ...(await pageWithServerSideTranslations(locale, 'home')),
-  },
-})
-
-export default Home
