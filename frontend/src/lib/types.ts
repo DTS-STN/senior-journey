@@ -32,11 +32,13 @@ export interface TaskTagDto {
 }
 
 export interface TaskDto {
-  id: number
-  title: string
+  answerKey: string
   description: string
+  displayOrder: number
+  id: number
   links: ReadonlyArray<TaskLinkDto>
   tags: ReadonlyArray<TaskTagDto>
+  title: string
 }
 
 export interface TasksGroupDto {

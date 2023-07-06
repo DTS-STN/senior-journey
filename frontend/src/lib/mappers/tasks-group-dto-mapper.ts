@@ -10,7 +10,9 @@ export const toDto = (data: TasksGroupData, locale?: string): TasksGroupDto => {
     id: data.id,
     subTitle: getText(data.subTitleEn, data.subTitleFr),
     tasks: data.tasks.map((task) => ({
+      answerKey: task.answerKey,
       description: getText(task.descriptionEn, task.descriptionFr),
+      displayOrder: task.displayOrder,
       id: task.id,
       links: task.links.map((link) => ({
         link: getText(link.linkEn, link.linkFr),
