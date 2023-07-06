@@ -13,12 +13,12 @@ type SkipAnswer =
   | 'retirement-living-skip'
   | 'status-skip'
 
-const getAnswer = (answer: string, skipAnswer: SkipAnswer) => {
+export const getAnswer = (answer: string, skipAnswer: SkipAnswer) => {
   return isEmpty(answer) ? skipAnswer : answer
 }
 
-const getAnswers = (answers: Array<string>, skipAnswer: SkipAnswer) => {
-  return isEmpty(answers) ? [skipAnswer] : compact(answers)
+export const getAnswers = (answers: Array<string>, skipAnswer: SkipAnswer) => {
+  return isEmpty(compact(answers)) ? [skipAnswer] : compact(answers)
 }
 
 export const toChecklistFilter = (state: QuizFormState): ChecklistFilters => {
