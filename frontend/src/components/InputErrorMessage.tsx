@@ -1,11 +1,9 @@
-import { FC } from 'react'
-
 export interface InputErrorMessageProps {
   id?: string
   message: string
 }
 
-const InputErrorMessage: FC<InputErrorMessageProps> = ({ id, message }) => {
+const InputErrorMessage = ({ id, message }: InputErrorMessageProps) => {
   return (
     <div
       id={id}

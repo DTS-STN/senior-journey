@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 import AccessibilityTable, { TableData } from './AccessibilityTable'
@@ -13,13 +11,13 @@ export interface AccessibilityGraphContainerProps {
   autoWidthColumns?: boolean
 }
 
-const AccessibilityGraphContainer: FC<AccessibilityGraphContainerProps> = ({
+const AccessibilityGraphContainer = ({
   description,
   tableData,
   descriptionHeading,
   valuesHeading,
   buttonLabel,
-}) => {
+}: AccessibilityGraphContainerProps) => {
   return (
     <details className="group my-8 border-y border-y-primary-500">
       <summary className="flex cursor-pointer items-center gap-2 p-2 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-700">

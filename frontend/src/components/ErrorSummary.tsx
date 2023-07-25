@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react'
+import { useEffect } from 'react'
 
 import { FormikErrors } from 'formik'
 import { TFunction, useTranslation } from 'next-i18next'
@@ -30,7 +30,7 @@ export const goToErrorSummary = (errorSummaryId: string) => {
   errorSummaryEl?.focus()
 }
 
-const ErrorSummary: FC<ErrorSummaryProps> = ({ id, errors }) => {
+const ErrorSummary = ({ id, errors }: ErrorSummaryProps) => {
   useEffect(() => {
     goToErrorSummary(id)
   }, [id])

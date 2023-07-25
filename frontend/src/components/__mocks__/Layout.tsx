@@ -1,5 +1,5 @@
-import { FC, PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react'
 
-const Layout: FC<PropsWithChildren> = ({ children }) => <>{children}</>
+const Layout = ({ children }: PropsWithChildren) => <>{children}</>
 
 export default Layout

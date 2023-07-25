@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { Link as MuiLink } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,7 +12,7 @@ export interface FooterLinksSectionProps {
   links: FooterLink[]
 }
 
-export const FooterLinksSection: FC<FooterLinksSectionProps> = ({ header, links }) => (
+export const FooterLinksSection = ({ header, links }: FooterLinksSectionProps) => (
   <div>
     <h3 className="mb-4 font-display font-medium md:text-xl">{header}</h3>
     <ul className="space-y-2 text-sm">
@@ -105,7 +103,7 @@ export interface FooterProps {
 /**
  * footer element for all pages
  */
-const Footer: FC<FooterProps> = ({
+const Footer = ({
   className,
   contactUsLinks,
   contactUsText,

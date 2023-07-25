@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Checkbox } from '@mui/material'
@@ -13,7 +13,7 @@ export interface TaskAccordionProps extends TaskDto {
   srTag: string
 }
 
-export const TaskAccordion: FC<TaskAccordionProps> = (props) => {
+export const TaskAccordion = (props: TaskAccordionProps) => {
   const { expanded, id, linksHeader, onTaskAccordionChange, srTag, title } = props
   const detailsRef = useRef<HTMLDetailsElement | null>(null)
 

@@ -12,7 +12,7 @@ interface TaskCardProps {
   task: TaskDto
 }
 
-const TaskCard: React.FC<TaskCardProps> = ({ linksHeader, showCheckbox, srTag, task }) => {
+const TaskCard = ({ linksHeader, showCheckbox, srTag, task }: TaskCardProps) => {
   return (
     <>
       {showCheckbox && <input type="checkbox" className="relative top-2 mb-4 h-6 w-6" />}

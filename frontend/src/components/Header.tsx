@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { Link as MuiLink } from '@mui/material'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
@@ -21,7 +19,7 @@ export interface HeaderProps {
   hideChecklist?: boolean
 }
 
-const Header: FC<HeaderProps> = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist, className }) => {
+const Header = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist, className }: HeaderProps) => {
   const publicRuntimeConfig = usePublicRuntimeConfig()
   const { locale, query, pathname } = useRouter()
   const { t } = useTranslation('common')

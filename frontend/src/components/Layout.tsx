@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { PropsWithChildren } from 'react'
 
 import { useTranslation } from 'next-i18next'
 
@@ -8,8 +8,7 @@ import Container from './Container'
 import Footer from './Footer'
 import Header from './Header'
 
-export interface LayoutProps {
-  children: ReactNode
+export interface LayoutProps extends PropsWithChildren {
   breadcrumbItems?: BreadcrumbItem[]
   contained?: boolean
   hideFooter?: 'never' | 'always' | 'print'
@@ -17,7 +16,7 @@ export interface LayoutProps {
   hideChecklist?: boolean
 }
 
-const Layout: FC<LayoutProps> = ({ children, contained, breadcrumbItems, hideFooter, hideHeader, hideChecklist }) => {
+const Layout = ({ children, contained, breadcrumbItems, hideFooter, hideHeader, hideChecklist }: LayoutProps) => {
   const { t } = useTranslation('common')
   const checklistUrl = useChecklistUrl()
 

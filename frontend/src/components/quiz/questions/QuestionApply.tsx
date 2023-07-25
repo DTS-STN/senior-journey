@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import { Checkbox, FormControlLabel, FormGroup, ToggleButton, ToggleButtonGroup } from '@mui/material'
 import { FormikProps, FormikValues } from 'formik'
@@ -10,7 +10,7 @@ export interface QuestionApplyProps extends FormikProps<FormikValues | QuizFormS
   currentStepIndex: number
 }
 
-export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue }) => {
+export const QuestionApply = ({ values, setFieldValue }: QuestionApplyProps) => {
   const { t } = useTranslation('quiz')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {
@@ -26,8 +26,7 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
   return (
     <div>
       <h5 className="h5 mb-4">{t('questions.question-apply.question-marital-status.title')}</h5>
-      <FormGroup className="mb-4" data-cy="apply-subquestion-marital-status"
-      >
+      <FormGroup className="mb-4" data-cy="apply-subquestion-marital-status">
         <FormControlLabel
           control={
             <Checkbox name="single" value="single" checked={values.single === 'single'} onChange={handleCheckbox} />
@@ -96,7 +95,7 @@ export const QuestionApply: FC<QuestionApplyProps> = ({ values, setFieldValue })
           },
         }}
       >
-         <ToggleButton
+        <ToggleButton
           value="no-kids"
           aria-label={t('questions.question-apply.question-children.option-no-kids')}
           data-cy="no-kids-button"

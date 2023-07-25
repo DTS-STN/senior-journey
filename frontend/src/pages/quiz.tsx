@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { useState } from 'react'
 
 import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import { Button } from '@mui/material'
@@ -11,7 +11,7 @@ import { QuizDialog } from '../components/quiz/QuizDialog'
 import { pageWithServerSideTranslations } from '../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../utils/seo-utils'
 
-const Quiz: FC = () => {
+const Quiz = () => {
   const { t } = useTranslation(['quiz', 'common'])
   const [quizDialogOpen, setQuizDialogOpen] = useState(false)
 

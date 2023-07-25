@@ -1,4 +1,4 @@
-import { FC, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
@@ -53,14 +53,7 @@ export interface QuizConfirmationProps {
   aaTitle: string
 }
 
-export const QuizConfirmation: FC<QuizConfirmationProps> = ({
-  noText,
-  onCancel,
-  onClose,
-  sureText,
-  yesText,
-  aaTitle,
-}) => {
+export const QuizConfirmation = ({ noText, onCancel, onClose, sureText, yesText, aaTitle }: QuizConfirmationProps) => {
   return (
     <div className="mx-6 my-8 flex min-h-[600px] flex-col">
       <DialogContent>
@@ -103,7 +96,7 @@ interface QuizDialogWizardProps {
   onClose: () => void
 }
 
-const QuizDialogWizard: FC<QuizDialogWizardProps> = ({ onClose }) => {
+const QuizDialogWizard = ({ onClose }: QuizDialogWizardProps) => {
   const router = useRouter()
   const { t } = useTranslation('quiz')
   const theme = useTheme()
@@ -278,7 +271,7 @@ export interface QuizDialogProps {
   open: boolean
 }
 
-export const QuizDialog: FC<QuizDialogProps> = ({ onClose, open }) => {
+export const QuizDialog = ({ onClose, open }: QuizDialogProps) => {
   /**
    * Conditionally render QuizDialogWizard to always start with new states
    */

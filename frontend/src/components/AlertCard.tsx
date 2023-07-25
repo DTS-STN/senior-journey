@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react'
 
 import { Error as ErrorIcon, Star as StarIcon, Visibility as VisibilityIcon } from '@mui/icons-material'
 
@@ -27,7 +27,7 @@ const icons = {
   important: VisibilityIcon,
 }
 
-const AlertCard: FC<AlertCardProps> = ({ className, type, children }) => {
+const AlertCard = ({ className, type, children }: AlertCardProps) => {
   const iconBgColor = iconBgColors[type ?? 'tip']
   const textBgColor = textBgColors[type ?? 'tip']
   const Icon = icons[type ?? 'tip']

@@ -1,4 +1,4 @@
-import { FC, Fragment, useMemo } from 'react'
+import { Fragment, useMemo } from 'react'
 
 import { NavigateNext } from '@mui/icons-material'
 import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, Paper, useMediaQuery } from '@mui/material'
@@ -16,7 +16,7 @@ import theme from '../../theme'
 import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
-const DecidingWhenToCollectPublicPensions: FC = () => {
+const DecidingWhenToCollectPublicPensions = () => {
   const { locale } = useRouter()
   const { t } = useTranslation(['learn/deciding-when-to-start-your-public-pensions', 'common'])
 
@@ -49,7 +49,7 @@ const DecidingWhenToCollectPublicPensions: FC = () => {
         secondary: t('learn-more.bonnie-case-study.description'),
       },
     ],
-    [t]
+    [t],
   )
 
   return (

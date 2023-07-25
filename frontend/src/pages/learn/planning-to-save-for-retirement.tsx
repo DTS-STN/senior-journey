@@ -1,4 +1,4 @@
-import { FC, Fragment, useMemo } from 'react'
+import { Fragment, useMemo } from 'react'
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink } from '@mui/material'
@@ -12,7 +12,7 @@ import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
-const PlanningToSaveForRetirement: FC = () => {
+const PlanningToSaveForRetirement = () => {
   const { t } = useTranslation(['learn/planning-to-save-for-retirement', 'common'])
 
   const learnMoreLinks = useMemo(
@@ -38,7 +38,7 @@ const PlanningToSaveForRetirement: FC = () => {
         secondary: t('learn-more.saving-for-retirement.description'),
       },
     ],
-    [t]
+    [t],
   )
 
   return (
