@@ -17,8 +17,8 @@ import type { AppWindow } from '../lib/types'
 import { getLogger } from '../logging/log-util'
 import { getNextSEOConfig } from '../next-seo.config'
 import '../styles/globals.css'
-import '../styles/latofonts.css'
 import theme from '../theme'
+import { lato, notoSans } from '../utils/fonts'
 import { createCounter, createHistogram } from '../utils/metrics'
 
 const logger = getLogger('_app')
@@ -67,7 +67,7 @@ const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, ro
               documentTitle: document.title,
               windowLocationPathname: window.location.pathname,
             },
-            'Analytics beacon execution'
+            'Analytics beacon execution',
           )
           ;(window as AppWindow).adobeDataLayer?.push?.({ event: 'pageLoad' })
         }, publicRuntimeConfig.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY)
@@ -89,6 +89,12 @@ const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, ro
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <style jsx global>{`
+        :root {
+          --lato-font: ${lato.style.fontFamily};
+          --noto-sans-font: ${notoSans.style.fontFamily};
+        }
+      `}</style>
       <DefaultSeo {...nextSEOConfig} />
       <QueryClientProvider client={queryClient}>
         <ThemeProvider theme={theme}>
