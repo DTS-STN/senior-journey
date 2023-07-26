@@ -24,7 +24,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Noto Sans", sans-serif',
+    fontFamily: 'var(--noto-sans-font), sans-serif',
   },
   components: {
     MuiButton: {
@@ -34,81 +34,81 @@ const theme = createTheme({
       },
       styleOverrides: {
         root: {
-          fontFamily: 'Lato, sans-serif',
-          textTransform: 'none',
-          "&.Mui-focusVisible":{
+          'fontFamily': 'var(--lato-font), sans-serif',
+          'textTransform': 'none',
+          '&.Mui-focusVisible': {
             outline: '3px solid #004f56',
-            outlineOffset: '2px'
-          }
-        }
+            outlineOffset: '2px',
+          },
+        },
       },
     },
-    MuiButtonBase:{
-      defaultProps:{
+    MuiButtonBase: {
+      defaultProps: {
         disableRipple: true,
       },
       styleOverrides: {
         root: {
-          "&.Mui-focusVisible":{
+          '&.Mui-focusVisible': {
             outline: '3px solid #004f56',
-            outlineOffset: '2px'
-          }
-        }
-      }
+            outlineOffset: '2px',
+          },
+        },
+      },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          "&:focus-within": {
+          '&:focus-within': {
             outline: '3px solid #004f56',
-            outlineOffset: '2px'
+            outlineOffset: '2px',
           },
-          "& .MuiCardActionArea-focusHighlight": {
+          '& .MuiCardActionArea-focusHighlight': {
             backgroundColor: 'transparent',
           },
         },
       },
     },
-    MuiCheckbox:{
+    MuiCheckbox: {
       styleOverrides: {
         root: {
-          "&.Mui-focusVisible":{
-            outlineOffset: '-5px'
-          }
-        }
-      }
+          '&.Mui-focusVisible': {
+            outlineOffset: '-5px',
+          },
+        },
+      },
     },
     MuiLink: {
       defaultProps: {
         color: 'secondary',
       },
     },
-    MuiListItemButton:{
-      styleOverrides:{
-        root:{
-          "&:focus-within": {
+    MuiListItemButton: {
+      styleOverrides: {
+        root: {
+          '&:focus-within': {
             backgroundColor: 'transparent',
-            outlineOffset: '-3px'
+            outlineOffset: '-3px',
           },
-        }
-      }
+        },
+      },
     },
     MuiTab: {
       styleOverrides: {
         root: {
-          fontFamily: 'Lato, sans-serif',
-          textTransform: 'none',
-          fontWeight: 'bold',
-          "&.Mui-focusVisible":{
-            outlineOffset: '-3px'
-          }
+          'fontFamily': 'var(--lato-font), sans-serif',
+          'textTransform': 'none',
+          'fontWeight': 'bold',
+          '&.Mui-focusVisible': {
+            outlineOffset: '-3px',
+          },
         },
       },
     },
     MuiToggleButton: {
       styleOverrides: {
         root: {
-          fontFamily: 'Lato, sans-serif',
+          fontFamily: 'var(--lato-font), sans-serif',
           textTransform: 'none',
         },
       },

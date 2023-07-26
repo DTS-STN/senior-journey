@@ -71,10 +71,6 @@ function generateCsp(nonce: string): string {
   // see: https://mui.com/material-ui/guides/content-security-policy/
   contentSecurityPolicy['style-src']?.push("'unsafe-eval'", "'unsafe-inline'")
 
-  // required by google fonts
-  contentSecurityPolicy['font-src']?.push('fonts.gstatic.com')
-  contentSecurityPolicy['style-src']?.push('fonts.googleapis.com')
-
   if (devmodeEnabled) {
     log.debug('Devmode detected, adding unsafe-eval Content-Security-Policy directives to enable live reloading')
     contentSecurityPolicy['script-src']?.push("'unsafe-eval'")
@@ -95,7 +91,7 @@ function generateCsp(nonce: string): string {
 
   if (!adobeAnalyticsConfigured) {
     log.debug(
-      `Adobe Analytics configuration not detected, adding 'nonce-${nonce}' directives to Content-Security-Policy`
+      `Adobe Analytics configuration not detected, adding 'nonce-${nonce}' directives to Content-Security-Policy`,
     )
     contentSecurityPolicy['script-src']?.push(`'nonce-${nonce}'`)
   }
@@ -119,12 +115,6 @@ export default function MyDocument({ emotionStyleTags, locale, nonce }: MyDocume
       <Head nonce={nonce}>
         <meta charSet="utf-8" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap&family=Patua+One:wght@100;400;700&display=swap"
-        />
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>

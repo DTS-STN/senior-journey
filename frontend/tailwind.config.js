@@ -4,9 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Lato', 'sans-serif'],
-        body: ['"Noto Sans"', 'sans-serif'],
-        extra: ['Patua One', 'cursive'],
+        display: ['var(--lato-font)', 'sans-serif'],
+        body: ['var(--noto-sans-font)', 'sans-serif'],
       },
       borderColor: {
         // Material UI Palette Divider
