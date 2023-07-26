@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { PropsWithChildren } from 'react'
 
 import { useTableOfContentsData } from '../lib/hooks/useTableOfContentsData'
 import { BreadcrumbItem } from './Breadcrumb'
@@ -6,13 +6,12 @@ import Layout from './Layout'
 import { TableOfContents } from './TableOfContents'
 import { TableOfContentsDialog } from './TableOfContentsDialog'
 
-export interface LearnPageLayoutProps {
-  children: React.ReactNode
+export interface LearnPageLayoutProps extends PropsWithChildren {
   header: string
   breadcrumbItems?: BreadcrumbItem[]
 }
 
-export const LearnPageLayout: FC<LearnPageLayoutProps> = ({ children, header, breadcrumbItems }) => {
+export const LearnPageLayout = ({ children, header, breadcrumbItems }: LearnPageLayoutProps) => {
   const tableOfContentsData = useTableOfContentsData()
   return (
     <Layout breadcrumbItems={breadcrumbItems}>

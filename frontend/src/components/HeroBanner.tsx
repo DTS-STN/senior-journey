@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react'
 
 import Image, { StaticImageData } from 'next/image'
 
@@ -11,7 +11,7 @@ export interface HeroBannerProps extends PropsWithChildren {
   className?: string
 }
 
-export const HeroBanner: FC<HeroBannerProps> = ({ children, imageProps, className }) => {
+export const HeroBanner = ({ children, imageProps, className }: HeroBannerProps) => {
   return (
     <section className="overflow-hidden rounded-3xl bg-gray-surface">
       <div className={`grid md:grid-cols-12 md:items-center ${className}`}>

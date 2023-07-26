@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { Link as MuiLink } from '@mui/material'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
@@ -10,7 +8,7 @@ export interface ErrorPageProps {
   statusCode?: number
 }
 
-const ErrorPage: FC<ErrorPageProps> = ({ statusCode }) => {
+const ErrorPage = ({ statusCode }: ErrorPageProps) => {
   return (
     <ErrorLayout>
       <NextSeo

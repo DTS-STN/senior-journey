@@ -1,12 +1,10 @@
-import { FC } from 'react'
-
 import Image from 'next/image'
 
 export interface ErrorLayoutProps {
   children?: React.ReactNode
 }
 
-const ErrorLayout: FC<ErrorLayoutProps> = ({ children }) => {
+const ErrorLayout = ({ children }: ErrorLayoutProps) => {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="container mx-auto my-6 px-4">
@@ -20,11 +18,7 @@ const ErrorLayout: FC<ErrorLayoutProps> = ({ children }) => {
         />
       </header>
       <hr />
-      <main
-        role="main"
-        id="mainContent"
-        className="container mx-auto my-8 flex-1 px-4"
-      >
+      <main role="main" id="mainContent" className="container mx-auto my-8 flex-1 px-4">
         {children}
       </main>
       <footer className="bg-gray-light py-4">

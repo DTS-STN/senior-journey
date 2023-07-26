@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 import { FormikProps, FormikValues } from 'formik'
@@ -10,7 +10,7 @@ export interface QuestionEarnProps extends FormikProps<FormikValues | QuizFormSt
   currentStepIndex: number
 }
 
-export const QuestionEarn: FC<QuestionEarnProps> = ({ values, setFieldValue }) => {
+export const QuestionEarn = ({ values, setFieldValue }: QuestionEarnProps) => {
   const { t } = useTranslation('quiz')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {
@@ -56,10 +56,7 @@ export const QuestionEarn: FC<QuestionEarnProps> = ({ values, setFieldValue }) =
         >
           {t('questions.question-earn.option-no-income')}
         </ToggleButton>
-        <ToggleButton
-          value="yes-income"
-          aria-label={t('questions.question-earn.option-yes-income')}
-        >
+        <ToggleButton value="yes-income" aria-label={t('questions.question-earn.option-yes-income')}>
           {t('questions.question-earn.option-yes-income')}
         </ToggleButton>
         <ToggleButton

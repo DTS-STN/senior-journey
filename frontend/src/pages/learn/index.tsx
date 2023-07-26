@@ -1,4 +1,4 @@
-import { FC, useId } from 'react'
+import { useId } from 'react'
 
 import { Button, Card, CardActionArea, CardContent } from '@mui/material'
 import { GetServerSideProps } from 'next'
@@ -30,7 +30,7 @@ interface LearnCardProps {
   title: string
 }
 
-const LearnCard: FC<LearnCardProps> = ({ desciption, href, id, imageSrc, minRead, title }) => {
+const LearnCard = ({ desciption, href, id, imageSrc, minRead, title }: LearnCardProps) => {
   const { t } = useTranslation('learn')
   const uniqueId = useId()
   return (
@@ -66,7 +66,7 @@ interface LearnSectionProps {
   title: string
 }
 
-const LearnSection: FC<LearnSectionProps> = ({ cards, desciption, id, title }) => {
+const LearnSection = ({ cards, desciption, id, title }: LearnSectionProps) => {
   const uniqueId = useId()
   return (
     <section id={`${uniqueId}-section-${id}`}>
@@ -81,7 +81,7 @@ const LearnSection: FC<LearnSectionProps> = ({ cards, desciption, id, title }) =
   )
 }
 
-const Learn: FC = () => {
+const Learn = () => {
   const { t } = useTranslation(['learn', 'common'])
 
   const sections: ReadonlyArray<LearnSectionProps> = [

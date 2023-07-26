@@ -1,4 +1,4 @@
-import { FC, Fragment, useMemo } from 'react'
+import { Fragment, useMemo } from 'react'
 
 import { NavigateNext } from '@mui/icons-material'
 import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink } from '@mui/material'
@@ -12,7 +12,7 @@ import { LearnPageLayout } from '../../components/LearnPageLayout'
 import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
-const RulesOfThumbForPublicPensions: FC = () => {
+const RulesOfThumbForPublicPensions = () => {
   const { t } = useTranslation(['learn/rules-of-thumb-for-public-pensions', 'common'])
 
   const learnMoreLinks = useMemo(
@@ -38,7 +38,7 @@ const RulesOfThumbForPublicPensions: FC = () => {
         secondary: t('learn-more.deciding-when-to-start.description'),
       },
     ],
-    [t]
+    [t],
   )
 
   return (

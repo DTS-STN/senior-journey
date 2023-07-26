@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Paper } from '@mui/material'
@@ -19,7 +19,7 @@ export interface TaskGroupAccordionProps {
   tasks: ReadonlyArray<TaskDto>
 }
 
-export const TaskGroupAccordion: React.FC<TaskGroupAccordionProps> = ({
+export const TaskGroupAccordion = ({
   expanded,
   expandedTasks,
   id,
@@ -30,7 +30,7 @@ export const TaskGroupAccordion: React.FC<TaskGroupAccordionProps> = ({
   subSectionTitle,
   srTag,
   tasks = [],
-}) => {
+}: TaskGroupAccordionProps) => {
   const disabled = tasks.length === 0
   const detailsRef = useRef<HTMLDetailsElement | null>(null)
 

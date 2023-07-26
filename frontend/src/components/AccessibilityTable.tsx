@@ -1,5 +1,3 @@
-import React from 'react'
-
 export interface TableData {
   caption: string
   header: string[]
@@ -13,7 +11,7 @@ interface TableProps {
   tableData: TableData
 }
 
-const AccessibilityTable: React.FC<TableProps> = ({ tableData }) => {
+const AccessibilityTable = ({ tableData }: TableProps) => {
   return (
     <div className="w-full overflow-x-scroll">
       <table className="min-w-full table-fixed border-collapse divide-y border text-left">

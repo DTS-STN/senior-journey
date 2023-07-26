@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import InputErrorMessage from './InputErrorMessage'
 import InputLabel from './InputLabel'
@@ -16,7 +16,7 @@ export interface InputFieldProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>
 }
 
-const InputField: FC<InputFieldProps> = ({
+const InputField = ({
   id,
   label,
   name,
@@ -27,7 +27,7 @@ const InputField: FC<InputFieldProps> = ({
   value,
   max,
   helpMessage,
-}) => {
+}: InputFieldProps) => {
   const inputErrorMessageId = `input-${id}-error`
   const inputHelpMessageId = `input-${id}-help`
   const inputWrapperId = `input-${id}`

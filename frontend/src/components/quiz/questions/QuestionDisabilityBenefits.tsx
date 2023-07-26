@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 import { FormikProps, FormikValues } from 'formik'
@@ -10,11 +10,11 @@ export interface QuestionDisabilityBenefitsProps extends FormikProps<FormikValue
   currentStepIndex: number
 }
 
-export const QuestionDisabilityBenefits: FC<QuestionDisabilityBenefitsProps> = ({
+export const QuestionDisabilityBenefits = ({
   isSubmitting,
   setFieldValue,
   values,
-}) => {
+}: QuestionDisabilityBenefitsProps) => {
   const { t } = useTranslation('quiz')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {

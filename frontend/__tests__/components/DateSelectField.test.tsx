@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import '@testing-library/jest-dom/extend-expect'
 import { render, screen } from '@testing-library/react'
 
@@ -10,21 +8,14 @@ import DateSelectField from '../../src/components/DateSelectField'
 
 expect.extend(toHaveNoViolations)
 
-const DateSelectMock: FC<DateSelectProps> = ({ label }: DateSelectProps) => {
+const DateSelectMock = ({ label }: DateSelectProps) => {
   return <div data-testid="date-selector">{label}</div>
 }
 
 jest.mock('../../src/components/DateSelect', () => DateSelectMock)
 
 describe('DateSelectField', () => {
-  const sut = (
-    <DateSelectField
-      id="date-picker"
-      label="Date Picker"
-      onChange={jest.fn()}
-      value="Some value"
-    />
-  )
+  const sut = <DateSelectField id="date-picker" label="Date Picker" onChange={jest.fn()} value="Some value" />
 
   it('renders', () => {
     render(sut)

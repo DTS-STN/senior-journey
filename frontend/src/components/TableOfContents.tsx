@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import { ArrowDropUp } from '@mui/icons-material'
 import { Divider, List, ListItem, ListItemButton, ListItemText, Paper } from '@mui/material'
@@ -31,7 +31,7 @@ export interface TableOfContentsProps {
   items: ReadonlyArray<TableOfContentItem>
 }
 
-export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => {
+export const TableOfContents = ({ header, items }: TableOfContentsProps) => {
   const { t } = useTranslation('common')
   const [activeState, setActiveState] = useState<string | null>(null)
 
@@ -93,7 +93,7 @@ export const TableOfContents: FC<TableOfContentsProps> = ({ header, items }) => 
         clearTimeout(unsetClickedRef.current)
       }
     },
-    []
+    [],
   )
 
   return (

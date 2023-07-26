@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -15,7 +13,7 @@ interface ListItem {
   'item'?: string
 }
 
-const BreadcrumbStructuredData: FC<BreadcrumbProps> = ({ items }) => {
+const BreadcrumbStructuredData = ({ items }: BreadcrumbProps) => {
   const { locale } = useRouter()
   const { t } = useTranslation('common')
   const publicRuntimeConfig = usePublicRuntimeConfig()

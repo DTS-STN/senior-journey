@@ -1,4 +1,4 @@
-import { FC, useId } from 'react'
+import { useId } from 'react'
 
 import { Paper } from '@mui/material'
 
@@ -7,7 +7,7 @@ export interface CollapseProps {
   children?: React.ReactNode
 }
 
-const Collapse: FC<CollapseProps> = ({ title, children }) => {
+const Collapse = ({ title, children }: CollapseProps) => {
   const id = useId()
   return (
     <Paper variant="outlined">

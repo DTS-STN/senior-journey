@@ -8,8 +8,9 @@ import { TaskDto } from '../../src/lib/types'
 
 describe('TaskCard', () => {
   const task: TaskDto = {
+    answerKey: 'answer-key',
     id: 1,
-    title: 'task title en',
+    displayOrder: 1,
     description: 'task description en',
     links: [
       {
@@ -23,6 +24,7 @@ describe('TaskCard', () => {
         title: 'tag title',
       },
     ],
+    title: 'task title en',
   }
 
   it('renders the TaskCard component', () => {

@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { GetServerSideProps } from 'next'
 
 import { HomePage } from '../components/pages/HomePage'
@@ -12,18 +10,18 @@ interface IndexProps {
   locale?: string
 }
 
-const Index: FC<IndexProps> = ({ locale }) => {
+const Index = ({ locale }: IndexProps) => {
   return isHomePage(locale) ? <HomePage /> : <SplashPage />
 }
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async ({ locale }) => {
-    const translations =  isHomePage(locale) ? await pageWithServerSideTranslations(locale, 'home') : {}
-    return {
-      props: {
-        ...translations,
-        locale,
-      },
-    }
+  const translations = isHomePage(locale) ? await pageWithServerSideTranslations(locale, 'home') : {}
+  return {
+    props: {
+      ...translations,
+      locale,
+    },
+  }
 }
 
 export default Index

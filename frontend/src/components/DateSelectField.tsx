@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import { getDaysInMonth, isExists } from 'date-fns'
 import { useTranslation } from 'next-i18next'
@@ -28,7 +28,7 @@ interface DateSelectState {
   yearValue: string
 }
 
-const DateSelectField: FC<DateSelectFieldProps> = ({
+const DateSelectField = ({
   errorMessage,
   firstYear,
   helpMessage,
@@ -38,7 +38,7 @@ const DateSelectField: FC<DateSelectFieldProps> = ({
   onChange,
   required,
   value,
-}) => {
+}: DateSelectFieldProps) => {
   const { t } = useTranslation()
 
   const [state, setState] = useState<DateSelectState & { changeCount: number }>({
@@ -208,7 +208,7 @@ const padZero = (value: number, maxLength: number): string => {
 }
 
 const parseDateString = (
-  dateString: string
+  dateString: string,
 ): {
   year: string
   month: string

@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, MouseEvent, useDeferredValue, useEffect, useMemo, useState } from 'react'
+import { ChangeEvent, MouseEvent, useDeferredValue, useEffect, useMemo, useState } from 'react'
 
 import { Cached, ExpandLess, ExpandMore, FilterList, UnfoldMore } from '@mui/icons-material'
 import Print from '@mui/icons-material/Print'
@@ -44,14 +44,14 @@ interface ChecklistResultsProps {
   receivingBenefits: TasksGroupDto
 }
 
-const ChecklistResults: FC<ChecklistResultsProps> = ({
+const ChecklistResults = ({
   applyingBenefits,
   beforeRetiring,
   initialExpandedGroups,
   initialExpandedTasks,
   filters,
   receivingBenefits,
-}) => {
+}: ChecklistResultsProps) => {
   const { t } = useTranslation(['checklist', 'common'])
 
   const { mutate: removeQuizData } = useRemoveQuizData()
@@ -369,7 +369,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
     const { applyingBenefits, beforeRetiring, receivingBenefits } = tasksData
 
     function sortTasksByDisplayOrder(
-      tasks: typeof applyingBenefits.tasks | typeof beforeRetiring.tasks | typeof receivingBenefits.tasks
+      tasks: typeof applyingBenefits.tasks | typeof beforeRetiring.tasks | typeof receivingBenefits.tasks,
     ) {
       return sortBy(tasks, [
         function (o) {
@@ -389,17 +389,17 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
 
     const applyingBenefitsDtos = tasksGroupDtoMapper.toDto(
       { ...applyingBenefits, tasks: applyingBenefitsTasks.filter(filterTasksByAnswers) },
-      locale
+      locale,
     )
 
     const beforeRetiringDtos = tasksGroupDtoMapper.toDto(
       { ...beforeRetiring, tasks: beforeRetiringTasks.filter(filterTasksByAnswers) },
-      locale
+      locale,
     )
 
     const receivingBenefitsDtos = tasksGroupDtoMapper.toDto(
       { ...receivingBenefits, tasks: receivingBenefitsTasks.filter(filterTasksByAnswers) },
-      locale
+      locale,
     )
 
     return {
@@ -408,7 +408,7 @@ export const getServerSideProps: GetServerSideProps<ChecklistResultsProps | {}> 
         applyingBenefits: applyingBenefitsDtos,
         beforeRetiring: beforeRetiringDtos,
         initialExpandedGroups: queryVariableToNumberArray(
-          query.group ?? [applyingBenefitsDtos.id, beforeRetiringDtos.id, receivingBenefitsDtos.id].map(String)
+          query.group ?? [applyingBenefitsDtos.id, beforeRetiringDtos.id, receivingBenefitsDtos.id].map(String),
         ),
         initialExpandedTasks: queryVariableToNumberArray(query.task),
         filters: validatedFilters,

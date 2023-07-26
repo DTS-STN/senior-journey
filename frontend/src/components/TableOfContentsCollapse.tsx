@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { ArrowDropUp } from '@mui/icons-material'
 import { Divider, List, ListItem, ListItemButton, ListItemText } from '@mui/material'
 import { useTranslation } from 'next-i18next'
@@ -11,7 +9,7 @@ export interface TableOfContentsCollapseProps {
   items: ReadonlyArray<TableOfContentItem>
 }
 
-export const TableOfContentsCollapse: FC<TableOfContentsCollapseProps> = ({ items }) => {
+export const TableOfContentsCollapse = ({ items }: TableOfContentsCollapseProps) => {
   const { t } = useTranslation('common')
 
   return (

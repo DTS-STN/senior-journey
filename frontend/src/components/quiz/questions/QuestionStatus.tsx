@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 import { FormikProps, FormikValues } from 'formik'
@@ -10,7 +10,7 @@ export interface QuestionStatusProps extends FormikProps<FormikValues | QuizForm
   currentStepIndex: number
 }
 
-export const QuestionStatus: FC<QuestionStatusProps> = ({ values, setFieldValue }) => {
+export const QuestionStatus = ({ values, setFieldValue }: QuestionStatusProps) => {
   const { t } = useTranslation('quiz')
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, answerId: string | null) => {

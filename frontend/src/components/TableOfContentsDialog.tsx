@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { useState } from 'react'
 
 import { ArrowDropUp } from '@mui/icons-material'
 import TocIcon from '@mui/icons-material/Toc'
@@ -26,7 +26,7 @@ export interface TableOfContentsDialogProps {
   items: ReadonlyArray<TableOfContentItem>
 }
 
-export const TableOfContentsDialog: FC<TableOfContentsDialogProps> = ({ header, items }) => {
+export const TableOfContentsDialog = ({ header, items }: TableOfContentsDialogProps) => {
   const { t } = useTranslation('common')
   const [open, setOpen] = useState(false)
   const theme = useTheme()

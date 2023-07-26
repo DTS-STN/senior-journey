@@ -1,4 +1,4 @@
-import { FC, Fragment, useMemo } from 'react'
+import { Fragment, useMemo } from 'react'
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import { List, ListItem, ListItemButton, ListItemText, Link as MuiLink, useMediaQuery } from '@mui/material'
@@ -16,7 +16,7 @@ import theme from '../../theme'
 import { pageWithServerSideTranslations } from '../../utils/next-i18next-utils'
 import { getDCTermsTitle } from '../../utils/seo-utils'
 
-const MainSourcesOfRetirementIncome: FC = () => {
+const MainSourcesOfRetirementIncome = () => {
   const { locale } = useRouter()
   const { t } = useTranslation(['learn/main-sources-of-retirement-income', 'common'])
 
@@ -49,7 +49,7 @@ const MainSourcesOfRetirementIncome: FC = () => {
         secondary: t('learn-more.income-calculator.description'),
       },
     ],
-    [t]
+    [t],
   )
 
   return (
@@ -355,14 +355,14 @@ const MainSourcesOfRetirementIncome: FC = () => {
             autoWidthColumns: true,
           }}
           description={t(
-            'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content'
+            'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.content',
           )}
           buttonLabel={t('canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.button-label')}
           descriptionHeading={t(
-            'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.header'
+            'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.description.header',
           )}
           valuesHeading={t(
-            'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.values-heading'
+            'canada-pension-plan-program.cpp-post-retirement-benefit.chart.accessibility.values-heading',
           )}
         />
         <p>
@@ -400,10 +400,10 @@ const MainSourcesOfRetirementIncome: FC = () => {
             },
             {
               href: t(
-                'canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.link'
+                'canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.link',
               ),
               primary: t(
-                'canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.content'
+                'canada-pension-plan-program.cpp-post-retirement-benefit.helpful-resources.stop-contributing.content',
               ),
             },
           ].map(({ href, primary }) => (

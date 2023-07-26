@@ -1,4 +1,4 @@
-import React, { FC, useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 import { ExpandLess, ExpandMore } from '@mui/icons-material'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
@@ -39,7 +39,7 @@ export interface SupportingSeniorsCardProps {
 
 type TabValue = 'learn' | 'plan' | 'apply' | 'manage'
 
-export const HomePage: FC = () => {
+export const HomePage = () => {
   const { locale } = useRouter()
   const { t } = useTranslation(['home', 'common'])
 
@@ -64,7 +64,7 @@ export const HomePage: FC = () => {
         'url': urlcat(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, `/${locale ?? 'en'}`),
       }),
     }),
-    [publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, locale, t]
+    [publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, locale, t],
   )
 
   return (

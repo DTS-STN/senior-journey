@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import { Button, Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
@@ -16,14 +14,14 @@ export interface ApplicationNameBarProps {
   text: string
 }
 
-const ApplicationNameBar: FC<ApplicationNameBarProps> = ({
+const ApplicationNameBar = ({
   breadcrumbItems,
   checklist,
   checklistUrl,
   hideChecklist,
   href,
   text,
-}) => {
+}: ApplicationNameBarProps) => {
   return (
     <div id="app-bar">
       <section className="container mx-auto p-4">
