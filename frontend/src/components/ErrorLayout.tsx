@@ -1,8 +1,9 @@
+import { PropsWithChildren } from 'react'
+
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import Image from 'next/image'
 
-export interface ErrorLayoutProps {
-  children?: React.ReactNode
-}
+export interface ErrorLayoutProps extends PropsWithChildren {}
 
 const ErrorLayout = ({ children }: ErrorLayoutProps) => {
   return (
@@ -25,7 +26,7 @@ const ErrorLayout = ({ children }: ErrorLayoutProps) => {
         <div className="container mx-auto flex justify-between px-4 lg:flex-row-reverse">
           <a className="w-32 font-body text-sm sm:w-36 lg:hidden" href="#">
             Top of page / Haut de la page&nbsp;
-            <span className="font-extrabold">&#8963;</span>
+            <KeyboardArrowUpIcon />
           </a>
           <Image
             className="h-6 w-auto lg:h-auto lg:w-40"
