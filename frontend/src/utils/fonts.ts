@@ -2,87 +2,87 @@ import { Noto_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 
 export const notoSans = Noto_Sans({
-  subsets: ['latin'],
   display: 'swap',
+  subsets: ['latin'],
   variable: '--noto-sans-font',
   weight: ['400', '700'],
 })
 
 export const lato = localFont({
   display: 'swap',
-  variable: '--lato-font',
   src: [
-    /* Webfont: Lato-Light */
+    /* Webfont: LatoLatin-Light */
     {
-      path: '../../public/assets/fonts/Lato-Light.woff2',
+      path: '../../public/assets/fonts/LatoLatin-Light.woff2',
       style: 'normal',
       weight: '300',
     },
-    /* Webfont: Lato-LightItalic */
+    /* Webfont: LatoLatin-LightItalic */
     {
-      path: '../../public/assets/fonts/Lato-LightItalic.woff2',
+      path: '../../public/assets/fonts/LatoLatin-LightItalic.woff2',
       style: 'italic',
       weight: '300',
     },
-    /* Webfont: Lato-Regular */
+    /* Webfont: LatoLatin-Regular */
     {
-      path: '../../public/assets/fonts/Lato-Regular.woff2',
+      path: '../../public/assets/fonts/LatoLatin-Regular.woff2',
       style: 'normal',
       weight: '400',
     },
-    /* Webfont: Lato-Italic */
+    /* Webfont: LatoLatin-Italic */
     {
-      path: '../../public/assets/fonts/Lato-Italic.woff2',
+      path: '../../public/assets/fonts/LatoLatin-Italic.woff2',
       style: 'italic',
       weight: '400',
     },
-    /* Webfont: Lato-Medium */
+    /* Webfont: LatoLatin-Medium */
     {
-      path: '../../public/assets/fonts/Lato-Medium.woff2',
+      path: '../../public/assets/fonts/LatoLatin-Medium.woff2',
       style: 'normal',
       weight: '500',
     },
-    /* Webfont: Lato-MediumItalic */
+    /* Webfont: LatoLatin-MediumItalic */
     {
-      path: '../../public/assets/fonts/Lato-MediumItalic.woff2',
+      path: '../../public/assets/fonts/LatoLatin-MediumItalic.woff2',
       style: 'italic',
       weight: '500',
     },
-    /* Webfont: Lato-Semibold */
+    /* Webfont: LatoLatin-Semibold */
     {
-      path: '../../public/assets/fonts/Lato-Semibold.woff2',
+      path: '../../public/assets/fonts/LatoLatin-Semibold.woff2',
       style: 'normal',
       weight: '600',
     },
-    /* Webfont: Lato-SemiboldItalic */
+    /* Webfont: LatoLatin-SemiboldItalic */
     {
-      path: '../../public/assets/fonts/Lato-SemiboldItalic.woff2',
+      path: '../../public/assets/fonts/LatoLatin-SemiboldItalic.woff2',
       style: 'italic',
       weight: '600',
     },
-    /* Webfont: Lato-Bold */
+    /* Webfont: LatoLatin-Bold */
     {
-      path: '../../public/assets/fonts/Lato-Bold.woff2',
+      path: '../../public/assets/fonts/LatoLatin-Bold.woff2',
       style: 'normal',
       weight: '700',
     },
-    /* Webfont: Lato-BoldItalic */
+    /* Webfont: LatoLatin-BoldItalic */
     {
-      path: '../../public/assets/fonts/Lato-BoldItalic.woff2',
+      path: '../../public/assets/fonts/LatoLatin-BoldItalic.woff2',
       style: 'italic',
       weight: '700',
     },
-    /* Webfont: Lato-Heavy */
+    /* Webfont: LatoLatin-Heavy */
     {
-      path: '../../public/assets/fonts/Lato-Heavy.woff2',
+      path: '../../public/assets/fonts/LatoLatin-Heavy.woff2',
       style: 'normal',
       weight: '800',
     },
-    /* Webfont: Lato-HeavyItalic */
+    /* Webfont: LatoLatin-HeavyItalic */
     {
-      path: '../../public/assets/fonts/Lato-HeavyItalic.woff2',
+      path: '../../public/assets/fonts/LatoLatin-HeavyItalic.woff2',
       style: 'italic',
       weight: '800',
     },
   ],
+  variable: '--lato-font',
 })

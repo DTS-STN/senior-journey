@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['var(--lato-font)', 'sans-serif'],
+        display: ['var(--lato-font)', '"Open Sans"', 'sans-serif'],
         body: ['var(--noto-sans-font)', 'sans-serif'],
       },
       borderColor: {
