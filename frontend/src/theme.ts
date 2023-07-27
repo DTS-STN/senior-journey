@@ -34,7 +34,7 @@ const theme = createTheme({
       },
       styleOverrides: {
         root: {
-          'fontFamily': 'var(--lato-font), sans-serif',
+          'fontFamily': 'var(--lato-font), "Open Sans", sans-serif',
           'textTransform': 'none',
           '&.Mui-focusVisible': {
             outline: '3px solid #004f56',
@@ -96,7 +96,7 @@ const theme = createTheme({
     MuiTab: {
       styleOverrides: {
         root: {
-          'fontFamily': 'var(--lato-font), sans-serif',
+          'fontFamily': 'var(--lato-font), "Open Sans", sans-serif',
           'textTransform': 'none',
           'fontWeight': 'bold',
           '&.Mui-focusVisible': {
@@ -108,7 +108,7 @@ const theme = createTheme({
     MuiToggleButton: {
       styleOverrides: {
         root: {
-          fontFamily: 'var(--lato-font), sans-serif',
+          fontFamily: 'var(--lato-font), "Open Sans", sans-serif',
           textTransform: 'none',
         },
       },
