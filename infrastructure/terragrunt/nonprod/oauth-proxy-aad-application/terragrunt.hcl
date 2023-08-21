@@ -38,10 +38,5 @@ inputs = {
     "https://seniors-journey-dev.dev-dp.dts-stn.com/oauth/callback",
     "https://seniors-journey-test.dev-dp.dts-stn.com/oauth/callback",
     "https://seniors-journey-staging.dev-dp.dts-stn.com/oauth/callback",
-
-    # TODO :: GjB :: the following production URLs can be removed once we go live and production is no longer auth-walled
-    "https://retraite-retirement.prod-dp.dts-stn.com/oauth/callback",
-    "https://retraite-retirement.prod-dp-internal.dts-stn.com/oauth/callback",
-    "https://retraite-retirement.service.canada.ca/oauth/callback"
   ]
 }
