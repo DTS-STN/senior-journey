@@ -1,4 +1,4 @@
-import { resolveHref as nextResolveHref } from 'next/dist/shared/lib/router/utils/resolve-href'
+import { resolveHref as nextResolveHref } from 'next/dist/client/resolve-href'
 import Router from 'next/router'
 import type { UrlObject } from 'url'
 
