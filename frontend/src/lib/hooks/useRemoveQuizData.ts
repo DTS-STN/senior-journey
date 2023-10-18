@@ -3,14 +3,14 @@ import { UseMutationOptions, useMutation, useQueryClient } from '@tanstack/react
 /**
  * Removes Quiz data from sessionStorage
  */
-export const useRemoveQuizData = (options?: UseMutationOptions) => {
+export const useRemoveQuizData = (options?: Omit<UseMutationOptions, 'mutationKey' | 'mutationFn'>) => {
   const queryClient = useQueryClient()
-  return useMutation(
-    ['quiz'],
-    async () => {
+  return useMutation({
+    ...(options ?? {}),
+    mutationKey: ['quiz'],
+    mutationFn: async () => {
       sessionStorage.removeItem('quiz')
-      queryClient.removeQueries(['quiz'])
+      queryClient.removeQueries({ queryKey: ['quiz'] })
     },
-    options
-  )
+  })
 }

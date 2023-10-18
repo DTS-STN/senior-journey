@@ -10,10 +10,11 @@ const logger = getLogger('useQuizData')
  * Retrieves Quiz stored data from sessionStorage
  * @returns null if no data stored or it can't be parsed else a QuizFormState object
  */
-export const useQuizData = (options?: UseQueryOptions<QuizFormState | null>) => {
-  return useQuery<QuizFormState | null>(
-    ['quiz'],
-    () => {
+export const useQuizData = (options?: Omit<UseQueryOptions<QuizFormState | null>, 'queryKey' | 'queryFn'>) => {
+  return useQuery<QuizFormState | null>({
+    ...(options ?? {}),
+    queryKey: ['quiz'],
+    queryFn: () => {
       try {
         const data = sessionStorage.getItem('quiz')
         return data === null || isEmpty(data) ? null : JSON.parse(data)
@@ -22,6 +23,5 @@ export const useQuizData = (options?: UseQueryOptions<QuizFormState | null>) => 
         return null
       }
     },
-    options
-  )
+  })
 }
