@@ -11,7 +11,7 @@ ARG BUILD_ID=0000
 ARG BUILD_REVISION=00000000
 ARG BUILD_VERSION=19700101-0000-00000000
 
-FROM docker.io/node:18.17.1-bullseye-slim AS base
+FROM docker.io/node:20.8.1-bullseye-slim AS base
 
 
 
@@ -78,7 +78,7 @@ COPY --chown=node:node --from=builder /home/node/next-i18next.config.js ./next-i
 COPY --chown=node:node --from=builder /home/node/package*.json ./
 
 USER node
-RUN npm install --no-save next
+RUN npm ci --omit=dev
 
 CMD npm run start
 EXPOSE 3000
