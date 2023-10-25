@@ -78,7 +78,7 @@ COPY --chown=node:node --from=builder /home/node/next-i18next.config.js ./next-i
 COPY --chown=node:node --from=builder /home/node/package*.json ./
 
 USER node
-RUN npm install --no-save next
+RUN npm ci --omit=dev
 
 CMD npm run start
 EXPOSE 3000
