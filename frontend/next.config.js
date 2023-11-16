@@ -22,7 +22,6 @@ const nextConfig = {
     NEXT_PUBLIC_BUILD_REVISION: process.env.BUILD_REVISION ?? '00000000',
     NEXT_PUBLIC_BUILD_TIMESTAMP: new Date(process.env.BUILD_DATE ?? statSync('package.json').mtime).toISOString(),
     NEXT_PUBLIC_BUILD_VERSION: process.env.BUILD_VERSION ?? '00000000-0000-00000000',
-    LOGGING_LEVEL: process.env.LOGGING_LEVEL ?? 'info',
   },
   experimental: {
     instrumentationHook: true
@@ -32,10 +31,11 @@ const nextConfig = {
   i18n: { ...i18n, localeDetection: false },
   poweredByHeader: false,
   publicRuntimeConfig: {
-    NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC: process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC,
-    NEXT_PUBLIC_ANALYTICS_BEACON_DELAY: process.env.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY,
-    NEXT_PUBLIC_APP_BASE_URI: process.env.NEXT_PUBLIC_APP_BASE_URI,
-    NEXT_PUBLIC_ENVIRONMENT: process.env.NEXT_PUBLIC_ENVIRONMENT,
+    ADOBE_ANALYTICS_SCRIPT_SRC: process.env.ADOBE_ANALYTICS_SCRIPT_SRC,
+    ANALYTICS_BEACON_DELAY: process.env.ANALYTICS_BEACON_DELAY,
+    APP_BASE_URI: process.env.APP_BASE_URI,
+    ENVIRONMENT: process.env.ENVIRONMENT,
+    LOGGING_LEVEL: process.env.LOGGING_LEVEL ?? 'info',
   },
   reactStrictMode: true,
 }

@@ -28,7 +28,7 @@ const Header = ({ gocLink, skipToMainText, breadcrumbItems, hideChecklist, class
   const langSelectorLocale = locale === 'en' ? 'fr' : 'en'
   const langSelectorAbbreviation = langSelectorLocale === 'fr' ? 'FR' : 'EN'
   const langSelectorText = langSelectorLocale === 'fr' ? 'Français' : 'English'
-  const showBanner = publicRuntimeConfig.NEXT_PUBLIC_ENVIRONMENT !== 'prod'
+  const showBanner = publicRuntimeConfig.ENVIRONMENT !== 'prod'
 
   return (
     <>

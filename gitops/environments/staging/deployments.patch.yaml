@@ -15,26 +15,47 @@ spec:
         - name: seniors-journey-frontend
           image: dtsrhpdevscedacr.azurecr.io/seniors-journey/seniors-journey-frontend:1.0.0
           env:
+            # TODO: REMOVE NEXT_PUBLIC_* ON NEXT RELEASE (REMOVED SINCE 2023-11-16)
+            - name: APP_BASE_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: APP_BASE_URI
             - name: NEXT_PUBLIC_APP_BASE_URI
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
-                  key: NEXT_PUBLIC_APP_BASE_URI
+                  key: APP_BASE_URI
+            - name: ANALYTICS_BEACON_DELAY
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: ANALYTICS_BEACON_DELAY
             - name: NEXT_PUBLIC_ANALYTICS_BEACON_DELAY
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
-                  key: NEXT_PUBLIC_ANALYTICS_BEACON_DELAY
+                  key: ANALYTICS_BEACON_DELAY
+            - name: ADOBE_ANALYTICS_SCRIPT_SRC
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: ADOBE_ANALYTICS_SCRIPT_SRC
             - name: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
-                  key: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC
+                  key: ADOBE_ANALYTICS_SCRIPT_SRC
+            - name: ENVIRONMENT
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: ENVIRONMENT
             - name: NEXT_PUBLIC_ENVIRONMENT
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
-                  key: NEXT_PUBLIC_ENVIRONMENT
+                  key: ENVIRONMENT
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:

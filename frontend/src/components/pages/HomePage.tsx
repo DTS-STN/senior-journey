@@ -61,10 +61,10 @@ export const HomePage = () => {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         'name': t('common:application-name'),
-        'url': urlcat(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, `/${locale ?? 'en'}`),
+        'url': urlcat(publicRuntimeConfig.APP_BASE_URI, `/${locale ?? 'en'}`),
       }),
     }),
-    [publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, locale, t],
+    [publicRuntimeConfig.APP_BASE_URI, locale, t],
   )
 
   return (
