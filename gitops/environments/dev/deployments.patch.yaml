@@ -14,11 +14,11 @@ spec:
       containers:
         - name: seniors-journey-frontend
           env:
-            - name: NEXT_PUBLIC_APP_BASE_URI
+            - name: APP_BASE_URI
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
-                  key: NEXT_PUBLIC_APP_BASE_URI
+                  key: APP_BASE_URI
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:

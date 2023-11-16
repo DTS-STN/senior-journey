@@ -14,11 +14,17 @@ spec:
       containers:
         - name: seniors-journey-frontend
           env:
+            # TODO: REMOVE NEXT_PUBLIC_* ON NEXT RELEASE (REMOVED SINCE 2023-11-16)
+            - name: APP_BASE_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: seniors-journey-frontend
+                  key: APP_BASE_URI
             - name: NEXT_PUBLIC_APP_BASE_URI
               valueFrom:
                 configMapKeyRef:
                   name: seniors-journey-frontend
-                  key: NEXT_PUBLIC_APP_BASE_URI
+                  key: APP_BASE_URI
             - name: OTEL_API_KEY
               valueFrom:
                 secretKeyRef:

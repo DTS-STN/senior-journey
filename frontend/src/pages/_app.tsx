@@ -40,7 +40,7 @@ export interface MyAppProps extends AppProps {
 
 const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, router }: MyAppProps) => {
   const publicRuntimeConfig = usePublicRuntimeConfig()
-  const nextSEOConfig = getNextSEOConfig(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, router)
+  const nextSEOConfig = getNextSEOConfig(publicRuntimeConfig.APP_BASE_URI, router)
 
   // XXX :: GjB :: this is just a sample metric!
   requestCounter.add(1)
@@ -63,14 +63,14 @@ const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, ro
           logger.debug(
             {
               appPreviousLocationPathname,
-              beaconDelay: publicRuntimeConfig.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY,
+              beaconDelay: publicRuntimeConfig.ANALYTICS_BEACON_DELAY,
               documentTitle: document.title,
               windowLocationPathname: window.location.pathname,
             },
             'Analytics beacon execution',
           )
           ;(window as AppWindow).adobeDataLayer?.push?.({ event: 'pageLoad' })
-        }, publicRuntimeConfig.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY)
+        }, publicRuntimeConfig.ANALYTICS_BEACON_DELAY)
       }
     }
 
@@ -82,7 +82,7 @@ const MyApp = ({ Component, emotionCache = clientSideEmotionCache, pageProps, ro
       router.events.off('routeChangeComplete', handleRouteChange)
       router.events.off('hashChangeComplete', handleRouteChange)
     }
-  }, [publicRuntimeConfig.NEXT_PUBLIC_ANALYTICS_BEACON_DELAY, router.events])
+  }, [publicRuntimeConfig.ANALYTICS_BEACON_DELAY, router.events])
 
   return (
     <CacheProvider value={emotionCache}>

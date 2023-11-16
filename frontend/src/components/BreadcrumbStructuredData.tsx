@@ -29,7 +29,7 @@ const BreadcrumbStructuredData = ({ items }: BreadcrumbProps) => {
       '@type': 'ListItem',
       'position': index + 2,
       'name': text,
-      'item': urlcat(publicRuntimeConfig.NEXT_PUBLIC_APP_BASE_URI, `/${locale ?? 'en'}${link}`),
+      'item': urlcat(publicRuntimeConfig.APP_BASE_URI, `/${locale ?? 'en'}${link}`),
     })) ?? []),
   ]
 

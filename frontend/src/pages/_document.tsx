@@ -13,7 +13,7 @@ import { MyAppProps } from './_app'
 
 const log = getLogger('_document.tsx')
 
-const adobeAnalyticsConfigured = process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC !== undefined
+const adobeAnalyticsConfigured = process.env.ADOBE_ANALYTICS_SCRIPT_SRC !== undefined
 const devmodeEnabled = process.env.NODE_ENV !== 'production'
 
 // see https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html
@@ -125,7 +125,7 @@ export default function MyDocument({ emotionStyleTags, locale, nonce }: MyDocume
           <Script strategy="beforeInteractive" src="https://code.jquery.com/jquery-3.6.3.min.js" />
         )}
         {adobeAnalyticsConfigured && (
-          <Script strategy="beforeInteractive" src={process.env.NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC} />
+          <Script strategy="beforeInteractive" src={process.env.ADOBE_ANALYTICS_SCRIPT_SRC} />
         )}
       </body>
     </Html>

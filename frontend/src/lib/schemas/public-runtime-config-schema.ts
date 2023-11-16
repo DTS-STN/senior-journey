@@ -1,17 +1,29 @@
+import { LevelWithSilent } from 'pino'
 import * as yup from 'yup'
 
+export const levelsWithSilent: ReadonlyArray<LevelWithSilent> = [
+  'debug',
+  'error',
+  'fatal',
+  'info',
+  'silent',
+  'trace',
+  'warn',
+]
+
 export const publicRuntimeConfigSchema = yup.object({
-  NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC: yup
-    .string()
-    .url('Environment variable NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT_SRC must be a valid URL'),
-  NEXT_PUBLIC_ANALYTICS_BEACON_DELAY: yup
+  ADOBE_ANALYTICS_SCRIPT_SRC: yup.string().url('Env. variable ${path} must be a valid URL'),
+  ANALYTICS_BEACON_DELAY: yup
     .number()
-    .integer('Environment variable NEXT_PUBLIC_ANALYTICS_BEACON_DELAY must be an integer')
-    .min(0, 'Environment variable NEXT_PUBLIC_ANALYTICS_BEACON_DELAY must be greater than or equal to 0')
+    .integer('Env. variable ${path} must be an integer')
+    .min(0, 'Env. variable ${path} must be greater than or equal to ${min}')
     .default(() => 250),
-  NEXT_PUBLIC_APP_BASE_URI: yup
+  APP_BASE_URI: yup
     .string()
-    .required('Environment variable NEXT_PUBLIC_APP_BASE_URI is required')
-    .url('Environment variable NEXT_PUBLIC_APP_BASE_URI must be a valid URL'),
-  NEXT_PUBLIC_ENVIRONMENT: yup.string(),
+    .required('Env. variable ${path} is required')
+    .url('Env. variable ${path} must be a valid URL'),
+  ENVIRONMENT: yup.string(),
+  LOGGING_LEVEL: yup
+    .string()
+    .oneOf(levelsWithSilent, 'Env. variable ${path} must be one of the following values: ${values}'),
 })

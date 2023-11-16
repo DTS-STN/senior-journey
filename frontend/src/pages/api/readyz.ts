@@ -22,7 +22,6 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse<Ready
   try {
     // validate public runtime configuration
     const publicRuntimeConfig = publicRuntimeConfigSchema.validateSync(process.env, { stripUnknown: true })
-
     res.status(200).json({
       publicRuntimeConfig,
       status: 'UP',
