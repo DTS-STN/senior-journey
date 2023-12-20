@@ -3,6 +3,10 @@ import { OpenGraphMedia } from 'next-seo/lib/types'
 import { Router } from 'next/router'
 import urlcat from 'urlcat'
 
+import { getLogger } from './logging/log-util'
+
+const logger = getLogger('next-seo-config')
+
 export type NextSEORouter = Pick<Router, 'asPath' | 'locale'>
 
 export interface LanguageAlternate {
@@ -12,19 +16,27 @@ export interface LanguageAlternate {
 
 export const getLanguageAlternates = (
   appBaseUri: string,
-  router: NextSEORouter
+  router: NextSEORouter,
 ): ReadonlyArray<LanguageAlternate> | undefined => {
   if (!appBaseUri) return
-  return [
-    {
-      hrefLang: 'en',
-      href: urlcat(appBaseUri, `/en${router.asPath}`),
-    },
-    {
-      hrefLang: 'fr',
-      href: urlcat(appBaseUri, `/fr${router.asPath}`),
-    },
-  ]
+  try {
+    return [
+      {
+        hrefLang: 'en',
+        href: urlcat(appBaseUri, `/en${router.asPath}`),
+      },
+      {
+        hrefLang: 'fr',
+        href: urlcat(appBaseUri, `/fr${router.asPath}`),
+      },
+    ]
+  } catch (error) {
+    const message =
+      error instanceof Error
+        ? `Unable to perform operation getLanguageAlternates due to: ${error.message}`
+        : `Unknown error occurred`
+    logger.error(error, message)
+  }
 }
 
 export const getOpenGraphImages = (appBaseUri: string): ReadonlyArray<OpenGraphMedia> | undefined => {
