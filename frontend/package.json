@@ -28,7 +28,7 @@
     "@opentelemetry/sdk-node": "0.46.0",
     "@tanstack/react-query": "5.14.1",
     "cross-env": "7.0.3",
-    "date-fns": "3.0.0",
+    "date-fns": "3.0.6",
     "formik": "2.4.5",
     "formik-wizard-form": "2.1.0",
     "i18next": "23.7.11",
