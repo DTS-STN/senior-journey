@@ -68,7 +68,7 @@
     "jest-axe": "8.0.0",
     "jest-environment-jsdom": "29.7.0",
     "jest-fetch-mock": "3.0.3",
-    "node-mocks-http": "1.14.0",
+    "node-mocks-http": "1.14.1",
     "pino-pretty": "10.3.0",
     "postcss": "8.4.33",
     "prettier": "3.1.1",
