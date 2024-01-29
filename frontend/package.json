@@ -31,7 +31,7 @@
     "date-fns": "3.0.6",
     "formik": "2.4.5",
     "formik-wizard-form": "2.1.0",
-    "i18next": "23.7.16",
+    "i18next": "23.8.1",
     "lodash": "4.17.21",
     "markdown-to-jsx": "7.4.0",
     "next": "14.0.4",
