@@ -55,7 +55,7 @@
     "@types/jest-axe": "3.5.9",
     "@types/lodash": "4.14.202",
     "@types/node": "20.11.16",
-    "@types/react": "18.2.48",
+    "@types/react": "18.2.54",
     "ajv": "8.12.0",
     "ajv-formats": "2.1.1",
     "autoprefixer": "10.4.16",
