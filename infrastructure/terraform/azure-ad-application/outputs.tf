@@ -1,13 +1,13 @@
 output "application_id" {
   # Note: this is an alias for client_id
   description = "The application ID (also called client ID)."
-  value       = azuread_application.main.application_id
+  value       = azuread_application.main.client_id
 }
 
 output "client_id" {
   # Note: this is an alias for application_id
   description = "The client ID (also called application registration ID)."
-  value       = azuread_application.main.application_id
+  value       = azuread_application.main.client_id
 }
 
 output "client_secrets" {
