@@ -11,7 +11,7 @@ ARG BUILD_ID=0000
 ARG BUILD_REVISION=00000000
 ARG BUILD_VERSION=19700101-0000-00000000
 
-FROM docker.io/node:20.11.1-bookworm-slim AS base
+FROM docker.io/node:20.12.0-bookworm-slim AS base
 
 
 
