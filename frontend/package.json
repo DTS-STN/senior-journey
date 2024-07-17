@@ -29,7 +29,7 @@
     "@tanstack/react-query": "5.31.0",
     "cross-env": "7.0.3",
     "date-fns": "3.6.0",
-    "formik": "2.4.5",
+    "formik": "2.4.6",
     "formik-wizard-form": "2.1.0",
     "i18next": "23.11.5",
     "lodash": "4.17.21",
