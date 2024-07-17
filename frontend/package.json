@@ -20,7 +20,7 @@
     "@mui/icons-material": "5.15.15",
     "@mui/lab": "5.0.0-alpha.170",
     "@mui/material": "5.15.15",
-    "@mui/utils": "5.15.14",
+    "@mui/utils": "5.15.20",
     "@opentelemetry/api": "1.8.0",
     "@opentelemetry/exporter-metrics-otlp-proto": "0.52.0",
     "@opentelemetry/exporter-trace-otlp-proto": "0.50.0",
