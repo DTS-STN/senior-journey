@@ -24,7 +24,7 @@
     "@opentelemetry/api": "1.8.0",
     "@opentelemetry/exporter-metrics-otlp-proto": "0.52.1",
     "@opentelemetry/exporter-trace-otlp-proto": "0.52.1",
-    "@opentelemetry/sdk-metrics": "1.23.0",
+    "@opentelemetry/sdk-metrics": "1.25.1",
     "@opentelemetry/sdk-node": "0.50.0",
     "@tanstack/react-query": "5.51.11",
     "cross-env": "7.0.3",
