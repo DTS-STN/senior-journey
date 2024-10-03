@@ -169,8 +169,8 @@
     },
     "table-one": {
       "header-one": "Type de prestation",
-      "header-three": "Pour recevoir la SV, votre revenu net en 2021 doit être",
-      "header-two": "Paiement mensuel maximum (avril à juin 2023)",
+      "header-three": "Pour recevoir la SV, votre revenu net en 2023 doit être",
+      "header-two": "Paiement mensuel maximum (octobre à décembre 2024)",
       "row-one": {
         "column-one-value": "Pension de la Sécurité de la vieillesse 65 à 74 ans",
         "column-three-value": "Inférieur à 148\u00a0451\u00a0$",
@@ -181,7 +181,7 @@
         "column-three-value": "Inférieur à 154\u00a0196\u00a0$",
         "column-two-value": "800,44\u00a0$"
       },
-      "title": "Montants des paiements de la Sécurité de la vieillesse - avril à juin 2023"
+      "title": "Montants des paiements de la Sécurité de la vieillesse - octobre à décembre 2024"
     },
     "we-pay": {
       "heading": "Nous versons automatiquement la SV à de nombreuses personnes, mais certains clients doivent encore faire une demande.",

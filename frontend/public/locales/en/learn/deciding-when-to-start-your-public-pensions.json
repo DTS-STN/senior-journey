@@ -166,8 +166,8 @@
     },
     "table-one": {
       "header-one": "Benefit type",
-      "header-three": "To receive the OAS, your total income in 2021 must be",
-      "header-two": "Maximum monthly amount (April to June 2023)",
+      "header-three": "To receive the OAS, your total income in 2023 must be",
+      "header-two": "Maximum monthly amount (October to December 2024)",
       "row-one": {
         "column-one-value": "Old Age Security pension 65 to 74",
         "column-three-value": "Less than $148,451",
@@ -178,7 +178,7 @@
         "column-three-value": "Less than $154,196",
         "column-two-value": "$800.44"
       },
-      "title": "Old Age Security (OAS) pension amounts - April to June 2023"
+      "title": "Old Age Security (OAS) pension amounts - October to December 2024"
     },
     "we-pay": {
       "heading": "We pay OAS automatically for many, but some clients still need to apply",
