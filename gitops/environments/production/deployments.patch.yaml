@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: seniors-journey-frontend
-          image: dtsrhpprodscedspokeacr.azurecr.io/seniors-journey/seniors-journey-frontend:1.0.0
+          image: dtsrhpprodscedspokeacr.azurecr.io/seniors-journey/seniors-journey-frontend:1.0.1
           env:
             # TODO: REMOVE NEXT_PUBLIC_* ON NEXT RELEASE (REMOVED SINCE 2023-11-16)
             - name: APP_BASE_URI
