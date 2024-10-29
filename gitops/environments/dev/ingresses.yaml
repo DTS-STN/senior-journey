@@ -1,3 +1,4 @@
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -5,6 +6,34 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/proxy-buffer-size: 32k # required for OAuth proxy
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+    nginx.ingress.kubernetes.io/server-snippet: |
+        rewrite ^/en/home$ https://www.canada.ca/en/services/retirement.html permanent;
+        rewrite ^/en/learn$ https://www.canada.ca/en/services/retirement/learn.html permanent;
+        rewrite ^/en/quiz$ https://www.canada.ca/en/services/retirement/quiz-main.html permanent;
+        rewrite ^/en/learn/deciding-when-to-start-your-public-pensions$ https://www.canada.ca/en/services/retirement/learn/deciding-when-start-your-public-pensions.html permanent;
+        rewrite ^/en/learn/rules-of-thumb-for-public-pensions$ https://www.canada.ca/en/services/retirement/learn/rules-thumb-public-pensions.html permanent;
+        rewrite ^/en/learn/main-sources-of-retirement-income$ https://www.canada.ca/en/services/retirement/learn/main-sources-retirement-income.html permanent;
+        rewrite ^/en/learn/going-from-work-to-retirement$ https://www.canada.ca/en/services/retirement/learn/going-work-retirement.html permanent;
+        rewrite ^/en/learn/planning-to-save-for-retirement$ https://www.canada.ca/en/services/retirement/learn/planning-save-retirement.html permanent;
+        rewrite ^/en/learn/case-studies/bonnie$ https://www.canada.ca/en/services/retirement/learn/case-studies-bonnie.html permanent;
+        rewrite ^/en/learn/case-studies/fred$ https://www.canada.ca/en/services/retirement/learn/case-studies-fred.html permanent;
+        rewrite ^/en/learn/case-studies/keith$ https://www.canada.ca/en/services/retirement/learn/case-studies-keith.html permanent;
+        rewrite ^/en/checklist/$ https://www.canada.ca/en/services/retirement/quiz-main.html permanent;
+        rewrite ^/fr/home$ https://www.canada.ca/fr/services/retraite.html permanent;
+        rewrite ^/fr/learn$ https://www.canada.ca/fr/services/retraite/apprendre.html permanent;
+        rewrite ^/fr/quiz$ https://www.canada.ca/fr/services/retraite/questionnaire-principal.html permanent;
+        rewrite ^/fr/learn/deciding-when-to-start-your-public-pensions$ https://www.canada.ca/fr/services/retraite/apprendre/decider-quand-recevoir-sa-pension-publique.html permanent;
+        rewrite ^/fr/learn/rules-of-thumb-for-public-pensions$ https://www.canada.ca/fr/services/retraite/apprendre/regles-generales-pensions-publiques.html permanent;
+        rewrite ^/fr/learn/main-sources-of-retirement-income$ https://www.canada.ca/fr/services/retraite/apprendre/principales-sources-revenus-retraite.html permanent;
+        rewrite ^/fr/learn/going-from-work-to-retirement$ https://www.canada.ca/fr/services/retraite/apprendre/transition-travail-retraite.html permanent;
+        rewrite ^/fr/learn/planning-to-save-for-retirement$ https://www.canada.ca/fr/services/retraite/apprendre/planifier-epargner-retraite.html permanent;
+        rewrite ^/fr/learn/case-studies/bonnie$ https://www.canada.ca/fr/services/retraite/apprendre/etudes-cas-bonnie.html permanent;
+        rewrite ^/fr/learn/case-studies/fred$ https://www.canada.ca/fr/services/retraite/apprendre/etudes-cas-fred.html permanent;
+        rewrite ^/fr/learn/case-studies/keith$ https://www.canada.ca/fr/services/retraite/apprendre/etudes-cas-keith.html permanent;
+        rewrite ^/fr/checklist/$ https://www.canada.ca/fr/services/retraite/questionnaire-principal.html permanent;
+        rewrite ^/en$ https://www.canada.ca/en/services/retirement.html permanent;
+        rewrite ^/fr$ https://www.canada.ca/fr/services/retraite.html permanent;
+        rewrite ^/$  https://www.canada.ca/fr/services/retraite.html permanent;
   labels:
     app.kubernetes.io/name: seniors-journey-frontend
 spec:
