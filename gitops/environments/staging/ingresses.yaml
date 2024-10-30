@@ -17,7 +17,7 @@ metadata:
         rewrite ^/en/learn/case-studies/bonnie$ https://www.canada.ca/en/services/retirement/learn/case-studies-bonnie.html permanent;
         rewrite ^/en/learn/case-studies/fred$ https://www.canada.ca/en/services/retirement/learn/case-studies-fred.html permanent;
         rewrite ^/en/learn/case-studies/keith$ https://www.canada.ca/en/services/retirement/learn/case-studies-keith.html permanent;
-        rewrite ^/en/checklist/$ https://www.canada.ca/en/services/retirement/quiz-main.html permanent;
+        rewrite ^/en/checklist(.*)$ https://www.canada.ca/en/services/retirement/quiz-main.html? permanent;
         rewrite ^/fr/home$ https://www.canada.ca/fr/services/retraite.html permanent;
         rewrite ^/fr/learn$ https://www.canada.ca/fr/services/retraite/apprendre.html permanent;
         rewrite ^/fr/quiz$ https://www.canada.ca/fr/services/retraite/questionnaire-principal.html permanent;
@@ -29,7 +29,7 @@ metadata:
         rewrite ^/fr/learn/case-studies/bonnie$ https://www.canada.ca/fr/services/retraite/apprendre/etudes-cas-bonnie.html permanent;
         rewrite ^/fr/learn/case-studies/fred$ https://www.canada.ca/fr/services/retraite/apprendre/etudes-cas-fred.html permanent;
         rewrite ^/fr/learn/case-studies/keith$ https://www.canada.ca/fr/services/retraite/apprendre/etudes-cas-keith.html permanent;
-        rewrite ^/fr/checklist/$ https://www.canada.ca/fr/services/retraite/questionnaire-principal.html permanent;
+        rewrite ^/fr/checklist(.*)$ https://www.canada.ca/fr/services/retraite/questionnaire-principal.html? permanent;
         rewrite ^/en$ https://www.canada.ca/en/services/retirement.html permanent;
         rewrite ^/fr$ https://www.canada.ca/fr/services/retraite.html permanent;
         rewrite ^/$  https://www.canada.ca/fr/services/retraite.html permanent;
